@@ -20,7 +20,7 @@ timeout = "180s"
 
 languageCode = "en-us"
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = false
+defaultContentLanguageInSubdir = true
 
 [outputFormats.REDIR]
 mediaType = "text/netlify"

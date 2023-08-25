@@ -29,15 +29,15 @@
     checkVersion = false
 
 [home]
-    # sections = ["posts"]
+    sections = ["posts", "projects"] # TODO posts->news
     fullCover = false
     centerHeadline = false
     style = ""
 
 [navigation]
     anchor = true
-    logo = "/img/logo_icon.svg"
-    color = "body"
+    logo = "/img/ceda-logo.png" # store -light and -dark variants
+    color = "body-tertiary"
     fixed = true
     offset = "3.8em"
     search = true
@@ -86,43 +86,57 @@
     weight = 50
     clipboard = true
 
-# toml-docs-start sections
-# [sections]
-#     [sections.posts]
-#         title = "Posts"
-#         sort = "date"
-#         reverse = true
-#         nested = true
-#         cols = 3
-#         color = ""
-#         padding = "0"
-#         header = "full"
-#         footer = "none"
-#         orientation = "stacked"
-#         style = "border-0 card-zoom"
-#         homepage = 3
-#         separator = true
-# toml-docs-end sections
+[sections]
+    [sections.posts]
+        title = "News"
+        sort = "date"
+        reverse = true
+        nested = true # TODO check at https://gethinode.com/docs/configuration/layout/
+        cols = 3
+        color = ""
+        padding = "0"
+        header = "full"
+        footer = "none"
+        orientation = "stacked"
+        style = "border-0 card-zoom"
+        homepage = 3
+        separator = true
+    [sections.projects]
+        title = "Projects"
+        layout = "card"
+        sort = "title"
+        reverse = false
+        nested = true # TODO check at https://gethinode.com/docs/configuration/layout/
+        cols = 1
+        background = "body-tertiary"
+        color = "body"
+        padding = "3"
+        header = "none"
+        footer = "tags"
+        orientation = "horizontal"
+        style = "border-1 card-emphasize"
+        homepage = 3
+        separator = false
 
 [favicon]
     logo = "img/favicon.png"
     sizes = [16, 32, 48]
 
 [style]
-    primary = "#d43900"
-    secondary = "#6c757d"
-    success = "#198754"
-    info = "#0dcaf0"
-    warning = "#ffc107"
-    danger = "#dc3545"
-    light = "#f8f9fa"
-    dark = "#212529"
+    primary = "#446E9B"
+    secondary = "#999999"
+    success = "#3CB521"
+    info = "#3399F3"
+    warning = "#D47500"
+    danger = "#CD0200"
+    light = "#EEEEEE"
+    dark = "#333333"
+# toml-docs-end theme-colors
     themeOpacity = "10"
-    darkModeShade = "20%"
-    darkModeTint = "40%"
-    themeFont = "Inter"
-    # themeFontPath = "https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600&display=swap" # external path
-    themeFontPath = "/fonts" # local path
+# toml-docs-start font
+    themeFont = "Lato"
+    themeFontPath = "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" # external path
+    #themeFontPath = "/fonts" # local path
     purge = false
 
 [schema]
@@ -132,7 +146,7 @@
     # twitter = "https://twitter.com/gethinode"
     # linkedIn = ""
     github = "https://github.com/gethinode/hinode"
-    section = "blog"
+    section = "news"
     [author]
         name = "Mark Dumay"
         # twitter = "https://twitter.com/markdumay"
@@ -161,4 +175,10 @@
     #theme = "" 
 
 [links]
-    hinode = "https://gethinode.com"
+    bs_badge_heading = "https://getbootstrap.com/docs/5.2/components/badge/#headings"
+    hinode_docs = "https://gethinode.com/docs"
+    hugo_imaging = "https://gohugo.io/content-management/image-processing/#imaging-configuration"
+    mozilla_image = "https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images"
+    observatory = "https://observatory.mozilla.org/analyze/demo.gethinode.com"
+    pagespeed = "https://pagespeed.web.dev/report?url=https%3A%2F%2Fdemo.gethinode.com%2F"
+    utterances = "https://utteranc.es"

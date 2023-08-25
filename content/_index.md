@@ -1,5 +1,6 @@
 ---
-title: Welcome to Hinode!
+author: Matt Pritchard
+title: Welcome to CEDA!
 thumbnail:
     url: /img/sunrise.jpg
     author: Harris Vo
@@ -8,6 +9,6 @@ thumbnail:
     originName: Unsplash
 ---
 
-A clean documentation and blog theme for your Hugo site based on Bootstrap 5.
+The Centre for Environmental Data Analysis is...
 
-{{< button href="https://gethinode.com/docs" icon="fas book-open" order="first" >}}Get Started{{< /button>}}
+{{< button href="about" >}}About{{< /button>}}
