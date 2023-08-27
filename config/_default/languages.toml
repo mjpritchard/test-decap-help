@@ -13,7 +13,7 @@
 [en.params.footer]
 # license = "Licensed under Creative Commons (<a href='https://creativecommons.org/licenses/by-nc-sa/4.0/' class='link-secondary' target='_blank' rel='noopener noreferrer'>CC BY-NC-SA 4.0</a>)."
 # toml-docs-end lang-param
-[en.params.sections.posts]
-    reference = "More Posts"
+[en.params.sections.news]
+    reference = "More News"
 [en.params.sections.projects]
     reference = "More Projects"
