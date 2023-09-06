@@ -29,7 +29,7 @@
     checkVersion = false
 
 [home]
-    sections = ["news", "projects"] # TODO posts->news
+    sections = ["news", "events", "projects"]
     fullCover = false
     centerHeadline = false
     style = ""
@@ -101,27 +101,28 @@
         style = "border-0 card-zoom"
         homepage = 3
         separator = true
-    #[sections.extra]
-    #    title = "Extra"
-    #    sort = "date"
-    #    reverse = true
-    #    nested = true # TODO check at https://gethinode.com/docs/configuration/layout/
-    #    cols = 3
-    #    color = ""
-    #    padding = "0"
-    #    header = "full"
-    #    footer = "none"
-    #    orientation = "stacked"
-    #    style = "border-0 card-zoom"
-    #    homepage = 3
-    #    separator = true
+    [sections.events]
+        title = "Events"
+        layout = "card"
+        sort = "date"
+        reverse = true
+        nested = true # TODO check at https://gethinode.com/docs/configuration/layout/
+        cols = 2
+        color = ""
+        padding = "0"
+        header = "full"
+        footer = "none"
+        orientation = "horizontal"
+        style = "border-0 card-zoom"
+        homepage = 3
+        separator = true
     [sections.projects]
         title = "Projects"
         layout = "card"
-        sort = "title"
+        sort = "weight"
         reverse = false
         nested = true # TODO check at https://gethinode.com/docs/configuration/layout/
-        cols = 1
+        cols = 3
         background = "body-tertiary"
         color = "body"
         padding = "3"

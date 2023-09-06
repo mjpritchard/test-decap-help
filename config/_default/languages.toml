@@ -15,5 +15,7 @@
 # toml-docs-end lang-param
 [en.params.sections.news]
     reference = "More News"
+[en.params.sections.events]
+    reference = "More Events"
 [en.params.sections.projects]
     reference = "More Projects"

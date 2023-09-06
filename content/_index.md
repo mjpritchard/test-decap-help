@@ -7,7 +7,7 @@ thumbnail:
     authorURL: https://unsplash.com/@hoanvokim
     origin: https://unsplash.com/photos/ZX6BPboJrYk
     originName: Unsplash
-    caption: Caption can go here
+ #   caption: Caption can go here
 ---
 
 The Centre for Environmental Data Analysis is...

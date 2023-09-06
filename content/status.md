@@ -2,7 +2,6 @@
 title: Status
 description: Status of CEDA services
 date: 2023-08-08
-updated: 2023-08-08
 showComments: false
 ---
 

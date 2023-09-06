@@ -1,69 +1,44 @@
 [[main]]
-  name = "About"
-  pageRef = "/about/"
+  name = "News"
+  pageRef = "/news/"
   weight = 10
 
 [[main]]
-  name = "News"
-  pageRef = "/news/"
+  name = "Events"
+  pageRef = "/events/"
   weight = 20
-
-[[main]]
-  name = "Projects"
-  pageRef = "/projects/"
-  weight = 30
 
 [[main]]
   name = "Status"
   pageRef = "/status/"
+  weight = 30
+  
+[[main]]
+  name = "Projects"
+  pageRef = "/projects/"
   weight = 40
 
 [[main]]
-  name = "Sample project"
-  pageRef = "/projects/sample-project/"
-  parent = "Projects"
-  weight = 1
-
-[[main]]
-  name = "Another project"
-  pageRef = "/projects/another-project/"
-  parent = "Projects"
-  weight = 2
-
-[[main]]
-  name = "Yet Another project"
-  pageRef = "/projects/yet-another-project/"
-  parent = "Projects"
-  weight = 3
-
-[[main]]
-  name = "Docs"
-  pageRef = "/docs/"
+  name = "TechBlog"
+  pageRef = "https://techblog.ceda.ac.uk/"
   weight = 50
 
 [[main]]
-  name = "Sample doc"
-  pageRef = "/docs/sample-doc/"
-  parent = "Docs"
-  weight = 1
-
-[[main]]
-  name = "Applying for access"
-  pageRef = "/docs/short-term-project-storage/apply-for-access-to-a-gws/"
-  parent = "Docs"
-  weight = 2
+  name = "About"
+  pageRef = "/about/"
+  weight = 60
 
 [[social]]
   name = "X / Twitter"
   pre = "fab fa-x-twitter"
   url = "https://twitter.com/cedanews"
-  weight = 20
+  weight = 10
 
 [[social]]
   name = "GitHub"
   pre = "fab fa-github"
   url = "https://github.com/cedadev"
-  weight = 30
+  weight = 20
 
 #[[social]]
 #  name = "LinkedIn"
@@ -78,25 +53,4 @@
 #  weight = 50
 
 # toml-docs-start sample-navigation
-[[sample]]
-  name = "Blog"
-  pageRef = "/news/"
-  weight = 10
-
-[[sample]]
-  name = "Projects"
-  pageRef = "/projects/"
-  weight = 20
-
-[[sample]]
-  name = "Sample project"
-  pageRef = "/projects/sample-project/"
-  parent = "Projects"
-  weight = 1
-
-[[sample]]
-  name = "Another project"
-  pageRef = "/projects/another-project/"
-  parent = "Projects"
-  weight = 2
 # toml-docs-end sample-navigation

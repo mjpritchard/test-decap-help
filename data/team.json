@@ -1,0 +1,12 @@
+{
+    "jdoe": {
+      "bio": "Mr. Doe is an expert in the field of...",
+      "name": "John Doe",
+      "thumbnail": "images/jdoe.jpg"
+    },
+    "rsmith": {
+      "bio": "Dr. Smith is an emeritus professor of mathematics...",
+      "name": "Dr. Robert Smith, PhD",
+      "thumbnail": "images/rsmith.jpg"
+    }
+  }

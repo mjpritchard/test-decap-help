@@ -1,0 +1,4 @@
+---
+Title: people
+headless: true
+---

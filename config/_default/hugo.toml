@@ -22,6 +22,13 @@ languageCode = "en-us"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 
+# Need this to use defaut templates with events that have future dates
+# Use 
+#   draft = true
+# to mark content not yet ready for publishing
+# (TODO: could customise event list templates to use an event_date instead)
+buildFuture = true 
+
 [outputFormats.REDIR]
 mediaType = "text/netlify"
 baseName = "_redirects"
