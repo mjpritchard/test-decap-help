@@ -1,0 +1,30 @@
+{{ define "main"}}
+    <div class="d-flex flex-column flex-fill mt-5">
+        <div class="container-fluid ">
+            <div class="container-xxl flex-fill p-0">
+                <div class="container-fluid p-4 px-xxl-0">
+                     {{ .Content }}
+                    <h2>Future incidents</h2>
+                    
+                    <ul class="list-group">
+                        {{ range $i := sort $.Site.Data.status ".date" "desc" }}
+                            {{ if gt (time $i.date) now }}
+                                {{ partial "incident.html" . }}
+                            {{ end }}
+                        {{end}}
+                    </ul>
+
+                    <h2>Current incidents</h2>
+                    
+                    <ul class="list-group">
+                        {{ range $i := sort $.Site.Data.status ".date" "desc" }}
+                            {{ if le (time $i.date) now }}
+                                {{ partial "incident.html" . }}
+                            {{ end }}
+                        {{end}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{{ end }}
