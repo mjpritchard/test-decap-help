@@ -11,17 +11,17 @@
                         <thead>
                             <tr>
                                 <th>Date</th>
-                                <th>Status</th>
+                                <th>Alert type</th>
+                                <th>Summary</th>
                                 <th>Services affected</th>
                                 <th>Updates</th>
                             </tr>
                         </thead>
                         <tbody>
                             {{ range $i := sort $.Site.Data.status ".date" "desc" }}
-
                                 {{ if gt (time $i.date) now }}
-                                    {{ $color := index $.Site.Params.myStatusClasses $i.status }}
-                                    {{ partial "incident_row.html" (dict "context" . "color" $color) }}
+                                    {{ $color := index $.Site.Params.alertTypeClasses $i.alertType }}
+                                    {{ partial "incident_row.html" (dict "context" . "alertTypeClasses" $.Site.Params.alertTypeClasses "statusClasses" $.Site.Params.statusClasses) }}
                                 {{ end }}
                             {{end}}                         
                         </tbody>
@@ -33,21 +33,22 @@
                         <thead>
                             <tr>
                                 <th>Date</th>
-                                <th>Status</th>
+                                <th>Alert type</th>
+                                <th>Summary</th>
                                 <th>Services affected</th>
                                 <th>Updates</th>
                             </tr>
                         </thead>
                         <tbody>
                             {{ range $i := sort $.Site.Data.status ".date" "desc" }}
-
                                 {{ if le (time $i.date) now }}
-                                    {{ $color := index $.Site.Params.myStatusClasses $i.status }}
-                                    {{ partial "incident_row.html" (dict "context" . "color" $color) }}
+                                    {{ $color := index $.Site.Params.alertTypeClasses $i.alertType }}
+                                    {{ partial "incident_row.html" (dict "context" . "alertTypeClasses" $.Site.Params.alertTypeClasses "statusClasses" $.Site.Params.statusClasses) }}
                                 {{ end }}
                             {{end}}                         
                         </tbody>
                     </table>
+
                 </div>
             </div>
         </div>

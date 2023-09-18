@@ -1,44 +1,97 @@
 [
   {
-    "id": "2023-12-01_02",
     "date": "2023-12-01T09:00:00Z",
-    "status": "normal",
-    "services_affected": "all",
-    "details": "Lorem ipsum blah blah blah."
+    "alertType": "normal",
+    "affectedServices": "all",
+    "summary": "Lorem ipsum blah blah blah."
   },
   {
-    "id": "2023-12-01_01",
     "date": "2023-12-01T08:00:00Z",
-    "status": "down",
-    "services_affected": "all",
-    "details": "Lorem ipsum blah blah blah."
+    "alertType": "down",
+    "affectedServices": "all",
+    "summary": "Lorem ipsum blah blah blah.",
+    "updates": [
+      {
+        "date": "2023-12-01T09:20:00Z",
+        "status": "notice",
+        "details": "here is a later update"
+      },
+      {
+        "date": "2023-12-01T09:10:00Z",
+        "status": "notice",
+        "details": "Lorem ipsum blah blah blah."
+      }
+    ]
   },
   {
-      "id": "2023-08-01_02",
       "date": "2023-08-01T09:00:00Z",
-      "status": "normal",
-      "services_affected": "all",
-      "details": "Lorem ipsum blah blah blah."
+      "alertType": "normal",
+      "affectedServices": "all",
+      "summary": "Lorem ipsum blah blah blah.",
+      "updates": [
+        {
+          "date": "2023-12-01T09:20:00Z",
+          "status": "resolved",
+          "details": "here is a later update"
+        },
+        {
+          "date": "2023-12-01T09:10:00Z",
+          "status": "investigating",
+          "details": "Lorem ipsum blah blah blah."
+        }
+      ]
     },
     {
-      "id": "2023-08-01_01",
       "date": "2023-08-01T08:00:00Z",
-      "status": "down",
-      "services_affected": "all",
-      "details": "Lorem ipsum blah blah blah."
+      "alertType": "down",
+      "affectedServices": "all",
+      "summary": "Lorem ipsum blah blah blah.",
+      "updates": [
+        {
+          "date": "2023-12-01T09:20:00Z",
+          "status": "notice",
+          "details": "here is a later update"
+        },
+        {
+          "date": "2023-12-01T09:10:00Z",
+          "details": "Lorem ipsum blah blah blah."
+        }
+      ]
     },
     {
-      "id": "2023-07-01_02",
       "date": "2023-07-01T09:00:00Z",
-      "status": "at risk",
-      "services_affected": "all",
-      "details": "Lorem ipsum blah blah blah."
+      "alertType": "at risk",
+      "affectedServices": "all",
+      "summary": "Lorem ipsum blah blah blah.",
+      "updates": [
+        {
+          "date": "2023-12-01T09:20:00Z",
+          "status": "notice",
+          "details": "here is a later update"
+        },
+        {
+          "date": "2023-12-01T09:10:00Z",
+          "status": "notice",
+          "details": "Lorem ipsum blah blah blah."
+        }
+      ]
     },
     {
-      "id": "2023-07-01_01",
       "date": "2023-07-01T08:00:00Z",
-      "status": "degraded",
-      "services_affected": "all",
-      "details": "Lorem ipsum blah blah blah."
+      "alertType": "degraded",
+      "affectedServices": "all",
+      "summary": "Lorem ipsum blah blah blah.",
+      "updates": [
+        {
+          "date": "2023-12-01T09:20:00Z",
+          "status": "notice",
+          "details": "here is a later update"
+        },
+        {
+          "date": "2023-12-01T09:10:00Z",
+          "status": "notice",
+          "details": "Lorem ipsum blah blah blah."
+        }
+      ]
     }
 ]
