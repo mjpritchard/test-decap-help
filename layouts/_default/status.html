@@ -4,25 +4,50 @@
             <div class="container-xxl flex-fill p-0">
                 <div class="container-fluid p-4 px-xxl-0">
                      {{ .Content }}
+
                     <h2>Future incidents</h2>
-                    
-                    <ul class="list-group">
-                        {{ range $i := sort $.Site.Data.status ".date" "desc" }}
-                            {{ if gt (time $i.date) now }}
-                                {{ partial "incident.html" . }}
-                            {{ end }}
-                        {{end}}
-                    </ul>
+
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Services affected</th>
+                                <th>Updates</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{ range $i := sort $.Site.Data.status ".date" "desc" }}
+
+                                {{ if gt (time $i.date) now }}
+                                    {{ $color := index $.Site.Params.myStatusClasses $i.status }}
+                                    {{ partial "incident_row.html" (dict "context" . "color" $color) }}
+                                {{ end }}
+                            {{end}}                         
+                        </tbody>
+                    </table>
 
                     <h2>Current incidents</h2>
                     
-                    <ul class="list-group">
-                        {{ range $i := sort $.Site.Data.status ".date" "desc" }}
-                            {{ if le (time $i.date) now }}
-                                {{ partial "incident.html" . }}
-                            {{ end }}
-                        {{end}}
-                    </ul>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Services affected</th>
+                                <th>Updates</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{ range $i := sort $.Site.Data.status ".date" "desc" }}
+
+                                {{ if le (time $i.date) now }}
+                                    {{ $color := index $.Site.Params.myStatusClasses $i.status }}
+                                    {{ partial "incident_row.html" (dict "context" . "color" $color) }}
+                                {{ end }}
+                            {{end}}                         
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
