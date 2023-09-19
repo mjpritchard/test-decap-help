@@ -198,13 +198,8 @@
     pagespeed = "https://pagespeed.web.dev/report?url=https%3A%2F%2Fdemo.gethinode.com%2F"
     utterances = "https://utteranc.es"
 
-[alertTypeClasses]
+[statusClasses]
     "down" = "danger"
     "normal" = "success"
     "degraded" = "warning"
     "at risk" = "dark"
-
-[statusClasses]
-    "notice" = "info"
-    "investigating" = "warning"
-    "resolved" = "success"

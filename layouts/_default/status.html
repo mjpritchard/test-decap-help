@@ -11,7 +11,7 @@
                         <thead>
                             <tr>
                                 <th>Date</th>
-                                <th>Alert type</th>
+                                <th>Status</th>
                                 <th>Summary</th>
                                 <th>Services affected</th>
                                 <th>Updates</th>
@@ -20,8 +20,8 @@
                         <tbody>
                             {{ range $i := sort $.Site.Data.status ".date" "desc" }}
                                 {{ if gt (time $i.date) now }}
-                                    {{ $color := index $.Site.Params.alertTypeClasses $i.alertType }}
-                                    {{ partial "incident_row.html" (dict "context" . "alertTypeClasses" $.Site.Params.alertTypeClasses "statusClasses" $.Site.Params.statusClasses) }}
+                                    {{ $color := index $.Site.Params.statusClasses $i.status }}
+                                    {{ partial "incident_row.html" (dict "context" . "statusClasses" $.Site.Params.statusClasses) }}
                                 {{ end }}
                             {{end}}                         
                         </tbody>
@@ -33,7 +33,7 @@
                         <thead>
                             <tr>
                                 <th>Date</th>
-                                <th>Alert type</th>
+                                <th>Status</th>
                                 <th>Summary</th>
                                 <th>Services affected</th>
                                 <th>Updates</th>
@@ -42,8 +42,8 @@
                         <tbody>
                             {{ range $i := sort $.Site.Data.status ".date" "desc" }}
                                 {{ if le (time $i.date) now }}
-                                    {{ $color := index $.Site.Params.alertTypeClasses $i.alertType }}
-                                    {{ partial "incident_row.html" (dict "context" . "alertTypeClasses" $.Site.Params.alertTypeClasses "statusClasses" $.Site.Params.statusClasses) }}
+                                    {{ $color := index $.Site.Params.statusClasses $i.status }}
+                                    {{ partial "incident_row.html" (dict "context" . "statusClasses" $.Site.Params.statusClasses) }}
                                 {{ end }}
                             {{end}}                         
                         </tbody>

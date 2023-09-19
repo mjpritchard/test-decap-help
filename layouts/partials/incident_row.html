@@ -1,8 +1,8 @@
 <tr>
     <td>{{dateFormat "2006-01-02 15:04" .context.date }}</td>
     <td>
-        {{ $alertTypeClass := index .alertTypeClasses .context.alertType }}
-        <span class="badge bg-{{ $alertTypeClass }}">{{.context.alertType}}</span>
+        {{ $statusClass := index .statusClasses .context.status }}
+        <span class="badge bg-{{ $statusClass }}">{{.context.status}}</span>
     </td>
     <td>{{.context.summary}}</td>
     <td>{{.context.affectedServices}}</td>
@@ -12,10 +12,6 @@
             {{ range $u, $e := sort .context.updates ".date" "desc" }}
             {{ if $u }}<hr>{{ end }}
             {{dateFormat "2006-01-02 15:04" .date }}
-            {{ if .status }}
-                {{ $statusClass := index $.statusClasses .status }}
-                | <span class="badge bg-{{ $statusClass }}">{{.status}}</span>
-            {{end }}
             | {{ .details }}
             {{end}}
         {{ else }}
