@@ -4,7 +4,7 @@
     enableDarkMode = true
     modes = ["light", "dark"]
     canonifyAssetsURLs = false
-    endorse = true
+    endorse = false
     [main.externalLinks]
         cue = false
         tab = false
@@ -197,6 +197,19 @@
     observatory = "https://observatory.mozilla.org/analyze/demo.gethinode.com"
     pagespeed = "https://pagespeed.web.dev/report?url=https%3A%2F%2Fdemo.gethinode.com%2F"
     utterances = "https://utteranc.es"
+    hugo = "https://gohugo.io"
+    # curated local links
+    ceda = "https://www.ceda.ac.uk"
+    ceda_archive = "https://archive.ceda.ac.uk"
+    ceda_catalogue = "https://catagloue.ceda.ac.uk"
+    ceda_helpdocs = "https://help.ceda.ac.uk"
+    ceda_helpdesk = "mailto:support@ceda.ac.uk"
+    nceo = "https://www.nceo.ac.uk"
+    ncas = "https://www.ncas.ac.uk"
+    jasmin = "https://www.jasmin.ac.uk"
+    stfc = "https://stfc.ukri.org"
+    nerc = "https://nerc.ukri.org"
+    ukri = "https://ukri.org"
 
 [statusClasses]
     "down" = "danger"
