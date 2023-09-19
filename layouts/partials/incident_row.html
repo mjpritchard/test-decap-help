@@ -1,0 +1,24 @@
+<tr>
+    <td>{{dateFormat "2006-01-02 15:04" .context.date }}</td>
+    <td>
+        {{ $statusClass := index .statusClasses .context.status }}
+        <span class="badge bg-{{ $statusClass }}">{{.context.status}}</span>
+    </td>
+    <td>{{.context.summary}}</td>
+    <td>{{.context.affectedServices}}</td>
+    <td>
+        <!-- Need root context (hence "index $.statusClasses" ) as range makes us lose the page context -->
+        {{ if .context.updates }}
+            {{ range $u, $e := sort .context.updates ".date" "desc" }}
+                {{ if $u }}<hr>{{ end }}
+                {{dateFormat "2006-01-02 15:04" .date }}
+                | {{ .details }}
+                {{ if .url }}
+                | <a href="{{.url}}" class="btn btn-sm btn-primary" role="button" target="_blank">Learn more</a>
+                {{ end }}
+            {{end}}
+        {{ else }}
+            No updates at this time.
+        {{ end }}
+    </td>
+</tr>
