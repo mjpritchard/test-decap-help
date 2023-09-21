@@ -203,7 +203,7 @@
     ceda_archive = "https://archive.ceda.ac.uk"
     ceda_catalogue = "https://catagloue.ceda.ac.uk"
     ceda_helpdocs = "https://help.ceda.ac.uk"
-    ceda_helpdesk = "mailto:support@ceda.ac.uk"
+    ceda_helpdesk = "https://help.ceda.ac.uk"
     nceo = "https://www.nceo.ac.uk"
     ncas = "https://www.ncas.ac.uk"
     jasmin = "https://www.jasmin.ac.uk"

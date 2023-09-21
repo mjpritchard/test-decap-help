@@ -6,4 +6,4 @@ description: History of CEDA
 layout: minimal
 ---
 
-Details of our mission would go here.
+Details of our history would go here.
