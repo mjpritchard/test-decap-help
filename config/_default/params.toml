@@ -29,7 +29,7 @@
     checkVersion = false
 
 [home]
-    sections = ["news", "events", "projects"]
+    sections = ["news","services", "events", "projects"]
     fullCover = false
     centerHeadline = false
     style = ""
@@ -101,6 +101,17 @@
         style = "border-0 card-zoom"
         homepage = 3
         separator = true
+    [sections.services]
+        title = "Discover what we do at CEDA"
+        layout = "nav"
+        sort = "weight"
+        reverse = false
+        background = "body-tertiary"
+        color = "primary"
+        style = "justify-content-center"
+        #pane = "persona"
+        type = "pills"
+        width = 50
     [sections.events]
         title = "Events"
         layout = "card"
