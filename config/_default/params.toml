@@ -132,6 +132,10 @@
         style = "border-1 card-emphasize"
         homepage = 3
         separator = false
+    [sections.about]
+    title = "About"
+    layout = "list"
+
 
 [favicon]
     logo = "img/favicon.png"

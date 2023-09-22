@@ -4,6 +4,7 @@ date: 2023-09-06
 showComments: false
 description: our mission
 layout: minimal
+thumbnail: img/stock-CEDA.jpg
 ---
 
 __Our mission:__
