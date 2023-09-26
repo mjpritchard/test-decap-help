@@ -29,7 +29,7 @@
     checkVersion = false
 
 [home]
-    sections = ["news","services", "events", "projects"]
+    sections = ["news", "about", "events","priorities","projects"]
     fullCover = false
     centerHeadline = false
     style = ""
@@ -101,17 +101,18 @@
         style = "border-0 card-zoom"
         homepage = 3
         separator = true
-    [sections.services]
-        title = "Discover what we do at CEDA"
+    [sections.priorities]
+        title = "Our priorities at CEDA"
         layout = "nav"
         sort = "weight"
         reverse = false
         background = "body-tertiary"
         color = "primary"
         style = "justify-content-center"
-        #pane = "persona"
+        pane = "persona"
         type = "pills"
-        width = 50
+        class = "nav-justified"
+        width = 100
     [sections.events]
         title = "Events"
         layout = "card"
@@ -144,8 +145,9 @@
         homepage = 3
         separator = false
     [sections.about]
-    title = "About"
-    layout = "list"
+        title = "About"
+        layout = "list"
+        paginate = 3
 
 
 [favicon]

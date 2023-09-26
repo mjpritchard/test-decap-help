@@ -10,9 +10,6 @@ thumbnail: img/stock-CEDA.jpg
 __Our mission:__
 
 
-
-
-
 {{< nav type="pills" id="underline-1" >}}
   {{< nav-item header="Objectives" show="true" >}}
     <ul><li>Operate world-class data curation services, and in particular the NERC Data Centres for NCAS and NCEO</li><li>Manage state-of-the-art storage and compute infrastructure (JASMIN), in close collaboration with STFC Scientific Computing Department</li>
@@ -59,86 +56,21 @@ __Our mission:__
   {{< /nav-item >}}
 {{< /nav >}}
 
+### Key Services 
+
+__The CEDA Archive__
+
+The {{< link "https://archive.ceda.ac.uk/" >}} CEDA Archive {{< /link >}}  is the national data centre for atmospheric and earth observation research. We host over 20 Petabytes of atmospheric and earth observation data. Sources include aircraft campaigns, satellites, automatic weather stations and climate models, amongst many more. 
+
+The CEDA Archive forms part of {{< link "https://eds.ukri.org/environmental-data-service" >}} NERC's Environmental Data Service {{< /link >}}  - a network of data centres covering all aspects of environmental science. Our team coordinate data management on behalf of {{< link "https://www.ukri.org/councils/nerc/" >}} NERC {{< /link >}}  for the UK atmospheric science and earth observation communities. 
+
+We hold data covering climate, composition, observations and numerical weather prediction as well as various earth observation datasets, including airborne and satellite data and imagery. Our main goal is to ensure that atmospheric and earth observation data are made available and accessible to all in order to fully realise their reuse potential.
+
+Prior to November 2016, these functions were operated by CEDA under the titles of the British Atmospheric Data Centre (BADC) and the NERC Earth Observation Data Centre (NEODC).
 
 
+__JASMIN__
 
--Operate world-class data curation services, and in particular the NERC Data Centres for NCAS and NCEO
+JASMIN is a globally unique data intensive supercomputer for environmental science. Over 160 science projects are currently supported, covering topics ranging from climate science and oceanography to air pollution, earthquake deformation and analysis of wildlife populations.
 
--Manage state-of-the-art storage and compute infrastructure (JASMIN), in close collaboration with STFC Scientific Computing Department
-
--Facilitate environmental science by running data and information services
-
--Develop new data service technologies
-
--Build and maintain close contact with the research community
-
--Provide a national capability for data management in EO and Atmospheric sciences
-
--Contribute to and learn from the national and international community
-
--Enable scientific, societal and economic impact through use of our data and services
-
--Foster staff development in the CEDA team so that we have the skills we need - data management, software development, e-infrastructure and project management 
-
-__Strategies__
-{.h3}
-
--Run data archives in accordance with best practice
-
--Continual standards-driven improvement of CEDA infrastructure and services
-
--Carry out projects that develop and enhance data and information services
-
--Active participation in digital curation and (environmental and geospatial) informatics fields
-
--Active participation in environmental research programmes
-
--Publicise and promote CEDA Archive and JASMIN services and products
-
--Provide advice and support to others on data and information management services
-
--Encourage data set citation
-
--Support users of CEDA and JASMIN, via helpdesk, documentation and training
-
--Deal with, and where relevant take advantage of, disruptive changes in information technology
-
--Communicate our capability and achievements via a range of channels
-
--Effectively manage CEDA budgets and resources
-
-__Controls__
-{.h3}
-
--Monitoring of data centre performance, via access and ingest statistics
-
--Monitoring of JASMIN usage statistics
-
--Financial analysis of CEDA as a unit, not unrelated project codes
-
--Collect metrics of data use in science programmes; for example data citations
-
--Monitor uptake of software products developed
-
--Gather and assess user feedback
-
--Publications in journals and conference proceedings
-
--Evidence of realising benefits of externally funded projects
-
-__Rewards__
-{.h3}
-
--We feel we are doing a worthwhile job
-
--Research community recognises the utility of the activities performed by CEDA
-
--Recognition of CEDA as an organisation that is good at what it does
-
--UK academics producing data get academic rewards for doing so
-
--We are successful at winning funding through competitive bids
-
--External organisations want to collaborate with us
-
--CEDA staff are invited to contribute to national and international workshops, conferences, working groups and committees
+JASMIN supports the data analysis requirements of the UK and European climate and earth system modelling community. It consists of multi-Petabyte fast storage co-located with data analysis computing facilities, with dedicated light paths to various key facilities and institutes within the community.

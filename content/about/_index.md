@@ -26,7 +26,7 @@ JASMIN is a globally unique data intensive supercomputer for environmental scien
 
 Our services are provided on behalf of the Natural Environment Research Council (NERC) via the National Centre for Atmospheric Science (NCAS) and the National Centre for Earth Observation (NCEO). CEDA is based within the RAL Space department of the Science and Technology Facilities Council (STFC). JASMIN is co-managed by CEDA and STFC's Scientific Computing Department.  
 
--->
+
 
 {{< nav type="pills" id="underline-1" >}}
   {{< nav-item header="Objectives" show="true" >}}
@@ -73,3 +73,4 @@ Our services are provided on behalf of the Natural Environment Research Council 
     <li>CEDA staff are invited to contribute to national and international workshops, conferences, working groups and committees</li>
   {{< /nav-item >}}
 {{< /nav >}}
+-->
