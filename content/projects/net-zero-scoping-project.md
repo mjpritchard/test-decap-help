@@ -18,37 +18,16 @@ the core project team at CEDA was to lead an initial, 18-month UKRI-wide study t
 <div class="card mb-3">
   <h3 class="card-header">Results</h3>
   
-  <!--<svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none" width="100%" height="200" aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle">
-    <rect width="100%" height="100%" fill="#868e96"></rect>
-    <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-  </svg> -->
+ 
   <div class="card-body">
-    <p class="card-text">Over the last 2 years, we have led a scoping project that has compiled recommendations for UK Research and Innovation (UKRI) to ensure all digital tools used in the sector - from supercomputers like JASMIN to staff laptops - will be sustainable within the next 17 years. [The final technical report has now been published and is freely available for anyone to make use of](https://zenodo.org/record/8199984)
-    {{< link nceo />}}
+    <p class="card-text">Over the last 2 years, we have led a scoping project that has compiled recommendations for UK Research and Innovation (UKRI) to ensure all digital tools used in the sector - from supercomputers like JASMIN to staff laptops - will be sustainable within the next 17 years. {{< link "https://zenodo.org/record/8199984" >}}The final technical report has now been published and is freely available for anyone to make use of {{< /link >}}
     </p>
   </div>
   <ul class="list-group list-group-flush">
     <li class="list-group-item">The scoping project has developed a toolkit, and roadmapped the initial steps required, for the decarbonisation of our national digital research infrastructure. This project was made possible by a £1.9 million investment from the Natural Environment Research Council (NERC) on behalf of UKRI.</li>
     <li class="list-group-item">Over 180 evidence-based recommendations have been synthesised by the scoping project team - involving CEDA, over 90 UK researchers, and more than 20 nationwide research institutes. The recommendations recognise UKRI’s ambition for facilitating state-of-the-art computing tools and techniques, while playing a leading role in navigating the transition to an equitable and sustainable future. </li>
     <li class="list-group-item">A new holistic toolkit now sets out the proposals for reaching net zero - supported by a clear roadmap - and intended for people that use, manage, maintain, fund, or make decisions about digital research infrastructure. </li>
-  </ul> <!--
-  <div class="card-body">
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
-  </div>
-  <div class="card-footer text-muted">
-    2 days ago
-  </div> 
-</div>
-<div class="card">
-  <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
-  </div>
-</div>  -->
+  </ul> 
 </div>
 <div class="card-body">
     <h5 class="card-title">Six elements of the sustainable computing strategic toolkit</h5>

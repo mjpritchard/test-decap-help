@@ -3,7 +3,7 @@ title: Collaboration
 date: 2022-04-11
 updated: 2023-08-02
 showComments: false
-description: JASMIN and the CEDA Archive are shared resources for NERC’s environmental science community, encouraging communication and inter-disciplinary working between diverse scientific groups within the community. This helps to reduce duplication of data, effort and resources.  Datasets produced within collaborative workspaces can be identified and passed to the CEDA Archive for curation, discovery and widespread reuse. Most of the Archive is also open to all online users
+description: JASMIN and the CEDA Archive are shared resources for NERC’s environmental science community, encouraging communication and inter-disciplinary working between diverse scientific groups within the community. This helps to reduce duplication of data, effort and resources.  Datasets produced within collaborative workspaces can be identified and passed to the CEDA Archive for curation, discovery and widespread reuse. Most of the Archive is also open to all online users.
 thumbnail: img/stock-collaboration.jpg
 ---
 {{< button cue=false href="https://jasmin.ac.uk/" >}}JASMIN{{< /button >}}
