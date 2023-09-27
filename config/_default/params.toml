@@ -131,8 +131,8 @@
     [sections.projects]
         title = "Projects"
         layout = "card"
-        sort = "weight"
-        reverse = false
+        sort = "date"
+        reverse = true
         nested = true # TODO check at https://gethinode.com/docs/configuration/layout/
         cols = 3
         background = "body-tertiary"
@@ -143,6 +143,7 @@
         orientation = "horizontal"
         style = "border-1 card-emphasize"
         homepage = 3
+        paginate = 6
         separator = false
     [sections.about]
         title = "About"

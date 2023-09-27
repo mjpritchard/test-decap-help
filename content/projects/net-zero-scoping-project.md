@@ -3,7 +3,7 @@ author: Jesse Alexander
 title: UKRI Net-Zero Digital Research Infrastructure (DRI) Scoping Project
 date: 2023-09-20
 description: A wide ranging project examining digital infrastructure within the UKRI sector to ensure they will be sustainable within the next 17 years. 
-tags: ["sustainability"]
+#tags: ["sustainability"]
 icon: "fa-solid fa-seedling"
 slug: Net Zero Scoping Project
 ---
