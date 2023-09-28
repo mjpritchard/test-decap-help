@@ -3,8 +3,8 @@ categories:
   - jasmin
 date: 2014-06-03
 title: JASMIN Launch Event 2014
-#draft: true
-description: An event celebrating the launch of JASMIN as a data analysis facility as part of the UK e-infrastructure
+icon: fas rocket
+description: An event celebrating the launch of JASMIN as a data analysis facility as part of the UK e-infrastructure.
 ---
 <div class="container">
 <div class="row">

@@ -119,7 +119,7 @@
         sort = "date"
         reverse = true
         nested = true # TODO check at https://gethinode.com/docs/configuration/layout/
-        cols = 2
+        cols = 3
         color = ""
         padding = "0"
         header = "full"

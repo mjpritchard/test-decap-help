@@ -4,7 +4,8 @@ categories:
   - jasmin
 date: 2016-06-27
 title: JASMIN Conference 2016
-#draft: true
+icon: fas people-group
+description: First ever JASMIN User conference sharing knowledge and ideas about JASMIN. 
 ---
 
 <h2>Thanks for coming to the JASMIN user conference!</h2>

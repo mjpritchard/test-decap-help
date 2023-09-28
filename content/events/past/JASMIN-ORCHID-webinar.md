@@ -4,8 +4,8 @@ categories:
   - webinar
 date: 2023-01-31
 title: Webinar - JASMIN's new GPU cluster, ORCHID
-description: Webinar about JASMIN’s new GPU cluster, ORCHID. The event provided information about ORCHID itself, as well as hearing from recent test users about their experiences with it. Users of other research GPU clusters also talked about their use cases and experience.
-#draft: true
+description: Webinar about JASMIN’s new GPU cluster, ORCHID. The event provided information about ORCHID itself, as well as hearing from recent test users about their experiences with it. 
+icon: fas fan
 ---
 The webinar was open to all JASMIN users, but was of particular interest to those embarking on research involving machine learning techniques, or who have been seeking GPU resources for use in their work. Further details, including links to slides and recordings can be found below. 
 

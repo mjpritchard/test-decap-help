@@ -5,7 +5,7 @@ categories:
 date: 2021-07-30
 title: Jupyter Notebooks for Capacity Development Webinar
 description: The CEOS Working Group on Capacity Building and Data Democracy and the Working Group on Information Systems and Services ran a joint webinar on Jupyter notebooks for Capacity Development.
-#draft: true
+icon: "fa-regular fa-newspaper"
 ---
 <p>CEDA&nbsp;represents UKSA/NCEO on the Committee Earth Observation Satellites (CEOS)&nbsp;-&nbsp;this group&nbsp;hosted a virtual&nbsp;event called:&nbsp;<a href="https://ceos.org/meetings/jupyter-notebooks-for-capacity-development-webinar/">Jupyter Notebooks for Capacity Development Webinar</a>&nbsp;in July 2021.&nbsp;<br /><br />Further details about the event are below.</p>
 <p>You can see a <a href="https://youtu.be/N0LK8yFcKQ0">recording from the webinar here</a>.&nbsp;</p>

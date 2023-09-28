@@ -5,6 +5,7 @@ categories:
 date: 2023-11-01
 title: JASMIN Conference 2023
 icon: fas people-group
+description: The upcoming JASAMIN User Conference 2023. Attendees are invited to Rutherford Appleton Laboratory to hear the latest updates on JASMIN and share user highlights.
 aliases: 
 - /agenda/jasmin-conference-2023/detail/
 ---

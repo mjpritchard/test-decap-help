@@ -3,8 +3,8 @@ categories:
   - webinar
 date: 2018-11-01
 title: Git and GitHub webinars
-description: Webinar covering topics such as why you should use version control and useful Git commands
-#draft: true
+description: Webinar covering topics such as why you should use version control and useful Git commands.
+icon: fa-brands github
 ---
 <p>This webinar&nbsp;provides&nbsp;an introduction to using Git and GitHub to manage, share and backup your code. We will discuss:</p>
 <ul>

@@ -5,7 +5,7 @@ categories:
 date: 2016-06-27
 title: JASMIN virtual event 2020
 description: The JASMIN team provided an update to users about key services and new developments which we have been working on over the last year.
-#draft: true
+icon: fas seedling
 ---
 <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="text-decoration: none; vertical-align: baseline;">A virtual event was run at the end of September, as a replacement for the JASMIN conference that was due to take place earlier this year. The event took place on the mornings of Tuesday 29th and Wednesday 30th September.&nbsp;<br /><br /></span>The JASMIN team provided an update to users about key services and new developments which we have been working on over the last year. See draft timetable below for more information.<br /><br /><span style="vertical-align: baseline;">The event was recorded - the full videos&nbsp;are available on our <a href="https://www.youtube.com/playlist?list=PLhF74YhqhjqkDJBnsR6TUsOyIGc9NHKnV">YouTube channel</a>.&nbsp;Cropped recordings of each individual talk are linked in the table below.&nbsp;</span><span style="vertical-align: baseline;">All </span><span style="vertical-align: baseline;"><a href="https://drive.google.com/drive/folders/1gM5_nF5KZUO2P5Odm3_0FfohqcYgtzOo?usp=sharing">slides are available here</a>&nbsp;and the <a href="https://drive.google.com/file/d/1u9VG9KQMvA2durrKZQgkpWfvusMKd1Uv/view?usp=sharing">unanswered questions from the Q&amp;A session are here</a></span><span style="vertical-align: baseline;">.&nbsp;</span></p>
 

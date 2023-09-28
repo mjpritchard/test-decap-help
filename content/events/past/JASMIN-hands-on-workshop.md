@@ -3,8 +3,8 @@ categories:
   - jasmin
 date: 2021-02-21
 title: Working on JASMIN - a hands-on workshop
-description: An interactive workshop aimed at novice to intermediate users of JASMIN
-#draft: true
+description: An interactive workshop aimed at novice to intermediate users of JASMIN.
+icon: fas hand-holding-hand
 ---
 <p><span>CEDA regularly run hands-on interactive workshops for users of JASMIN.&nbsp;</span><span>Past e</span><span>vent details can be seen below. Resources used in the workshops can be found <a href="https://github.com/cedadev/jasmin-workshop">here</a>.</span><br /><span></span></p>
 

@@ -3,7 +3,8 @@ categories:
   - jasmin
 date: 2012-09-25
 title: JASMIN Forum 2012
-#draft: true
+icon: fas seedling
+description: Forum addressing challenges of large scale data analysis in the atmospheric science community.
 ---
 <h2>Introduction</h2>
 <p>On 25 September 2012, NCAS hosted a research forum at Reading University to address the challenges of large scale data analysis in the numerical weather prediction, oceanographic and climate science community. The forum heard presentations about many NCAS activities including UPSCALE, CASCADE, HiGEM and WISER as well as presentations from the EO, atmospheric composition and oceanographic perspectives.</p>
