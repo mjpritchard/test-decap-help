@@ -29,7 +29,7 @@
     checkVersion = false
 
 [home]
-    sections = ["news", "about", "events","priorities","projects"]
+    sections = ["news", "services", "about", "events","priorities","projects"]
     fullCover = false
     centerHeadline = false
     style = ""
@@ -146,9 +146,14 @@
         paginate = 6
         separator = false
     [sections.about]
-        title = "About"
-        layout = "list"
+        title = "Find out more about us"
+        layout = "card"
         paginate = 3
+    [sections.services]
+        title = "Services we run"
+        layout = "list"
+        sort = "date"
+
 
 
 [favicon]

@@ -2,12 +2,15 @@
 title: Mission
 date: 2023-09-06
 showComments: false
-description: our mission
+description: Our goal is to provide data and information services for environmental science
 #layout: minimal
 thumbnail: img/stock-CEDA.jpg
 ---
 
-__Our mission:__
+We aim to support environmental science, further environmental data archival practices, and develop and deploy new technologies to enhance access to data. Additionally we provide services to aid large scale data analysis.
+
+## Our mission:
+
 
 
 {{< nav type="pills" id="underline-1" >}}
@@ -56,21 +59,54 @@ __Our mission:__
   {{< /nav-item >}}
 {{< /nav >}}
 
-### Key Services 
+<p class="p1">Our services are provided on behalf of the Natural Environment Research Council (<a href="https://nerc.ukri.org/">NERC</a>) via the National Centre for Atmospheric Science (<a href="https://ncas.ac.uk/en/">NCAS</a>) and the National Centre for Earth Observation (<a href="https://www.nceo.ac.uk/">NCEO</a>). CEDA is based within the&nbsp;<a href="http://www.stfc.ac.uk/ralspace/default.aspx"><span class="s1">RAL Space</span></a>&nbsp;department of the&nbsp;<span class="s1">Science and Technology Facilities Council</span>&nbsp;(<a href="https://stfc.ukri.org/">STFC</a>).&nbsp;JASMIN is co-managed by CEDA&nbsp;and STFC's <a href="https://www.scd.stfc.ac.uk/Pages/home.aspx">Scientific Computing Department</a>.&nbsp;&nbsp;</p>
 
-__The CEDA Archive__
-
-The {{< link "https://archive.ceda.ac.uk/" >}} CEDA Archive {{< /link >}}  is the national data centre for atmospheric and earth observation research. We host over 20 Petabytes of atmospheric and earth observation data. Sources include aircraft campaigns, satellites, automatic weather stations and climate models, amongst many more. 
-
-The CEDA Archive forms part of {{< link "https://eds.ukri.org/environmental-data-service" >}} NERC's Environmental Data Service {{< /link >}}  - a network of data centres covering all aspects of environmental science. Our team coordinate data management on behalf of {{< link "https://www.ukri.org/councils/nerc/" >}} NERC {{< /link >}}  for the UK atmospheric science and earth observation communities. 
-
-We hold data covering climate, composition, observations and numerical weather prediction as well as various earth observation datasets, including airborne and satellite data and imagery. Our main goal is to ensure that atmospheric and earth observation data are made available and accessible to all in order to fully realise their reuse potential.
-
-Prior to November 2016, these functions were operated by CEDA under the titles of the British Atmospheric Data Centre (BADC) and the NERC Earth Observation Data Centre (NEODC).
+### Look at our previous Annual Reports:
 
 
-__JASMIN__
+{{< accordion id="accordion-default" >}}
+  {{< accordion-item header="CEDA Annual Report 2021-2022"  >}}
+    {{< link href="https://zenodo.org/record/7554902">}} View here {{< /link >}}
+  {{< /accordion-item >}}  
+  {{< accordion-item header="CEDA Annual Report 2020-2021"  >}}
+    {{< link href="https://zenodo.org/record/5592466">}} View here {{< /link >}}
+  {{< /accordion-item >}} 
+  {{< accordion-item header="CEDA Annual Report 2019-2020"  >}}
+    {{< link href="https://zenodo.org/record/7357327">}} View here {{< /link >}}
+  {{< /accordion-item >}} 
+  {{< accordion-item header="CEDA Annual Report 2018-2019"  >}}
+    {{< link href="https://zenodo.org/record/7357301">}} View here {{< /link >}}
+  {{< /accordion-item >}} 
+  {{< accordion-item header="CEDA Annual Report 2017-2018"  >}}
+    {{< link href="https://zenodo.org/record/7357139">}} View here {{< /link >}}
+  {{< /accordion-item >}} 
+  {{< accordion-item header="CEDA Annual Report 2016-2017"  >}}
+    {{< link href="https://zenodo.org/record/7357114">}} View here {{< /link >}}
+  {{< /accordion-item >}} 
+  {{< accordion-item header="CEDA Annual Report 2015-2016"  >}}
+    {{< link href="https://zenodo.org/record/7357088">}} View here {{< /link >}}
+  {{< /accordion-item >}} 
+  {{< accordion-item header="CEDA Annual Report 2014-2015"  >}}
+    {{< link href="https://zenodo.org/record/7356969">}} View here {{< /link >}}
+  {{< /accordion-item >}} 
+  {{< accordion-item header="CEDA Annual Report 2013-2014" >}}
+    {{< link href="https://zenodo.org/record/7554902">}} View here0 {{< /link >}}
+  {{< /accordion-item >}} 
+  {{< accordion-item header="CEDA Annual Report 2012-2013" >}}
+    {{< link href="https://zenodo.org/record/7356918">}} View here {{< /link >}}
+  {{< /accordion-item >}} 
+  {{< accordion-item header="CEDA Annual Report 2011-2012"  >}}
+    {{< link href="https://zenodo.org/record/7356229">}} View here {{< /link >}}
+  {{< /accordion-item >}} 
+  {{< accordion-item header="CEDA Annual Report 2010-2011" >}}
+    {{< link href="https://zenodo.org/record/7356969">}} View here {{< /link >}}
+  {{< /accordion-item >}} 
+  {{< accordion-item header="CEDA Annual Report 2009-2010" >}}
+    {{< link href="https://zenodo.org/record/7356143">}} View here {{< /link >}}
+  {{< /accordion-item >}} 
+  {{< accordion-item header="CEDA Annual Report 2008-2009" >}}
+    {{< link href="https://zenodo.org/record/7356141">}} View here {{< /link >}}
+  {{< /accordion-item >}} 
 
-JASMIN is a globally unique data intensive supercomputer for environmental science. Over 160 science projects are currently supported, covering topics ranging from climate science and oceanography to air pollution, earthquake deformation and analysis of wildlife populations.
+{{< /accordion >}}
 
-JASMIN supports the data analysis requirements of the UK and European climate and earth system modelling community. It consists of multi-Petabyte fast storage co-located with data analysis computing facilities, with dedicated light paths to various key facilities and institutes within the community.
