@@ -10,6 +10,6 @@ thumbnail:
  #   caption: Caption can go here
 ---
 
-The Centre for Environmental Data Analysis is...
+The Centre for Environmental Data Analysis is an organisation that serves the environmental science community by the provision of data centres, data analysis & access, and research project participation.
 
-{{< button href="about" >}}About{{< /button>}}
+{{< button href="about" >}}What we do {{< /button>}}
