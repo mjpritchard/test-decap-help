@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Welcome to CEDA! on Centre for Environmental Data Analysis</title>
+    <link>/en/</link>
+    <description>Recent content in Welcome to CEDA! on Centre for Environmental Data Analysis</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2023 Science and Technology Facilities Council.</copyright><atom:link href="/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JASMIN Conference 2023</title>
+      <link>/en/events/jasmin-conference-2023/</link>
+      <pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/en/events/jasmin-conference-2023/</guid>
+      <description>We will be hosting the next JASMIN conference at our host institute on the Harwell Campus in Oxfordshire. It will occur over two half days on the afternoon of Wednesday 1 and the morning of Thursday 2 November 2023.</description>
+    </item>
+    
+    <item>
+      <title>History</title>
+      <link>/en/about/history/</link>
+      <pubDate>Wed, 06 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/en/about/history/</guid>
+      <description>Details of our mission would go here.</description>
+    </item>
+    
+    <item>
+      <title>Mission</title>
+      <link>/en/about/mission/</link>
+      <pubDate>Wed, 06 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/en/about/mission/</guid>
+      <description>Details of our mission would go here.</description>
+    </item>
+    
+    <item>
+      <title>Sample doc</title>
+      <link>/en/docs/sample-doc/</link>
+      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/en/docs/sample-doc/</guid>
+      <description>First heading Vivamus iaculis metus sed magna porta tincidunt. Aliquam molestie eget orci eu elementum. Integer pellentesque dolor sit amet suscipit maximus.</description>
+    </item>
+    
+    <item>
+      <title>Yet Another project</title>
+      <link>/en/projects/yet-another-project/</link>
+      <pubDate>Mon, 07 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/en/projects/yet-another-project/</guid>
+      <description>A useful thing to know Here is some text from Matt. Vivamus iaculis metus sed magna porta tincidunt. Aliquam molestie eget orci eu elementum.</description>
+    </item>
+    
+    <item>
+      <title>Fourth post</title>
+      <link>/en/news/stories/fourth-post/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/en/news/stories/fourth-post/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus libero in felis accumsan, vitae imperdiet metus vehicula. Quisque nec dignissim purus.</description>
+    </item>
+    
+    <item>
+      <title>Third post</title>
+      <link>/en/news/stories/third-post/</link>
+      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/en/news/stories/third-post/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id scelerisque ligula. Vestibulum eu lorem tortor. Suspendisse tristique ultrices mauris, non maximus lorem faucibus in.</description>
+    </item>
+    
+    <item>
+      <title>Second post</title>
+      <link>/en/news/stories/second-post/</link>
+      <pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/en/news/stories/second-post/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non sollicitudin sapien. Ut porttitor lectus eu tempor ultricies. Sed semper tincidunt nibh pellentesque condimentum.</description>
+    </item>
+    
+    <item>
+      <title>First post</title>
+      <link>/en/news/stories/first-post/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/en/news/stories/first-post/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate, ante in luctus congue, leo risus semper justo, vel consequat sapien lectus quis ipsum.</description>
+    </item>
+    
+    <item>
+      <title>Team</title>
+      <link>/en/about/team/</link>
+      <pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/en/about/team/</guid>
+      <description>Text here? abc</description>
+    </item>
+    
+    <item>
+      <title>Another project</title>
+      <link>/en/projects/another-project/</link>
+      <pubDate>Thu, 15 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/en/projects/another-project/</guid>
+      <description>Vivamus iaculis metus sed magna porta tincidunt. Aliquam molestie eget orci eu elementum. Integer pellentesque dolor sit amet suscipit maximus. Duis consequat, massa vitae volutpat rhoncus, erat augue venenatis velit, a auctor leo nulla nec turpis.</description>
+    </item>
+    
+    <item>
+      <title>Sample project</title>
+      <link>/en/projects/sample-project/</link>
+      <pubDate>Thu, 15 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/en/projects/sample-project/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</description>
+    </item>
+    
+    <item>
+      <title>File corruption issues</title>
+      <link>/updates/file-corruption-issues/</link>
+      <pubDate>Thu, 04 Feb 2021 16:59:16 +0000</pubDate>
+      
+      <guid>/updates/file-corruption-issues/</guid>
+      <description>Dear users
+As reported last week, we have been dealing with an issue of apparent file corruption affecting a relatively small number of files in some volumes with paths beginning /gws/nopw/j04.</description>
+    </item>
+    
+    <item>
+      <title>Update to high-performance data transfer services</title>
+      <link>/en/news/updates/2021-02-01-update-to-high-performance-data-transfer-services/</link>
+      <pubDate>Mon, 01 Feb 2021 15:35:52 +0000</pubDate>
+      
+      <guid>/en/news/updates/2021-02-01-update-to-high-performance-data-transfer-services/</guid>
+      <description>Dear users,
+You will be aware that many JASMIN and CEDA services were redeployed from RHEL6 to CentOS7 operating systems last year.</description>
+    </item>
+    
+    <item>
+      <title>Update COVID-19 impact on CEDA and JASMIN operations</title>
+      <link>/en/news/updates/2021-01-05-update-covid-19-impact-on-ceda-and-jasmin-operations/</link>
+      <pubDate>Tue, 05 Jan 2021 10:54:36 +0000</pubDate>
+      
+      <guid>/en/news/updates/2021-01-05-update-covid-19-impact-on-ceda-and-jasmin-operations/</guid>
+      <description>At the beginning of the Covid-19 pandemic, we announced that all of our services should be considered at risk. Thankfully, our services have run largely as normal throughout the pandemic, but 10 months on, unfortunately, this ‘at risk’ status still stands.</description>
+    </item>
+    
+  </channel>
+</rss>
