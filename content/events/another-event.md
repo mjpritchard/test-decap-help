@@ -11,4 +11,3 @@ draft: true
 Here's another event.
 
 A workshop event.
-

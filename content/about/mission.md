@@ -11,8 +11,6 @@ We aim to support environmental science, further environmental data archival pra
 
 ## Our mission:
 
-
-
 {{< nav type="pills" id="underline-1" >}}
   {{< nav-item header="Objectives" show="true" >}}
     <ul><li>Operate world-class data curation services, and in particular the NERC Data Centres for NCAS and NCEO</li><li>Manage state-of-the-art storage and compute infrastructure (JASMIN), in close collaboration with STFC Scientific Computing Department</li>
@@ -63,50 +61,48 @@ We aim to support environmental science, further environmental data archival pra
 
 ### Look at our previous Annual Reports:
 
-
 {{< accordion id="accordion-default" >}}
   {{< accordion-item header="CEDA Annual Report 2021-2022"  >}}
     {{< link href="https://zenodo.org/record/7554902">}} View here {{< /link >}}
   {{< /accordion-item >}}  
   {{< accordion-item header="CEDA Annual Report 2020-2021"  >}}
     {{< link href="https://zenodo.org/record/5592466">}} View here {{< /link >}}
-  {{< /accordion-item >}} 
+  {{< /accordion-item >}}
   {{< accordion-item header="CEDA Annual Report 2019-2020"  >}}
     {{< link href="https://zenodo.org/record/7357327">}} View here {{< /link >}}
-  {{< /accordion-item >}} 
+  {{< /accordion-item >}}
   {{< accordion-item header="CEDA Annual Report 2018-2019"  >}}
     {{< link href="https://zenodo.org/record/7357301">}} View here {{< /link >}}
-  {{< /accordion-item >}} 
+  {{< /accordion-item >}}
   {{< accordion-item header="CEDA Annual Report 2017-2018"  >}}
     {{< link href="https://zenodo.org/record/7357139">}} View here {{< /link >}}
-  {{< /accordion-item >}} 
+  {{< /accordion-item >}}
   {{< accordion-item header="CEDA Annual Report 2016-2017"  >}}
     {{< link href="https://zenodo.org/record/7357114">}} View here {{< /link >}}
-  {{< /accordion-item >}} 
+  {{< /accordion-item >}}
   {{< accordion-item header="CEDA Annual Report 2015-2016"  >}}
     {{< link href="https://zenodo.org/record/7357088">}} View here {{< /link >}}
-  {{< /accordion-item >}} 
+  {{< /accordion-item >}}
   {{< accordion-item header="CEDA Annual Report 2014-2015"  >}}
     {{< link href="https://zenodo.org/record/7356969">}} View here {{< /link >}}
-  {{< /accordion-item >}} 
+  {{< /accordion-item >}}
   {{< accordion-item header="CEDA Annual Report 2013-2014" >}}
     {{< link href="https://zenodo.org/record/7554902">}} View here0 {{< /link >}}
-  {{< /accordion-item >}} 
+  {{< /accordion-item >}}
   {{< accordion-item header="CEDA Annual Report 2012-2013" >}}
     {{< link href="https://zenodo.org/record/7356918">}} View here {{< /link >}}
-  {{< /accordion-item >}} 
+  {{< /accordion-item >}}
   {{< accordion-item header="CEDA Annual Report 2011-2012"  >}}
     {{< link href="https://zenodo.org/record/7356229">}} View here {{< /link >}}
-  {{< /accordion-item >}} 
+  {{< /accordion-item >}}
   {{< accordion-item header="CEDA Annual Report 2010-2011" >}}
     {{< link href="https://zenodo.org/record/7356969">}} View here {{< /link >}}
-  {{< /accordion-item >}} 
+  {{< /accordion-item >}}
   {{< accordion-item header="CEDA Annual Report 2009-2010" >}}
     {{< link href="https://zenodo.org/record/7356143">}} View here {{< /link >}}
-  {{< /accordion-item >}} 
+  {{< /accordion-item >}}
   {{< accordion-item header="CEDA Annual Report 2008-2009" >}}
     {{< link href="https://zenodo.org/record/7356141">}} View here {{< /link >}}
-  {{< /accordion-item >}} 
+  {{< /accordion-item >}}
 
 {{< /accordion >}}
-

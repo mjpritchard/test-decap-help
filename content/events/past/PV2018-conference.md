@@ -580,8 +580,6 @@ We are also entering the era of big data; for this conference year, we would lik
     </tbody>
     </table>
 
-
-
   {{< /nav-item >}}
   {{< nav-item header="Posters and Exhibitions" >}}
     <table>

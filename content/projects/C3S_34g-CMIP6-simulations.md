@@ -13,8 +13,8 @@ Summary: Following on from C3S_34a Lot 1 which provided CMIP5 data via an extend
 
 Aim: C3S 34g will deliver global climate projections from the World Climate Research Programme (WCRP) Coupled Model Intercomparison Project 6 (CMIP6) archive to the Climate Data Store. The data are taken from the research archive distributed through the Earth System Grid Federation (ESGF) and will be subjected to rigorous quality control. The tests will be based on the specifications defined for the CMIP6 archive by the Working Group on Coupled Models (WGCM) Infrastructure Panel (WIP).
 
-CEDA role: Managing the overall administration and execution of the contract, technical management and coordination, liaison with partners and CDS Team. 
+CEDA role: Managing the overall administration and execution of the contract, technical management and coordination, liaison with partners and CDS Team.
 
 <!--
 Link to
-https://www.ceda.ac.uk/blog/ceda-services-improve-access-to-global-climate-data/  --> 
+https://www.ceda.ac.uk/blog/ceda-services-improve-access-to-global-climate-data/  -->

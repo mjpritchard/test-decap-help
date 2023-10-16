@@ -8,4 +8,3 @@ draft: true
 ---
 
 An event happening some time in the future.
-

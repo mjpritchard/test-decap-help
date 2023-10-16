@@ -15,20 +15,20 @@ We will be hosting the next JASMIN conference at our host institute on the Harwe
 
 It’s been a long time since we last ran an in-person conference. Lots has changed with JASMIN and within the user community since then. Now is the perfect time to get everyone together again, share recent experiences, updates and changes, whilst strengthening the user community and discussing the future.
 
-The purpose of the conference is to: 
+The purpose of the conference is to:
 
 - Strengthen the community and enable sharing of experience and expertise
 
-- Get some feedback from users and provide an opportunity to discuss the feedback 
+- Get some feedback from users and provide an opportunity to discuss the feedback
 
-- Discuss the question: where does the community want us to go in the future? 
+- Discuss the question: where does the community want us to go in the future?
 
-In previous years, the JASMIN user conference has been a 1 or 2 day event - usually in person, at the Harwell Campus. It has consisted of a mixture of science talks from users, update presentations from the JASMIN team, breakout discussions and networking time. 
+In previous years, the JASMIN user conference has been a 1 or 2 day event - usually in person, at the Harwell Campus. It has consisted of a mixture of science talks from users, update presentations from the JASMIN team, breakout discussions and networking time.
 
-
-If you are interested in hearing more about how JASMIN can support your research, then this is a great opportunity to learn more, meet the team and other members of the user community. 
+If you are interested in hearing more about how JASMIN can support your research, then this is a great opportunity to learn more, meet the team and other members of the user community.
 
 ## Programme
+
 <table class="table">
 <tbody>
 <tr>
@@ -139,4 +139,3 @@ If you are interested in hearing more about how JASMIN can support your research
 </tr>
 </tbody>
 </table>
-

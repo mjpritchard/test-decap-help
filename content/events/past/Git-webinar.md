@@ -19,7 +19,7 @@ icon: fa-brands github
 <p><span>P</span><span>lease do not email the email address in the video, this was for the live viewing only. If you have any queries, please email the CEDA helpdesk </span></p>
 <p><span>Recorded on 1st November 2018 for the fourth webinar in a series provided by CEDA. See links here for&nbsp;<a href="https://drive.google.com/open?id=1xC6ll2AS_Lt9KbAt-eSSGkqzad3_OpXP">presentation slides</a>&nbsp;and<span>&nbsp;</span><a href="https://www.youtube.com/playlist?list=PLhF74YhqhjqmJIeOgX76zrmaHGIqSTGbU" title="Link to Git webinar">video</a>.&nbsp;</span></p>
 
-__Further Use of Git and GitHub__
+## Further Use of Git and GitHub
 
 <div class="style-scope ytd-expander" id="content">
 <div class="style-scope ytd-video-secondary-info-renderer" id="description">We will discuss:</div>
