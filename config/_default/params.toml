@@ -10,7 +10,7 @@
         tab = false
 
 [modules]
-    core = ["bootstrap", "flexsearch", "fontawesome"]
+    core = ["bootstrap", "fontawesome"] #"flexsearch", 
     optional = ["leaflet", "katex"]
     excludeSCSS = ["bootstrap"]
     disableTemplate = ["katex"]
@@ -40,7 +40,7 @@
     color = "body-tertiary"
     fixed = true
     offset = "3.8em"
-    search = true
+    search = false
     breadcrumb = true
     toc = true
     sidebar = true

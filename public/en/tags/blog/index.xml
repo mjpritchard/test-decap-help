@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on Centre for Environmental Data Analysis</title>
+    <link>/en/tags/blog/</link>
+    <description>Recent content in blog on Centre for Environmental Data Analysis</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2023 Science and Technology Facilities Council.</copyright>
+    <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/en/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fourth post</title>
+      <link>/en/news/stories/fourth-post/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/en/news/stories/fourth-post/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus libero in felis accumsan, vitae imperdiet metus vehicula. Quisque nec dignissim purus.</description>
+    </item>
+    
+    <item>
+      <title>Third post</title>
+      <link>/en/news/stories/third-post/</link>
+      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/en/news/stories/third-post/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id scelerisque ligula. Vestibulum eu lorem tortor. Suspendisse tristique ultrices mauris, non maximus lorem faucibus in.</description>
+    </item>
+    
+    <item>
+      <title>Second post</title>
+      <link>/en/news/stories/second-post/</link>
+      <pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/en/news/stories/second-post/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non sollicitudin sapien. Ut porttitor lectus eu tempor ultricies. Sed semper tincidunt nibh pellentesque condimentum.</description>
+    </item>
+    
+    <item>
+      <title>First post</title>
+      <link>/en/news/stories/first-post/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/en/news/stories/first-post/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate, ante in luctus congue, leo risus semper justo, vel consequat sapien lectus quis ipsum.</description>
+    </item>
+    
+  </channel>
+</rss>

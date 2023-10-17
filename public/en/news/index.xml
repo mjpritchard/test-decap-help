@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News on Centre for Environmental Data Analysis</title>
+    <link>/en/news/</link>
+    <description>Recent content in News on Centre for Environmental Data Analysis</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2023 Science and Technology Facilities Council.</copyright><atom:link href="/en/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fourth post</title>
+      <link>/en/news/stories/fourth-post/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/en/news/stories/fourth-post/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus libero in felis accumsan, vitae imperdiet metus vehicula. Quisque nec dignissim purus.</description>
+    </item>
+    
+    <item>
+      <title>Third post</title>
+      <link>/en/news/stories/third-post/</link>
+      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/en/news/stories/third-post/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id scelerisque ligula. Vestibulum eu lorem tortor. Suspendisse tristique ultrices mauris, non maximus lorem faucibus in.</description>
+    </item>
+    
+    <item>
+      <title>Second post</title>
+      <link>/en/news/stories/second-post/</link>
+      <pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/en/news/stories/second-post/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non sollicitudin sapien. Ut porttitor lectus eu tempor ultricies. Sed semper tincidunt nibh pellentesque condimentum.</description>
+    </item>
+    
+    <item>
+      <title>First post</title>
+      <link>/en/news/stories/first-post/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/en/news/stories/first-post/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate, ante in luctus congue, leo risus semper justo, vel consequat sapien lectus quis ipsum.</description>
+    </item>
+    
+    <item>
+      <title>File corruption issues</title>
+      <link>/updates/file-corruption-issues/</link>
+      <pubDate>Thu, 04 Feb 2021 16:59:16 +0000</pubDate>
+      
+      <guid>/updates/file-corruption-issues/</guid>
+      <description>Dear users
+As reported last week, we have been dealing with an issue of apparent file corruption affecting a relatively small number of files in some volumes with paths beginning /gws/nopw/j04.</description>
+    </item>
+    
+    <item>
+      <title>Update to high-performance data transfer services</title>
+      <link>/en/news/updates/2021-02-01-update-to-high-performance-data-transfer-services/</link>
+      <pubDate>Mon, 01 Feb 2021 15:35:52 +0000</pubDate>
+      
+      <guid>/en/news/updates/2021-02-01-update-to-high-performance-data-transfer-services/</guid>
+      <description>Dear users,
+You will be aware that many JASMIN and CEDA services were redeployed from RHEL6 to CentOS7 operating systems last year.</description>
+    </item>
+    
+    <item>
+      <title>Update COVID-19 impact on CEDA and JASMIN operations</title>
+      <link>/en/news/updates/2021-01-05-update-covid-19-impact-on-ceda-and-jasmin-operations/</link>
+      <pubDate>Tue, 05 Jan 2021 10:54:36 +0000</pubDate>
+      
+      <guid>/en/news/updates/2021-01-05-update-covid-19-impact-on-ceda-and-jasmin-operations/</guid>
+      <description>At the beginning of the Covid-19 pandemic, we announced that all of our services should be considered at risk. Thankfully, our services have run largely as normal throughout the pandemic, but 10 months on, unfortunately, this ‘at risk’ status still stands.</description>
+    </item>
+    
+  </channel>
+</rss>

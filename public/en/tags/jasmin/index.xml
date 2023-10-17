@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jasmin on Centre for Environmental Data Analysis</title>
+    <link>/en/tags/jasmin/</link>
+    <description>Recent content in jasmin on Centre for Environmental Data Analysis</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2023 Science and Technology Facilities Council.</copyright>
+    <lastBuildDate>Tue, 05 Jan 2021 10:54:36 +0000</lastBuildDate><atom:link href="/en/tags/jasmin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Update COVID-19 impact on CEDA and JASMIN operations</title>
+      <link>/en/news/updates/2021-01-05-update-covid-19-impact-on-ceda-and-jasmin-operations/</link>
+      <pubDate>Tue, 05 Jan 2021 10:54:36 +0000</pubDate>
+      
+      <guid>/en/news/updates/2021-01-05-update-covid-19-impact-on-ceda-and-jasmin-operations/</guid>
+      <description>At the beginning of the Covid-19 pandemic, we announced that all of our services should be considered at risk. Thankfully, our services have run largely as normal throughout the pandemic, but 10 months on, unfortunately, this ‘at risk’ status still stands.</description>
+    </item>
+    
+  </channel>
+</rss>
