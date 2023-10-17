@@ -17,4 +17,4 @@ The BADC was established in 1994 when it superseded a previous facility: the Geo
 
 A timeline of important CEDA events is detailed below:
 
-{{< timeline data="timeline-example" background="dark" >}}
+{{< timeline data="CEDA-history" background="dark" >}}
