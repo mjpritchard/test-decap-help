@@ -27,6 +27,22 @@ In previous years, the JASMIN user conference has been a 1 or 2 day event - usua
 
 If you are interested in hearing more about how JASMIN can support your research, then this is a great opportunity to learn more, meet the team and other members of the user community.
 
+Some of the user highlight talks you can expect are shown below:
+
+- JASMIN Object Storage: Optimizing Performance for Climate Research, Amulya Chevturi and Matt Brow, CEH
+
+- Simple Loss Model for European Windstorms, Dhirendra Kumar, Reading university
+
+- Implementing EOCIS services in Jasmin's External Cloud, Niall McCarroll, Reading University
+
+- Use of JASMIN as a collaboration platform for the Met Office atmospheric dispersion model, Benjamin Drummond, The Met Office
+
+- Using the JASMIN Object Store and Cloud to Enable Oceanographic Research, Colin Sauze
+
+- Climate Modelling in the NERC CANARI science programme, Reinhard Schiemann, Reading university
+
+- Operational forecasting for the WesCon WOEST campaign, Laurent Marker, NCAS
+
 ## Programme
 
 <table class="table">
@@ -42,7 +58,7 @@ If you are interested in hearing more about how JASMIN can support your research
 <tr>
 <td>12:00 - 13:15</td>
 <td colspan="2">
-<p>Arrivals, Registration</p>
+<p>Arrivals &amp; Registration</p>
 </td>
 </tr>
 <tr>
@@ -85,7 +101,7 @@ If you are interested in hearing more about how JASMIN can support your research
 <tr>
 <td>18:00</td>
 <td colspan="2">
-<p>Evening Meal Available</p>
+<p>Evening meal provided</p>
 </td>
 </tr>
 </tbody>
@@ -113,9 +129,16 @@ If you are interested in hearing more about how JASMIN can support your research
 </td>
 </tr>
 <tr>
-<td>09:15 - 11:15</td>
+<td>09:15 - 10:15</td>
 <td colspan="2">
-<p>Session 4: innovation &amp; Collaboration</p>
+<p>Session 4: New JASMIN tools and services </p>
+</td>
+</tr>
+<tr>
+<td>10:15 - 11:15</td>
+<td colspan="2">
+<p>Session 5: User Highlights #2</p>
+<p></p>
 </td>
 </tr>
 <tr>
@@ -128,7 +151,7 @@ If you are interested in hearing more about how JASMIN can support your research
 <tr>
 <td>11:45 - 12:45</td>
 <td colspan="2">
-<p>Session 5: User Highlights #2</p>
+<p>Session 6: Net zero and environmental sustainability</p>
 </td>
 </tr>
 <tr>
