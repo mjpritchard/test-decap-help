@@ -16,5 +16,3 @@ You will lead the technical development of software and services we provide for 
 You will need skills in both software and managing people as you'll head up a team of around ten developers. It's an exciting opportunity to lead future technical strategy for CEDA. To do this, you will also need to collaborate with our partners, end-users and colleagues.  
   
 Find out more about the type of work we do, by [looking at our latest annual report.](https://www.ceda.ac.uk/about/highlights/)
-
-

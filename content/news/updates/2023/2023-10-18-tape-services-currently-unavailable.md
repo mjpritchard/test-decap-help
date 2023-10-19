@@ -9,19 +9,8 @@ icon: fas circle-info
 
 Dear Users  
   
-
-
-
 Due to an issue with the tape library, the tape services including NLA, JDMA and ET are currency unavailable.  We are working to fix this issue as soon as possible.  
   
-
-
-
 We apologise for the inconvenience.  
   
-
-
-
 JASMIN Team
-
-

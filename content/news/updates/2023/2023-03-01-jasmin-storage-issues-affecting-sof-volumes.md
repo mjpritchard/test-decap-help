@@ -7,9 +7,7 @@ thumbnail:
 icon: fas circle-info
 ---
 
-Users may currently be experiencing impaired performance when using SOF storage volumes (/gws/nopw/j04/\* and CEDA Archive volumes). The issue is under investigation with the storage vendor.  
+Users may currently be experiencing impaired performance when using SOF storage volumes (`/gws/nopw/j04/*` and CEDA Archive volumes). The issue is under investigation with the storage vendor.  
   
 Apologies for any inconvenience meanwhile.  
 JASMIN Team
-
-

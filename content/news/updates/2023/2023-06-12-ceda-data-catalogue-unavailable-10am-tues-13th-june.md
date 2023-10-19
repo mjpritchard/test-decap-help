@@ -12,5 +12,3 @@ The CEDA Data Catalogue service will be temporarily unavailable tomorrow 10am, T
 This update will enable CEDA to provide more parameter information for datasets harvested from file content and also external citation listings for our DOI datasets populated with information harvested from the literature via the Scholix service.  
   
 We anticipate this downtime to be short and hope to resume services as normal shortly after.
-
-

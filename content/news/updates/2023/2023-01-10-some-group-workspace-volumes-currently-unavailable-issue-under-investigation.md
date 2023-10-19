@@ -9,10 +9,8 @@ icon: fas circle-info
 
 Dear users,  
   
-Several Group Workspace volumes are currently not accessible because of a metadata server issue. The issue is currently being investigated with the storage vendor.   
+Several Group Workspace volumes are currently not accessible because of a metadata server issue. The issue is currently being investigated with the storage vendor.
   
-Apologies for any inconvenience that this may cause.   
+Apologies for any inconvenience that this may cause.
   
 JASMIN Team
-
-

@@ -13,5 +13,3 @@ A minor power issue yesterday evening resulted in a number of LOTUS hosts reboot
   
 Apologies for any inconvenience caused.  
 JASMIN Team
-
-

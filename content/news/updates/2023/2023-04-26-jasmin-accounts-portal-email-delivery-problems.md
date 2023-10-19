@@ -9,22 +9,10 @@ icon: fas circle-info
 
 Dear JASMIN Users  
   
-
-
-
 The JASMIN accounts portal is currently having trouble delivering emails to users.
-
 
 This means that login verification codes from the accounts portal are not being sent at the moment.  
   
-
-
-
 We apologise for any inconvenience, and are working to fix the problem as soon as we can.  
   
-
-
-
 JASMIN Team
-
-

@@ -13,13 +13,6 @@ The tape library is currently out of service due to essential maintenance work. 
 2. Update in storage issues:  
 Further to yesterday’s issues with some storage volumes, a related issue has occurred again today but is being dealt with.Users may observe a brief unavailability of some GWS volumes, please be patient for a few minutes and they should become accessible again.
 
-
- 
-
-
-With apologies for any inconvenience. 
-
+With apologies for any inconvenience.
 
 JASMIN Team.
-
-

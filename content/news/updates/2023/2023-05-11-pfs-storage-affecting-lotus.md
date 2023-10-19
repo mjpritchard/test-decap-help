@@ -14,5 +14,3 @@ The issue with PFS storage reported earlier is also affecting the batch cluster 
 We apologise for the disruption caused by the storage issues but are working to understand and resolve them as soon as possible.  
   
 JASMIN Team.
-
-

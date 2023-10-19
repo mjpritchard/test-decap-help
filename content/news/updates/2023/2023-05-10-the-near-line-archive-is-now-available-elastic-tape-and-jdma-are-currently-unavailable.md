@@ -9,20 +9,11 @@ icon: fas circle-info
 
 Dear Users
 
-
-  
 Below follows an update to the tape services, NLA and JDMA/ET.
-
 
 1. The NLA is now available again for users.
 2. JDMA and ET remain unavailable due to ongoing problems.  We are working hard to remedy this and hope to have a resolution soon.
 
-
 We apologise for the inconvenience and impact on user’s workflows that are dependent on the tape services.  
   
-
-
-
 JASMIN Team
-
-

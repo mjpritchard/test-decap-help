@@ -13,16 +13,3 @@ The earlier issue with GridFTP and Globus transfers to/from JASMIN has now been 
 Apologies for any inconvenience.  
   
 JASMIN Team
-
-
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-Dear Users  
-  
-We are currently investigating an issue with GridFTP and Globus transfers to/from JASMIN: currently these are not working but we are working to investigate this issue.  
-  
-Apologies for any inconvenience meanwhile.  
-JASMIN Team
-
-

@@ -9,16 +9,10 @@ icon: fas circle-info
 
 We have a new exciting job opportunity to join our team. Further details at the link below.
 
-
 * [Storage Ops and User Support](https://www.careersportal.co.uk/UKRI-careers/jobs/storage-operations-and-user-support-2724) (deadline - 29 January 2023)
 
+Please contact the [helpdesk](mailto:%20support@ceda.ac.uk) if you need any additional information.
 
-Please contact the [helpdesk](mailto:%20support@ceda.ac.uk) if you need any additional information. 
-
-
-We look forward to reading your applications. 
-
+We look forward to reading your applications.
 
 The CEDA team
-
-

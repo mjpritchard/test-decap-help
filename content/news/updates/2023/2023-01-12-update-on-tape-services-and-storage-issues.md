@@ -13,7 +13,5 @@ The tape library is now functioning but with only one robot so performance is re
 2. Update in storage issues:  
 No further update at this stage: users may observe a brief unavailability of some GWS volumes, please be patient for a few minutes and they should become accessible again.  
   
-With apologies for any inconvenience.   
+With apologies for any inconvenience.
 JASMIN Team.
-
-

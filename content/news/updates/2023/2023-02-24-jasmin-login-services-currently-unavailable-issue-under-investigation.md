@@ -9,9 +9,7 @@ icon: fas circle-info
 
 Dear users,  
   
-JASMIN login services are currently unavailable because of issues with the home users directories. The issue is currently being investigated with the storage vendor.   
+JASMIN login services are currently unavailable because of issues with the home users directories. The issue is currently being investigated with the storage vendor.
   
-Apologies for any inconvenience that this may cause.   
+Apologies for any inconvenience that this may cause.
 JASMIN Team
-
-

@@ -8,5 +8,3 @@ icon: fas circle-info
 ---
 
 The temporary issue affecting the web download service for the archive ([data.ceda.ac.uk](http://data.ceda.ac.uk/)) has been resolved and normal service has resumed.Apologies for the inconvenience this may have caused.CEDA Team
-
-

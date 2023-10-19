@@ -9,10 +9,8 @@ icon: fas circle-info
 
 Dear Users  
   
-Some JASMIN and CEDA services have been affected by power supply instabilities overnight which have resulted in some systems being rebooted. Services are recovering.   
+Some JASMIN and CEDA services have been affected by power supply instabilities overnight which have resulted in some systems being rebooted. Services are recovering.
   
 Apologies for any inconvenience.  
   
 JASMIN Team
-
-

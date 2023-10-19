@@ -9,16 +9,8 @@ icon: fas circle-info
 
 Dear JASMIN Users
 
-
-  
 We now believe that the issues affecting the storage for the GWS and CEDA Archive are resolved. Please let us know if you continue to have issues with IO Errors on the storage
-
 
 Sorry for any inconvenience caused by this issue.  
   
-
-
-
 JASMIN Team
-
-

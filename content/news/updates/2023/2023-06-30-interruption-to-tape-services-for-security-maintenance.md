@@ -11,5 +11,3 @@ Further to our earlier announcement, tape services will need a separate interrup
 This affects Elastic Tape, JDMA and Near-Line Archive services.  
   
 With apologies for the short notice and any inconvenience caused
-
-

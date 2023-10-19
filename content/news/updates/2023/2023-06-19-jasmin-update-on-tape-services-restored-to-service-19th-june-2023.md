@@ -9,18 +9,10 @@ icon: fas circle-info
 
 We are happy to announce that all tape services are now available.
 
-
 The NLA, ET and JDMA services are again available and ready for users to submit requests after a period of extensive testing last week.
-
 
 This follows a major update to the underlying tape system, undertaken by Scientific Computing Department staff, who we thank for their hard work.
 
-
 We thank JASMIN users for their patience over the past two weeks and apologise for the inconvenience.  We also recognise that there has been an impact on user’s workflows.  
   
-
-
-
 JASMIN Team
-
-
