@@ -23,14 +23,26 @@
     ]
   },
   {
-    "date": "2023-09-19T10:30:00Z",
-    "status": "degraded",
-    "affectedServices": "Object Storage",
-    "summary": "Issues with Object Storage availability and performance.",
+    "date": "2023-10-18T08:00:00Z",
+    "status": "down",
+    "affectedServices": "Tape services",
+    "summary": "Tape services unavailable",
     "updates": [
       {
-        "date": "2023-09-19T10:30:00Z",
-        "details": "Under investigation with storage vendor."
+        "date": "2023-08-08T08:20:00Z",
+        "details": "Tape services currently unavailable, issue being investigated"
+      }
+    ]
+  },
+  {
+    "date": "2023-10-11T16:13:00Z",
+    "status": "at risk",
+    "affectedServices": "All services",
+    "summary": "All services at risk due to network issue",
+    "updates": [
+      {
+        "date": "2023-10-11T16:13:00Z",
+        "details": "Network component failure overnight has caused temporary outages to many JASMIN and CEDA services. Interventions have been partially successful but those systems now working remain at risk. Some LOTUS jobs may have failed. *At risk* status likely to remain in place for some time (weeks) while a permanent solution is sought."
       }
     ]
   },
