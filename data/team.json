@@ -2,7 +2,7 @@
     "jessealexander": {
       "bio": "Jesse started working at CEDA as part of the graduate scheme in July 2023. He graduted with a BSc in Cognitive Science from the University of Edinburgh. He specialises in interactions between humans and technology with a focus on user experience. At CEDA he works across different teams with developers and data scientists as well as in communications.",
       "name": "Jesse Alexander",
-      "thumbnail": "/assets/img/peoplejesse-alexander.jpg",
+      "thumbnail": "/img/people/jesse-alexander.JPG",
       "title": "Scientific Programming and Outreach Graduate"
     },
     "emilyanderson": {
@@ -38,7 +38,7 @@
     "rhysevans": {
       "bio": "Rhys joined the STFC apprentice scheme in 2018 after completing a MSc in Mathematical Physics at the University of Nottingham. At CEDA, Rhys is developing various web interfaces and services for both CEDA and JASMIN.",
       "name": "Rhys Evans",
-      "thumbnail": "/img/people/rhys=evans.jpg",
+      "thumbnail": "/img/people/rhys-evans.jpg",
       "title": "Software Engineer"
     },
     "nicolafarmer": {
@@ -56,7 +56,7 @@
     "hayleygray": {
       "bio": "Hayley joined CEDA in 2015 as a helpdesk operator making her the first point of contact between CEDA and the global research community. In addition to this, Hayley also has responsibility for data science tasks such as updating and editing the CEDA data catalogue and cataloguing data about solar plates for the UKSSDC. Hayley has just completed a BSc(Hons) in Earth Science with Astronomy and Planetary Science at the Open University and holds a Distinction in Meteorology level 3 certificate.",
       "name": "Hayley Gray",
-      "thumbnail": "/img/people/.jpg",
+      "thumbnail": "/img/people/hayley-gray.jpg",
       "title": "User Support and Metadata Services Operator"    
     },
     "andrewharwood": {
@@ -122,7 +122,7 @@
     "neilmassey": {
       "bio": "Neil joined CEDA in 2016 after working on the climateprediction.net and weather@home projects at the University of Oxford for 12 years, during which he gained a DPhil. in Atmospheric Physics. At CEDA, Neil is using his experience of large datasets to develop solutions to storing and accessing the very large volume of data held on JASMIN at CEDA, both in user's group workspaces and in the archive. These solutions involve using new storage technology, such as object stores and scale-out filesystems, and novel methods to exploit existing technology such as tape and parallel file systems.",
       "name": "Neil Massey",
-      "thumbnail": "/img/people/.jpg",
+      "thumbnail": "/img/people/neil-massey.jpeg",
       "title": "Senior Software Engineer"
         },
     "chaminukambanje": {
@@ -182,7 +182,7 @@
     "alisonwaterfall": {
       "bio": "Alison works a lot with data providers, ensuring consistent data standards and strong communication between organisations. Alison is heaavily invloved with the Climate Change Initiave (CCI) and has recently helped build a 'Metadata Bridge' aimed at bridging gaps and improving connectivity between different data centres holding certain datasets",
       "name": "Alison Waterfall",
-      "thumbnail": "/img/people/alison-waterfall.jpg",
+      "thumbnail": "/img/people/alison-waterfall.png",
       "title": "Senior Data Scientist: Earth Observation"
         },
     "edwilliamson": {
@@ -198,9 +198,9 @@
       "title": "Graduate Software Engineer"
         },
     "elliefisher": {
-      "bio": "Ellie has began",
+      "bio": "Ellie joined CEDA as a graduate data scientist in September 2023 after previously completing a summer placement with the team in 2022. She graduated with a BSc in Geology from Durham University in 2021, and a double MSc in Environmental Changes at Higher Latitudes from the University of Helsinki and Agricultural University of Iceland in 2023. She has a background in atmospheric science, Arctic meteorology and scientific programming, and her Master thesis focused on characterisation of microphysical and optical properties of atmospheric aerosols in Northeast Greenland. Within CEDA, Ellie is responsible for various atmospheric data management activities including processing of UK Met Office radiosonde datasets, archival of IPCC figure data, and developing help documentation for data reviewers at CEDA and other environmental data centres.",
       "name": "Ellie Fisher",
-      "thumbnail": "/img/people/neil-massey.jpg",
+      "thumbnail": "/img/people/ellie-fisher.jpg",
       "title": "Graduate Data Scientist"
         }
 
