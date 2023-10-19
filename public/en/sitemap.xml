@@ -2,11 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/en/events/jasmin-conference-2023/</loc>
-    <lastmod>2023-09-06T20:05:01+01:00</lastmod>
+    <loc>/en/events/introduction-scientific-computing/</loc>
+    <lastmod>2023-10-16T10:49:00+01:00</lastmod>
   </url><url>
-    <loc>/en/tags/elastic-tape/</loc>
+    <loc>/en/tags/jasmin/</loc>
     <lastmod>2023-10-19T09:44:10+01:00</lastmod>
+  </url><url>
+    <loc>/en/events/jasmin-conference-2023/</loc>
+    <lastmod>2023-10-18T15:20:15+01:00</lastmod>
   </url><url>
     <loc>/en/tags/news/</loc>
     <lastmod>2023-10-19T09:44:10+01:00</lastmod>
@@ -14,10 +17,10 @@
     <loc>/en/tags/</loc>
     <lastmod>2023-10-19T09:44:10+01:00</lastmod>
   </url><url>
-    <loc>/en/news/updates/2023/2023-10-18-tape-services-currently-unavailable/</loc>
+    <loc>/en/tags/elastic-tape/</loc>
     <lastmod>2023-10-19T09:44:10+01:00</lastmod>
   </url><url>
-    <loc>/en/tags/jasmin/</loc>
+    <loc>/en/news/updates/2023/2023-10-18-tape-services-currently-unavailable/</loc>
     <lastmod>2023-10-19T09:44:10+01:00</lastmod>
   </url><url>
     <loc>/en/news/updates/2023/2023-10-17-jasmin2023-user-conference-call-for-registration-reminder/</loc>
@@ -47,6 +50,9 @@
     <loc>/en/news/updates/2023/2023-09-22-ceda-web-download-service-issues/</loc>
     <lastmod>2023-10-19T09:44:10+01:00</lastmod>
   </url><url>
+    <loc>/en/projects/net-zero-scoping-project/</loc>
+    <lastmod>2023-10-16T10:49:00+01:00</lastmod>
+  </url><url>
     <loc>/en/news/updates/2023/2023-09-19-vacancies-student-industrial-placements-and-graduate-role-available/</loc>
     <lastmod>2023-10-19T09:44:10+01:00</lastmod>
   </url><url>
@@ -57,10 +63,10 @@
     <lastmod>2023-10-19T09:44:10+01:00</lastmod>
   </url><url>
     <loc>/en/about/history/</loc>
-    <lastmod>2023-09-06T20:05:01+01:00</lastmod>
+    <lastmod>2023-10-17T13:39:23+01:00</lastmod>
   </url><url>
     <loc>/en/about/mission/</loc>
-    <lastmod>2023-09-06T20:05:01+01:00</lastmod>
+    <lastmod>2023-10-16T10:49:00+01:00</lastmod>
   </url><url>
     <loc>/en/news/updates/2023/2023-08-31-update-on-jasmin-issues-31-aug-2023/</loc>
     <lastmod>2023-10-19T09:44:10+01:00</lastmod>
@@ -84,13 +90,7 @@
     <lastmod>2023-10-19T09:44:10+01:00</lastmod>
   </url><url>
     <loc>/en/status/</loc>
-    <lastmod>2023-09-15T18:53:15+01:00</lastmod>
-  </url><url>
-    <loc>/en/tags/html/</loc>
-    <lastmod>2023-08-25T19:38:15+01:00</lastmod>
-  </url><url>
-    <loc>/en/projects/yet-another-project/</loc>
-    <lastmod>2023-08-25T19:38:15+01:00</lastmod>
+    <lastmod>2023-10-16T10:49:00+01:00</lastmod>
   </url><url>
     <loc>/en/tags/impact-story/</loc>
     <lastmod>2023-10-19T09:44:10+01:00</lastmod>
@@ -221,6 +221,9 @@
     <loc>/en/news/updates/2023/2023-01-31-update-on-jasmin-maintenance-tues-31-jan-2023-window-extended/</loc>
     <lastmod>2023-10-19T09:44:10+01:00</lastmod>
   </url><url>
+    <loc>/en/events/past/jasmin-orchid-webinar/</loc>
+    <lastmod>2023-10-16T10:49:00+01:00</lastmod>
+  </url><url>
     <loc>/en/news/updates/2023/2023-01-27-jasmin-gpu-webinar-31st-jan-2023-agenda-and-joining-details/</loc>
     <lastmod>2023-10-19T09:44:10+01:00</lastmod>
   </url><url>
@@ -338,11 +341,29 @@
     <loc>/en/news/updates/2022/2022-05-05-jasmin-update-on-forthcoming-maintenance-periods-may-june-2022/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
   </url><url>
+    <loc>/en/services/other-sevices/</loc>
+    <lastmod>2023-10-16T10:49:00+01:00</lastmod>
+  </url><url>
     <loc>/en/about/</loc>
-    <lastmod>2023-09-15T15:00:39+01:00</lastmod>
+    <lastmod>2023-10-16T10:49:00+01:00</lastmod>
+  </url><url>
+    <loc>/en/priorities/big-data-analysis/</loc>
+    <lastmod>2023-09-26T14:39:01+01:00</lastmod>
+  </url><url>
+    <loc>/en/services/archive/</loc>
+    <lastmod>2023-10-16T10:49:00+01:00</lastmod>
+  </url><url>
+    <loc>/en/priorities/collaboration/</loc>
+    <lastmod>2023-09-27T11:47:17+01:00</lastmod>
+  </url><url>
+    <loc>/en/priorities/enabling-science/</loc>
+    <lastmod>2023-10-16T10:49:00+01:00</lastmod>
+  </url><url>
+    <loc>/en/services/jasmin/</loc>
+    <lastmod>2023-10-16T10:49:00+01:00</lastmod>
   </url><url>
     <loc>/en/about/team/</loc>
-    <lastmod>2023-09-06T20:05:01+01:00</lastmod>
+    <lastmod>2023-09-28T13:23:51+01:00</lastmod>
   </url><url>
     <loc>/en/news/updates/2022/2022-03-30-announcement-of-opportunity-net-zero-sandpit/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
@@ -464,6 +485,9 @@
     <loc>/en/news/updates/2021/2021-08-09-the-data-behind-the-new-ipcc-report/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
   </url><url>
+    <loc>/en/events/past/jupyter-notebook-webinar/</loc>
+    <lastmod>2023-10-16T10:49:00+01:00</lastmod>
+  </url><url>
     <loc>/en/news/updates/2021/2021-07-29-improved-access-for-met-office-weather-data-held-in-ceda-archive/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
   </url><url>
@@ -476,26 +500,47 @@
     <loc>/en/news/updates/2021/2021-07-19-lotus-scheduler-issues-investigation-underway/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
   </url><url>
-    <loc>/en/projects/another-project/</loc>
-    <lastmod>2023-08-25T19:38:15+01:00</lastmod>
+    <loc>/en/projects/c3s-34e-esgf-compute-nodes/</loc>
+    <lastmod>2023-09-27T11:47:17+01:00</lastmod>
   </url><url>
-    <loc>/en/tags/css/</loc>
-    <lastmod>2023-08-25T19:38:15+01:00</lastmod>
+    <loc>/en/projects/c3s-434-cds-climate-adapt/</loc>
+    <lastmod>2023-09-27T11:47:17+01:00</lastmod>
   </url><url>
-    <loc>/en/tags/golang/</loc>
-    <lastmod>2023-08-25T19:38:15+01:00</lastmod>
+    <loc>/en/projects/cds-zone-20-21/</loc>
+    <lastmod>2023-09-27T11:47:17+01:00</lastmod>
   </url><url>
-    <loc>/en/tags/javascript/</loc>
-    <lastmod>2023-08-25T19:38:15+01:00</lastmod>
+    <loc>/en/projects/met-office-ensembles-support/</loc>
+    <lastmod>2023-09-27T11:47:17+01:00</lastmod>
   </url><url>
-    <loc>/en/projects/sample-project/</loc>
-    <lastmod>2023-08-25T19:38:15+01:00</lastmod>
+    <loc>/en/projects/jasmin-support-jncc/</loc>
+    <lastmod>2023-09-27T11:47:17+01:00</lastmod>
+  </url><url>
+    <loc>/en/projects/esa-twin-earth-precursor/</loc>
+    <lastmod>2023-09-27T11:47:17+01:00</lastmod>
+  </url><url>
+    <loc>/en/projects/ukcp18-services-20-21/</loc>
+    <lastmod>2023-09-27T11:47:17+01:00</lastmod>
   </url><url>
     <loc>/en/news/updates/2021/2021-07-05-jasmin-system-maintenance-tuesday-6th-july-2021/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
   </url><url>
+    <loc>/en/projects/c3s-oceans-data-archival/</loc>
+    <lastmod>2023-09-27T11:47:17+01:00</lastmod>
+  </url><url>
+    <loc>/en/projects/cci-knowledge-exchange/</loc>
+    <lastmod>2023-10-16T10:49:00+01:00</lastmod>
+  </url><url>
+    <loc>/en/projects/is-enes3/</loc>
+    <lastmod>2023-10-16T10:49:00+01:00</lastmod>
+  </url><url>
+    <loc>/en/projects/c3s_34f-models/</loc>
+    <lastmod>2023-09-27T11:47:17+01:00</lastmod>
+  </url><url>
     <loc>/en/news/updates/2021/2021-07-01-supporting-cop26-hackathons/</loc>
     <lastmod>2023-10-19T09:09:28+01:00</lastmod>
+  </url><url>
+    <loc>/en/projects/c3s_34g-cmip6-simulations/</loc>
+    <lastmod>2023-10-16T10:49:00+01:00</lastmod>
   </url><url>
     <loc>/en/news/updates/2021/2021-06-24-jasmin-status-updates-and-reminder-of-planned-maintenance-tuesday-6-july/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
@@ -572,6 +617,9 @@
     <loc>/en/news/updates/2021/2021-02-23-advance-notice-jasmin-system-maintenance-tues-2-march-2021/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
   </url><url>
+    <loc>/en/events/past/jasmin-hands-on-workshop/</loc>
+    <lastmod>2023-10-16T10:49:00+01:00</lastmod>
+  </url><url>
     <loc>/en/news/updates/2021/2021-02-19-update-problems-with-elastic-tape/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
   </url><url>
@@ -608,11 +656,17 @@
     <loc>/en/news/updates/2021/2021-01-25-reboot-of-server-hpxfer1jasminacuk/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
   </url><url>
+    <loc>/en/events/past/stfc-air-quality-network-event/</loc>
+    <lastmod>2023-10-16T10:49:00+01:00</lastmod>
+  </url><url>
     <loc>/en/news/updates/2021/2021-01-20-jasmin-sci368-reboot-at-0830-am-tomorrow/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
   </url><url>
     <loc>/en/news/updates/2021/2021-01-20-change-of-server-for-elastic-tape-service/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
+  </url><url>
+    <loc>/en/events/past/jasmin-user-seminar-series/</loc>
+    <lastmod>2023-10-16T10:49:00+01:00</lastmod>
   </url><url>
     <loc>/en/news/updates/2021/2021-01-07-helpdesk-email-issue-please-use-beacon/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
@@ -782,6 +836,9 @@
     <loc>/en/news/updates/2020/2020-06-16-changes-to-jasmin-helpdesk/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
   </url><url>
+    <loc>/en/events/past/jasmin-notebook-service-webinar/</loc>
+    <lastmod>2023-10-16T10:49:00+01:00</lastmod>
+  </url><url>
     <loc>/en/news/updates/2020/2020-06-10-reminder-jasmin-at-risk-period-11th-june-2020/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
   </url><url>
@@ -943,6 +1000,12 @@
   </url><url>
     <loc>/en/news/updates/2019/2019-12-17-christmas-shutdown/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
+  </url><url>
+    <loc>/en/events/past/python-jasmin-webinar/</loc>
+    <lastmod>2023-10-16T10:49:00+01:00</lastmod>
+  </url><url>
+    <loc>/en/events/past/lotus-webinar/</loc>
+    <lastmod>2023-10-16T10:49:00+01:00</lastmod>
   </url><url>
     <loc>/en/news/updates/2019/2019-12-11-jasmin-migration-to-centos7-update-3/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
@@ -1124,17 +1187,50 @@
     <loc>/en/news/updates/2019/2019-05-01-elastic-tape-now-fully-available/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
   </url><url>
+    <loc>/en/projects/clipc/</loc>
+    <lastmod>2023-09-27T11:47:17+01:00</lastmod>
+  </url><url>
     <loc>/en/news/updates/2019/2019-04-30-elastic-tape-and-nla-now-available/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
   </url><url>
     <loc>/en/news/updates/2019/2019-04-29-ceda-archive-data-browser-unavailable-900-1300-30th-april/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
   </url><url>
+    <loc>/en/projects/cci-open-data-portal/</loc>
+    <lastmod>2023-09-27T11:47:17+01:00</lastmod>
+  </url><url>
+    <loc>/en/projects/eustace/</loc>
+    <lastmod>2023-09-27T11:47:17+01:00</lastmod>
+  </url><url>
+    <loc>/en/projects/baci/</loc>
+    <lastmod>2023-09-27T11:47:17+01:00</lastmod>
+  </url><url>
+    <loc>/en/projects/fiduceo/</loc>
+    <lastmod>2023-09-27T11:47:17+01:00</lastmod>
+  </url><url>
     <loc>/en/news/updates/2019/2019-04-26-important-jasmin-sci4-reboot-at-330pm-today/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
   </url><url>
+    <loc>/en/projects/c3s311a-lot-2/</loc>
+    <lastmod>2023-10-16T10:49:00+01:00</lastmod>
+  </url><url>
+    <loc>/en/projects/primavera/</loc>
+    <lastmod>2023-09-27T11:47:17+01:00</lastmod>
+  </url><url>
     <loc>/en/news/updates/2019/2019-04-18-update-jasmin-cloud-upgrade/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
+  </url><url>
+    <loc>/en/projects/uksa-copernicus-data-support/</loc>
+    <lastmod>2023-09-27T11:47:17+01:00</lastmod>
+  </url><url>
+    <loc>/en/projects/ukcp18-services/</loc>
+    <lastmod>2023-09-27T11:47:17+01:00</lastmod>
+  </url><url>
+    <loc>/en/projects/ukcp09-user-interface/</loc>
+    <lastmod>2023-09-27T11:47:17+01:00</lastmod>
+  </url><url>
+    <loc>/en/projects/mohc-data-pipeline/</loc>
+    <lastmod>2023-09-27T11:47:17+01:00</lastmod>
   </url><url>
     <loc>/en/news/updates/2019/2019-04-08-storage-problems-on-jasmin-has-now-been-resolved/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
@@ -1145,11 +1241,32 @@
     <loc>/en/news/updates/2019/2019-04-08-ceda-at-egu-2019/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
   </url><url>
+    <loc>/en/projects/ipcc-ddc/</loc>
+    <lastmod>2023-09-27T11:47:17+01:00</lastmod>
+  </url><url>
+    <loc>/en/projects/dap-support/</loc>
+    <lastmod>2023-09-27T11:47:17+01:00</lastmod>
+  </url><url>
+    <loc>/en/projects/prise/</loc>
+    <lastmod>2023-09-27T11:47:17+01:00</lastmod>
+  </url><url>
     <loc>/en/news/updates/2019/2019-04-05-ceda-archive-partial-storage-issues-final-update/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
   </url><url>
     <loc>/en/news/updates/2019/2019-04-05-ceda-archive-web-browser-currently-down/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
+  </url><url>
+    <loc>/en/projects/cds-zone/</loc>
+    <lastmod>2023-09-27T11:47:17+01:00</lastmod>
+  </url><url>
+    <loc>/en/projects/c3s-regional-climate-projections-cds/</loc>
+    <lastmod>2023-09-27T11:47:17+01:00</lastmod>
+  </url><url>
+    <loc>/en/projects/c3s-climate-projections-cds/</loc>
+    <lastmod>2023-09-27T11:47:17+01:00</lastmod>
+  </url><url>
+    <loc>/en/projects/sentinel-data-relay-hub/</loc>
+    <lastmod>2023-09-27T11:47:17+01:00</lastmod>
   </url><url>
     <loc>/en/news/updates/2019/2019-03-29-ceda-staff-deliver-training-for-earth-observation-scientists/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
@@ -1208,11 +1325,23 @@
     <loc>/en/news/updates/2018/2018-12-17-new-dataset-launched-haduk-grid/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
   </url><url>
+    <loc>/en/events/past/nag-jasmin-workshop/</loc>
+    <lastmod>2023-09-28T11:43:51+01:00</lastmod>
+  </url><url>
     <loc>/en/news/updates/2018/2018-11-15-important-use-of-jasmin-storage-all-users-please-read/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
   </url><url>
+    <loc>/en/events/past/git-webinar/</loc>
+    <lastmod>2023-10-16T10:49:00+01:00</lastmod>
+  </url><url>
     <loc>/en/news/updates/2018/2018-10-31-goodbye-jasmin1-hello-jasmin4/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
+  </url><url>
+    <loc>/en/events/past/introduction-lotus-webinar/</loc>
+    <lastmod>2023-10-16T10:49:00+01:00</lastmod>
+  </url><url>
+    <loc>/en/events/past/data-preparation-ceda-archive-webinar/</loc>
+    <lastmod>2023-10-16T10:49:00+01:00</lastmod>
   </url><url>
     <loc>/en/news/updates/2018/2018-09-13-two-graduate-vacancies-now-open-closing-date-28th-october/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
@@ -1232,11 +1361,17 @@
     <loc>/en/news/updates/2018/2018-07-16-third-annual-jasmin-conference-presentations-available-now/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
   </url><url>
+    <loc>/en/events/past/jasmin2018/</loc>
+    <lastmod>2023-09-28T11:43:51+01:00</lastmod>
+  </url><url>
     <loc>/en/news/updates/2018/2018-05-31-global-gathering-of-data-scientists-at-pv2018-view-their-presentations-now/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
   </url><url>
     <loc>/en/news/updates/2018/2018-05-24-new-ceda-privacy-and-cookie-notice-and-archive-terms-and-conditions/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
+  </url><url>
+    <loc>/en/events/past/pv2018-conference/</loc>
+    <lastmod>2023-10-16T10:49:00+01:00</lastmod>
   </url><url>
     <loc>/en/news/updates/2018/2018-05-03-ceda-data-catalogue-new-improved-search-functions/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
@@ -1258,6 +1393,9 @@
   </url><url>
     <loc>/en/news/updates/2018/2018-03-07-jasmin-upgrade-reminders-and-further-information/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
+  </url><url>
+    <loc>/en/events/past/getting-started-jasmin-webinar/</loc>
+    <lastmod>2023-10-16T10:49:00+01:00</lastmod>
   </url><url>
     <loc>/en/news/updates/2018/2018-02-23-jasmin-upgrade-1-unavailability-14th-march-2-gws-changes/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
@@ -1306,6 +1444,9 @@
   </url><url>
     <loc>/en/news/updates/2017/2017-07-04-new-map-application-launched-ceda-satellite-data-finder/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
+  </url><url>
+    <loc>/en/events/past/jasmin2017/</loc>
+    <lastmod>2023-10-16T10:49:00+01:00</lastmod>
   </url><url>
     <loc>/en/news/updates/2017/2017-06-23-ceda-esgf-nodes-back-in-service/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
@@ -1391,6 +1532,15 @@
     <loc>/en/news/updates/2016/2016-06-29-ukssdc-website-and-services-partially-restored/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
   </url><url>
+    <loc>/en/events/past/jasmin2016/</loc>
+    <lastmod>2023-09-28T11:43:51+01:00</lastmod>
+  </url><url>
+    <loc>/en/events/past/jasmin-virtual-event2020/</loc>
+    <lastmod>2023-10-16T10:49:00+01:00</lastmod>
+  </url><url>
+    <loc>/en/events/past/slurm-webinar/</loc>
+    <lastmod>2023-10-16T10:49:00+01:00</lastmod>
+  </url><url>
     <loc>/en/news/updates/2016/2016-03-18-ceda-staff-data-curation-takes-off-literally/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
   </url><url>
@@ -1442,6 +1592,9 @@
     <loc>/en/news/updates/2014/2014-06-26-mars-analysis-correction-data-assimilation-fully-citable-dataset-at-badc/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
   </url><url>
+    <loc>/en/events/past/jasmin-launch-event/</loc>
+    <lastmod>2023-10-16T10:49:00+01:00</lastmod>
+  </url><url>
     <loc>/en/news/updates/2014/2014-04-02-ceda-ftp-service-upgraded/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
   </url><url>
@@ -1483,6 +1636,9 @@
   </url><url>
     <loc>/en/news/updates/2012/2012-09-25-ceda-openid-service-operational-again-login-to-wps-and-badc-cmip5-gateway-restored/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
+  </url><url>
+    <loc>/en/events/past/jasmin-forum2012/</loc>
+    <lastmod>2023-10-16T10:49:00+01:00</lastmod>
   </url><url>
     <loc>/en/news/updates/2012/2012-08-28-global-marine-surface-observations-now-available-from-ceda-badc/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
@@ -2318,19 +2474,25 @@
     <loc>/en/news/updates/1996/1996-12-10-new-earth-probe-and-adeos-toms-images-available/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
   </url><url>
-    <loc>/en/docs/</loc>
-    <lastmod>2023-08-25T19:38:15+01:00</lastmod>
+    <loc>/en/priorities/</loc>
+    <lastmod>2023-09-26T14:39:01+01:00</lastmod>
   </url><url>
     <loc>/en/events/</loc>
-    <lastmod>2023-09-15T15:00:39+01:00</lastmod>
+    <lastmod>2023-09-28T11:43:51+01:00</lastmod>
+  </url><url>
+    <loc>/en/services/</loc>
+    <lastmod>2023-10-16T10:49:00+01:00</lastmod>
+  </url><url>
+    <loc>/en/docs/</loc>
+    <lastmod>2023-08-25T19:38:15+01:00</lastmod>
   </url><url>
     <loc>/en/news/</loc>
     <lastmod>2023-09-15T15:00:39+01:00</lastmod>
   </url><url>
     <loc>/en/projects/</loc>
-    <lastmod>2023-09-15T15:00:39+01:00</lastmod>
+    <lastmod>2023-09-27T15:13:00+01:00</lastmod>
   </url><url>
     <loc>/en/</loc>
-    <lastmod>2023-09-06T20:05:01+01:00</lastmod>
+    <lastmod>2023-10-03T16:04:53+01:00</lastmod>
   </url>
 </urlset>
