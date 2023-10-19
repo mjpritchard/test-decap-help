@@ -9,7 +9,7 @@ icon: fas circle-info
 
 The properties of our oceans are changing. The Southern Ocean absorbs more heat than any other ocean and as a consequence of climate change, it is warming at an alarming rate. Warming oceans lead to a decline in Antarctic sea ice, increased ocean freshening, sea-level rise, reduced oxygen and CO2 uptake and slow the vertical exchange of waters. This may bring about increased food scarcity, diseases, extreme weather events, loss of coastal protection, and more. It is therefore extremely important to have a detailed understanding of what could happen in the future with a Southern Ocean that is warmer, less salty and is circulating in different ways.
 
- {{< image src="/img/news/2021/2021-03-23-oceans-in-the-cloud/antarctica-482686_1280.jpg"  caption="Image by Angie Agostino from Pixabay" class="rounded" >}}
+{{< image src="/img/news/2021/2021-03-23-oceans-in-the-cloud/antarctica-482686_1280.jpg"  caption="Image by Angie Agostino from Pixabay" class="rounded" >}}
 
 These interactions are challenging to simulate accurately in coupled climate models, making it hard to predict changes and consequences.  To understand what the models are simulating well and what not so well, researchers need to undertake detailed data analysis and intercomparison. However, the immense size of these datasets means that simply examining the model output is a technical challenge all of its own. With the help of JASMIN, detailed analysis of the Southern Ocean can be undertaken, using the largest ever climate model dataset (the Coupled Model Intercomparison Project 6 - CMIP6, clocking in at over 90 Petabytes!).
   
