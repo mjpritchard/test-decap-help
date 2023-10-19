@@ -1,7 +1,7 @@
 ---
 author: Matt Pritchard
-title: Extra
-description: Does this ever get rendered?
+title: CEDA Events
+description: A list of any upcoming events and all of our past events including conferences, workshops and webinars.
 nested: true
 layout: list
 ---

@@ -4,6 +4,7 @@ title: Yet Another project
 date: 2023-08-07
 description: Yet Another project.
 tags: ["html"]
+draft: true
 icon: fas bomb
 ---
 

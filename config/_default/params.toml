@@ -29,7 +29,7 @@
     checkVersion = false
 
 [home]
-    sections = ["news", "events", "projects"]
+    sections = ["news", "services", "about", "events","priorities","projects"]
     fullCover = false
     centerHeadline = false
     style = ""
@@ -101,13 +101,25 @@
         style = "border-0 card-zoom"
         homepage = 3
         separator = true
+    [sections.priorities]
+        title = "Our priorities at CEDA"
+        layout = "nav"
+        sort = "weight"
+        reverse = false
+        background = "body-tertiary"
+        color = "primary"
+        style = "justify-content-center"
+        pane = "persona"
+        type = "pills"
+        class = "nav-justified"
+        width = 100
     [sections.events]
         title = "Events"
         layout = "card"
         sort = "date"
         reverse = true
         nested = true # TODO check at https://gethinode.com/docs/configuration/layout/
-        cols = 2
+        cols = 3
         color = ""
         padding = "0"
         header = "full"
@@ -119,8 +131,8 @@
     [sections.projects]
         title = "Projects"
         layout = "card"
-        sort = "weight"
-        reverse = false
+        sort = "date"
+        reverse = true
         nested = true # TODO check at https://gethinode.com/docs/configuration/layout/
         cols = 3
         background = "body-tertiary"
@@ -131,7 +143,18 @@
         orientation = "horizontal"
         style = "border-1 card-emphasize"
         homepage = 3
+        paginate = 6
         separator = false
+    [sections.about]
+        title = "Find out more about us"
+        layout = "card"
+        paginate = 3
+    [sections.services]
+        title = "Services we run"
+        layout = "list"
+        sort = "date"
+
+
 
 [favicon]
     logo = "img/favicon.png"

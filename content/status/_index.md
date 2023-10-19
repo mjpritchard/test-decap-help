@@ -7,8 +7,6 @@ showComments: false
 
 This webpage provides information about current and future incidents related to CEDA and JASMIN services.
 
-You may also wish to check our news feed for recent updates. 
+You may also wish to check our news feed for recent updates.
 
 ## Status key
-
-

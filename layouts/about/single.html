@@ -5,15 +5,12 @@
                 <div class="container-fluid p-4 px-xxl-0">
                     <p class="display-4 mt-3">{{ .Title }}</p>
                      {{ .Content }}
-                    <p>Team from headless files</p>
+                    
                     {{ $headless := .Site.GetPage "/about/people" }}
                     {{ $reusablePages := $headless.Resources.Match "*" }}
                     <h2>People</h2>
-                    {{ range $reusablePages }}
-                        <h3>{{ .Title }}</h3>
-                        {{ .Content }}
-                    {{ end }}
-                    <p>Team from JSON list</p>
+
+
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
                         {{ range $.Site.Data.team }}
                             {{ partial "team-member.html" . }}

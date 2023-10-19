@@ -1,0 +1,187 @@
+# This file holds all menu entries for the docs sidebar
+
+- title: Development of Geophysical Data Facility (GDF) Begins
+  icon: fas rocket
+  color: primary
+  date: 1984-07-01
+  content:
+    An Advisory Panel (of representatives from a wide range of interested institutions and universities) is set up to oversee the development of the Geophysical Data Facility (GDF) and a number of pilot studies are being undertaken. 
+    The GDF is to be set-up to organise and provide access to data from many Science and Engineering Research Council (SERC) Geophysical experiments in the Middle Atmosphere, Climate, Solar Terrestrial and Planetary research.
+
+- title: Geophysical Data Facility Established
+  icon: fas house
+  color: success
+  date: 1985-08-01
+  content:
+    The GDF main aim is to facilitate data exchange to ease the problem of magnetic tape handling which is becoming a severe burden. 
+    During the year, data from the NIMBUS series of satellites and Active Magnetospheric Particle Tracer Explorer (AMPTE) have been consolidated into databases on the IBM central computer. 
+    These include measured values of temperature of the middle atmosphere and of density, temperature, pressure and energy spectra of electrons and ions in the magnetosphere.
+    A user at a remote site can access catalogues of the data holdings, select data of interest and transfer these to his own installation via JANET.
+
+- title: LIMS data on NIMBUS-7 aquired
+  icon: fa-solid fa-clipboard-check
+  color: warning
+  date: 1987-09-01
+  content:
+    The general interface to the GDF is improved considerably primarily to help and encourage users. 
+    By providing cross links to other geophysical datasets at RAL, datasets from different sources can be readily combined. High level command instructions and graph plotting routines are now also available to aid data manipulation.
+
+- title: Optical Disk provides rapid access to 40gb of data on a microVAX3900 cluster
+  icon: fa-solid fa-compact-disc
+  color: info
+  date: 1989-10-01
+  content:
+    Data now available from the GDF include ground-based and satellite observations from the UK and abroad as well as modelling results from intercomparison and testing measurements. 
+    The datasets now include in-situ space plasma data from AMPTE and stratospheric results from SAMS (Stratospheric And Mesospheric Sounder), LIMS and SSU (Stratospheric Sounder Unit) and output from thermospheric and atmospheric models. 
+    Solar terrestrial data from the World Data Centre at RAL are also accessible through the GDF environment.
+
+- title: New datasets archived 
+  icon: fa-regular fa-floppy-disk
+  color: primary
+  date: 1990-11-01
+  content:
+    These include the MST radar data, the Cambridge D computer model output and 3 NASA aircraft campaigns which studies ozone depletion processes (AAOE, AASE)
+
+- title: High-speed transatlantic link becomes available
+  icon: fa-solid fa-water
+  color: success
+  date: 1991-12-01
+  content:
+    This link is used by RAL mainly for data transfer from the UARS Central Data Handling Facility at NASA's Goddard Space Flight Center. GDF now serves over 135 users from 22 university departments, 11 other British institutes and 5 overseas laboratories.
+
+- title: SERC is replaced by Engineering and Physical Sciences research Council (EPSRC)
+  icon: fa-solid fa-earth-americas
+  color: warning
+  date: 1993-02-01
+  content:
+    Funding for the GDF is now from NERC, the Natural Environment Research Council. First Edition of the GDF Newsletter 
+
+- title: GDF becomes the British Atmospheric Data Centre (BADC)
+  icon: fa-solid fa-seedling
+  color: info
+  date: 1994-11-01
+  content:
+    BADC becomes NERC's Designated Data Centre for the Atmospheric Sciences - "Meeting the data requirements of the NERC Atmospheric Science Community"
+
+- title: NERC Met Office Data Agreement 
+  icon: fa-regular fa-handshake
+  color: primary
+  date: 1996-10-01
+  content:
+    A formal agreement was reached between the Natural Environment Research Council (NERC) and the Met Office in which all future requests to the Met Office for data intended for NERC-funded atmospheric research will be coordinated by the BADC. 
+    This arrangement avoids duplicate requests for data. 
+    A strategy of bulk purchasing is in place, benefiting the wider research community in the long term. The BADC pro-actively organises the bulk acquisition of popular datasets. Examples include ECMWF model analyses and Met Office upper-air and surface data.
+
+- title: CD-ROM juke box installed allowing browsing over the web
+  icon: fa-regular fa-window-restore
+  color: success
+  date: 1997-09-01
+  content:
+    Following the NERC-UKMO agreement, upper air and surface data from the Met Office are being archived at the BADC together with the ECMWF operational analyses (approx. 697GB)
+
+- title: Launch of the new BADC web site
+  icon: fa-solid fa-plug
+  color: warning
+  date: 1999-08-01
+  content:
+    Website includes the new BADC Trajectory service, Met Office stations catalogue, Datasets catalogue and a browsing archive facility (with frames). 
+    Explosion in data archive holdings; GOME, virtem, MRF, ozone climatology, worldwide standard radiosonde data, UK high resolution radiosonde data, Met Office Hadley Centre data including GISST and CET, ECMWF trajectory data, Met Office raingauge data from MIDAS, SOAPEX
+
+- title: BADC Takes over the developmet and maintenence of CAST from the University of Leeds
+  icon: fa-solid fa-robot
+  color: info
+  date: 2000-07-01
+  content:
+    File ingestor in full operation allowing for UTLS and URGENT (NERC thematic programmes) data files to populate the archive. Unified Model data being archived at the BADC, ESA Water vapour, Meteosat images.
+
+- title: BADC becomes part of the Centre for Atmospheric Science (NCAS)
+  icon: fa-solid fa-explosion
+  color: primary
+  date: 2002-06-01
+  content:
+    Work on the Live-Access Server (LAS) facility is under way. this facility will allow users to visualize and subset data via their web browser. 
+    This will make possible for users to examine data interactively at BADC without having to download large amounts of data.
+    The BADC now holds over 70 different datasets (approx. 3520 GBs).
+
+- title: First FAAM flight
+  icon: fa-solid fa-jet-fighter-up
+  color: success
+  date: 2004-03-01
+  content:
+    The BADC archives and distributes data collected onboard the NERC/MO jointly run FAAM aircraft. 
+    The BADC has moved from a system based primarily on a central multiprocessor Compaq-Alpha (tornado) to a distributed system based on multiple linux platforms and network attached storage. Total disk storage is currently about 30 TB.
+
+- title: BADC and NEODC join forces
+  icon: fa-solid fa-tower-broadcast
+  color: warning
+  date: 2005-05-01
+  content:
+    The BADC is authorised by the European Space Agency to archive and distribute data from 4 Envisat instruments (MIPAS, SCIAMACHY, GOMOS, MERIS) to ESA Category 1 grant holders, in addition to UTLS and CWVC participants.
+
+- title: BADC takes over the hosting of the IPCC Data Distribution Centre Website.
+  icon: fa-solid fa-temperature-high
+  color: info
+  date: 2007-04-01
+  content:
+    Council for the Central Laboratory of the Research Councils (CCLRC) and the Particle Physics and Astronomy Research Council (PPARC) merged to form the Science and Technology Facilities Council (STFC).
+
+- title: CEDA Repository Launched
+  icon: fa-solid fa-warehouse
+  color: primary
+  date: 2008-11-01
+  content: 
+    Data Extractor available for MIDAS Surface Data. Data extractor can support Microsoft Internet Explorer.
+
+- title: UK Solar System Data Centre (UKSSDC) becomes part of CEDA
+  icon: fa-solid fa-cloud
+  color: warning
+  date: 2011-07-01
+  content:
+    New WPS service launched. BADC CMIP5 Gateway launched. Demonstration of the new CEDA Science Visualisation Service for Earth Observation (SVSeo) at the launch of the new International Space Innovation Centre (ISIC).
+  
+- title: JASMIN 'super data cluster' was launched 
+  icon: fa-solid fa-server
+  color: info
+  date: 2012-07-01
+  content:
+    New CEDA website launched.
+
+- title: New CEDA data catalogue service built on MOLES 3.4 released
+  icon: fa-solid fa-download
+  color: primary
+  date: 2014-06-01
+  content: 
+    New myCEDA services launched to replace old BADC and NEODC systems. JASMIN Phase 2 becomes operational.
+
+- title: CEDA becomes part of the NERC Environmental Data Service
+  icon: fas globe
+  color: success
+  date: 2018-09-01
+  content:
+    JASMIN Phase 4 becomes operational. Increasing capacity up to 44 Petabytes with over 11,000 cores. 
+
+- title: CEDA celebrated 25 years
+  icon: fa-solid fa-cake-candles
+  color: warning
+  date: 2019-08-01
+  content:
+    First-ever hands-on interactive JASMIN training event. CEDA seen at Living Planet Symposium.
+
+- title: Launch of new JASMIN website
+  icon: fa-solid fa-signal
+  color: info
+  date: 2020-09-01
+  content:
+    New JASMIN helpdesk enabled more appropriate query categorisation improving services for users. 
+    Deployment of the new improved performance and capacity archive download service allowing for more simultaneous downloads and an improved system for authorizing downloads. 
+    JASMIN User conference was held, the team provided an update to users about key services and new developments. JASMIN Jupyter notebook service launched.
+
+- title: CEDA WPS was launched and provides a range of online tools to aid using data in the CEDA Archive.
+  icon: fas rocket
+  color: primary
+  date: 2021-01-15
+  content: 
+    CEDA services improve access to global climate data, CEDA awarded Core Trust Seal certificate in June. 
+    New Jaspy python3.7 version released in May and provides software environments of common python and non-python packages on the scientific analysis servers and LOTUS cluster on JASMIN.
+
+
