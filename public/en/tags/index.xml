@@ -7,7 +7,52 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2023 Science and Technology Facilities Council.</copyright>
-    <lastBuildDate>Fri, 25 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Oct 2023 08:17:30 +0000</lastBuildDate><atom:link href="/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Elastic Tape</title>
+      <link>/en/tags/elastic-tape/</link>
+      <pubDate>Wed, 18 Oct 2023 08:17:30 +0000</pubDate>
+      
+      <guid>/en/tags/elastic-tape/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>news</title>
+      <link>/en/tags/news/</link>
+      <pubDate>Wed, 18 Oct 2023 08:17:30 +0000</pubDate>
+      
+      <guid>/en/tags/news/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jasmin</title>
+      <link>/en/tags/jasmin/</link>
+      <pubDate>Tue, 17 Oct 2023 09:09:55 +0000</pubDate>
+      
+      <guid>/en/tags/jasmin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ceda-archive</title>
+      <link>/en/tags/ceda-archive/</link>
+      <pubDate>Wed, 11 Oct 2023 07:34:44 +0000</pubDate>
+      
+      <guid>/en/tags/ceda-archive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jasmin ceda</title>
+      <link>/en/tags/jasmin-ceda/</link>
+      <pubDate>Wed, 11 Oct 2023 07:34:44 +0000</pubDate>
+      
+      <guid>/en/tags/jasmin-ceda/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>example</title>
       <link>/en/tags/example/</link>
@@ -36,11 +81,47 @@
     </item>
     
     <item>
-      <title>blog</title>
-      <link>/en/tags/blog/</link>
-      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <title>impact-story</title>
+      <link>/en/tags/impact-story/</link>
+      <pubDate>Fri, 04 Aug 2023 08:29:06 +0000</pubDate>
       
-      <guid>/en/tags/blog/</guid>
+      <guid>/en/tags/impact-story/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>open data</title>
+      <link>/en/tags/open-data/</link>
+      <pubDate>Fri, 21 Jul 2023 11:10:51 +0000</pubDate>
+      
+      <guid>/en/tags/open-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>weather data</title>
+      <link>/en/tags/weather-data/</link>
+      <pubDate>Fri, 21 Jul 2023 11:10:51 +0000</pubDate>
+      
+      <guid>/en/tags/weather-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vacancy</title>
+      <link>/en/tags/vacancy/</link>
+      <pubDate>Tue, 27 Jun 2023 09:15:12 +0000</pubDate>
+      
+      <guid>/en/tags/vacancy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>grey literature</title>
+      <link>/en/tags/grey-literature/</link>
+      <pubDate>Tue, 22 Nov 2022 10:14:34 +0000</pubDate>
+      
+      <guid>/en/tags/grey-literature/</guid>
       <description></description>
     </item>
     
@@ -68,24 +149,6 @@
       <pubDate>Thu, 15 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>/en/tags/javascript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>jasmin</title>
-      <link>/en/tags/jasmin/</link>
-      <pubDate>Tue, 05 Jan 2021 10:54:36 +0000</pubDate>
-      
-      <guid>/en/tags/jasmin/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>news</title>
-      <link>/en/tags/news/</link>
-      <pubDate>Tue, 05 Jan 2021 10:54:36 +0000</pubDate>
-      
-      <guid>/en/tags/news/</guid>
       <description></description>
     </item>
     
