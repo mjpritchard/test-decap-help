@@ -2,54 +2,54 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>weather data on Centre for Environmental Data Analysis</title>
-    <link>/en/tags/weather-data/</link>
+    <link>https://www.ceda.ac.uk/en/tags/weather-data/</link>
     <description>Recent content in weather data on Centre for Environmental Data Analysis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2023 Science and Technology Facilities Council.</copyright>
-    <lastBuildDate>Fri, 21 Jul 2023 11:10:51 +0000</lastBuildDate><atom:link href="/en/tags/weather-data/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 Jul 2023 11:10:51 +0000</lastBuildDate><atom:link href="https://www.ceda.ac.uk/en/tags/weather-data/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FAAM Airborne Laboratory data use survey</title>
-      <link>/en/news/updates/2023/2023-07-21-faam-data-survey/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-07-21-faam-data-survey/</link>
       <pubDate>Fri, 21 Jul 2023 11:10:51 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-07-21-faam-data-survey/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-07-21-faam-data-survey/</guid>
       <description>The FAAM Airborne Laboratory collects atmospheric data all over the world. From air quality, cloud formation, and weather processes, to greenhouse gas emissions from human activities and atmospheric composition, the FAAM Airborne Laboratory’s specially adapted research aircraft enables researchers to understand our changing environment.</description>
     </item>
     
     <item>
       <title>UK record temperature data access</title>
-      <link>/en/news/updates/2022/2022-07-19-uk-record-temperature-data-access/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-07-19-uk-record-temperature-data-access/</link>
       <pubDate>Tue, 19 Jul 2022 12:24:12 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-07-19-uk-record-temperature-data-access/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-07-19-uk-record-temperature-data-access/</guid>
       <description>As the UK heatwave peaks across the country, we have been putting together some handy tips for how to access temperature and related data for the UK.</description>
     </item>
     
     <item>
       <title>Improved access for Met Office Weather data held in CEDA Archive</title>
-      <link>/en/news/updates/2021/2021-07-29-improved-access-for-met-office-weather-data-held-in-ceda-archive/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-07-29-improved-access-for-met-office-weather-data-held-in-ceda-archive/</link>
       <pubDate>Thu, 29 Jul 2021 14:06:47 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-07-29-improved-access-for-met-office-weather-data-held-in-ceda-archive/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-07-29-improved-access-for-met-office-weather-data-held-in-ceda-archive/</guid>
       <description>The CEDA Archive has been a conduit for the research community to access a range of weather data supplied by the Met Office under the NERC-Met Office agreement for many years.</description>
     </item>
     
     <item>
       <title>Join in the NERC Environmental Data Discovery Trails, you might get a reward!</title>
-      <link>/en/news/updates/2021/2021-04-06-join-in-the-nerc-environmental-data-discovery-trails-you-might-get-a-reward/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-04-06-join-in-the-nerc-environmental-data-discovery-trails-you-might-get-a-reward/</link>
       <pubDate>Tue, 06 Apr 2021 09:24:02 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-04-06-join-in-the-nerc-environmental-data-discovery-trails-you-might-get-a-reward/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-04-06-join-in-the-nerc-environmental-data-discovery-trails-you-might-get-a-reward/</guid>
       <description>To improve the accessibility of data collected through NERC-funded research, or managed by NERC data centres and our collaborators, a NERC programme (Constructing a Digital Environment) are collecting feedback on the user experience (UX) to improve the navigation of various web portals to assess these data.</description>
     </item>
     
     <item>
       <title>MIDAS Open version 201908 released More UK weather station data added</title>
-      <link>/en/news/updates/2019/2019-11-04-midas-open-version-201908-released-more-uk-weather-station-data-added/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2019/2019-11-04-midas-open-version-201908-released-more-uk-weather-station-data-added/</link>
       <pubDate>Mon, 04 Nov 2019 10:00:00 +0000</pubDate>
       
-      <guid>/en/news/updates/2019/2019-11-04-midas-open-version-201908-released-more-uk-weather-station-data-added/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2019/2019-11-04-midas-open-version-201908-released-more-uk-weather-station-data-added/</guid>
       <description>Earlier this year the Met Office released the “MIDAS Open” dataset, a publically available version of the popular, but restricted, Met Office Integrated Data Archive System (MIDAS) Land and Marine Surface Stations dataset.</description>
     </item>
     

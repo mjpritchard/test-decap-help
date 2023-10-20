@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Centre for Environmental Data Analysis</title>
-    <link>/en/projects/</link>
+    <link>https://www.ceda.ac.uk/en/projects/</link>
     <description>Recent content in Projects on Centre for Environmental Data Analysis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>Copyright © 2023 Science and Technology Facilities Council.</copyright><atom:link href="/en/projects/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2023 Science and Technology Facilities Council.</copyright><atom:link href="https://www.ceda.ac.uk/en/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>UKRI Net-Zero Digital Research Infrastructure (DRI) Scoping Project</title>
-      <link>/en/projects/net-zero-scoping-project/</link>
+      <link>https://www.ceda.ac.uk/en/projects/net-zero-scoping-project/</link>
       <pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate>
       
-      <guid>/en/projects/net-zero-scoping-project/</guid>
+      <guid>https://www.ceda.ac.uk/en/projects/net-zero-scoping-project/</guid>
       <description>Initial Project Aim Our initial aim was to provide a clear roadmap to deliver carbon neutral digital research infrastructure (DRI) by 2040 or earlier.</description>
     </item>
     
     <item>
       <title>C3S_34e - The Link between the CDS Toolbox and the ESGF Compute Nodes</title>
-      <link>/en/projects/c3s-34e-esgf-compute-nodes/</link>
+      <link>https://www.ceda.ac.uk/en/projects/c3s-34e-esgf-compute-nodes/</link>
       <pubDate>Mon, 12 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>/en/projects/c3s-34e-esgf-compute-nodes/</guid>
+      <guid>https://www.ceda.ac.uk/en/projects/c3s-34e-esgf-compute-nodes/</guid>
       <description>Funder: Copernicus (C3S)
 Dates: 2020-2021
 Summary: Improvement on the WPS link for C3S to access climate simulations.
@@ -30,10 +30,10 @@ Aim: This project worked to build on the current WPS (Web Processing Service) fr
     
     <item>
       <title>C3S_434 - CDS Interface to Climate-ADAPT</title>
-      <link>/en/projects/c3s-434-cds-climate-adapt/</link>
+      <link>https://www.ceda.ac.uk/en/projects/c3s-434-cds-climate-adapt/</link>
       <pubDate>Sun, 11 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>/en/projects/c3s-434-cds-climate-adapt/</guid>
+      <guid>https://www.ceda.ac.uk/en/projects/c3s-434-cds-climate-adapt/</guid>
       <description>Funder: Copernicus (C3S)
 Dates: 2020-2021
 Summary: Automated the provision of climate datasets from the Copernicus Climate Change Service (C3S) Climate Data Store to Climate-ADAPT portal</description>
@@ -41,10 +41,10 @@ Summary: Automated the provision of climate datasets from the Copernicus Climate
     
     <item>
       <title>CDS Zone 20-21</title>
-      <link>/en/projects/cds-zone-20-21/</link>
+      <link>https://www.ceda.ac.uk/en/projects/cds-zone-20-21/</link>
       <pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>/en/projects/cds-zone-20-21/</guid>
+      <guid>https://www.ceda.ac.uk/en/projects/cds-zone-20-21/</guid>
       <description>Funder: UKSA
 Dates: 2020-2021
 Aim: The UK Climate Data from Space zone (CDS zone) is a dedicated computing area comprising 700TB storage and 200 processing cores on the JASMIN infrastructure to support UK ECV processing for the Copernicus Climate Change Service.</description>
@@ -52,10 +52,10 @@ Aim: The UK Climate Data from Space zone (CDS zone) is a dedicated computing are
     
     <item>
       <title>Met Office - Support for Ensembles</title>
-      <link>/en/projects/met-office-ensembles-support/</link>
+      <link>https://www.ceda.ac.uk/en/projects/met-office-ensembles-support/</link>
       <pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>/en/projects/met-office-ensembles-support/</guid>
+      <guid>https://www.ceda.ac.uk/en/projects/met-office-ensembles-support/</guid>
       <description>Funder: Met Office
 Dates: 2020-2021
 Aim: Met Office interacts with large climate data archives, as scientific data provider and end-user. This funding supports the services to ingest, manage and deliver large climate multi-model ensembles such as CMIP6.</description>
@@ -63,10 +63,10 @@ Aim: Met Office interacts with large climate data archives, as scientific data p
     
     <item>
       <title>JASMIN support to JNCC</title>
-      <link>/en/projects/jasmin-support-jncc/</link>
+      <link>https://www.ceda.ac.uk/en/projects/jasmin-support-jncc/</link>
       <pubDate>Thu, 08 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>/en/projects/jasmin-support-jncc/</guid>
+      <guid>https://www.ceda.ac.uk/en/projects/jasmin-support-jncc/</guid>
       <description>Funder: JNCC
 Dates: 2020-2021
 Aim: Support Defra-JNCC with use of JASMIN for production of Sentinel Analysis Ready Data, and provision of access to users.</description>
@@ -74,10 +74,10 @@ Aim: Support Defra-JNCC with use of JASMIN for production of Sentinel Analysis R
     
     <item>
       <title>ESA Digital Twin Earth Precursor</title>
-      <link>/en/projects/esa-twin-earth-precursor/</link>
+      <link>https://www.ceda.ac.uk/en/projects/esa-twin-earth-precursor/</link>
       <pubDate>Wed, 07 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>/en/projects/esa-twin-earth-precursor/</guid>
+      <guid>https://www.ceda.ac.uk/en/projects/esa-twin-earth-precursor/</guid>
       <description>Funder: ESA
 Dates: 2020-2021
 Aim: Project led by TVUK, with NCEO, to develop a climate focused proof of concept, bringing models, data, AI and ICT together as a precursor to an ambitious European Digital Twin Earth activity.</description>
@@ -85,10 +85,10 @@ Aim: Project led by TVUK, with NCEO, to develop a climate focused proof of conce
     
     <item>
       <title>UKCP18 Services 20-21</title>
-      <link>/en/projects/ukcp18-services-20-21/</link>
+      <link>https://www.ceda.ac.uk/en/projects/ukcp18-services-20-21/</link>
       <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>/en/projects/ukcp18-services-20-21/</guid>
+      <guid>https://www.ceda.ac.uk/en/projects/ukcp18-services-20-21/</guid>
       <description>Funder: Met Office/Defra
 Date: 2020-2021
 Aim: To provide data services to support access to the next generation of climate projections for the UK (2018).</description>
@@ -96,10 +96,10 @@ Aim: To provide data services to support access to the next generation of climat
     
     <item>
       <title>C3S Oceans Data Archival</title>
-      <link>/en/projects/c3s-oceans-data-archival/</link>
+      <link>https://www.ceda.ac.uk/en/projects/c3s-oceans-data-archival/</link>
       <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>/en/projects/c3s-oceans-data-archival/</guid>
+      <guid>https://www.ceda.ac.uk/en/projects/c3s-oceans-data-archival/</guid>
       <description>Funder: Copernicus (C3S)
 Dates: 2019-2021
 Aims: Produce ocean variables data from satellite observations for Copernicus Climate Change Service
@@ -108,10 +108,10 @@ CEDA role: Archive and make available oceans data (from U.</description>
     
     <item>
       <title>CCI Knowledge Exchange</title>
-      <link>/en/projects/cci-knowledge-exchange/</link>
+      <link>https://www.ceda.ac.uk/en/projects/cci-knowledge-exchange/</link>
       <pubDate>Sun, 04 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>/en/projects/cci-knowledge-exchange/</guid>
+      <guid>https://www.ceda.ac.uk/en/projects/cci-knowledge-exchange/</guid>
       <description>Funder: ESA
 Dates: 2019-2022
 Summary: Provide central access to ESA Climate Change Initiative Data Products and information
@@ -120,10 +120,10 @@ Aim: Provide central access to ESA Climate Change Initiative Data Products and i
     
     <item>
       <title>IS-ENES3 - Infrastructure for the European Network for Earth System Modelling (2019 - 2022)</title>
-      <link>/en/projects/is-enes3/</link>
+      <link>https://www.ceda.ac.uk/en/projects/is-enes3/</link>
       <pubDate>Sat, 03 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>/en/projects/is-enes3/</guid>
+      <guid>https://www.ceda.ac.uk/en/projects/is-enes3/</guid>
       <description>Funder: European Commission
 Dates: 2020-2022
 Summary: IS-ENES3 is the third phase of the distributed e-infrastructure of the European Network for Earth System Modelling (ENES).</description>
@@ -131,10 +131,10 @@ Summary: IS-ENES3 is the third phase of the distributed e-infrastructure of the 
     
     <item>
       <title>C3S_34f - Maintenance of the dedicated C3S ESGF infrastructure for CMIP Global Climate Models</title>
-      <link>/en/projects/c3s_34f-models/</link>
+      <link>https://www.ceda.ac.uk/en/projects/c3s_34f-models/</link>
       <pubDate>Fri, 02 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>/en/projects/c3s_34f-models/</guid>
+      <guid>https://www.ceda.ac.uk/en/projects/c3s_34f-models/</guid>
       <description>Funder: Copernicus (C3S)
 Dates: 2019-2021
 Summary: Infrastructure and data that were supplied to C3S under a previous contract (C3S_34a Lot1) continue to be provided to support continuing work on other projects.</description>
@@ -142,10 +142,10 @@ Summary: Infrastructure and data that were supplied to C3S under a previous cont
     
     <item>
       <title>C3S_34g - Extension of the CDS Global Climate Model datasets to CMIP6 simulations</title>
-      <link>/en/projects/c3s_34g-cmip6-simulations/</link>
+      <link>https://www.ceda.ac.uk/en/projects/c3s_34g-cmip6-simulations/</link>
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>/en/projects/c3s_34g-cmip6-simulations/</guid>
+      <guid>https://www.ceda.ac.uk/en/projects/c3s_34g-cmip6-simulations/</guid>
       <description>Funder: Copernicus (C3S)
 Dates: 2020-2021
 Summary: Following on from C3S_34a Lot 1 which provided CMIP5 data via an extended and dedicated Earth System Grid Federation (ESGF) subsystem consisting of three partner sites, CEDA (UK), DKRZ (Germany) and IPSL (France), this project will deliver CMIP6 data through this same channel</description>
@@ -153,10 +153,10 @@ Summary: Following on from C3S_34a Lot 1 which provided CMIP5 data via an extend
     
     <item>
       <title>CLIPC</title>
-      <link>/en/projects/clipc/</link>
+      <link>https://www.ceda.ac.uk/en/projects/clipc/</link>
       <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/en/projects/clipc/</guid>
+      <guid>https://www.ceda.ac.uk/en/projects/clipc/</guid>
       <description>Funder: EC
 Dates: 2013-2016
 Aim: Climate Information Platform for Copernicus: provide access to climate information of direct relevance to a wide variety of users, from scientists to policy makers and private sector decision makers.</description>
@@ -164,10 +164,10 @@ Aim: Climate Information Platform for Copernicus: provide access to climate info
     
     <item>
       <title>CCI Open Data Portal</title>
-      <link>/en/projects/cci-open-data-portal/</link>
+      <link>https://www.ceda.ac.uk/en/projects/cci-open-data-portal/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/en/projects/cci-open-data-portal/</guid>
+      <guid>https://www.ceda.ac.uk/en/projects/cci-open-data-portal/</guid>
       <description>Funder: ESA
 Dates: 2015-2018
 Aim: Provide central access to ESA Climate Change Initiative Data Products and information
@@ -176,10 +176,10 @@ CEDA role: Central archive, data access services and metadata</description>
     
     <item>
       <title>EUSTACE</title>
-      <link>/en/projects/eustace/</link>
+      <link>https://www.ceda.ac.uk/en/projects/eustace/</link>
       <pubDate>Sun, 28 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/en/projects/eustace/</guid>
+      <guid>https://www.ceda.ac.uk/en/projects/eustace/</guid>
       <description>Funder: European Commission
 Dates: 2015-2018
 Aim: Derivation of surface air temperature consistently across all surfaces of Earth from land and lakes to ocean and ice</description>
@@ -187,10 +187,10 @@ Aim: Derivation of surface air temperature consistently across all surfaces of E
     
     <item>
       <title>BACI</title>
-      <link>/en/projects/baci/</link>
+      <link>https://www.ceda.ac.uk/en/projects/baci/</link>
       <pubDate>Sat, 27 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/en/projects/baci/</guid>
+      <guid>https://www.ceda.ac.uk/en/projects/baci/</guid>
       <description>Funder: European Commission
 Dates: 2015-2018
 Aim: The integration of ground and space observations leads to a series of new downstream products (biodiversity indicators) that can be directly interpreted by the user community.</description>
@@ -198,10 +198,10 @@ Aim: The integration of ground and space observations leads to a series of new d
     
     <item>
       <title>FIDUCEO</title>
-      <link>/en/projects/fiduceo/</link>
+      <link>https://www.ceda.ac.uk/en/projects/fiduceo/</link>
       <pubDate>Sat, 27 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/en/projects/fiduceo/</guid>
+      <guid>https://www.ceda.ac.uk/en/projects/fiduceo/</guid>
       <description>Funder: European Commission
 Dates: 2015-2019
 Aim: The FIDUCEO project will build nine new climate datasets from Earth Observation using a rigorous treatment of uncertainty, informed from the discipline of metrology (measurement science).</description>
@@ -209,10 +209,10 @@ Aim: The FIDUCEO project will build nine new climate datasets from Earth Observa
     
     <item>
       <title>C3S311a Lot 2 (in-situ obs for Copernicus)</title>
-      <link>/en/projects/c3s311a-lot-2/</link>
+      <link>https://www.ceda.ac.uk/en/projects/c3s311a-lot-2/</link>
       <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/en/projects/c3s311a-lot-2/</guid>
+      <guid>https://www.ceda.ac.uk/en/projects/c3s311a-lot-2/</guid>
       <description>Funder: Copernicus (C3S)
 Dates: 2017-2020
 Aim: provide a step change in access to, and quality of, global long-term land and surface-ocean Essential Climate Variable (ECV) records for use by Copernicus.</description>
@@ -220,10 +220,10 @@ Aim: provide a step change in access to, and quality of, global long-term land a
     
     <item>
       <title>PRIMAVERA</title>
-      <link>/en/projects/primavera/</link>
+      <link>https://www.ceda.ac.uk/en/projects/primavera/</link>
       <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/en/projects/primavera/</guid>
+      <guid>https://www.ceda.ac.uk/en/projects/primavera/</guid>
       <description>Funder: European Commission
 Dates: 2015 - 2019
 Aim: To develop a new generation of global high-resolution climate models
@@ -232,10 +232,10 @@ CEDA role: data archival and JASMIN infrastructure resource provider</descriptio
     
     <item>
       <title>UKSA Copernicus Data Support</title>
-      <link>/en/projects/uksa-copernicus-data-support/</link>
+      <link>https://www.ceda.ac.uk/en/projects/uksa-copernicus-data-support/</link>
       <pubDate>Sat, 13 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/en/projects/uksa-copernicus-data-support/</guid>
+      <guid>https://www.ceda.ac.uk/en/projects/uksa-copernicus-data-support/</guid>
       <description>Funder: UKSA
 Dates: 2018 - 2019 (with possible extension into future years)
 Aim: Acquire and archive Copernicus Sentinel data from all satellites (priority focus on UK, but most global)</description>
@@ -243,10 +243,10 @@ Aim: Acquire and archive Copernicus Sentinel data from all satellites (priority 
     
     <item>
       <title>UKCP18 Services</title>
-      <link>/en/projects/ukcp18-services/</link>
+      <link>https://www.ceda.ac.uk/en/projects/ukcp18-services/</link>
       <pubDate>Thu, 11 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/en/projects/ukcp18-services/</guid>
+      <guid>https://www.ceda.ac.uk/en/projects/ukcp18-services/</guid>
       <description>Funder: Met Office/Defra
 Dates: 2018 - 2019
 Aim: To provide data services to support access to the next generation of climate projections for the UK (2018).</description>
@@ -254,10 +254,10 @@ Aim: To provide data services to support access to the next generation of climat
     
     <item>
       <title>UKCP09 User Interface</title>
-      <link>/en/projects/ukcp09-user-interface/</link>
+      <link>https://www.ceda.ac.uk/en/projects/ukcp09-user-interface/</link>
       <pubDate>Wed, 10 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/en/projects/ukcp09-user-interface/</guid>
+      <guid>https://www.ceda.ac.uk/en/projects/ukcp09-user-interface/</guid>
       <description>Funder: Environment Agency
 Dates: 2018 - 2019
 Aim: Provide access to the UK Climate Projections (2009) via a web-interface and web processing service.</description>
@@ -265,10 +265,10 @@ Aim: Provide access to the UK Climate Projections (2009) via a web-interface and
     
     <item>
       <title>MOHC Data Pipeline</title>
-      <link>/en/projects/mohc-data-pipeline/</link>
+      <link>https://www.ceda.ac.uk/en/projects/mohc-data-pipeline/</link>
       <pubDate>Tue, 09 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/en/projects/mohc-data-pipeline/</guid>
+      <guid>https://www.ceda.ac.uk/en/projects/mohc-data-pipeline/</guid>
       <description>Funder: BEIS (via Met Office)
 Dates: 2018 - 2021
 Aim: Supporting CMIP climate model data movement from the Met Office to the CEDA archive and ESGF.</description>
@@ -276,10 +276,10 @@ Aim: Supporting CMIP climate model data movement from the Met Office to the CEDA
     
     <item>
       <title>IPCC DDC</title>
-      <link>/en/projects/ipcc-ddc/</link>
+      <link>https://www.ceda.ac.uk/en/projects/ipcc-ddc/</link>
       <pubDate>Mon, 08 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/en/projects/ipcc-ddc/</guid>
+      <guid>https://www.ceda.ac.uk/en/projects/ipcc-ddc/</guid>
       <description>Funder: BEIS
 Dates: 2018- 2020 (may be extended)
 Aim: Provide support and upgraded services to the IPCC Designated Data Centre</description>
@@ -287,10 +287,10 @@ Aim: Provide support and upgraded services to the IPCC Designated Data Centre</d
     
     <item>
       <title>ESA DAP support for UKSA</title>
-      <link>/en/projects/dap-support/</link>
+      <link>https://www.ceda.ac.uk/en/projects/dap-support/</link>
       <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/en/projects/dap-support/</guid>
+      <guid>https://www.ceda.ac.uk/en/projects/dap-support/</guid>
       <description>Funder: UK Space Agency
 Dates: 2018 - 2019
 Aim: Represent UKSA in LTDP Working Group and PV2018 Conference Organisation
@@ -299,10 +299,10 @@ CEDA role: Point of contact for UK engagement in LTDP WG, participate in meeting
     
     <item>
       <title>Pest Risk Modelling in Africa (PRISE)</title>
-      <link>/en/projects/prise/</link>
+      <link>https://www.ceda.ac.uk/en/projects/prise/</link>
       <pubDate>Sat, 06 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/en/projects/prise/</guid>
+      <guid>https://www.ceda.ac.uk/en/projects/prise/</guid>
       <description>Funder: UKSA IPP programme
 Dates: 2016 - 2021
 Aim: PRISE will improve the livelihoods of smallholder farmers by reducing crop losses caused by pests across six sub-Saharan African countries.</description>
@@ -310,10 +310,10 @@ Aim: PRISE will improve the livelihoods of smallholder farmers by reducing crop 
     
     <item>
       <title>CDS Zone</title>
-      <link>/en/projects/cds-zone/</link>
+      <link>https://www.ceda.ac.uk/en/projects/cds-zone/</link>
       <pubDate>Fri, 05 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/en/projects/cds-zone/</guid>
+      <guid>https://www.ceda.ac.uk/en/projects/cds-zone/</guid>
       <description>Funder: UK Space Agency
 Dates: 2016-2018
 Aim: The UK Climate Data from Space zone (CDS zone) is a dedicated computing area comprising 400TB storage and 200 processing cores on the JASMIN infrastructure.</description>
@@ -321,10 +321,10 @@ Aim: The UK Climate Data from Space zone (CDS zone) is a dedicated computing are
     
     <item>
       <title>C3S Regional Climate Projections for CDS</title>
-      <link>/en/projects/c3s-regional-climate-projections-cds/</link>
+      <link>https://www.ceda.ac.uk/en/projects/c3s-regional-climate-projections-cds/</link>
       <pubDate>Thu, 04 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/en/projects/c3s-regional-climate-projections-cds/</guid>
+      <guid>https://www.ceda.ac.uk/en/projects/c3s-regional-climate-projections-cds/</guid>
       <description>Funder: Copernicus (C3S)
 Dates: 2017-2021
 Aim: This project will make regional climate projections data available via an Earth System Grid Federation (ESGF) node; and offer compute services</description>
@@ -332,10 +332,10 @@ Aim: This project will make regional climate projections data available via an E
     
     <item>
       <title>C3S Climate Projections for CDS</title>
-      <link>/en/projects/c3s-climate-projections-cds/</link>
+      <link>https://www.ceda.ac.uk/en/projects/c3s-climate-projections-cds/</link>
       <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/en/projects/c3s-climate-projections-cds/</guid>
+      <guid>https://www.ceda.ac.uk/en/projects/c3s-climate-projections-cds/</guid>
       <description>Funder: Copernicus (C3S)
 Dates: 2016-2019
 Aim: The Copernicus Climate Data Store (CDS) will interact with a range of remote data and compute services.</description>
@@ -343,10 +343,10 @@ Aim: The Copernicus Climate Data Store (CDS) will interact with a range of remot
     
     <item>
       <title>Sentinel Data Relay Hub</title>
-      <link>/en/projects/sentinel-data-relay-hub/</link>
+      <link>https://www.ceda.ac.uk/en/projects/sentinel-data-relay-hub/</link>
       <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/en/projects/sentinel-data-relay-hub/</guid>
+      <guid>https://www.ceda.ac.uk/en/projects/sentinel-data-relay-hub/</guid>
       <description>Funder: European Space Agency
 Dates: 2015 - 2018
 Aim: Operate data relay hub for ESA Sentinel Ground Segment

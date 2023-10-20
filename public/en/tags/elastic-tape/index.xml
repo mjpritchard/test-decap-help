@@ -2,58 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Elastic Tape on Centre for Environmental Data Analysis</title>
-    <link>/en/tags/elastic-tape/</link>
+    <link>https://www.ceda.ac.uk/en/tags/elastic-tape/</link>
     <description>Recent content in Elastic Tape on Centre for Environmental Data Analysis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2023 Science and Technology Facilities Council.</copyright>
-    <lastBuildDate>Wed, 18 Oct 2023 08:17:30 +0000</lastBuildDate><atom:link href="/en/tags/elastic-tape/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Oct 2023 08:17:30 +0000</lastBuildDate><atom:link href="https://www.ceda.ac.uk/en/tags/elastic-tape/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tape services currently unavailable</title>
-      <link>/en/news/updates/2023/2023-10-18-tape-services-currently-unavailable/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-10-18-tape-services-currently-unavailable/</link>
       <pubDate>Wed, 18 Oct 2023 08:17:30 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-10-18-tape-services-currently-unavailable/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-10-18-tape-services-currently-unavailable/</guid>
       <description>Dear Users
 Due to an issue with the tape library, the tape services including NLA, JDMA and ET are currency unavailable.</description>
     </item>
     
     <item>
       <title>JASMIN Update on tape services - restored to service, 19th June 2023.</title>
-      <link>/en/news/updates/2023/2023-06-19-jasmin-update-on-tape-services-restored-to-service-19th-june-2023/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-06-19-jasmin-update-on-tape-services-restored-to-service-19th-june-2023/</link>
       <pubDate>Mon, 19 Jun 2023 10:00:20 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-06-19-jasmin-update-on-tape-services-restored-to-service-19th-june-2023/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-06-19-jasmin-update-on-tape-services-restored-to-service-19th-june-2023/</guid>
       <description>We are happy to announce that all tape services are now available.
 The NLA, ET and JDMA services are again available and ready for users to submit requests after a period of extensive testing last week.</description>
     </item>
     
     <item>
       <title>JASMIN Update on tape services and scheduled maintenance, June 2023.</title>
-      <link>/en/news/updates/2023/2023-05-30-jasmin-update-on-tape-services-and-scheduled-maintenance-june-2023/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-05-30-jasmin-update-on-tape-services-and-scheduled-maintenance-june-2023/</link>
       <pubDate>Tue, 30 May 2023 13:08:56 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-05-30-jasmin-update-on-tape-services-and-scheduled-maintenance-june-2023/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-05-30-jasmin-update-on-tape-services-and-scheduled-maintenance-june-2023/</guid>
       <description>Dear User,
 As many users of the tape systems will know, we have recently experienced problems with the NLA, ET and JDMA services.</description>
     </item>
     
     <item>
       <title>Update on JASMIN tape services and related issues</title>
-      <link>/en/news/updates/2023/2023-05-11-update-on-jasmin-tape-services-and-related-issues/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-05-11-update-on-jasmin-tape-services-and-related-issues/</link>
       <pubDate>Thu, 11 May 2023 11:29:53 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-05-11-update-on-jasmin-tape-services-and-related-issues/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-05-11-update-on-jasmin-tape-services-and-related-issues/</guid>
       <description>Please note the further updates below:
 Although initially thought to be only a problem with ET/JDMA service itself, the current issues with slow throughput are now thought to be mainly due to a problem with the PFS storage from where the particular tape jobs are being ingested.</description>
     </item>
     
     <item>
       <title>The Near-line archive is now available.  Elastic Tape and JDMA are currently unavailable.</title>
-      <link>/en/news/updates/2023/2023-05-10-the-near-line-archive-is-now-available-elastic-tape-and-jdma-are-currently-unavailable/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-05-10-the-near-line-archive-is-now-available-elastic-tape-and-jdma-are-currently-unavailable/</link>
       <pubDate>Wed, 10 May 2023 08:31:52 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-05-10-the-near-line-archive-is-now-available-elastic-tape-and-jdma-are-currently-unavailable/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-05-10-the-near-line-archive-is-now-available-elastic-tape-and-jdma-are-currently-unavailable/</guid>
       <description>Dear Users
 Below follows an update to the tape services, NLA and JDMA/ET.
 The NLA is now available again for users.</description>
@@ -61,10 +61,10 @@ The NLA is now available again for users.</description>
     
     <item>
       <title>JASMIN updates nx-login machines reboot and tape services status</title>
-      <link>/en/news/updates/2023/2023-05-02-jasmin-updates-nx-login-machines-reboot-and-tape-services-status/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-05-02-jasmin-updates-nx-login-machines-reboot-and-tape-services-status/</link>
       <pubDate>Tue, 02 May 2023 09:34:15 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-05-02-jasmin-updates-nx-login-machines-reboot-and-tape-services-status/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-05-02-jasmin-updates-nx-login-machines-reboot-and-tape-services-status/</guid>
       <description>Please note the following JASMIN service updates for your attention:
 nx-login service update
 The servers nx-login[123].jasmin.ac.uk will be rebooted tomorrow Wed 3 May between 08:30 - 09:30 to apply new licenses.</description>
@@ -72,20 +72,20 @@ The servers nx-login[123].jasmin.ac.uk will be rebooted tomorrow Wed 3 May betwe
     
     <item>
       <title>Tape services unavailable 28th to 30th March 2023 - Postponed</title>
-      <link>/en/news/updates/2023/2023-03-31-tape-services-unavailable-28th-to-30th-march-2023/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-03-31-tape-services-unavailable-28th-to-30th-march-2023/</link>
       <pubDate>Fri, 31 Mar 2023 08:22:30 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-03-31-tape-services-unavailable-28th-to-30th-march-2023/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-03-31-tape-services-unavailable-28th-to-30th-march-2023/</guid>
       <description>Please note - regarding the following information:
 This maintenance work on tape systems has now been postponed. A new date will be announced in due course.</description>
     </item>
     
     <item>
       <title>Update Tape services maintenance 8-9 August 2022</title>
-      <link>/en/news/updates/2022/2022-08-10-update-tape-services-maintenance-8-9-august-2022/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-08-10-update-tape-services-maintenance-8-9-august-2022/</link>
       <pubDate>Wed, 10 Aug 2022 10:05:00 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-08-10-update-tape-services-maintenance-8-9-august-2022/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-08-10-update-tape-services-maintenance-8-9-august-2022/</guid>
       <description>Dear Users
 Elastic Tape, JDMA Near-Line Archive (NLA) services are now re-enabled and should be running as usual.
 With apologies for any inconvenience caused.</description>
@@ -93,222 +93,222 @@ With apologies for any inconvenience caused.</description>
     
     <item>
       <title>Reminder Tape services maintenance 8-9 August 2022</title>
-      <link>/en/news/updates/2022/2022-08-08-tape-services-maintenance-8-9-august-2022/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-08-08-tape-services-maintenance-8-9-august-2022/</link>
       <pubDate>Mon, 08 Aug 2022 10:21:56 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-08-08-tape-services-maintenance-8-9-august-2022/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-08-08-tape-services-maintenance-8-9-august-2022/</guid>
       <description>Dear Users
 Tape services will be out of action from midday on Monday 8th August 2022 until the afternoon of Tuesday 9th August 2022, to enable updates to be applied to firmware and software components of the tape library and servers involved in the delivery of tape services.</description>
     </item>
     
     <item>
       <title>Tape Maintenance 18th to 28th March</title>
-      <link>/en/news/updates/2022/2022-03-15-tape-maintenance-18th-to-28th-march/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-03-15-tape-maintenance-18th-to-28th-march/</link>
       <pubDate>Tue, 15 Mar 2022 15:58:15 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-03-15-tape-maintenance-18th-to-28th-march/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-03-15-tape-maintenance-18th-to-28th-march/</guid>
       <description>Dear Users,
 Due to a Tape Library expansion and upgrade, the tape services offered by CEDA and JASMIN will be unavailable from midday on Friday 18th March until the morning of Monday 28th March 2022.</description>
     </item>
     
     <item>
       <title>Further Tape Maintenance 18th to 22nd February</title>
-      <link>/en/news/updates/2022/2022-02-17-further-tape-maintenance-18th-to-22nd-february/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-02-17-further-tape-maintenance-18th-to-22nd-february/</link>
       <pubDate>Thu, 17 Feb 2022 15:19:07 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-02-17-further-tape-maintenance-18th-to-22nd-february/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-02-17-further-tape-maintenance-18th-to-22nd-february/</guid>
       <description>Dear Users,
 Due to a network upgrade, the tape services offered by CEDA and JASMIN will be unavailable from midday on Friday 19th February until the morning of Tuesday 22nd February 2022.</description>
     </item>
     
     <item>
       <title>Reminder Tape service maintenance 26/27 Oct</title>
-      <link>/en/news/updates/2021/2021-10-25-reminder-tape-service-maintenance-2627-oct/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-10-25-reminder-tape-service-maintenance-2627-oct/</link>
       <pubDate>Mon, 25 Oct 2021 08:37:39 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-10-25-reminder-tape-service-maintenance-2627-oct/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-10-25-reminder-tape-service-maintenance-2627-oct/</guid>
       <description>Dear users
 There will be a downtime for tape services (affecting Elastic Tape, JDMA and the Near-Line Archive service) on Wednesday 27th October, to apply essential updates.</description>
     </item>
     
     <item>
       <title>1) Cancelled Reboot of servers Tuesday 11 May 2021  2) Tape library maintenance</title>
-      <link>/en/news/updates/2021/2021-05-11-1-cancelled-reboot-of-servers-tuesday-11-may-2021-2-tape-library-maintenance/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-05-11-1-cancelled-reboot-of-servers-tuesday-11-may-2021-2-tape-library-maintenance/</link>
       <pubDate>Tue, 11 May 2021 09:32:12 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-05-11-1-cancelled-reboot-of-servers-tuesday-11-may-2021-2-tape-library-maintenance/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-05-11-1-cancelled-reboot-of-servers-tuesday-11-may-2021-2-tape-library-maintenance/</guid>
       <description>Dear all,
 Apologies for the short notice but the reboot of servers planned for today announced in our recent update is cancelled.</description>
     </item>
     
     <item>
       <title>Continuing Problems with Elastic Tape</title>
-      <link>/en/news/updates/2021/2021-03-10-continuing-problems-with-elastic-tape/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-03-10-continuing-problems-with-elastic-tape/</link>
       <pubDate>Wed, 10 Mar 2021 11:32:30 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-03-10-continuing-problems-with-elastic-tape/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-03-10-continuing-problems-with-elastic-tape/</guid>
       <description>Unfortunately we are still having recurring problems with the Elastic Tape system. This has resulted in further failures of both ingesting and retrieving data.</description>
     </item>
     
     <item>
       <title>Problems with Elastic Tape</title>
-      <link>/en/news/updates/2021/2021-02-10-problems-with-elastic-tape/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-02-10-problems-with-elastic-tape/</link>
       <pubDate>Wed, 10 Feb 2021 13:47:32 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-02-10-problems-with-elastic-tape/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-02-10-problems-with-elastic-tape/</guid>
       <description>We have recently been having lots of problems with the Elastic Tape system. This has resulted in the failure of both ingesting and retrieving data.</description>
     </item>
     
     <item>
       <title>Reminder - Change of server for Elastic Tape service.</title>
-      <link>/en/news/updates/2021/2021-01-20-change-of-server-for-elastic-tape-service/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-01-20-change-of-server-for-elastic-tape-service/</link>
       <pubDate>Wed, 20 Jan 2021 09:19:40 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-01-20-change-of-server-for-elastic-tape-service/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-01-20-change-of-server-for-elastic-tape-service/</guid>
       <description>The server used to access the Elastic Tape service (et1.ceda.ac.uk) has reached its end of life and is due to be decommissioned.</description>
     </item>
     
     <item>
       <title>Update on tape library maintenance 26-28 Oct</title>
-      <link>/en/news/updates/2020/2020-10-28-update-on-tape-library-maintenance-26-28-oct/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-10-28-update-on-tape-library-maintenance-26-28-oct/</link>
       <pubDate>Wed, 28 Oct 2020 09:49:01 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-10-28-update-on-tape-library-maintenance-26-28-oct/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-10-28-update-on-tape-library-maintenance-26-28-oct/</guid>
       <description>Dear Users,
 Maintenance work to the tape library has now been completed including tests to check that all is operating as expected.</description>
     </item>
     
     <item>
       <title>Reminder - Tape library maintenance 26-28 Oct</title>
-      <link>/en/news/updates/2020/2020-10-26-reminder-tape-library-maintenance-26-28-oct/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-10-26-reminder-tape-library-maintenance-26-28-oct/</link>
       <pubDate>Mon, 26 Oct 2020 09:36:30 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-10-26-reminder-tape-library-maintenance-26-28-oct/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-10-26-reminder-tape-library-maintenance-26-28-oct/</guid>
       <description>This is just a reminder that Tape library maintenance scheduled for Tuesday 27th October will mean that the Elastic Tape (ET) and Near-Line Archive (NLA) services are unavailable from lunchtime today, Monday 26th October until the morning of Wednesday 28th October.</description>
     </item>
     
     <item>
       <title>Tape library maintenance 26-28 Oct</title>
-      <link>/en/news/updates/2020/2020-10-23-tape-library-maintenance-26-28-oct/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-10-23-tape-library-maintenance-26-28-oct/</link>
       <pubDate>Fri, 23 Oct 2020 09:17:21 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-10-23-tape-library-maintenance-26-28-oct/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-10-23-tape-library-maintenance-26-28-oct/</guid>
       <description>Tape library maintenance scheduled for Tuesday 27th October will mean that the Elastic Tape (ET) and Near-Line Archive (NLA) services are unavailable from lunchtime on Monday 26th October until the morning of Wednesday 28th October.</description>
     </item>
     
     <item>
       <title>Tape library maintenance Tues 8 Sept 2020</title>
-      <link>/en/news/updates/2020/2020-09-07-tape-library-maintenance-tues-8-sept-2020/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-09-07-tape-library-maintenance-tues-8-sept-2020/</link>
       <pubDate>Mon, 07 Sep 2020 08:26:29 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-09-07-tape-library-maintenance-tues-8-sept-2020/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-09-07-tape-library-maintenance-tues-8-sept-2020/</guid>
       <description>Maintenance work on the Spectra tape library is now planned for tomorrow Tuesday 8th September, which may mean a delay to tape retrievals with Elastic Tape (ET) and Near-Line Archive (NLA) services.</description>
     </item>
     
     <item>
       <title>Update on tape library maintenance 17/18 Aug</title>
-      <link>/en/news/updates/2020/2020-08-19-update-on-tape-library-maintenance-1718-aug/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-08-19-update-on-tape-library-maintenance-1718-aug/</link>
       <pubDate>Wed, 19 Aug 2020 10:49:33 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-08-19-update-on-tape-library-maintenance-1718-aug/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-08-19-update-on-tape-library-maintenance-1718-aug/</guid>
       <description>Dear users,
 Maintenance work to the tape library has now been completed including tests to check that all is operating as expected.</description>
     </item>
     
     <item>
       <title>Reminder Tape library maintenance 17/18 Aug</title>
-      <link>/en/news/updates/2020/2020-08-17-reminder-tape-library-maintenance-1718-aug/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-08-17-reminder-tape-library-maintenance-1718-aug/</link>
       <pubDate>Mon, 17 Aug 2020 09:32:42 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-08-17-reminder-tape-library-maintenance-1718-aug/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-08-17-reminder-tape-library-maintenance-1718-aug/</guid>
       <description>Dear users,
 This is a reminder to please be aware that further maintenance work on the tape library system used is now scheduled for Tuesday 18th August 2020 for one day, however it will be taken out of service from 17:00 today to clear any queued tasks first.</description>
     </item>
     
     <item>
       <title>Tape library maintenance 17/18 Aug</title>
-      <link>/en/news/updates/2020/2020-08-13-tape-library-maintenance-1718-aug/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-08-13-tape-library-maintenance-1718-aug/</link>
       <pubDate>Thu, 13 Aug 2020 10:13:09 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-08-13-tape-library-maintenance-1718-aug/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-08-13-tape-library-maintenance-1718-aug/</guid>
       <description>Dear users,
 Please be aware that further maintenance work on the tape library system used is now scheduled for Tuesday 18th August 2020 for one day, however it will be taken out of service from 17:00 on Monday 17th August to clear any queued tasks first.</description>
     </item>
     
     <item>
       <title>Tape systems unavailable 22-24 July</title>
-      <link>/en/news/updates/2020/2020-07-09-tape-systems-unavailable-22-24-july/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-07-09-tape-systems-unavailable-22-24-july/</link>
       <pubDate>Thu, 09 Jul 2020 08:22:11 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-07-09-tape-systems-unavailable-22-24-july/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-07-09-tape-systems-unavailable-22-24-july/</guid>
       <description>Dear users,
 Maintenance work is planned for 22-24 July 2020 to add additional capacity to the tape library shared by CEDA and JASMIN tape services.</description>
     </item>
     
     <item>
       <title>Low level of at risk for ET, JDMA, and NLA between 1400 and 1500 today</title>
-      <link>/en/news/updates/2020/2020-03-19-low-level-of-at-risk-for-et-jdma-and-nla-between-1400-and-1500-today/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-03-19-low-level-of-at-risk-for-et-jdma-and-nla-between-1400-and-1500-today/</link>
       <pubDate>Thu, 19 Mar 2020 11:08:36 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-03-19-low-level-of-at-risk-for-et-jdma-and-nla-between-1400-and-1500-today/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-03-19-low-level-of-at-risk-for-et-jdma-and-nla-between-1400-and-1500-today/</guid>
       <description>There is a very small risk of these services being affected by work being carried out in the machine room between these times.</description>
     </item>
     
     <item>
       <title>Outage of ET, NLA, and JDMA - OVER</title>
-      <link>/en/news/updates/2020/2020-03-06-outage-of-et-nla-and-jdma-over/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-03-06-outage-of-et-nla-and-jdma-over/</link>
       <pubDate>Fri, 06 Mar 2020 12:31:55 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-03-06-outage-of-et-nla-and-jdma-over/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-03-06-outage-of-et-nla-and-jdma-over/</guid>
       <description>These services are now available again.
 Ingestions in progress have been recommenced, but and retrievals will have to be restarted.</description>
     </item>
     
     <item>
       <title>Outage of ET, NLA, and JDMA</title>
-      <link>/en/news/updates/2020/2020-03-06-outage-of-et-nla-and-jdma/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-03-06-outage-of-et-nla-and-jdma/</link>
       <pubDate>Fri, 06 Mar 2020 11:41:18 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-03-06-outage-of-et-nla-and-jdma/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-03-06-outage-of-et-nla-and-jdma/</guid>
       <description>There is a problem with the DB underlying these that is currently being investigated.
 Data ingestions have been paused and will be restarted once the problem is dealt with; however current retrievals are likely to need restarting.</description>
     </item>
     
     <item>
       <title>Elastic Tape, NLA, and JDMA now available</title>
-      <link>/en/news/updates/2020/2020-02-11-elastic-tape-nla-and-jdma-now-available/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-02-11-elastic-tape-nla-and-jdma-now-available/</link>
       <pubDate>Tue, 11 Feb 2020 15:28:39 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-02-11-elastic-tape-nla-and-jdma-now-available/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-02-11-elastic-tape-nla-and-jdma-now-available/</guid>
       <description>The work on patching etc has gone well, and these systems are now available.
 Data ingestions that were paused have been re-enabled.</description>
     </item>
     
     <item>
       <title>Elastic Tape, NLA, and JDMA not available 0800-1500 Tuesday 11th February</title>
-      <link>/en/news/updates/2020/2020-02-03-elastic-tape-nla-and-jdma-not-available-0800-1500-tuesday-11th-february/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-02-03-elastic-tape-nla-and-jdma-not-available-0800-1500-tuesday-11th-february/</link>
       <pubDate>Mon, 03 Feb 2020 08:22:31 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-02-03-elastic-tape-nla-and-jdma-not-available-0800-1500-tuesday-11th-february/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-02-03-elastic-tape-nla-and-jdma-not-available-0800-1500-tuesday-11th-february/</guid>
       <description>To allow security patching and upgrades in the tape back-end, these services will be unavailable from 08:00 until 15:00.
 While any data ingestions in progress will be paused during this period, users are requested to have completed any retrievals by 17:00 on the evening of the 10th, as any which may still be in progress the next morning will risk being cancelled to allow work to progress.</description>
     </item>
     
     <item>
       <title>Elastic Tape, JDMA, and NLA - end of at risk period - Wednesday 6th November 0900-1300</title>
-      <link>/en/news/updates/2019/2019-11-06-elastic-tape-jdma-and-nla-end-of-at-risk-period-wednesday-6th-november-0900-1300/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2019/2019-11-06-elastic-tape-jdma-and-nla-end-of-at-risk-period-wednesday-6th-november-0900-1300/</link>
       <pubDate>Wed, 06 Nov 2019 13:51:14 +0000</pubDate>
       
-      <guid>/en/news/updates/2019/2019-11-06-elastic-tape-jdma-and-nla-end-of-at-risk-period-wednesday-6th-november-0900-1300/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2019/2019-11-06-elastic-tape-jdma-and-nla-end-of-at-risk-period-wednesday-6th-november-0900-1300/</guid>
       <description>The update activity is now complete.</description>
     </item>
     
     <item>
       <title>Elastic Tape, JDMA, and NLA - at risk Wednesday 6th November 0900-1300</title>
-      <link>/en/news/updates/2019/2019-10-30-elastic-tape-jdma-and-nla-at-risk-wednesday-6th-november-0900-1300/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2019/2019-10-30-elastic-tape-jdma-and-nla-at-risk-wednesday-6th-november-0900-1300/</link>
       <pubDate>Wed, 30 Oct 2019 10:44:37 +0000</pubDate>
       
-      <guid>/en/news/updates/2019/2019-10-30-elastic-tape-jdma-and-nla-at-risk-wednesday-6th-november-0900-1300/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2019/2019-10-30-elastic-tape-jdma-and-nla-at-risk-wednesday-6th-november-0900-1300/</guid>
       <description>The databases of the tape back-end to these systems are having security patches from 09:00 on Wednesday 6th November.
 The process could take up to 4 hours.</description>
     </item>
