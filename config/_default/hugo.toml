@@ -5,7 +5,7 @@ enableGitInfo = true
 
 # additional settings
 # googleAnalytics = "G-xxxxxxxxxx"
-baseURL = ""
+baseURL = "https://www.ceda.ac.uk"
 canonifyURLs = false
 enableEmoji = true
 enableRobotsTXT = true

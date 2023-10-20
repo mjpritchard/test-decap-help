@@ -7,6 +7,8 @@ icon: fas computer
 description: This week long course is run on a yearly basis by NCAS, delivered by staff from CEDA.
 ---
 
+{{< youtube KA7uKqD9uvk >}}
+
 You will be tutored by experts from the Centre for Environmental Data Analysis who solve scientific data challenges on a daily basis.
 
 We will provide you with the essential knowledge and skills to start using computers for cutting-edge environmental science research. The course will take place from 13-17th November 2023 at the NCAS Training Facility, University of Leeds. For further details and to register {{< link href="https://ncas.ac.uk/study-with-us/introduction-to-scientific-computing/" >}} Click right here! {{< /link >}}

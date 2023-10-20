@@ -2,279 +2,279 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ceda-archive on Centre for Environmental Data Analysis</title>
-    <link>/en/tags/ceda-archive/</link>
+    <link>https://www.ceda.ac.uk/en/tags/ceda-archive/</link>
     <description>Recent content in ceda-archive on Centre for Environmental Data Analysis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2023 Science and Technology Facilities Council.</copyright>
-    <lastBuildDate>Wed, 11 Oct 2023 07:34:44 +0000</lastBuildDate><atom:link href="/en/tags/ceda-archive/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Oct 2023 07:34:44 +0000</lastBuildDate><atom:link href="https://www.ceda.ac.uk/en/tags/ceda-archive/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JASMIN Network Issues</title>
-      <link>/en/news/updates/2023/2023-10-11-jasmin-network-issues/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-10-11-jasmin-network-issues/</link>
       <pubDate>Wed, 11 Oct 2023 07:34:44 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-10-11-jasmin-network-issues/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-10-11-jasmin-network-issues/</guid>
       <description>Part of the JASMIN network suffered a failure yesterday evening and the team is currently working to resolve this. As a result, many JASMIN and CEDA services are currently unavailable.</description>
     </item>
     
     <item>
       <title>CEDA web download service issues resolved.</title>
-      <link>/en/news/updates/2023/2023-09-25-ceda-web-download-service-issues-resolved/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-09-25-ceda-web-download-service-issues-resolved/</link>
       <pubDate>Mon, 25 Sep 2023 08:26:53 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-09-25-ceda-web-download-service-issues-resolved/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-09-25-ceda-web-download-service-issues-resolved/</guid>
       <description>The temporary issue affecting the web download service for the archive (data.ceda.ac.uk) has been resolved and normal service has resumed.Apologies for the inconvenience this may have caused.</description>
     </item>
     
     <item>
       <title>CEDA web download service issues.</title>
-      <link>/en/news/updates/2023/2023-09-22-ceda-web-download-service-issues/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-09-22-ceda-web-download-service-issues/</link>
       <pubDate>Fri, 22 Sep 2023 13:42:34 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-09-22-ceda-web-download-service-issues/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-09-22-ceda-web-download-service-issues/</guid>
       <description>CEDA are aware of issues with the web download service at present resulting in &amp;ldquo;Internal Server Error&amp;rdquo; messages when browsing the archive.</description>
     </item>
     
     <item>
       <title>Sustainable computing the UK’s journey to net zero digital research infrastructure by 2040</title>
-      <link>/en/news/updates/2023/2023-08-04-net-zero-digital-research-infrastructure/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-08-04-net-zero-digital-research-infrastructure/</link>
       <pubDate>Fri, 04 Aug 2023 08:29:06 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-08-04-net-zero-digital-research-infrastructure/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-08-04-net-zero-digital-research-infrastructure/</guid>
       <description>Leading UK data and computing experts have developed a toolkit and roadmap to get the UK’s digital research infrastructure sector to net zero.</description>
     </item>
     
     <item>
       <title>From Rubik&#39;s Cubes to Data Cubes Adrian Dębski’s Industrial Placement year with CEDA</title>
-      <link>/en/news/updates/2023/2023-07-27-adrian-debskis-industrial-placement/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-07-27-adrian-debskis-industrial-placement/</link>
       <pubDate>Thu, 27 Jul 2023 15:18:48 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-07-27-adrian-debskis-industrial-placement/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-07-27-adrian-debskis-industrial-placement/</guid>
       <description>Adrian Dębski, holder of 3 European and 13 Polish ‘speed-cubing’ records, joined the Centre for Environmental Data Analysis (CEDA) for his Year in Industry as part of his BSc Computer Science degree at Aberystwyth University in August 2022.</description>
     </item>
     
     <item>
       <title>FAAM Airborne Laboratory data use survey</title>
-      <link>/en/news/updates/2023/2023-07-21-faam-data-survey/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-07-21-faam-data-survey/</link>
       <pubDate>Fri, 21 Jul 2023 11:10:51 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-07-21-faam-data-survey/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-07-21-faam-data-survey/</guid>
       <description>The FAAM Airborne Laboratory collects atmospheric data all over the world. From air quality, cloud formation, and weather processes, to greenhouse gas emissions from human activities and atmospheric composition, the FAAM Airborne Laboratory’s specially adapted research aircraft enables researchers to understand our changing environment.</description>
     </item>
     
     <item>
       <title>CEDA Data Catalogue Unavailable 10am, Tues 13th June</title>
-      <link>/en/news/updates/2023/2023-06-12-ceda-data-catalogue-unavailable-10am-tues-13th-june/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-06-12-ceda-data-catalogue-unavailable-10am-tues-13th-june/</link>
       <pubDate>Mon, 12 Jun 2023 14:53:32 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-06-12-ceda-data-catalogue-unavailable-10am-tues-13th-june/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-06-12-ceda-data-catalogue-unavailable-10am-tues-13th-june/</guid>
       <description>The CEDA Data Catalogue service will be temporarily unavailable tomorrow 10am, Tues 13th June to allow an updated version to be deployed.</description>
     </item>
     
     <item>
       <title>Vacancy Principal Project/Programme Manager</title>
-      <link>/en/news/updates/2023/2023-04-24-vacancy-principal-projectprogramme-manager/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-04-24-vacancy-principal-projectprogramme-manager/</link>
       <pubDate>Mon, 24 Apr 2023 11:00:18 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-04-24-vacancy-principal-projectprogramme-manager/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-04-24-vacancy-principal-projectprogramme-manager/</guid>
       <description>We have an exciting new vacancy for a Principal Project/Programme Manager within our CEDA team.
 You will be responsible for effective leadership, management, delivery, and co-ordination of programmes and projects across CEDA.</description>
     </item>
     
     <item>
       <title>CEDA Data Catalogue Update 3pm today.</title>
-      <link>/en/news/updates/2023/2023-03-30-ceda-data-catalogue-update-3pm-today/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-03-30-ceda-data-catalogue-update-3pm-today/</link>
       <pubDate>Thu, 30 Mar 2023 11:14:53 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-03-30-ceda-data-catalogue-update-3pm-today/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-03-30-ceda-data-catalogue-update-3pm-today/</guid>
       <description>The CEDA Data Catalogue service (https://catalogue.ceda.ac.uk ) will be briefly off line at 3pm today to allow a number of updates to the service to be rolled out.</description>
     </item>
     
     <item>
       <title>Disruption to CEDA archive services</title>
-      <link>/en/news/updates/2022/2022-12-14-disruption-to-ceda-archive-services/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-12-14-disruption-to-ceda-archive-services/</link>
       <pubDate>Wed, 14 Dec 2022 10:10:04 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-12-14-disruption-to-ceda-archive-services/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-12-14-disruption-to-ceda-archive-services/</guid>
       <description>We are currently experiences some disruption to CEDA archive services while we upgrade our storage systems.
 We anticipated some short outages of our data ingestion services, but it looks likely that these may run over until tomorrow.</description>
     </item>
     
     <item>
       <title>CEDA and JASMIN support over the Christmas period</title>
-      <link>/en/news/updates/2022/2022-12-13-ceda-and-jasmin-support-over-the-christmas-period-1/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-12-13-ceda-and-jasmin-support-over-the-christmas-period-1/</link>
       <pubDate>Tue, 13 Dec 2022 09:12:03 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-12-13-ceda-and-jasmin-support-over-the-christmas-period-1/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-12-13-ceda-and-jasmin-support-over-the-christmas-period-1/</guid>
       <description>As we approach the Christmas period, please be aware of the limited support arrangements in place which will result in CEDA and JASMIN services running “at-risk”.</description>
     </item>
     
     <item>
       <title>CEDA Catalogue service and data.ceda download service presently unavailable.</title>
-      <link>/en/news/updates/2022/2022-12-09-ceda-catalogue-service-and-dataceda-download-service-presently-unavailable/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-12-09-ceda-catalogue-service-and-dataceda-download-service-presently-unavailable/</link>
       <pubDate>Fri, 09 Dec 2022 14:44:41 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-12-09-ceda-catalogue-service-and-dataceda-download-service-presently-unavailable/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-12-09-ceda-catalogue-service-and-dataceda-download-service-presently-unavailable/</guid>
       <description>The CEDA Data Catalouge and web download services are presently unavailable due to issues affecting the catalogue service.
 CEDA staff are investigating the cause and hope to have this resolved as soon as possible to restore normal sevice.</description>
     </item>
     
     <item>
       <title>CEDA Document Repository Transfer To Zenodo Complete</title>
-      <link>/en/news/updates/2022/2022-11-24-ceda-document-repository-transfer-to-zenodo-complete/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-11-24-ceda-document-repository-transfer-to-zenodo-complete/</link>
       <pubDate>Thu, 24 Nov 2022 17:01:17 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-11-24-ceda-document-repository-transfer-to-zenodo-complete/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-11-24-ceda-document-repository-transfer-to-zenodo-complete/</guid>
       <description>The transfer of items from the CEDA Document Repository to our CEDA Document Repository Community on Zenodo has now been successfully completed.</description>
     </item>
     
     <item>
       <title>CEDA Document Repository Move to Zenodo Thursday 24th November</title>
-      <link>/en/news/updates/2022/2022-11-22-ceda-document-repository-move-to-zenodo-thursday-24th-november/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-11-22-ceda-document-repository-move-to-zenodo-thursday-24th-november/</link>
       <pubDate>Tue, 22 Nov 2022 10:14:34 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-11-22-ceda-document-repository-move-to-zenodo-thursday-24th-november/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-11-22-ceda-document-repository-move-to-zenodo-thursday-24th-november/</guid>
       <description>On Thursday 22nd November we’ll be transferring items from the CEDA Document Repository service to Zenodo, a service operated by CERN, where CEDA will maintain a ‘CEDA Document Repository Community’ to aid access to dataset related documentation.</description>
     </item>
     
     <item>
       <title>Advanced warning CEDA data catalogue offline 10am 22nd July 2022</title>
-      <link>/en/news/updates/2022/2022-07-21-advanced-warning-ceda-data-catalogue-offline-10am-22nd-july-2022/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-07-21-advanced-warning-ceda-data-catalogue-offline-10am-22nd-july-2022/</link>
       <pubDate>Thu, 21 Jul 2022 13:26:57 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-07-21-advanced-warning-ceda-data-catalogue-offline-10am-22nd-july-2022/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-07-21-advanced-warning-ceda-data-catalogue-offline-10am-22nd-july-2022/</guid>
       <description>The CEDA data catalogue service (https://catalogue.ceda.ac.uk) will be temporarily affected tomorrow at 10am for a planned roll-out of new features and bug fixes.</description>
     </item>
     
     <item>
       <title>UK record temperature data access</title>
-      <link>/en/news/updates/2022/2022-07-19-uk-record-temperature-data-access/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-07-19-uk-record-temperature-data-access/</link>
       <pubDate>Tue, 19 Jul 2022 12:24:12 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-07-19-uk-record-temperature-data-access/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-07-19-uk-record-temperature-data-access/</guid>
       <description>As the UK heatwave peaks across the country, we have been putting together some handy tips for how to access temperature and related data for the UK.</description>
     </item>
     
     <item>
       <title>Reminder of maintenance work on weekend of 18/19 June and extended at risk period 20-24 June</title>
-      <link>/en/news/updates/2022/2022-06-17-jasmin-reminder-of-maintenance-work-on-weekend-of-1819-june-and-extended-at-risk-period-20-24-june/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-06-17-jasmin-reminder-of-maintenance-work-on-weekend-of-1819-june-and-extended-at-risk-period-20-24-june/</link>
       <pubDate>Fri, 17 Jun 2022 09:32:35 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-06-17-jasmin-reminder-of-maintenance-work-on-weekend-of-1819-june-and-extended-at-risk-period-20-24-june/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-06-17-jasmin-reminder-of-maintenance-work-on-weekend-of-1819-june-and-extended-at-risk-period-20-24-june/</guid>
       <description>Please note upcoming maintenance work and extended &amp;ldquo;at risk&amp;rdquo; period affecting JASMIN &amp;amp; CEDA next week:
 Advance notice of STFC network intervention, 18-19 June 2022 Over the weekend of 18/19 June, there will be NO ACCESS to the RAL network, in which JASMIN is hosted, so there will be no access to JASMIN and CEDA services.</description>
     </item>
     
     <item>
       <title>Announcement of Opportunity - funding to support the UKRI Net Zero Digital Research Infrastructure Scoping Project Deadline for funding has been extended to Thursday 28th 1pm</title>
-      <link>/en/news/updates/2022/2022-03-30-announcement-of-opportunity-net-zero-sandpit/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-03-30-announcement-of-opportunity-net-zero-sandpit/</link>
       <pubDate>Wed, 30 Mar 2022 11:38:07 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-03-30-announcement-of-opportunity-net-zero-sandpit/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-03-30-announcement-of-opportunity-net-zero-sandpit/</guid>
       <description>As part of the Net Zero Digital Research Infrastructure Scoping project, we invite researchers and practitioners to come together in two ‘sandpit’ style events.</description>
     </item>
     
     <item>
       <title>Tape Maintenance 18th to 28th March</title>
-      <link>/en/news/updates/2022/2022-03-15-tape-maintenance-18th-to-28th-march/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-03-15-tape-maintenance-18th-to-28th-march/</link>
       <pubDate>Tue, 15 Mar 2022 15:58:15 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-03-15-tape-maintenance-18th-to-28th-march/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-03-15-tape-maintenance-18th-to-28th-march/</guid>
       <description>Dear Users,
 Due to a Tape Library expansion and upgrade, the tape services offered by CEDA and JASMIN will be unavailable from midday on Friday 18th March until the morning of Monday 28th March 2022.</description>
     </item>
     
     <item>
       <title>Changes to your CEDA login account</title>
-      <link>/en/news/updates/2022/2022-03-15-changes-to-your-ceda-login-account/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-03-15-changes-to-your-ceda-login-account/</link>
       <pubDate>Tue, 15 Mar 2022 10:29:40 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-03-15-changes-to-your-ceda-login-account/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-03-15-changes-to-your-ceda-login-account/</guid>
       <description>Dear CEDA users,
 We are currently in the process of rolling out a number of improvements to our accounts and login systems.</description>
     </item>
     
     <item>
       <title>Advanced warning CEDA data catalogue offline 10am 15th March 2022</title>
-      <link>/en/news/updates/2022/2022-03-14-advanced-warning-ceda-data-catalogue-offline-10am-15th-march-2022/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-03-14-advanced-warning-ceda-data-catalogue-offline-10am-15th-march-2022/</link>
       <pubDate>Mon, 14 Mar 2022 16:39:14 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-03-14-advanced-warning-ceda-data-catalogue-offline-10am-15th-march-2022/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-03-14-advanced-warning-ceda-data-catalogue-offline-10am-15th-march-2022/</guid>
       <description>The CEDA data catalogue service (https://catalogue.ceda.ac.uk) will be temporarily affected tomorrow at 10 am whilst the catalogue service is provisioned with additional resources.</description>
     </item>
     
     <item>
       <title>Issues affecting access to CEDA and JASMIN services for some users</title>
-      <link>/en/news/updates/2022/2022-02-09-issues-affecting-access-to-ceda-and-jasmin-services-for-some-users/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-02-09-issues-affecting-access-to-ceda-and-jasmin-services-for-some-users/</link>
       <pubDate>Wed, 09 Feb 2022 12:14:50 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-02-09-issues-affecting-access-to-ceda-and-jasmin-services-for-some-users/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-02-09-issues-affecting-access-to-ceda-and-jasmin-services-for-some-users/</guid>
       <description>Dear users,
 We are aware that some users have been experiencing difficulties in reaching some JASMIN and CEDA services since earlier this month.</description>
     </item>
     
     <item>
       <title>Maintenance downtime for CEDA login and accounts pages</title>
-      <link>/en/news/updates/2022/2022-02-04-maintenance-downtime-for-ceda-login-and-accounts-pages/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-02-04-maintenance-downtime-for-ceda-login-and-accounts-pages/</link>
       <pubDate>Fri, 04 Feb 2022 10:50:47 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-02-04-maintenance-downtime-for-ceda-login-and-accounts-pages/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-02-04-maintenance-downtime-for-ceda-login-and-accounts-pages/</guid>
       <description>Dear CEDA users,
 We are planning an update to the CEDA login and account management servers between 10:00 am and 11:00 am on Tuesday, the 8th of February.</description>
     </item>
     
     <item>
       <title>The Coupled Model Intercomparison Project (CMIP) Survey</title>
-      <link>/en/news/updates/2022/2022-01-17-cmip-survey/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-01-17-cmip-survey/</link>
       <pubDate>Mon, 17 Jan 2022 10:09:16 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-01-17-cmip-survey/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-01-17-cmip-survey/</guid>
       <description>If you are part of a community that makes use of data from the Coupled Model Intercomparison Project (CMIP), please consider completing the survey.</description>
     </item>
     
     <item>
       <title>Vacancies Head of CEDA, Project Manager, JASMIN Director</title>
-      <link>/en/news/updates/2021/2021-12-17-vacancies-head-of-ceda-project-manager/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-12-17-vacancies-head-of-ceda-project-manager/</link>
       <pubDate>Fri, 17 Dec 2021 10:04:51 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-12-17-vacancies-head-of-ceda-project-manager/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-12-17-vacancies-head-of-ceda-project-manager/</guid>
       <description>We have three new exciting job opportunities to join our team. Further details are at the links below.
 Head of Centre for Environmental Data Analysis(deadline extended to 23rd January) Project Manager(deadline extended to 16th January) JASMIN Director (deadline 23rd January) Please contact the helpdesk if you need any additional information.</description>
     </item>
     
     <item>
       <title>CEDA and JASMIN support over the Christmas period</title>
-      <link>/en/news/updates/2021/2021-12-07-ceda-and-jasmin-support-over-the-christmas-period/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-12-07-ceda-and-jasmin-support-over-the-christmas-period/</link>
       <pubDate>Tue, 07 Dec 2021 12:12:45 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-12-07-ceda-and-jasmin-support-over-the-christmas-period/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-12-07-ceda-and-jasmin-support-over-the-christmas-period/</guid>
       <description>As we approach the Christmas period, please be aware of the limited support arrangements in place which will result in CEDA and JASMIN services running “at-risk”.</description>
     </item>
     
     <item>
       <title>CEDA leads UKRI’s net zero computing goals</title>
-      <link>/en/news/updates/2021/2021-11-30-net-zero-computing/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-11-30-net-zero-computing/</link>
       <pubDate>Tue, 30 Nov 2021 13:44:34 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-11-30-net-zero-computing/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-11-30-net-zero-computing/</guid>
       <description>The CEDA team are leading efforts in the UK’s research and innovation sector to reach net zero computing. Our data experts will recommend a plan to ensure all the digital tools used throughout the sector, from supercomputers to phones, will be carbon neutral by 2040.</description>
     </item>
     
     <item>
       <title>Sentinel data variety and volume</title>
-      <link>/en/news/updates/2021/2021-11-04-sentinel-data-variety-and-volume/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-11-04-sentinel-data-variety-and-volume/</link>
       <pubDate>Thu, 04 Nov 2021 10:34:49 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-11-04-sentinel-data-variety-and-volume/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-11-04-sentinel-data-variety-and-volume/</guid>
       <description>The CEDA Archive now holds over 10 Petabytes of satellite data from the Sentinels - this increases in volume at over 7 Terabytes per day.</description>
     </item>
     
     <item>
       <title>Now resolved Issues to CEDA Archive download service</title>
-      <link>/en/news/updates/2021/2021-09-20-issues-to-ceda-archive-download-service/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-09-20-issues-to-ceda-archive-download-service/</link>
       <pubDate>Mon, 20 Sep 2021 10:44:32 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-09-20-issues-to-ceda-archive-download-service/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-09-20-issues-to-ceda-archive-download-service/</guid>
       <description>The below issue is now resolved. We are currently experiencing some issues with the following CEDA Archive service:
 dap.ceda.ac.uk
 This will be causing some issues when you try to download data.</description>
@@ -282,301 +282,301 @@ This will be causing some issues when you try to download data.</description>
     
     <item>
       <title>New technical blog sharing expertise about managing petabytes of data</title>
-      <link>/en/news/updates/2021/2021-09-15-new-tech-blog/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-09-15-new-tech-blog/</link>
       <pubDate>Wed, 15 Sep 2021 12:33:37 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-09-15-new-tech-blog/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-09-15-new-tech-blog/</guid>
       <description>Experts at the Centre for Environmental Data Analysis (CEDA) have launched a new technical blog for sharing expertise about how we manage petabytes of data.</description>
     </item>
     
     <item>
       <title>Vacancy two graduate roles</title>
-      <link>/en/news/updates/2021/2021-09-10-vacancy-two-graduate-roles/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-09-10-vacancy-two-graduate-roles/</link>
       <pubDate>Fri, 10 Sep 2021 14:49:22 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-09-10-vacancy-two-graduate-roles/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-09-10-vacancy-two-graduate-roles/</guid>
       <description>We have two new opportunities for graduates to join the CEDA team. Follow the links below for more information and how to apply.</description>
     </item>
     
     <item>
       <title>Improved access for Met Office Weather data held in CEDA Archive</title>
-      <link>/en/news/updates/2021/2021-07-29-improved-access-for-met-office-weather-data-held-in-ceda-archive/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-07-29-improved-access-for-met-office-weather-data-held-in-ceda-archive/</link>
       <pubDate>Thu, 29 Jul 2021 14:06:47 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-07-29-improved-access-for-met-office-weather-data-held-in-ceda-archive/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-07-29-improved-access-for-met-office-weather-data-held-in-ceda-archive/</guid>
       <description>The CEDA Archive has been a conduit for the research community to access a range of weather data supplied by the Met Office under the NERC-Met Office agreement for many years.</description>
     </item>
     
     <item>
       <title>CEDA and JASMIN support over summer period</title>
-      <link>/en/news/updates/2021/2021-07-23-ceda-and-jasmin-support-over-summer-period/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-07-23-ceda-and-jasmin-support-over-summer-period/</link>
       <pubDate>Fri, 23 Jul 2021 15:15:41 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-07-23-ceda-and-jasmin-support-over-summer-period/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-07-23-ceda-and-jasmin-support-over-summer-period/</guid>
       <description>As we approach the summer period, please be aware of the limited support arrangements in place which will result in CEDA and JASMIN services running “at-risk”.</description>
     </item>
     
     <item>
       <title>JASMIN helps to predict seabird breeding abundance in a changing climate</title>
-      <link>/en/news/updates/2021/2021-06-08-jasmin-helps-to-predict-seabird-abundance/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-06-08-jasmin-helps-to-predict-seabird-abundance/</link>
       <pubDate>Tue, 08 Jun 2021 10:28:59 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-06-08-jasmin-helps-to-predict-seabird-abundance/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-06-08-jasmin-helps-to-predict-seabird-abundance/</guid>
       <description>Many of us have been to the coast and seen seabirds, but have you ever considered how they might be affected by climate change?</description>
     </item>
     
     <item>
       <title>CEDA services improve access to global climate data</title>
-      <link>/en/news/updates/2021/2021-04-22-ceda-services-improve-access-to-global-climate-data/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-04-22-ceda-services-improve-access-to-global-climate-data/</link>
       <pubDate>Thu, 22 Apr 2021 07:00:00 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-04-22-ceda-services-improve-access-to-global-climate-data/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-04-22-ceda-services-improve-access-to-global-climate-data/</guid>
       <description>A diverse set of companies, governments and individuals are now able to access global climate projections data via the Copernicus Climate Change Service (C3S).</description>
     </item>
     
     <item>
       <title>Join in the NERC Environmental Data Discovery Trails, you might get a reward!</title>
-      <link>/en/news/updates/2021/2021-04-06-join-in-the-nerc-environmental-data-discovery-trails-you-might-get-a-reward/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-04-06-join-in-the-nerc-environmental-data-discovery-trails-you-might-get-a-reward/</link>
       <pubDate>Tue, 06 Apr 2021 09:24:02 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-04-06-join-in-the-nerc-environmental-data-discovery-trails-you-might-get-a-reward/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-04-06-join-in-the-nerc-environmental-data-discovery-trails-you-might-get-a-reward/</guid>
       <description>To improve the accessibility of data collected through NERC-funded research, or managed by NERC data centres and our collaborators, a NERC programme (Constructing a Digital Environment) are collecting feedback on the user experience (UX) to improve the navigation of various web portals to assess these data.</description>
     </item>
     
     <item>
       <title>Reminder Access to CEDA and JASMIN services at risk today and tomorrow (30-31 March 2021)</title>
-      <link>/en/news/updates/2021/2021-03-30-access-to-ceda-and-jasmin-services-at-risk-30-31-march-2021/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-03-30-access-to-ceda-and-jasmin-services-at-risk-30-31-march-2021/</link>
       <pubDate>Tue, 30 Mar 2021 08:02:50 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-03-30-access-to-ceda-and-jasmin-services-at-risk-30-31-march-2021/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-03-30-access-to-ceda-and-jasmin-services-at-risk-30-31-march-2021/</guid>
       <description>Please be aware that due to Domain Name Server (DNS) upgrades undertaken by our host institution on 30 and 31 March 2021, there could be delays or interruptions to access to CEDA and JASMIN services after 18:00 on each of these dates.</description>
     </item>
     
     <item>
       <title>Reminder Notice JASMIN System Maintenance Tues 2 March 2021</title>
-      <link>/en/news/updates/2021/2021-02-23-advance-notice-jasmin-system-maintenance-tues-2-march-2021/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-02-23-advance-notice-jasmin-system-maintenance-tues-2-march-2021/</link>
       <pubDate>Tue, 23 Feb 2021 09:22:36 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-02-23-advance-notice-jasmin-system-maintenance-tues-2-march-2021/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-02-23-advance-notice-jasmin-system-maintenance-tues-2-march-2021/</guid>
       <description>Scheduled maintenance is planned for Tuesday 2nd March 2021, which may cause some disruption to JASMIN and CEDA services.
 On a regular (roughly quarterly) basis, important updates are applied to systems within the JASMIN infrastructure (which also hosts the CEDA Archive and associated services) in order to keep them up to date and secure.</description>
     </item>
     
     <item>
       <title>Job opportunity - JASMIN Software Developer</title>
-      <link>/en/news/updates/2021/2021-02-10-job-opportunity-jasmin-software-developer/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-02-10-job-opportunity-jasmin-software-developer/</link>
       <pubDate>Wed, 10 Feb 2021 17:14:49 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-02-10-job-opportunity-jasmin-software-developer/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-02-10-job-opportunity-jasmin-software-developer/</guid>
       <description>Job opportunity - JASMIN Software Developer
 We are looking for an enthusiastic individual to contribute to the evolution of JASMIN – our globally unique facility for data-intensive computing for the environmental sciences.</description>
     </item>
     
     <item>
       <title>JASMIN helps track the impact of climate change on UK birds</title>
-      <link>/en/news/updates/2021/2021-01-28-jasmin-helps-track-the-impact-of-climate-change-on-uk-birds/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-01-28-jasmin-helps-track-the-impact-of-climate-change-on-uk-birds/</link>
       <pubDate>Thu, 28 Jan 2021 09:32:31 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-01-28-jasmin-helps-track-the-impact-of-climate-change-on-uk-birds/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-01-28-jasmin-helps-track-the-impact-of-climate-change-on-uk-birds/</guid>
       <description>Over 600 different species of birds have been recorded in the UK to date[1] . For many of them formal monitoring is limited or absent.</description>
     </item>
     
     <item>
       <title>Update COVID-19 impact on CEDA and JASMIN operations</title>
-      <link>/en/news/updates/2021/2021-01-05-update-covid-19-impact-on-ceda-and-jasmin-operations/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-01-05-update-covid-19-impact-on-ceda-and-jasmin-operations/</link>
       <pubDate>Tue, 05 Jan 2021 10:54:36 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-01-05-update-covid-19-impact-on-ceda-and-jasmin-operations/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-01-05-update-covid-19-impact-on-ceda-and-jasmin-operations/</guid>
       <description>At the beginning of the Covid-19 pandemic, we announced that all of our services should be considered at risk. Thankfully, our services have run largely as normal throughout the pandemic, but 10 months on, unfortunately, this ‘at risk’ status still stands.</description>
     </item>
     
     <item>
       <title>Reminder CEDA and JASMIN support over Christmas period</title>
-      <link>/en/news/updates/2020/2020-12-11-reminder-ceda-and-jasmin-support-over-christmas-period/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-12-11-reminder-ceda-and-jasmin-support-over-christmas-period/</link>
       <pubDate>Fri, 11 Dec 2020 10:37:15 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-12-11-reminder-ceda-and-jasmin-support-over-christmas-period/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-12-11-reminder-ceda-and-jasmin-support-over-christmas-period/</guid>
       <description>A reminder there is a &amp;ldquo;change freeze&amp;rdquo; in place from 17:00 today. Requests for new or changes to existing services will not be dealt with until the New Year.</description>
     </item>
     
     <item>
       <title>NLA unavailable from Fri 4th to Tues 7th Dec 2020</title>
-      <link>/en/news/updates/2020/2020-12-02-nla-unavailable-from-fri-4th-to-tues-7th-dec-2020/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-12-02-nla-unavailable-from-fri-4th-to-tues-7th-dec-2020/</link>
       <pubDate>Wed, 02 Dec 2020 15:46:20 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-12-02-nla-unavailable-from-fri-4th-to-tues-7th-dec-2020/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-12-02-nla-unavailable-from-fri-4th-to-tues-7th-dec-2020/</guid>
       <description>The Near-Line Archive (NLA) tape system will be unavailable from the evening of Friday the 4th December until Monday the 7th December 2020.</description>
     </item>
     
     <item>
       <title>CEDA Data Catalogue update 1700-1715 today.</title>
-      <link>/en/news/updates/2020/2020-10-29-ceda-data-catalogue-update-1700-1715-today/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-10-29-ceda-data-catalogue-update-1700-1715-today/</link>
       <pubDate>Thu, 29 Oct 2020 15:46:15 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-10-29-ceda-data-catalogue-update-1700-1715-today/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-10-29-ceda-data-catalogue-update-1700-1715-today/</guid>
       <description>The CEDA Data Catalogue service will be offline between 1700 and 1715 to allow the roll-out of a number of minor updates.</description>
     </item>
     
     <item>
       <title>HadUK-Grid version v1.0.2.1 released including data for 2019</title>
-      <link>/en/news/updates/2020/2020-10-21-haduk-grid-version-v1021-released-including-data-for-2019/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-10-21-haduk-grid-version-v1021-released-including-data-for-2019/</link>
       <pubDate>Wed, 21 Oct 2020 13:28:47 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-10-21-haduk-grid-version-v1021-released-including-data-for-2019/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-10-21-haduk-grid-version-v1021-released-including-data-for-2019/</guid>
       <description>In 2019 the CEDA Archive published a valuable and popular HadUK-Grid dataset collection. This collection, provided by the Met Office contains gridded climate variables derived from the network of UK land surface observations, particularly notable in that it spans a long time-series.</description>
     </item>
     
     <item>
       <title>CEDA Document Repository back online</title>
-      <link>/en/news/updates/2020/2020-10-21-ceda-document-repository-back-online/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-10-21-ceda-document-repository-back-online/</link>
       <pubDate>Wed, 21 Oct 2020 13:17:02 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-10-21-ceda-document-repository-back-online/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-10-21-ceda-document-repository-back-online/</guid>
       <description>The CEDA Document Repository, a service to host supplementary information for items in the CEDA archive, has been made available once again following a hiatus in the service to allow it to be updated.</description>
     </item>
     
     <item>
       <title>MIDAS Open version 202007 released More UK weather station data added</title>
-      <link>/en/news/updates/2020/2020-10-21-midas-open-version-202007-released-more-uk-weather-station-data-added/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-10-21-midas-open-version-202007-released-more-uk-weather-station-data-added/</link>
       <pubDate>Wed, 21 Oct 2020 10:32:14 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-10-21-midas-open-version-202007-released-more-uk-weather-station-data-added/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-10-21-midas-open-version-202007-released-more-uk-weather-station-data-added/</guid>
       <description>Last year the Met Office released the “MIDAS Open” dataset, a publically available version of the popular, but restricted, Met Office Integrated Data Archive System (MIDAS) Land and Marine Surface Stations dataset.</description>
     </item>
     
     <item>
       <title>CEDA Catalogue Update 5pm today</title>
-      <link>/en/news/updates/2020/2020-10-02-ceda-catalogue-update-5pm-today/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-10-02-ceda-catalogue-update-5pm-today/</link>
       <pubDate>Fri, 02 Oct 2020 12:44:51 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-10-02-ceda-catalogue-update-5pm-today/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-10-02-ceda-catalogue-update-5pm-today/</guid>
       <description>The CEDA data catalogue (catalogue.ceda.ac.uk) will be temporarily offline at 5pm today for upto 15 minutes for a quick update.</description>
     </item>
     
     <item>
       <title>Update to the CEDA User Database at 9pm this evening (06/08/2020)</title>
-      <link>/en/news/updates/2020/2020-08-06-update-to-the-ceda-user-database-at-9pm-this-evening-06082020/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-08-06-update-to-the-ceda-user-database-at-9pm-this-evening-06082020/</link>
       <pubDate>Thu, 06 Aug 2020 08:38:37 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-08-06-update-to-the-ceda-user-database-at-9pm-this-evening-06082020/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-08-06-update-to-the-ceda-user-database-at-9pm-this-evening-06082020/</guid>
       <description>An update is planned for the CEDA user database this evening (06/08/20) at about 9pm. This will mean that CEDA login and new user registration will not work for a few minutes.</description>
     </item>
     
     <item>
       <title>CEDA Data Catalogue Update Tuesday 10am</title>
-      <link>/en/news/updates/2020/2020-08-03-ceda-data-catalogue-update-tuesday-10am/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-08-03-ceda-data-catalogue-update-tuesday-10am/</link>
       <pubDate>Mon, 03 Aug 2020 15:27:31 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-08-03-ceda-data-catalogue-update-tuesday-10am/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-08-03-ceda-data-catalogue-update-tuesday-10am/</guid>
       <description>The CEDA Data Catalogue service will be briefly unavailable on Tuesday 4th August at 10am whilst some important updates to the service are rolled out.</description>
     </item>
     
     <item>
       <title>Update complete data.ceda.ac.uk</title>
-      <link>/en/news/updates/2020/2020-07-13-datacedaacuk-service-maintenence/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-07-13-datacedaacuk-service-maintenence/</link>
       <pubDate>Mon, 13 Jul 2020 08:39:04 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-07-13-datacedaacuk-service-maintenence/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-07-13-datacedaacuk-service-maintenence/</guid>
       <description>The update to data.ceda.ac.uk is now completed. We apologise for a longer than expected downtime, this was caused by a slow network connection.</description>
     </item>
     
     <item>
       <title>Crucial dataset helps scientists monitor climate change</title>
-      <link>/en/news/updates/2020/2020-04-24-crucial-dataset-helps-scientists-monitor-climate-change/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-04-24-crucial-dataset-helps-scientists-monitor-climate-change/</link>
       <pubDate>Fri, 24 Apr 2020 11:09:01 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-04-24-crucial-dataset-helps-scientists-monitor-climate-change/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-04-24-crucial-dataset-helps-scientists-monitor-climate-change/</guid>
       <description>One of the most widely used climate datasets has released its biggest update since 2013. Since the initial launch back in 2000, the CRU TS (Climatic Research Unit gridded Time Series) dataset has been used in thousands of studies worldwide to support research about our changing climate.</description>
     </item>
     
     <item>
       <title>Enabling essential climate science research</title>
-      <link>/en/news/updates/2020/2020-04-22-enabling-essential-climate-science-research/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-04-22-enabling-essential-climate-science-research/</link>
       <pubDate>Wed, 22 Apr 2020 09:50:43 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-04-22-enabling-essential-climate-science-research/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-04-22-enabling-essential-climate-science-research/</guid>
       <description>Climate Change is a defining issue of our time. The UK’s top 10 warmest years have all occurred since 2002, and July 2019 saw the UK’s hottest ever recorded temperature (38.</description>
     </item>
     
     <item>
       <title>COVID-19 lockdown- impact on CEDA and JASMIN operations</title>
-      <link>/en/news/updates/2020/2020-03-24-covid-19-lockdown-impact-on-ceda-and-jasmin-operations/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-03-24-covid-19-lockdown-impact-on-ceda-and-jasmin-operations/</link>
       <pubDate>Tue, 24 Mar 2020 12:36:22 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-03-24-covid-19-lockdown-impact-on-ceda-and-jasmin-operations/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-03-24-covid-19-lockdown-impact-on-ceda-and-jasmin-operations/</guid>
       <description>As we are sure you are already aware, the latest government restrictions on travel mean that any issues requiring physical intervention to the JASMIN infrastructure (e.</description>
     </item>
     
     <item>
       <title>Data Catalogue update 1600 today.</title>
-      <link>/en/news/updates/2020/2020-02-07-data-catalogue-update-1600-today/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-02-07-data-catalogue-update-1600-today/</link>
       <pubDate>Fri, 07 Feb 2020 12:11:18 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-02-07-data-catalogue-update-1600-today/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-02-07-data-catalogue-update-1600-today/</guid>
       <description>A quirk in the data catalogue admin interface has recently come to light concerning time zones and entering temporal extent on some records.</description>
     </item>
     
     <item>
       <title>Intermittent Data Download Issues</title>
-      <link>/en/news/updates/2020/2020-02-04-intermittent-data-download-issues/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-02-04-intermittent-data-download-issues/</link>
       <pubDate>Tue, 04 Feb 2020 10:22:29 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-02-04-intermittent-data-download-issues/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-02-04-intermittent-data-download-issues/</guid>
       <description>We are still experiencing some intermittent issues with downloading data via dap.ceda.ac.uk
 For further details about alternative download routes please refer back to the previous news item here: https://www.</description>
     </item>
     
     <item>
       <title>Celebrating 25 years of CEDA</title>
-      <link>/en/news/updates/2019/2019-12-20-celebrating-25-years-of-ceda/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2019/2019-12-20-celebrating-25-years-of-ceda/</link>
       <pubDate>Fri, 20 Dec 2019 14:24:49 +0000</pubDate>
       
-      <guid>/en/news/updates/2019/2019-12-20-celebrating-25-years-of-ceda/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2019/2019-12-20-celebrating-25-years-of-ceda/</guid>
       <description>The data centre function of CEDA celebrated 25 years of existence in October 2019. As we approach the end of this year, we take a look back to see what has changed along the way.</description>
     </item>
     
     <item>
       <title>Advance notice JASMIN maintenance Tues 14 Jan 2020</title>
-      <link>/en/news/updates/2019/2019-12-19-advance-notice-jasmin-maintenance-tues-14-jan-2020/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2019/2019-12-19-advance-notice-jasmin-maintenance-tues-14-jan-2020/</link>
       <pubDate>Thu, 19 Dec 2019 09:40:54 +0000</pubDate>
       
-      <guid>/en/news/updates/2019/2019-12-19-advance-notice-jasmin-maintenance-tues-14-jan-2020/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2019/2019-12-19-advance-notice-jasmin-maintenance-tues-14-jan-2020/</guid>
       <description>Scheduled maintenance is planned for Tuesday 14th January 2020, which could result in disruption to JASMIN systems, services and data in addition to the CEDA Archive.</description>
     </item>
     
     <item>
       <title>CEDA and JASMIN support over Christmas period</title>
-      <link>/en/news/updates/2019/2019-12-17-christmas-shutdown/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2019/2019-12-17-christmas-shutdown/</link>
       <pubDate>Tue, 17 Dec 2019 10:54:36 +0000</pubDate>
       
-      <guid>/en/news/updates/2019/2019-12-17-christmas-shutdown/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2019/2019-12-17-christmas-shutdown/</guid>
       <description>In line with the Christmas shutdown of CEDA&amp;rsquo;s host institute, STFC, the CEDA and JASMIN teams will be unavailable from 15:00 on Tuesday 24th December 2019 to 09:00 on Thursday 2nd January 2020.</description>
     </item>
     
     <item>
       <title>http//data.ceda.ac.uk/ may experience short disruption Monday 25th November</title>
-      <link>/en/news/updates/2019/2019-11-25-httpdatacedaacuk-may-experience-short-disruption-monday-25th-november/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2019/2019-11-25-httpdatacedaacuk-may-experience-short-disruption-monday-25th-november/</link>
       <pubDate>Mon, 25 Nov 2019 16:32:19 +0000</pubDate>
       
-      <guid>/en/news/updates/2019/2019-11-25-httpdatacedaacuk-may-experience-short-disruption-monday-25th-november/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2019/2019-11-25-httpdatacedaacuk-may-experience-short-disruption-monday-25th-november/</guid>
       <description>http://data.ceda.ac.uk/ may experience short disruption Monday 25th November. This is to allow us to make a small improvement to the service to show files which are stored in our offline tape server.</description>
     </item>
     
     <item>
       <title>MIDAS Open version 201908 released More UK weather station data added</title>
-      <link>/en/news/updates/2019/2019-11-04-midas-open-version-201908-released-more-uk-weather-station-data-added/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2019/2019-11-04-midas-open-version-201908-released-more-uk-weather-station-data-added/</link>
       <pubDate>Mon, 04 Nov 2019 10:00:00 +0000</pubDate>
       
-      <guid>/en/news/updates/2019/2019-11-04-midas-open-version-201908-released-more-uk-weather-station-data-added/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2019/2019-11-04-midas-open-version-201908-released-more-uk-weather-station-data-added/</guid>
       <description>Earlier this year the Met Office released the “MIDAS Open” dataset, a publically available version of the popular, but restricted, Met Office Integrated Data Archive System (MIDAS) Land and Marine Surface Stations dataset.</description>
     </item>
     
     <item>
       <title>Using JASMIN for the largest ever UK wildlife assessment</title>
-      <link>/en/news/updates/2019/2019-10-31-using-jasmin-for-the-largest-ever-uk-wildlife-assessment/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2019/2019-10-31-using-jasmin-for-the-largest-ever-uk-wildlife-assessment/</link>
       <pubDate>Thu, 31 Oct 2019 16:24:16 +0000</pubDate>
       
-      <guid>/en/news/updates/2019/2019-10-31-using-jasmin-for-the-largest-ever-uk-wildlife-assessment/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2019/2019-10-31-using-jasmin-for-the-largest-ever-uk-wildlife-assessment/</guid>
       <description>Most of the UK’s wildlife is in decline, according to the 2019 State of Nature (SoN) report. However getting to this statement was not an easy process.</description>
     </item>
     

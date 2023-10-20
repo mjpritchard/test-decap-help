@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>grey literature on Centre for Environmental Data Analysis</title>
-    <link>/en/tags/grey-literature/</link>
+    <link>https://www.ceda.ac.uk/en/tags/grey-literature/</link>
     <description>Recent content in grey literature on Centre for Environmental Data Analysis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2023 Science and Technology Facilities Council.</copyright>
-    <lastBuildDate>Tue, 22 Nov 2022 10:14:34 +0000</lastBuildDate><atom:link href="/en/tags/grey-literature/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Nov 2022 10:14:34 +0000</lastBuildDate><atom:link href="https://www.ceda.ac.uk/en/tags/grey-literature/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CEDA Document Repository Move to Zenodo Thursday 24th November</title>
-      <link>/en/news/updates/2022/2022-11-22-ceda-document-repository-move-to-zenodo-thursday-24th-november/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-11-22-ceda-document-repository-move-to-zenodo-thursday-24th-november/</link>
       <pubDate>Tue, 22 Nov 2022 10:14:34 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-11-22-ceda-document-repository-move-to-zenodo-thursday-24th-november/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-11-22-ceda-document-repository-move-to-zenodo-thursday-24th-november/</guid>
       <description>On Thursday 22nd November we’ll be transferring items from the CEDA Document Repository service to Zenodo, a service operated by CERN, where CEDA will maintain a ‘CEDA Document Repository Community’ to aid access to dataset related documentation.</description>
     </item>
     

@@ -2,104 +2,113 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>jasmin on Centre for Environmental Data Analysis</title>
-    <link>/en/tags/jasmin/</link>
+    <link>https://www.ceda.ac.uk/en/tags/jasmin/</link>
     <description>Recent content in jasmin on Centre for Environmental Data Analysis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2023 Science and Technology Facilities Council.</copyright>
-    <lastBuildDate>Wed, 01 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="/en/tags/jasmin/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.ceda.ac.uk/en/tags/jasmin/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JASMIN Conference 2023</title>
-      <link>/en/events/jasmin-conference-2023/</link>
+      <link>https://www.ceda.ac.uk/en/events/jasmin-conference-2023/</link>
       <pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate>
       
-      <guid>/en/events/jasmin-conference-2023/</guid>
+      <guid>https://www.ceda.ac.uk/en/events/jasmin-conference-2023/</guid>
       <description>We will be hosting the next JASMIN conference at our host institute on the Harwell Campus in Oxfordshire. It will occur over two half days on the afternoon of Wednesday 1 and the morning of Thursday 2 November 2023.</description>
     </item>
     
     <item>
+      <title>Closing soon: JASMIN Conference regisration and NCAS ISC course</title>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-10-20-closing-soon-jasmin-conference-and-ncas-isc-course/</link>
+      <pubDate>Fri, 20 Oct 2023 13:00:00 +0000</pubDate>
+      
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-10-20-closing-soon-jasmin-conference-and-ncas-isc-course/</guid>
+      <description>As previously announced, we will be hosting the next JASMIN conference at our host institution, RAL, on the Harwell Campus in Oxfordshire.</description>
+    </item>
+    
+    <item>
       <title>REMINDER JASMIN power maintenance Autumn 2023</title>
-      <link>/en/news/updates/2023/2023-10-19-reminder-jasmin-power-maintenance-autumn-2023/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-10-19-reminder-jasmin-power-maintenance-autumn-2023/</link>
       <pubDate>Thu, 19 Oct 2023 14:00:00 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-10-19-reminder-jasmin-power-maintenance-autumn-2023/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-10-19-reminder-jasmin-power-maintenance-autumn-2023/</guid>
       <description>Dear Users,
 As per our previous announcements, essential work will be taking place this Autumn in the data centre (machine room) where JASMIN is hosted to carry out safety checks and 5-yearly recertification of power supply equipment.</description>
     </item>
     
     <item>
       <title>JASMIN2023 user conference call for registration (REMINDER)</title>
-      <link>/en/news/updates/2023/2023-10-17-jasmin2023-user-conference-call-for-registration-reminder/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-10-17-jasmin2023-user-conference-call-for-registration-reminder/</link>
       <pubDate>Tue, 17 Oct 2023 09:09:55 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-10-17-jasmin2023-user-conference-call-for-registration-reminder/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-10-17-jasmin2023-user-conference-call-for-registration-reminder/</guid>
       <description>Dear JASMIN user,
 As previously announced, we will be hosting the next JASMIN conference at our host institution, RAL, on the Harwell Campus in Oxfordshire.</description>
     </item>
     
     <item>
       <title>JASMIN Network Issues</title>
-      <link>/en/news/updates/2023/2023-10-11-jasmin-network-issues/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-10-11-jasmin-network-issues/</link>
       <pubDate>Wed, 11 Oct 2023 07:34:44 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-10-11-jasmin-network-issues/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-10-11-jasmin-network-issues/</guid>
       <description>Part of the JASMIN network suffered a failure yesterday evening and the team is currently working to resolve this. As a result, many JASMIN and CEDA services are currently unavailable.</description>
     </item>
     
     <item>
       <title>Minor power issue affected some LOTUS jobs.</title>
-      <link>/en/news/updates/2023/2023-10-03-minor-power-issue-affected-some-lotus-jobs/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-10-03-minor-power-issue-affected-some-lotus-jobs/</link>
       <pubDate>Tue, 03 Oct 2023 08:26:36 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-10-03-minor-power-issue-affected-some-lotus-jobs/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-10-03-minor-power-issue-affected-some-lotus-jobs/</guid>
       <description>Dear Users
 A minor power issue yesterday evening resulted in a number of LOTUS hosts rebooting. This will have affected any jobs running on those hosts.</description>
     </item>
     
     <item>
       <title>REMINDER Advance notice of JASMIN power maintenance Autumn 2023</title>
-      <link>/en/news/updates/2023/2023-09-08-reminder-advance-notice-of-jasmin-power-maintenance-autumn-2023/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-09-08-reminder-advance-notice-of-jasmin-power-maintenance-autumn-2023/</link>
       <pubDate>Fri, 08 Sep 2023 09:35:53 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-09-08-reminder-advance-notice-of-jasmin-power-maintenance-autumn-2023/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-09-08-reminder-advance-notice-of-jasmin-power-maintenance-autumn-2023/</guid>
       <description>Dear Users,
 As per our previous announcement in July, essential work will be taking place this Autumn in the data centre (machine room) where JASMIN is hosted to carry out safety checks and 5-yearly recertification of power supply equipment.</description>
     </item>
     
     <item>
       <title>Issue with CEDA and JASMIN services - update</title>
-      <link>/en/news/updates/2023/2023-08-30-issue-with-ceda-and-jasmin-services-update/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-08-30-issue-with-ceda-and-jasmin-services-update/</link>
       <pubDate>Wed, 30 Aug 2023 08:58:56 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-08-30-issue-with-ceda-and-jasmin-services-update/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-08-30-issue-with-ceda-and-jasmin-services-update/</guid>
       <description>A connectivity issue has affected many CEDA and JASMIN services over the past 24 hrs. While affected services should now be available to users again, the issue has so far been attributed to a faulty network switch.</description>
     </item>
     
     <item>
       <title>Sustainable computing the UK’s journey to net zero digital research infrastructure by 2040</title>
-      <link>/en/news/updates/2023/2023-08-04-net-zero-digital-research-infrastructure/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-08-04-net-zero-digital-research-infrastructure/</link>
       <pubDate>Fri, 04 Aug 2023 08:29:06 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-08-04-net-zero-digital-research-infrastructure/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-08-04-net-zero-digital-research-infrastructure/</guid>
       <description>Leading UK data and computing experts have developed a toolkit and roadmap to get the UK’s digital research infrastructure sector to net zero.</description>
     </item>
     
     <item>
       <title>Advance notice of JASMIN power maintenance Autumn 2023</title>
-      <link>/en/news/updates/2023/2023-07-25-advance-notice-of-jasmin-power-maintenance-autumn-2023/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-07-25-advance-notice-of-jasmin-power-maintenance-autumn-2023/</link>
       <pubDate>Tue, 25 Jul 2023 14:49:36 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-07-25-advance-notice-of-jasmin-power-maintenance-autumn-2023/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-07-25-advance-notice-of-jasmin-power-maintenance-autumn-2023/</guid>
       <description>Dear Users,
 Please be advised that at some point between October and the end of the year, work will take place in the data centre (machine room) where JASMIN is hosted to carry out safety checks and 5-yearly recertification of power supply equipment.</description>
     </item>
     
     <item>
       <title>RESOLVED - Issue with JASMIN GridFTP and Globus transfers</title>
-      <link>/en/news/updates/2023/2023-07-24-issue-with-jasmin-gridftp-and-globus-transfers/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-07-24-issue-with-jasmin-gridftp-and-globus-transfers/</link>
       <pubDate>Mon, 24 Jul 2023 16:00:14 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-07-24-issue-with-jasmin-gridftp-and-globus-transfers/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-07-24-issue-with-jasmin-gridftp-and-globus-transfers/</guid>
       <description>Dear Users
 The earlier issue with GridFTP and Globus transfers to/from JASMIN has now been resolved.
 Apologies for any inconvenience.</description>
@@ -107,38 +116,38 @@ Apologies for any inconvenience.</description>
     
     <item>
       <title>FAAM Airborne Laboratory data use survey</title>
-      <link>/en/news/updates/2023/2023-07-21-faam-data-survey/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-07-21-faam-data-survey/</link>
       <pubDate>Fri, 21 Jul 2023 11:10:51 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-07-21-faam-data-survey/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-07-21-faam-data-survey/</guid>
       <description>The FAAM Airborne Laboratory collects atmospheric data all over the world. From air quality, cloud formation, and weather processes, to greenhouse gas emissions from human activities and atmospheric composition, the FAAM Airborne Laboratory’s specially adapted research aircraft enables researchers to understand our changing environment.</description>
     </item>
     
     <item>
       <title>Final Reminder - JASMIN maintenance day Tomorrow, Tuesday 11th July 2023</title>
-      <link>/en/news/updates/2023/2023-07-10-jasmin-maintenance-day-tuesday-11th-july-2023/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-07-10-jasmin-maintenance-day-tuesday-11th-july-2023/</link>
       <pubDate>Mon, 10 Jul 2023 10:19:42 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-07-10-jasmin-maintenance-day-tuesday-11th-july-2023/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-07-10-jasmin-maintenance-day-tuesday-11th-july-2023/</guid>
       <description>Dear JASMIN user,
 This is the final reminder to please note the upcoming maintenance day Tomorrow, Tuesday 11th July. The following system work/enhancements are also planned for that date in order to minimise disruption:</description>
     </item>
     
     <item>
       <title>Interruption to tape services for security maintenance</title>
-      <link>/en/news/updates/2023/2023-06-30-interruption-to-tape-services-for-security-maintenance/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-06-30-interruption-to-tape-services-for-security-maintenance/</link>
       <pubDate>Fri, 30 Jun 2023 14:59:09 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-06-30-interruption-to-tape-services-for-security-maintenance/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-06-30-interruption-to-tape-services-for-security-maintenance/</guid>
       <description>Further to our earlier announcement, tape services will need a separate interruption to apply security updates. Tape services will not be available between midday on Monday 3rd July until the work has completed, hopefully later on Tuesday 4th July.</description>
     </item>
     
     <item>
       <title>JASMIN login server login2 currently unavailable - Update This is now resolved</title>
-      <link>/en/news/updates/2023/2023-06-20-jasmin-login-server-login2-currently-unavailable/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-06-20-jasmin-login-server-login2-currently-unavailable/</link>
       <pubDate>Tue, 20 Jun 2023 11:36:20 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-06-20-jasmin-login-server-login2-currently-unavailable/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-06-20-jasmin-login-server-login2-currently-unavailable/</guid>
       <description>The issue with server login2 is now resolved and it should be available again.
 Apologies for any inconvenience.
 JASMIN Team</description>
@@ -146,10 +155,10 @@ JASMIN Team</description>
     
     <item>
       <title>JASMIN updates Scheduled maintenance 11 July and other items</title>
-      <link>/en/news/updates/2023/2023-06-12-jasmin-updates-scheduled-maintenance-11-july-and-other-items/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-06-12-jasmin-updates-scheduled-maintenance-11-july-and-other-items/</link>
       <pubDate>Mon, 12 Jun 2023 08:19:54 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-06-12-jasmin-updates-scheduled-maintenance-11-july-and-other-items/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-06-12-jasmin-updates-scheduled-maintenance-11-july-and-other-items/</guid>
       <description>Dear users
 Please note the following items for your attention:
 JASMIN Regular scheduled maintenance day: 11 July 2023 New NX server available Reboot of gws-access service Tuesday 13th June 08:30 &amp;amp; future changes to service.</description>
@@ -157,50 +166,50 @@ JASMIN Regular scheduled maintenance day: 11 July 2023 New NX server available R
     
     <item>
       <title>Final Reminder NVIDIA HPC, AI and Data Science – making the most of your GPUs</title>
-      <link>/en/news/updates/2023/2023-06-05-nvidia-hpc-ai-and-data-science-making-the-most-of-your-gpus/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-06-05-nvidia-hpc-ai-and-data-science-making-the-most-of-your-gpus/</link>
       <pubDate>Mon, 05 Jun 2023 08:33:27 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-06-05-nvidia-hpc-ai-and-data-science-making-the-most-of-your-gpus/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-06-05-nvidia-hpc-ai-and-data-science-making-the-most-of-your-gpus/</guid>
       <description>Dear JASMIN user,
 We will be hosting a webinar on Thursday 8th of June 2023 at 2pm about “NVIDIA HPC, AI and Data Science – making the most of your GPUs: Best Practices, Tools and Resources for Researchers”.</description>
     </item>
     
     <item>
       <title>Update JASMIN GWS IO Errors</title>
-      <link>/en/news/updates/2023/2023-06-01-update-jasmin-gws-io-errors/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-06-01-update-jasmin-gws-io-errors/</link>
       <pubDate>Thu, 01 Jun 2023 14:35:25 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-06-01-update-jasmin-gws-io-errors/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-06-01-update-jasmin-gws-io-errors/</guid>
       <description>Dear JASMIN Users
 We now believe that the issues affecting the storage for the GWS and CEDA Archive are resolved. Please let us know if you continue to have issues with IO Errors on the storage</description>
     </item>
     
     <item>
       <title>JASMIN GWS IO Errors</title>
-      <link>/en/news/updates/2023/2023-06-01-jasmin-gws-io-errors/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-06-01-jasmin-gws-io-errors/</link>
       <pubDate>Thu, 01 Jun 2023 08:46:15 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-06-01-jasmin-gws-io-errors/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-06-01-jasmin-gws-io-errors/</guid>
       <description>Dear JASMIN Users
 We are currently experiencing errors affecting the GWSs with the paths /gws/nopw/j04/ which are showing as IOErrors. We are in discussions with the vendor to get this fixed as soon as possible.</description>
     </item>
     
     <item>
       <title>PFS storage affecting LOTUS</title>
-      <link>/en/news/updates/2023/2023-05-11-pfs-storage-affecting-lotus/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-05-11-pfs-storage-affecting-lotus/</link>
       <pubDate>Thu, 11 May 2023 12:43:09 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-05-11-pfs-storage-affecting-lotus/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-05-11-pfs-storage-affecting-lotus/</guid>
       <description>Dear Jasmin user,
 The issue with PFS storage reported earlier is also affecting the batch cluster LOTUS. Batch jobs are timing out and many compute nodes going into a drain state.</description>
     </item>
     
     <item>
       <title>JASMIN updates nx-login machines reboot and tape services status</title>
-      <link>/en/news/updates/2023/2023-05-02-jasmin-updates-nx-login-machines-reboot-and-tape-services-status/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-05-02-jasmin-updates-nx-login-machines-reboot-and-tape-services-status/</link>
       <pubDate>Tue, 02 May 2023 09:34:15 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-05-02-jasmin-updates-nx-login-machines-reboot-and-tape-services-status/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-05-02-jasmin-updates-nx-login-machines-reboot-and-tape-services-status/</guid>
       <description>Please note the following JASMIN service updates for your attention:
 nx-login service update
 The servers nx-login[123].jasmin.ac.uk will be rebooted tomorrow Wed 3 May between 08:30 - 09:30 to apply new licenses.</description>
@@ -208,20 +217,20 @@ The servers nx-login[123].jasmin.ac.uk will be rebooted tomorrow Wed 3 May betwe
     
     <item>
       <title>Near-line archive (NLA) unavailable from 27th April.</title>
-      <link>/en/news/updates/2023/2023-04-27-near-line-archive-nla-unavailable-from-27th-april/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-04-27-near-line-archive-nla-unavailable-from-27th-april/</link>
       <pubDate>Thu, 27 Apr 2023 14:26:09 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-04-27-near-line-archive-nla-unavailable-from-27th-april/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-04-27-near-line-archive-nla-unavailable-from-27th-april/</guid>
       <description>Dear Users
 Due to problems arising from the JASMIN maintenance day on Tuesday 25th April, the Near-line Archive (NLA) remains unavailable.</description>
     </item>
     
     <item>
       <title>JASMIN Accounts Portal - Email Delivery Problems</title>
-      <link>/en/news/updates/2023/2023-04-26-jasmin-accounts-portal-email-delivery-problems/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-04-26-jasmin-accounts-portal-email-delivery-problems/</link>
       <pubDate>Wed, 26 Apr 2023 09:06:24 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-04-26-jasmin-accounts-portal-email-delivery-problems/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-04-26-jasmin-accounts-portal-email-delivery-problems/</guid>
       <description>Dear JASMIN Users
 The JASMIN accounts portal is currently having trouble delivering emails to users.
 This means that login verification codes from the accounts portal are not being sent at the moment.</description>
@@ -229,88 +238,88 @@ This means that login verification codes from the accounts portal are not being 
     
     <item>
       <title>Vacancy Principal Project/Programme Manager</title>
-      <link>/en/news/updates/2023/2023-04-24-vacancy-principal-projectprogramme-manager/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-04-24-vacancy-principal-projectprogramme-manager/</link>
       <pubDate>Mon, 24 Apr 2023 11:00:18 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-04-24-vacancy-principal-projectprogramme-manager/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-04-24-vacancy-principal-projectprogramme-manager/</guid>
       <description>We have an exciting new vacancy for a Principal Project/Programme Manager within our CEDA team.
 You will be responsible for effective leadership, management, delivery, and co-ordination of programmes and projects across CEDA.</description>
     </item>
     
     <item>
       <title>Change in email delivery from the JASMIN Accounts Portal</title>
-      <link>/en/news/updates/2023/2023-03-30-change-in-email-delivery-from-the-jasmin-accounts-portal/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-03-30-change-in-email-delivery-from-the-jasmin-accounts-portal/</link>
       <pubDate>Thu, 30 Mar 2023 11:21:38 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-03-30-change-in-email-delivery-from-the-jasmin-accounts-portal/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-03-30-change-in-email-delivery-from-the-jasmin-accounts-portal/</guid>
       <description>Dear Users,
 The email address from which the JASMIN accounts portal sends notifications to users, such as service expiry reminders, password resets and one-time passwords is changing from no-reply@accounts.</description>
     </item>
     
     <item>
       <title>Reminder JASMIN mini-patch day Tomorrow - Tuesday 21st March 2023</title>
-      <link>/en/news/updates/2023/2023-03-20-jasmin-mini-patch-day-tuesday-21st-march-2023/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-03-20-jasmin-mini-patch-day-tuesday-21st-march-2023/</link>
       <pubDate>Mon, 20 Mar 2023 12:17:22 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-03-20-jasmin-mini-patch-day-tuesday-21st-march-2023/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-03-20-jasmin-mini-patch-day-tuesday-21st-march-2023/</guid>
       <description>Dear JASMIN user,
 Please note the upcoming “mini” maintenance day on Tuesday 21st March. The following system work/enhancements are also planned for that date in order to minimise disruption:</description>
     </item>
     
     <item>
       <title>JASMIN Storage Issues affecting SOF volumes</title>
-      <link>/en/news/updates/2023/2023-03-01-jasmin-storage-issues-affecting-sof-volumes/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-03-01-jasmin-storage-issues-affecting-sof-volumes/</link>
       <pubDate>Wed, 01 Mar 2023 09:34:28 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-03-01-jasmin-storage-issues-affecting-sof-volumes/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-03-01-jasmin-storage-issues-affecting-sof-volumes/</guid>
       <description>Users may currently be experiencing impaired performance when using SOF storage volumes (/gws/nopw/j04/* and CEDA Archive volumes). The issue is under investigation with the storage vendor.</description>
     </item>
     
     <item>
       <title>JASMIN login services are available - issue resolved</title>
-      <link>/en/news/updates/2023/2023-02-28-jasmin-login-services-are-available-issue-resolved/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-02-28-jasmin-login-services-are-available-issue-resolved/</link>
       <pubDate>Tue, 28 Feb 2023 11:59:35 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-02-28-jasmin-login-services-are-available-issue-resolved/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-02-28-jasmin-login-services-are-available-issue-resolved/</guid>
       <description>Dear JASMIN user,
 We believe that the recent issue that affected the PURE storage system that hosts the home users directories and some small-files group workspaces is now resolved and JASMIN login services are operational.</description>
     </item>
     
     <item>
       <title>JASMIN login services currently unavailable - issue under investigation</title>
-      <link>/en/news/updates/2023/2023-02-24-jasmin-login-services-currently-unavailable-issue-under-investigation/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-02-24-jasmin-login-services-currently-unavailable-issue-under-investigation/</link>
       <pubDate>Fri, 24 Feb 2023 15:16:16 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-02-24-jasmin-login-services-currently-unavailable-issue-under-investigation/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-02-24-jasmin-login-services-currently-unavailable-issue-under-investigation/</guid>
       <description>Dear users,
 JASMIN login services are currently unavailable because of issues with the home users directories. The issue is currently being investigated with the storage vendor.</description>
     </item>
     
     <item>
       <title>Issues with PFS storage affecting some JASMIN &amp; CEDA services.</title>
-      <link>/en/news/updates/2023/2023-02-13-issues-with-pfs-storage-affecting-some-jasmin-ceda-services/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-02-13-issues-with-pfs-storage-affecting-some-jasmin-ceda-services/</link>
       <pubDate>Mon, 13 Feb 2023 11:22:49 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-02-13-issues-with-pfs-storage-affecting-some-jasmin-ceda-services/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-02-13-issues-with-pfs-storage-affecting-some-jasmin-ceda-services/</guid>
       <description>An issue with PFS storage volumes is currently being investigated with the vendor but may be affecting access to the following storage volumes used by CEDA and JASMIN services:</description>
     </item>
     
     <item>
       <title>JASMIN and CEDA services issues</title>
-      <link>/en/news/updates/2023/2023-02-10-jasmin-and-ceda-services-issues/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-02-10-jasmin-and-ceda-services-issues/</link>
       <pubDate>Fri, 10 Feb 2023 09:19:01 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-02-10-jasmin-and-ceda-services-issues/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-02-10-jasmin-and-ceda-services-issues/</guid>
       <description>Dear Users
 Some JASMIN and CEDA services have been affected by power supply instabilities overnight which have resulted in some systems being rebooted.</description>
     </item>
     
     <item>
       <title>UPDATE 2 - JASMIN maintenance work still in progress</title>
-      <link>/en/news/updates/2023/2023-02-01-update-2-jasmin-maintenance-work-still-in-progress/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-02-01-update-2-jasmin-maintenance-work-still-in-progress/</link>
       <pubDate>Wed, 01 Feb 2023 10:55:25 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-02-01-update-2-jasmin-maintenance-work-still-in-progress/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-02-01-update-2-jasmin-maintenance-work-still-in-progress/</guid>
       <description>Dear users,
 Maintenance work is still in progress today.
 Parallel File System (PFS) Storage A second phase of the upgrade is now likely to be postponed to another date.</description>
@@ -318,167 +327,167 @@ Parallel File System (PFS) Storage A second phase of the upgrade is now likely t
     
     <item>
       <title>Update on JASMIN maintenance Tues 31 Jan 2023 - window extended</title>
-      <link>/en/news/updates/2023/2023-01-31-update-on-jasmin-maintenance-tues-31-jan-2023-window-extended/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-01-31-update-on-jasmin-maintenance-tues-31-jan-2023-window-extended/</link>
       <pubDate>Tue, 31 Jan 2023 16:55:46 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-01-31-update-on-jasmin-maintenance-tues-31-jan-2023-window-extended/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-01-31-update-on-jasmin-maintenance-tues-31-jan-2023-window-extended/</guid>
       <description>Scheduled maintenance work today has progressed well but some tasks will require extending the maintenance window into tomorrow Wednesday 1st February 2023.</description>
     </item>
     
     <item>
       <title>JASMIN GPU webinar, 31st Jan 2023 Agenda and joining details</title>
-      <link>/en/news/updates/2023/2023-01-27-jasmin-gpu-webinar-31st-jan-2023-agenda-and-joining-details/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-01-27-jasmin-gpu-webinar-31st-jan-2023-agenda-and-joining-details/</link>
       <pubDate>Fri, 27 Jan 2023 15:38:31 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-01-27-jasmin-gpu-webinar-31st-jan-2023-agenda-and-joining-details/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-01-27-jasmin-gpu-webinar-31st-jan-2023-agenda-and-joining-details/</guid>
       <description>Dear JASMIN user,
 We will be hosting a webinar on Tuesday 31st January 2023 at 10:30 about JASMIN’s new GPU cluster, ORCHID.</description>
     </item>
     
     <item>
       <title>Update on tape services and storage issues</title>
-      <link>/en/news/updates/2023/2023-01-12-update-on-tape-services-and-storage-issues/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-01-12-update-on-tape-services-and-storage-issues/</link>
       <pubDate>Thu, 12 Jan 2023 17:13:28 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-01-12-update-on-tape-services-and-storage-issues/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-01-12-update-on-tape-services-and-storage-issues/</guid>
       <description>Interruption to tape services (including week of 16-20 Jan)
 The tape library is now functioning but with only one robot so performance is reduced.</description>
     </item>
     
     <item>
       <title>Vacancy Storage Ops and User Support</title>
-      <link>/en/news/updates/2023/2023-01-12-vacancy-storage-ops-and-user-support/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-01-12-vacancy-storage-ops-and-user-support/</link>
       <pubDate>Thu, 12 Jan 2023 10:08:49 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-01-12-vacancy-storage-ops-and-user-support/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-01-12-vacancy-storage-ops-and-user-support/</guid>
       <description>We have a new exciting job opportunity to join our team. Further details at the link below.
 Storage Ops and User Support (deadline - 29 January 2023) Please contact the helpdesk if you need any additional information.</description>
     </item>
     
     <item>
       <title>Interruption to tape services, update on storage issues</title>
-      <link>/en/news/updates/2023/2023-01-11-interruption-to-tape-services-update-on-storage-issues/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-01-11-interruption-to-tape-services-update-on-storage-issues/</link>
       <pubDate>Wed, 11 Jan 2023 11:02:32 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-01-11-interruption-to-tape-services-update-on-storage-issues/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-01-11-interruption-to-tape-services-update-on-storage-issues/</guid>
       <description>Interruption to tape services:
 The tape library is currently out of service due to essential maintenance work. It had been hoped that the work involved could be carried out without an interruption to users but unfortunately this is now not the case: apologies for the short notice.</description>
     </item>
     
     <item>
       <title>JASMIN GPU webinar, 31st Jan 2023</title>
-      <link>/en/news/updates/2023/2023-01-11-jasmin-gpu-webinar-31st-jan-2023/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-01-11-jasmin-gpu-webinar-31st-jan-2023/</link>
       <pubDate>Wed, 11 Jan 2023 09:04:40 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-01-11-jasmin-gpu-webinar-31st-jan-2023/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-01-11-jasmin-gpu-webinar-31st-jan-2023/</guid>
       <description>Dear JASMIN user,
 We will be hosting a webinar on Tuesday 31st January 2023 at 10:30 about JASMIN’s new GPU cluster, ORCHID.</description>
     </item>
     
     <item>
       <title>UPDATE - some group workspaces and virtual machines unavailable</title>
-      <link>/en/news/updates/2023/2023-01-10-update-some-group-workspaces-and-virtual-machines-unavailable/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-01-10-update-some-group-workspaces-and-virtual-machines-unavailable/</link>
       <pubDate>Tue, 10 Jan 2023 09:54:27 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-01-10-update-some-group-workspaces-and-virtual-machines-unavailable/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-01-10-update-some-group-workspaces-and-virtual-machines-unavailable/</guid>
       <description>Dear users,
 Further to our earlier message, issues with the affected storage volumes are currently being resolved. Some are now available again while the root cause is still being investigated.</description>
     </item>
     
     <item>
       <title>Some Group Workspace volumes currently unavailable - issue under investigation</title>
-      <link>/en/news/updates/2023/2023-01-10-some-group-workspace-volumes-currently-unavailable-issue-under-investigation/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2023/2023-01-10-some-group-workspace-volumes-currently-unavailable-issue-under-investigation/</link>
       <pubDate>Tue, 10 Jan 2023 09:15:25 +0000</pubDate>
       
-      <guid>/en/news/updates/2023/2023-01-10-some-group-workspace-volumes-currently-unavailable-issue-under-investigation/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2023/2023-01-10-some-group-workspace-volumes-currently-unavailable-issue-under-investigation/</guid>
       <description>Dear users,
 Several Group Workspace volumes are currently not accessible because of a metadata server issue. The issue is currently being investigated with the storage vendor.</description>
     </item>
     
     <item>
       <title>CEDA and JASMIN support over the Christmas period</title>
-      <link>/en/news/updates/2022/2022-12-13-ceda-and-jasmin-support-over-the-christmas-period-1/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-12-13-ceda-and-jasmin-support-over-the-christmas-period-1/</link>
       <pubDate>Tue, 13 Dec 2022 09:12:03 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-12-13-ceda-and-jasmin-support-over-the-christmas-period-1/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-12-13-ceda-and-jasmin-support-over-the-christmas-period-1/</guid>
       <description>As we approach the Christmas period, please be aware of the limited support arrangements in place which will result in CEDA and JASMIN services running “at-risk”.</description>
     </item>
     
     <item>
       <title>Reminder JASMIN planned mini maintenance and other updates - Tuesday 22nd November</title>
-      <link>/en/news/updates/2022/2022-11-21-jasmin-planned-mini-maintenance-and-other-updates-tuesday-22nd-november-1/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-11-21-jasmin-planned-mini-maintenance-and-other-updates-tuesday-22nd-november-1/</link>
       <pubDate>Mon, 21 Nov 2022 10:02:29 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-11-21-jasmin-planned-mini-maintenance-and-other-updates-tuesday-22nd-november-1/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-11-21-jasmin-planned-mini-maintenance-and-other-updates-tuesday-22nd-november-1/</guid>
       <description>Dear users,
 Please note the upcoming “mini” maintenance day on Tuesday 22nd November. The following system work/enhancements are also planned for that date in order to minimise disruption: New scratch area and retiring /work/scratch-pw SLURM configuration update JASMIN accounts portal service upgrade LOTUS at risk periods monthly schedule Globus Connect Personal users: important update required VIO7 at risk Details:</description>
     </item>
     
     <item>
       <title>JASMIN planned mini maintenance and other updates - Tuesday 22nd November</title>
-      <link>/en/news/updates/2022/2022-11-09-jasmin-planned-mini-maintenance-and-other-updates-tuesday-22nd-november/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-11-09-jasmin-planned-mini-maintenance-and-other-updates-tuesday-22nd-november/</link>
       <pubDate>Wed, 09 Nov 2022 09:59:16 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-11-09-jasmin-planned-mini-maintenance-and-other-updates-tuesday-22nd-november/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-11-09-jasmin-planned-mini-maintenance-and-other-updates-tuesday-22nd-november/</guid>
       <description>Dear users,
 Please note the upcoming “mini” maintenance day on Tuesday 22nd November. The following system work/enhancements are also planned for that date in order to minimise disruption: PFS storage update New scratch area and retiring /work/scratch/pw SLURM configuration update JASMIN accounts portal service upgrade LOTUS at risk periods monthly schedule Globus Connect Personal users: important update required Details:</description>
     </item>
     
     <item>
       <title>JASMIN used to show Tonga volcano had highest plume ever recorded</title>
-      <link>/en/news/updates/2022/2022-11-04-jasmin-tonga-volcano/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-11-04-jasmin-tonga-volcano/</link>
       <pubDate>Fri, 04 Nov 2022 14:38:05 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-11-04-jasmin-tonga-volcano/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-11-04-jasmin-tonga-volcano/</guid>
       <description>Satellite images confirm that the Tonga eruption in January 2022 produced the highest ever recorded volcanic plume, at 57 km high.</description>
     </item>
     
     <item>
       <title>Reminder - JASMIN planned maintenance and updates - Tuesday 18th October</title>
-      <link>/en/news/updates/2022/2022-10-14-jasmin-planned-maintenance-and-updates-tuesday-18th-october/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-10-14-jasmin-planned-maintenance-and-updates-tuesday-18th-october/</link>
       <pubDate>Fri, 14 Oct 2022 08:56:02 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-10-14-jasmin-planned-maintenance-and-updates-tuesday-18th-october/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-10-14-jasmin-planned-maintenance-and-updates-tuesday-18th-october/</guid>
       <description>Dear users,
 Please note the upcoming maintenance work affecting JASMIN on Tuesday 18th October. The following system work/enhancements are also planned for that date in order to minimise disruption: PFS storage update Moving &amp;ldquo;/apps/contrib/&amp;rdquo; contents (early testing advised) Slurm controller upgrade Updates to software environments (jaspy, jasr, jasmin-sci) Updates to the JASMIN Notebook Service (git and bash integrations) Reboot external cloud/DTZ firewall Update to JASMIN T&amp;amp;Cs &amp;amp; Privacy Policy Details:</description>
     </item>
     
     <item>
       <title>Reminder Tape services maintenance 8-9 August 2022</title>
-      <link>/en/news/updates/2022/2022-08-08-tape-services-maintenance-8-9-august-2022/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-08-08-tape-services-maintenance-8-9-august-2022/</link>
       <pubDate>Mon, 08 Aug 2022 10:21:56 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-08-08-tape-services-maintenance-8-9-august-2022/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-08-08-tape-services-maintenance-8-9-august-2022/</guid>
       <description>Dear Users
 Tape services will be out of action from midday on Monday 8th August 2022 until the afternoon of Tuesday 9th August 2022, to enable updates to be applied to firmware and software components of the tape library and servers involved in the delivery of tape services.</description>
     </item>
     
     <item>
       <title>JASMIN Reminder  “possible” service interruption from 930am until 2pm on Monday 1st August 2022</title>
-      <link>/en/news/updates/2022/2022-07-25-jasmin-possible-service-interruption-from-930am-until-2pm-on-monday-1st-august-2022/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-07-25-jasmin-possible-service-interruption-from-930am-until-2pm-on-monday-1st-august-2022/</link>
       <pubDate>Mon, 25 Jul 2022 08:28:03 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-07-25-jasmin-possible-service-interruption-from-930am-until-2pm-on-monday-1st-august-2022/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-07-25-jasmin-possible-service-interruption-from-930am-until-2pm-on-monday-1st-august-2022/</guid>
       <description>Dear users,
 Please note upcoming maintenance work with “possible” service interruption affecting JASMIN from 9:30am until 2pm on Monday 1st August.</description>
     </item>
     
     <item>
       <title>JASMIN warning on possible disruptions on 18th-19th July</title>
-      <link>/en/news/updates/2022/2022-07-18-jasmin-warning-on-possible-disruptions-on-18th-19th-july/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-07-18-jasmin-warning-on-possible-disruptions-on-18th-19th-july/</link>
       <pubDate>Mon, 18 Jul 2022 08:18:06 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-07-18-jasmin-warning-on-possible-disruptions-on-18th-19th-july/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-07-18-jasmin-warning-on-possible-disruptions-on-18th-19th-july/</guid>
       <description>Dear users,
 Please note that there is potential for disruption to JASMIN services from Monday 18th July at 10am till Tuesday 19th July evening as a result of extreme heat forecast for RAL, where JASMIN is hosted.</description>
     </item>
     
     <item>
       <title>JASMIN Reminder of maintenance work on weekend of 18/19 June and extended at risk period 20-24 June</title>
-      <link>/en/news/updates/2022/2022-06-20-jasmin-reminder-of-maintenance-work-on-weekend-of-1819-june-and-extended-at-risk-period-20-24-june-1/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-06-20-jasmin-reminder-of-maintenance-work-on-weekend-of-1819-june-and-extended-at-risk-period-20-24-june-1/</link>
       <pubDate>Mon, 20 Jun 2022 10:39:49 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-06-20-jasmin-reminder-of-maintenance-work-on-weekend-of-1819-june-and-extended-at-risk-period-20-24-june-1/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-06-20-jasmin-reminder-of-maintenance-work-on-weekend-of-1819-june-and-extended-at-risk-period-20-24-june-1/</guid>
       <description>Dear users,
 Please note upcoming maintenance work and extended &amp;ldquo;at risk&amp;rdquo; period affecting JASMIN &amp;amp; CEDA next week:
 Advance notice of STFC network intervention, 18-19 June 2022 Over the weekend of 18/19 June, there will be NO ACCESS to the RAL network, in which JASMIN is hosted, so there will be no access to JASMIN and CEDA services.</description>
@@ -486,30 +495,30 @@ Advance notice of STFC network intervention, 18-19 June 2022 Over the weekend of
     
     <item>
       <title>Reminder of maintenance work on weekend of 18/19 June and extended at risk period 20-24 June</title>
-      <link>/en/news/updates/2022/2022-06-17-jasmin-reminder-of-maintenance-work-on-weekend-of-1819-june-and-extended-at-risk-period-20-24-june/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-06-17-jasmin-reminder-of-maintenance-work-on-weekend-of-1819-june-and-extended-at-risk-period-20-24-june/</link>
       <pubDate>Fri, 17 Jun 2022 09:32:35 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-06-17-jasmin-reminder-of-maintenance-work-on-weekend-of-1819-june-and-extended-at-risk-period-20-24-june/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-06-17-jasmin-reminder-of-maintenance-work-on-weekend-of-1819-june-and-extended-at-risk-period-20-24-june/</guid>
       <description>Please note upcoming maintenance work and extended &amp;ldquo;at risk&amp;rdquo; period affecting JASMIN &amp;amp; CEDA next week:
 Advance notice of STFC network intervention, 18-19 June 2022 Over the weekend of 18/19 June, there will be NO ACCESS to the RAL network, in which JASMIN is hosted, so there will be no access to JASMIN and CEDA services.</description>
     </item>
     
     <item>
       <title>At risk period 16th June, Today</title>
-      <link>/en/news/updates/2022/2022-06-16-at-risk-period-16th-june-today/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-06-16-at-risk-period-16th-june-today/</link>
       <pubDate>Thu, 16 Jun 2022 07:46:31 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-06-16-at-risk-period-16th-june-today/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-06-16-at-risk-period-16th-june-today/</guid>
       <description>Dear users,
 Please note upcoming &amp;ldquo;at risk&amp;rdquo; period and maintenance work affecting JASMIN &amp;amp; CEDA this week and next week:</description>
     </item>
     
     <item>
       <title>JASMIN Update and reminder of maintenance work on weekend of 18/19 June</title>
-      <link>/en/news/updates/2022/2022-06-15-jasmin-update-and-reminder-of-maintenance-work-on-weekend-of-1819-june/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-06-15-jasmin-update-and-reminder-of-maintenance-work-on-weekend-of-1819-june/</link>
       <pubDate>Wed, 15 Jun 2022 08:20:49 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-06-15-jasmin-update-and-reminder-of-maintenance-work-on-weekend-of-1819-june/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-06-15-jasmin-update-and-reminder-of-maintenance-work-on-weekend-of-1819-june/</guid>
       <description>Dear users,
 Please note upcoming maintenance work affecting JASMIN &amp;amp; CEDA during next week:
 Quarterly maintenance day &amp;amp; storage update: 14th June completed!</description>
@@ -517,39 +526,39 @@ Quarterly maintenance day &amp;amp; storage update: 14th June completed!</descri
     
     <item>
       <title>Application software for JASMIN / LOTUS is now accessible and sci3 will be rebooted tomorrow at 7am</title>
-      <link>/en/news/updates/2022/2022-05-25-application-software-for-jasmin-lotus-is-now-accessible-and-sci3-will-be-rebooted-tomorrow-at-7am/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-05-25-application-software-for-jasmin-lotus-is-now-accessible-and-sci3-will-be-rebooted-tomorrow-at-7am/</link>
       <pubDate>Wed, 25 May 2022 15:07:54 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-05-25-application-software-for-jasmin-lotus-is-now-accessible-and-sci3-will-be-rebooted-tomorrow-at-7am/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-05-25-application-software-for-jasmin-lotus-is-now-accessible-and-sci3-will-be-rebooted-tomorrow-at-7am/</guid>
       <description>Dear Users,
 We are pleased to announce that the problem with the host which serves application software in JASMIN/LOTUS was resolved.</description>
     </item>
     
     <item>
       <title>Application software for JASMIN / LOTUS currently not accessible</title>
-      <link>/en/news/updates/2022/2022-05-25-application-software-for-jasmin-lotus-currently-not-accessible/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-05-25-application-software-for-jasmin-lotus-currently-not-accessible/</link>
       <pubDate>Wed, 25 May 2022 08:40:20 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-05-25-application-software-for-jasmin-lotus-currently-not-accessible/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-05-25-application-software-for-jasmin-lotus-currently-not-accessible/</guid>
       <description>There is currently a problem with the host which serves application software in JASMIN/LOTUS. It is currently not accessible, which means that it is not possible to load any modules under /apps/modulefiles or /apps/contrib.</description>
     </item>
     
     <item>
       <title>JASMIN update on SLURM Scheduler upgrade</title>
-      <link>/en/news/updates/2022/2022-05-20-jasmin-update-on-slurm-scheduler-upgrade/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-05-20-jasmin-update-on-slurm-scheduler-upgrade/</link>
       <pubDate>Fri, 20 May 2022 10:01:18 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-05-20-jasmin-update-on-slurm-scheduler-upgrade/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-05-20-jasmin-update-on-slurm-scheduler-upgrade/</guid>
       <description>Dear users,
 Further to our recent notice about forthcoming maintenance periods and upgrade to the SLURM scheduler, please note the following update: The SLURM Scheduler upgrade is completed and LOTUS batch processing cluster is now available.</description>
     </item>
     
     <item>
       <title>JASMIN update on forthcoming maintenance periods May-June 2022</title>
-      <link>/en/news/updates/2022/2022-05-16-jasmin-update-on-forthcoming-maintenance-periods-may-june-2022-1/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-05-16-jasmin-update-on-forthcoming-maintenance-periods-may-june-2022-1/</link>
       <pubDate>Mon, 16 May 2022 08:28:02 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-05-16-jasmin-update-on-forthcoming-maintenance-periods-may-june-2022-1/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-05-16-jasmin-update-on-forthcoming-maintenance-periods-may-june-2022-1/</guid>
       <description>Dear users,
 Please note the current/upcoming maintenance work affecting JASMIN:
 This week: SLURM scheduler upgrade in progress
@@ -558,20 +567,20 @@ LOTUS batch processing cluster unavailable for most of this week (see previous n
     
     <item>
       <title>JASMIN update on SLURM Scheduler upgrade - starts Friday 13th May 2022</title>
-      <link>/en/news/updates/2022/2022-05-13-jasmin-update-on-slurm-scheduler-upgrade-starts-friday-13th-may-2022/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-05-13-jasmin-update-on-slurm-scheduler-upgrade-starts-friday-13th-may-2022/</link>
       <pubDate>Fri, 13 May 2022 08:30:29 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-05-13-jasmin-update-on-slurm-scheduler-upgrade-starts-friday-13th-may-2022/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-05-13-jasmin-update-on-slurm-scheduler-upgrade-starts-friday-13th-may-2022/</guid>
       <description>Dear users,
 Further to our recent notice about forthcoming maintenance periods and upgrade to the SLURM scheduler, please note the following update: SLURM Scheduler upgrade - now starting Friday 13th May 2022</description>
     </item>
     
     <item>
       <title>JASMIN SLURM scheduler upgrade w/c 16 May 2022</title>
-      <link>/en/news/updates/2022/2022-05-10-jasmin-slurm-scheduler-upgrade-wc-16-may-2022/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-05-10-jasmin-slurm-scheduler-upgrade-wc-16-may-2022/</link>
       <pubDate>Tue, 10 May 2022 07:30:01 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-05-10-jasmin-slurm-scheduler-upgrade-wc-16-may-2022/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-05-10-jasmin-slurm-scheduler-upgrade-wc-16-may-2022/</guid>
       <description>Dear users,
 Further to our recent announcement about maintenance periods in May/June 2022, please note the following additional item:
 SLURM Scheduler upgrade, week commencing 16 May 2022</description>
@@ -579,10 +588,10 @@ SLURM Scheduler upgrade, week commencing 16 May 2022</description>
     
     <item>
       <title>JASMIN update on forthcoming maintenance periods May-June 2022</title>
-      <link>/en/news/updates/2022/2022-05-05-jasmin-update-on-forthcoming-maintenance-periods-may-june-2022/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-05-05-jasmin-update-on-forthcoming-maintenance-periods-may-june-2022/</link>
       <pubDate>Thu, 05 May 2022 08:57:53 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-05-05-jasmin-update-on-forthcoming-maintenance-periods-may-june-2022/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-05-05-jasmin-update-on-forthcoming-maintenance-periods-may-june-2022/</guid>
       <description>Dear users,
 Please note the following announcements for your information:
 Reboot of nx-login servers 09:30 Thurs 5th May NX login servers (nx-login[123].</description>
@@ -590,10 +599,10 @@ Reboot of nx-login servers 09:30 Thurs 5th May NX login servers (nx-login[123].<
     
     <item>
       <title>JASMIN 29th March maintenance work now CANCELLED, advance notice of network Intervention 18-22 June</title>
-      <link>/en/news/updates/2022/2022-03-28-jasmin-29th-march-maintenance-work-now-cancelled-advance-notice-of-network-intervention-18-22-june/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-03-28-jasmin-29th-march-maintenance-work-now-cancelled-advance-notice-of-network-intervention-18-22-june/</link>
       <pubDate>Mon, 28 Mar 2022 08:23:57 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-03-28-jasmin-29th-march-maintenance-work-now-cancelled-advance-notice-of-network-intervention-18-22-june/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-03-28-jasmin-29th-march-maintenance-work-now-cancelled-advance-notice-of-network-intervention-18-22-june/</guid>
       <description>Dear users,
 1. CANCELLED: Further storage maintenance 29th March 2022
 Maintenance work on storage scheduled for tomorrow 29th March has now been cancelled by the vendor.</description>
@@ -601,108 +610,108 @@ Maintenance work on storage scheduled for tomorrow 29th March has now been cance
     
     <item>
       <title>REMINDER - JASMIN further maintenance period 29th March</title>
-      <link>/en/news/updates/2022/2022-03-21-jasmin-further-maintenance-period-29th-march/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-03-21-jasmin-further-maintenance-period-29th-march/</link>
       <pubDate>Mon, 21 Mar 2022 09:24:42 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-03-21-jasmin-further-maintenance-period-29th-march/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-03-21-jasmin-further-maintenance-period-29th-march/</guid>
       <description>Dear users,
 A major component of the recent work scheduled for 1st March was not able to take place, so an alternative date has now been set for this part of the work.</description>
     </item>
     
     <item>
       <title>Tape Maintenance 18th to 28th March</title>
-      <link>/en/news/updates/2022/2022-03-15-tape-maintenance-18th-to-28th-march/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-03-15-tape-maintenance-18th-to-28th-march/</link>
       <pubDate>Tue, 15 Mar 2022 15:58:15 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-03-15-tape-maintenance-18th-to-28th-march/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-03-15-tape-maintenance-18th-to-28th-march/</guid>
       <description>Dear Users,
 Due to a Tape Library expansion and upgrade, the tape services offered by CEDA and JASMIN will be unavailable from midday on Friday 18th March until the morning of Monday 28th March 2022.</description>
     </item>
     
     <item>
       <title>Final reminder - JASMIN upcoming maintenance periods</title>
-      <link>/en/news/updates/2022/2022-02-28-jasmin-upcoming-maintenance-periods/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-02-28-jasmin-upcoming-maintenance-periods/</link>
       <pubDate>Mon, 28 Feb 2022 09:21:24 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-02-28-jasmin-upcoming-maintenance-periods/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-02-28-jasmin-upcoming-maintenance-periods/</guid>
       <description>Dear users,
 This is the final reminder to please be aware of the following maintenance periods scheduled over coming weeks which may affect you:</description>
     </item>
     
     <item>
       <title>Further Tape Maintenance 18th to 22nd February</title>
-      <link>/en/news/updates/2022/2022-02-17-further-tape-maintenance-18th-to-22nd-february/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-02-17-further-tape-maintenance-18th-to-22nd-february/</link>
       <pubDate>Thu, 17 Feb 2022 15:19:07 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-02-17-further-tape-maintenance-18th-to-22nd-february/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-02-17-further-tape-maintenance-18th-to-22nd-february/</guid>
       <description>Dear Users,
 Due to a network upgrade, the tape services offered by CEDA and JASMIN will be unavailable from midday on Friday 19th February until the morning of Tuesday 22nd February 2022.</description>
     </item>
     
     <item>
       <title>Issues affecting access to CEDA and JASMIN services for some users</title>
-      <link>/en/news/updates/2022/2022-02-09-issues-affecting-access-to-ceda-and-jasmin-services-for-some-users/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-02-09-issues-affecting-access-to-ceda-and-jasmin-services-for-some-users/</link>
       <pubDate>Wed, 09 Feb 2022 12:14:50 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-02-09-issues-affecting-access-to-ceda-and-jasmin-services-for-some-users/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-02-09-issues-affecting-access-to-ceda-and-jasmin-services-for-some-users/</guid>
       <description>Dear users,
 We are aware that some users have been experiencing difficulties in reaching some JASMIN and CEDA services since earlier this month.</description>
     </item>
     
     <item>
       <title>RESOLVED JASMIN issue with access roles</title>
-      <link>/en/news/updates/2022/2022-01-19-jasmin-issue-with-access-roles/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-01-19-jasmin-issue-with-access-roles/</link>
       <pubDate>Wed, 19 Jan 2022 09:56:57 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-01-19-jasmin-issue-with-access-roles/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-01-19-jasmin-issue-with-access-roles/</guid>
       <description>Dear Users,
 We believe that the issue with JASMIN access roles is now resolved and missing access roles have been restored.</description>
     </item>
     
     <item>
       <title>The Coupled Model Intercomparison Project (CMIP) Survey</title>
-      <link>/en/news/updates/2022/2022-01-17-cmip-survey/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2022/2022-01-17-cmip-survey/</link>
       <pubDate>Mon, 17 Jan 2022 10:09:16 +0000</pubDate>
       
-      <guid>/en/news/updates/2022/2022-01-17-cmip-survey/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2022/2022-01-17-cmip-survey/</guid>
       <description>If you are part of a community that makes use of data from the Coupled Model Intercomparison Project (CMIP), please consider completing the survey.</description>
     </item>
     
     <item>
       <title>Vacancies Head of CEDA, Project Manager, JASMIN Director</title>
-      <link>/en/news/updates/2021/2021-12-17-vacancies-head-of-ceda-project-manager/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-12-17-vacancies-head-of-ceda-project-manager/</link>
       <pubDate>Fri, 17 Dec 2021 10:04:51 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-12-17-vacancies-head-of-ceda-project-manager/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-12-17-vacancies-head-of-ceda-project-manager/</guid>
       <description>We have three new exciting job opportunities to join our team. Further details are at the links below.
 Head of Centre for Environmental Data Analysis(deadline extended to 23rd January) Project Manager(deadline extended to 16th January) JASMIN Director (deadline 23rd January) Please contact the helpdesk if you need any additional information.</description>
     </item>
     
     <item>
       <title>Tape services unavailable after 1700 today (14 Dec), network at risk 15 Dec</title>
-      <link>/en/news/updates/2021/2021-12-14-tape-services-unavailable-after-1700-today-14-dec-network-at-risk-15-dec/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-12-14-tape-services-unavailable-after-1700-today-14-dec-network-at-risk-15-dec/</link>
       <pubDate>Tue, 14 Dec 2021 14:52:40 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-12-14-tape-services-unavailable-after-1700-today-14-dec-network-at-risk-15-dec/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-12-14-tape-services-unavailable-after-1700-today-14-dec-network-at-risk-15-dec/</guid>
       <description>Dear Users,
 In line with recent announcements regarding “at risk” status of tape services, please be aware that at 17:00 today, access to tape services will be closed in advance of RAL network reconfiguration work tomorrow Wednesday 15th December.</description>
     </item>
     
     <item>
       <title>CEDA and JASMIN support over the Christmas period</title>
-      <link>/en/news/updates/2021/2021-12-07-ceda-and-jasmin-support-over-the-christmas-period/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-12-07-ceda-and-jasmin-support-over-the-christmas-period/</link>
       <pubDate>Tue, 07 Dec 2021 12:12:45 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-12-07-ceda-and-jasmin-support-over-the-christmas-period/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-12-07-ceda-and-jasmin-support-over-the-christmas-period/</guid>
       <description>As we approach the Christmas period, please be aware of the limited support arrangements in place which will result in CEDA and JASMIN services running “at-risk”.</description>
     </item>
     
     <item>
       <title>JASMIN Issues with scratch and some other storage volumes, limited LOTUS support</title>
-      <link>/en/news/updates/2021/2021-12-03-jasmin-issues-with-scratch-and-some-other-storage-volumes-limited-lotus-support/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-12-03-jasmin-issues-with-scratch-and-some-other-storage-volumes-limited-lotus-support/</link>
       <pubDate>Fri, 03 Dec 2021 10:27:20 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-12-03-jasmin-issues-with-scratch-and-some-other-storage-volumes-limited-lotus-support/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-12-03-jasmin-issues-with-scratch-and-some-other-storage-volumes-limited-lotus-support/</guid>
       <description>Dear users,
 We are aware of an issue with some PFS storage volumes, including:
 /work/scratch-pw (but not /work/scratch-pw2) /gws/pw/j05/ncas_obs (possibility of other volumes /gws/pw/j05/*) These volumes may be temporarily unavailable.</description>
@@ -710,49 +719,49 @@ We are aware of an issue with some PFS storage volumes, including:
     
     <item>
       <title>CEDA leads UKRI’s net zero computing goals</title>
-      <link>/en/news/updates/2021/2021-11-30-net-zero-computing/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-11-30-net-zero-computing/</link>
       <pubDate>Tue, 30 Nov 2021 13:44:34 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-11-30-net-zero-computing/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-11-30-net-zero-computing/</guid>
       <description>The CEDA team are leading efforts in the UK’s research and innovation sector to reach net zero computing. Our data experts will recommend a plan to ensure all the digital tools used throughout the sector, from supercomputers to phones, will be carbon neutral by 2040.</description>
     </item>
     
     <item>
       <title>JASMIN Updates reminder Network at risk 1st Dec - postponed</title>
-      <link>/en/news/updates/2021/2021-11-30-jasmin-updates-reminder-network-at-risk-1st-dec/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-11-30-jasmin-updates-reminder-network-at-risk-1st-dec/</link>
       <pubDate>Tue, 30 Nov 2021 10:13:32 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-11-30-jasmin-updates-reminder-network-at-risk-1st-dec/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-11-30-jasmin-updates-reminder-network-at-risk-1st-dec/</guid>
       <description>UPDATE: this work has now been postponed, please look out for further announcements. Apologies for the inconvenience, JASMIN Team.
 Dear Users,</description>
     </item>
     
     <item>
       <title>Jaspy update, new R (jasr) environment, and Notebook Service update to be released on 16/11/2021</title>
-      <link>/en/news/updates/2021/2021-11-10-jaspy-update-new-r-jasr-environment-and-notebook-service-update-to-be-released-on-16112021/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-11-10-jaspy-update-new-r-jasr-environment-and-notebook-service-update-to-be-released-on-16112021/</link>
       <pubDate>Wed, 10 Nov 2021 10:57:36 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-11-10-jaspy-update-new-r-jasr-environment-and-notebook-service-update-to-be-released-on-16112021/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-11-10-jaspy-update-new-r-jasr-environment-and-notebook-service-update-to-be-released-on-16112021/</guid>
       <description>Dear JASMIN users,
 We are pleased to announce that (1) a new version of the Jaspy software environment, (2) a first (Jasr) R environment and an (3) update to the JASMIN Notebook Service software (using Jaspy) will be released on JASMIN on Tuesday 16th November.</description>
     </item>
     
     <item>
       <title>Reminder Tape service maintenance 26/27 Oct</title>
-      <link>/en/news/updates/2021/2021-10-25-reminder-tape-service-maintenance-2627-oct/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-10-25-reminder-tape-service-maintenance-2627-oct/</link>
       <pubDate>Mon, 25 Oct 2021 08:37:39 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-10-25-reminder-tape-service-maintenance-2627-oct/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-10-25-reminder-tape-service-maintenance-2627-oct/</guid>
       <description>Dear users
 There will be a downtime for tape services (affecting Elastic Tape, JDMA and the Near-Line Archive service) on Wednesday 27th October, to apply essential updates.</description>
     </item>
     
     <item>
       <title>JASMIN update 1) Tape service maintenance 26/27 Oct 2) new scratch volume</title>
-      <link>/en/news/updates/2021/2021-10-21-jasmin-update-1-tape-service-maintenance-2627-oct-2-new-scratch-volume/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-10-21-jasmin-update-1-tape-service-maintenance-2627-oct-2-new-scratch-volume/</link>
       <pubDate>Thu, 21 Oct 2021 09:24:10 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-10-21-jasmin-update-1-tape-service-maintenance-2627-oct-2-new-scratch-volume/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-10-21-jasmin-update-1-tape-service-maintenance-2627-oct-2-new-scratch-volume/</guid>
       <description>Dear users,
 Please note the following updates for your attention:
 Tape service maintenance 26/27 October 2021 There will be a downtime for tape services (affecting Elastic Tape, JDMA and the Near-Line Archive service) on Wednesday 27th October, to apply essential updates.</description>
@@ -760,58 +769,58 @@ Tape service maintenance 26/27 October 2021 There will be a downtime for tape se
     
     <item>
       <title>Reminder System Maintenance 5th October 2021</title>
-      <link>/en/news/updates/2021/2021-10-04-system-maintenance-5th-october-2021/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-10-04-system-maintenance-5th-october-2021/</link>
       <pubDate>Mon, 04 Oct 2021 08:37:12 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-10-04-system-maintenance-5th-october-2021/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-10-04-system-maintenance-5th-october-2021/</guid>
       <description>Reminder: System Maintenance planned for 5th October 2021.
 Scheduled maintenance is planned for Tuesday 5th October 2021, which will cause some disruption to JASMIN and CEDA services.</description>
     </item>
     
     <item>
       <title>Brief network interruptions Wed 29 Sept 2021</title>
-      <link>/en/news/updates/2021/2021-09-28-brief-network-interruptions-wed-29-sept-2021/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-09-28-brief-network-interruptions-wed-29-sept-2021/</link>
       <pubDate>Tue, 28 Sep 2021 12:36:07 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-09-28-brief-network-interruptions-wed-29-sept-2021/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-09-28-brief-network-interruptions-wed-29-sept-2021/</guid>
       <description>Dear Users,
 We have been informed by the site network team for JASMIN’s host institution, RAL, that on Wednesday 29th September (tomorrow), the RAL site firewall will be upgraded.</description>
     </item>
     
     <item>
       <title>JASMIN 1) Cloud issues 2) System Maintenance 5 October 2021</title>
-      <link>/en/news/updates/2021/2021-09-20-jasmin-1-cloud-issues-2-system-maintenance-5-october-2021/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-09-20-jasmin-1-cloud-issues-2-system-maintenance-5-october-2021/</link>
       <pubDate>Mon, 20 Sep 2021 09:54:52 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-09-20-jasmin-1-cloud-issues-2-system-maintenance-5-october-2021/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-09-20-jasmin-1-cloud-issues-2-system-maintenance-5-october-2021/</guid>
       <description>Please note the following JASMIN announcements for your attention:
 1) Issues affecting access to JASMIN Cloud via portal and SSH currently under investigation.</description>
     </item>
     
     <item>
       <title>New technical blog sharing expertise about managing petabytes of data</title>
-      <link>/en/news/updates/2021/2021-09-15-new-tech-blog/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-09-15-new-tech-blog/</link>
       <pubDate>Wed, 15 Sep 2021 12:33:37 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-09-15-new-tech-blog/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-09-15-new-tech-blog/</guid>
       <description>Experts at the Centre for Environmental Data Analysis (CEDA) have launched a new technical blog for sharing expertise about how we manage petabytes of data.</description>
     </item>
     
     <item>
       <title>Vacancy two graduate roles</title>
-      <link>/en/news/updates/2021/2021-09-10-vacancy-two-graduate-roles/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-09-10-vacancy-two-graduate-roles/</link>
       <pubDate>Fri, 10 Sep 2021 14:49:22 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-09-10-vacancy-two-graduate-roles/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-09-10-vacancy-two-graduate-roles/</guid>
       <description>We have two new opportunities for graduates to join the CEDA team. Follow the links below for more information and how to apply.</description>
     </item>
     
     <item>
       <title>1) Tape services maintenance 13-14 Sept, 2) Globus Endpoint changes.</title>
-      <link>/en/news/updates/2021/2021-09-08-1-tape-services-maintenance-13-14-sept-2-globus-endpoint-changes/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-09-08-1-tape-services-maintenance-13-14-sept-2-globus-endpoint-changes/</link>
       <pubDate>Wed, 08 Sep 2021 13:03:06 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-09-08-1-tape-services-maintenance-13-14-sept-2-globus-endpoint-changes/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-09-08-1-tape-services-maintenance-13-14-sept-2-globus-endpoint-changes/</guid>
       <description>Dear users
 Please note the following JASMIN updates:
 1) Tape services maintenance 13-14 September
@@ -820,10 +829,10 @@ Tape services including Elastic Tape and the Near-Line Archive service will be u
     
     <item>
       <title>JASMIN updates network maintenance</title>
-      <link>/en/news/updates/2021/2021-08-18-jasmin-updates-network-maintenance-1/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-08-18-jasmin-updates-network-maintenance-1/</link>
       <pubDate>Wed, 18 Aug 2021 09:51:09 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-08-18-jasmin-updates-network-maintenance-1/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-08-18-jasmin-updates-network-maintenance-1/</guid>
       <description>Dear users,
 Please note the following update:
 Network maintenance 21/22 August, at risk in between.
@@ -832,10 +841,10 @@ As part of work to upgrade the RAL core network (the network of CEDA and JASMIN�
     
     <item>
       <title>JASMIN updates network maintenance</title>
-      <link>/en/news/updates/2021/2021-08-11-jasmin-updates-network-maintenance/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-08-11-jasmin-updates-network-maintenance/</link>
       <pubDate>Wed, 11 Aug 2021 08:41:19 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-08-11-jasmin-updates-network-maintenance/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-08-11-jasmin-updates-network-maintenance/</guid>
       <description>Dear users,
 Please note the following updates:
 Network maintenance 14/15 &amp;amp; 21/22 August, at risk in between.
@@ -844,10 +853,10 @@ As part of work to upgrade the RAL core network (the network of CEDA and JASMIN�
     
     <item>
       <title>Important JASMIN updates August 2021</title>
-      <link>/en/news/updates/2021/2021-08-10-important-jasmin-updates-august-2021/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-08-10-important-jasmin-updates-august-2021/</link>
       <pubDate>Tue, 10 Aug 2021 08:02:20 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-08-10-important-jasmin-updates-august-2021/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-08-10-important-jasmin-updates-august-2021/</guid>
       <description>Dear JASMIN users,
 This message includes information about important updates on JASMIN:
 Kernel patching required on all JASMIN login, sci and data transfer servers Kernel patching required across all LOTUS compute nodes Maximum job array size and default memory allocation to be changed Short-serial-4hr queue configuration has changed Details of the update</description>
@@ -855,10 +864,10 @@ Kernel patching required on all JASMIN login, sci and data transfer servers Kern
     
     <item>
       <title>JASMIN updates 1) network maintenance 2) elastic tape/JDMA</title>
-      <link>/en/news/updates/2021/2021-07-27-jasmin-updates-1-network-maintenance-2-elastic-tapejdma/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-07-27-jasmin-updates-1-network-maintenance-2-elastic-tapejdma/</link>
       <pubDate>Tue, 27 Jul 2021 08:17:10 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-07-27-jasmin-updates-1-network-maintenance-2-elastic-tapejdma/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-07-27-jasmin-updates-1-network-maintenance-2-elastic-tapejdma/</guid>
       <description>Dear users,
 Please note the following updates:
 1. Network maintenance 14/15 &amp;amp; 21/22 August, at risk in between.
@@ -867,181 +876,181 @@ As part of work to upgrade the RAL core network (the network of CEDA and JASMIN�
     
     <item>
       <title>CEDA and JASMIN support over summer period</title>
-      <link>/en/news/updates/2021/2021-07-23-ceda-and-jasmin-support-over-summer-period/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-07-23-ceda-and-jasmin-support-over-summer-period/</link>
       <pubDate>Fri, 23 Jul 2021 15:15:41 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-07-23-ceda-and-jasmin-support-over-summer-period/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-07-23-ceda-and-jasmin-support-over-summer-period/</guid>
       <description>As we approach the summer period, please be aware of the limited support arrangements in place which will result in CEDA and JASMIN services running “at-risk”.</description>
     </item>
     
     <item>
       <title>LOTUS scheduler issues update</title>
-      <link>/en/news/updates/2021/2021-07-19-lotus-scheduler-issues-investigation-underway/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-07-19-lotus-scheduler-issues-investigation-underway/</link>
       <pubDate>Mon, 19 Jul 2021 12:10:31 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-07-19-lotus-scheduler-issues-investigation-underway/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-07-19-lotus-scheduler-issues-investigation-underway/</guid>
       <description>Update - 20th July 10 am: While investigations continue into the root cause of recent problems, the cluster now appears to be behaving normally.</description>
     </item>
     
     <item>
       <title>Reminder JASMIN system maintenance tomorrow, Tuesday 6th July 2021</title>
-      <link>/en/news/updates/2021/2021-07-05-jasmin-system-maintenance-tuesday-6th-july-2021/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-07-05-jasmin-system-maintenance-tuesday-6th-july-2021/</link>
       <pubDate>Mon, 05 Jul 2021 08:40:20 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-07-05-jasmin-system-maintenance-tuesday-6th-july-2021/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-07-05-jasmin-system-maintenance-tuesday-6th-july-2021/</guid>
       <description>Dear users,
 Scheduled maintenance is planned for tomorrow, Tuesday 6th July 2021, which will cause some disruption to JASMIN and CEDA services.</description>
     </item>
     
     <item>
       <title>Supporting COP26 hackathons</title>
-      <link>/en/news/updates/2021/2021-07-01-supporting-cop26-hackathons/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-07-01-supporting-cop26-hackathons/</link>
       <pubDate>Thu, 01 Jul 2021 09:59:51 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-07-01-supporting-cop26-hackathons/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-07-01-supporting-cop26-hackathons/</guid>
       <description>Researchers across the UK have been hacking their way through Terabytes of climate data ahead of the 26th UN Climate Change Conference of the Parties (COP26) in Glasgow on 1st-12th November 2021.</description>
     </item>
     
     <item>
       <title>JASMIN status updates and reminder of planned maintenance Tuesday 6 July</title>
-      <link>/en/news/updates/2021/2021-06-24-jasmin-status-updates-and-reminder-of-planned-maintenance-tuesday-6-july/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-06-24-jasmin-status-updates-and-reminder-of-planned-maintenance-tuesday-6-july/</link>
       <pubDate>Thu, 24 Jun 2021 12:44:56 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-06-24-jasmin-status-updates-and-reminder-of-planned-maintenance-tuesday-6-july/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-06-24-jasmin-status-updates-and-reminder-of-planned-maintenance-tuesday-6-july/</guid>
       <description>Dear all,
 See below for an update on various aspects of JASMIN services and dates for your diary. Note that these updates are also available on the website news section: https://www.</description>
     </item>
     
     <item>
       <title>JASMIN helps to predict seabird breeding abundance in a changing climate</title>
-      <link>/en/news/updates/2021/2021-06-08-jasmin-helps-to-predict-seabird-abundance/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-06-08-jasmin-helps-to-predict-seabird-abundance/</link>
       <pubDate>Tue, 08 Jun 2021 10:28:59 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-06-08-jasmin-helps-to-predict-seabird-abundance/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-06-08-jasmin-helps-to-predict-seabird-abundance/</guid>
       <description>Many of us have been to the coast and seen seabirds, but have you ever considered how they might be affected by climate change?</description>
     </item>
     
     <item>
       <title>Vacancy JASMIN Research Software Engineer</title>
-      <link>/en/news/updates/2021/2021-06-08-vacancy-jasmin-research-software-engineer/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-06-08-vacancy-jasmin-research-software-engineer/</link>
       <pubDate>Tue, 08 Jun 2021 09:23:57 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-06-08-vacancy-jasmin-research-software-engineer/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-06-08-vacancy-jasmin-research-software-engineer/</guid>
       <description>We have an exciting opportunity to join our team as a Research Software Engineer, where you will develop and maintain software used to deliver JASMIN, and to operate processes which support users in their work on the JASMIN platform.</description>
     </item>
     
     <item>
       <title>Reminder New Jaspy python3.7 version to be released on 20/05/2021</title>
-      <link>/en/news/updates/2021/2021-05-17-new-jaspy-python37-version-to-be-released-on-20052021/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-05-17-new-jaspy-python37-version-to-be-released-on-20052021/</link>
       <pubDate>Mon, 17 May 2021 08:21:48 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-05-17-new-jaspy-python37-version-to-be-released-on-20052021/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-05-17-new-jaspy-python37-version-to-be-released-on-20052021/</guid>
       <description>Dear JASMIN users,
 We are pleased to announce that a new version of the JASPY Python 3.7 software environment has been released on JASMIN.</description>
     </item>
     
     <item>
       <title>Reboot of servers for software update, interruption in access to object store</title>
-      <link>/en/news/updates/2021/2021-05-13-reboot-of-servers-for-software-update-interruption-in-access-to-object-store/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-05-13-reboot-of-servers-for-software-update-interruption-in-access-to-object-store/</link>
       <pubDate>Thu, 13 May 2021 08:25:29 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-05-13-reboot-of-servers-for-software-update-interruption-in-access-to-object-store/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-05-13-reboot-of-servers-for-software-update-interruption-in-access-to-object-store/</guid>
       <description>Dear users,
 Rescheduled work to apply a storage-related software update to key JASMIN servers (sci, xfer, hpxfer and a limited number of other machines) will take place on Friday 14th May 2021 at 08:30-10:00.</description>
     </item>
     
     <item>
       <title>1) Cancelled Reboot of servers Tuesday 11 May 2021  2) Tape library maintenance</title>
-      <link>/en/news/updates/2021/2021-05-11-1-cancelled-reboot-of-servers-tuesday-11-may-2021-2-tape-library-maintenance/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-05-11-1-cancelled-reboot-of-servers-tuesday-11-may-2021-2-tape-library-maintenance/</link>
       <pubDate>Tue, 11 May 2021 09:32:12 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-05-11-1-cancelled-reboot-of-servers-tuesday-11-may-2021-2-tape-library-maintenance/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-05-11-1-cancelled-reboot-of-servers-tuesday-11-may-2021-2-tape-library-maintenance/</guid>
       <description>Dear all,
 Apologies for the short notice but the reboot of servers planned for today announced in our recent update is cancelled.</description>
     </item>
     
     <item>
       <title>Reboot of servers Tuesday 11 May 2021</title>
-      <link>/en/news/updates/2021/2021-05-06-reboot-of-servers-tuesday-11-may-2021/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-05-06-reboot-of-servers-tuesday-11-may-2021/</link>
       <pubDate>Thu, 06 May 2021 08:10:01 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-05-06-reboot-of-servers-tuesday-11-may-2021/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-05-06-reboot-of-servers-tuesday-11-may-2021/</guid>
       <description>Dear all,
 As anticipated in our recent update, a software update is now available which should address the remaining disk storage issue mentioned in earlier announcements.</description>
     </item>
     
     <item>
       <title>Reminder Network interruption tomorrow, Wed 21 April 2021</title>
-      <link>/en/news/updates/2021/2021-04-20-network-interruption-wed-21-april-2021/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-04-20-network-interruption-wed-21-april-2021/</link>
       <pubDate>Tue, 20 Apr 2021 08:21:39 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-04-20-network-interruption-wed-21-april-2021/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-04-20-network-interruption-wed-21-april-2021/</guid>
       <description>Tomorrow, Wednesday 21st April, upgrades by our host institution to the RAL site firewall will be undertaken between 06:00 and 10:00.</description>
     </item>
     
     <item>
       <title>Cloud Upgrade, May 2021</title>
-      <link>/en/news/updates/2021/2021-04-06-cloud-upgrade-may-2021/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-04-06-cloud-upgrade-may-2021/</link>
       <pubDate>Tue, 06 Apr 2021 08:32:23 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-04-06-cloud-upgrade-may-2021/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-04-06-cloud-upgrade-may-2021/</guid>
       <description>Dear cloud tenants,
 We are planning a major upgrade to JASMIN’s Cloud in May this year: The work will bring the cloud from the current “Queens” version of OpenStack to the latest compatible supported release, “Train”.</description>
     </item>
     
     <item>
       <title>Reminder Access to CEDA and JASMIN services at risk today and tomorrow (30-31 March 2021)</title>
-      <link>/en/news/updates/2021/2021-03-30-access-to-ceda-and-jasmin-services-at-risk-30-31-march-2021/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-03-30-access-to-ceda-and-jasmin-services-at-risk-30-31-march-2021/</link>
       <pubDate>Tue, 30 Mar 2021 08:02:50 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-03-30-access-to-ceda-and-jasmin-services-at-risk-30-31-march-2021/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-03-30-access-to-ceda-and-jasmin-services-at-risk-30-31-march-2021/</guid>
       <description>Please be aware that due to Domain Name Server (DNS) upgrades undertaken by our host institution on 30 and 31 March 2021, there could be delays or interruptions to access to CEDA and JASMIN services after 18:00 on each of these dates.</description>
     </item>
     
     <item>
       <title>Oceans in the Cloud working interactively with huge datasets using Pangeo</title>
-      <link>/en/news/updates/2021/2021-03-23-oceans-in-the-cloud/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-03-23-oceans-in-the-cloud/</link>
       <pubDate>Tue, 23 Mar 2021 14:44:29 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-03-23-oceans-in-the-cloud/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-03-23-oceans-in-the-cloud/</guid>
       <description>The properties of our oceans are changing. The Southern Ocean absorbs more heat than any other ocean and as a consequence of climate change, it is warming at an alarming rate.</description>
     </item>
     
     <item>
       <title>Reminder Brief network interruptions Today, 10th March</title>
-      <link>/en/news/updates/2021/2021-03-10-brief-network-interruptions-10th-march/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-03-10-brief-network-interruptions-10th-march/</link>
       <pubDate>Wed, 10 Mar 2021 08:00:15 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-03-10-brief-network-interruptions-10th-march/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-03-10-brief-network-interruptions-10th-march/</guid>
       <description>Dear users,
 Please be aware that due to scheduled network maintenance carried out by our host organisation, there will be a series of brief interruptions to network connectivity (a few seconds each) today, Wednesday 10th March 2021, between 09:00 and 10:30.</description>
     </item>
     
     <item>
       <title>JASMIN System Maintenance - now complete</title>
-      <link>/en/news/updates/2021/2021-03-03-jasmin-system-maintenance-now-complete/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-03-03-jasmin-system-maintenance-now-complete/</link>
       <pubDate>Wed, 03 Mar 2021 11:08:05 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-03-03-jasmin-system-maintenance-now-complete/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-03-03-jasmin-system-maintenance-now-complete/</guid>
       <description>The scheduled maintenance that happened yesterday, Tuesday 2nd March 2021, is now completed.
 Most JASMIN and CEDA services are back running as normal.</description>
     </item>
     
     <item>
       <title>Final Reminder JASMIN System Maintenance Tomorrow - Tues 2 March 2021</title>
-      <link>/en/news/updates/2021/2021-03-01-final-reminder-jasmin-system-maintenance-tomorrow-tues-2-march-2021/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-03-01-final-reminder-jasmin-system-maintenance-tomorrow-tues-2-march-2021/</link>
       <pubDate>Mon, 01 Mar 2021 09:42:56 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-03-01-final-reminder-jasmin-system-maintenance-tomorrow-tues-2-march-2021/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-03-01-final-reminder-jasmin-system-maintenance-tomorrow-tues-2-march-2021/</guid>
       <description>Scheduled maintenance is planned for tomorrow, Tuesday 2nd March 2021, which may cause some disruption to JASMIN and CEDA services.</description>
     </item>
     
     <item>
       <title>Update to high-performance data transfer services</title>
-      <link>/en/news/updates/2021/2021-02-26-update-to-high-performance-data-transfer-services-1/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-02-26-update-to-high-performance-data-transfer-services-1/</link>
       <pubDate>Fri, 26 Feb 2021 13:26:52 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-02-26-update-to-high-performance-data-transfer-services-1/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-02-26-update-to-high-performance-data-transfer-services-1/</guid>
       <description>Dear users,
 As previously announced, we are making further changes to some data transfer services:
 ftp.ceda.ac.uk (CEDA Archive FTP server)</description>
@@ -1049,59 +1058,59 @@ ftp.ceda.ac.uk (CEDA Archive FTP server)</description>
     
     <item>
       <title>Reminder Notice JASMIN System Maintenance Tues 2 March 2021</title>
-      <link>/en/news/updates/2021/2021-02-23-advance-notice-jasmin-system-maintenance-tues-2-march-2021/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-02-23-advance-notice-jasmin-system-maintenance-tues-2-march-2021/</link>
       <pubDate>Tue, 23 Feb 2021 09:22:36 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-02-23-advance-notice-jasmin-system-maintenance-tues-2-march-2021/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-02-23-advance-notice-jasmin-system-maintenance-tues-2-march-2021/</guid>
       <description>Scheduled maintenance is planned for Tuesday 2nd March 2021, which may cause some disruption to JASMIN and CEDA services.
 On a regular (roughly quarterly) basis, important updates are applied to systems within the JASMIN infrastructure (which also hosts the CEDA Archive and associated services) in order to keep them up to date and secure.</description>
     </item>
     
     <item>
       <title>Update Problems with Elastic Tape</title>
-      <link>/en/news/updates/2021/2021-02-19-update-problems-with-elastic-tape/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-02-19-update-problems-with-elastic-tape/</link>
       <pubDate>Fri, 19 Feb 2021 14:48:15 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-02-19-update-problems-with-elastic-tape/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-02-19-update-problems-with-elastic-tape/</guid>
       <description>We believe that the problems affecting Elastic Tape and JDMA to now be solved. Users can now start using the services again.</description>
     </item>
     
     <item>
       <title>reboot of server nx-login2 at 1600 today</title>
-      <link>/en/news/updates/2021/2021-02-17-reboot-of-server-nx-login2-at-1600-today/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-02-17-reboot-of-server-nx-login2-at-1600-today/</link>
       <pubDate>Wed, 17 Feb 2021 14:03:12 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-02-17-reboot-of-server-nx-login2-at-1600-today/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-02-17-reboot-of-server-nx-login2-at-1600-today/</guid>
       <description>Server nx-login2.jasmin.ac.uk needs to be rebooted at 16:00 today, Wednesday 17th February, to clear up dead/hanging processes.
 We apologise for any inconvenience this may cause.</description>
     </item>
     
     <item>
       <title>JASMIN Sci3,5 reboot at 0900 AM TOMORROW!</title>
-      <link>/en/news/updates/2021/2021-02-16-jasmin-sci35-reboot-at-0900-am-tomorrow/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-02-16-jasmin-sci35-reboot-at-0900-am-tomorrow/</link>
       <pubDate>Tue, 16 Feb 2021 13:51:24 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-02-16-jasmin-sci35-reboot-at-0900-am-tomorrow/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-02-16-jasmin-sci35-reboot-at-0900-am-tomorrow/</guid>
       <description>Dear JASMIN users,
 The JASMIN scientific analysis machines sci[3,5].jasmin.ac.uk need to be rebooted at 09:00 AM tomorrow, Wednesday 17th February, to clear up dead/hanging processes.</description>
     </item>
     
     <item>
       <title>Problem with LOTUS batch scheduler - SLURM</title>
-      <link>/en/news/updates/2021/2021-02-11-problem-with-lotus-batch-scheduler-slurm/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-02-11-problem-with-lotus-batch-scheduler-slurm/</link>
       <pubDate>Thu, 11 Feb 2021 13:30:00 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-02-11-problem-with-lotus-batch-scheduler-slurm/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-02-11-problem-with-lotus-batch-scheduler-slurm/</guid>
       <description>13:30 11th Feb - update 1
 There is currently an issue with the LOTUS batch scheduler - SLURM. This has manifested in unusually long pending time per job, a slow response time when querying SLURM and occasional failed job submissions.</description>
     </item>
     
     <item>
       <title>Reminder Update to high-performance data transfer services</title>
-      <link>/en/news/updates/2021/2021-02-11-reminder-update-to-high-performance-data-transfer-services/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-02-11-reminder-update-to-high-performance-data-transfer-services/</link>
       <pubDate>Thu, 11 Feb 2021 08:58:23 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-02-11-reminder-update-to-high-performance-data-transfer-services/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-02-11-reminder-update-to-high-performance-data-transfer-services/</guid>
       <description>Dear users,
 As announced last week, the following servers will be decommissioned tomorrow Friday 12th Feb:
 jasmin-xfer[23].ceda.ac.uk (high-performance data transfer servers)</description>
@@ -1109,59 +1118,59 @@ jasmin-xfer[23].ceda.ac.uk (high-performance data transfer servers)</description
     
     <item>
       <title>Job opportunity - JASMIN Software Developer</title>
-      <link>/en/news/updates/2021/2021-02-10-job-opportunity-jasmin-software-developer/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-02-10-job-opportunity-jasmin-software-developer/</link>
       <pubDate>Wed, 10 Feb 2021 17:14:49 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-02-10-job-opportunity-jasmin-software-developer/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-02-10-job-opportunity-jasmin-software-developer/</guid>
       <description>Job opportunity - JASMIN Software Developer
 We are looking for an enthusiastic individual to contribute to the evolution of JASMIN – our globally unique facility for data-intensive computing for the environmental sciences.</description>
     </item>
     
     <item>
       <title>File corruption issues</title>
-      <link>/en/news/updates/2021/2021-02-04-file-corruption-issues-1/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-02-04-file-corruption-issues-1/</link>
       <pubDate>Thu, 04 Feb 2021 16:59:16 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-02-04-file-corruption-issues-1/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-02-04-file-corruption-issues-1/</guid>
       <description>Dear users
 As reported last week, we have been dealing with an issue of apparent file corruption affecting a relatively small number of files in some volumes with paths beginning /gws/nopw/j04.</description>
     </item>
     
     <item>
       <title>Update to high-performance data transfer services</title>
-      <link>/en/news/updates/2021/2021-02-01-update-to-high-performance-data-transfer-services/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-02-01-update-to-high-performance-data-transfer-services/</link>
       <pubDate>Mon, 01 Feb 2021 15:35:52 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-02-01-update-to-high-performance-data-transfer-services/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-02-01-update-to-high-performance-data-transfer-services/</guid>
       <description>Dear users,
 You will be aware that many JASMIN and CEDA services were redeployed from RHEL6 to CentOS7 operating systems last year.</description>
     </item>
     
     <item>
       <title>JASMIN helps track the impact of climate change on UK birds</title>
-      <link>/en/news/updates/2021/2021-01-28-jasmin-helps-track-the-impact-of-climate-change-on-uk-birds/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-01-28-jasmin-helps-track-the-impact-of-climate-change-on-uk-birds/</link>
       <pubDate>Thu, 28 Jan 2021 09:32:31 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-01-28-jasmin-helps-track-the-impact-of-climate-change-on-uk-birds/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-01-28-jasmin-helps-track-the-impact-of-climate-change-on-uk-birds/</guid>
       <description>Over 600 different species of birds have been recorded in the UK to date[1] . For many of them formal monitoring is limited or absent.</description>
     </item>
     
     <item>
       <title>File corruption issues</title>
-      <link>/en/news/updates/2021/2021-01-26-file-corruption-issues/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-01-26-file-corruption-issues/</link>
       <pubDate>Tue, 26 Jan 2021 12:43:07 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-01-26-file-corruption-issues/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-01-26-file-corruption-issues/</guid>
       <description>Dear users
 We are aware of reports of apparent file corruption affecting a relatively small number of files in some volumes with paths beginning /gws/nopw/j04.</description>
     </item>
     
     <item>
       <title>Reboot of server hpxfer1.jasmin.ac.uk</title>
-      <link>/en/news/updates/2021/2021-01-25-reboot-of-server-hpxfer1jasminacuk/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-01-25-reboot-of-server-hpxfer1jasminacuk/</link>
       <pubDate>Mon, 25 Jan 2021 14:25:33 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-01-25-reboot-of-server-hpxfer1jasminacuk/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-01-25-reboot-of-server-hpxfer1jasminacuk/</guid>
       <description>Server hpxfer1.jasmin.ac.uk will be rebooted at 09:00 on 26/1/2021 to clear some stuck processes.
 Apologies for any inconvenience.
 JASMIN Team</description>
@@ -1169,209 +1178,209 @@ JASMIN Team</description>
     
     <item>
       <title>JASMIN Sci3,6,8 reboot at 0830 AM TOMORROW!</title>
-      <link>/en/news/updates/2021/2021-01-20-jasmin-sci368-reboot-at-0830-am-tomorrow/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-01-20-jasmin-sci368-reboot-at-0830-am-tomorrow/</link>
       <pubDate>Wed, 20 Jan 2021 14:57:59 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-01-20-jasmin-sci368-reboot-at-0830-am-tomorrow/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-01-20-jasmin-sci368-reboot-at-0830-am-tomorrow/</guid>
       <description>Dear JASMIN users,
 The JASMIN scientific analysis machines sci[3,6,8].jasmin.ac.uk need to be rebooted at 08:30 AM tomorrow, Thursday 21st January, to clear up dead/hanging processes.</description>
     </item>
     
     <item>
       <title>Reminder - Change of server for Elastic Tape service.</title>
-      <link>/en/news/updates/2021/2021-01-20-change-of-server-for-elastic-tape-service/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-01-20-change-of-server-for-elastic-tape-service/</link>
       <pubDate>Wed, 20 Jan 2021 09:19:40 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-01-20-change-of-server-for-elastic-tape-service/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-01-20-change-of-server-for-elastic-tape-service/</guid>
       <description>The server used to access the Elastic Tape service (et1.ceda.ac.uk) has reached its end of life and is due to be decommissioned.</description>
     </item>
     
     <item>
       <title>Update COVID-19 impact on CEDA and JASMIN operations</title>
-      <link>/en/news/updates/2021/2021-01-05-update-covid-19-impact-on-ceda-and-jasmin-operations/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2021/2021-01-05-update-covid-19-impact-on-ceda-and-jasmin-operations/</link>
       <pubDate>Tue, 05 Jan 2021 10:54:36 +0000</pubDate>
       
-      <guid>/en/news/updates/2021/2021-01-05-update-covid-19-impact-on-ceda-and-jasmin-operations/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2021/2021-01-05-update-covid-19-impact-on-ceda-and-jasmin-operations/</guid>
       <description>At the beginning of the Covid-19 pandemic, we announced that all of our services should be considered at risk. Thankfully, our services have run largely as normal throughout the pandemic, but 10 months on, unfortunately, this ‘at risk’ status still stands.</description>
     </item>
     
     <item>
       <title>Helping users get the most out of JASMIN in 2020</title>
-      <link>/en/news/updates/2020/2020-12-16-helping-users-get-the-most-out-of-jasmin-in-2020/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-12-16-helping-users-get-the-most-out-of-jasmin-in-2020/</link>
       <pubDate>Wed, 16 Dec 2020 10:35:01 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-12-16-helping-users-get-the-most-out-of-jasmin-in-2020/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-12-16-helping-users-get-the-most-out-of-jasmin-in-2020/</guid>
       <description>JASMIN is a large and multi-faceted research facility that continues to grow in response to demand from growing numbers of users from a wide range of academic communities.</description>
     </item>
     
     <item>
       <title>Reminder CEDA and JASMIN support over Christmas period</title>
-      <link>/en/news/updates/2020/2020-12-11-reminder-ceda-and-jasmin-support-over-christmas-period/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-12-11-reminder-ceda-and-jasmin-support-over-christmas-period/</link>
       <pubDate>Fri, 11 Dec 2020 10:37:15 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-12-11-reminder-ceda-and-jasmin-support-over-christmas-period/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-12-11-reminder-ceda-and-jasmin-support-over-christmas-period/</guid>
       <description>A reminder there is a &amp;ldquo;change freeze&amp;rdquo; in place from 17:00 today. Requests for new or changes to existing services will not be dealt with until the New Year.</description>
     </item>
     
     <item>
       <title>NLA unavailable from Fri 4th to Tues 7th Dec 2020</title>
-      <link>/en/news/updates/2020/2020-12-02-nla-unavailable-from-fri-4th-to-tues-7th-dec-2020/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-12-02-nla-unavailable-from-fri-4th-to-tues-7th-dec-2020/</link>
       <pubDate>Wed, 02 Dec 2020 15:46:20 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-12-02-nla-unavailable-from-fri-4th-to-tues-7th-dec-2020/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-12-02-nla-unavailable-from-fri-4th-to-tues-7th-dec-2020/</guid>
       <description>The Near-Line Archive (NLA) tape system will be unavailable from the evening of Friday the 4th December until Monday the 7th December 2020.</description>
     </item>
     
     <item>
       <title>CEDA and JASMIN support over Christmas period</title>
-      <link>/en/news/updates/2020/2020-12-01-ceda-and-jasmin-support-over-christmas-period/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-12-01-ceda-and-jasmin-support-over-christmas-period/</link>
       <pubDate>Tue, 01 Dec 2020 09:42:24 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-12-01-ceda-and-jasmin-support-over-christmas-period/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-12-01-ceda-and-jasmin-support-over-christmas-period/</guid>
       <description>As we approach the Christmas period, please be aware of the limited support arrangements in place which will result in CEDA and JASMIN services running “at-risk”.</description>
     </item>
     
     <item>
       <title>New JASMIN website live</title>
-      <link>/en/news/updates/2020/2020-11-30-new-jasmin-website-live/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-11-30-new-jasmin-website-live/</link>
       <pubDate>Mon, 30 Nov 2020 16:54:16 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-11-30-new-jasmin-website-live/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-11-30-new-jasmin-website-live/</guid>
       <description>We are delighted to announce the launch of our brand new JASMIN website - https://www.jasmin.ac.uk/ . Take a look to see the difference!</description>
     </item>
     
     <item>
       <title>Some CEDA/JASMIN Services unavailable</title>
-      <link>/en/news/updates/2020/2020-11-27-some-cedajasmin-services-unavailable/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-11-27-some-cedajasmin-services-unavailable/</link>
       <pubDate>Fri, 27 Nov 2020 14:58:08 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-11-27-some-cedajasmin-services-unavailable/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-11-27-some-cedajasmin-services-unavailable/</guid>
       <description>Over the last year, the team has worked hard to migrate all of our services to a new operating system (CentOS7).</description>
     </item>
     
     <item>
       <title>LOTUS/SLURM issues update 2</title>
-      <link>/en/news/updates/2020/2020-11-25-lotusslurm-issues-update-2/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-11-25-lotusslurm-issues-update-2/</link>
       <pubDate>Wed, 25 Nov 2020 12:16:30 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-11-25-lotusslurm-issues-update-2/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-11-25-lotusslurm-issues-update-2/</guid>
       <description>In the past month, and following the configuration changes to LOTUS over the summer, we have not been able to fully resolve issues around longer queue wait times, despite the mechanisms outlined here.</description>
     </item>
     
     <item>
       <title>Reminder JASMIN Migration to CentOS7 &amp; LSF replacement with SLURM UPDATE 13</title>
-      <link>/en/news/updates/2020/2020-11-16-jasmin-migration-to-centos7-lsf-replacement-with-slurm-update-13/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-11-16-jasmin-migration-to-centos7-lsf-replacement-with-slurm-update-13/</link>
       <pubDate>Mon, 16 Nov 2020 09:56:27 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-11-16-jasmin-migration-to-centos7-lsf-replacement-with-slurm-update-13/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-11-16-jasmin-migration-to-centos7-lsf-replacement-with-slurm-update-13/</guid>
       <description>Dear JASMIN users,
 New MASS client server is available Old mass-cli1.ceda.ac.uk server will be retired on Tuesday 17th November Old jasmin-cylc.</description>
     </item>
     
     <item>
       <title>Short JASMIN outage on Wednesday 4th November at 7am</title>
-      <link>/en/news/updates/2020/2020-10-29-short-jasmin-outage-on-wednesday-4th-november-at-7am/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-10-29-short-jasmin-outage-on-wednesday-4th-november-at-7am/</link>
       <pubDate>Thu, 29 Oct 2020 11:39:57 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-10-29-short-jasmin-outage-on-wednesday-4th-november-at-7am/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-10-29-short-jasmin-outage-on-wednesday-4th-november-at-7am/</guid>
       <description>Dear Users,
 JASMIN’s host institute at RAL are planning some short breaks in connectivity for a site wide firewall firmware upgrade.</description>
     </item>
     
     <item>
       <title>Reminder - JASMIN‌ ‌Migration‌ ‌to‌ ‌CentOS7‌ ‌&amp;‌ ‌LSF‌ ‌replacement‌ ‌with‌ ‌SLURM‌ ‌UPDATE‌ ‌12‌</title>
-      <link>/en/news/updates/2020/2020-10-26-jasmin-migration-to-centos7-lsf-replacement-with-slurm-update-12/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-10-26-jasmin-migration-to-centos7-lsf-replacement-with-slurm-update-12/</link>
       <pubDate>Mon, 26 Oct 2020 11:36:33 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-10-26-jasmin-migration-to-centos7-lsf-replacement-with-slurm-update-12/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-10-26-jasmin-migration-to-centos7-lsf-replacement-with-slurm-update-12/</guid>
       <description>Dear JASMIN users,
 New CentOS7 MASS client server Old jasmin-cylc.ceda.ac.uk to be retired on Tuesday 3rd November. JASPY default version will be updated on Tuesday 3rd November.</description>
     </item>
     
     <item>
       <title>Reboot of Globus/GridFTP server 22 Oct 1700</title>
-      <link>/en/news/updates/2020/2020-10-22-reboot-of-globusgridftp-server-22-oct-1700/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-10-22-reboot-of-globusgridftp-server-22-oct-1700/</link>
       <pubDate>Thu, 22 Oct 2020 14:05:15 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-10-22-reboot-of-globusgridftp-server-22-oct-1700/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-10-22-reboot-of-globusgridftp-server-22-oct-1700/</guid>
       <description>The server used as the “JASMIN GridFTP Server” Globus endpoint (data-xfer1.ceda.ac.uk), will be rebooted at 17:00 in an attempt to clear a performance issue.</description>
     </item>
     
     <item>
       <title>LOTUS reservation for benchmark work on Saturday 17th October from 4 PM to 8 PM</title>
-      <link>/en/news/updates/2020/2020-10-15-lotus-reservation-for-benchmark-work-on-saturday-17th-october-from-4-pm-to-8-pm/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-10-15-lotus-reservation-for-benchmark-work-on-saturday-17th-october-from-4-pm-to-8-pm/</link>
       <pubDate>Thu, 15 Oct 2020 13:42:40 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-10-15-lotus-reservation-for-benchmark-work-on-saturday-17th-october-from-4-pm-to-8-pm/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-10-15-lotus-reservation-for-benchmark-work-on-saturday-17th-october-from-4-pm-to-8-pm/</guid>
       <description>Dear JASMIN user,
 The LOTUS batch processing cluster will be unavailable for the duration of the benchmark work. The SLURM batch reservation will start on Saturday 17th October from 4 PM to 8 PM.</description>
     </item>
     
     <item>
       <title>‘LOTUS reservation for benchmark work’ 10 October 4pm - 8pm and 17 October 4pm to 8pm.</title>
-      <link>/en/news/updates/2020/2020-10-09-lotus-reservation-for-benchmark-work-10-october-4pm-8pm-and-17-october-4pm-to-8pm/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-10-09-lotus-reservation-for-benchmark-work-10-october-4pm-8pm-and-17-october-4pm-to-8pm/</link>
       <pubDate>Fri, 09 Oct 2020 13:30:30 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-10-09-lotus-reservation-for-benchmark-work-10-october-4pm-8pm-and-17-october-4pm-to-8pm/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-10-09-lotus-reservation-for-benchmark-work-10-october-4pm-8pm-and-17-october-4pm-to-8pm/</guid>
       <description>Dear JASMIN user,
 The LOTUS batch processing cluster will be unavailable for the duration of the benchmark work. The SLURM batch reservation will start on Saturday 10 October 4pm - 8pm and Saturday 17th October 4pm to 8pm.</description>
     </item>
     
     <item>
       <title>Update to opensearch.ceda.ac.uk</title>
-      <link>/en/news/updates/2020/2020-10-06-update-to-opensearchcedaacuk/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-10-06-update-to-opensearchcedaacuk/</link>
       <pubDate>Tue, 06 Oct 2020 10:15:44 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-10-06-update-to-opensearchcedaacuk/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-10-06-update-to-opensearchcedaacuk/</guid>
       <description>We will be making a quick update to opensearch.ceda.ac.uk at 13:00 today (6th October 2020).
 This is as part of the JASMIN migration work which has been ongoing throughout the summer.</description>
     </item>
     
     <item>
       <title>LOTUS/SLURM issues update</title>
-      <link>/en/news/updates/2020/2020-10-06-lotusslurm-issues-update/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-10-06-lotusslurm-issues-update/</link>
       <pubDate>Tue, 06 Oct 2020 08:53:22 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-10-06-lotusslurm-issues-update/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-10-06-lotusslurm-issues-update/</guid>
       <description>Dear all,
 As you know we have recently seen some problems with the SLURM scheduler for the LOTUS batch processing cluster, with jobs remaining in the pending state for much longer than normal.</description>
     </item>
     
     <item>
       <title>Backlog of helpdesk queries  - delayed response likely</title>
-      <link>/en/news/updates/2020/2020-09-30-backlog-of-helpdesk-queries-delayed-response-likely/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-09-30-backlog-of-helpdesk-queries-delayed-response-likely/</link>
       <pubDate>Wed, 30 Sep 2020 15:35:04 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-09-30-backlog-of-helpdesk-queries-delayed-response-likely/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-09-30-backlog-of-helpdesk-queries-delayed-response-likely/</guid>
       <description>Dear all,
 We are experiencing extremely high numbers of helpdesk queries on the JASMIN helpdesk and now have a significant backlog.</description>
     </item>
     
     <item>
       <title>Some sci machines unavailable on Monday 21 Sept at ~0830-840</title>
-      <link>/en/news/updates/2020/2020-09-18-some-sci-machines-unavailable-on-monday-21-sept-at-~0830-840/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-09-18-some-sci-machines-unavailable-on-monday-21-sept-at-~0830-840/</link>
       <pubDate>Fri, 18 Sep 2020 13:47:29 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-09-18-some-sci-machines-unavailable-on-monday-21-sept-at-~0830-840/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-09-18-some-sci-machines-unavailable-on-monday-21-sept-at-~0830-840/</guid>
       <description>The following scientific analysis servers will be unavailable for 5-10 minutes on Monday, 21st September at 08:30 AM for memory changes:</description>
     </item>
     
     <item>
       <title>System maintenance Tues 15 Sept 2020</title>
-      <link>/en/news/updates/2020/2020-09-14-system-maintenance-tues-15-sept-2020/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-09-14-system-maintenance-tues-15-sept-2020/</link>
       <pubDate>Mon, 14 Sep 2020 15:51:50 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-09-14-system-maintenance-tues-15-sept-2020/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-09-14-system-maintenance-tues-15-sept-2020/</guid>
       <description>Scheduled maintenance is planned for Tuesday 15th September, which may cause some disruption to JASMIN and CEDA services.
 On a regular (roughly quarterly) basis, important updates are applied to systems within the JASMIN infrastructure (which also hosts the CEDA Archive and associated services) in order to keep them up to date and secure.</description>
     </item>
     
     <item>
       <title>Reminder JASMIN Migration to CentOS7 &amp; LSF replacement with SLURM UPDATE 10</title>
-      <link>/en/news/updates/2020/2020-08-28-jasmin-migration-to-centos7-lsf-replacement-with-slurm-update-10/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-08-28-jasmin-migration-to-centos7-lsf-replacement-with-slurm-update-10/</link>
       <pubDate>Fri, 28 Aug 2020 09:22:34 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-08-28-jasmin-migration-to-centos7-lsf-replacement-with-slurm-update-10/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-08-28-jasmin-migration-to-centos7-lsf-replacement-with-slurm-update-10/</guid>
       <description>Dear JASMIN users,
 This message includes information about the following:
 Update on SLURM and the CentOS7 LOTUS cluster Timeline to retire old RHEL6 login, sci and data transfer servers New high-memory CentOS7 sci machines Details of the update</description>
@@ -1379,38 +1388,38 @@ Update on SLURM and the CentOS7 LOTUS cluster Timeline to retire old RHEL6 login
     
     <item>
       <title>JASMIN Services Updates</title>
-      <link>/en/news/updates/2020/2020-08-25-jasmin-services-updates/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-08-25-jasmin-services-updates/</link>
       <pubDate>Tue, 25 Aug 2020 10:41:20 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-08-25-jasmin-services-updates/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-08-25-jasmin-services-updates/</guid>
       <description>Dear Users,
 We would like to update you about the issues that affected the JASMIN virtualisation platform yesterday, Monday 24th August.</description>
     </item>
     
     <item>
       <title>Save the date! JASMIN2020 virtual event</title>
-      <link>/en/news/updates/2020/2020-08-04-save-the-date-jasmin2020-virtual-event/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-08-04-save-the-date-jasmin2020-virtual-event/</link>
       <pubDate>Tue, 04 Aug 2020 09:37:17 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-08-04-save-the-date-jasmin2020-virtual-event/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-08-04-save-the-date-jasmin2020-virtual-event/</guid>
       <description>This online event will take place on the mornings of Tuesday 29th and Wednesday 30th September - and is free to attend.</description>
     </item>
     
     <item>
       <title>UPDATE Tape system upgrade completed services now available for use</title>
-      <link>/en/news/updates/2020/2020-07-28-update-tape-system-upgrade-completed-services-now-available-for-use/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-07-28-update-tape-system-upgrade-completed-services-now-available-for-use/</link>
       <pubDate>Tue, 28 Jul 2020 08:15:00 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-07-28-update-tape-system-upgrade-completed-services-now-available-for-use/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-07-28-update-tape-system-upgrade-completed-services-now-available-for-use/</guid>
       <description>Maintenance work to add additional capacity to the tape library has now been completed including tests to check that all is operating as expected.</description>
     </item>
     
     <item>
       <title>Reminder - IMPORTANT Changes to Scratch Storage</title>
-      <link>/en/news/updates/2020/2020-07-27-reminder-important-changes-to-scratch-storage-2/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-07-27-reminder-important-changes-to-scratch-storage-2/</link>
       <pubDate>Mon, 27 Jul 2020 10:18:00 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-07-27-reminder-important-changes-to-scratch-storage-2/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-07-27-reminder-important-changes-to-scratch-storage-2/</guid>
       <description>Dear JASMIN users,
 As previously announced:
 The old scratch volume /work/scratch remains available READ ONLY until Friday 31st July but will then be retired.</description>
@@ -1418,30 +1427,30 @@ The old scratch volume /work/scratch remains available READ ONLY until Friday 31
     
     <item>
       <title>UPDATE Tape systems unavailable (duration extended)</title>
-      <link>/en/news/updates/2020/2020-07-27-update-tape-systems-unavailable-duration-extended/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-07-27-update-tape-systems-unavailable-duration-extended/</link>
       <pubDate>Mon, 27 Jul 2020 09:43:21 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-07-27-update-tape-systems-unavailable-duration-extended/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-07-27-update-tape-systems-unavailable-duration-extended/</guid>
       <description>Dear users,
 As previously announced, maintenance work is currently underway to add additional capacity to the tape library shared by CEDA and JASMIN tape services.</description>
     </item>
     
     <item>
       <title>UPDATE Tape systems unavailable 21-28 July (duration extended)</title>
-      <link>/en/news/updates/2020/2020-07-20-update-tape-systems-unavailable-21-28-july-duration-extended/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-07-20-update-tape-systems-unavailable-21-28-july-duration-extended/</link>
       <pubDate>Mon, 20 Jul 2020 08:35:29 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-07-20-update-tape-systems-unavailable-21-28-july-duration-extended/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-07-20-update-tape-systems-unavailable-21-28-july-duration-extended/</guid>
       <description>Dear users,
 Maintenance work previously announced for 22-24 July 2020 will add additional capacity to the tape library shared by CEDA and JASMIN tape services.</description>
     </item>
     
     <item>
       <title>Reminder - IMPORTANT Changes to Scratch Storage</title>
-      <link>/en/news/updates/2020/2020-07-16-reminder-important-changes-to-scratch-storage-1/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-07-16-reminder-important-changes-to-scratch-storage-1/</link>
       <pubDate>Thu, 16 Jul 2020 08:41:43 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-07-16-reminder-important-changes-to-scratch-storage-1/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-07-16-reminder-important-changes-to-scratch-storage-1/</guid>
       <description>Dear JASMIN users,
 As previously announced:
 The old scratch volume /work/scratch remains available READ ONLY until Friday 31st July but will then be retired.</description>
@@ -1449,65 +1458,65 @@ The old scratch volume /work/scratch remains available READ ONLY until Friday 31
     
     <item>
       <title>JASMIN Migration to CentOS7 &amp; LSF replacement with SLURM UPDATE 9</title>
-      <link>/en/news/updates/2020/2020-07-03-jasmin-migration-to-centos7-lsf-replacement-with-slurm-update-9/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-07-03-jasmin-migration-to-centos7-lsf-replacement-with-slurm-update-9/</link>
       <pubDate>Fri, 03 Jul 2020 10:59:06 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-07-03-jasmin-migration-to-centos7-lsf-replacement-with-slurm-update-9/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-07-03-jasmin-migration-to-centos7-lsf-replacement-with-slurm-update-9/</guid>
       <description>This message includes information about the following:
 Update on SLURM &amp;amp; CentOS7 LOTUS cluster sci[1,2].jasmin.ac.uk with SLURM enabled New CentOS7 JASMIN cylc server New CentOS7 cron server Details of the update 1.</description>
     </item>
     
     <item>
       <title>Reminder User survey to gauge needs in preparation for purchase of a new GPU cluster</title>
-      <link>/en/news/updates/2020/2020-06-29-reminder-user-survey-to-gauge-needs-in-preparation-for-purchase-of-a-new-gpu-cluster/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-06-29-reminder-user-survey-to-gauge-needs-in-preparation-for-purchase-of-a-new-gpu-cluster/</link>
       <pubDate>Mon, 29 Jun 2020 09:23:13 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-06-29-reminder-user-survey-to-gauge-needs-in-preparation-for-purchase-of-a-new-gpu-cluster/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-06-29-reminder-user-survey-to-gauge-needs-in-preparation-for-purchase-of-a-new-gpu-cluster/</guid>
       <description>This is just a reminder that the planned 2020 upgrade for JASMIN will include a substantial upgrade to JASMIN GPU capacity.</description>
     </item>
     
     <item>
       <title>JASMIN and CEDA services affected by power outage - now resolved</title>
-      <link>/en/news/updates/2020/2020-06-22-jasmin-and-ceda-services-affected-by-power-outage/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-06-22-jasmin-and-ceda-services-affected-by-power-outage/</link>
       <pubDate>Mon, 22 Jun 2020 17:14:59 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-06-22-jasmin-and-ceda-services-affected-by-power-outage/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-06-22-jasmin-and-ceda-services-affected-by-power-outage/</guid>
       <description>Update 1 - 22/06/2020 17:00 JASMIN and CEDA Archive services have been offline today due a power outage that affected the entire RAL site (including the JASMIN machine room) at approximately 13.</description>
     </item>
     
     <item>
       <title>User survey to gauge needs in preparation for purchase of a new GPU cluster</title>
-      <link>/en/news/updates/2020/2020-06-22-user-survey-to-gauge-needs-in-preparation-for-purchase-of-a-new-gpu-cluster/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-06-22-user-survey-to-gauge-needs-in-preparation-for-purchase-of-a-new-gpu-cluster/</link>
       <pubDate>Mon, 22 Jun 2020 09:02:32 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-06-22-user-survey-to-gauge-needs-in-preparation-for-purchase-of-a-new-gpu-cluster/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-06-22-user-survey-to-gauge-needs-in-preparation-for-purchase-of-a-new-gpu-cluster/</guid>
       <description>The planned 2020 upgrade for JASMIN will include a substantial upgrade to JASMIN GPU capacity. While we have a panel of experts helping us develop requirements, it will be useful for us to get direct feedback about actual and potential GPU usage within the community of existing and potential JASMIN users.</description>
     </item>
     
     <item>
       <title>Changes to JASMIN Helpdesk</title>
-      <link>/en/news/updates/2020/2020-06-16-changes-to-jasmin-helpdesk/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-06-16-changes-to-jasmin-helpdesk/</link>
       <pubDate>Tue, 16 Jun 2020 10:53:46 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-06-16-changes-to-jasmin-helpdesk/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-06-16-changes-to-jasmin-helpdesk/</guid>
       <description>We are pleased to announce some changes to our user support services, aimed at improving the experience for users and making our helpdesk processes more efficient.</description>
     </item>
     
     <item>
       <title>Reminder JASMIN at-risk period 11th June 2020</title>
-      <link>/en/news/updates/2020/2020-06-10-reminder-jasmin-at-risk-period-11th-june-2020/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-06-10-reminder-jasmin-at-risk-period-11th-june-2020/</link>
       <pubDate>Wed, 10 Jun 2020 08:58:33 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-06-10-reminder-jasmin-at-risk-period-11th-june-2020/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-06-10-reminder-jasmin-at-risk-period-11th-june-2020/</guid>
       <description>We previously announced electrical work planned for the RAL site around the Bank Holiday weekend of 22nd-25th May, which carried with it a small risk of disruption to JASMIN’s power supply.</description>
     </item>
     
     <item>
       <title>JASMIN Migration to CentOS7 &amp; LSF replacement with SLURM UPDATE 8</title>
-      <link>/en/news/updates/2020/2020-06-05-jasmin-migration-to-centos7-lsf-replacement-with-slurm-update-8/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-06-05-jasmin-migration-to-centos7-lsf-replacement-with-slurm-update-8/</link>
       <pubDate>Fri, 05 Jun 2020 10:56:13 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-06-05-jasmin-migration-to-centos7-lsf-replacement-with-slurm-update-8/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-06-05-jasmin-migration-to-centos7-lsf-replacement-with-slurm-update-8/</guid>
       <description>Dear JASMIN users,
 This message includes information about the following:
 Update on SLURM &amp;amp; CentOS7 LOTUS cluster New MPI implementation on LOTUS SLURM/LOTUS webinar LSF-managed LOTUS resources to be reduced from mid-June.</description>
@@ -1515,19 +1524,19 @@ Update on SLURM &amp;amp; CentOS7 LOTUS cluster New MPI implementation on LOTUS 
     
     <item>
       <title>JASMIN at-risk period 11th June 2020</title>
-      <link>/en/news/updates/2020/2020-06-02-jasmin-at-risk-period-11th-june-2020/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-06-02-jasmin-at-risk-period-11th-june-2020/</link>
       <pubDate>Tue, 02 Jun 2020 14:49:21 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-06-02-jasmin-at-risk-period-11th-june-2020/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-06-02-jasmin-at-risk-period-11th-june-2020/</guid>
       <description>We previously announced electrical work planned for the RAL site around the Bank Holiday weekend of 22nd-25th May, which carried with it a small risk of disruption to JASMIN’s power supply.</description>
     </item>
     
     <item>
       <title>IMPORTANT Changes to Scratch Storage</title>
-      <link>/en/news/updates/2020/2020-05-21-important-changes-to-scratch-storage/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-05-21-important-changes-to-scratch-storage/</link>
       <pubDate>Thu, 21 May 2020 14:55:45 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-05-21-important-changes-to-scratch-storage/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-05-21-important-changes-to-scratch-storage/</guid>
       <description>Dear JASMIN users,
 Please note the following changes which affect both /work/scratch and /work/scratch-nompiio
 We are pleased to announce that a new scratch volume /work/scratch-pw will be available from Wednesday 27th May.</description>
@@ -1535,58 +1544,58 @@ We are pleased to announce that a new scratch volume /work/scratch-pw will be av
     
     <item>
       <title>JASMIN low at-risk period 22nd - 25th May 2020</title>
-      <link>/en/news/updates/2020/2020-05-18-jasmin-low-at-risk-period-22nd-25th-may-2020/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-05-18-jasmin-low-at-risk-period-22nd-25th-may-2020/</link>
       <pubDate>Mon, 18 May 2020 11:00:37 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-05-18-jasmin-low-at-risk-period-22nd-25th-may-2020/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-05-18-jasmin-low-at-risk-period-22nd-25th-may-2020/</guid>
       <description>Electrical work planned on the RAL site has a small risk of loss of power to the JASMIN data centre around the Bank Holiday weekend (22nd-25th May).</description>
     </item>
     
     <item>
       <title>IMPORTANT Reminder The first purge of /work/scratch-nompiio is scheduled on 27th May</title>
-      <link>/en/news/updates/2020/2020-05-18-important-reminder-the-first-purge-of-workscratch-nompiio-is-scheduled-on-27th-may/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-05-18-important-reminder-the-first-purge-of-workscratch-nompiio-is-scheduled-on-27th-may/</link>
       <pubDate>Mon, 18 May 2020 08:41:25 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-05-18-important-reminder-the-first-purge-of-workscratch-nompiio-is-scheduled-on-27th-may/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-05-18-important-reminder-the-first-purge-of-workscratch-nompiio-is-scheduled-on-27th-may/</guid>
       <description>Dear JASMIN users,
 The /work/scratch-nompiio volume will be purged on Wednesday 27th May to empty it and reprovision it with a new fixed quota of 90TB (from 120TB).</description>
     </item>
     
     <item>
       <title>IMPORTANT The first purge of /work/scratch-nompiio is scheduled on 27th May</title>
-      <link>/en/news/updates/2020/2020-05-15-important-the-first-purge-of-workscratch-nompiio-is-scheduled-on-27th-may/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-05-15-important-the-first-purge-of-workscratch-nompiio-is-scheduled-on-27th-may/</link>
       <pubDate>Fri, 15 May 2020 08:57:59 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-05-15-important-the-first-purge-of-workscratch-nompiio-is-scheduled-on-27th-may/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-05-15-important-the-first-purge-of-workscratch-nompiio-is-scheduled-on-27th-may/</guid>
       <description>Dear JASMIN users,
 The /work/scratch-nompiio volume will be purged on Wednesday 27th May to empty it and reprovision it with a new fixed quota of 90TB (from 120TB).</description>
     </item>
     
     <item>
       <title>IMPORTANT information for ALL JASMIN USERS</title>
-      <link>/en/news/updates/2020/2020-05-13-important-information-for-all-jasmin-users/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-05-13-important-information-for-all-jasmin-users/</link>
       <pubDate>Wed, 13 May 2020 16:03:11 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-05-13-important-information-for-all-jasmin-users/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-05-13-important-information-for-all-jasmin-users/</guid>
       <description>Please check your email for an important announcement affecting all JASMIN users.
 You will need to read this and take action before you next attempt to log in to JASMIN.</description>
     </item>
     
     <item>
       <title>Reminder JASMIN maintenance &amp; at-risk periods May 2020</title>
-      <link>/en/news/updates/2020/2020-05-13-reminder-jasmin-maintenance-at-risk-periods-may-2020/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-05-13-reminder-jasmin-maintenance-at-risk-periods-may-2020/</link>
       <pubDate>Wed, 13 May 2020 08:33:53 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-05-13-reminder-jasmin-maintenance-at-risk-periods-may-2020/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-05-13-reminder-jasmin-maintenance-at-risk-periods-may-2020/</guid>
       <description>Scheduled network maintenance on JASMIN is planned for Wednesday 13th May which requires a JASMIN downtime affecting CEDA and JASMIN systems including access to the CEDA Archive and JASMIN community cloud</description>
     </item>
     
     <item>
       <title>JASMIN Migration to CentOS7 &amp; LSF replacement with SLURM UPDATE 6</title>
-      <link>/en/news/updates/2020/2020-05-05-jasmin-migration-to-centos7-lsf-replacement-with-slurm-update-6/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-05-05-jasmin-migration-to-centos7-lsf-replacement-with-slurm-update-6/</link>
       <pubDate>Tue, 05 May 2020 14:17:55 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-05-05-jasmin-migration-to-centos7-lsf-replacement-with-slurm-update-6/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-05-05-jasmin-migration-to-centos7-lsf-replacement-with-slurm-update-6/</guid>
       <description>Dear JASMIN users,
 We are pleased to announce the following:
 Update on SLURM
@@ -1596,320 +1605,320 @@ New JASMIN login server</description>
     
     <item>
       <title>JASMIN maintenance &amp; at-risk periods May 2020</title>
-      <link>/en/news/updates/2020/2020-05-05-jasmin-maintenance-at-risk-periods-may-2020/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-05-05-jasmin-maintenance-at-risk-periods-may-2020/</link>
       <pubDate>Tue, 05 May 2020 08:41:58 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-05-05-jasmin-maintenance-at-risk-periods-may-2020/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-05-05-jasmin-maintenance-at-risk-periods-may-2020/</guid>
       <description>Scheduled network maintenance on JASMIN is planned for Wednesday 13th May which requires a JASMIN downtime affecting CEDA and JASMIN systems including access to the CEDA Archive and JASMIN community cloud</description>
     </item>
     
     <item>
       <title>Reminder JASMIN Maintenance Tomorrow 28 April 2020</title>
-      <link>/en/news/updates/2020/2020-04-27-reminder-jasmin-maintenance-tomorrow-28-april-2020/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-04-27-reminder-jasmin-maintenance-tomorrow-28-april-2020/</link>
       <pubDate>Mon, 27 Apr 2020 08:24:11 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-04-27-reminder-jasmin-maintenance-tomorrow-28-april-2020/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-04-27-reminder-jasmin-maintenance-tomorrow-28-april-2020/</guid>
       <description>A reminder that scheduled maintenance is planned for tomorrow 28th April 2020, potentially affecting some storage systems and services which rely on them.</description>
     </item>
     
     <item>
       <title>Enabling essential climate science research</title>
-      <link>/en/news/updates/2020/2020-04-22-enabling-essential-climate-science-research/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-04-22-enabling-essential-climate-science-research/</link>
       <pubDate>Wed, 22 Apr 2020 09:50:43 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-04-22-enabling-essential-climate-science-research/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-04-22-enabling-essential-climate-science-research/</guid>
       <description>Climate Change is a defining issue of our time. The UK’s top 10 warmest years have all occurred since 2002, and July 2019 saw the UK’s hottest ever recorded temperature (38.</description>
     </item>
     
     <item>
       <title>Update on JASMIN Maintenance 21 April 2020</title>
-      <link>/en/news/updates/2020/2020-04-22-update-on-jasmin-maintenance-21-april-2020/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-04-22-update-on-jasmin-maintenance-21-april-2020/</link>
       <pubDate>Wed, 22 Apr 2020 08:32:02 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-04-22-update-on-jasmin-maintenance-21-april-2020/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-04-22-update-on-jasmin-maintenance-21-april-2020/</guid>
       <description>Following scheduled maintenance on parts of the JASMIN system yesterday, please note the following:
 Servers were patched and rebooted where necessary to apply important updates.</description>
     </item>
     
     <item>
       <title>Reminder JASMIN Maintenance Today &amp; 28 April 2020</title>
-      <link>/en/news/updates/2020/2020-04-21-reminder-jasmin-maintenance-today-28-april-2020/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-04-21-reminder-jasmin-maintenance-today-28-april-2020/</link>
       <pubDate>Tue, 21 Apr 2020 08:25:30 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-04-21-reminder-jasmin-maintenance-today-28-april-2020/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-04-21-reminder-jasmin-maintenance-today-28-april-2020/</guid>
       <description>Scheduled maintenance is planned for Today AND 28th April 2020, some of which will result in disruption to JASMIN systems, services and data in addition to the CEDA Archive.</description>
     </item>
     
     <item>
       <title>Reminder JASMIN Maintenance Tues 21 &amp; 28 April 2020</title>
-      <link>/en/news/updates/2020/2020-04-20-reminder-jasmin-maintenance-tues-21-28-april-2020/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-04-20-reminder-jasmin-maintenance-tues-21-28-april-2020/</link>
       <pubDate>Mon, 20 Apr 2020 08:38:24 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-04-20-reminder-jasmin-maintenance-tues-21-28-april-2020/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-04-20-reminder-jasmin-maintenance-tues-21-28-april-2020/</guid>
       <description>Scheduled maintenance is planned for Tuesday 21st AND 28th April 2020, some of which will result in disruption to JASMIN systems, services and data in addition to the CEDA Archive.</description>
     </item>
     
     <item>
       <title>JASMIN Maintenance Tues 21 &amp; 28 April 2020</title>
-      <link>/en/news/updates/2020/2020-04-14-jasmin-maintenance-tues-21-28-april-2020/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-04-14-jasmin-maintenance-tues-21-28-april-2020/</link>
       <pubDate>Tue, 14 Apr 2020 09:29:51 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-04-14-jasmin-maintenance-tues-21-28-april-2020/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-04-14-jasmin-maintenance-tues-21-28-april-2020/</guid>
       <description>Scheduled maintenance is planned for Tuesday 21st AND 28th April 2020, some of which will result in disruption to JASMIN systems, services and data in addition to the CEDA Archive.</description>
     </item>
     
     <item>
       <title>GWS (/gws/nopw/j04/) performance issue</title>
-      <link>/en/news/updates/2020/2020-04-08-gws-gwsnopwj04-performance-issue/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-04-08-gws-gwsnopwj04-performance-issue/</link>
       <pubDate>Wed, 08 Apr 2020 16:07:07 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-04-08-gws-gwsnopwj04-performance-issue/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-04-08-gws-gwsnopwj04-performance-issue/</guid>
       <description>Dear JASMIN users,
 We are aware that users are experiencing difficulties with performance and access to some resources on JASMIN at present.</description>
     </item>
     
     <item>
       <title>JASMIN Migration to CentOS7 &amp; LSF replacement with SLURM UPDATE 5</title>
-      <link>/en/news/updates/2020/2020-04-01-jasmin-migration-to-centos7-lsf-replacement-with-slurm-update-5/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-04-01-jasmin-migration-to-centos7-lsf-replacement-with-slurm-update-5/</link>
       <pubDate>Wed, 01 Apr 2020 10:28:25 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-04-01-jasmin-migration-to-centos7-lsf-replacement-with-slurm-update-5/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-04-01-jasmin-migration-to-centos7-lsf-replacement-with-slurm-update-5/</guid>
       <description>We are pleased to announce that the two new scientific analysis servers, “sci1.jasmin.ac.uk” and “sci2.jasmin.ac.uk” are now available with the CentOS7 systems and the new software environments1.</description>
     </item>
     
     <item>
       <title>COVID-19 lockdown- impact on CEDA and JASMIN operations</title>
-      <link>/en/news/updates/2020/2020-03-24-covid-19-lockdown-impact-on-ceda-and-jasmin-operations/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-03-24-covid-19-lockdown-impact-on-ceda-and-jasmin-operations/</link>
       <pubDate>Tue, 24 Mar 2020 12:36:22 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-03-24-covid-19-lockdown-impact-on-ceda-and-jasmin-operations/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-03-24-covid-19-lockdown-impact-on-ceda-and-jasmin-operations/</guid>
       <description>As we are sure you are already aware, the latest government restrictions on travel mean that any issues requiring physical intervention to the JASMIN infrastructure (e.</description>
     </item>
     
     <item>
       <title>JASMIN2020 abstract deadline extension 16th March</title>
-      <link>/en/news/updates/2020/2020-03-09-jasmin2020-abstract-deadline-extension-16th-march/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-03-09-jasmin2020-abstract-deadline-extension-16th-march/</link>
       <pubDate>Mon, 09 Mar 2020 14:46:40 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-03-09-jasmin2020-abstract-deadline-extension-16th-march/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-03-09-jasmin2020-abstract-deadline-extension-16th-march/</guid>
       <description>We are pleased to announce that the deadline for abstract submissions to JASMIN2020 has been extended until Monday 16th March at midday.</description>
     </item>
     
     <item>
       <title>Virtualisation host reboot Friday 7 Feb AM virtual machines affected</title>
-      <link>/en/news/updates/2020/2020-02-06-virtualisation-host-reboot-friday-7-feb-am-virtual-machines-affected/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-02-06-virtualisation-host-reboot-friday-7-feb-am-virtual-machines-affected/</link>
       <pubDate>Thu, 06 Feb 2020 15:36:05 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-02-06-virtualisation-host-reboot-friday-7-feb-am-virtual-machines-affected/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-02-06-virtualisation-host-reboot-friday-7-feb-am-virtual-machines-affected/</guid>
       <description>The below work has now been completed and all services are back to normal. An issue has been identified with one of the hypervisors (virtualisation servers) which hosts a number of CEDA and JASMIN virtual machines.</description>
     </item>
     
     <item>
       <title>JASMIN Accounts Portal down for maintenance - 5th Feb AM</title>
-      <link>/en/news/updates/2020/2020-02-04-jasmin-accounts-portal-down-for-maintenance-5th-feb-am/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-02-04-jasmin-accounts-portal-down-for-maintenance-5th-feb-am/</link>
       <pubDate>Tue, 04 Feb 2020 16:09:10 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-02-04-jasmin-accounts-portal-down-for-maintenance-5th-feb-am/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-02-04-jasmin-accounts-portal-down-for-maintenance-5th-feb-am/</guid>
       <description>The JASMIN Accounts Portal will be down from 0800 on 5th February in order to move to a new server. We anticipate only a short downtime.</description>
     </item>
     
     <item>
       <title>JASMIN Migration to CentOS7 &amp; LSF replacement with SLURM UPDATE 4</title>
-      <link>/en/news/updates/2020/2020-02-04-jasmin-migration-to-centos7-lsf-replacement-with-slurm-update-4/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-02-04-jasmin-migration-to-centos7-lsf-replacement-with-slurm-update-4/</link>
       <pubDate>Tue, 04 Feb 2020 13:46:57 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-02-04-jasmin-migration-to-centos7-lsf-replacement-with-slurm-update-4/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-02-04-jasmin-migration-to-centos7-lsf-replacement-with-slurm-update-4/</guid>
       <description>This is the latest update about migrating the JASMIN infrastructure from RedHat Enterprise Linux 6 (RHEL6) to CentOS7 and preparing for the replacement of the LSF batch scheduler with SLURM.</description>
     </item>
     
     <item>
       <title>Reboot of jasmin-xfer2, overloading on xfer hosts</title>
-      <link>/en/news/updates/2020/2020-02-03-reboot-of-jasmin-xfer2-overloading-on-xfer-hosts/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-02-03-reboot-of-jasmin-xfer2-overloading-on-xfer-hosts/</link>
       <pubDate>Mon, 03 Feb 2020 16:21:00 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-02-03-reboot-of-jasmin-xfer2-overloading-on-xfer-hosts/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-02-03-reboot-of-jasmin-xfer2-overloading-on-xfer-hosts/</guid>
       <description>We will shortly be rebooting transfer host jasmin-xfer2.ceda.ac.uk to clear problems mainly due to overloading.
 We are aware that the current period is proving very busy for the transfer servers, with many users moving data from the RDF to JASMIN.</description>
     </item>
     
     <item>
       <title>Issue with jasmin-login and jasmin-sci* machines - now fixed!</title>
-      <link>/en/news/updates/2020/2020-01-23-issue-with-jasmin-login-and-jasmin-sci-machines-now-fixed/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-01-23-issue-with-jasmin-login-and-jasmin-sci-machines-now-fixed/</link>
       <pubDate>Thu, 23 Jan 2020 13:55:05 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-01-23-issue-with-jasmin-login-and-jasmin-sci-machines-now-fixed/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-01-23-issue-with-jasmin-login-and-jasmin-sci-machines-now-fixed/</guid>
       <description>The below issue seemed to be due to a network cable that was causing some problems with the slow jasmin connections.</description>
     </item>
     
     <item>
       <title>REMINDER JASMIN systems change freeze - 24/01 to 03/02</title>
-      <link>/en/news/updates/2020/2020-01-23-reminder-jasmin-systems-change-freeze-2401-to-0302/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-01-23-reminder-jasmin-systems-change-freeze-2401-to-0302/</link>
       <pubDate>Thu, 23 Jan 2020 08:21:21 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-01-23-reminder-jasmin-systems-change-freeze-2401-to-0302/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-01-23-reminder-jasmin-systems-change-freeze-2401-to-0302/</guid>
       <description>There will be a freeze on any changes requested to JASMIN between Friday 24th January and Monday 3rd February. This is due to limited staff availability during this time.</description>
     </item>
     
     <item>
       <title>Issue with jasmin-login and jasmin-sci* machines</title>
-      <link>/en/news/updates/2020/2020-01-21-issue-with-jasmin-login-and-jasmin-sci-machines/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-01-21-issue-with-jasmin-login-and-jasmin-sci-machines/</link>
       <pubDate>Tue, 21 Jan 2020 14:45:41 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-01-21-issue-with-jasmin-login-and-jasmin-sci-machines/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-01-21-issue-with-jasmin-login-and-jasmin-sci-machines/</guid>
       <description>We are aware of an issue with jasmin-login and jasmin-sci* machines. We are investigating this and are working to resolve it ASAP.</description>
     </item>
     
     <item>
       <title>JASMIN systems change freeze - 24/01 to 03/02</title>
-      <link>/en/news/updates/2020/2020-01-14-jasmin-systems-change-freeze-2401-to-0302/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-01-14-jasmin-systems-change-freeze-2401-to-0302/</link>
       <pubDate>Tue, 14 Jan 2020 13:30:00 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-01-14-jasmin-systems-change-freeze-2401-to-0302/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-01-14-jasmin-systems-change-freeze-2401-to-0302/</guid>
       <description>There will be a freeze on any changes requested to JASMIN between Friday 24th January and Monday 3rd February. This is due to limited staff availability during this time.</description>
     </item>
     
     <item>
       <title>Reminder JASMIN Maintenance Tuesday 14th January 2020</title>
-      <link>/en/news/updates/2020/2020-01-13-reminder-jasmin-maintenance-tuesday-14th-january-2020-1/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-01-13-reminder-jasmin-maintenance-tuesday-14th-january-2020-1/</link>
       <pubDate>Mon, 13 Jan 2020 09:26:43 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-01-13-reminder-jasmin-maintenance-tuesday-14th-january-2020-1/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-01-13-reminder-jasmin-maintenance-tuesday-14th-january-2020-1/</guid>
       <description>Scheduled maintenance is planned for Tuesday 14th January 2020, which could result in disruption to JASMIN systems, services and data in addition to the CEDA Archive.</description>
     </item>
     
     <item>
       <title>Reminder JASMIN Maintenance Tuesday 14th January 2020</title>
-      <link>/en/news/updates/2020/2020-01-06-reminder-jasmin-maintenance-tuesday-14th-january-2020/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2020/2020-01-06-reminder-jasmin-maintenance-tuesday-14th-january-2020/</link>
       <pubDate>Mon, 06 Jan 2020 10:03:43 +0000</pubDate>
       
-      <guid>/en/news/updates/2020/2020-01-06-reminder-jasmin-maintenance-tuesday-14th-january-2020/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2020/2020-01-06-reminder-jasmin-maintenance-tuesday-14th-january-2020/</guid>
       <description>Scheduled maintenance is planned for Tuesday 14th January 2020, which could result in disruption to JASMIN systems, services and data in addition to the CEDA Archive.</description>
     </item>
     
     <item>
       <title>Celebrating 25 years of CEDA</title>
-      <link>/en/news/updates/2019/2019-12-20-celebrating-25-years-of-ceda/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2019/2019-12-20-celebrating-25-years-of-ceda/</link>
       <pubDate>Fri, 20 Dec 2019 14:24:49 +0000</pubDate>
       
-      <guid>/en/news/updates/2019/2019-12-20-celebrating-25-years-of-ceda/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2019/2019-12-20-celebrating-25-years-of-ceda/</guid>
       <description>The data centre function of CEDA celebrated 25 years of existence in October 2019. As we approach the end of this year, we take a look back to see what has changed along the way.</description>
     </item>
     
     <item>
       <title>Advance notice JASMIN maintenance Tues 14 Jan 2020</title>
-      <link>/en/news/updates/2019/2019-12-19-advance-notice-jasmin-maintenance-tues-14-jan-2020/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2019/2019-12-19-advance-notice-jasmin-maintenance-tues-14-jan-2020/</link>
       <pubDate>Thu, 19 Dec 2019 09:40:54 +0000</pubDate>
       
-      <guid>/en/news/updates/2019/2019-12-19-advance-notice-jasmin-maintenance-tues-14-jan-2020/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2019/2019-12-19-advance-notice-jasmin-maintenance-tues-14-jan-2020/</guid>
       <description>Scheduled maintenance is planned for Tuesday 14th January 2020, which could result in disruption to JASMIN systems, services and data in addition to the CEDA Archive.</description>
     </item>
     
     <item>
       <title>CEDA and JASMIN support over Christmas period</title>
-      <link>/en/news/updates/2019/2019-12-17-christmas-shutdown/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2019/2019-12-17-christmas-shutdown/</link>
       <pubDate>Tue, 17 Dec 2019 10:54:36 +0000</pubDate>
       
-      <guid>/en/news/updates/2019/2019-12-17-christmas-shutdown/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2019/2019-12-17-christmas-shutdown/</guid>
       <description>In line with the Christmas shutdown of CEDA&amp;rsquo;s host institute, STFC, the CEDA and JASMIN teams will be unavailable from 15:00 on Tuesday 24th December 2019 to 09:00 on Thursday 2nd January 2020.</description>
     </item>
     
     <item>
       <title>Save the date! JASMIN2020 conference dates now announced</title>
-      <link>/en/news/updates/2019/2019-12-10-save-the-date-jasmin2020/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2019/2019-12-10-save-the-date-jasmin2020/</link>
       <pubDate>Tue, 10 Dec 2019 15:39:25 +0000</pubDate>
       
-      <guid>/en/news/updates/2019/2019-12-10-save-the-date-jasmin2020/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2019/2019-12-10-save-the-date-jasmin2020/</guid>
       <description>The JASMIN2020 conference will showcase how the JASMIN facility is supporting and advancing environmental research. This free event will be held at JASMIN’s home institution, the Science and Technology Facilities Council (STFC) at the Harwell Campus in Oxfordshire, on Tuesday 16th June 2020.</description>
     </item>
     
     <item>
       <title>REMINDER JASMIN storage maintenance 27th November all services should be considered unavailable</title>
-      <link>/en/news/updates/2019/2019-11-19-reminder-jasmin-storage-maintenance-27th-november-all-services-should-be-considered-unavailable-1/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2019/2019-11-19-reminder-jasmin-storage-maintenance-27th-november-all-services-should-be-considered-unavailable-1/</link>
       <pubDate>Tue, 19 Nov 2019 09:36:20 +0000</pubDate>
       
-      <guid>/en/news/updates/2019/2019-11-19-reminder-jasmin-storage-maintenance-27th-november-all-services-should-be-considered-unavailable-1/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2019/2019-11-19-reminder-jasmin-storage-maintenance-27th-november-all-services-should-be-considered-unavailable-1/</guid>
       <description>This is another reminder that further scheduled maintenance is required on Wednesday 27th November to supplement the work recently undertaken on 14th October.</description>
     </item>
     
     <item>
       <title>Elastic Tape, JDMA, and NLA not available - from 1600 Tuesday, November 26 until Wednesday 27th - at risk Thursday 28th</title>
-      <link>/en/news/updates/2019/2019-11-12-elastic-tape-jdma-and-nla-not-available-from-1600-tuesday-november-26-until-wednesday-27th-at-risk-thursday-28th/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2019/2019-11-12-elastic-tape-jdma-and-nla-not-available-from-1600-tuesday-november-26-until-wednesday-27th-at-risk-thursday-28th/</link>
       <pubDate>Tue, 12 Nov 2019 17:12:40 +0000</pubDate>
       
-      <guid>/en/news/updates/2019/2019-11-12-elastic-tape-jdma-and-nla-not-available-from-1600-tuesday-november-26-until-wednesday-27th-at-risk-thursday-28th/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2019/2019-11-12-elastic-tape-jdma-and-nla-not-available-from-1600-tuesday-november-26-until-wednesday-27th-at-risk-thursday-28th/</guid>
       <description>The databases underlying these systems are being migrated to improved hardware during this period. While the systems are expected to be available along with the rest of JASMIN, there will be an at risk period while the systems are monitored to ensure they behave correctly.</description>
     </item>
     
     <item>
       <title>REMINDER JASMIN storage maintenance 27th November all services should be considered unavailable</title>
-      <link>/en/news/updates/2019/2019-11-12-reminder-jasmin-storage-maintenance-27th-november-all-services-should-be-considered-unavailable/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2019/2019-11-12-reminder-jasmin-storage-maintenance-27th-november-all-services-should-be-considered-unavailable/</link>
       <pubDate>Tue, 12 Nov 2019 09:53:24 +0000</pubDate>
       
-      <guid>/en/news/updates/2019/2019-11-12-reminder-jasmin-storage-maintenance-27th-november-all-services-should-be-considered-unavailable/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2019/2019-11-12-reminder-jasmin-storage-maintenance-27th-november-all-services-should-be-considered-unavailable/</guid>
       <description>This is just a reminder that further scheduled maintenance is required on Wednesday 27th November to supplement the work recently undertaken on 14th October.</description>
     </item>
     
     <item>
       <title>JASMIN storage maintenance 27th November all services should be considered unavailable</title>
-      <link>/en/news/updates/2019/2019-11-06-jasmin-storage-maintenance-wed-27th-november/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2019/2019-11-06-jasmin-storage-maintenance-wed-27th-november/</link>
       <pubDate>Wed, 06 Nov 2019 14:16:01 +0000</pubDate>
       
-      <guid>/en/news/updates/2019/2019-11-06-jasmin-storage-maintenance-wed-27th-november/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2019/2019-11-06-jasmin-storage-maintenance-wed-27th-november/</guid>
       <description>Further scheduled maintenance is required on Wednesday 27th November to supplement the work recently undertaken on 14th October. The work this time will focus mainly on the Panasas system, used for parallel file system (PFS) storage.</description>
     </item>
     
     <item>
       <title>Using JASMIN for the largest ever UK wildlife assessment</title>
-      <link>/en/news/updates/2019/2019-10-31-using-jasmin-for-the-largest-ever-uk-wildlife-assessment/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2019/2019-10-31-using-jasmin-for-the-largest-ever-uk-wildlife-assessment/</link>
       <pubDate>Thu, 31 Oct 2019 16:24:16 +0000</pubDate>
       
-      <guid>/en/news/updates/2019/2019-10-31-using-jasmin-for-the-largest-ever-uk-wildlife-assessment/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2019/2019-10-31-using-jasmin-for-the-largest-ever-uk-wildlife-assessment/</guid>
       <description>Most of the UK’s wildlife is in decline, according to the 2019 State of Nature (SoN) report. However getting to this statement was not an easy process.</description>
     </item>
     
     <item>
       <title>JASMIN Migration to CentOS7 UPDATE 2</title>
-      <link>/en/news/updates/2019/2019-10-28-jasmin-migration-to-centos7-update-2/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2019/2019-10-28-jasmin-migration-to-centos7-update-2/</link>
       <pubDate>Mon, 28 Oct 2019 14:07:44 +0000</pubDate>
       
-      <guid>/en/news/updates/2019/2019-10-28-jasmin-migration-to-centos7-update-2/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2019/2019-10-28-jasmin-migration-to-centos7-update-2/</guid>
       <description>This is the second update about our progress towards updating our infrastructure from RedHat Enterprise Linux 6 (RHEL6) to CentOS7.</description>
     </item>
     
     <item>
       <title>JASMIN External Cloud Tenancies Network change today</title>
-      <link>/en/news/updates/2019/2019-10-24-jasmin-external-cloud-tenancies-network-change-today/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2019/2019-10-24-jasmin-external-cloud-tenancies-network-change-today/</link>
       <pubDate>Thu, 24 Oct 2019 09:40:52 +0000</pubDate>
       
-      <guid>/en/news/updates/2019/2019-10-24-jasmin-external-cloud-tenancies-network-change-today/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2019/2019-10-24-jasmin-external-cloud-tenancies-network-change-today/</guid>
       <description>A network change that will affect a number of virtual machines in External Cloud tenancies is scheduled for today, October 24.</description>
     </item>
     
     <item>
       <title>JASMIN &amp; CEDA Services at risk Wednesday 30th Oct</title>
-      <link>/en/news/updates/2019/2019-10-23-jasmin-ceda-services-at-risk-wednesday-30th-oct/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2019/2019-10-23-jasmin-ceda-services-at-risk-wednesday-30th-oct/</link>
       <pubDate>Wed, 23 Oct 2019 09:58:09 +0000</pubDate>
       
-      <guid>/en/news/updates/2019/2019-10-23-jasmin-ceda-services-at-risk-wednesday-30th-oct/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2019/2019-10-23-jasmin-ceda-services-at-risk-wednesday-30th-oct/</guid>
       <description>We have been informed that due to electrical work associated with construction in the vicinity of the building in which JASMIN is hosted, there is a low level of risk that power supplies could be affected on this date.</description>
     </item>
     
     <item>
       <title>Migration of JASMIN virtual machines - how will this affect you?</title>
-      <link>/en/news/updates/2019/2019-10-01-migration-of-jasmin-virtual-machines-how-will-this-affect-you/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2019/2019-10-01-migration-of-jasmin-virtual-machines-how-will-this-affect-you/</link>
       <pubDate>Tue, 01 Oct 2019 12:05:49 +0000</pubDate>
       
-      <guid>/en/news/updates/2019/2019-10-01-migration-of-jasmin-virtual-machines-how-will-this-affect-you/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2019/2019-10-01-migration-of-jasmin-virtual-machines-how-will-this-affect-you/</guid>
       <description>RHEL6 virtual machines to be migrated to CentOS7
 Currently, many CEDA and JASMIN services are hosted using virtual machines (VMs) which run on RedHat Enterprise Linux 6 (RHEL6).</description>
     </item>
     
     <item>
       <title>Reminder system maintenance Today 15 October 2019</title>
-      <link>/en/news/updates/2019/2019-09-19-advance-notice-system-maintenance-15-october-2019/</link>
+      <link>https://www.ceda.ac.uk/en/news/updates/2019/2019-09-19-advance-notice-system-maintenance-15-october-2019/</link>
       <pubDate>Thu, 19 Sep 2019 12:48:22 +0000</pubDate>
       
-      <guid>/en/news/updates/2019/2019-09-19-advance-notice-system-maintenance-15-october-2019/</guid>
+      <guid>https://www.ceda.ac.uk/en/news/updates/2019/2019-09-19-advance-notice-system-maintenance-15-october-2019/</guid>
       <description>Scheduled maintenance is planned for Tuesday 15th October, which will result in many systems, services and data (including parts of the CEDA Archive) being unavailable for much of the day.</description>
     </item>
     

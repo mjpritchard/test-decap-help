@@ -20,7 +20,7 @@
 
 [[main]]
   name = "TechBlog"
-  pageRef = "https://techblog.ceda.ac.uk/"
+  url = "https://techblog.ceda.ac.uk/"
   weight = 50
 
 [[main]]
