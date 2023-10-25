@@ -20,7 +20,7 @@ timeout = "180s"
 
 languageCode = "en-us"
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
 
 # Need this to use defaut templates with events that have future dates
 # Use 

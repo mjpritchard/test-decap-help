@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on Centre for Environmental Data Analysis</title>
+    <link>https://www.ceda.ac.uk/about/</link>
+    <description>Recent content in About on Centre for Environmental Data Analysis</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2023 Science and Technology Facilities Council.</copyright>
+    <lastBuildDate>Mon, 11 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.ceda.ac.uk/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>History</title>
+      <link>https://www.ceda.ac.uk/about/history/</link>
+      <pubDate>Wed, 06 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ceda.ac.uk/about/history/</guid>
+      <description>The Centre for Environmental Data Analysis (CEDA) has evolved over time as its remit has changed and developed in response to the needs of its user community.</description>
+    </item>
+    
+    <item>
+      <title>Mission</title>
+      <link>https://www.ceda.ac.uk/about/mission/</link>
+      <pubDate>Wed, 06 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ceda.ac.uk/about/mission/</guid>
+      <description>We aim to support environmental science, further environmental data archival practices, and develop and deploy new technologies to enhance access to data.</description>
+    </item>
+    
+    <item>
+      <title>Team</title>
+      <link>https://www.ceda.ac.uk/about/team/</link>
+      <pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ceda.ac.uk/about/team/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
