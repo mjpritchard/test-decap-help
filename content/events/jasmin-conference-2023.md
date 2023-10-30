@@ -6,7 +6,7 @@ date: 2023-11-01
 tags: ["news", "jasmin"]
 title: JASMIN Conference 2023
 icon: fas people-group
-description: The upcoming JASAMIN User Conference 2023. Attendees are invited to Rutherford Appleton Laboratory to hear the latest updates on JASMIN and share user highlights.
+description: The upcoming JASMIN User Conference 2023. Attendees are invited to Rutherford Appleton Laboratory to hear the latest updates on JASMIN and share user highlights.
 aliases: 
 - /agenda/jasmin-conference-2023/detail/
 ---
@@ -47,7 +47,7 @@ Some of the user highlight talks you can expect are shown below:
 
 See also {{< link "#venues" />}}, below.
 
-### Day 1: Wednesday 1st November
+### Day 1 Wednesday 1st November
 
 {{< table "table-striped" >}}
 | Time  |         |
@@ -62,7 +62,7 @@ See also {{< link "#venues" />}}, below.
 | 18:00        | Evening meal provided: hot buffet in R22 coffee lounge. |
 {{< /table >}}
 
-### Day 2: Thursday 2nd November
+### Day 2 Thursday 2nd November
 
 {{< table "table-striped" >}}
 | Time  |  |
@@ -77,7 +77,7 @@ See also {{< link "#venues" />}}, below.
 | 13:00        | Lunch provided in CR12/13, building R68|
 {{< /table >}}
 
-### Venues:
+### Venues
 
 See {{< link "https://www.ukri.org/wp-content/uploads/2023/07/STFC-070723-RutherfordAppletonLaboratoryCampusConferenceRoomsMap.pdf" >}}RAL Campus Map of conference rooms{{< /link >}}.
 
