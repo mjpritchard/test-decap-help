@@ -45,120 +45,42 @@ Some of the user highlight talks you can expect are shown below:
 
 ## Programme
 
-<table class="table">
-<tbody>
-<tr>
-<td>
-<h4>Time</h4>
-</td>
-<td colspan="2">
-<h4>Wednesday&nbsp;1st November</h4>
-</td>
-</tr>
-<tr>
-<td>12:00 - 13:15</td>
-<td colspan="2">
-<p>Arrivals &amp; Registration</p>
-</td>
-</tr>
-<tr>
-<td>13:15&nbsp;- 13:30</td>
-<td colspan="2">
-<p>Welcome &amp; Opening</p>
-</td>
-</tr>
-<tr>
-<td>13:30 - 14:15</td>
-<td colspan="2">
-<p>Session 1: JASMIN Update</p>
-</td>
-</tr>
-<tr>
-<td>14:15 - 15:30</td>
-<td colspan="2">
-<p>Session 2: User Highlights #1</p>
-<p></p>
-</td>
-</tr>
-<tr>
-<td>15:30 - 16:00</td>
-<td colspan="2">
-<p>Refreshments</p>
-</td>
-</tr>
-<tr>
-<td>16:00 - 17:00</td>
-<td colspan="2">
-<p>Session 3: User Feedback &amp; Future Requirements Discussion</p>
-</td>
-</tr>
-<tr>
-<td>17:00 - 18:00</td>
-<td colspan="2">
-<p>Networking</p>
-</td>
-</tr>
-<tr>
-<td>18:00</td>
-<td colspan="2">
-<p>Evening meal provided</p>
-</td>
-</tr>
-</tbody>
-</table>
-<table class="table">
-<tbody>
-<tr>
-<td>
-<h4>Time</h4>
-</td>
-<td colspan="1">
-<h4>Thursday&nbsp;2nd November</h4>
-</td>
-</tr>
-<tr>
-<td>08:45 - 09:00</td>
-<td colspan="2">
-<p>Arrival</p>
-</td>
-</tr>
-<tr>
-<td>09:00 - 09:15</td>
-<td colspan="2">
-<p>Welcome Back</p>
-</td>
-</tr>
-<tr>
-<td>09:15 - 10:15</td>
-<td colspan="2">
-<p>Session 4: New JASMIN tools and services </p>
-</td>
-</tr>
-<tr>
-<td>10:15 - 11:15</td>
-<td colspan="2">
-<p>Session 5: User Highlights #2</p>
-<p></p>
-</td>
-</tr>
-<tr>
-<td>11:15 - 11:45</td>
-<td colspan="2">
-<p>Refreshments</p>
-<p></p>
-</td>
-</tr>
-<tr>
-<td>11:45 - 12:45</td>
-<td colspan="2">
-<p>Session 6: Net zero and environmental sustainability</p>
-</td>
-</tr>
-<tr>
-<td>12:45 - 13:00</td>
-<td colspan="2">
-<p>Wrap-up &amp; Close of JASMIN2023</p>
-</td>
-</tr>
-</tbody>
-</table>
+See also {{< link "#venues" />}}, below.
+
+### Day 1: Wednesday 1st November
+
+{{< table "table-striped" >}}
+| Time  |         |
+| -- | ----------- |
+| 12:15 - 13:15| Arrivals & Registration. Lunch provided from 12:15 in CR12/13, building R68 |
+| 13:15 - 13:30| Welcome & Opening |
+| 13:30 - 14:15| Session 1: JASMIN Update |
+| 14:15 - 15:30| Session 2: User Highlights #1 |
+| 15:30 - 16:00| Refreshments in CR12/13, building R68|
+| 16:00 - 17:00| Session 3: User Feedback & Future Requirements Discussion |
+| 17:00 - 18:00| Networking / drinks in R22 coffee lounge |
+| 18:00        | Evening meal provided: hot buffet in R22 coffee lounge. |
+{{< /table >}}
+
+### Day 2: Thursday 2nd November
+
+{{< table "table-striped" >}}
+| Time  |  |
+| -- | ----------- |
+| 08:45 - 09:00| Arrivals. Tea/coffee available in R22 coffee lounge. |
+| 09:00 - 09:15| Welcome Back |
+| 09:15 - 10:15| Session 4: New JASMIN tools and services |
+| 10:15 - 11:15| Session 5: User Highlights #2 |
+| 11:15 - 11:45| Refreshments in CR12/13, building R68|
+| 11:45 - 12:45| Session 6: Net zero and environmental sustainability |
+| 12:45 - 13:00| Wrap-up & Close of JASMIN2023 |
+| 13:00        | Lunch provided in CR12/13, building R68|
+{{< /table >}}
+
+### Venues:
+
+See {{< link "https://www.ukri.org/wp-content/uploads/2023/07/STFC-070723-RutherfordAppletonLaboratoryCampusConferenceRoomsMap.pdf" >}}RAL Campus Map of conference rooms{{< /link >}}.
+
+- **R22** is the building housing the RAL **Pickavance lecture theatre** marked `LT`, with an adjacent **coffee lounge**).
+- **CR12/13** is a large meeting room on the ground floor of **Building R68**, marked `12/13` on the opposite side of the quad from R22, behind the R112 Visitor Centre
+- There will be signs posted around site to help you!
