@@ -240,5 +240,9 @@
     "degraded" = "warning"
     "at risk" = "dark"
 
+[statusData]
+    # URL for publicly-shared CSV view of Google Sheet with CEDA status updates
+    "sourceURL" = "https://raw.githubusercontent.com/cedadev/ceda-status/main/status.json"
+
 [beacon]
     html = "<p>Beacon</p><script src=\"/static/js/beacon.js\" type=\"text/javascript\">"

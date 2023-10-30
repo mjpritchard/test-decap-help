@@ -3,52 +3,99 @@
         <div class="container-fluid ">
             <div class="container-xxl flex-fill p-0">
                 <div class="container-fluid p-4 px-xxl-0">
-                     {{ .Content }}
+                    {{ .Content }}
 
-                    <h2>Future incidents</h2>
+                    {{- with $url := .Site.Params.statusData.sourceURL }}
+                        {{ $jsonSource := $url }}
 
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th>Date</th>
-                                <th>Status</th>
-                                <th>Summary</th>
-                                <th>Services affected</th>
-                                <th>Updates</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {{ range $i := sort $.Site.Data.status ".date" "desc" }}
-                                {{ if gt (time $i.date) now }}
-                                    {{ $color := index $.Site.Params.statusClasses $i.status }}
-                                    {{ partial "incident_row.html" (dict "context" . "statusClasses" $.Site.Params.statusClasses) }}
-                                {{ end }}
-                            {{end}}                         
-                        </tbody>
-                    </table>
+                        <!-- TABLE CONSTRUCTION-->
+        <table id="table" class="table table-striped">
+            <thead>
+                <tr> 
+                    <th>date</th> 
+                    <th>status</th>
+                    <th>affected services</th> 
+                    <th>summary</th> 
+                    <th>updates</th>               
+                </tr>
+            </thead>
+            <tbody>
+                <script> 
+                    $(document).ready(function () { 
+    
+                        var DateTime = luxon.DateTime;
+                        var statusClasses = {
+                            "down": "danger",
+                            "normal": "success",
+                            "degraded": "warning",
+                            "at risk": "dark"
+                        };
 
-                    <h2>Current incidents</h2>
-                    
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th>Date</th>
-                                <th>Status</th>
-                                <th>Summary</th>
-                                <th>Services affected</th>
-                                <th>Updates</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {{ range $i := sort $.Site.Data.status ".date" "desc" }}
-                                {{ if le (time $i.date) now }}
-                                    {{ $color := index $.Site.Params.statusClasses $i.status }}
-                                    {{ partial "incident_row.html" (dict "context" . "statusClasses" $.Site.Params.statusClasses) }}
-                                {{ end }}
-                            {{end}}                         
-                        </tbody>
-                    </table>
+                        ReverseSortByDate = (b, a) =>  
+                            a.date < b.date ? -1 : a.date > b.date ? 1 : 0;
 
+                        // FETCHING DATA FROM JSON FILE
+                        $.getJSON("{{ $jsonSource }}", 
+                            function (dataObject) { 
+                                var incidents = [];
+                                $.each( dataObject, function (key, value) {
+                                    var incident = {
+                                        "date": DateTime.fromISO(value.date),
+                                        "status": value.status,
+                                        "summary": value.summary,
+                                        "affectedServices": value.affectedServices,
+                                        "updates": value.updates
+                                    };
+                                    $.each(incident.updates, function(ukey, uval) {
+                                        var update = {
+                                            "date": DateTime.fromISO(uval.date),
+                                            "details": uval.details,
+                                        };
+                                        if (uval.url) {
+                                            update.url = uval.url;
+                                        }
+                                    });
+                                    incidents.push(incident);
+                                });
+
+                                var incidentsSorted = incidents.sort(ReverseSortByDate);
+
+                                $.each(incidentsSorted, function(ikey, ival) {
+                                    var row = "<tr>";
+                                    row += "<th>" + ival.date.toFormat('yyyy-LL-dd HH:mm') + "</th>";
+                                    var statusClass = statusClasses[ival.status];
+                                    row += "<td><span class='badge bg-"+statusClass+"'>" + ival.status + "</span></td>";
+                                    row += "<td>" + ival.summary + "</td>";
+                                    row += "<td>" + ival.affectedServices + "</td>";
+                                    row += "<td>";
+                                    var sortedUpdates = ival.updates.sort(ReverseSortByDate);
+                                    scount = 0;
+                                    $.each(sortedUpdates, function(skey, sval) {
+                                        sdate = DateTime.fromISO(sval.date);
+                                        row += "<strong>" + sdate.toFormat('yyyy-LL-dd HH:mm') + "</strong>: ";
+                                        row += sval.details;
+                                        if (sval.url) {
+                                            row += ' <a href="' + sval.url + '" class="btn btn-sm btn-primary" role="button" target="_blank">Learn more</a>';
+                                        }
+                                        if (scount < sortedUpdates.length-1 ) {
+                                            row += "<hr>";
+                                        }
+                                        scount++;
+                                    });
+                                    row += "</td>";
+                                    row += "</tr>"
+                                    $("#table").append(row);
+                                });
+                            }
+                        );
+                    }); 
+                </script>
+            </tbody>
+        </table>
+                    <p><a class="btn btn-primary" href="{{ $jsonSource }}">JSON data feed</a> used for this page.</p>
+                    {{ end }}
+                    <hr>
+                    <p>This page was last generated at <code>{{ now | time.Format "2006-01-02 15:04:05" }}</code></p>
                 </div>
             </div>
         </div>

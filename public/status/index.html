@@ -160,6 +160,9 @@
 </script>
 
 
+<script src="/js/luxon.min.js"></script>
+
+
 <script type="text/javascript">!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script>
 <script type="text/javascript">window.Beacon('init', 'ee96779a-5145-4761-be1a-b223307c1503')</script>
 
@@ -293,168 +296,99 @@
         <div class="container-fluid ">
             <div class="container-xxl flex-fill p-0">
                 <div class="container-fluid p-4 px-xxl-0">
-                     <p>This webpage provides information about current and future incidents related to CEDA and JASMIN services.</p>
+                    <p>This webpage provides information about current and future incidents related to CEDA and JASMIN services.</p>
 <p>You may also wish to check our news feed for recent updates.</p>
 
+                        
 
-                    <h2>Future incidents</h2>
+                        
+        <table id="table" class="table table-striped">
+            <thead>
+                <tr> 
+                    <th>date</th> 
+                    <th>status</th>
+                    <th>affected services</th> 
+                    <th>summary</th> 
+                    <th>updates</th>               
+                </tr>
+            </thead>
+            <tbody>
+                <script> 
+                    $(document).ready(function () { 
+    
+                        var DateTime = luxon.DateTime;
+                        var statusClasses = {
+                            "down": "danger",
+                            "normal": "success",
+                            "degraded": "warning",
+                            "at risk": "dark"
+                        };
 
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th>Date</th>
-                                <th>Status</th>
-                                <th>Summary</th>
-                                <th>Services affected</th>
-                                <th>Updates</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            
-                                
-                            
-                                
-                            
-                                
-                            
-                                
-                                                     
-                        </tbody>
-                    </table>
+                        ReverseSortByDate = (b, a) =>  
+                            a.date < b.date ? -1 : a.date > b.date ? 1 : 0;
 
-                    <h2>Current incidents</h2>
+                        
+                        $.getJSON("https:\/\/raw.githubusercontent.com\/cedadev\/ceda-status\/main\/status.json", 
+                            function (dataObject) { 
+                                var incidents = [];
+                                $.each( dataObject, function (key, value) {
+                                    var incident = {
+                                        "date": DateTime.fromISO(value.date),
+                                        "status": value.status,
+                                        "summary": value.summary,
+                                        "affectedServices": value.affectedServices,
+                                        "updates": value.updates
+                                    };
+                                    $.each(incident.updates, function(ukey, uval) {
+                                        var update = {
+                                            "date": DateTime.fromISO(uval.date),
+                                            "details": uval.details,
+                                        };
+                                        if (uval.url) {
+                                            update.url = uval.url;
+                                        }
+                                    });
+                                    incidents.push(incident);
+                                });
+
+                                var incidentsSorted = incidents.sort(ReverseSortByDate);
+
+                                $.each(incidentsSorted, function(ikey, ival) {
+                                    var row = "<tr>";
+                                    row += "<th>" + ival.date.toFormat('yyyy-LL-dd HH:mm') + "</th>";
+                                    var statusClass = statusClasses[ival.status];
+                                    row += "<td><span class='badge bg-"+statusClass+"'>" + ival.status + "</span></td>";
+                                    row += "<td>" + ival.summary + "</td>";
+                                    row += "<td>" + ival.affectedServices + "</td>";
+                                    row += "<td>";
+                                    var sortedUpdates = ival.updates.sort(ReverseSortByDate);
+                                    scount = 0;
+                                    $.each(sortedUpdates, function(skey, sval) {
+                                        sdate = DateTime.fromISO(sval.date);
+                                        row += "<strong>" + sdate.toFormat('yyyy-LL-dd HH:mm') + "</strong>: ";
+                                        row += sval.details;
+                                        if (sval.url) {
+                                            row += ' <a href="' + sval.url + '" class="btn btn-sm btn-primary" role="button" target="_blank">Learn more</a>';
+                                        }
+                                        if (scount < sortedUpdates.length-1 ) {
+                                            row += "<hr>";
+                                        }
+                                        scount++;
+                                    });
+                                    row += "</td>";
+                                    row += "</tr>"
+                                    $("#table").append(row);
+                                });
+                            }
+                        );
+                    }); 
+                </script>
+            </tbody>
+        </table>
+                    <p><a class="btn btn-primary" href="https://raw.githubusercontent.com/cedadev/ceda-status/main/status.json">JSON data feed</a> used for this page.</p>
                     
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th>Date</th>
-                                <th>Status</th>
-                                <th>Summary</th>
-                                <th>Services affected</th>
-                                <th>Updates</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            
-                                
-                                    
-                                    <tr>
-    <td>2023-10-23 08:00</td>
-    <td>
-        
-        <span class="badge bg-danger">down</span>
-    </td>
-    <td>Scheduled power maintenance: JASMIN unavailable</td>
-    <td>all</td>
-    <td>
-        
-        
-            
-                
-                2023-08-08 08:00
-                | Shutdown timeline announced.
-                
-                | <a href="https://www.ceda.ac.uk/blog/reminder-advance-notice-of-jasmin-power-maintenance-autumn-2023/" class="btn btn-sm btn-primary" role="button" target="_blank">Learn more</a>
-                
-            
-                <hr>
-                2023-08-03 08:00
-                | Date announced alongside more information regarding shutdown and our impact reduction plan.
-                
-                | <a href="https://www.ceda.ac.uk/blog/two-week-offline-period-for-all-jasmin-and-ceda-services-in-october/" class="btn btn-sm btn-primary" role="button" target="_blank">Learn more</a>
-                
-            
-                <hr>
-                2023-07-26 08:00
-                | Further information will be shared in due course. We currently have limited information from our host institution.
-                
-                | <a href="https://www.ceda.ac.uk/blog/advance-notice-of-jasmin-power-maintenance-autumn-2023/" class="btn btn-sm btn-primary" role="button" target="_blank">Learn more</a>
-                
-            
-        
-    </td>
-</tr>
-
-                                
-                            
-                                
-                                    
-                                    <tr>
-    <td>2023-10-18 08:00</td>
-    <td>
-        
-        <span class="badge bg-danger">down</span>
-    </td>
-    <td>Tape services unavailable</td>
-    <td>Tape services</td>
-    <td>
-        
-        
-            
-                
-                2023-08-08 08:20
-                | Tape services currently unavailable, issue being investigated
-                
-            
-        
-    </td>
-</tr>
-
-                                
-                            
-                                
-                                    
-                                    <tr>
-    <td>2023-10-11 16:13</td>
-    <td>
-        
-        <span class="badge bg-dark">at risk</span>
-    </td>
-    <td>All services at risk due to network issue</td>
-    <td>All services</td>
-    <td>
-        
-        
-            
-                
-                2023-10-11 16:13
-                | Network component failure overnight has caused temporary outages to many JASMIN and CEDA services. Interventions have been partially successful but those systems now working remain at risk. Some LOTUS jobs may have failed. *At risk* status likely to remain in place for some time (weeks) while a permanent solution is sought.
-                
-            
-        
-    </td>
-</tr>
-
-                                
-                            
-                                
-                                    
-                                    <tr>
-    <td>2023-08-31 15:46</td>
-    <td>
-        
-        <span class="badge bg-dark">at risk</span>
-    </td>
-    <td>Storage and network at risk</td>
-    <td>LOTUS cluster, sci machines, software, SMF</td>
-    <td>
-        
-        
-            
-                
-                2023-12-01 09:20
-                | Storage for /gws/smf/* and /apps/jasmin now migrated. No change to users. Other systems mounting above storage to be rebooted: tenancy sci machine managers recommended to reboot their own sci machines via the cloud portal. LOTUS queues now reopened but throughput initially slow while some nodes being rebooted. Network currently stable but at risk until further intervention
-                
-            
-        
-    </td>
-</tr>
-
-                                
-                                                     
-                        </tbody>
-                    </table>
-
+                    <hr>
+                    <p>This page was last generated at <code>2023-10-30 08:50:37</code></p>
                 </div>
             </div>
         </div>
@@ -600,6 +534,9 @@
     });
   });
 </script>
+
+
+<script src="/js/luxon.min.js"></script>
 
 
 <script type="text/javascript">!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script>
