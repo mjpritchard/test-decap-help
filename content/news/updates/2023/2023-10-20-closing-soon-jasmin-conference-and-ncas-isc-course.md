@@ -4,6 +4,7 @@ date: 2023-10-20 13:00:00+00:00
 tags: ['news', 'jasmin']
 thumbnail: 
 icon: fas circle-info
+expiryDate: 2023-10-27
 ---
 
 As previously announced, we will be hosting the next JASMIN conference at our host institution, RAL, on the Harwell Campus in Oxfordshire. It will occur over two half days on the afternoon of Wednesday 1st November  and the morning of Thursday 2nd of November 2023.
