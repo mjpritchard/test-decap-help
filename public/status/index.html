@@ -292,104 +292,104 @@
 </div></div>
             <div class="d-flex flex-column flex-fill mt-5">
                     
-    <div class="d-flex flex-column flex-fill mt-5">
-        <div class="container-fluid ">
-            <div class="container-xxl flex-fill p-0">
-                <div class="container-fluid p-4 px-xxl-0">
-                    <p>This webpage provides information about current and future incidents related to CEDA and JASMIN services.</p>
+    <div class="container-fluid ">
+        <div class="container-xxl flex-fill p-0">
+            <div class="container-fluid p-4 px-xxl-0">
+                <p class="display-4 mt-3">Status</p>
+                <p class="lead mb-5">Status of CEDA services</p>
+                <p>This webpage provides information about current and future incidents related to CEDA and JASMIN services.</p>
 <p>You may also wish to check our news feed for recent updates.</p>
 
-                        
-
-                        
-        <table id="table" class="table table-striped">
-            <thead>
-                <tr> 
-                    <th>date</th> 
-                    <th>status</th>
-                    <th>summary</th> 
-                    <th>affected services</th> 
-                    <th>updates</th>               
-                </tr>
-            </thead>
-            <tbody>
-                <script> 
-                    $(document).ready(function () { 
-    
-                        var DateTime = luxon.DateTime;
-                        var statusClasses = {
-                            "down": "danger",
-                            "normal": "success",
-                            "degraded": "warning",
-                            "at risk": "dark"
-                        };
-
-                        ReverseSortByDate = (b, a) =>  
-                            a.date < b.date ? -1 : a.date > b.date ? 1 : 0;
-
-                        
-                        $.getJSON("https:\/\/raw.githubusercontent.com\/cedadev\/ceda-status\/main\/status.json", 
-                            function (dataObject) { 
-                                var incidents = [];
-                                $.each( dataObject, function (key, value) {
-                                    var incident = {
-                                        "date": DateTime.fromISO(value.date),
-                                        "status": value.status,
-                                        "summary": value.summary,
-                                        "affectedServices": value.affectedServices,
-                                        "updates": value.updates
-                                    };
-                                    $.each(incident.updates, function(ukey, uval) {
-                                        var update = {
-                                            "date": DateTime.fromISO(uval.date),
-                                            "details": uval.details,
-                                        };
-                                        if (uval.url) {
-                                            update.url = uval.url;
-                                        }
-                                    });
-                                    incidents.push(incident);
-                                });
-
-                                var incidentsSorted = incidents.sort(ReverseSortByDate);
-
-                                $.each(incidentsSorted, function(ikey, ival) {
-                                    var row = "<tr>";
-                                    row += "<th>" + ival.date.toFormat('yyyy-LL-dd HH:mm') + "</th>";
-                                    var statusClass = statusClasses[ival.status];
-                                    row += "<td><span class='badge bg-"+statusClass+"'>" + ival.status + "</span></td>";
-                                    row += "<td>" + ival.summary + "</td>";
-                                    row += "<td>" + ival.affectedServices + "</td>";
-                                    row += "<td>";
-                                    var sortedUpdates = ival.updates.sort(ReverseSortByDate);
-                                    scount = 0;
-                                    $.each(sortedUpdates, function(skey, sval) {
-                                        sdate = DateTime.fromISO(sval.date);
-                                        row += "<strong>" + sdate.toFormat('yyyy-LL-dd HH:mm') + "</strong>: ";
-                                        row += sval.details;
-                                        if (sval.url) {
-                                            row += ' <a href="' + sval.url + '" class="btn btn-sm btn-primary" role="button" target="_blank">Learn more</a>';
-                                        }
-                                        if (scount < sortedUpdates.length-1 ) {
-                                            row += "<hr>";
-                                        }
-                                        scount++;
-                                    });
-                                    row += "</td>";
-                                    row += "</tr>"
-                                    $("#table").append(row);
-                                });
-                            }
-                        );
-                    }); 
-                </script>
-            </tbody>
-        </table>
-                    <p><a class="btn btn-primary" href="https://raw.githubusercontent.com/cedadev/ceda-status/main/status.json">JSON data feed</a> used for this page.</p>
                     
-                    <hr>
-                    <p>This page was last generated at <code>2023-10-31 08:51:18</code></p>
-                </div>
+
+                    
+    <table id="table" class="table table-sm table-striped table-responsive">
+        <thead>
+            <tr> 
+                <th>date</th> 
+                <th>status</th>
+                <th>summary</th> 
+                <th>affected services</th> 
+                <th>updates</th>               
+            </tr>
+        </thead>
+        <tbody>
+            <script> 
+                $(document).ready(function () { 
+
+                    var DateTime = luxon.DateTime;
+                    var statusClasses = {
+                        "down": "danger",
+                        "normal": "success",
+                        "degraded": "warning",
+                        "at risk": "dark"
+                    };
+
+                    ReverseSortByDate = (b, a) =>  
+                        a.date < b.date ? -1 : a.date > b.date ? 1 : 0;
+
+                    
+                    $.getJSON("https:\/\/raw.githubusercontent.com\/cedadev\/ceda-status\/main\/status.json", 
+                        function (dataObject) { 
+                            var incidents = [];
+                            $.each( dataObject, function (key, value) {
+                                var incident = {
+                                    "date": DateTime.fromISO(value.date),
+                                    "status": value.status,
+                                    "summary": value.summary,
+                                    "affectedServices": value.affectedServices,
+                                    "updates": value.updates
+                                };
+                                $.each(incident.updates, function(ukey, uval) {
+                                    var update = {
+                                        "date": DateTime.fromISO(uval.date),
+                                        "details": uval.details,
+                                    };
+                                    if (uval.url) {
+                                        update.url = uval.url;
+                                    }
+                                });
+                                incidents.push(incident);
+                            });
+
+                            var incidentsSorted = incidents.sort(ReverseSortByDate);
+
+                            $.each(incidentsSorted, function(ikey, ival) {
+                                var row = "<tr>";
+                                row += "<th>" + ival.date.toFormat('yyyy-LL-dd HH:mm') + "</th>";
+                                var statusClass = statusClasses[ival.status];
+                                row += "<td><span class='badge bg-"+statusClass+"'>" + ival.status + "</span></td>";
+                                row += "<td>" + ival.summary + "</td>";
+                                row += "<td>" + ival.affectedServices + "</td>";
+                                row += "<td>";
+                                var sortedUpdates = ival.updates.sort(ReverseSortByDate);
+                                scount = 0;
+                                $.each(sortedUpdates, function(skey, sval) {
+                                    sdate = DateTime.fromISO(sval.date);
+                                    row += "<strong>" + sdate.toFormat('yyyy-LL-dd HH:mm') + "</strong>: ";
+                                    row += sval.details;
+                                    if (sval.url) {
+                                        row += ' <a href="' + sval.url + '" class="btn btn-sm btn-primary" role="button" target="_blank">Learn more</a>';
+                                    }
+                                    if (scount < sortedUpdates.length-1 ) {
+                                        row += "<hr>";
+                                    }
+                                    scount++;
+                                });
+                                row += "</td>";
+                                row += "</tr>"
+                                $("#table").append(row);
+                            });
+                        }
+                    );
+                }); 
+            </script>
+        </tbody>
+    </table>
+                <p><a class="btn btn-primary" href="https://raw.githubusercontent.com/cedadev/ceda-status/main/status.json">JSON data feed</a> used for this page.</p>
+                
+                <hr>
+                <p>This page was last generated at <code>2023-10-31 09:45:05</code></p>
             </div>
         </div>
     </div>
