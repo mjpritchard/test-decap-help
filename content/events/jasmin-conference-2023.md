@@ -50,31 +50,31 @@ See also {{< link "#venues" />}}, below.
 ### Day 1 Wednesday 1st November
 
 {{< table "table-striped" >}}
-| Time  |         |
-| -- | ----------- |
-| 12:15 - 13:15| Arrivals & Registration. Lunch provided from 12:15 in CR12/13, building R68 |
-| 13:15 - 13:30| Welcome & Opening |
-| 13:30 - 14:15| Session 1: JASMIN Update |
-| 14:15 - 15:30| Session 2: User Highlights #1 |
-| 15:30 - 16:00| Refreshments in CR12/13, building R68|
-| 16:00 - 17:00| Session 3: User Feedback & Future Requirements Discussion |
-| 17:00 - 18:00| Networking / drinks in R22 coffee lounge |
-| 18:00        | Evening meal provided: hot buffet in R22 coffee lounge. |
+| Time  |         | Venue |
+| -- | ----------- | --- |
+| 12:15 - 13:15| Arrivals & Registration. Lunch provided from 12:15 | CR12/13, building R68 |
+| 13:15 - 13:30| Welcome & Opening | R22 Lecture Theatre |
+| 13:30 - 14:15| Session 1: JASMIN Update | R22 Lecture Theatre |
+| 14:15 - 15:30| Session 2: User Highlights #1 | R22 Lecture Theatre |
+| 15:30 - 16:00| Refreshments | CR12/13, building R68 |
+| 16:00 - 17:00| Session 3: User Feedback & Future Requirements Discussion | CR12/13, building R68 |
+| 17:00 - 18:00| Networking / drinks | R22 coffee lounge |
+| 18:00        | Evening meal provided: hot buffet | R22 coffee lounge |
 {{< /table >}}
 
 ### Day 2 Thursday 2nd November
 
 {{< table "table-striped" >}}
-| Time  |  |
-| -- | ----------- |
-| 08:45 - 09:00| Arrivals. Tea/coffee available in R22 coffee lounge. |
-| 09:00 - 09:15| Welcome Back |
-| 09:15 - 10:15| Session 4: New JASMIN tools and services |
-| 10:15 - 11:15| Session 5: User Highlights #2 |
-| 11:15 - 11:45| Refreshments in CR12/13, building R68|
-| 11:45 - 12:45| Session 6: Net zero and environmental sustainability |
-| 12:45 - 13:00| Wrap-up & Close of JASMIN2023 |
-| 13:00        | Lunch provided in CR12/13, building R68|
+| Time  |         | Venue |
+| -- | ----------- | --- |
+| 08:45 - 09:00| Arrivals. Tea/coffee available | R22 coffee lounge |
+| 09:00 - 09:15| Welcome Back | R22 Lecture Theatre |
+| 09:15 - 10:15| Session 4: New JASMIN tools and services | R22 Lecture Theatre |
+| 10:15 - 11:15| Session 5: User Highlights #2 | R22 Lecture Theatre |
+| 11:15 - 11:45| Refreshments | CR12/13, building R68|
+| 11:45 - 12:45| Session 6: Net zero and environmental sustainability | CR12/13, building R68 |
+| 12:45 - 13:00| Wrap-up & Close of JASMIN2023 | CR12/13, building R68 |
+| 13:00        | Lunch provided | CR12/13, building R68|
 {{< /table >}}
 
 ### Venues
