@@ -31,12 +31,16 @@
                         "degraded": "warning",
                         "at risk": "dark"
                     };
+                    // Generate random string to ensure no caching of JSON source
+                    const generateRandomString = (length=16)=>Math.random().toString(20).substr(2, length)
+                    var randomString = generateRandomString();
 
                     ReverseSortByDate = (b, a) =>  
                         a.date < b.date ? -1 : a.date > b.date ? 1 : 0;
 
                     // FETCHING DATA FROM JSON FILE
-                    $.getJSON("{{ $jsonSource }}", 
+
+                    $.getJSON("{{ $jsonSource }}?random="+randomString, 
                         function (dataObject) { 
                             var incidents = [];
                             $.each( dataObject, function (key, value) {
@@ -93,7 +97,7 @@
             </script>
         </tbody>
     </table>
-                <p><a class="btn btn-primary" href="{{ $jsonSource }}">JSON data feed</a> used for this page.</p>
+                <p><a class="btn btn-primary" href="{{ $url}}">JSON data feed</a> used for this page.</p>
                 {{ end }}
                 <hr>
                 <p>This page was last generated at <code>{{ now | time.Format "2006-01-02 15:04:05" }}</code></p>
