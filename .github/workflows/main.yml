@@ -3,7 +3,7 @@ name: Test deploy to GitHub Pages
 on:
   push:
     branches:
-      - test-workflow  # Set a branch to deploy
+      - main  # Set a branch to deploy
   pull_request:
 
 jobs:
