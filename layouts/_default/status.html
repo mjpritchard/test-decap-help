@@ -10,93 +10,122 @@
                     {{ $jsonSource := $url }}
 
                     <!-- TABLE CONSTRUCTION-->
-    <table id="table" class="table table-sm table-striped table-responsive">
-        <thead>
-            <tr> 
-                <th>date</th> 
-                <th>status</th>
-                <th>summary</th> 
-                <th>affected services</th> 
-                <th>updates</th>               
-            </tr>
-        </thead>
-        <tbody>
-            <script> 
-                $(document).ready(function () { 
+                <h2>Current incidents</h2>
+                <table id="current-table" class="table table-sm table-striped table-responsive">
+                    <thead>
+                        <tr> 
+                            <th>date</th> 
+                            <th>status</th>
+                            <th>summary</th> 
+                            <th>affected services</th> 
+                            <th>updates</th>               
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
 
-                    var DateTime = luxon.DateTime;
-                    var statusClasses = {
-                        "down": "danger",
-                        "normal": "success",
-                        "degraded": "warning",
-                        "at risk": "dark"
-                    };
-                    // Generate random string to ensure no caching of JSON source
-                    const generateRandomString = (length=16)=>Math.random().toString(20).substr(2, length)
-                    var randomString = generateRandomString();
+                <h2>Future incidents</h2>
+                <table id="future-table" class="table table-sm table-striped table-responsive">
+                    <thead>
+                        <tr> 
+                            <th>date</th> 
+                            <th>status</th>
+                            <th>summary</th> 
+                            <th>affected services</th> 
+                            <th>updates</th>               
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
 
-                    ReverseSortByDate = (b, a) =>  
-                        a.date < b.date ? -1 : a.date > b.date ? 1 : 0;
+                <script> 
+                    $(document).ready(function () { 
 
-                    // FETCHING DATA FROM JSON FILE
+                        var DateTime = luxon.DateTime;
+                        var statusClasses = {
+                            "down": "danger",
+                            "normal": "success",
+                            "degraded": "warning",
+                            "at risk": "dark"
+                        };
+                        // Generate random string to ensure no caching of JSON source
+                        const generateRandomString = (length=16)=>Math.random().toString(20).substr(2, length)
+                        var randomString = generateRandomString();
 
-                    $.getJSON("{{ $jsonSource }}?random="+randomString, 
-                        function (dataObject) { 
-                            var incidents = [];
-                            $.each( dataObject, function (key, value) {
-                                var incident = {
-                                    "date": DateTime.fromISO(value.date),
-                                    "status": value.status,
-                                    "summary": value.summary,
-                                    "affectedServices": value.affectedServices,
-                                    "updates": value.updates
-                                };
-                                $.each(incident.updates, function(ukey, uval) {
-                                    var update = {
-                                        "date": DateTime.fromISO(uval.date),
-                                        "details": uval.details,
+                        ReverseSortByDate = (b, a) =>  
+                            a.date < b.date ? -1 : a.date > b.date ? 1 : 0;
+
+                        // FETCHING DATA FROM JSON FILE
+
+                        $.getJSON("{{ $jsonSource }}?random="+randomString, 
+                            function (dataObject) { 
+                                var incidents = [];
+                                $.each( dataObject, function (key, value) {
+                                    var incident = {
+                                        "date": DateTime.fromISO(value.date),
+                                        "status": value.status,
+                                        "summary": value.summary,
+                                        "affectedServices": value.affectedServices,
+                                        "updates": value.updates
                                     };
-                                    if (uval.url) {
-                                        update.url = uval.url;
+                                    $.each(incident.updates, function(ukey, uval) {
+                                        var update = {
+                                            "date": DateTime.fromISO(uval.date),
+                                            "details": uval.details,
+                                        };
+                                        if (uval.url) {
+                                            update.url = uval.url;
+                                        }
+                                    });
+                                    incidents.push(incident);
+                                });
+
+                                var incidentsSorted = incidents.sort(ReverseSortByDate);
+
+                                // Set current time
+                                const now = DateTime.now()
+
+                                $.each(incidentsSorted, function(ikey, ival) {
+                                    var row = "<tr>";
+                                    row += "<th>" + ival.date.toFormat('yyyy-LL-dd HH:mm') + "</th>";
+                                    var statusClass = statusClasses[ival.status];
+                                    row += "<td><span class='badge bg-"+statusClass+"'>" + ival.status + "</span></td>";
+                                    row += "<td>" + ival.summary + "</td>";
+                                    row += "<td>" + ival.affectedServices + "</td>";
+                                    row += "<td>";
+                                    var sortedUpdates = ival.updates.sort(ReverseSortByDate);
+                                    scount = 0;
+                                    $.each(sortedUpdates, function(skey, sval) {
+                                        sdate = DateTime.fromISO(sval.date);
+                                        row += "<strong>" + sdate.toFormat('yyyy-LL-dd HH:mm') + "</strong>: ";
+                                        row += sval.details;
+                                        if (sval.url) {
+                                            row += ' <a href="' + sval.url + '" class="btn btn-sm btn-primary" role="button" target="_blank">Learn more</a>';
+                                        }
+                                        if (scount < sortedUpdates.length-1 ) {
+                                            row += "<hr>";
+                                        }
+                                        scount++;
+                                    });
+                                    row += "</td>";
+                                    row += "</tr>"
+                                    
+                                    // Decide which table the incident should be appended to.
+                                    if (ival.date <= now) {
+                                        $("#current-table").append(row);
+                                    } else {
+                                        $("#future-table").append(row);
                                     }
                                 });
-                                incidents.push(incident);
-                            });
+                            }
+                        );
+                    }); 
+                </script>
 
-                            var incidentsSorted = incidents.sort(ReverseSortByDate);
 
-                            $.each(incidentsSorted, function(ikey, ival) {
-                                var row = "<tr>";
-                                row += "<th>" + ival.date.toFormat('yyyy-LL-dd HH:mm') + "</th>";
-                                var statusClass = statusClasses[ival.status];
-                                row += "<td><span class='badge bg-"+statusClass+"'>" + ival.status + "</span></td>";
-                                row += "<td>" + ival.summary + "</td>";
-                                row += "<td>" + ival.affectedServices + "</td>";
-                                row += "<td>";
-                                var sortedUpdates = ival.updates.sort(ReverseSortByDate);
-                                scount = 0;
-                                $.each(sortedUpdates, function(skey, sval) {
-                                    sdate = DateTime.fromISO(sval.date);
-                                    row += "<strong>" + sdate.toFormat('yyyy-LL-dd HH:mm') + "</strong>: ";
-                                    row += sval.details;
-                                    if (sval.url) {
-                                        row += ' <a href="' + sval.url + '" class="btn btn-sm btn-primary" role="button" target="_blank">Learn more</a>';
-                                    }
-                                    if (scount < sortedUpdates.length-1 ) {
-                                        row += "<hr>";
-                                    }
-                                    scount++;
-                                });
-                                row += "</td>";
-                                row += "</tr>"
-                                $("#table").append(row);
-                            });
-                        }
-                    );
-                }); 
-            </script>
-        </tbody>
-    </table>
+
                 <p><a class="btn btn-primary" href="{{ $url}}">JSON data feed</a> used for this page.</p>
                 {{ end }}
                 <hr>
