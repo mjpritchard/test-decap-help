@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CEDA Events on Centre for Environmental Data Analysis</title>
+    <link>https://www.ceda.ac.uk/events/</link>
+    <description>Recent content in CEDA Events on Centre for Environmental Data Analysis</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2023 Science and Technology Facilities Council.</copyright><atom:link href="https://www.ceda.ac.uk/events/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to Scientific Computing Course</title>
+      <link>https://www.ceda.ac.uk/events/introduction-scientific-computing/</link>
+      <pubDate>Mon, 13 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ceda.ac.uk/events/introduction-scientific-computing/</guid>
+      <description>You will be tutored by experts from the Centre for Environmental Data Analysis who solve scientific data challenges on a daily basis.</description>
+    </item>
+    
+    <item>
+      <title>JASMIN Conference 2023</title>
+      <link>https://www.ceda.ac.uk/events/jasmin-conference-2023/</link>
+      <pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ceda.ac.uk/events/jasmin-conference-2023/</guid>
+      <description>We will be hosting the next JASMIN conference at our host institute on the Harwell Campus in Oxfordshire. It will occur over two half days on the afternoon of Wednesday 1 and the morning of Thursday 2 November 2023.</description>
+    </item>
+    
+    <item>
+      <title>Webinar - JASMIN&#39;s new GPU cluster, ORCHID</title>
+      <link>https://www.ceda.ac.uk/events/past/jasmin-orchid-webinar/</link>
+      <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ceda.ac.uk/events/past/jasmin-orchid-webinar/</guid>
+      <description>The webinar was open to all JASMIN users, but was of particular interest to those embarking on research involving machine learning techniques, or who have been seeking GPU resources for use in their work.</description>
+    </item>
+    
+    <item>
+      <title>Jupyter Notebooks for Capacity Development Webinar</title>
+      <link>https://www.ceda.ac.uk/events/past/jupyter-notebook-webinar/</link>
+      <pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ceda.ac.uk/events/past/jupyter-notebook-webinar/</guid>
+      <description>CEDA&amp;nbsp;represents UKSA/NCEO on the Committee Earth Observation Satellites (CEOS)&amp;nbsp;-&amp;nbsp;this group&amp;nbsp;hosted a virtual&amp;nbsp;event called:&amp;nbsp;Jupyter Notebooks for Capacity Development Webinar&amp;nbsp;in July 2021.&amp;nbsp;</description>
+    </item>
+    
+    <item>
+      <title>Working on JASMIN - a hands-on workshop</title>
+      <link>https://www.ceda.ac.uk/events/past/jasmin-hands-on-workshop/</link>
+      <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ceda.ac.uk/events/past/jasmin-hands-on-workshop/</guid>
+      <description>CEDA regularly run hands-on interactive workshops for users of JASMIN.&amp;nbsp;Past event details can be seen below. Resources used in the workshops can be found here.</description>
+    </item>
+    
+    <item>
+      <title>Using CEDA for Air Quality Research - STFC Air Quality Network event</title>
+      <link>https://www.ceda.ac.uk/events/past/stfc-air-quality-network-event/</link>
+      <pubDate>Thu, 21 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ceda.ac.uk/events/past/stfc-air-quality-network-event/</guid>
+      <description>CEDA staff presented a webinar to members of the STFC Air Quality Network on 20th January 2021. The session covered an introduction to using the CEDA Archive and JASMIN for air quality research.</description>
+    </item>
+    
+    <item>
+      <title>JASMIN User Seminar Series</title>
+      <link>https://www.ceda.ac.uk/events/past/jasmin-user-seminar-series/</link>
+      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ceda.ac.uk/events/past/jasmin-user-seminar-series/</guid>
+      <description>Talk Speaker Abstract Recording Slides Date of talk Data Management of Multi-Model Climate Simulations from PRIMAVERA at JASMIN Jon Seddon, UK Met Office January 2021 Oceans in the Cloud: working interactively with huge datasets using Pangeo Andrew Meijers, British Antarctic Survey January 2021 PRISE and Peatlands&amp;nbsp; Jane Lewis, Assimila February 2021 Evaluating aerosols in the UK Earth System Model using observational ensembles Adam Povey,&amp;nbsp;National Centre for Earth Observation&amp;nbsp;and University of Oxford February 2021 Using the JASMIN Unmanaged Cloud for UKCA Training Luke Abraham, National Centre for Atmospheric Science &amp;amp; Department of Chemistry, University of Cambridge March 2021 Unsupervised classification of mesoscale cloud organisation with neural networks Leif Denby, University of Leeds March 2021 COMET LiCSAR system for measuring tectonic and volcanic deformation by Sentinel-1 interferometry (part 1) Milan&amp;nbsp;Lazecký, The Centre for Observation and Modelling of Earthquakes, Volcanoes and Tectonics (COMET), University of Leeds&amp;nbsp;</description>
+    </item>
+    
+    <item>
+      <title>Demo of the JASMIN Notebook Service webinar</title>
+      <link>https://www.ceda.ac.uk/events/past/jasmin-notebook-service-webinar/</link>
+      <pubDate>Tue, 16 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ceda.ac.uk/events/past/jasmin-notebook-service-webinar/</guid>
+      <description>In this webinar, we will talk you through some of the JASMIN Notebook Service&amp;rsquo;s&amp;nbsp;key features. The JASMIN Notebook service provides access to Jupyter Notebooks in the web browser.</description>
+    </item>
+    
+    <item>
+      <title>Using Python on JASMIN webinar</title>
+      <link>https://www.ceda.ac.uk/events/past/python-jasmin-webinar/</link>
+      <pubDate>Sat, 14 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ceda.ac.uk/events/past/python-jasmin-webinar/</guid>
+      <description>This webinar explored four case studies for using Python on JASMIN. In a 1 hour webinar, we cannot teach the entire Python language to beginners - but we hope our examples will give you an idea of the things Python can be used for to do science-related coding.</description>
+    </item>
+    
+    <item>
+      <title>Designing efficient workflows on LOTUS webinar</title>
+      <link>https://www.ceda.ac.uk/events/past/lotus-webinar/</link>
+      <pubDate>Fri, 13 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ceda.ac.uk/events/past/lotus-webinar/</guid>
+      <description>This webinar demonstrates two workflows for using LOTUS*. The first example will show you how to build a workflow that can be re-submitted without re-running previously completed tasks and which reports failures in a traceable way.</description>
+    </item>
+    
+    <item>
+      <title>An introduction to NAG &amp; NAG/Python interface on JASMIN workshop</title>
+      <link>https://www.ceda.ac.uk/events/past/nag-jasmin-workshop/</link>
+      <pubDate>Wed, 28 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ceda.ac.uk/events/past/nag-jasmin-workshop/</guid>
+      <description>NAG have just announced the availability of the new&amp;nbsp;NAG Library for Python. The re-engineering of the NAG Library for Python offers many usability improvements enabling quicker application development including, self-contained routine documentation, thread-safety, curated examples demonstrating important algorithmic and Python-related functionality, support for native Python callbacks and C language routine equivalents giving a unified route from prototyping in Python to deploying as compiled code.</description>
+    </item>
+    
+    <item>
+      <title>Git and GitHub webinars</title>
+      <link>https://www.ceda.ac.uk/events/past/git-webinar/</link>
+      <pubDate>Thu, 01 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ceda.ac.uk/events/past/git-webinar/</guid>
+      <description>This webinar&amp;nbsp;provides&amp;nbsp;an introduction to using Git and GitHub to manage, share and backup your code. We will discuss:
+Why you should use version control What GitHub is How to get started with GitHub Additional useful commands At the end of the webinar you should be able to organise your code into a git repository and see it on GitHub along with knowing how to edit and update the repository.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to LOTUS - JASMIN&#39;s batch computing cluster webinar</title>
+      <link>https://www.ceda.ac.uk/events/past/introduction-lotus-webinar/</link>
+      <pubDate>Wed, 17 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ceda.ac.uk/events/past/introduction-lotus-webinar/</guid>
+      <description>LOTUS is a JASMIN* service which enables efficient scheduling of large scale data analysis tasks. This is useful for researchers wanting to improve or change their workflows for carrying out tasks such as processing high resolution climate simulations, tracking tropical cyclones or other data intensive tasks.</description>
+    </item>
+    
+    <item>
+      <title>Give us your data - how to prepare your research for the CEDA Archive webinar</title>
+      <link>https://www.ceda.ac.uk/events/past/data-preparation-ceda-archive-webinar/</link>
+      <pubDate>Thu, 27 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ceda.ac.uk/events/past/data-preparation-ceda-archive-webinar/</guid>
+      <description>This&amp;nbsp;webinar focussed on how researchers can prepare their research for the CEDA Archive*, covering the following topics:
+Who we are Data Management Planning Metadata Preparing data (formats) How to submit data Anyone with an interest in uploading data to CEDA will benefit from watching this video.</description>
+    </item>
+    
+    <item>
+      <title>JASMIN Conference 2018</title>
+      <link>https://www.ceda.ac.uk/events/past/jasmin2018/</link>
+      <pubDate>Wed, 27 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ceda.ac.uk/events/past/jasmin2018/</guid>
+      <description>Introduction Conference Programme Introduction The third JASMIN user Conference on Advanced Computing for Environmental Science was held on 27th June 2018 at Milton Hill House, with additional training workshop sessions on the following day at JASMIN&#39;s host institution, the STFC Rutherford Appleton Laboratory (RAL) on 28th June 2018, with attendees from universities and research institutions across the UK and further afield.</description>
+    </item>
+    
+    <item>
+      <title>PV2018 Conference - Adding value and preserving data</title>
+      <link>https://www.ceda.ac.uk/events/past/pv2018-conference/</link>
+      <pubDate>Tue, 15 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ceda.ac.uk/events/past/pv2018-conference/</guid>
+      <description>The PV 2018 Conference welcomes you to its 9th edition, to be held 15th – 17th May 2018 at the Rutherford Appleton Laboratory, Harwell Space Cluster (UK ), hosted by the UK Space Agency and jointly organised by STFC, NCEO and the Satellite Applications Catapult.</description>
+    </item>
+    
+    <item>
+      <title>Getting started with JASMIN webinar</title>
+      <link>https://www.ceda.ac.uk/events/past/getting-started-jasmin-webinar/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ceda.ac.uk/events/past/getting-started-jasmin-webinar/</guid>
+      <description>This&amp;nbsp;webinar focussed&amp;nbsp;on how new users can &amp;lsquo;get started&amp;rsquo; on JASMIN, a globally unique data intensive supercomputer for environmental science.
+Covering the following topics:</description>
+    </item>
+    
+    <item>
+      <title>JASMIN Conference 2017</title>
+      <link>https://www.ceda.ac.uk/events/past/jasmin2017/</link>
+      <pubDate>Tue, 27 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ceda.ac.uk/events/past/jasmin2017/</guid>
+      <description>Introduction Conference Programme Introduction The second JASMIN Conference on Advanced Computing for Environmental Science was held at the STFC Rutherford Appleton Laboratory (RAL) on 27th and 28th June 2017, with attendees from universities and research institutions across the UK and further afield.</description>
+    </item>
+    
+    <item>
+      <title>JASMIN Conference 2016</title>
+      <link>https://www.ceda.ac.uk/events/past/jasmin2016/</link>
+      <pubDate>Mon, 27 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ceda.ac.uk/events/past/jasmin2016/</guid>
+      <description>Thanks for coming to the JASMIN user conference! A big thank you to all who attended and contributed to our first JASMIN User Conference, held at RAL on 27/28 June 2016.</description>
+    </item>
+    
+    <item>
+      <title>JASMIN virtual event 2020</title>
+      <link>https://www.ceda.ac.uk/events/past/jasmin-virtual-event2020/</link>
+      <pubDate>Mon, 27 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ceda.ac.uk/events/past/jasmin-virtual-event2020/</guid>
+      <description>A virtual event was run at the end of September, as a replacement for the JASMIN conference that was due to take place earlier this year.</description>
+    </item>
+    
+    <item>
+      <title>Transitioning to SLURM webinar</title>
+      <link>https://www.ceda.ac.uk/events/past/slurm-webinar/</link>
+      <pubDate>Mon, 27 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ceda.ac.uk/events/past/slurm-webinar/</guid>
+      <description>SLURM has become the officially supported batch scheduler on JASMIN from the end of June 2020. All batch jobs and workflows needed to be modified in order to use the batch scheduler SLURM and the CentOS7 LOTUS cluster.</description>
+    </item>
+    
+    <item>
+      <title>JASMIN Launch Event 2014</title>
+      <link>https://www.ceda.ac.uk/events/past/jasmin-launch-event/</link>
+      <pubDate>Tue, 03 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ceda.ac.uk/events/past/jasmin-launch-event/</guid>
+      <description>(copy of STFC web note released at the JASMIN Launch event on Monday 2nd June 2014)
+UK science community to benefit from major cloud computing and storage upgrade STFC and NERC today (2 June 2014) celebrate the completion of a major upgrade to the JASMIN data analysis infrastructure that plays a key role in the assessment and evaluation of huge sets of environmental data produced by the UK scientific community.</description>
+    </item>
+    
+    <item>
+      <title>JASMIN Forum 2012</title>
+      <link>https://www.ceda.ac.uk/events/past/jasmin-forum2012/</link>
+      <pubDate>Tue, 25 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ceda.ac.uk/events/past/jasmin-forum2012/</guid>
+      <description>Introduction On 25 September 2012, NCAS hosted a research forum at Reading University to address the challenges of large scale data analysis in the numerical weather prediction, oceanographic and climate science community.</description>
+    </item>
+    
+  </channel>
+</rss>
