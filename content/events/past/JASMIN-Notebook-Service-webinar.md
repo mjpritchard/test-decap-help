@@ -6,6 +6,7 @@ date: 2020-06-16
 title: Demo of the JASMIN Notebook Service webinar
 description: Webinar so users can find out about the JASMIN Notebook Service's key feature in this demo.
 icon: fas newspaper
+aliases: ['/events/jasmin-notebook-service-webinar']
 ---
 <p><span>In this webinar, we will talk you through some of the <a href="https://help.jasmin.ac.uk/article/4851-jasmin-notebook-service">JASMIN Notebook Service&rsquo;s</a>&nbsp;key features. <br /><br /></span>The JASMIN Notebook service provides access to <a href="https://jupyter.org/">Jupyter Notebooks</a> in the web browser. A Jupyter Notebook is an interactive document containing live code, documentation and visualisations that can be run and edited in a web browser.</p>
 

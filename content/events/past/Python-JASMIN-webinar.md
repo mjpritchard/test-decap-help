@@ -6,6 +6,7 @@ date: 2019-12-14
 title: Using Python on JASMIN webinar
 description: This webinar explored four case studies for using Python on JASMIN.
 icon: fa-brands python
+aliases: ['/events/python-jasmin-webinar']
 ---
 This webinar explored four case studies for using Python on JASMIN. In a 1 hour webinar, we cannot teach the entire Python language to beginners - but we hope our examples will give you an idea of the things Python can be used for to do science-related coding. Each case study is represented as a Python script that you could run interactively on JASMIN.
 

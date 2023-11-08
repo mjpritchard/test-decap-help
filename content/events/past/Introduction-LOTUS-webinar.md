@@ -6,6 +6,7 @@ date: 2018-10-17
 title: Introduction to LOTUS - JASMIN's batch computing cluster webinar
 description: This webinar focussed on how researchers can use JASMIN's batch computing cluster - LOTUS.
 icon: fas fan
+aliases: ['/events/introduction-lotus-webinar']
 ---
 LOTUS is a JASMIN* service which enables efficient scheduling of large scale data analysis tasks. This is useful for researchers wanting to improve or change their workflows for carrying out tasks such as processing high resolution climate simulations, tracking tropical cyclones or other data intensive tasks.
 

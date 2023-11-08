@@ -5,6 +5,7 @@ date: 2018-09-27
 title: Give us your data - how to prepare your research for the CEDA Archive webinar
 description: Covering topics such as data management planning, metadata and submitting data.
 icon: fas paper-plane
+aliases: ['/events/data-preparation-ceda-archive-webinar']
 ---
 <p>This&nbsp;webinar focussed on how researchers can prepare their research for the CEDA Archive*, covering the following topics:</p>
 <ul>

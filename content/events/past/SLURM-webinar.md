@@ -5,6 +5,7 @@ date: 2016-06-27
 title: Transitioning to SLURM webinar
 description: Webinar explaining changes with SLURM, the new official batch scheduler on JASMIN.
 icon: fas cubes-stacked
+aliases: ['/events/slurm-webinar']
 ---
 <p> SLURM has become the officially supported batch scheduler on JASMIN from the end of June 2020. All batch jobs and workflows needed to be modified in order to use the batch scheduler SLURM and the CentOS7 LOTUS cluster. This webinar gave an overview of what this change means for users and provide an opportunity to answer any questions you may have. Here is the <a href="https://help.jasmin.ac.uk/category/4889-slurm">SLURM documentation.</a>  </span></p>
 

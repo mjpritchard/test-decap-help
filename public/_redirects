@@ -54,6 +54,7 @@
 /blog/vacancies-2023-feb /news/updates/2023/2023-02-02-vacancies-2023-feb/
 /blog/update-2-jasmin-maintenance-work-still-in-progress /news/updates/2023/2023-02-01-update-2-jasmin-maintenance-work-still-in-progress/
 /blog/update-on-jasmin-maintenance-tues-31-jan-2023-window-extended /news/updates/2023/2023-01-31-update-on-jasmin-maintenance-tues-31-jan-2023-window-extended/
+/events/jasmin-orchid-webinar /events/past/jasmin-orchid-webinar/
 /blog/jasmin-gpu-webinar-31st-jan-2023-agenda-and-joining-details /news/updates/2023/2023-01-27-jasmin-gpu-webinar-31st-jan-2023-agenda-and-joining-details/
 /blog/update-on-tape-services-and-storage-issues /news/updates/2023/2023-01-12-update-on-tape-services-and-storage-issues/
 /blog/upcoming-events-net-zero-digital-research-infrastructure /news/updates/2023/2023-01-12-upcoming-events-net-zero-digital-research-infrastructure/
@@ -132,6 +133,7 @@
 /blog/jasmin-updates-network-maintenance /news/updates/2021/2021-08-11-jasmin-updates-network-maintenance/
 /blog/important-jasmin-updates-august-2021 /news/updates/2021/2021-08-10-important-jasmin-updates-august-2021/
 /blog/the-data-behind-the-new-ipcc-report /news/updates/2021/2021-08-09-the-data-behind-the-new-ipcc-report/
+/events/jasmin-notebook-webinar /events/past/jupyter-notebook-webinar/
 /blog/improved-access-for-met-office-weather-data-held-in-ceda-archive /news/updates/2021/2021-07-29-improved-access-for-met-office-weather-data-held-in-ceda-archive/
 /blog/jasmin-updates-1-network-maintenance-2-elastic-tapejdma /news/updates/2021/2021-07-27-jasmin-updates-1-network-maintenance-2-elastic-tapejdma/
 /blog/ceda-and-jasmin-support-over-summer-period /news/updates/2021/2021-07-23-ceda-and-jasmin-support-over-summer-period/
@@ -163,6 +165,7 @@
 /blog/final-reminder-jasmin-system-maintenance-tomorrow-tues-2-march-2021 /news/updates/2021/2021-03-01-final-reminder-jasmin-system-maintenance-tomorrow-tues-2-march-2021/
 /blog/update-to-high-performance-data-transfer-services-1 /news/updates/2021/2021-02-26-update-to-high-performance-data-transfer-services-1/
 /blog/advance-notice-jasmin-system-maintenance-tues-2-march-2021 /news/updates/2021/2021-02-23-advance-notice-jasmin-system-maintenance-tues-2-march-2021/
+/events/jasmin-hands-on-workshop /events/past/jasmin-hands-on-workshop/
 /blog/update-problems-with-elastic-tape /news/updates/2021/2021-02-19-update-problems-with-elastic-tape/
 /blog/reboot-of-server-nx-login2-at-1600-today /news/updates/2021/2021-02-17-reboot-of-server-nx-login2-at-1600-today/
 /blog/jasmin-sci35-reboot-at-0900-am-tomorrow /news/updates/2021/2021-02-16-jasmin-sci35-reboot-at-0900-am-tomorrow/
@@ -175,6 +178,7 @@
 /blog/jasmin-helps-track-the-impact-of-climate-change-on-uk-birds /news/updates/2021/2021-01-28-jasmin-helps-track-the-impact-of-climate-change-on-uk-birds/
 /blog/file-corruption-issues /news/updates/2021/2021-01-26-file-corruption-issues/
 /blog/reboot-of-server-hpxfer1jasminacuk /news/updates/2021/2021-01-25-reboot-of-server-hpxfer1jasminacuk/
+/events/stfc-air-quality-network-event /events/past/stfc-air-quality-network-event/
 /blog/jasmin-sci368-reboot-at-0830-am-tomorrow /news/updates/2021/2021-01-20-jasmin-sci368-reboot-at-0830-am-tomorrow/
 /blog/change-of-server-for-elastic-tape-service /news/updates/2021/2021-01-20-change-of-server-for-elastic-tape-service/
 /events/jasmin-user-seminar-series /events/past/jasmin-user-seminar-series/
@@ -234,6 +238,7 @@
 /blog/jasmin-and-ceda-services-affected-by-power-outage /news/updates/2020/2020-06-22-jasmin-and-ceda-services-affected-by-power-outage/
 /blog/user-survey-to-gauge-needs-in-preparation-for-purchase-of-a-new-gpu-cluster /news/updates/2020/2020-06-22-user-survey-to-gauge-needs-in-preparation-for-purchase-of-a-new-gpu-cluster/
 /blog/changes-to-jasmin-helpdesk /news/updates/2020/2020-06-16-changes-to-jasmin-helpdesk/
+/events/jasmin-notebook-service-webinar /events/past/jasmin-notebook-service-webinar/
 /blog/reminder-jasmin-at-risk-period-11th-june-2020 /news/updates/2020/2020-06-10-reminder-jasmin-at-risk-period-11th-june-2020/
 /blog/jasmin-migration-to-centos7-lsf-replacement-with-slurm-update-8 /news/updates/2020/2020-06-05-jasmin-migration-to-centos7-lsf-replacement-with-slurm-update-8/
 /blog/jasmin-at-risk-period-11th-june-2020 /news/updates/2020/2020-06-02-jasmin-at-risk-period-11th-june-2020/
@@ -288,6 +293,8 @@
 /blog/celebrating-25-years-of-ceda /news/updates/2019/2019-12-20-celebrating-25-years-of-ceda/
 /blog/advance-notice-jasmin-maintenance-tues-14-jan-2020 /news/updates/2019/2019-12-19-advance-notice-jasmin-maintenance-tues-14-jan-2020/
 /blog/christmas-shutdown /news/updates/2019/2019-12-17-christmas-shutdown/
+/events/python-jasmin-webinar /events/past/python-jasmin-webinar/
+/events/lotus-webinar /events/past/lotus-webinar/
 /blog/jasmin-migration-to-centos7-update-3 /news/updates/2019/2019-12-11-jasmin-migration-to-centos7-update-3/
 /blog/save-the-date-jasmin2020 /news/updates/2019/2019-12-10-save-the-date-jasmin2020/
 /blog/issues-with-downloading-data-29112019 /news/updates/2019/2019-11-29-issues-with-downloading-data-29112019/
@@ -376,16 +383,22 @@
 /blog/ukri-cloud-workshop-free-registration-now-open /news/updates/2019/2019-01-10-ukri-cloud-workshop-free-registration-now-open/
 /blog/prestigious-esgf-awards-for-ceda-staff-members /news/updates/2018/2018-12-21-prestigious-esgf-awards-for-ceda-staff-members/
 /blog/new-dataset-launched-haduk-grid /news/updates/2018/2018-12-17-new-dataset-launched-haduk-grid/
+/events/nag-jasmin-webinar /events/past/nag-jasmin-workshop/
 /blog/important-use-of-jasmin-storage-all-users-please-read /news/updates/2018/2018-11-15-important-use-of-jasmin-storage-all-users-please-read/
+/events/git-webinar /events/past/git-webinar/
 /blog/goodbye-jasmin1-hello-jasmin4 /news/updates/2018/2018-10-31-goodbye-jasmin1-hello-jasmin4/
+/events/introduction-lotus-webinar /events/past/introduction-lotus-webinar/
+/events/data-preparation-ceda-archive-webinar /events/past/data-preparation-ceda-archive-webinar/
 /blog/two-graduate-vacancies-now-open-closing-date-28th-october /news/updates/2018/2018-09-13-two-graduate-vacancies-now-open-closing-date-28th-october/
 /blog/ceda-dataset-expertise-informs-googles-new-dataset-search /news/updates/2018/2018-09-10-ceda-dataset-expertise-informs-googles-new-dataset-search/
 /blog/ceda-archive-support-for-era5-use /news/updates/2018/2018-07-23-ceda-archive-support-for-era5-use/
 /blog/experiencing-life-at-ceda-a-year-12s-placement-week /news/updates/2018/2018-07-23-experiencing-life-at-ceda-a-year-12s-placement-week/
 /blog/help-us-make-an-impact-one-survey-six-focus-groups-and-an-msc-project-how-we-plan-to-better-evidence-our-impact /news/updates/2018/2018-07-17-help-us-make-an-impact-one-survey-six-focus-groups-and-an-msc-project-how-we-plan-to-better-evidence-our-impact/
 /blog/third-annual-jasmin-conference-presentations-available-now /news/updates/2018/2018-07-16-third-annual-jasmin-conference-presentations-available-now/
+/events/jasmin2018 /events/past/jasmin2018/
 /blog/global-gathering-of-data-scientists-at-pv2018-view-their-presentations-now /news/updates/2018/2018-05-31-global-gathering-of-data-scientists-at-pv2018-view-their-presentations-now/
 /blog/new-ceda-privacy-and-cookie-notice-and-archive-terms-and-conditions /news/updates/2018/2018-05-24-new-ceda-privacy-and-cookie-notice-and-archive-terms-and-conditions/
+/events/pv2018-conference /events/past/pv2018-conference/
 /blog/ceda-data-catalogue-new-improved-search-functions /news/updates/2018/2018-05-03-ceda-data-catalogue-new-improved-search-functions/
 /blog/getting-started-with-jasmin-watch-the-webinar-now /news/updates/2018/2018-04-13-getting-started-with-jasmin-watch-the-webinar-now/
 /blog/ceda-wps-service-presently-down /news/updates/2018/2018-04-03-ceda-wps-service-presently-down/
@@ -393,6 +406,7 @@
 /blog/upgrade-to-uk-environmental-science-supercomputer-will-make-it-twice-as-capable /news/updates/2018/2018-03-08-upgrade-to-uk-environmental-science-supercomputer-will-make-it-twice-as-capable/
 /blog/celebrating-international-womens-day-at-ceda /news/updates/2018/2018-03-08-celebrating-international-womens-day-at-ceda/
 /blog/jasmin-upgrade-reminders-and-further-information /news/updates/2018/2018-03-07-jasmin-upgrade-reminders-and-further-information/
+/events/getting-started-jasmin-webinar /events/past/getting-started-jasmin-webinar/
 /blog/jasmin-upgrade-1-unavailability-14th-march-2-gws-changes /news/updates/2018/2018-02-23-jasmin-upgrade-1-unavailability-14th-march-2-gws-changes/
 /blog/esgf-award-for-work-undertaken-by-ceda-staff /news/updates/2017/2017-12-19-esgf-award-for-work-undertaken-by-ceda-staff/
 /blog/unearthed-a-science-showcase-with-ice-beards-pledges-and-grains-of-rice /news/updates/2017/2017-11-30-unearthed-a-science-showcase-with-ice-beards-pledges-and-grains-of-rice/
@@ -409,6 +423,7 @@
 /blog/reminder-ceda-and-jasmin-storage-downtime-12-13-july-no-new-job-submission-at-present /news/updates/2017/2017-07-11-reminder-ceda-and-jasmin-storage-downtime-12-13-july-no-new-job-submission-at-present/
 /blog/update-to-jasmin-analysis-platform-software-across-lotus-hosts /news/updates/2017/2017-07-11-update-to-jasmin-analysis-platform-software-across-lotus-hosts/
 /blog/new-map-application-launched-ceda-satellite-data-finder /news/updates/2017/2017-07-04-new-map-application-launched-ceda-satellite-data-finder/
+/events/jasmin2017 /events/past/jasmin2017/
 /blog/ceda-esgf-nodes-back-in-service /news/updates/2017/2017-06-23-ceda-esgf-nodes-back-in-service/
 /blog/eufar-flight-finder-sentinel-opensearch-back-in-service /news/updates/2017/2017-06-23-eufar-flight-finder-sentinel-opensearch-back-in-service/
 /blog/temporary-disruption-to-esgf-eufar-flight-finder-and-sentinel-opensearch-services /news/updates/2017/2017-06-23-temporary-disruption-to-esgf-eufar-flight-finder-and-sentinel-opensearch-services/
@@ -437,6 +452,9 @@
 /blog/high-flying-year-in-industry-student-kate-winfields-time-with-ceda /news/updates/2016/2016-07-29-high-flying-year-in-industry-student-kate-winfields-time-with-ceda/
 /blog/ceda-data-commenting-tool-launch-at-rmetsoc-2016-conference /news/updates/2016/2016-07-05-ceda-data-commenting-tool-launch-at-rmetsoc-2016-conference/
 /blog/ukssdc-website-and-services-partially-restored /news/updates/2016/2016-06-29-ukssdc-website-and-services-partially-restored/
+/events/jasmin2016 /events/past/jasmin2016/
+/events/jasmin-virtual-event2020 /events/past/jasmin-virtual-event2020/
+/events/slurm-webinar /events/past/slurm-webinar/
 /blog/ceda-staff-data-curation-takes-off-literally /news/updates/2016/2016-03-18-ceda-staff-data-curation-takes-off-literally/
 /blog/change-to-ecmwf-era-data-usage-licencing /news/updates/2016/2016-02-19-change-to-ecmwf-era-data-usage-licencing/
 /blog/ceda-site-and-services-back-up-but-remain-at-risk /news/updates/2016/2016-01-13-ceda-site-and-services-back-up-but-remain-at-risk/
@@ -454,6 +472,7 @@
 /blog/ceda-openid-unavailable-services-affected /news/updates/2014/2014-08-15-ceda-openid-unavailable-services-affected/
 /blog/update-jasmin-vm-disruptions-2207 /news/updates/2014/2014-07-22-update-jasmin-vm-disruptions-2207/
 /blog/mars-analysis-correction-data-assimilation-fully-citable-dataset-at-badc /news/updates/2014/2014-06-26-mars-analysis-correction-data-assimilation-fully-citable-dataset-at-badc/
+/events/jasmin-launch-event /events/past/jasmin-launch-event/
 /blog/ceda-ftp-service-upgraded /news/updates/2014/2014-04-02-ceda-ftp-service-upgraded/
 /blog/news-article-on-jasmin-phases-2-and-3 /news/updates/2014/2014-01-08-news-article-on-jasmin-phases-2-and-3/
 /blog/idl-and-midl-available-on-the-jasmin-analysis-servers /news/updates/2013/2013-11-28-idl-and-midl-available-on-the-jasmin-analysis-servers/
@@ -468,6 +487,7 @@
 /blog/stfc-work-experience-scheme-2013 /news/updates/2012/2012-12-18-stfc-work-experience-scheme-2013/
 /blog/ceda-summer-placements-2012 /news/updates/2012/2012-10-05-ceda-summer-placements-2012/
 /blog/ceda-openid-service-operational-again-login-to-wps-and-badc-cmip5-gateway-restored /news/updates/2012/2012-09-25-ceda-openid-service-operational-again-login-to-wps-and-badc-cmip5-gateway-restored/
+/events/jasmin-forum2012 /events/past/jasmin-forum2012/
 /blog/global-marine-surface-observations-now-available-from-ceda-badc /news/updates/2012/2012-08-28-global-marine-surface-observations-now-available-from-ceda-badc/
 /blog/ceda-data-migrations-possible-impacts /news/updates/2012/2012-08-16-ceda-data-migrations-possible-impacts/
 /blog/badc-trajectory-service-available-again /news/updates/2012/2012-05-11-badc-trajectory-service-available-again/

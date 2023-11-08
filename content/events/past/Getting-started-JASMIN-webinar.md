@@ -6,6 +6,7 @@ date: 2018-03-01
 title: Getting started with JASMIN webinar
 description: A beginners guide to using JASMIN.
 icon: fas seedling
+aliases: ['/events/getting-started-jasmin-webinar']
 ---
 <p>This&nbsp;webinar focussed&nbsp;on how new users can &lsquo;get started&rsquo; on JASMIN, a globally unique data intensive supercomputer for environmental science.</p>
 <p>Covering the following topics:</p>

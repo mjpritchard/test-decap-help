@@ -5,7 +5,8 @@ categories:
 date: 2018-06-27
 title: JASMIN Conference 2018
 icon: fas people-group
-description: Third ever JASMIN User conference educating people about the amazing capabilities of JASMIN. 
+description: Third ever JASMIN User conference educating people about the amazing capabilities of JASMIN.
+aliases: ['/events/jasmin2018'] 
 ---
 <div class="container">
 <div class="row">

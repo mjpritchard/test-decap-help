@@ -5,7 +5,8 @@ categories:
 date: 2017-06-27
 title: JASMIN Conference 2017
 icon: fas people-group
-description: Second ever JASMIN User conference allowing people to come together to discuss JASMIN. 
+description: Second ever JASMIN User conference allowing people to come together to discuss JASMIN.
+aliases: ['/events/jasmin2017'] 
 ---
 
 <div class="container">
