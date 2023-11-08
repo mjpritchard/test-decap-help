@@ -6,6 +6,7 @@ date: 2021-01-20
 title: JASMIN User Seminar Series
 description: User seminars that are aimed to encourage knowledge sharing and best practice between JASMIN users - whilst showcasing the types of science enabled by JASMIN. 
 icon: fas seedling
+aliases: ['/events/jasmin-user-seminar-series']
 ---
 <table class="table table-responsive table-striped">
 <tbody>
