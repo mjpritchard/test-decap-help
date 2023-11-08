@@ -5,6 +5,7 @@ date: 2018-05-15
 title: PV2018 Conference - Adding value and preserving data
 icon: "fa-solid fa-satellite-dish"
 description:  This conference is an opportunity to explore issues of data management planning and archive appraisal.
+aliases: ['/events/pv2018-conference']
 ---
 The PV 2018 Conference welcomes you to its 9th edition, to be held 15th – 17th May 2018 at the Rutherford Appleton Laboratory, Harwell Space Cluster (UK ), hosted by the UK Space Agency and jointly organised by STFC, NCEO and the Satellite Applications Catapult.
 

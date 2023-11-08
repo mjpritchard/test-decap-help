@@ -5,6 +5,7 @@ date: 2018-11-28
 title: An introduction to NAG & NAG/Python interface on JASMIN workshop
 description: An overview of NAG and how the Python interface works on JASMIN.
 icon: fa-regular hand-lizard
+aliases: ['/events/nag-jasmin-webinar']
 ---
 <p><span>NAG have just announced the availability of the new<span>&nbsp;</span></span><a href="https://support.nag.com/numeric/py/nagdoc_latest/index.html" target="_blank"><span>NAG Library for Python</span></a><span>. The re-engineering of the NAG Library for Python offers many usability improvements enabling quicker application development including, self-contained routine documentation, thread-safety, curated examples demonstrating important algorithmic and Python-related functionality, support for native Python callbacks and C language routine equivalents giving a unified route from prototyping in Python to deploying as compiled code.  </span></p>
 <p><span>NAG Library for Python key features and benefits of this release:</span></p>

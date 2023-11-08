@@ -6,6 +6,7 @@ date: 2016-06-27
 title: JASMIN Conference 2016
 icon: fas people-group
 description: First ever JASMIN User conference sharing knowledge and ideas about JASMIN. 
+aliases: ['/events/jasmin2016']
 ---
 
 <h2>Thanks for coming to the JASMIN user conference!</h2>

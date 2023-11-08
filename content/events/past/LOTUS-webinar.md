@@ -6,6 +6,7 @@ date: 2019-12-13
 title: Designing efficient workflows on LOTUS webinar
 description: This webinar demonstrates two workflows available for using LOTUS.
 icon: fas fan
+aliases: ['/events/lotus-webinar']
 ---
 This webinar demonstrates two workflows for using LOTUS*. The first example will show you how to build a workflow that can be re-submitted without re-running previously completed tasks and which reports failures in a traceable way. The second example will help you learn how to submit, monitor, and control high throughput workloads using the LSF "job array" utility. Both examples aim to increase users understanding of how to use LOTUS efficiently.
 
