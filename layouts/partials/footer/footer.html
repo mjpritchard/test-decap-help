@@ -26,15 +26,16 @@
             </div>
 
             <div class="col text-start">
-                <h2 class="footer-heading">Contact us</h2>
+                <h2 class="footer-heading">
+                    Contact us
+                </h2>
                 <ul class="list-unstyled">
                     <li>
                         {{ $link := partial "utilities/link" (dict "destination" (index site.Params.links "ceda_helpdocs") "text" "Documentation" "class" "link-bg-footer") }}
                         {{ $link | safeHTML }}
                     </li>
                     <li>
-                        {{ $link := partial "utilities/link" (dict "destination" (index site.Params.links "ceda_helpdesk") "text" "Helpdesk" "class" "link-bg-footer") }}
-                        {{ $link | safeHTML }}
+                        <a href="javascript:void(0);" id="beacon" onclick="Beacon('toggle')">Helpdesk</a>
                     </li>
                 </ul>
             </div>

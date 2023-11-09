@@ -7694,5 +7694,14 @@ For the time being, please use the link to List of all datasets in BADC catalogu
       <description>10th Dec. 1996: GIF images of ADEOS and Earth-Probe TOMS are now being produced automatically on arrival of the data at the BADC.</description>
     </item>
     
+    <item>
+      <title>Contact</title>
+      <link>https://www.ceda.ac.uk/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ceda.ac.uk/contact/</guid>
+      <description>The best way to contact us is via email, if you aren&amp;rsquo;t sure which email is correct then use support@ceda.ac.uk and we can direct you to the right place.</description>
+    </item>
+    
   </channel>
 </rss>
