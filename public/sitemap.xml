@@ -2,20 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.ceda.ac.uk/tags/ceda/</loc>
+    <lastmod>2023-11-23T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.ceda.ac.uk/news/updates/2023/2023-11-23-ceda-jasmin-latest-improvments/</loc>
+    <lastmod>2023-11-23T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.ceda.ac.uk/tags/jasmin/</loc>
+    <lastmod>2023-11-23T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.ceda.ac.uk/tags/news/</loc>
+    <lastmod>2023-11-23T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.ceda.ac.uk/tags/</loc>
+    <lastmod>2023-11-23T10:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://www.ceda.ac.uk/events/introduction-scientific-computing/</loc>
     <lastmod>2023-10-20T13:38:57+01:00</lastmod>
   </url><url>
-    <loc>https://www.ceda.ac.uk/tags/jasmin/</loc>
-    <lastmod>2023-11-09T11:59:00+00:00</lastmod>
-  </url><url>
     <loc>https://www.ceda.ac.uk/news/updates/2023/2023-11-06-jasmin-power-maintenance-complete/</loc>
     <lastmod>2023-11-06T10:30:56+00:00</lastmod>
-  </url><url>
-    <loc>https://www.ceda.ac.uk/tags/news/</loc>
-    <lastmod>2023-11-09T11:59:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.ceda.ac.uk/tags/</loc>
-    <lastmod>2023-11-09T11:59:00+00:00</lastmod>
   </url><url>
     <loc>https://www.ceda.ac.uk/events/jasmin-conference-2023/</loc>
     <lastmod>2023-11-09T11:59:00+00:00</lastmod>
