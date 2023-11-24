@@ -2,19 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.ceda.ac.uk/tags/jasmin/</loc>
+    <lastmod>2023-11-24T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.ceda.ac.uk/tags/news/</loc>
+    <lastmod>2023-11-24T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.ceda.ac.uk/tags/</loc>
+    <lastmod>2023-11-24T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.ceda.ac.uk/news/updates/2023/2023-11-24-updates-to-software-environments-jaspy-jasr/</loc>
+    <lastmod>2023-11-24T10:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://www.ceda.ac.uk/tags/ceda/</loc>
     <lastmod>2023-11-23T10:33:28+00:00</lastmod>
   </url><url>
     <loc>https://www.ceda.ac.uk/news/updates/2023/2023-11-23-ceda-jasmin-latest-improvments/</loc>
-    <lastmod>2023-11-23T10:33:28+00:00</lastmod>
-  </url><url>
-    <loc>https://www.ceda.ac.uk/tags/jasmin/</loc>
-    <lastmod>2023-11-23T10:33:28+00:00</lastmod>
-  </url><url>
-    <loc>https://www.ceda.ac.uk/tags/news/</loc>
-    <lastmod>2023-11-23T10:33:28+00:00</lastmod>
-  </url><url>
-    <loc>https://www.ceda.ac.uk/tags/</loc>
     <lastmod>2023-11-23T10:33:28+00:00</lastmod>
   </url><url>
     <loc>https://www.ceda.ac.uk/events/introduction-scientific-computing/</loc>
@@ -1713,49 +1716,49 @@
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
   </url><url>
     <loc>https://www.ceda.ac.uk/news/updates/2011/2011-09-29-badc-webserver-recovery-continued/</loc>
-    <lastmod>2023-10-19T08:47:13+01:00</lastmod>
+    <lastmod>2023-11-23T13:29:09+00:00</lastmod>
   </url><url>
     <loc>https://www.ceda.ac.uk/news/updates/2011/2011-09-20-badc-webserver-recovery/</loc>
-    <lastmod>2023-10-19T08:47:13+01:00</lastmod>
+    <lastmod>2023-11-23T13:29:09+00:00</lastmod>
   </url><url>
     <loc>https://www.ceda.ac.uk/news/updates/2011/2011-09-15-badc-webserver-static-pages-up/</loc>
-    <lastmod>2023-10-19T08:47:13+01:00</lastmod>
+    <lastmod>2023-11-23T13:29:09+00:00</lastmod>
   </url><url>
     <loc>https://www.ceda.ac.uk/news/updates/2011/2011-09-13-badc-webserver-compromised/</loc>
-    <lastmod>2023-10-19T08:47:13+01:00</lastmod>
+    <lastmod>2023-11-23T13:29:09+00:00</lastmod>
   </url><url>
     <loc>https://www.ceda.ac.uk/news/updates/2011/2011-08-16-server-problems-notice-of-affected-datasets/</loc>
-    <lastmod>2023-10-19T08:47:13+01:00</lastmod>
+    <lastmod>2023-11-23T13:29:09+00:00</lastmod>
   </url><url>
     <loc>https://www.ceda.ac.uk/news/updates/2011/2011-07-21-network-and-server-problems-notice-of-affected-datasets/</loc>
-    <lastmod>2023-10-19T08:47:13+01:00</lastmod>
+    <lastmod>2023-11-23T13:29:09+00:00</lastmod>
   </url><url>
     <loc>https://www.ceda.ac.uk/news/updates/2011/2011-07-07-ecsn-data-management-workshop-2011-october-edinburgh/</loc>
-    <lastmod>2023-10-19T08:47:13+01:00</lastmod>
+    <lastmod>2023-11-23T13:29:09+00:00</lastmod>
   </url><url>
     <loc>https://www.ceda.ac.uk/news/updates/2011/2011-05-16-ceda-develops-visualisation-service-for-the-international-space-innovation-centre/</loc>
-    <lastmod>2023-10-19T08:47:13+01:00</lastmod>
+    <lastmod>2023-11-23T13:29:09+00:00</lastmod>
   </url><url>
     <loc>https://www.ceda.ac.uk/news/updates/2011/2011-03-29-badc-spring-clean-disk-maintenance-advance-warning/</loc>
-    <lastmod>2023-10-19T08:47:13+01:00</lastmod>
+    <lastmod>2023-11-23T13:29:09+00:00</lastmod>
   </url><url>
     <loc>https://www.ceda.ac.uk/news/updates/2011/2011-03-29-disk-maintenance-metdb-link-and-met-office-surfac/</loc>
-    <lastmod>2023-10-19T08:47:13+01:00</lastmod>
+    <lastmod>2023-11-23T13:29:09+00:00</lastmod>
   </url><url>
     <loc>https://www.ceda.ac.uk/news/updates/2011/2011-03-17-midas-data-2011-updates-delayed/</loc>
-    <lastmod>2023-10-19T08:47:13+01:00</lastmod>
+    <lastmod>2023-11-23T13:29:09+00:00</lastmod>
   </url><url>
     <loc>https://www.ceda.ac.uk/news/updates/2011/2011-03-09-aatsr-data-access-resumed/</loc>
-    <lastmod>2023-10-19T08:47:13+01:00</lastmod>
+    <lastmod>2023-11-23T13:29:09+00:00</lastmod>
   </url><url>
     <loc>https://www.ceda.ac.uk/news/updates/2011/2011-03-07-advance-warning-neodc-services-at-risk/</loc>
-    <lastmod>2023-10-19T08:47:13+01:00</lastmod>
+    <lastmod>2023-11-23T13:29:09+00:00</lastmod>
   </url><url>
     <loc>https://www.ceda.ac.uk/news/updates/2011/2011-03-07-advance-warning-of-site-maintenance-work-badc-ser/</loc>
-    <lastmod>2023-10-19T08:47:13+01:00</lastmod>
+    <lastmod>2023-11-23T13:29:09+00:00</lastmod>
   </url><url>
     <loc>https://www.ceda.ac.uk/news/updates/2011/2011-02-23-aatsr-data-unavailable/</loc>
-    <lastmod>2023-10-19T08:47:13+01:00</lastmod>
+    <lastmod>2023-11-23T13:29:09+00:00</lastmod>
   </url><url>
     <loc>https://www.ceda.ac.uk/news/updates/2010/2010-12-20-neodc-closure-during-christmas-and-new-year-201011/</loc>
     <lastmod>2023-10-19T08:47:13+01:00</lastmod>
