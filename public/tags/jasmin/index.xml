@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2023 Science and Technology Facilities Council.</copyright>
-    <lastBuildDate>Fri, 24 Nov 2023 10:00:00 +0000</lastBuildDate><atom:link href="https://www.ceda.ac.uk/tags/jasmin/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Nov 2023 10:00:00 +0000</lastBuildDate><atom:link href="https://www.ceda.ac.uk/tags/jasmin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Join our Communicating Climate Uncertainty Workshop on November 30th!</title>
+      <link>https://www.ceda.ac.uk/news/updates/2023/2023-11-28-communicating-climate-uncertainty-workshop/</link>
+      <pubDate>Tue, 28 Nov 2023 10:00:00 +0000</pubDate>
+      
+      <guid>https://www.ceda.ac.uk/news/updates/2023/2023-11-28-communicating-climate-uncertainty-workshop/</guid>
+      <description>You are invited to a workshop on Uncertainty, delving into the crucial dialogue surrounding how users and providers of climate information navigate uncertainties.</description>
+    </item>
+    
     <item>
       <title>Updates to software environments Jaspy and Jasr</title>
       <link>https://www.ceda.ac.uk/news/updates/2023/2023-11-24-updates-to-software-environments-jaspy-jasr/</link>
@@ -37,10 +46,10 @@
     
     <item>
       <title>JASMIN Conference 2023</title>
-      <link>https://www.ceda.ac.uk/events/jasmin-conference-2023/</link>
+      <link>https://www.ceda.ac.uk/events/past/jasmin-conference-2023/</link>
       <pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ceda.ac.uk/events/jasmin-conference-2023/</guid>
+      <guid>https://www.ceda.ac.uk/events/past/jasmin-conference-2023/</guid>
       <description>We will be hosting the next JASMIN conference at our host institute on the Harwell Campus in Oxfordshire. It will occur over two half days on the afternoon of Wednesday 1 and the morning of Thursday 2 November 2023.</description>
     </item>
     
