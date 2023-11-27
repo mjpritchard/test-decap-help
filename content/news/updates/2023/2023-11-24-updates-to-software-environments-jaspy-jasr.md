@@ -15,7 +15,7 @@ The new version of Jaspy (jaspy/3.10/r20230718) and Jasr (jasr/4.2/r20230718) ar
 
 The previous Jaspy and Jasr releases will continue to be available if preferred, by loading the module with its full label e.g. {{< command >}} module load jaspy/3.10/r20220721 {{< /command >}}
 
-Please note that the JASMIN Notebook Service will have the new version of Jaspy: jaspy/3.10/r20230718
+Please note that the JASMIN Notebook Service will have the new version of Jaspy:  jaspy/3.10/r20230718
 
 The new release includes updates to a number of software packages as well as some new tools. The release, labelled as "jaspy/3.10/r20230718" is described on our Help Page at: https://help.jasmin.ac.uk/article/4729-jaspy-envs.
 
