@@ -2,19 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.ceda.ac.uk/news/updates/2023/2023-12-06-globus-changes/</loc>
+    <lastmod>2023-12-06T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.ceda.ac.uk/tags/jasmin/</loc>
+    <lastmod>2023-12-06T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.ceda.ac.uk/tags/news/</loc>
+    <lastmod>2023-12-06T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.ceda.ac.uk/tags/</loc>
+    <lastmod>2023-12-06T10:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://www.ceda.ac.uk/events/communicating-climate-uncertainty-workshop/</loc>
     <lastmod>2023-11-27T15:35:28+00:00</lastmod>
   </url><url>
-    <loc>https://www.ceda.ac.uk/tags/news/</loc>
-    <lastmod>2023-11-27T15:35:28+00:00</lastmod>
-  </url><url>
-    <loc>https://www.ceda.ac.uk/tags/</loc>
-    <lastmod>2023-11-27T15:35:28+00:00</lastmod>
-  </url><url>
     <loc>https://www.ceda.ac.uk/tags/ceda/</loc>
-    <lastmod>2023-11-27T15:35:28+00:00</lastmod>
-  </url><url>
-    <loc>https://www.ceda.ac.uk/tags/jasmin/</loc>
     <lastmod>2023-11-27T15:35:28+00:00</lastmod>
   </url><url>
     <loc>https://www.ceda.ac.uk/news/updates/2023/2023-11-28-communicating-climate-uncertainty-workshop/</loc>
