@@ -1,4 +1,4 @@
-name: Test deploy to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -39,4 +39,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          cname: ceda-test.ceda.ac.uk
+          cname: www.ceda.ac.uk
