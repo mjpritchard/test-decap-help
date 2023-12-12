@@ -1,5 +1,5 @@
 ---
-title: JASMIN Accounts Portal Downtime
+title: JASMIN Accounts Portal Downtime 14/12/23
 date: 2023-12-12 09:00:00+00:00
 tags: ['news', 'jasmin']
 thumbnail: 
