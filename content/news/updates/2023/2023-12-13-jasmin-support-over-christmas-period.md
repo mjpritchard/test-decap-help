@@ -32,17 +32,17 @@ All user queries received during this period will be answered as soon as possibl
 
 #### Closure period schedule:
 
-__Thursday 14th December 2023 - 17:00__
+##### Thursday 14th December 2023 - 17:00
 
 - change freeze starts
 - limited helpdesk support available
 
-__Friday 22nd December 2023__
+##### Friday 22nd December 2023
 
 - site closure at 15:00 GMT
 - services unsupported.
 
-__Tuesday 2nd January 2024__
+##### Tuesday 2nd January 2024
 
 - site reopens
 - normal service resumes
