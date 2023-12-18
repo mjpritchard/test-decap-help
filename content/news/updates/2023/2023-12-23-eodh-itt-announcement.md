@@ -4,6 +4,7 @@ date: 2023-12-13 12:45:00+00:00
 tags: ['news', 'ceda', 'eodh']
 thumbnail: 
 icon: fas circle-info text-info
+draft: true
 ---
 
 We are pleased to announce the release of the EO DataHub Applications and Integrations ITT which is now open for submissions. The closing date is **19th January at 14:00**.
