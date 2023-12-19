@@ -37,3 +37,5 @@ Note that this page has the correct descriptions of the Lots and their respectiv
 In the description for each Lot, there is an Additional information section which contains a link to the Delta e-Sourcing site where you can register an interest. Note that the link for registering an interest to Lot 1 (https://www.delta-esourcing.com/delta/respondToList.html?accessCode=6278QN8T79) takes you to a page which contains an incorrect description of the lots and lot values. To reiterate, the correct description of the Lots is contained on the Finder a Tender website (https://www.find-tender.service.gov.uk/Notice/037204-2023). 
 
 If you have any questions, please raise these via the Delta e-Sourcing Portal (https://ukri.delta-esourcing.com/).
+
+EO Data Hub website: https://eodatahub.org.uk/
