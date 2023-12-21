@@ -4,14 +4,19 @@
     enableDarkMode = true
     modes = ["light", "dark"]
     canonifyAssetsURLs = false
-    endorse = false
+    endorse = true
+    loading = "lazy"
+    breakpoint = "md"
+    footerBelowFold = true
     [main.externalLinks]
-        cue = false
-        tab = false
+        cue = true
+        tab = true
+    [main.build]
+        transpiler = "libsass"
 
 [modules]
-    core = ["bootstrap", "fontawesome"] #"flexsearch", 
-    optional = ["leaflet", "katex"]
+    core = ["bootstrap", "fontawesome", "flexsearch"] #"flexsearch", 
+    optional = ["leaflet", "katex", "lottie"]
     excludeSCSS = ["bootstrap"]
     disableTemplate = ["katex"]
     [modules.fontawesome]
@@ -23,10 +28,10 @@
     showJS = false
     showSCSS = false
 
-[docs]
-    github = "https://github.com/gethinode/hinode"
-    release = "https://github.com/gethinode/hinode/releases/tag/"
-    checkVersion = false
+#[docs]
+#    github = "https://github.com/gethinode/hinode"
+#    release = "https://github.com/gethinode/hinode/releases/tag/"
+#    checkVersion = false
 
 [home]
     sections = ["news", "services", "about", "events","priorities","projects"]
@@ -36,12 +41,13 @@
 
 [navigation]
     anchor = true
-    logo = "/img/ceda-logo.png" # store -light and -dark variants
-    color = "body-tertiary"
+    logo = "/img/jasmin-logo.svg" # store -light and -dark variants
+    color = "success"
     fixed = true
     offset = "3.8em"
-    search = false
-    breadcrumb = true
+    search = true
+    searchModal = false
+    breadcrumb = false
     toc = true
     sidebar = true
     size = "md"
@@ -87,88 +93,58 @@
     clipboard = true
 
 [sections]
-    [sections.news]
-        title = "News"
-        sort = "date"
-        reverse = true
-        nested = true # TODO check at https://gethinode.com/docs/configuration/layout/
-        cols = 3
-        color = ""
-        padding = "0"
-        header = "full"
-        footer = "none"
-        orientation = "stacked"
-        style = "border-0 card-zoom"
-        homepage = 3
-        separator = true
-    [sections.priorities]
-        title = "Our priorities at CEDA"
-        layout = "nav"
-        sort = "weight"
+    [sections.docs]
+        title = "Documentation"
+        layout = "card"
+        sort = "name"
         reverse = false
-        background = "body-tertiary"
-        color = "primary"
-        style = "justify-content-center"
-        pane = "persona"
-        type = "pills"
-        class = "nav-justified"
-        width = 100
-    [sections.events]
-        title = "Events"
-        layout = "card"
-        sort = "date"
-        reverse = true
-        nested = true # TODO check at https://gethinode.com/docs/configuration/layout/
-        cols = 3
-        color = ""
-        padding = "0"
-        header = "full"
-        footer = "none"
-        orientation = "horizontal"
-        style = "border-0 card-zoom"
-        homepage = 3
-        separator = true
-    [sections.projects]
-        title = "Projects"
-        layout = "card"
-        sort = "date"
-        reverse = true
-        nested = true # TODO check at https://gethinode.com/docs/configuration/layout/
+        nested = false # TODO check at https://gethinode.com/docs/configuration/layout/
         cols = 3
         background = "body-tertiary"
         color = "body"
         padding = "3"
         header = "none"
         footer = "tags"
-        orientation = "horizontal"
+        orientation = "none" # Placement of the thumbnail, either “stacked” (default), “horizontal”, or “none”.
         style = "border-1 card-emphasize"
-        homepage = 3
-        paginate = 6
+        homepage = 6
+        paginate = 9
         separator = false
     [sections.about]
-        title = "Find out more about us"
+        title = "About JASMIN"
         layout = "card"
-        paginate = 3
-    [sections.services]
-        title = "Services we run"
-        layout = "list"
-        sort = "date"
-
+        sort = "name"
+        reverse = false
+        nested = false
+        header = "none"
 
 
 [favicon]
     logo = "img/favicon.png"
-    sizes = [16, 32, 48]
+    #sizes = [16, 32, 48]
 
 [style]
-    primary = "#446E9B"
-    secondary = "#999999"
-    success = "#3CB521"
-    info = "#3399F3"
-    warning = "#D47500"
-    danger = "#CD0200"
-    light = "#EEEEEE"
-    dark = "#333333"
+    #blue = "#007bff"
+    #indigo = "#6610f2"
+    #purple = "#6f42c1"
+    #pink = "#e83e8c"
+    #red = "#dc3545"
+    #yellow = "#ffc107"
+    #orange = "#fd7e14"
+    #green = "#28a745"
+    #teal = "#20c997"
+    #cyan = "#17a2b8"
+    #gray = "#95a5a6"
+    #white = "#fff"
+    #gray-dark = "#343a40"
+    primary = "#003088"
+    secondary = "#3E863E"
+    success = "#67C04D"
+    info = "#1E5DF8"
+    warning = "#FF6900"
+    danger = "#A91B2E"
+    #light = "#b4bcc2" #This is used as the bg for chroma code panels but is too dark. Find a lighter one or accept the default.
+    #dark = "#2E2D62"
 # toml-docs-end theme-colors
     themeOpacity = "10"
 # toml-docs-start font
@@ -233,6 +209,12 @@
     stfc = "https://stfc.ukri.org"
     nerc = "https://nerc.ukri.org"
     ukri = "https://ukri.org"
+    jasmin_accounts_portal = "https://accounts.jasmin.ac.uk"
+    jasmin_cloud_portal = "https://cloud.jasmin.ac.uk"
+    jasmin_projects_portal = "https://projects.jasmin.ac.uk"
+    jasmin_notebooks_service = "https://notebooks.jasmin.ac.uk"
+    jasmin_community_discussions = "https://github.com/cedadev/jasmin-community/discussions"
+
 
 [statusClasses]
     "down" = "danger"

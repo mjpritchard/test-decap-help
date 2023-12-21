@@ -1,11 +1,17 @@
 ---
 author: Matt Pritchard
-title: Welcome to CEDA!
+title: JASMIN Help site
+description: Documentation and training resources for JASMIN - the UK's data analysis facility for environmental science.
 thumbnail:
-    url: /img/ceda-r100-group.jpg
- #   caption: Caption can go here
+    url: /img/jasmin2023.jpg
+actions:
+  getstarted:
+    url: "docs/category-a/intro/"
+    title: "Get Started"
+    icon: "fas book-open"
+    weight: 10
+  about:
+    url: "about"
+    title: "About JASMIN"
+    weight: 20
 ---
-
-The Centre for Environmental Data Analysis is an organisation that serves the environmental science community by the provision of data centres, data analysis & access, and research project participation.
-
-{{< button href="about" >}}What we do {{< /button>}}

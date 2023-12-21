@@ -1,11 +1,11 @@
-title = "Centre for Environmental Data Analysis"
+title = "JASMIN Help Site"
 copyright = "Copyright © 2023 Science and Technology Facilities Council."
 paginate = 9
 enableGitInfo = true
 
 # additional settings
 # googleAnalytics = "G-xxxxxxxxxx"
-baseURL = "https://www.ceda.ac.uk"
+baseURL = 'https://example.org/'
 canonifyURLs = false
 enableEmoji = true
 enableRobotsTXT = true
@@ -18,7 +18,7 @@ ignoreErrors = ["error-remote-getjson"]
 
 timeout = "180s"
 
-languageCode = "en-us"
+languageCode = "en-gb"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 

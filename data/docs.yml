@@ -1,0 +1,5 @@
+# This file holds all menu entries for the docs sidebar
+
+- title: Category-A
+  pages:
+    - title: Sample doc

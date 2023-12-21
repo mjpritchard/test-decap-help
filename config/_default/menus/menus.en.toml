@@ -1,32 +1,27 @@
 [[main]]
-  name = "News"
-  pageRef = "/news/"
+  name = "Docs"
+  pageRef = "/docs/"
   weight = 10
 
 [[main]]
-  name = "Events"
-  pageRef = "/events/"
-  weight = 20
-
-[[main]]
-  name = "Status"
-  pageRef = "/status/"
+  name = "Guides"
+  pageRef = "/guides/"
   weight = 30
   
 [[main]]
-  name = "Projects"
-  pageRef = "/projects/"
+  name = "Training"
+  pageRef = "/training/"
   weight = 40
 
 [[main]]
-  name = "TechBlog"
-  url = "https://techblog.ceda.ac.uk/"
-  weight = 50
-
-[[main]]
-  name = "About"
-  pageRef = "/about/"
+  name = "Discussions"
+  url = "https://github.com/cedadev/jasmin-community/discussions"
   weight = 60
+
+#[[main]]
+#  name = "Contact"
+#  url = "" #beacon toggle?
+#  weight = 60
 
 [[social]]
   name = "X / Twitter"
@@ -45,18 +40,3 @@
   pre = "fab fa-github"
   url = "https://github.com/cedadev"
   weight = 30
-
-#[[social]]
-#  name = "LinkedIn"
-#  pre = "fab linkedin"
-#  url = "https://linkedin.com/"
-#  weight = 40
-
-#[[social]]
-#  name = "Medium"
-#  pre = "fab medium"
-#  url = "https://medium.com/"
-#  weight = 50
-
-# toml-docs-start sample-navigation
-# toml-docs-end sample-navigation
