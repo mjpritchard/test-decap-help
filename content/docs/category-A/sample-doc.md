@@ -4,7 +4,6 @@ title: Sample doc
 date: 2023-08-25
 description: A sample of a documentation page
 tags: ["language", "example"]
-layout: docs
 ---
 
 ## First heading
