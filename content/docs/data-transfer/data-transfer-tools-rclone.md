@@ -71,13 +71,13 @@ chmod 700 ~/bin/rclone
 Note that you will not have installed the man pages, so these will not be
 available: please consult the online documentation instead.
 
-## configuring rclone
+## Configuring rclone
 
 Configuring rclone is covered in the rclone documentation. Essentially you
 need to configure a **"remote"** representing each storage system you want to
 interact with. You can then use rclone to manage data between those "remotes".
 
-## DOs and DON'Ts
+## Dos and Don'ts
 
 - Please **DO NOT use the following features on JASMIN** (at least until further notice). Some of these features look useful, but more work is needed to understand if/how they can be used safely on JASMIN without causing problems. 
   - `rclone mount` (mounting a remote as a filesystem) - **DO NOT USE**
