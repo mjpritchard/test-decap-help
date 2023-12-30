@@ -18,4 +18,18 @@
     - title: Data transfer tools 
     - title: JASMIN external connections
     #- title: Scheduling automating transfers
-    
+- title: For Cloud Tenants
+  pages:
+    - title: Best practice
+    - title: Tenancy based sci vm managed cloud
+    - title: Adding and removing ssh keys from an external cloud vm
+    - title: cluster as a service
+    - title: cluster as a service identity manager
+    - title: cluster as a service kubernetes
+    - title: cluster as a service pangeo
+    - title: cluster as a service slurm
+    - title: cluster as a service shared storage
+    - title: jasmin cloud portal
+- title: Interactive Computing
+  pages:
+    - title: Transfer servers
