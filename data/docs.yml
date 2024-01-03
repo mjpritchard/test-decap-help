@@ -3,3 +3,34 @@
 - title: Category-A
   pages:
     - title: Sample doc
+- title: Data Transfer
+  pages:
+    - title: Data transfer overview
+    - title: Data transfer tools bbcp
+    - title: Data transfer tools ftp and lftp
+    - title: Data transfer tools globus command line interface
+    - title: Data transfer tools globus web interface
+    - title: Data transfer tools globus connect personal
+    - title: Data transfer tools gridftp cert based auth
+    - title: Data transfer tools gridftp ssh auth
+    - title: Data transfer tools rclone
+    - title: Data transfer tools rsync scp sftp
+    - title: Data transfer tools 
+    - title: JASMIN external connections
+    #- title: Scheduling automating transfers
+- title: For Cloud Tenants
+  pages:
+    - title: Introduction to the jasmin cloud
+    - title: jasmin cloud portal
+    - title: cluster as a service
+    - title: cluster as a service kubernetes
+    - title: cluster as a service identity manager
+    - title: cluster as a service slurm
+    - title: cluster as a service pangeo
+    - title: cluster as a service shared storage
+    - title: Adding and removing ssh keys from an external cloud vm
+    - title: Tenancy based sci vm managed cloud
+    - title: Best practice
+- title: Interactive Computing
+  pages:
+    - title: Transfer servers

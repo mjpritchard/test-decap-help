@@ -148,9 +148,9 @@
 # toml-docs-end theme-colors
     themeOpacity = "10"
 # toml-docs-start font
-    themeFont = "Lato"
-    themeFontPath = "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" # external path
-    #themeFontPath = "/fonts" # local path
+    themeFont = "BoosterNextFY-Regular"
+    #themeFontPath = "https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap" # external path
+    themeFontPath = "/fonts" # local path
     purge = false
 
 [schema]
