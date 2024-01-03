@@ -20,7 +20,8 @@ Server  |  Purpose  |  Access requirements  |  Further information
 `hpxfer1.jasmin.ac.uk` |  Physical machine for high-performance data transfers.  |  `jasmin-login` AND `hpxfer`  IP address of client  |  Tuned for UK & European network paths. Apply for additional access role access[here](https://accounts.jasmin.ac.uk/services/additional_services/hpxfer)  
 `hpxfer2.jasmin.ac.uk` |  Physical machine for high-performance data transfers.  |  `jasmin-login` AND `hpxfer`. IP address of client  |  Tuned for long (intercontinental) network paths (e.g. UK - Australia). Apply for additional access role access [here](https://accounts.jasmin.ac.uk/services/additional_services/hpxfer)
 `gridftp1.jasmin.ac.uk` |  Physical machine for high-performance GridFTP transfers.  |  `jasmin-login` AND `hpxfer`  IP address of client  |  No SSH login access. Apply for additional access role access [here](https://accounts.jasmin.ac.uk/services/additional_services/hpxfer) Acts as Globus Online endpoint " [JASMIN GridFTP Server](https://www.globus.org/app/endpoints/4cc8c764-0bc1-11e6-a740-22000bf2d559/overview)"  
-  
+{.table .table-striped}
+
 Please see further articles in the [Data Transfer category]({{< ref "data-transfer-overview" >}}) for details on managing your data transfers.
 
 The standard transfer servers provide a basic and functional service for

@@ -7,16 +7,34 @@ $navbar-toggler-focus-width:    0 !default;
 
 // scss-docs-start font
 $font-family-sans-serif:        $theme-font, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-size-base:                $font-size-base !default;
+$font-size-base:                0.95rem; //was $font-size-base;
 $headings-font-weight:          600 !default;
 $font-weight-lighter:           lighter !default;
 $font-weight-light:             200 !default;
 $font-weight-normal:            300 !default;
-$font-weight-bold:              600 !default;
+$font-weight-bold:              400 !default;
 $font-weight-bolder:            bolder !default;
 
-strong {
-    font-weight:                600 if($enable-important-utilities, !important, null);
+b, strong {
+    font-family:                BoosterNextFY-Bold;
+    font-weight:                400 if($enable-important-utilities, !important, null);
+    font-style: normal;
+}
+
+th {
+    font-family: BoosterNextFY-Bold;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-weight-bold {
+    font-family: BoosterNextFY-Bold;
+    font-weight: 700 !important;
+}
+
+.font-weight-bolder {
+    font-family: BoosterNextFY-Bold;
+    font-weight: 900 !important;
 }
 // scss-docs-end font
 

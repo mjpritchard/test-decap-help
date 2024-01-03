@@ -20,16 +20,17 @@
     #- title: Scheduling automating transfers
 - title: For Cloud Tenants
   pages:
-    - title: Best practice
-    - title: Tenancy based sci vm managed cloud
-    - title: Adding and removing ssh keys from an external cloud vm
-    - title: cluster as a service
-    - title: cluster as a service identity manager
-    - title: cluster as a service kubernetes
-    - title: cluster as a service pangeo
-    - title: cluster as a service slurm
-    - title: cluster as a service shared storage
+    - title: Introduction to the jasmin cloud
     - title: jasmin cloud portal
+    - title: cluster as a service
+    - title: cluster as a service kubernetes
+    - title: cluster as a service identity manager
+    - title: cluster as a service slurm
+    - title: cluster as a service pangeo
+    - title: cluster as a service shared storage
+    - title: Adding and removing ssh keys from an external cloud vm
+    - title: Tenancy based sci vm managed cloud
+    - title: Best practice
 - title: Interactive Computing
   pages:
     - title: Transfer servers

@@ -1,8 +1,5 @@
 ---
 aliases: /article/282-introduction-to-the-jasmin-cloud
-categories:
-- For Cloud Tenants
-collection: jasmin-documentation
 date: 2023-05-23 08:56:41
 description: Introduction to the JASMIN Cloud
 slug: introduction-to-the-jasmin-cloud
@@ -33,9 +30,9 @@ Different cloud providers have different terms for the users within their
 cloud and the chunks of resource they have been allocated. In the JASMIN Cloud
 documentation, we will use the following terminology:
 
-  * **Tenancy:** An allocation of resources, i.e. virtual CPUs, RAM and block storage, within the cloud.
-  * **Tenant:** A group (institution or project) that has been allocated a tenancy in the cloud.
-  * **Tenancy Admin(istrator):** The person designated as the administrator of a tenancy. There would usually also be a deputy administrator.
+- **Tenancy:** An allocation of resources, i.e. virtual CPUs, RAM and block storage, within the cloud.
+- **Tenant:** A group (institution or project) that has been allocated a tenancy in the cloud.
+- **Tenancy Admin(istrator):** The person designated as the administrator of a tenancy. There would usually also be a deputy administrator.
 
 ## JASMIN Cloud Architecture
 
@@ -45,7 +42,7 @@ parts (see the schematic below). Both parts of the JASMIN Cloud are
 administered through the same self-service portal, allowing tenancy admins to
 provision VMs as required, within the quota of their tenancy.
 
-![](file-rJTVn4CXil.png)
+{{<image src="img/docs/introduction-to-the-jasmin-cloud/file-rJTVn4CXil.png" caption="jasmin cloud achitecture">}}
 
 The **JASMIN External Cloud** is an Infrastructure-as-a-Service (IaaS)
 offering, and sits outside of the main JASMIN firewall. Tenants are allowed
@@ -98,25 +95,19 @@ address that is visible on the _public internet_.
 
 ## External vs. Managed - pros and cons
 
-|  Managed Cloud  |  External Cloud  
+Attribute |  Managed Cloud  |  External Cloud  
 ---|---|---  
-Self-service provisioning  |  Yes  |  Yes  
-Filesystem level access to JASMIN Storage (PFS, SOF)  
-|  Yes  |  No  
+**Self-service provisioning**  |  Yes  |  Yes  
+Filesystem level access to JASMIN Storage (PFS, SOF)  |  Yes  |  No  
 Root access  |  No  |  Yes  
-Provision custom infrastructure  |  SSH bastion or Scientific Analysis server
-only  |  Build from generic Ubuntu or CentOS templates  
-Security and patching  |  Handled by infrastructure team  |  Tenant's
-responsibility  
+Provision custom infrastructure  |  SSH bastion or Scientific Analysis server only  |  Build from generic Ubuntu or CentOS templates  
+Security and patching  |  Handled by infrastructure team  |  Tenant's responsibility  
 User management  |  JASMIN users  |  Tenant's responsibility  
-Visibility to public internet  |  No  |  Yes (limited number of external IPs)  
-  
-Ability to provision Cluster-as-a-Service  
-|  No  |  Yes  
+Visibility to public internet  |  No  |  Yes (limited number of external IPs)   
+Ability to provision Cluster-as-a-Service  |  No  |  Yes
+{.table .table-striped}
   
 ## Getting a JASMIN Cloud Tenancy
 
 To start a conversation with us about getting a JASMIN Cloud Tenancy for your
 project, please contact JASMIN Support.
-
-
