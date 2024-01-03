@@ -30,6 +30,7 @@
     - title: cluster as a service shared storage
     - title: Adding and removing ssh keys from an external cloud vm
     - title: Tenancy based sci vm managed cloud
+    - title: Sysadmin guidance external cloud
     - title: Best practice
 - title: Interactive Computing
   pages:
