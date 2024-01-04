@@ -192,15 +192,18 @@ above, the `-A` option is not needed for the onward connection, although there
 is no harm in including it.
 
 Remember to log out of the login server in addition to the sci server when you
-have finished your work:
+have finished your work, to get back to your own (local) machine:
 
 {{<command user="user" host="sci1">}}
 exit
 (out)logout
+{{</command>}}
+{{<command user="user" host="login1">}}
 (out)Connection to sci1.jasmin.ac.uk closed.
-## you're now back on login1
 exit
 (out)logout
-(out)Connection to login1.jasmin.ac.uk closed. 
-## you are now returned to the terminal on your local machine)
+{{</command>}}
+{{<command user="user" host="localhost">}}
+(out)Connection to login1.jasmin.ac.uk closed.
+## back on your own/local machine now
 {{</command>}}
