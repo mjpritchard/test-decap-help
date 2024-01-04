@@ -3,7 +3,12 @@
 - title: Category-A
   pages:
     - title: Sample doc
-- title: Data Transfer
+
+- title: Getting started
+  pages:
+    - title: Login
+
+- title: Data transfer
   pages:
     - title: Data transfer overview
     - title: Data transfer tools bbcp
@@ -18,7 +23,8 @@
     - title: Data transfer tools 
     - title: JASMIN external connections
     #- title: Scheduling automating transfers
-- title: For Cloud Tenants
+
+- title: For cloud tenants
   pages:
     - title: Introduction to the jasmin cloud
     - title: jasmin cloud portal
@@ -32,7 +38,23 @@
     - title: Tenancy based sci vm managed cloud
     - title: Sysadmin guidance external cloud
     - title: Best practice
-- title: Interactive Computing
+
+- title: Interactive computing
   pages:
-    - title: Transfer servers
+    - title: Centos7 sci login xfer servers
+    - title: Check network details
+    - title: Creating a virtual environment in the notebooks service
+    - title: Graphical linux desktop access using nx
+    - title: Interactive computing overview
+    - title: Login problems
+    - title: Login servers
+    - title: Project specific servers
+    - title: Sci servers
     - title: Tenancy sci analysis vms
+    - title: Transfer servers
+
+- title: Workflow management
+  pages:
+    - title: Rose cylc on JASMIN
+    - title: Using cron
+
