@@ -11,35 +11,35 @@
                 <h2 class="footer-heading">Useful links</h2>
                 <ul class="list-unstyled">
                     <li>
-                        {{ $link := partial "utilities/link" (dict "destination" (index site.Params.links "ceda_archive") "text" "CEDA Archive" "class" "link-bg-footer") }}
+                        {{ $link := partial "assets/link.html" (dict "destination" (index site.Params.links "ceda_archive") "text" "CEDA Archive" "class" "link-bg-footer" "page" .Page) }}
                         {{ $link | safeHTML }}
                     </li>
                     <li>
-                        {{ $link := partial "utilities/link" (dict "destination" (index site.Params.links "ceda_catalogue") "text" "CEDA Catalogue" "class" "link-bg-footer") }}
+                        {{ $link := partial "assets/link.html" (dict "destination" (index site.Params.links "ceda_catalogue") "text" "CEDA Catalogue" "class" "link-bg-footer" "page" .Page) }}
                         {{ $link | safeHTML }}
                     </li>
                     <li>
-                        {{ $link := partial "utilities/link" (dict "destination" (index site.Params.links "jasmin") "text" "JASMIN" "class" "link-bg-footer") }}
+                        {{ $link := partial "assets/link.html" (dict "destination" (index site.Params.links "jasmin") "text" "JASMIN" "class" "link-bg-footer" "page" .Page) }}
                         {{ $link | safeHTML }}
                     </li>
                     <li>
-                        {{ $link := partial "utilities/link" (dict "destination" (index site.Params.links "jasmin_accounts_portal") "text" "JASMIN Accounts Portal" "class" "link-bg-footer") }}
+                        {{ $link := partial "assets/link.html" (dict "destination" (index site.Params.links "jasmin_accounts_portal") "text" "JASMIN Accounts Portal" "class" "link-bg-footer" "page" .Page) }}
                         {{ $link | safeHTML }}
                     </li>
                     <li>
-                        {{ $link := partial "utilities/link" (dict "destination" (index site.Params.links "jasmin_projects_portal") "text" "JASMIN Projects Portal" "class" "link-bg-footer") }}
+                        {{ $link := partial "assets/link.html" (dict "destination" (index site.Params.links "jasmin_projects_portal") "text" "JASMIN Projects Portal" "class" "link-bg-footer" "page" .Page) }}
                         {{ $link | safeHTML }}
                     </li>
                     <li>
-                        {{ $link := partial "utilities/link" (dict "destination" (index site.Params.links "jasmin_cloud_portal") "text" "JASMIN Cloud Portal" "class" "link-bg-footer") }}
+                        {{ $link := partial "assets/link.html" (dict "destination" (index site.Params.links "jasmin_cloud_portal") "text" "JASMIN Cloud Portal" "class" "link-bg-footer" "page" .Page) }}
                         {{ $link | safeHTML }}
                     </li>
                     <li>
-                        {{ $link := partial "utilities/link" (dict "destination" (index site.Params.links "jasmin_notebooks_service") "text" "JASMIN Notebooks Service" "class" "link-bg-footer") }}
+                        {{ $link := partial "assets/link.html" (dict "destination" (index site.Params.links "jasmin_notebooks_service") "text" "JASMIN Notebooks Service" "class" "link-bg-footer" "page" .Page) }}
                         {{ $link | safeHTML }}
                     </li>
                     <li>
-                        {{ $link := partial "utilities/link" (dict "destination" (index site.Params.links "jasmin_community_discussions") "text" "JASMIN Community Discussions" "class" "link-bg-footer") }}
+                        {{ $link := partial "assets/link.html" (dict "destination" (index site.Params.links "jasmin_community_discussions") "text" "JASMIN Community Discussions" "class" "link-bg-footer" "page" .Page) }}
                         {{ $link | safeHTML }}
                     </li>
                 </ul>
@@ -76,11 +76,11 @@
 
         </div>
         <small>
-            {{ $link := partial "utilities/link" (dict "destination" "https://help.ceda.ac.uk/article/4641-accessibility" "text" "Accessibility | " "class" "link-bg-footer") }}
+            {{ $link := partial "assets/link.html" (dict "destination" "https://help.ceda.ac.uk/article/4641-accessibility" "text" "Accessibility | " "class" "link-bg-footer" "page" .Page) }}
             {{ $link | safeHTML }}
-            {{ $link := partial "utilities/link" (dict "destination" "https://help.ceda.ac.uk/article/4642-disclaimer" "text" "Disclaimer | " "class" "link-bg-footer") }} 
+            {{ $link := partial "assets/link.html" (dict "destination" "https://help.ceda.ac.uk/article/4642-disclaimer" "text" "Disclaimer | " "class" "link-bg-footer" "page" .Page) }} 
             {{ $link | safeHTML }}
-            {{ $link := partial "utilities/link" (dict "destination" "https://help.ceda.ac.uk/article/4639-privacy-and-cookies" "text" "Privacy and Cookies" "class" "link-bg-footer") }}
+            {{ $link := partial "assets/link.html" (dict "destination" "https://help.ceda.ac.uk/article/4639-privacy-and-cookies" "text" "Privacy and Cookies" "class" "link-bg-footer" "page" .Page) }}
             {{ $link | safeHTML }}
             <br>
             {{- $copyright := printf "%s © %s %s %s." (T "copyright") (dateFormat "2006" now) .Site.Title (T "rights") }}

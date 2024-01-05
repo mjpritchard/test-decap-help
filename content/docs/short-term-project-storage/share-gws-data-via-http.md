@@ -42,7 +42,7 @@ configuration permits this (now deprecated) means of restricting access.
 Future revisions of the service may remove or change the way access
 restrictions can be imposed].
 
-{{<alert alert-level="warning">}}
+{{<alert type="danger">}}
 This facility is **not to be used for hosting project websites**. It is
 provided as a simple means for specific data files to be made available to a
 wider audience than members of a Group Workspace, using a convenient data
@@ -82,7 +82,7 @@ visible from:
 
 https://gws-access.jasmin.ac.uk/public/foobaa/
 
-{{<alert alert-level="info">}}
+{{<alert type="info">}}
 The URL of this service changed in June 2020. A redirect
 is in place from the old URL of `https://gws-access.ceda.ac.uk/`, so the change
 should be transparent to existing users, but **please use the new URLs**
