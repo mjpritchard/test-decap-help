@@ -17,7 +17,7 @@ part of JASMIN. It covers:
 LOTUS is not, in itself, a High-Performance Computing (HPC) facility, but
 provides the batch and parallel processing component of the JASMIN data-
 intensive scientific analysis environment. LOTUS is a cluster of physical
-machines, running the [SLURM workload manager]({{< ref "batch-scheduler-slurm-overview" >}}), enabling efficient scheduling of larger data analysis tasks
+machines, running the [SLURM workload manager]({{< ref "slurm-scheduler-overview" >}}), enabling efficient scheduling of larger data analysis tasks
 across nodes in the cluster as a single unit -see Figure 1. Each node in the
 cluster is connected by 10Gbit/s Ethernet to JASMIN's high-performance
 40Gbit/s core network. Although not its primary function, LOTUS also

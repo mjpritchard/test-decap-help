@@ -4,7 +4,6 @@ date: 2021-07-07 14:35:42
 description: Scheduling/Automating Transfers
 slug: scheduling-automating-transfers
 title: Scheduling/Automating Transfers
-draft: true
 ---
 
 This article explains how to schedule or automate data transfers. It covers:
@@ -60,7 +59,7 @@ use of (for example) the `requests` library.
 **A note about transfer tools:** since we are delegating the actual download
 task to a LOTUS node, we are restricted to transfer tools already installed on
 those nodes or available in the user's path at a location cross-mounted with
-nodes in the LOTUS cluster (see Table 1 in [Access to Storage]({{< ref path="Getting Started/storage" >}})), such as $HOME or a group workspace. It is not possible for
+nodes in the LOTUS cluster (see Table 1 in [Access to Storage]({{< ref path="/docs/getting-started/storage" >}})), such as $HOME or a group workspace. It is not possible for
 the JASMIN team to install specialist data transfer tools across the whole
 cluster, so you may be limited to downloading via HTTP(S), FTP, or via tools
 available via libraries in the Python environment such (which you do have
@@ -159,5 +158,3 @@ needed by the JASMIN team before detailed advice can be provided here about
 how this could be used from within the JASMIN environment (however users more
 familiar with Globus, particularly the CLI and Python SDK may be interested to
 experiment with this). Watch this space.
-
-

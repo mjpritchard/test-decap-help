@@ -4,17 +4,16 @@ date: 2020-11-24 10:46:34
 description: GPU testing
 slug: gpu-testing
 title: GPU testing
-draft: true
 ---
 
 This article provides preliminary details on how to test a job on the LOTUS
 GPU cluster.
 
-{{% notice style="info" %}}
+{{<alert type="info">}}
 Access to the GPU cluster is restricted to users who are
 members of the **lotus_gpu** account. Please contact [JASMIN support
 ](mailto:support@jasmin.ac.uk) to request access to the account.
-{{% /notice %}}
+{{</alert>}}
 
 ## GPU cluster
 

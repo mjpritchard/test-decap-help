@@ -1,9 +1,9 @@
 ---
 aliases: /article/4890-how-to-submit-a-job-to-slurm
 date: 2022-05-19 16:26:09
-description: How to submit a job to SLURM
-slug: how-to-submit-a-job-to-slurm
-title: How to submit a job to SLURM
+description: How to submit a job to Slurm
+slug: how-to-submit-a-job
+title: How to submit a job
 ---
 
 This article explains how to submit a batch job to the new scheduler SLURM.

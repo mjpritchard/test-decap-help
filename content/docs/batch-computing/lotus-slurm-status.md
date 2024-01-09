@@ -4,12 +4,11 @@ date: 2021-03-08 15:47:16
 description: LOTUS/SLURM status
 slug: lotus-slurm-status
 title: LOTUS/SLURM status
-draft: true
 ---
 
-TO UPDATE THE URL
+TODO: UPDATE THE URL
 
-This article explains how to monitor LOTUS status using  JASMIN  dashboard
+This article explains how to monitor LOTUS status using the JASMIN dashboard
 utility. It covers:
 
 - LOTUS queues status

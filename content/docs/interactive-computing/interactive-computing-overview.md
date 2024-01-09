@@ -7,7 +7,7 @@ title: Interactive computing overview
 ---
 
 This article introduces the resources on JASMIN available for interactive
-computing (as opposed to [batch computing]({{< ref "batch-scheduler-slurm-overview" >}})). It covers:
+computing (as opposed to [batch computing]({{< ref "slurm-scheduler-overview" >}})). It covers:
 
   * Login servers
   * Scientific Analysis servers
@@ -26,7 +26,7 @@ The [scientific analysis servers]({{< ref "sci-servers" >}}) are the main
 resource for most users' everyday work. They have a [standardised software
 environment]({{< ref "software-overview#common-software" >}}) and are ideal for development and testing of
 processing tasks which can then be submitted to the [LOTUS batch processing
-cluster]({{< ref "batch-scheduler-slurm-overview" >}}) for larger processing runs.
+cluster]({{< ref "slurm-scheduler-overview" >}}) for larger processing runs.
 
 ## Data Transfer Servers
 

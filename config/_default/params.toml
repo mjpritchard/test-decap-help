@@ -28,8 +28,8 @@
     showJS = false
     showSCSS = false
 
-#[docs]
-#    github = "https://github.com/gethinode/hinode"
+[docs]
+    github = "https://github.com/cedadev/jasmin-help-hugo-hinode"
 #    release = "https://github.com/gethinode/hinode/releases/tag/"
 #    checkVersion = false
 
@@ -181,7 +181,7 @@
 
 [comments]
     enabled = false
-    repo = "" # Replace with your repository.
+    repo = "cedadev/jasmin-help-hugo-hinode" # Replace with your repository.
     #issueTerm = "pathname" # pathname, url, title, og:title
     #label = "comment"
     # By default, light and dark mode correspond to github-light and github-dark, respectively.

@@ -6,23 +6,44 @@
 
 - title: Getting started
   pages:
-    - title: Login
+    - title: get started with jasmin
+    - title: generate ssh key pair
+    - title: get a jasmin account
+    - title: get login account
+    - title: hands on workshop
+    - title: how to contact us about jasmin issues
+    - title: jasmin status
+    - title: jasmin training accounts
+    - title: jasmin users guide
+    - title: login
+    #- title: migrate jasmin account from ceda
+    - title: multiple account types
+    - title: reconfirm email address
+    - title: reset jasmin account password
+    - title: ssh auth
+    - title: storage
+    - title: understanding new jasmin storage
+    - title: update a jasmin account
+    - title: updating your ssh key
 
 - title: Data transfer
   pages:
     - title: Data transfer overview
+    - title: Data transfer tools 
+    - title: Globus transfers with JASMIN
     - title: Data transfer tools bbcp
     - title: Data transfer tools ftp and lftp
-    - title: Data transfer tools globus command line interface
-    - title: Data transfer tools globus web interface
-    - title: Data transfer tools globus connect personal
+    #- title: Data transfer tools globus web interface
+    #- title: Data transfer tools globus command line interface
+    #- title: Data transfer tools globus connect personal
     - title: Data transfer tools gridftp cert based auth
     - title: Data transfer tools gridftp ssh auth
     - title: Data transfer tools rclone
     - title: Data transfer tools rsync scp sftp
-    - title: Data transfer tools 
+
     - title: JASMIN external connections
-    #- title: Scheduling automating transfers
+    - title: Data transfer hpxfer
+    - title: Scheduling automating transfers
 
 - title: For cloud tenants
   pages:
@@ -52,6 +73,21 @@
     - title: Sci servers
     - title: Tenancy sci analysis vms
     - title: Transfer servers
+
+- title: Batch computing
+  pages:
+    - title: LOTUS overview
+    - title: Slurm scheduler overview
+    - title: LOTUS queues
+    - title: LOTUS cluster specification
+    - title: How to monitor slurm jobs
+    - title: How to submit a job
+    - title: How to submit an mpi parallel job
+    - title: Example job 2 calc md5s
+    - title: GPU cluster orchid
+    - title: GPU testing
+    - title: LOTUS Slurm status
+    - title: LSF to Slurm quick reference
 
 - title: Workflow management
   pages:

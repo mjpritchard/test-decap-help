@@ -1,9 +1,9 @@
 ---
 aliases: /article/4880-batch-scheduler-slurm-overview
 date: 2023-02-20 21:38:47
-description: Batch scheduler Slurm overview
-slug: batch-scheduler-slurm-overview
-title: SLURM scheduler overview
+description: 'Overview of the LOTUS batch scheduler, Slurm'
+slug: slurm-scheduler-overview
+title: Slurm scheduler overview
 ---
 
 This article gives an overview of the Slurm Scheduler.
@@ -44,7 +44,7 @@ This leads to a small number of important principles:
 
 ## Fair share for all users
 
-{{<image src="img/docs/batch-scheduler-slurm-overview/Screenshot-2023-02-20-at-21.32.28.png" caption="Example of scheduling">}}
+{{<image src="img/docs/slurm-scheduler-overview/Screenshot-2023-02-20-at-21.32.28.png" caption="Example of scheduling">}}
 
 In the example above, three users (left column) have jobs in the queue (middle column)
 which are waiting to run on the cluster (right column). As the blue user's job

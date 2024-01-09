@@ -1,9 +1,9 @@
 ---
 aliases: /article/4896-how-to-submit-an-mpi-parallel-job-to-slurm
 date: 2022-11-16 08:46:58
-description: How to submit an MPI  parallel job to SLURM
-slug: how-to-submit-an-mpi-parallel-job-to-slurm
-title: How to submit an MPI  parallel job to SLURM
+description: How to submit an MPI parallel job
+slug: how-to-submit-an-mpi-parallel-job
+title: How to submit an MPI parallel job
 ---
 
 This article explains the submission of an MPI parallel job to SLURM/ LOTUS.
