@@ -14,7 +14,9 @@ The {{< link ceda_status >}}CEDA Status page{{< /link >}} is updated regularly t
 
 ## JASMIN dashboard
 
+{{< alert type="info">}}
 The JASMIN dashboard is currently under re-development and will be returining soon as a source of information about the status and performance of JASMIN subsystems. Watch this space.
+{{</alert>}}
 
 Please also keep an eye on:
 - `JASMIN-USERS` email list (all users should be on this list. If not, please ask)

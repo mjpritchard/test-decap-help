@@ -1,9 +1,5 @@
 # This file holds all menu entries for the docs sidebar
 
-- title: Category-A
-  pages:
-    - title: Sample doc
-
 - title: Getting started
   pages:
     - title: get started with jasmin
@@ -25,6 +21,35 @@
     - title: understanding new jasmin storage
     - title: update a jasmin account
     - title: updating your ssh key
+
+- title: Interactive computing
+  pages:
+    - title: Centos7 sci login xfer servers
+    - title: Check network details
+    - title: Creating a virtual environment in the notebooks service
+    - title: Graphical linux desktop access using nx
+    - title: Interactive computing overview
+    - title: Login problems
+    - title: Login servers
+    - title: Project specific servers
+    - title: Sci servers
+    - title: Tenancy sci analysis vms
+    - title: Transfer servers
+
+- title: Batch computing
+  pages:
+    - title: LOTUS overview
+    - title: Slurm scheduler overview
+    - title: LOTUS queues
+    - title: LOTUS cluster specification
+    - title: How to monitor slurm jobs
+    - title: How to submit a job
+    - title: How to submit an mpi parallel job
+    - title: Example job 2 calc md5s
+    - title: GPU cluster orchid
+    - title: GPU testing
+    - title: LOTUS Slurm status
+    - title: LSF to Slurm quick reference
 
 - title: Data transfer
   pages:
@@ -59,35 +84,6 @@
     - title: Tenancy based sci vm managed cloud
     - title: Sysadmin guidance external cloud
     - title: Best practice
-
-- title: Interactive computing
-  pages:
-    - title: Centos7 sci login xfer servers
-    - title: Check network details
-    - title: Creating a virtual environment in the notebooks service
-    - title: Graphical linux desktop access using nx
-    - title: Interactive computing overview
-    - title: Login problems
-    - title: Login servers
-    - title: Project specific servers
-    - title: Sci servers
-    - title: Tenancy sci analysis vms
-    - title: Transfer servers
-
-- title: Batch computing
-  pages:
-    - title: LOTUS overview
-    - title: Slurm scheduler overview
-    - title: LOTUS queues
-    - title: LOTUS cluster specification
-    - title: How to monitor slurm jobs
-    - title: How to submit a job
-    - title: How to submit an mpi parallel job
-    - title: Example job 2 calc md5s
-    - title: GPU cluster orchid
-    - title: GPU testing
-    - title: LOTUS Slurm status
-    - title: LSF to Slurm quick reference
 
 - title: Workflow management
   pages:
