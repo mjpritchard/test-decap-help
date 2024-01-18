@@ -5,7 +5,7 @@ enableGitInfo = true
 
 # additional settings
 # googleAnalytics = "G-xxxxxxxxxx"
-baseURL = '/jasmin-help-hugo-hinode/' # temp value until we have a domain
+baseURL = 'https://cedadev.github.io/jasmin-help-hugo-hinode/' # temp value until we have a domain
 canonifyURLs = false
 enableEmoji = true
 enableRobotsTXT = true
