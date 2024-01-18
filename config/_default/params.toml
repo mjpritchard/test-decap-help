@@ -46,7 +46,7 @@
     fixed = true
     offset = "3.8em"
     search = true
-    searchModal = false
+    searchModal = true
     breadcrumb = false
     toc = true
     sidebar = true
@@ -143,8 +143,9 @@
     info = "#1E5DF8"
     warning = "#FF6900"
     danger = "#A91B2E"
-    #light = "#b4bcc2" #This is used as the bg for chroma code panels but is too dark. Find a lighter one or accept the default.
-    #dark = "#2E2D62"
+    light = "#ECF0F1"
+    dark = "#676767" #2E2D62"
+    
 # toml-docs-end theme-colors
     themeOpacity = "10"
 # toml-docs-start font
