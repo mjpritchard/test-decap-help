@@ -28,8 +28,8 @@
     showJS = false
     showSCSS = false
 
-#[docs]
-#    github = "https://github.com/gethinode/hinode"
+[docs]
+    github = "https://github.com/cedadev/jasmin-help-hugo-hinode"
 #    release = "https://github.com/gethinode/hinode/releases/tag/"
 #    checkVersion = false
 
@@ -181,7 +181,7 @@
 
 [comments]
     enabled = false
-    repo = "" # Replace with your repository.
+    repo = "cedadev/jasmin-help-hugo-hinode" # Replace with your repository.
     #issueTerm = "pathname" # pathname, url, title, og:title
     #label = "comment"
     # By default, light and dark mode correspond to github-light and github-dark, respectively.
@@ -203,6 +203,9 @@
     ceda_catalogue = "https://catalogue.ceda.ac.uk"
     ceda_helpdocs = "https://help.ceda.ac.uk"
     ceda_helpdesk = "https://help.ceda.ac.uk"
+    ceda_status = "https://www.ceda.ac.uk/status"
+    ceda_news = "https://www.ceda.ac.uk/news"
+    ceda_x = "https://twitter.com/cedanews"
     nceo = "https://www.nceo.ac.uk"
     ncas = "https://www.ncas.ac.uk"
     jasmin = "https://www.jasmin.ac.uk"

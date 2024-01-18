@@ -30,7 +30,7 @@ high-performance data transfer servers shown above are also available for
 those with particular requirements. Users with login accounts can [apply for
 access to use the high-performance servers]({{< ref "data-transfer-hpxfer" >}}).
 
-{{<alert alert-level="info" >}}
+{{<alert type="info" >}}
 Please make sure you use the dedicated transfer servers and not the scientific
 analysis or login servers for any significant data transfers. The transfer servers have been configured to achieve the best transfer rates and will perform significantly better than other servers on jasmin, while maintaining the performance of analysis servers for interactive use by other users.
 {{</alert>}}
@@ -49,7 +49,7 @@ ensuring that the users accessing this machine know to be aware of this issue
 and can have their access to this machine denied if found to be causing a
 problem for the machine's operation for other users.
 
-{{<alert alert-level="warning" >}}
+{{<alert type="danger" >}}
 Users are **not permitted to execute commands which require
 administrative privileges.** This applies to all hosts in the managed part of
 JASMIN where users have SSH login access (for example `login`, `nx-login`,

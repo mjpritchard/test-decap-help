@@ -5,6 +5,7 @@ date: 2023-08-25
 description: A sample of a documentation page
 tags: ["language", "example"]
 layout: doc
+draft: true
 ---
 
 ## First heading

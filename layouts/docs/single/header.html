@@ -20,5 +20,5 @@
         </div>
     </div>
 {{- end -}}
-{{ partial "assets/sharing.html" . }}
+{{ partial "assets/sharing.html" (dict "page" .) }}
 <p class="lead mb-5">{{ .Description }}</p>
