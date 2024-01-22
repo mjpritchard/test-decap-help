@@ -125,6 +125,7 @@
 {{- $horizontal := default false site.Params.navigation.horizontal -}}
 
 {{- $logo := .logo | default site.Params.navigation.logo -}}
+{{- $logoHeight := .logoHeight | default site.Params.navigation.logoHeight -}}
 {{- $logoLight := "" -}}
 {{- $logoDark := "" -}}
 {{- if $enableDarkMode -}}
@@ -170,7 +171,7 @@
 <!-- Main code -->
 <div class="container-fluid {{ if $fixed }}fixed-top{{ end }} p-0{{ with $class }} {{ . }}{{ end }}">
     {{- partial "assets/page-alert.html" (dict "page" $page) -}}
-    <nav class="navbar {{ if $fixed }}navbar-fixed-top{{ end }} navbar-expand-{{ $size }}{{ if $contrast }} navbar-contrast{{ end }}{{ with $color }} bg-{{ . }}{{ end }} p-4"{{ with $theme }} data-bs-theme="{{ . }}"{{ end }}>
+    <nav class="navbar {{ if $fixed }}navbar-fixed-top{{ end }} navbar-expand-{{ $size }}{{ if $contrast }} navbar-contrast{{ end }}{{ with $color }} bg-{{ . }}{{ end }} p-3"{{ with $theme }} data-bs-theme="{{ . }}"{{ end }}>
         <div class="container-xxl p-0">
             <!-- Insert sidebar toggler when applicable -->
             <div class="d-flex align-items-center">
@@ -189,12 +190,12 @@
             <!-- Insert the brand logo or name -->
             <a class="navbar-brand mx-auto" href="{{ site.Home.RelPermalink }}" aria-label="{{ T "home" }}">
                 {{- if (and $logoLight $logoDark) -}}
-                    {{ $width := partial "utilities/GetWidth.html" (dict "path" $logoLight "height" 30) }}
-                    <img src="{{if $absoluteURL }}{{ absURL $logoLight }}{{ else }}{{ $logoLight }}{{ end }}" class="d-none-dark" alt="{{ $title }} logo" height="30"{{ with $width }} width="{{ . }}"{{ end }}>
-                    <img src="{{if $absoluteURL }}{{ absURL $logoDark }}{{ else }}{{ $logoDark }}{{ end }}" class="d-none-light" alt="{{ $title }} logo" height="30"{{ with $width }} width="{{ . }}"{{ end }}>
+                    {{ $width := partial "utilities/GetWidth.html" (dict "path" $logoLight "height" $logoHeight) }}
+                    <img src="{{if $absoluteURL }}{{ absURL $logoLight }}{{ else }}{{ $logoLight }}{{ end }}" class="d-none-dark" alt="{{ $title }} logo" height="{{ $logoHeight }}"{{ with $width }} width="{{ . }}"{{ end }}>
+                    <img src="{{if $absoluteURL }}{{ absURL $logoDark }}{{ else }}{{ $logoDark }}{{ end }}" class="d-none-light" alt="{{ $title }} logo" height="{{ $logoHeight }}"{{ with $width }} width="{{ . }}"{{ end }}>
                 {{- else if $logo -}}
-                    {{ $width := partial "utilities/GetWidth.html" (dict "path" $logo "height" 30) }}
-                    <img src="{{if $absoluteURL }}{{ absURL $logo }}{{ else }}{{ $logo }}{{ end }}" alt="{{ $title }} logo" height="30"{{ with $width }} width="{{ . }}"{{ end }}>
+                    {{ $width := partial "utilities/GetWidth.html" (dict "path" $logo "height" $logoHeight) }}
+                    <img src="{{if $absoluteURL }}{{ absURL $logo }}{{ else }}{{ $logo }}{{ end }}" alt="{{ $title }} logo" height="{{ $logoHeight }}"{{ with $width }} width="{{ . }}"{{ end }}>
                 {{- else -}}
                     <span class="fw-bold">{{ $title }}</span>
                 {{- end -}}
