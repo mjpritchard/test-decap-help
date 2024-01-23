@@ -1,6 +1,6 @@
 ---
 description: Articles about X
 title: Workflow management
-weight: 1
+weight: 100
 slug: workflow-management
 ---

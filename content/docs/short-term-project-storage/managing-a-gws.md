@@ -176,7 +176,7 @@ requested.
 Requests for an increase in GWS size will be considered by the Consortium
 Manager with responsibility for managing an overall allocation to that
 particular scientific community. See 
-[Requesting Resources]({{< ref "requesting-resources" >}}). Depending on available resources and competing
+[Requesting Resources]({{< ref "../uncategorized/requesting-resources" >}}). Depending on available resources and competing
 demand, it may not always be possible to increase the allocation, and you may
 be asked to move data to Elastic Tape to free up disk space.
 
