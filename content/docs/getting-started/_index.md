@@ -1,5 +1,6 @@
 ---
-description: Articles about getting started on JASMIN
+description: Key things to know to get you started on JASMIN
 title: Getting Started
 weight: 10
+icon: fas play
 ---

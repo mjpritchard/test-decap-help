@@ -1,6 +1,7 @@
 ---
-description: Articles about X
+description: Articles that we should probably recategorize...
 title: Uncategorized
 weight: 110
 slug: uncategorized
+icon: fas circle-info
 ---

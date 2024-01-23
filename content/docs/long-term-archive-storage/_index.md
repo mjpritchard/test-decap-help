@@ -1,7 +1,8 @@
 ---
-description: Articles about long-term archive storage
+description: How to use data in archive(s) from within JASMIN
 linkTitle: Long-term archive storage
 title: Long-term archive storage
 slug: long-term-archive-storage
-weight: 80
+weight: 70
+icon: fas folder-tree
 ---

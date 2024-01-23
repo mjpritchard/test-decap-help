@@ -1,8 +1,7 @@
 ---
-author: Matt Pritchard
 title: For Cloud Tenants
-layout: docs
+description: How to use your tenancy in the JASMIN Community Cloud
 icon: fas cloud
-weight: 90
+weight: 100
 ---
 

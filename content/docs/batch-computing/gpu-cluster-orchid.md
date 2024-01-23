@@ -4,6 +4,8 @@ date: 2023-05-26 14:25:07
 description: Orchid GPU cluster
 slug: gpu-cluster-orchid
 title: Orchid GPU cluster
+type: docs
+icon: fas server
 ---
 
 This article provides details on JASMIN's GPU

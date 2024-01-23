@@ -34,7 +34,7 @@
 #    checkVersion = false
 
 [home]
-    sections = ["news", "services", "about", "events","priorities","projects"]
+    sections = ["docs", "about"]
     fullCover = false
     centerHeadline = false
     style = ""
@@ -106,11 +106,11 @@
         padding = "3"
         header = "none"
         footer = "tags"
-        orientation = "none" # Placement of the thumbnail, either “stacked” (default), “horizontal”, or “none”.
+        orientation = "horizontal" # Placement of the thumbnail/icon either “stacked” (default), “horizontal”, or “none”.
         style = "border-1 card-emphasize"
-        homepage = 6
-        paginate = 9
-        separator = false
+        homepage = 12
+        paginate = 12
+        separator = true
     [sections.about]
         title = "About JASMIN"
         layout = "card"
