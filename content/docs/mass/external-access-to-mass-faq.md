@@ -11,6 +11,8 @@ title: External Access to MASS FAQ
 
 ## Introduction
 
+The Managed Archive Storage System (MASS) provides storage and restore services for large volumes of Met Office data. It is a service operated by the UK Met Office.
+
 This article provides answers to MASS frequently asked questions:
 Click on the link for each of the FAQs below to expand the answer.
 

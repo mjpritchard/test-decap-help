@@ -51,6 +51,28 @@
     - title: LOTUS Slurm status
     - title: LSF to Slurm quick reference
 
+- title: Software on JASMIN
+  pages: 
+    - title: software overview
+    - title: quickstart software envs
+    - title: python virtual environments
+    - title: additional software
+    - title: community software esmvaltool
+    - title: conda environments and python virtual environments
+    - title: creating and using miniconda environments
+    - title: idl and midl
+    - title: jasmin sci software
+    - title: jasmin software faqs
+    - title: jaspy envs
+    - title: matplotlib
+    - title: nag library
+    - title: name dispersion model
+    - title: postgres databases on request
+    - title: running python on jasmin
+    - title: running r on jasmin
+    - title: software migration 2020
+    - title: share software envs
+
 - title: Data transfer
   pages:
     - title: Data transfer overview
@@ -69,6 +91,35 @@
     - title: JASMIN external connections
     - title: Data transfer hpxfer
     - title: Scheduling automating transfers
+
+- title: Short term project storage
+  pages:
+    - title: apply for access to a gws
+    - title: elastic tape command line interface hints
+    - title: faqs storage
+    - title: gws etiquette
+    - title: gws scanner ui
+    - title: gws scanner
+    - title: install xfc client
+    - title: xfc
+    - title: introduction to group workspaces
+    - title: jdma
+    - title: managing a gws
+    - title: secondary copy using elastic tape
+    - title: share gws data on jasmin
+    - title: share gws data via http
+    - title: using the jasmin object store
+
+- title: Long term archive storage
+  pages:
+    - title: ceda archive
+
+- title: MASS
+  pages:
+    - title: external access to mass faq
+    - title: how to apply for mass access
+    - title: moose the mass client user guide
+    - title: setting up your jasmin account for access to mass
 
 - title: For cloud tenants
   pages:
@@ -90,3 +141,12 @@
     - title: Rose cylc on JASMIN
     - title: Using cron
 
+- title: Uncategorized
+  pages:
+    - title: mobaxterm
+    - title: requesting resources
+    - title: processing requests for resources
+    - title: acknowledging jasmin
+    - title: approving requests for access
+    - title: working with many linux groups
+    - title: jasmin conditions of use
