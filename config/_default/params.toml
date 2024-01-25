@@ -48,7 +48,7 @@
     #offset = "5em"
     search = true
     searchModal = true
-    breadcrumb = false
+    breadcrumb = true
     toc = true
     sidebar = true
     size = "md"
