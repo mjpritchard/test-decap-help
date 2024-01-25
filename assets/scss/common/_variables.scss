@@ -15,6 +15,9 @@ $font-weight-normal:            300 !default;
 $font-weight-bold:              400 !default;
 $font-weight-bolder:            bolder !default;
 
+$ukri_blue:                   #2E2D62 !default;
+$body-color:                    $ukri_blue !default;
+
 b, strong {
     font-family:                BoosterNextFY-Bold;
     font-weight:                400 if($enable-important-utilities, !important, null);
@@ -61,3 +64,11 @@ $dropdown-horizontal-padding-y: calc(1rem + 2px);
 
 // Border radius
 $border-radius:          0px !important;
+
+// Smaller size for tag label text on cards
+.card-body .tag-label {
+    font-size: 0.65rem !important;
+}
+.card-body .article-li {
+    
+}
