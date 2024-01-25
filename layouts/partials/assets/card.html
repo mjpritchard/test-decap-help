@@ -22,7 +22,7 @@
 {{- $loading := .loading -}}
 {{- $orientation := .orientation | default "stacked" -}}
 
-{{- $padding := .padding | default "auto" -}} <!-- was "auto" -->
+{{- $padding := .padding | default "auto" -}}
 {{- $ratio := .ratio -}}
 {{- $thumbnail := .thumbnail -}}
 {{- $title := .title -}}
@@ -40,7 +40,13 @@
     {{- if not $href }}{{ $href = .RelPermalink  }}{{ end -}}
     {{- if not $description }}{{ $description = partial "utilities/GetDescription.html" . }}{{ end -}}
     {{- if not $thumbnail }}{{ $thumbnail = (or (and (reflect.IsMap .Params.Thumbnail) .Params.Thumbnail.url) .Params.Thumbnail) }}{{ end -}}
-    {{- if not $icon }}{{ $icon = .Params.icon }}{{ end -}}
+    {{- if not $icon }}
+        {{ if .Params.icon }}
+            {{ $icon = .Params.icon }} <!-- takes precedence, if set -->
+        {{ else if .Parent.Params.icon }}
+            {{ $icon = .Parent.Params.icon }} <!-- use Parent doc icon if set -->
+        {{ end }}
+    {{ end -}}
 {{- end -}}
 
 {{- if eq $orientation "none" }}{{ $thumbnail = "" }}{{ $icon = "" }}{{ end -}}
