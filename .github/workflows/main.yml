@@ -14,9 +14,7 @@ jobs:
     - uses: DavidAnson/markdownlint-cli2-action@v15
       continue-on-error: true
       with:
-        globs: |
-          *.md
-          !test/*.md
+        globs: 'content/**/*.md'
   deploy:
     runs-on: ubuntu-22.04
     concurrency:
