@@ -3,7 +3,6 @@ aliases: /article/3836-example-job-2-calc-md5s
 categories:
 - LOTUS Batch Computing
 collection: jasmin-documentation
-date: 2021-06-23 14:50:43
 description: 'Example Job 2: Calculating MD5 Checksums on many files'
 slug: example-job-2-calc-md5s
 title: 'Example Job 2: Calculating MD5 Checksums on many files'

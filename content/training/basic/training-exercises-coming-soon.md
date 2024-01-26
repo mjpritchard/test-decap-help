@@ -1,0 +1,12 @@
+---
+author: Matt Pritchard
+title: Training exercises coming soon
+description: Exercises to help you get the most out of JASMIN
+tags: 
+    - exercise
+lastmod: 2024-01-26
+---
+
+## Watch this space
+
+We'll be adding more content soon, as we reorganise the JASMIN help content further.

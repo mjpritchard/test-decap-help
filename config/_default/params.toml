@@ -34,7 +34,7 @@
 #    checkVersion = false
 
 [home]
-    sections = ["docs", "about"]
+    sections = ["docs", "guides", "training"]
     fullCover = false
     centerHeadline = false
     style = ""
@@ -95,7 +95,7 @@
 
 [sections]
     [sections.docs]
-        title = "Documentation"
+        title = "Docs: how things work on JASMIN"
         layout = "card"
         sort = "name"
         reverse = false
@@ -108,9 +108,37 @@
         footer = "tags"
         orientation = "horizontal" # Placement of the thumbnail/icon either “stacked” (default), “horizontal”, or “none”.
         style = "border-1 card-emphasize"
-        homepage = 12
-        paginate = 12
+        homepage = 3
         separator = true
+    [sections.guides]
+        title = "Guides: get started or learn new concepts"
+        layout = "card"
+        sort = "weight"
+        reverse = false
+        background = ""
+        color = "body-tertiary"
+        style = "border-0 shadow card-zoom card-body-margin"
+        cols = 3
+        padding = "3"
+        header = "full"
+        footer = "none"
+        orientation = "none"
+        homepage = 3
+    [sections.training]
+        title = "Training: to get the most out of JASMIN"
+        layout = "card"
+        sort = "weight"
+        reverse = false
+        background = ""
+        color = "body-tertiary"
+        style = "border-0 shadow card-zoom card-body-margin"
+        cols = 3
+        padding = "3"
+        header = "full"
+        footer = "none"
+        orientation = "stacked"
+        homepage = 3
+        nested = false
     [sections.about]
         title = "About JASMIN"
         layout = "card"
