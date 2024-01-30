@@ -1,18 +1,18 @@
 ---
 aliases: /article/187-login
-date: 2022-10-27 09:37:13
 description: How to login
 slug: login
 title: How to login
+weight: 100
 ---
 
 This article explains how to login to JASMIN. It covers:
 
-  * Preparing your credentials: loading your private key
-  * The JASMIN login servers
-  * Logging in to JASMIN
-  * X-forwarding for graphical applications (within JASMIN only)
-  * Where next?
+- Preparing your credentials: loading your private key
+- The JASMIN login servers
+- Logging in to JASMIN
+- X-forwarding for graphical applications (within JASMIN only)
+- Where next?
 
 The instructions below cover the process of logging in using a terminal client
 only. For a graphical linux desktop, please see alternative instructions using
@@ -37,8 +37,8 @@ load your private key so that it can be presented at the time of logging in.
 
 **Linux and MacOS users:** `ssh-agent` can be used (see instructions below).
 
-**Windows users:** we recommend the [MobAgent utility within MobaXterm]({{<
-ref "mobaxterm" >}}). MobXterm is a linux terminal emulator for Windows.
+**Windows users:** we recommend the [MobAgent utility within MobaXterm]({{<ref "mobaxterm" >}}).
+MobXterm is a linux terminal emulator for Windows.
 
 `ssh-agent` is a utility that stores private keys and makes them available to
 other software that use the SSH protocol to connect to remote clients.
@@ -51,13 +51,12 @@ this:
 example represents the shell prompt as displayed in your terminal - it does
 not need to be typed!**
 
-    
-    
-    $ eval $(ssh-agent -s)
-    $ ssh-add ~/.ssh/id_rsa_jasmin
-    Enter passphrase for /home/users/jpax/.ssh/id_rsa_jasmin:
-    Identity added: /home/users/jpax/.ssh/id_rsa_jasmin (/home/users/jpax/.ssh/id_rsa_jasmin)
-    
+{{<command>}}
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_rsa_jasmin
+(out)Enter passphrase for /home/users/jpax/.ssh/id_rsa_jasmin:
+(out)Identity added: /home/users/jpax/.ssh/id_rsa_jasmin (/home/users/jpax/.ssh/id_rsa_jasmin)
+{{</command>}}
 
 When you run the `ssh-add` command you will be prompted to enter the
 passphrase that you specified when generating your SSH key pair. (If you use
@@ -67,21 +66,20 @@ $SHELL")
 You can test whether your key has been loaded by using the "-l" option to list
 the currently loaded keys in your agent:
 
-    
-    
-    $ ssh-add -l
-    2048 SHA256:iqX3NkPCpschVdqPxVde/ujap2cM0mYaAYYedzBGPaI /Users/jpax/.ssh/id_rsa_jasmin (RSA)
-    
+{{<command>}}
+ssh-add -l
+(out)2048 SHA256:iqX3NkPCpschVdqPxVde/ujap2cM0mYaAYYedzBGPaI /Users/jpax/.ssh/id_rsa_jasmin (RSA)
+{{</command>}}
 
 This confirms that the key in `id_rsa_jasmin` has been loaded and is ready for
 use.
 
 **Notes:**
 
-  * The `ssh-agent` session should persist until killed or until system shutdown, even if you close the terminal in which you set it up.
-  * It is very important that you protect your private key with a strong passphrase, known only to you. Keys must not be shared between individuals.
-  * If you get an error when attempting the above commands please see [login problems]({{< ref "login-problems" >}}).
-  * Your public key will have been automatically propagated by the JASMIN accounts system to all the machines to which you have access rights, so should already be present in the correct place. Do not attempt to place the public key manually on any host within JASMIN: it will get automatically overwritten.
+- The `ssh-agent` session should persist until killed or until system shutdown, even if you close the terminal in which you set it up.
+- It is very important that you protect your private key with a strong passphrase, known only to you. Keys must not be shared between individuals.
+- If you get an error when attempting the above commands please see [login problems]({{< ref "login-problems" >}}).
+- Your public key will have been automatically propagated by the JASMIN accounts system to all the machines to which you have access rights, so should already be present in the correct place. Do not attempt to place the public key manually on any host within JASMIN: it will get automatically overwritten.
 
 Mac users (OS X Leopard onwards) can optionally benefit from linking the SSH
 key to Keychain, which securely stores the passphrase as well. This means that
@@ -98,28 +96,26 @@ See this article for a [description and listing of the login servers]({{< ref
 ## Logging in to JASMIN
 
 Assuming that you have loaded your SSH private key using one of the methods
-described above, then you can login to a login server as follows:
+described above, then you can login to a login server as follows (do this on your own/local machine):
 
-    
-    
-    $ ssh -A <user_id>@<login_server>
-    
+{{<command>}}
+ssh -A <user_id>@<login_server>
+{{</command>}}
 
 For example, user "jpax" might login to the JASMIN login server with:
 
-    
-    
-    $ ssh -A jpax@login1.jasmin.ac.uk
-    
+{{<command>}}
+ssh -A jpax@login1.jasmin.ac.uk
+{{</command>}}
 
-The **"-A"** **argument is important** because it enables "agent-forwarding".
+The `-A` **argument is important** because it enables "agent-forwarding".
 This means that your the information about your SSH private key is forwarded
 to your remote session on the login server so that you can use it for further
 SSH connections. (Windows users can [enable X-forwarding in
 MobaXterm](https://mobaxterm.mobatek.net/documentation.html#4_1_6) saved
 sessions).
 
-**Can't login?**
+ ## Can't login?
 
   * Check our troubleshooting guide: [login problems]({{< ref "login-problems" >}})
 

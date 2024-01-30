@@ -1,6 +1,5 @@
 ---
 aliases: /article/5091-multiple-account-types
-date: 2023-06-15 15:48:29
 description: Multiple account types
 slug: multiple-account-types
 tags:
@@ -8,6 +7,7 @@ tags:
 - service
 - account
 title: Multiple account types
+weight: 110
 ---
 
 _**Trial period extended**_

@@ -1,9 +1,9 @@
 ---
 aliases: /article/194-jasmin-live-status
-date: 2020-04-28 08:01:41
 description: JASMIN status
 slug: jasmin-status
 title: JASMIN status
+weight: 70
 ---
 
 This article lists sources of information about the status of JASMIN services.

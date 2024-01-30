@@ -1,9 +1,9 @@
 ---
 aliases: /article/185-generate-ssh-key-pair
-date: 2021-10-05 10:10:50
 description: Generate an SSH key pair
 slug: generate-ssh-key-pair
 title: Generate an SSH key pair
+weight: 20
 ---
 
 This article explains how to create an SSH key pair for logging in to JASMIN.

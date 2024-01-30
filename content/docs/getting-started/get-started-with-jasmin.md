@@ -1,12 +1,9 @@
 ---
 aliases: /article/189-get-started-with-jasmin
-categories:
-- Getting Started
-collection: jasmin-documentation
-date: 2023-01-26 15:36:11
 description: Get Started with JASMIN
 slug: get-started-with-jasmin
 title: Get Started with JASMIN
+weight: 10
 ---
 
 This article explains the steps involved for most users to gain

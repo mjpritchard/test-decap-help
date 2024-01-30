@@ -1,11 +1,10 @@
 ---
 aliases: /article/4996-jasmin-training-accounts
-date: 2023-01-26 15:41:00
 description: JASMIN training accounts
 slug: jasmin-training-accounts
 title: JASMIN training accounts
+weight: 80
 ---
-
 
 ## What are training accounts?
 

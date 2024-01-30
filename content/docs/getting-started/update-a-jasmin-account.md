@@ -1,12 +1,9 @@
 ---
 aliases: /article/4552-update-a-jasmin-account
-categories:
-- Getting Started
-collection: jasmin-documentation
-date: 2022-10-12 11:38:55
 description: Update a JASMIN account
 slug: update-a-jasmin-account
 title: Update a JASMIN account
+weight: 170
 ---
 
 This article shows you how to update an active JASMIN account on the JASMIN

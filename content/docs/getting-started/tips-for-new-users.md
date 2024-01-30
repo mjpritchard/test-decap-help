@@ -1,31 +1,30 @@
 ---
 aliases: /article/4856-jasmin-users-guide
 date: 2022-03-08 10:30:53
-description: JASMIN User's Guide
-slug: jasmin-users-guide
-title: JASMIN User's Guide
+description: Tips for new users
+slug: tips-for-new-users
+title: tips-for-new-users
+weight: 90
 ---
 
-The JASMIN user's guide was set out based on user queries and issues
-encountered by the JASMIN team.
+These tips for new users are based on users' queries encountered by our helpdesk. They are not exhaustive but may help solve some initial problems and set out best practice.
 
-  * Sci machines 
-  * LOTUS
-  * Xfer servers
-  * How to report an issue;
+- Sci machines
+- LOTUS
+- Xfer servers
+- How to report an issue
 
 ## "Sci" machines usage guidelines
 
   1. Check the current load and number of users on the sci machines, as shown by the login servers, to select a less-used sci machine. [The available Sci machines and their specifications are listed in the table of this help page]({{< ref "sci-servers" >}})
   2. The sci machines are not for running large, long-running tasks, or scripts that spawn multiple child processes. The batch processing cluster LOTUS is available for heavier processing. The sci machines are for development, testing, and light interactive use. Overloading these with processing seriously impairs performance for interactive use by others.
-  3. Do not write to the temporary partition ` /tmp`on sci machines. [Use your home directory, a scratch volume or a Group Workspace ]({{< ref "understanding-new-jasmin-storage" >}}). Any temporary data files can reside in a subdirectory of your group workspace instead of /tmp. To do this, please add the following lines (or similar) to your $HOME/.bashrc file: 
+  3. Do not write to the temporary partition ` /tmp`on sci machines. [Use your home directory, a scratch volume or a Group Workspace ]({{< ref "understanding-new-jasmin-storage" >}}). Any temporary data files can reside in a subdirectory of your group workspace instead of `/tmp`. To do this, please add the following lines (or similar) to your `$HOME/.bashrc` file: 
     
-        export TMPDIR=/group_workspaces/jasmin/<your_project>/<your_username>/tmp
-    	
-
-    * # create the directory if needed
-
+```bash
+export TMPDIR=/group_workspaces/jasmin/<your_project>/<your_username>/tmp
+## create the directory if needed
 [ -d $TMPDIR ] || mkdir -p $TMPDIR
+```
 
   4. If a process hangs, do not simply close the terminal window. Please contact the helpdesk and alert the team so that the process can be shut down. Otherwise hung processes build up and contribute to machine overloading.
   5. Do not “hog” IDL development licenses. A limited number of these are available for _development_ and compilation of IDL code which should then be run on LOTUS [using IDL runtime licenses]({{< ref "idl-and-midl" >}}), of which there are many more.
@@ -49,7 +48,7 @@ When you do experience an issue, please;
 
   1. Make it clear whether you are simply advising the helpdesk of a general issue (which will be noted, but not necessarily investigated for a specific response), or
   2. Provide FULL and SPECIFIC details of your problem so that it can be investigated. JASMIN is a complex infrastructure with many hundreds of hosts and storage volumes, so reporting that “JASMIN” or “Storage” is slow, is not sufficient.
-  3. If you are experiencing difficulties accessing a particular storage volume from a particular sci machine, please state 
+  3. If you are experiencing difficulties accessing a particular storage volume from a particular sci machine, please state
     * the full path to the data you are trying to access
     * The full hostname of the machine (but please try the same access from at least one other machine to help establish whether it’s related to the machine or the storage)
     * The date and time of the issue (for matching up with system reports/log files. Using the date and time of the email is not sufficient: please be specific in your report)

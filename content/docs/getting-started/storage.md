@@ -1,6 +1,5 @@
 ---
 aliases: /article/176-storage
-date: 2022-11-16 08:45:06
 description: Access to storage
 slug: storage
 tags:
@@ -12,6 +11,7 @@ tags:
 - ssd
 - smf
 title: Access to storage
+weight: 150
 ---
 
 This article provides information about JASMIN storage. It covers:

@@ -1,11 +1,11 @@
 ---
 aliases: /article/4700-understanding-new-jasmin-storage
-date: 2022-11-16 08:52:10
 description: Understanding new JASMIN storage
 slug: understanding-new-jasmin-storage
 tags:
-- Automount
+- automount
 title: Understanding new JASMIN storage
+weight: 160
 ---
 
 {{<alert type="info">}}This article was written in 2018/19 to introdice new forms of storage which were brought into produciton at that stage. Some of the information is now out of date, pending further review of JASMIN documentation.{{</alert>}}

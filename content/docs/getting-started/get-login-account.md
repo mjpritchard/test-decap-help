@@ -1,12 +1,12 @@
 ---
 aliases: /article/161-get-login-account
-date: 2023-01-24 10:48:03
 description: Get a login account
 slug: get-login-account
 tags:
 - login
 - account
 title: Get a login account
+weight: 40
 ---
 
 This article explains how to apply for access to the shared JASMIN servers.

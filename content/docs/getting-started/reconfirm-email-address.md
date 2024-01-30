@@ -1,9 +1,9 @@
 ---
 aliases: /article/4807-reconfirm-email-address
-date: 2020-04-27 10:41:52
 description: Reconfirm JASMIN account email address
 slug: reconfirm-email-address
 title: Reconfirm JASMIN account email address
+weight: 120
 ---
 
 This article describes how to reconfirm the email address associated with your
@@ -21,7 +21,7 @@ date: the sooner the better.
 1. Visit your profile at the JASMIN Accounts Portal <https://accounts.jasmin.ac.uk> If you are already signed in you can get to your profile by following the link to "My JASMIN Account", otherwise you will be automatically taken to your profile when you sign in.
 2. **Click the “Confirm now” button** in your JASMIN profile to request that an email containing a confirmation link is sent to your email address. If this button is not visible and instead you see the message "confirmed" next to your email address:
 
-{{<image src="img/docs/reconfirm-email-address/file-hEfcP6vF1r.png" caption="already confirmed">}}
+{{<image src="img/docs/reconfirm-email-address/file-hEfcP6vF1r.png" caption="already confirmed" ratio="3x2" wrapper="col-1 mx-auto">}}
 
 this indicates that your email address has already been confirmed and no
 further action is necessary.

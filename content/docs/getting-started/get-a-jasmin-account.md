@@ -1,9 +1,9 @@
 ---
 aliases: /article/4435-get-a-jasmin-account
-date: 2020-05-19 14:33:45
 description: Get a JASMIN portal account
 slug: get-a-jasmin-account
 title: Get a JASMIN portal account
+weight: 30
 ---
 
 This article explains how to register on the JASMIN accounts portal.

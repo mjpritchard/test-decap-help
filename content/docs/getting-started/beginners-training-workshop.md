@@ -1,13 +1,14 @@
 ---
 aliases: /article/4981-hands-on-workshop
-date: 2021-03-09 11:29:40
-description: Hands-on workshop - training materials
-slug: hands-on-workshop
+description: Beginners training workshop - materials
+slug: beginners-training-workshop
 tags:
 - training
 - best practice
 - workshop
-title: Hands-on workshop - training materials
+- beginner
+title: beginners training workshop - materials
+weight: 50
 ---
 
 The [CEDA team](https://jasmin.ac.uk/about/team/) regularly run hands-on

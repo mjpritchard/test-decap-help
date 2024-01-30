@@ -1,12 +1,9 @@
 ---
 aliases: /article/4726-reset-jasmin-account-password
-categories:
-- Getting Started
-collection: jasmin-documentation
-date: 2023-01-24 12:03:21
 description: Reset JASMIN account password
 slug: reset-jasmin-account-password
 title: Reset JASMIN account password
+weight: 130
 ---
 
 This article illustrates how to reset the password of your JASMIN account to

@@ -1,12 +1,9 @@
 ---
 aliases: /article/166-ssh-auth
-categories:
-- Getting Started
-collection: jasmin-documentation
-date: 2021-04-15 13:41:58
 description: SSH public key authentication
 slug: ssh-auth
 title: SSH public key authentication
+weight: 140
 ---
 
 JASMIN employs SSH public key authentication for login instead of username and

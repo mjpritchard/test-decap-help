@@ -63,7 +63,7 @@ HPC infrastructure such as [ARCHER](http://www.archer.ac.uk/) or
 
 In order to maintain a safe and reliable working environment for all within
 LOTUS and more widely within JASMIN, users are expected to follow [the best
-practice outlined in this documentation]({{< ref "jasmin-users-guide" >}}).
+practice outlined in this documentation]({{< ref "tips-for-new-users" >}}).
 
 ## How to gain access to LOTUS
 

@@ -1,9 +1,9 @@
 ---
 aliases: /article/4834-updating-your-ssh-key
-date: 2020-05-20 16:03:09
 description: How to update your SSH key
 slug: updating-your-ssh-key
 title: How to update your SSH key
+weight: 180
 ---
 
 ## Introduction

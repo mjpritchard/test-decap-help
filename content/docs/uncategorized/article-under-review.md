@@ -2,6 +2,7 @@
 aliases:
 - /article/4894-lotus-slurm-status
 - /article/221-jasmin-external-connections
+- /article/4856-jasmin-users-guide
 description: Article under review
 slug: article-under-review
 title: Article under review
