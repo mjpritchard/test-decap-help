@@ -97,7 +97,7 @@
     [sections.docs]
         title = "Docs: how things work on JASMIN"
         layout = "card"
-        sort = "name"
+        sort = "weight"
         reverse = false
         nested = false # TODO check at https://gethinode.com/docs/configuration/layout/
         cols = 3
@@ -136,7 +136,7 @@
         padding = "3"
         header = "full"
         footer = "none"
-        orientation = "stacked"
+        orientation = "horizontal"
         homepage = 3
         nested = false
     [sections.about]
