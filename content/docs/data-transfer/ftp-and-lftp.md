@@ -2,8 +2,8 @@
 aliases: /article/3811-data-transfer-tools-ftp-and-lftp
 date: 2022-08-22 15:56:09
 description: 'Data Transfer Tools: ftp and lftp'
-slug: data-transfer-tools-ftp-and-lftp
-title: 'Data Transfer Tools: ftp and lftp'
+slug: ftp-and-lftp
+title: 'ftp and lftp'
 ---
 
 This article provides information about FTP (File Transfer Protocol) as a data
@@ -29,11 +29,11 @@ servers to local storage on JASMIN, for example a Group Workspace or your home
 directory. **There is no FTP server within JASMIN providing the ability to
 upload files to these locations.** Please use an alternative, more secure
 method instead. See other [Data Transfer Tools]({{< ref "data-transfer-tools"
->}}) such as [scp/rsync/sftp]({{< ref "data-transfer-tools-rsync-scp-sftp"
->}}), [bbcp]({{< ref "data-transfer-tools-bbcp" >}}) or GridFTP ([over
-SSH]({{< ref "data-transfer-tools-gridftp-ssh-auth" >}}), [certificate-
-based]({{< ref "data-transfer-tools-gridftp-cert-based-auth" >}}) or using
-[Globus Online]({{< ref "data-transfer-tools-globus-web-interface"
+>}}) such as [scp/rsync/sftp]({{< ref "rsync-scp-sftp"
+>}}), [bbcp]({{< ref "bbcp" >}}) or GridFTP ([over
+SSH]({{< ref "gridftp-ssh-auth" >}}), [certificate-
+based]({{< ref "gridftp-cert-based-auth" >}}) or using
+[Globus Online]({{< ref "globus-web-interface"
 >}}))
 
 On the [transfer servers]({{< ref "transfer-servers" >}}), you can use one of

@@ -1,7 +1,7 @@
 ---
 aliases: /article/219-data-transfer-overview
 date: 2021-06-16 17:39:34
-description: Data transfer overview
+description: Overview of data transfer
 slug: data-transfer-overview
 title: Data transfer overview
 ---
@@ -60,4 +60,4 @@ tools]({{< ref "data-transfer-tools" >}}) available.
 To achieve better transfer rates, for large transfers or where speed and reliability are important, you are recommended to:
 
 - use the Globus data transfer service (recommended), or
-- use the high-performance data transfer servers ({{<link "data-transfer-hpxfer">}}hpxfer access role required{{</link>}})
+- use the high-performance data transfer servers ({{<link "hpxfer-access-role">}}hpxfer access role required{{</link>}})

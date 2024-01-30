@@ -20,6 +20,21 @@ task downloading of some large datasets, or simply to be able rely on data
 being pulled in from some external source to an accumulating dataset used for
 periodic analysis.
 
+
+##  Using Globus for transfer automation
+
+It is easy to automate transfers using {{<link "globus-transfers-with-jasmin">}}Globus{{</link>}}. This method has the advantage that you 
+do not need to remain connected or logged in to any JASMIN server for the automated transfers
+to take place on your behalf, and is more efficient and reliable than the other methods described below.
+
+Some introductory information about how to do this is available in this article
+{{<link "globus-command-line-interface/#automation">}}Using the Globus command-line interface{{</link>}}
+(with more to follow)
+but please also refer to the comprehensive Globus documentation and their 
+[automation examples](https://github.com/globus/automation-examples). You can choose whether 
+to schedule/automate tasks via the Globus web interface, command-line interface, or use their Globus SDK to build
+Python code that uses this functionality.
+
 ## Scheduling download tasks using cron and LOTUS
 
 While the [cron server]({{< ref "using-cron" >}}) is provided for scheduling
@@ -149,12 +164,3 @@ i.e. only downloading those files in a directory which are new have been added
 since the last time a task was run. These can be useful to avoid repeated
 downloads of the same data.
 
-##  Using Globus for transfer automation [TODO]
-
-It is also possible to automate transfers between Globus endpoints. Some
-information about how to do this is available
-[here](https://github.com/globus/automation-examples), but further work is
-needed by the JASMIN team before detailed advice can be provided here about
-how this could be used from within the JASMIN environment (however users more
-familiar with Globus, particularly the CLI and Python SDK may be interested to
-experiment with this). Watch this space.

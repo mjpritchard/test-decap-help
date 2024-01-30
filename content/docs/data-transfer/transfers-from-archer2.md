@@ -44,7 +44,7 @@ between RDF and JASMIN.
 
 Note that (until
 
-[scp/rsync/sftp]({{< ref "data-transfer-tools-rsync-scp-sftp" >}})  
+[scp/rsync/sftp]({{< ref "rsync-scp-sftp" >}})  
 |  Simple transfer using easy method to general purpose xfer nodes.
 Convenient.  
 ---|---  
@@ -52,7 +52,7 @@ _source_ |  _dest_ |  _notes_
 `login.archer2.ac.uk` |  `xfer1.jasmin.ac.uk` |  over 10G JANET, but to
 virtual machine at JASMIN end  
 `login.archer2.ac.uk` |  `xfer2.jasmin.ac.uk` |  same  
-[GridFTP over SSH]({{< ref "data-transfer-tools-gridftp-ssh-auth" >}})
+[GridFTP over SSH]({{< ref "gridftp-ssh-auth" >}})
 
 2nd choice method
 
@@ -62,7 +62,7 @@ on local machine where you have your JASMIN key.
 `login.archer2.ac.uk` |  `hpxfer2.jasmin.ac.uk` |  over 10G JANET  
 hpxfer2 is configured for longer distances but can be useful if hpxfer1 is
 busy  
-[GridFTP using certificate auth]({{< ref "data-transfer-tools-gridftp-cert-based-auth" >}})  
+[GridFTP using certificate auth]({{< ref "gridftp-cert-based-auth" >}})  
 (now working again!)
 
 1st choice method
@@ -98,7 +98,7 @@ This method **does not** require you to use your JASMIN SSH key. It involves:
 
 A fuller explanation of the process is given in this document:
 
-  * [Data Transfer Tools: GridFTP (certificate-based authentication)]({{< ref "data-transfer-tools-gridftp-cert-based-auth" >}})
+  * [Data Transfer Tools: GridFTP (certificate-based authentication)]({{< ref "gridftp-cert-based-auth" >}})
 
 Once you have done these steps, you should be able to obtain a short-term
 credential as follows (do this command at the ARCHER2 end, after having

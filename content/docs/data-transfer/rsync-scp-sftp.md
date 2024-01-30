@@ -1,13 +1,12 @@
 ---
 aliases: /article/3810-data-transfer-tools-rsync-scp-sftp
-date: 2021-10-06 10:48:08
 description: 'Data Transfer Tools: rsync, scp, sftp'
-slug: data-transfer-tools-rsync-scp-sftp
+slug: rsync-scp-sftp
 tags:
 - winscp
 - scp
 - filezilla
-title: 'Data Transfer Tools: rsync, scp, sftp'
+title: 'rsync, scp, sftp'
 ---
 
 This article tells you about some of the basic transfer tools available for

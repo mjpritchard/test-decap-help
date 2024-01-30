@@ -2,9 +2,15 @@
 aliases: /article/5008-data-transfer-tools-using-the-globus-web-interface
 date: 2022-01-25 12:34:03
 description: 'Data Transfer Tools: Globus Web Interface'
-slug: data-transfer-tools-globus-web-interface
-title: 'Data Transfer Tools: Globus Web Interface'
+slug: globus-web-interface
+title: 'Globus Web Interface'
 ---
+
+{{<alert type="danger">}}
+DEPRECATED: please see newer article [Globus Transfers with JASMIN](../globus-transfers-with-jasmin)
+
+The endpoint "JASMIN Globus Endpoint (jasmin credentials)" is no longer in operation. Users should now interact with the "JASMIN Default Collection" detailed in the article linked above. The authentication procedure is now slightly different to the instructions below, although most of the commands after that work the same. An updated article will follow in due course.
+{{</alert>}}
 
 This article describes how to transfer data using the Globus Command web
 Interface.
@@ -48,7 +54,5 @@ tasks and when they complete. You can check on the progress of tasks with the
 associated with the identity you used to log in to Globus.
 
 Once you have mastered using the web interface, move on to our guide on [Using
-the Globus Command Line Interface]({{< ref "data-transfer-tools-globus-command-line-interface" >}}), which also points to help on how to set up your
+the Globus Command Line Interface]({{< ref "globus-command-line-interface" >}}), which also points to help on how to set up your
 own Globus endpoint on your own computer using Globus Connect Personal.
-
-

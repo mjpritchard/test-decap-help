@@ -28,7 +28,7 @@ The standard transfer servers provide a basic and functional service for
 moving small amounts of data over relatively short distances. However, the
 high-performance data transfer servers shown above are also available for
 those with particular requirements. Users with login accounts can [apply for
-access to use the high-performance servers]({{< ref "data-transfer-hpxfer" >}}).
+access to use the high-performance servers]({{< ref "hpxfer-access-role" >}}).
 
 {{<alert type="info" >}}
 Please make sure you use the dedicated transfer servers and not the scientific

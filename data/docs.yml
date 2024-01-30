@@ -75,21 +75,20 @@
 
 - title: Data transfer
   pages:
-    - title: Data transfer overview
-    - title: Data transfer tools 
+    - title: Data Transfer Overview
+    - title: Data Transfer Tools
     - title: Globus transfers with JASMIN
-    - title: Data transfer tools bbcp
-    - title: Data transfer tools ftp and lftp
-    #- title: Data transfer tools globus web interface
-    #- title: Data transfer tools globus command line interface
-    #- title: Data transfer tools globus connect personal
-    - title: Data transfer tools gridftp cert based auth
-    - title: Data transfer tools gridftp ssh auth
-    - title: Data transfer tools rclone
-    - title: Data transfer tools rsync scp sftp
-
+    - title: bbcp
+    - title: ftp and lftp
+    #- title: globus web interface
+    - title: globus command line interface
+    #- title: globus connect personal
+    - title: gridftp cert based auth
+    - title: gridftp ssh auth
+    - title: rclone
+    - title: rsync scp sftp
     - title: JASMIN external connections
-    - title: Data transfer hpxfer
+    - title: hpxfer access role
     - title: Scheduling automating transfers
 
 - title: Short term project storage

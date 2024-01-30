@@ -2,8 +2,8 @@
 aliases: /article/5037-data-transfer-tools-rclone
 date: 2022-01-20 10:22:59
 description: 'A "Swiss army knife" tool for data transfers'
-slug: data-transfer-tools-rclone
-title: 'Data transfer tools: rclone'
+slug: rclone
+title: 'rclone'
 tags: ['data']
 ---
 

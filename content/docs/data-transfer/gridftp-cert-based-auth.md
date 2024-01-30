@@ -1,13 +1,15 @@
 ---
 aliases: /article/3808-data-transfer-tools-gridftp-cert-based-auth
 date: 2023-01-26 15:43:26
-description: 'Data Transfer Tools: GridFTP (certificate-based authentication)'
-slug: data-transfer-tools-gridftp-cert-based-auth
-title: 'Data Transfer Tools: GridFTP (certificate-based authentication)'
+description: 'Data Transfer Tool: GridFTP (certificate-based authentication)'
+slug: gridftp-cert-based-auth
+title: 'GridFTP (certificate-based authentication)'
 ---
 
 This article describes how to transfer data using gridftp with certificate-
 based authentication.
+
+{{<alert type="info">}}The `globus-url-copy` command used here should not be confused with the Globus online data transfer service. They used to be associated, but no longer. If you are starting out and looking for a reliable, high-performance transfer method, the recommendation now is to learn about [Globus Transfers with JASMIN](../globus-transfers-with-jasmin) (using the Globus online data transfer service) instead of command-line gridftp as described in this document.{{</alert>}}
 
 ## Basics of certificate-based authentication
 
@@ -222,18 +224,18 @@ credential and perform the test transfer as follows:
     
 
 This server is also used as the JASMIN GridFTP Server globus endpoint, see
-[GridFTP transfers using Globus Online]({{< ref "data-transfer-tools-globus-command-line-interface" >}}) (however you can only currently use your CEDA
+[GridFTP transfers using Globus Online]({{< ref "globus-command-line-interface" >}}) (however you can only currently use your CEDA
 SLCSs credential with Globus Online. The JASMIN team is working on a solution
 for this).
 
 Please note that the servers `xfer[12].jasmin.ac.uk` and
 `hpxfer[12].ceda.ac.uk` are not gridftp **servers**. They have the `globus-
 url-copy` client installed, so can be used as clients to connect to remote
-gridftp servers, and also support [gridftp over SSH]({{< ref "data-transfer-tools-gridftp-ssh-auth" >}}) (both incoming and outgoing), but do not act as
+gridftp servers, and also support [gridftp over SSH]({{< ref "gridftp-ssh-auth" >}}) (both incoming and outgoing), but do not act as
 servers for certificate-based gridftp as shown in these examples. The JASMIN
 gridftp server for read-write access to home directories and group workspaces
 is `gridftp1.jasmin.ac.uk`. Access to this requires [registration for high-
-performance data transfer (hpxfer)]({{< ref "data-transfer-hpxfer" >}}). See
+performance data transfer (hpxfer)]({{< ref "hpxfer-access-role" >}}). See
 also [Transfer Servers]({{< ref "transfer-servers" >}}).
 
 ## Third-party transfers
@@ -242,16 +244,15 @@ It should be possible, with the correct configuration at each site, to
 initiate on host A a transfer of data between two other gridftp servers B and
 C (a third party transfer). Both URIs would use `gsiftp:` as the protocol:
 
-    
-    
-    globus-url-copy -vb -p 4 gsiftp://B/source gsiftp://C/destination
-    
+```bash
+globus-url-copy -vb -p 4 gsiftp://B/source gsiftp://C/destination
+```
 
 Further information can be found in the documentation for globus-url-copy.
 However [Globus Online](https://www.globus.org/app/transfer) provides a
 managed service to orchestrate and monitor transfers between gridftp endpoints
 in a more user-friendly way, so is recommended as an alternative to setting up
-third-party transfers manually. See [Data Transfer Tools: using the Globus web interface]({{< ref "data-transfer-tools-globus-web-interface" >}})
+third-party transfers manually. See [Data Transfer Tools: using the Globus web interface]({{< ref "globus-web-interface" >}})
 
 ## Future plans
 

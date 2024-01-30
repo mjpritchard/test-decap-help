@@ -2,12 +2,15 @@
 aliases: /article/3806-data-transfer-tools-gridftp-ssh-auth
 date: 2021-06-16 17:41:08
 description: 'Data Transfer Tools: GridFTP (SSH authentication)'
-slug: data-transfer-tools-gridftp-ssh-auth
-title: 'Data Transfer Tools: GridFTP (SSH authentication)'
+slug: gridftp-ssh-auth
+title: 'GridFTP (SSH authentication)'
 ---
 
 This article describes how to transfer data using GridFTP with SSH
 authentication.
+
+
+{{<alert type="info">}}The `globus-url-copy` command used here should not be confused with the Globus online data transfer service. They used to be associated, but no longer. If you are starting out and looking for a reliable, high-performance transfer method, the recommendation now is to learn about [Globus Transfers with JASMIN](../globus-transfers-with-jasmin) (using the Globus online data transfer service) instead of command-line gridftp as described in this document.{{</alert>}}
 
 ## Introduction
 
@@ -42,7 +45,7 @@ option enabled, to enable agent forwarding:
     
 
 Note that in order to use `hpxfer[12].jasmin.ac.uk` you will need to have
-[high-performance data transfer access]({{< ref "data-transfer-hpxfer" >}}) on
+[high-performance data transfer access]({{< ref "hpxfer-access-role" >}}) on
 your JASMIN account. An alternative to try out beforehand, is to use `jasmin-
 xfer1.ceda.ac.uk`.
 
@@ -137,7 +140,7 @@ Note the transfer rate achieved in Megabytes/second (MB/sec), although for
 various reasons this is not to be relied upon as an accurate expectation of
 speed for real transfers. However, **you are unlikely to achieve even half of
 this data rate via`scp`, `rsync` or `sftp` over the same route**. [Bbcp]({{<
-ref "data-transfer-tools-bbcp" >}}) may achieve similar rates, however, and
+ref "bbcp" >}}) may achieve similar rates, however, and
 this is considered by some as easier to use.
 
 4\. Recursively download the contents of a directory on a remote location to a
@@ -179,7 +182,7 @@ servers: (see also [Transfer Servers]({{< ref "transfer-servers" >}}))
 
   * `xfer[12].jasmin.ac.uk`
   * `xfer3.jasmin.ac.uk` ([additional access role](https://accounts.jasmin.ac.uk/services/additional_services/xfer-sp) required)
-  * `hpxfer[12].jasmin.ac.uk` ([high-performance data transfer access]({{< ref "data-transfer-hpxfer" >}}) required)
+  * `hpxfer[12].jasmin.ac.uk` ([high-performance data transfer access]({{< ref "hpxfer-access-role" >}}) required)
 
 Push data to JASMIN from a remote server:
 

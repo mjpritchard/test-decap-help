@@ -1,9 +1,9 @@
 ---
 aliases: /article/4414-data-transfer-hpxfer
 date: 2021-02-17 08:52:15
-description: 'Data Transfer: high-performance data transfer access'
-slug: data-transfer-hpxfer
-title: 'Data Transfer: high-performance data transfer access'
+description: 'Access to certain high-performance data transfer methods'
+slug: hpxfer-access-role
+title: 'hpxfer access role'
 ---
 
 This article explains about access to high-performance data transfer services.

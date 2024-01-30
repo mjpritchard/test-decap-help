@@ -1,9 +1,9 @@
 ---
 aliases: /article/3824-data-transfer-tools-bbcp
 date: 2023-01-26 15:31:07
-description: 'Data Transfer Tools: bbcp'
-slug: data-transfer-tools-bbcp
-title: 'Data Transfer Tools: bbcp'
+description: 'Data transfer tool bbcp'
+slug: bbcp
+title: bbcp
 ---
 
 This article provides information about the bbcp data transfer tool.
@@ -12,7 +12,7 @@ This article provides information about the bbcp data transfer tool.
 
 [bbcp](http://www.slac.stanford.edu/~abh/bbcp/) is a simple command-line tool
 which can use your SSH connection to transfer data in and out of JASMIN
-efficiently. It works in a similar way to [GridFTP over SSH]({{< ref "data-transfer-tools-gridftp-ssh-auth" >}}) in that it connects to the transfer
+efficiently. It works in a similar way to [GridFTP over SSH]({{< ref "gridftp-ssh-auth" >}}) in that it connects to the transfer
 server using your usual SSH credentials but then can set up parallel data
 streams for transferring data. One advantage of `bbcp` that it is provided as
 a single binary executable which is easy to download and use.
@@ -133,7 +133,7 @@ few GBs of data.
 
 ##  **bbcp - Troubleshooting**
 
-  * `bbcp` uses SSH to establish the control connection so you need to set up your SSH key in the same way as you would to SSH into `hpxfer[12].jasmin.ac.uk`. If `bbcp` isn't working you should first check you can SSH to `hpxfer[12].jasmin.ac.uk`. If you can't, please review the steps in the [Getting Started](http://help.ceda.ac.uk/category/158-getting-started) section before contacting the [JASMIN Helpdesk](mailto:support@jasmin.ac.uk).
+  * `bbcp` uses SSH to establish the control connection so you need to set up your SSH key in the same way as you would to SSH into `hpxfer[12].jasmin.ac.uk`. If `bbcp` isn't working you should first check you can SSH to `hpxfer[12].jasmin.ac.uk`. If you can't, please review the steps in the [Getting Started](../getting-started/get-started-with-jasmin) section before contacting the [JASMIN Helpdesk](mailto:support@jasmin.ac.uk).
   * Make that you have logged in (via SSH) to both the JASMIN transfer server and the remote server with the `-A` option (agent-forwarding enabled), to ensure that your credentials are used by SSH as it invokes `bbcp` on the other server.
   * Try adding the `-F`option to disable `bbcp`'s filesystem checking if you get the following error:
 
@@ -141,5 +141,3 @@ few GBs of data.
     	
 
   * If you see the error message `Address family not supported by protocol creating inet socket`, this is most likely because the `-4` flag was not specified. This may happen with commands that once worked, as a previously installed version of `bbcp` on JASMIN defaulted to IPv4. Currently there is no support for IPv6 on JASMIN. If the version of `bbcp` you have available on your system is old and does not have the `-4` option, consider downloading the appropriate (newer) version from the link above. It is also possible to compile the executable from source.
-
-
