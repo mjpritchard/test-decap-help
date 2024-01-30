@@ -609,6 +609,9 @@ You could then consider how to repeat the task automatically. For example:
 - **triggering** a re-run of the `cli-sync.sh` command according to some condition that's met in your workflow.
 - **scheduling** the running of the `cli-sync.sh` command on your own machine using cron on your own machine.
   - Remember: the invocation of the command does NOT need to be done on JASMIN, it can be done wherever you have the CLI installed, for example your local machine.
-- use the web interface (go to "Transfer & Timer Options") to **configure repeating tasks initiated there**.
+- use the web interface (go to "Transfer & Timer Options") to configure repeating tasks initiated there.
 - Learn about how to [use timers with Globus](https://www.globus.org/blog/globus-now-supports-recurring-and-scheduled-transfers): these can be set up using the web interface or using an additional CLI [globus-timer-cli](https://pypi.org/project/globus-timer-cli/) which can be installed into the same `virtualenv` as the main globus cli.
-- Learn about [Globus Flows](https://docs.globus.org/api/flows/) to create fully automated workflows which can have transfer, compute and other steps.
+- Learn about [Globus Flows](https://docs.globus.org/api/flows/) to create fully automated workflows. Globus have created a number of pre-canned workflow actions (e.g. "make directory", "transfer", "delete", ..) which you can chain together in your own workflow, or combine with your own to create custom workflows. A useful example might be:
+  - watching a directory for arrival/creation of a certain file
+  - triggering a compute/analysis step on files in the directory (using a [Globus Compute](https://www.globus.org/compute) endpoint of your own?)
+  - transferring the output of that analysis to elsewhere, and cleaning up
