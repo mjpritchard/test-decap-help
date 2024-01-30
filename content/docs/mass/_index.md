@@ -1,5 +1,5 @@
 ---
-description: Read-only access of Met Office MASS archive 
+description: Read-only access to Met Office MASS archive 
 title: MASS
 slug: mass
 weight: 80

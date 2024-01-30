@@ -3,15 +3,21 @@ author: Matt Pritchard
 title: JASMIN Help site
 description: Documentation and training resources for JASMIN - the UK's data analysis facility for environmental science.
 thumbnail:
-    url: /img/jasmin2023.jpg
+    url: img/jasmin2023.jpg
 actions:
-  getstarted:
-    url: "docs/category-a/intro/"
-    title: "Get Started"
+  enter-docs:
+    url: "docs"
+    title: "Enter docs"
     icon: "fas book-open"
     weight: 10
-  about:
+  about-this-site:
+    url: "docs/about-this-site"
+    title: "About this site"
+    icon: "fas circle-info"
+    weight: 20
+  about-jasmin:
     url: "about"
     title: "About JASMIN"
-    weight: 20
+    weight: 30
 ---
+

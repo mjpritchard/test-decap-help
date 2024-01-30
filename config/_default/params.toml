@@ -95,7 +95,7 @@
 
 [sections]
     [sections.docs]
-        title = "Docs: how things work on JASMIN"
+        title = "Docs: find how things work on JASMIN"
         layout = "card"
         sort = "weight"
         reverse = false
@@ -237,7 +237,7 @@
     utterances = "https://utteranc.es"
     hugo = "https://gohugo.io"
     # curated local links
-    ceda = "https://www.ceda.ac.uk"
+    ceda_site = "https://www.ceda.ac.uk"
     ceda_archive = "https://archive.ceda.ac.uk"
     ceda_catalogue = "https://catalogue.ceda.ac.uk"
     ceda_helpdocs = "https://help.ceda.ac.uk"
@@ -251,11 +251,13 @@
     stfc = "https://stfc.ukri.org"
     nerc = "https://nerc.ukri.org"
     ukri = "https://ukri.org"
+    jasmin_site = "https://www.jasmin.ac.uk"
     jasmin_accounts_portal = "https://accounts.jasmin.ac.uk"
     jasmin_cloud_portal = "https://cloud.jasmin.ac.uk"
     jasmin_projects_portal = "https://projects.jasmin.ac.uk"
     jasmin_notebooks_service = "https://notebooks.jasmin.ac.uk"
     jasmin_community_discussions = "https://github.com/cedadev/jasmin-community/discussions"
+    jasmin_help_docs_issues = "https://github.com/cedadev/jasmin-help-hugo-hinode/issues"
 
 
 [statusClasses]
