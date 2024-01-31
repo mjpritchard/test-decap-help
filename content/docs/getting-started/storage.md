@@ -16,14 +16,14 @@ weight: 150
 
 This article provides information about JASMIN storage. It covers:
 
-  * Home directory 
-  * JASMIN disk mounts
-  * Where to write data
-  * How to use the temporary disk space
-  * Cleaning up the work scratch and `/tmp`
-  * Access to the CEDA archive
-  * Tape access
-  * Advice on inter-volume symlinks in JASMIN storage
+- Home directory 
+- JASMIN disk mounts
+- Where to write data
+- How to use the temporary disk space
+- Cleaning up the work scratch and `/tmp`
+- Access to the CEDA archive
+- Tape access
+- Advice on inter-volume symlinks in JASMIN storage
 
 **IMPORTANT:** Please see also [Understanding new JASMIN storage]({{< ref
 "understanding-new-jasmin-storage" >}}) which explains more about the
@@ -42,10 +42,9 @@ to check your quota is still pending, due to a change of storage technology
 for this area). You can find your current usage by running the following Linux
 command:
 
-    
-    
-    pdu -sh /home/users/<username>
-    
+{{<command>}}
+pdu -sh /home/users/<username>
+{{</command>}}
 
 **IMPORTANT** : You are only allowed to exceed the 100 GB quota for a very
 brief period of time but if you continue to exceed the limit, you will be
@@ -68,25 +67,22 @@ Find the ones relevant to your username with a command line this: (
 `${USER}`is the environment variable containing your username, so can be
 copied in this case)
 
-    
-    
-    # ls -ld /home/users/.snapshot/homeusers.*/${USER}
-    
+{{<command>}}
+ls -ld /home/users/.snapshot/homeusers.*/${USER}
+{{</command>}}
 
 Within each of these, you can look for your own username to find snapshot
 directories for your data. File(s) can then be copied (by users themselves)
 back from one of these directories to their original location.
 
-    
-    
-    # ls -l /home/users/.snapshot/homeusers.45678/joebloggs/
-    total 1170964
-    -rw-r--r-- 1 joebloggs users              104857600 Jun 26  2017 100M.dat
-    -rw-r--r-- 1 joebloggs users             1024000000 Feb  1  2017 1G.dat
-    -rw-r--r-- 1 joebloggs users                      0 Dec 18 12:09 6181791.err
-    
-    # cp /home/users/.snapshot/homeusers.45678/joebloggs/100M.dat ~/100M.dat
-    
+{{<command>}}
+ls -l /home/users/.snapshot/homeusers.45678/joebloggs/
+(out)total 1170964
+(out)-rw-r--r-- 1 joebloggs users              104857600 Jun 26  2017 100M.dat
+(out)-rw-r--r-- 1 joebloggs users             1024000000 Feb  1  2017 1G.dat
+(out)-rw-r--r-- 1 joebloggs users                      0 Dec 18 12:09 6181791.err
+cp /home/users/.snapshot/homeusers.45678/joebloggs/100M.dat ~/100M.dat
+{{</command>}}
 
 **Home directories should not be used for storing large amounts of data**. See
 below for guidance on where to write your data.
@@ -97,10 +93,9 @@ and kept for 10 hours and then daily snapshots are kept for 2 weeks. These can
 be retrieved in a similar manner to that shown above. In this case the
 relevant directories should be found at
 
-    
-    
+{{<command>}}
     /gws/smf/jNN/<gwsname>/.snapshot
-    
+{{</command>}}
 
 (where `NN` = `04` or `07` depending on where the volume is located)
 
@@ -120,59 +115,15 @@ they are accessible from and the type of access (read and/or write).
 availability on JASMIN
 
 Disk mount  
-|  login  |  sci  |  transfer  |  LOTUS  |  Type  |  Parallel-write  
+location |  login  |  sci  |  transfer  |  LOTUS  |  Type  |  Parallel-write  
 ---|---|---|---|---|---|---  
-/home/users  |  R/W  |  R/W  |  R/W  |  R/W  |  SSD  |  no  
-/group_workspaces/jasmin2  
-/gws/pw/j05  
-/gws/nopw/j04 (see note 1 below)  
-/gws/smf/j04, j07  |  No  
-No  
-No  
-No  |  R/W  
-R/W  
-R/W  
-R/W  |  R/W  
-R/W  
-R/W  
-R/W  |  R/W  
-R/W  
-R/W  
-R/W  |  PFS  
-PFS  
-SOF  
-SSD  |  yes  
-yes (hence "pw")  
-no (hence "nopw")  
-no  
-/work/xfc/volX (see note 1 below)  |  No  |  R/W  |  R/W  |  R/W  |  SOF  |
-no  
-/work/scratch-pw [RO from 22 Nov 2022]  
-/work/scratch-pw2  
-/work/scratch-pw3 [new]  
-/work/scratch-nopw  |  No  
-No  
-No  
-No  |  RO  
-R/W  
-R/W  
-R/W  
-|  No  
-No  
-No  
-No  |  RO  
-R/W  
-R/W  
-R/W  
-|  PFS  
-PFS  
-PFS  
-SSD  |  yes  
-yes  
-yes  
-no  
+/home/users  |  R/W  |  R/W  |  R/W  |  R/W  |  SSD  |  no
+/gws/pw/j07<br>/gws/nopw/j04 (see note 1 below)<br>/gws/smf/j0[4,7] |  no<br>no<br>no | R/W<br>R/W<br>R/W | R/W<br>R/W<br>R/W | R/W<br>R/W<br>R/W | PFS<br>SOF<br>SSD | yes (hence "pw")<br>no (hence "nopw")<br>no
+/work/xfc/volX (see note 2 below) |  no<br>no  |  R/W  |  R/W |  R/W  | PFS  | yes
+/work/scratch-pw[2,3]<br>/work/scratch-nopw  |  no<br>no  |  R/W<br>R/W  |  R/W<br>R/W |  R/W<br>R/W  | PFS<br>SSD  | yes<br>no
 /apps/contrib  |  No  |  RO  |  No  |  RO  |  n/a  |  n/a  
 /badc, /neodc (archives)  |  No  |  RO  |  RO  |  RO  |  n/a  |  n/a  
+{.table .table-striped}
   
 login = [login servers]({{< ref "login-servers" >}}): login[1-4].jasmin.ac.uk  
 sci = [scientific analysis servers]({{< ref "sci-servers" >}}):
@@ -185,6 +136,8 @@ Disks are mounted read/write (" **R/W** ") or read-only (" **RO** ").
 
 **Note 1:** Please refer to issues related to writing small files and NetCDF3
 to SOF storage [here]({{< ref "faqs-storage" >}})
+
+**Note 2:** For details of how to use the Transfer Cache (XFC) service please see [here]({{< ref "../short-term-project-storage/xfc" >}})
 
 ## Where to write data
 
