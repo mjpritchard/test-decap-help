@@ -11,7 +11,7 @@ sidebar: true
 **We hope you like our new-look help docs** which make use of richer formatting to make the articles easier to read, particularly those with code snippets or command-line instructions. We've also changed the way we manage the source content so it's easier for us to maintain. There's still more to do, to re-organise some of the content and add new pages to reflect how JASMIN is evolving.
 This site should redirect you from any previous URLs you may have stored, but please use the following features to help you navigate around the site:
 
-- main navigion bar along the top of the site, including search tool
+- main navigation bar along the top of the site, including search tool
 - breadcrumbs menu, to show you where you are in the site
 - collapsible sidebar, left side panel (docs pages only)
 - icons, to identify articles within the same section
