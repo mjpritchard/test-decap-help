@@ -1,10 +1,11 @@
 ---
 aliases: /article/192-transfer-servers
-date: 2021-06-28 16:14:02
 description: Transfer servers
-slug: transfer-servers
-tags: ['transfer', 'xfer-sp']
+tags: 
+ - transfer
+ - xfer-sp
 title: Transfer servers
+weight: 80
 ---
 
 This article lists the JASMIN data transfer servers and provides links to how

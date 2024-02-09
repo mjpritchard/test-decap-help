@@ -83,11 +83,10 @@ packages are provided on the [additional sofware packages page]({{< ref "additio
 
 #### IDL
 
-[IDL](https://www.harrisgeospatial.com/Software-Technology/IDL) stands for
+[IDL](https://www.nv5geospatialsoftware.com/Products/IDL) stands for
 Interactive Data Language. It is a licensed data manipulation toolkit made
 available on JASMIN. IDL is available on the JASMIN scientific
-analysis servers and LOTUS cluster. Details of these packages are provided on
-the [ IDL and MIDL page]({{< ref "idl-and-midl" >}}).
+analysis servers and LOTUS cluster. See [ IDL ]({{< ref "idl" >}}).
 
 #### Creating your own software environments
 

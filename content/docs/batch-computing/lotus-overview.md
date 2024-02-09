@@ -1,9 +1,8 @@
 ---
 aliases: /article/5004-lotus-overview
-date: 2022-11-16 08:48:04
 description: LOTUS overview
-slug: lotus-overview
 title: LOTUS overview
+weight: 10
 ---
 
 This article gives an overview of the LOTUS batch computing cluster which is

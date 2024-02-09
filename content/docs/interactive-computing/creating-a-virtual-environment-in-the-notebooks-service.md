@@ -1,11 +1,10 @@
 ---
 aliases: /article/5084-creating-a-virtual-environment-in-the-jasmin-notebooks-service
-date: 2023-06-15 15:47:16
 description: Creating a virtual environment in the notebooks service
-slug: creating-a-virtual-environment-in-the-notebooks-service
 tags:
 - notebook
 title: Creating a virtual environment in the jasmin notebooks service
+weight: 90
 ---
 
 Creating a virtual environment is useful to allow a discrete set of extra

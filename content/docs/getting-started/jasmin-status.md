@@ -1,7 +1,6 @@
 ---
 aliases: /article/194-jasmin-live-status
 description: JASMIN status
-slug: jasmin-status
 title: JASMIN status
 weight: 70
 ---
@@ -14,9 +13,21 @@ The {{< link ceda_status >}}CEDA Status page{{< /link >}} is updated regularly t
 
 ## JASMIN dashboard
 
-{{< alert type="info">}}
-The JASMIN dashboard is currently under re-development and will be returining soon as a source of information about the status and performance of JASMIN subsystems. Watch this space.
-{{</alert>}}
+The {{<link "https://mon.jasmin.ac.uk" >}}JASMIN metrics dashboard{{</link>}} has been redeveloped and is now available again. 
+
+Please read the introductory information on that page.
+
+Currrently it provides:
+- GWS Dashboard
+  - view of all the volumes in a group workspace across different storage types, showing quota and usage
+- LOTUS Dashboard
+  - showing pending and running jobs per partition (queue) and other useful metrics
+- Power Dashboard
+  - showing power consumption of the various components of JASMIN
+- Tape dashboard
+  - showing summary information on tape usage by consortium
+
+This is still under active development and further dashboards may be added in due course.
 
 Please also keep an eye on:
 - `JASMIN-USERS` email list (all users should be on this list. If not, please ask)

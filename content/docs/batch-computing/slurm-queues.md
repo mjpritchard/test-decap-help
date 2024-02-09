@@ -1,18 +1,18 @@
 ---
 aliases: /article/4881-lotus-queues
-date: 2022-12-20 12:17:43
 description: Slurm queues
-slug: lotus-queues
 tags:
-- Slurm
+- slurm
 - queue
 - partition
 - sinfo
+- lotus
+- orchid
 title: Slurm queues
 ---
 
 This article introduces the Slurm scheduler queues/partitions for batch job
-submissions to LOTUS.
+submissions to the LOTUS and ORCHID clusters.
 
 ## Queue names
 

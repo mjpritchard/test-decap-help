@@ -1,9 +1,8 @@
 ---
 aliases: /article/4880-batch-scheduler-slurm-overview
-date: 2023-02-20 21:38:47
 description: 'Overview of the LOTUS batch scheduler, Slurm'
-slug: slurm-scheduler-overview
 title: Slurm scheduler overview
+weight: 20
 ---
 
 This article gives an overview of the Slurm Scheduler.
@@ -59,7 +58,7 @@ There are five standard SLURM queues for batch job submissions to LOTUS
 cluster: `short-serial`, `long-serial`, `par-single`, `par-multi` and `high-mem`.
 The default queue is `short-serial`. For testing new workflows, the
 additional queue `test`is recommended. The specification of each queue is
-described in detail in this article: [SLURM queues on LOTUS]({{< ref "lotus-queues" >}})
+described in detail in this article: [SLURM queues on LOTUS]({{< ref "slurm-queues" >}})
 
 Queues other than the five standard queues with the test queue should be
 ignored unless you have been specifically instructed to use them.

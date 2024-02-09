@@ -27,12 +27,12 @@ export TMPDIR=/group_workspaces/jasmin/<your_project>/<your_username>/tmp
 ```
 
   4. If a process hangs, do not simply close the terminal window. Please contact the helpdesk and alert the team so that the process can be shut down. Otherwise hung processes build up and contribute to machine overloading.
-  5. Do not “hog” IDL development licenses. A limited number of these are available for _development_ and compilation of IDL code which should then be run on LOTUS [using IDL runtime licenses]({{< ref "idl-and-midl" >}}), of which there are many more.
+  5. Do not “hog” IDL development licenses. A limited number of these are available for _development_ and compilation of IDL code which should then be run on LOTUS [using IDL runtime licenses]({{< ref "idl" >}}), of which there are many more.
   6. Do not use sci machines for data transfer: [xfer hosts are provided for this purpose]({{< ref "transfer-servers" >}}).
 
 ## LOTUS usage guidelines
 
-  1. Do not use [IDL development licences]({{< ref "idl-and-midl" >}}) on LOTUS. There are many _runtime_ licenses available, but the _development_ licenses are for interactive use on the sci machines, where IDL code can be compiled, then run on LOTUS using a _runtime_ license.
+  1. Do not use [IDL development licences]({{< ref "idl" >}}) on LOTUS. There are many _runtime_ licenses available, but the _development_ licenses are for interactive use on the sci machines, where IDL code can be compiled, then run on LOTUS using a _runtime_ license.
   2. Beware of inadvertently filling up /tmp on LOTUS nodes. This can take nodes out of action (perhaps for other users who still have jobs running on the same node) if /tmp fills up. Design your code to clean up as it goes along, and use environment variables to control where your applications write temporary data, ideally to storage which is not specific to a LOTUS node. If your job crashes, check which nodes were involved and clean up after yourself.
   3. Do not store data in scratch areas for long periods of time. Move data away to group workspaces once your processing has finished.
 

@@ -1,19 +1,13 @@
 ---
 aliases: /article/4810-graphical-linux-desktop-access-using-nx
-date: 2023-06-08 16:26:34
 description: Graphical linux desktop using NoMachine NX
-slug: graphical-linux-desktop-access-using-nx
 tags:
 - nx
-- no machine
 - nomachine
-- x2go
-- graphical
 - desktop
 - X11
-- X
-- gui
 title: Graphical linux desktop using NoMachine NX
+weight: 50
 ---
 
 This article explains how to connect to a graphical linux desktop within the
@@ -21,36 +15,38 @@ JASMIN environment using NoMachine NX.
 
 ## Introduction
 
+### Benefits
+
+- This service provides a graphical Linux desktop on JASMIN, ideal
+for use with graphics-heavy tasks like interactive work with large images.
+- The desktop environment includes a Firefox web browser which can be used to access 
+internal-only web resources.
+
 Using graphical applications over a wide-area network can be very slow, and is
-not recommended or supported on JASMIN. This service helps by providing a
-graphical desktop **within** the JASMIN environment, instead of on the end
-user's local machine at the end of a wide-area network path from JASMIN. A
-small client application available for you to install on your local machine
-enables you to connect to specific servers within JASMIN but send graphics
-output across the network in compressed form, resulting in much better
-performance.
+not recommended or supported on JASMIN. This service provides a better alternative with
+graphical desktop **within** the JASMIN environment itself, rather than on the user's local machine.
 
-Via a web browser provided on this graphical desktop, this service also
-provides a means of accessing web-based resources within JASMIN which are not
-otherwise visible outside.
+A small client application, available for you to install on your local machine,
+enables you to connect to specific servers within JASMIN. Graphics are then relayed to the client 
+application in a more efficient form, resulting in much better performance particularly if you need 
+to interact with what's being displayed.
 
-The service provides an improved user experience compared to that offered by
-the alternative X2GO system previously offered on JASMIN and is strongly
+The service provides an improved user experience and is strongly
 recommended over standard X11 graphics.
 
 The following "special" login servers have the NX service available and can be
 used as described below:
 
-  * `nx-login1.jasmin.ac.uk`
-  * `nx-login2.jasmin.ac.uk` ([Contingency config]({{< ref "login-servers#contingency-login-servers" >}}) similar to `login2.jasmin.ac.uk`, to make it available from clients without reverse DNS lookup to a domain in the JASMIN allow-list. Use this option if you need to connect from home and do not have an institutional VPN available)
-  * `nx-login3.jasmin.ac.uk` ([Contingency config]({{< ref "login-servers#contingency-login-servers" >}}) as above) 
-  * `nx-login4.jasmin.ac.uk` ([Contingency config]({{< ref "login-servers#contingency-login-servers" >}}) as above, but also supports users with usernames > 8 characters)
+- `nx-login1.jasmin.ac.uk` (best for use from university networks)
+- `nx-login2.jasmin.ac.uk` ([Contingency config]({{< ref "login-servers#contingency-login-servers" >}}) similar to `login2.jasmin.ac.uk`, to make it available from clients without reverse DNS lookup to a domain in the JASMIN allow-list. Use this option if you need to connect from home and do not have an institutional VPN available)
+- `nx-login3.jasmin.ac.uk` ([Contingency config]({{< ref "login-servers#contingency-login-servers" >}}) as above) 
+- `nx-login4.jasmin.ac.uk` ([Contingency config]({{< ref "login-servers#contingency-login-servers" >}}) as above, but also supports users with usernames > 8 but also supports users with usernames > 8 characters. No support for usernames > 14 characters: contact helpdesk for advice)
 
 ### Notes
 
-  * In all other respects these are the same as the standard [login servers]({{< ref "login-servers" >}}), but should only be used by users connecting with the NX enterprise client as described below. Please do not use them for standard terminal-based SSH connections as this preserves system resources for their intended purpose.
-  * Although the graphical desktop session which you create with this service should persist when you close the client (unless you specifically log out), you should not rely on this feature (so please don't report this as a problem: occasionally machines run out of resources and sessions get killed). Keeping sessions open consumes resources on the server even when you're not using the session, which may mean that other users can't use the service.
-  * nx-login4 has been introduced to help cater for users whose usernames exceed 8 characters length. This works around a known limitation in the NX server software but may not solve the problem for users with very long names (created before we introduced a limit to prevent this happening: if this still affects you and you cannot make onward connections to other machines in NX, please contact the helpdesk)
+- In all other respects these are the same as the standard [login servers]({{< ref "login-servers" >}}), but should only be used with the NX enterprise client as described below, (other than for testing your connection) as this preserves system resources for their intended purpose.
+- Although the graphical desktop session which you create with this service should persist when you close the client (unless you specifically log out), you should not rely on this feature, so please don't report this as a problem: occasionally machines run out of resources and sessions get killed. Keeping sessions open consumes resources on the server even when you're not using the session, which may mean that other users can't use the service.
+- `nx-login4` has been introduced to help cater for users whose usernames exceed 8 characters length. This works around a known limitation in the NX server software but may not solve the problem for users with very long names (created before we introduced a limit to prevent this happening: if this still affects you and you cannot make onward connections to other machines in NX, please contact the helpdesk)
 
 ## Installing NoMachine Enterprise Client
 
@@ -67,12 +63,11 @@ Note that **"Nomachine Enterprise Client"** is a different application to the
 "Nomachine Enterprise Desktop" available from the more publicised download
 link on the NoMachine website or other applications in the NoMachine suite:
 the desktop edition contains additional components to enable remote access to
-your **own** (e.g. desktop) machine from a remote location: perhaps convenient
+your **own** (local) machine from a remote location: perhaps convenient
 but not what we are trying to enable for you here.
 
 The **NoMachine Enterprise Client** is purely a client to connect to a remote
-server: in our case the server is at the JASMIN end, providing an additional
-(graphical desktop) interface to JASMIN.
+server: in our case the server is at the JASMIN end, where the desktop session will exist.
 
 Remember to check for updates for the enterprise client to ensure you always
 have the latest stable version. You can configure the application to check for
@@ -87,42 +82,49 @@ Note that the interface may look slightly different depending on which version
 number of the client you have installed (we can't promise to keep the videos
 up to date with every new version, unfortunately!)
 
-{{< youtube id="-O-Ec4lZJuE" title="Windows" >}}
+{{< nav type="tabs" id="tabs-os" >}}
+  {{< nav-item header="Windows" show="true" >}}
+    {{< youtube id="-O-Ec4lZJuE" title="Windows" >}}
+  {{< /nav-item >}}
+  {{< nav-item header="Mac" >}}
+    {{< youtube id="R9zb3LbrlJE" title="Mac" >}}
+  {{< /nav-item >}}
+  {{< nav-item header="Linux">}}
+    {{< youtube id="g22dDHX7Tt0" title="Linux" >}}
+  {{< /nav-item >}}
+{{< /nav >}}
 
-***
-
-{{< youtube id="R9zb3LbrlJE" title="Mac" >}}
-
-***
-
-{{< youtube id="g22dDHX7Tt0" title="Linux" >}}
-
-Instructions for v7.x clients: (v6.x clients look slightly different hence
-slightly different steps, but the same concept overall)
+Instructions for v8.x clients: (older clients may vary but same concept overall)
 
   1. Open the NX client 
       1. On Mac and Windows, click the NoMachine Icon
-      1. On Linux, the default location for the executable once installed is `/usr/NX/bin/nxplayer`, so you may want to add this to your path. Your desktop environment may enable you to add an icon to your desktop. 
+      1. On Linux, the default location for the executable once installed is `/usr/NX/bin/nxplayer`, so you may want to add this to your path. Your desktop environment may enable you to add an icon to your desktop.
   1. In the "Machines" view, select "Add"
-      1. You're now in the "Address" tab. Type a name for this connection profile, and the full hostname, e.g. `nx-login1.jasmin.ac.uk`. Set the Protocol to "SSH", which will change the port to 22. 
+      1. You're now in the "Address" tab. Type a name for this connection profile, and the full hostname, e.g. `nx-login2.jasmin.ac.uk`. Set the Protocol to "SSH", which will change the port to 22.
   1. Go to the "Configuration" tab.
-      1. Choose **"Use key-based authentication with a key you provide"** , then click the Modify button to the right. 
-      1. The default is "Use password authentication": this generally doesn't work so we don't support this.
-      1. Use the button to the right to navigate to your private key, or type the path in the box. 
-      1. Your private key may be in a hidden directory e.g. `~/.ssh` see Troubleshooting
+      1. Choose **"Use key-based authentication with a key you provide"** , then click the Modify button to the right.
+      1. The default is "Use password authentication": **don't** use this.
+      1. Use the button to the right to navigate to your private key, or type the path in the box.
+      1. Your private key may be in a hidden directory e.g. `~/.ssh` (see {{<link "#cant-find-your-private-key">}}Troubleshooting{{</link>}})
+      1. It is recommended NOT to "import the private key to the connection file".
       1. Make sure you tick the box "Forward Authentication" **IMPORTANT**
-  1. Go back to the Address Tab
-      1. Click Connect (top right) if all looks correct.
-      1. You may find that it has now forgotten where you're private key is, if so **repeat steps 3 & 4**. [This was a bug in earlier versions!]
-      1. Click "Connect" then follow the steps below in "Connecting".
+
+  1. Go back to the "Add connection" dialog
+      1. If all is correct, click "Add"
+
+  1. In the "Machines" list
+      1. You should see your new connection listed.
+      1. Either double-click it, or right-click and select "Start connection"
+      1. (Note that you can right-click to Edit/Remove/Rename or see {{<link "#troubleshooting">}}Troubleshooting{{</link>}} )
 
 ## Connecting
 
-  1. Enter your JASMIN username and your SSH passphrase. Click OK
-  2. Select "Create a new virtual desktop", click Continue
+  1. Enter your JASMIN username and your SSH passphrase (it is NOT recommended to save your passphrase in the connection file). Click OK.
+  1. You may see a list of all the other desktop sessions currently in progress from other users. Ignore these and click "New desktop".
+  2. Select "Create a new virtual desktop", then click "Create"
   3. **Note the instructions for how to reach the NX menu once in the session, and select screen settings from the list of icons: Recommended setting is "Fit to window" (leftmost icon)**
   4. Click OK on this and subsequent screens giving information about the NX and desktop environments.
-  5. You should be presented with a linux deskop on the server to which you connected, e.g. `nx-login1.jasmin.ac.uk`
+  5. You should be presented with a linux deskop on the server to which you connected, e.g. `nx-login2.jasmin.ac.uk`
   6. Click "Activities" (top left menu on desktop) ![](file-XXVsbhxQi8.jpg)
   7. Open a terminal window by clicking the "Terminal" icon in the menu down the left hand side.  
   ![](file-chi3HNdvmk.jpg)
@@ -136,18 +138,17 @@ cat /etc/motd
 
 Once you have set up the environment to your liking, you can
 
-  * use the web browser on that system to access web-based resources available only within JAMSIN
-  * make SSH connections to other systems within JASMIN such as `sci1.jasmin.ac.uk`
-  * if necessary, use a graphical applications on other systems within JASMIN and send the output back to your graphical desktop.
+  - use the web browser on that system to access web-based resources available only within JASMIN
+  - make SSH connections to other systems within JASMIN such as `sci1.jasmin.ac.uk`
+  - use graphical applications on other systems within JASMIN and send the output bask to this desktop
 
   1. Click "Activities" (top left menu on desktop) 
 
 {{<image src="img/docs/graphical-linux-desktop-access-using-nx/file-XXVsbhxQi8.jpg" caption="click Activities">}}
 
-  2. Click the Firefox icon in the side bar menu to start the Firefox web browser. Use this to access web-based resources only available within JASMIN. Do not use for personal web browsing. To toggle Firefox between taking up the whole of your desktop, and running in a smaller, sizeable window, double-click its title bar (this applies to any windowed application on the desktop). 
+  2. Click the Firefox icon in the side bar menu to start the Firefox web browser. Use this to access web-based resources only available within JASMIN. Do not use for personal web browsing. To toggle Firefox between taking up the whole of your desktop, and running in a smaller, sizeable window, double-click its title bar (this applies to any windowed application on the desktop).
 
 {{<image src="img/docs/graphical-linux-desktop-access-using-nx/file-zykeLBbqgb.jpg" caption="open Firefox browser">}}
-![]()
 
   3. Click the Terminal icon 
 
@@ -155,7 +156,7 @@ Once you have set up the environment to your liking, you can
 
   4. Try an onward SSH connection, for example to a SCI machine. 
     
-{{<command user="user" host="nx-login1">}}
+{{<command user="user" host="nx-login2">}}
 ssh -AX <user>@sci1.jasmin.ac.uk
 {{</command>}}
 
@@ -165,7 +166,7 @@ ssh -AX <user>@sci1.jasmin.ac.uk
 
   6. (Example of a graphical application on another machine within JASMIN). Try opening a simple graphical application on `sci1.jasmin.ac.uk` with the command:
     
-{{<command user="user" host="nx-login1">}}
+{{<command user="user" host="nx-login2">}}
 xclock
 {{</command>}}
 (you may find `-AY` works if `-AX` does not).
@@ -234,8 +235,10 @@ If you click the small keyboard-layout icon (bottom right when viewing the list 
 
 Please do not try and connect using the proprietary "NX" protocol. Select "SSH" as the protocol. If you mistakenly use "NX" as the protocol you may see an error similar to the following when you try to connect (The correct port for **SSH** connections is 22)
 
-```
-A connection timeout has occurred while trying to connect to 'nx-login1.jasmin.ac.uk' on port '4000'. The issue could either be caused by a networking problem, by a firewall or NAT blocking incoming traffic or by a wrong server address. Please verify your configuration and try again.
+```console
+A connection timeout has occurred while trying to connect to 'nx-login2.jasmin.ac.uk' on port '4000'.
+The issue could either be caused by a networking problem, by a firewall or NAT blocking incoming
+traffic or by a wrong server address. Please verify your configuration and try again.
 ```
 
 ### Authentication method
@@ -249,20 +252,21 @@ Make sure you have installed and are using the most recent version of the [NoMac
 ### Key format
 
 If you created your SSH private key using the "PuTTYgen" application, and are getting "Authentication failed" for a key pair that you know works OK for simple terminal connections, it could be that you need to convert the private key to "OpenSSH format" for use here. By doing this you would be creating an alternately-formatted version of the same private key, so the public key stays the same (and you don't need to re-upload that to JASMIN).
-  * Open PuTTYgen and "Load an existing private key file" (click "Load")
-  * Ignore the notice about saving it in PuTTY's own format (this is not useful here) (click "OK")
-  * In the PuTTYgen menu, select "Conversions", then "Export OpenSSH key"
-  * Save the newly-formatted private key file locally. The passphrase needed to unlock it should not have changed.
-  * Use this newly-formatted key file with NoMachine NX.
-      
+
+- Open PuTTYgen and "Load an existing private key file" (click "Load")
+- Ignore the notice about saving it in PuTTY's own format (this is not useful here) (click "OK")
+- In the PuTTYgen menu, select "Conversions", then "Export OpenSSH key"
+- Save the newly-formatted private key file locally. The passphrase needed to unlock it should not have changed.
+- Use this newly-formatted key file with NoMachine NX.
+
 ### Passphrase vs Password
 
 Be sure to use the PASSPHRASE associated with your SSH private key, and not the PASSWORD associated with your JASMIN account, when prompted using the NX client.
-    
+
 ### Can't find your private key?
 
 The location of your private key on your local machine may be in a hidden directory for example `~/.ssh`. In order to navigate to it to provide the location when setting up your connection profile, you may need to enable the display of hidden directories/files in your local desktop environment first. On a Mac you can do this with the shortcut {{<kbd "CMD+SHIFT+.">}}. In Windows this is under File Explorer / View / Hidden Items. It's also possible that your home directory itself (normally `/Users/<username>`) is not configured to be displayed by default in `Finder`. If this is case, go to Finder / Preferences / Sidebar / Show these items and tick the box next to the item representing your username: this should make it appear, and `.ssh` should be a subdirectory of this.
-    
+
 ### Can't make an onward connection
 
 Previous versions of the Windows client had problems with "forward authentication" enabled, but this is required for onward connection to other machines. If this happens, try:
@@ -272,15 +276,25 @@ Previous versions of the Windows client had problems with "forward authenticatio
 * Deleting the `C:\Users\<username>\.nx` directory on your machine
 * Re-installing and trying again.
 * Deleting and making a new connection profile for the nx-login server you're connecting to.
-    
+
 ### Can't display graphics from sci machine or other onward connection
 
-Did you omit the -X option from the SSH command when you made the onward connection to that machine? Try -Y if -X doesn't work for you.
+Did you omit the `-X` option from the SSH command when you made the onward connection to that machine? Try `-Y` if `-X` doesn't work for you.
 
 ### Disk space
 
 Check your disk usage in your JASMIN home directory: if this is over the 100G limit, you may not be able to write any temporary files and this could prevent NoMachine from being able to start a new session or even reconnect to an existing virtual desktop session. Clear out some space and re-check with `pdu -sh $HOME` to find out how much space you're using.
 
+### Can't connect or gets stuck connecting to a previous session
+
+Sometimes, you can't connect because you have a previous session which did not terminate correectly, or you might have problems reconnecting to a previous desktop session. Sometimes the client will get stuck with a "spinning wheel" before eventually timing out. You can terminate your own previous session as follows:
+
+- Follow instructions in {{<link "#connecting">}}Connecting{{</link>}} until step 2 where all the users' sessions on the machine are displayed.
+- Find the one corresponding to your username
+- Right-click it and select "Terminate session"
+
+Note that you may lose any unsaved work in the session that you terminate, but it should clear the stuck session and allow you to reconnect. Please try this first before asking the support team, as this is the first thing that they will try in order to clear your session.
+
 ### "It worked yesterday"
 
-For occasions where "it worked last time I tried to connect, but now doesn't", the time-honoured IT support advice of "turning it off and on again" is applicable: try restarting your local machine where the NX client is running, as this can sometimes clear issues with the client, your machine or your network connection. Don't forget to re-connect via your VPN if available.
+For occasions where "it worked last time I tried to connect, but now doesn't", please first try the above step to clear any previous session which might have got stuck, otherwise the time-honoured IT support advice of "turning it off and on again" is applicable: try restarting your local machine where the NX client is running, as this can sometimes clear issues with the client, your machine or your network connection. Don't forget to re-connect via your VPN if available.

@@ -1,9 +1,8 @@
 ---
 aliases: /article/204-interactive-computing-overview
-date: 2022-06-08 12:58:24
 description: Interactive computing overview
-slug: interactive-computing-overview
 title: Interactive computing overview
+weight: 10
 ---
 
 This article introduces the resources on JASMIN available for interactive

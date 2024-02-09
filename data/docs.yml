@@ -12,7 +12,6 @@
     - title: jasmin training accounts
     - title: tips for new users
     - title: login
-    #- title: migrate jasmin account from ceda
     - title: multiple account types
     - title: reconfirm email address
     - title: reset jasmin account password
@@ -21,34 +20,35 @@
     - title: understanding new jasmin storage
     - title: update a jasmin account
     - title: updating your ssh key
+    #- title: migrate jasmin account from ceda
 
 - title: Interactive computing
   pages:
-    - title: Centos7 sci login xfer servers
-    - title: Check network details
-    - title: Creating a virtual environment in the notebooks service
-    - title: Graphical linux desktop access using nx
-    - title: Interactive computing overview
-    - title: Login problems
+    - title: Interactive computing overview   
+    - title: Check network details     
     - title: Login servers
-    - title: Project specific servers
+    - title: Login problems    
+    - title: Graphical linux desktop access using nx
     - title: Sci servers
     - title: Tenancy sci analysis vms
     - title: Transfer servers
+    - title: Creating a virtual environment in the notebooks service
+    - title: Project specific servers
+    #- title: Centos7 sci login xfer servers
 
 - title: Batch computing
   pages:
     - title: LOTUS overview
     - title: Slurm scheduler overview
-    - title: LOTUS queues
+    - title: Slurm queues
     - title: LOTUS cluster specification
     - title: How to monitor slurm jobs
     - title: How to submit a job
     - title: How to submit an mpi parallel job
     - title: Example job 2 calc md5s
-    - title: GPU cluster orchid
+    - title: ORCHID GPU cluster
     - title: GPU testing
-    - title: LOTUS Slurm status
+    - title: Slurm status
     - title: LSF to Slurm quick reference
 
 - title: Software on JASMIN
@@ -60,7 +60,7 @@
     - title: community software esmvaltool
     - title: conda environments and python virtual environments
     - title: creating and using miniconda environments
-    - title: idl and midl
+    - title: idl
     - title: jasmin sci software
     - title: jasmin software faqs
     - title: jaspy envs

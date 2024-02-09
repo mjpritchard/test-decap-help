@@ -1,21 +1,19 @@
 ---
 aliases: /article/174-project-specific-servers
-categories:
-- Interactive Computing
-collection: jasmin-documentation
-date: 2023-01-24 11:59:45
 description: Project-specific servers
-slug: project-specific-servers
 title: Project-specific servers
+tags: 
+- deprecated
+weight: 100
 ---
-
-This article introduces the project specific servers. It covers:
 
 {{<alert type="danger">}}
 **Deprecated feature** documented here to provide information about how to access existing instances.
 Project-specific servers are no longer provided on request, as most use cases can be satisfied by 
 a tenancy in the JASMIN cloud.
 {{</alert>}}
+
+This article introduces the project specific servers. It covers:
 
 ## What is a project-specific server?
 

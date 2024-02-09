@@ -45,7 +45,7 @@ is lots of processing resource (i.e. LOTUS).
 In the examples below, we use the `test` queue (or partition, as queues are
 known in SLURM). You can use this for testing, but once you know roughly how
 long your download(s) should take, you should [choose an appropriate
-queue]({{< ref "lotus-queues" >}}) so that the jobs can be scheduled in a fair
+queue]({{< ref "slurm-queues" >}}) so that the jobs can be scheduled in a fair
 way alongside other users' jobs.
 
 ### 1\. Single download script

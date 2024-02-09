@@ -1,16 +1,10 @@
 ---
 aliases: /article/191-login-servers
-date: 2022-06-08 12:57:52
 description: Login servers
-slug: login-servers
 tags:
-- xfer-sp
-- xfer3
-- login2
-- login1
-- xfer1
-- xfer2
+- login
 title: Login servers
+weight: 30
 ---
 
 ## Available login servers

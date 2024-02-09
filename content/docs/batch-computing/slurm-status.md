@@ -1,9 +1,8 @@
 ---
 aliases: /article/4894-lotus-slurm-status
 date: 2021-03-08 15:47:16
-description: LOTUS/SLURM status
-slug: lotus-slurm-status
-title: LOTUS/SLURM status
+description: LOTUS/ORCHID Slurm scheduler status
+title: SLURM status
 ---
 
 TODO: UPDATE THE URL

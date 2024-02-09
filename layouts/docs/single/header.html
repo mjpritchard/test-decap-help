@@ -1,8 +1,8 @@
 <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-10">
         {{ with .Title }}<p class="display-4 mt-5">{{ . }}</p>{{ end }}
     </div>
-    <div class="col-md-4">
+    <div class="col-md-2">
         {{- with .Parent.Params.icon }}<p class="display-4 mt-5">{{- partial "assets/icon.html" (dict "icon" .) }}</p>{{ end }}
     </div>
 </div>

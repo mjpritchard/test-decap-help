@@ -1,9 +1,8 @@
 ---
 aliases: /article/190-check-network-details
-date: 2022-05-12 16:58:27
 description: Check network details
-slug: check-network-details
 title: Check network details
+weight: 20
 ---
 
 This article explains how to:

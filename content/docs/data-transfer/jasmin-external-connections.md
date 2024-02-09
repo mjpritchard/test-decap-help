@@ -1,9 +1,8 @@
 ---
 aliases: /article/221-jasmin-external-connections
-date: 2021-03-03 08:40:11
 description: JASMIN external connections
-slug: jasmin-external-connections
 title: JASMIN external connections
+tags: deprecated
 ---
 
 **NOTE [January 2021]** This article is now out of date. Some terminology,

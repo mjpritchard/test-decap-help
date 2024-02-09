@@ -1,10 +1,16 @@
 ---
 aliases: /article/4434-migrate-jasmin-account-from-ceda
-date: 2023-01-24 11:58:28
 description: Migrate a JASMIN account from CEDA
-slug: migrate-jasmin-account-from-ceda
 title: Migrate a JASMIN account from CEDA
+tags:
+- deprecated
+weight: 190
 ---
+
+{{<alert type="info">}}
+The information in this article should no longer apply to the majority of JASMIN
+users whose accounts were created since 2017.
+{{</alert>}}
 
 This article explains how to migrate an existing JASMIN account from CEDA
 portal to the JASMIN account portal. There is an additional video tutorial at

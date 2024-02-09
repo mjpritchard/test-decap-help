@@ -1,10 +1,14 @@
 ---
 aliases: /article/4859-centos7-sci-login-xfer-servers
-date: 2021-01-28 17:21:08
 description: CentOS7 Login, Sci and Xfer servers
-slug: centos7-sci-login-xfer-servers
 title: CentOS7 Login, Sci and Xfer servers
+weight: 110
+draft: true
 ---
+
+{{<alert type="info">}}
+This article was used to describe the new servers introduced as part of the RHEL -> CentOS7 migration in 2020/2021. It is now superceded.
+{{</alert>}}
 
 This article describes the CentOS7 versions of the 3 familiar
 types of JASMIN server. These are:

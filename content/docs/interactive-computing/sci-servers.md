@@ -1,20 +1,11 @@
 ---
 aliases: /article/121-sci-servers
-date: 2022-11-16 08:49:22
 description: Scientific analysis servers
-slug: sci-servers
 tags:
-- scientific
-- analysis
-- machine
 - sci
-- jasmin-sci
-- jap
-- platform
-- Arbiter
-- 'fatal: Could not read from remote repository'
-- git
+- arbiter
 title: Scientific analysis servers
+weight: 60
 ---
 
 ## Intro

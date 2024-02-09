@@ -1,9 +1,8 @@
 ---
 aliases: /article/4805-tenancy-sci-analysis-vms
-date: 2020-10-21 21:33:53
 description: Tenancy-Sci Analysis VMs
-slug: tenancy-sci-analysis-vms
 title: Tenancy-Sci Analysis VMs
+weight: 70
 ---
 
 This document explains how to access a tenancy-based sci machine. These are 

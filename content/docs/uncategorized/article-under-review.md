@@ -3,6 +3,7 @@ aliases:
 - /article/4894-lotus-slurm-status
 - /article/221-jasmin-external-connections
 - /article/4856-jasmin-users-guide
+- /article/4859-centos7-sci-login-xfer-servers
 description: Article under review
 slug: article-under-review
 title: Article under review

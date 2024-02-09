@@ -1,13 +1,12 @@
 ---
 aliases: /article/848-login-problems
-date: 2023-06-13 15:44:56
 description: Login problems?
-slug: login-problems
 tags:
 - ssh
 - password
 - connection
 title: Login problems?
+weight: 40
 ---
 
 Having problems connecting to a host on JASMIN? Details of how to login to
