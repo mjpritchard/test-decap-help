@@ -1,6 +1,5 @@
 ---
 aliases: /article/3808-data-transfer-tools-gridftp-cert-based-auth
-date: 2023-01-26 15:43:26
 description: 'Data Transfer Tool: GridFTP (certificate-based authentication)'
 slug: gridftp-cert-based-auth
 title: 'GridFTP (certificate-based authentication)'
@@ -50,105 +49,96 @@ On the machine you intend to use as the transfer client, e.g.
 `xfer1.jasmin.ac.uk`, in your JASMIN home directory, download 2 shell scripts
 which will interact with the Online CA for you. Make them executable:
 
-    
-    
-    $ wget https://raw.githubusercontent.com/cedadev/online_ca_client/master/contrail/security/onlineca/client/sh/onlineca-get-cert-wget.sh
-    $ wget https://raw.githubusercontent.com/cedadev/online_ca_client/master/contrail/security/onlineca/client/sh/onlineca-get-trustroots-wget.sh
-    $ chmod u+x onlineca-get-*.sh
-    
+{{<command user="user" host="xfer1">}}
+wget https://raw.githubusercontent.com/cedadev/online_ca_client/master/contrail/security/onlineca/client/sh/onlineca-get-cert-wget.sh
+wget https://raw.githubusercontent.com/cedadev/online_ca_client/master/contrail/security/onlineca/client/sh/onlineca-get-trustroots-wget.sh
+chmod u+x onlineca-get-*.sh
+{{</command>}}
 
 View help information for the shell scripts:
 
-    
-    
-    $ ./onlineca-get-trustroots-wget.sh -h
-    $ ./onlineca-get-cert-wget.sh -h
-    
+{{<command user="user" host="xfer1">}}
+./onlineca-get-trustroots-wget.sh -h
+./onlineca-get-cert-wget.sh -h
+{{</command>}}
 
-Bootstrap trust between your own machine and the JASMIN gridftp server: [First
-time only]
+Bootstrap trust between your own machine and the JASMIN gridftp server: (First time only)
 
-    
-    
-    $ ./onlineca-get-trustroots-wget.sh -U https://slcs.jasmin.ac.uk/trustroots/ -b
-    Bootstrapping Short-Lived Credential Service root of trust.
-    Trust roots have been installed in /home/users/USERNAME/.globus/certificates.
-    
+{{<command user="user" host="xfer1">}}
+./onlineca-get-trustroots-wget.sh -U https://slcs.jasmin.ac.uk/trustroots/ -b
+(out)Bootstrapping Short-Lived Credential Service root of trust.
+(out)Trust roots have been installed in /home/users/USERNAME/.globus/certificates.
+{{</command>}}
 
 Obtain a credential, to be written to an output file `credfile` using your
 JAMSIN Accounts Portal username USERNAME:
 
-    
-    
-    ./onlineca-get-cert-wget.sh -U https://slcs.jasmin.ac.uk/certificate/ -l USERNAME -o ./cred.jasmin
-    
-
-Change the permissions on your newly-created cred.jasmin file so that it's
-only readable by you (client software may insist on this):
-
-    
-    
-    chmod 600 ./cred.jasmin
-    
+{{<command user="user" host="xfer1">}}
+./onlineca-get-cert-wget.sh -U https://slcs.jasmin.ac.uk/certificate/ -l USERNAME -o ./cred.jasmin
+{{</command>}}
 
 When prompted, enter the password associated with your **JASMIN** account
 **(NOT your SSH passphrase)**
+
+Change the permissions on your newly-created `cred.jasmin` file so that it's
+only readable by you (client software may insist on this):
+
+{{<command user="user" host="xfer1">}}
+chmod 600 ./cred.jasmin
+{{</command>}}
 
 This credential obtained by this method is valid by default for 720 hours (30
 days), as you can see by inspecting the certificate using the following
 command:
 
-    
-    
-    $ openssl x509 -in cred.jasmin -noout -startdate -enddate
-    notBefore=Mar 11 17:32:59 2022 GMT
-    notAfter=Apr 10 17:32:59 2022 GMT
-    
+{{<command user="user" host="xfer1">}}
+openssl x509 -in cred.jasmin -noout -startdate -enddate
+(out)    notBefore=Mar 11 17:32:59 2022 GMT
+(out)    notAfter=Apr 10 17:32:59 2022 GMT
+{{</command>}}
 
-**This means that you can use this particular certificate for the following
-720 hours, but after that you will need to repeat this step to obtain a new
-one.**
+After the `notAfter` date, it will no longer be valid, but you can
+repeat this process at any time (e.g. before it expires) to update it.
 
-## Example Gridftp usage (general case, or with a JASMIN host as gridftp
-client)
+## Example Gridftp usage
+
+(General case, or with a JASMIN host as gridftp client)
 
 Once you have obtained a valid short-term credential on the client transfer
-server, and _assuming that the gridftp server at the remote end of the
-transfer recognises and is able to authorize you via this credential_ , then
-you should be able to transfer data between the remote end (server) and local
-end (client) with commands such as shown below:
+server, and assuming that the gridftp server at the remote end of the
+transfer recognises and is able to authorize you via this credential, then
+you should be able to transfer data between the remote server and local
+client with commands such as shown below:
 
 Please consult the documentation for the `globus-url-copy` command for the
 full range of options and arguments.
 
-Please note that the examples below use a fictitious client **gridftp-
-client.localsite.ac.uk** server **gridftp-server.remotesite.ac.uk** which
-needs to be replaced in your commands with the hostname of the gridftp server
-and client you are actually using.
+Please note that the examples below use a fictitious client `gridftp-client.localsite.ac.uk` and server `gridftp-server.remotesite.ac.uk` which need to be replaced in your commands with the hostname of the actual gridftp server and client you are actually using.
 
 Check help documentation for the globus-url-copy command:
 
-    
-    
-    $ globus-url-copy -help
-    
+{{<command user="user" host="gridftp-client">}}
+globus-url-copy -help
+{{</command>}}
+
+**NOTE:** On some systems, you have to load a relevant module to get access to the globus-url-copy command, however not on the JASMIN \[hp\]xfer servers.
+
+It is recommended to try things out using the regular xfer servers xfer[12] but to perform "real" transfers using hpxfer[12] for better performance, but to use the latter you will need the {{<link "hpxfer-access-role">}}hpxfer access role{{</link>}}.
 
 1\. Remote directory listing issued by client on `gridftp-
 client.localsite.ac.uk` to server `gridftp-server.remotesite.ac.uk` where you
 have a home directory `/home/users/USERNAME`:
 
-    
-    
-    $ globus-url-copy -cred cred.jasmin -vb -list gsiftp://gridftp-server.remotesite.ac.uk/home/users/USERNAME/
-    
+{{<command user="user" host="gridftp-client">}}
+globus-url-copy -cred cred.jasmin -vb -list gsiftp://gridftp-server.remotesite.ac.uk/home/users/USERNAME/
+{{</command>}}
 
 2\. Download a file from remote directory `/home/users/USERNAME` to
 destination on the client machine:
 
-    
-    
-    $ globus-url-copy -cred cred.jasmin -vb gsiftp://gridftp-server.remotesite.ac.uk/home/users/USERNAME/myfile file:///path/to/localdir/myfile
-    
+{{<command>}}
+globus-url-copy -cred cred.jasmin -vb gsiftp://gridftp-server.remotesite.ac.uk/home/users/USERNAME/myfile file:///path/to/localdir/myfile
+{{</command>}}
 
 The `-p N` and `-fast` options can additionally be used in combination to
 enable `N` parallel streams at once, as shown below. You can experiment with N
@@ -156,26 +146,24 @@ in the range 4 to 16 to obtain the best performance, but please be aware that
 many parallel transfers can draw heavily on shared resources and degrade
 performance for other users:
 
-    
-    
-    $ globus-url-copy -cred cred.jasmin -vb -p 16 -fast gsiftp://gridftp-server.remotesite.ac.uk/home/users/USERNAME/myfile file:///path/to/localdir/myfile
-    
+{{<command>}}
+globus-url-copy -cred cred.jasmin -vb -p 16 -fast gsiftp://gridftp-server.remotesite.ac.uk/home/users/USERNAME/myfile file:///path/to/localdir/myfile
+{{</command>}}
 
 3\. Recursively download the contents of a directory on a remote location to a
 local destination.
 
-    
-    
-    $ globus-url-copy -cred cred.jasmin -vb -p 4 -fast -cc 4 -cd -r gsiftp://gridftp-server.remotesite.ac.uk/home/users/USERNAME/mydir/ file:///path/to/localdir/mydir/
-    
+{{<command>}}
+globus-url-copy -cred cred.jasmin -vb -p 4 -fast -cc 4 -cd -r gsiftp://gridftp-server.remotesite.ac.uk/home/users/USERNAME/mydir/ file:///path/to/localdir/mydir/
+{{</command>}}
 
 Where:
 
-  * `-cc N` requests `N` concurrent transfers (in this case, each with `p=4` parallel streams)
-  * `-cd` requests creation of the destination directory if this does not already exist
-  * `-r` denotes recursive transfer of directories
-  * `-sync` and `-sync-level` options can be used to synchronise data between the two locations, where destination files do not exist or differ (by criteria that can be selected) from corresponding source files. See `-help` option for details.
-  * the `file:///` URI is used to specify the destination on the local file system.
+  - `-cc N` requests `N` concurrent transfers (in this case, each with `p=4` parallel streams)
+  - `-cd` requests creation of the destination directory if this does not already exist
+  - `-r` denotes recursive transfer of directories
+  * `-sync` and `-sync-level` options can be used to synchronise data between the two locations, where destination files do not exist or differ - y criteria that can be selected) from corresponding source files. See `-help` option for details.
+  - the `file:///` URI is used to specify the destination on the local file system.
 
 ## Uploading data
 
@@ -183,23 +171,20 @@ The above commands can also be adapted to invoke transfers from a local source
 to a remote destination, i.e. uploading data, since the commands all take the
 following general form:
 
-    
-    
-    $ globus-url-copy [OPTIONS] source-uri desination-uri
-    
+{{<command>}}
+globus-url-copy [OPTIONS] source-uri desination-uri
+{{</command>}}
 
-You can use the above examples by replacing the local machine `gridftp-
-client.localsite.ac.uk` with one of the jasmin transfer hosts
-`xfer[12].jasmin.ac.uk` as a client, To do this, you first need to be logged
-in via SSH to one of these hosts and can initiate a transfer by invoking
-`globus-url-copy` in one of the ways above.
+You can use the above examples by replacing the local machine `gridftp-client.localsite.ac.uk` with one of the jasmin transfer hosts
+`xfer[12].jasmin.ac.uk` as a client, To do this, you first need to be logged in via SSH to one of these hosts and can initiate a transfer by invoking `globus-url-copy` in one of the ways above.
 
-  * For high-performance transfer (large volumes and/or longer distances, use `hpxfer[12].jasmin.ac.uk` for which you will need to be registered for the ["hpxfer"](https://accounts.jasmin.ac.uk/services/additional_services/hpxfer/) service. `hpxfer[12].jasmin.ac.uk` are also recommended for transfers to/from ARCHER2. `hpxfer2.jasmin.ac.uk` is tuned for very long path transfers (e.g. Western US or Australia/NZ)
-  * For remote hosts using JASMIN's dedicated network links (Leeds, Met Office) use `xfer[12].jasmin.ac.uk` as the client (These are virtual machines so have limited performance, but your transfer will be over a dedicated network connection)
+- For high-performance transfer (large volumes and/or longer distances), use `hpxfer[12].jasmin.ac.uk` for which you will need to have the {{<link "hpxfer-access-role">}}hpxfer access role{{</link>}}. `hpxfer[12].jasmin.ac.uk` are also recommended for transfers to/from ARCHER2 if initiated at the JASMIN end, but if you are initiating the transfer from the ARCHER2 end, you will need to connect to the JASMIN GridFTP server as described below, see also {{<link "transfers-from-archer2">}}{{</link>}}.
+- `hpxfer2.jasmin.ac.uk` is tuned for very long path transfers (e.g. Western US or Australia/NZ)
+- For remote hosts using JASMIN's dedicated network link (Met Office only) use `xfer[12].jasmin.ac.uk` as the client (These are virtual machines so have limited performance, but your transfer will be over a dedicated network connection)
 
 ## Connecting to the JASMIN GridFTP server
 
-In order to do transfer using a JASMIN host as the gridftp server (rather than
+In order to do a transfer using a JASMIN host as the gridftp server (rather than
 client), you would need to interact with the JASMIN GridFTP server
 `gridftp1.jasmin.ac.uk`. You cannot log in to this server directly via SSH:
 you only initiate GridFTP transfers to and from it from another client.
@@ -212,16 +197,15 @@ short-term credential required ( **but the first time, you will need to
 download and use the OnlineCA tools as described above** ). You can renew your
 credential and perform the test transfer as follows:
 
-    
-    
-    [username2@remoteclient ~] ./onlineca-get-cert-wget.sh -U https://slcs.jasmin.ac.uk/certificate/ -l USERNAME -o ./cred.jasmin
-    [username2@remoteclient ~] $ globus-url-copy -cred cred.jasmin -vb -p 8 -fast /dev/zero gsiftp://gridftp1.jasmin.ac.uk/dev/null
-    Source: file:///dev/
-    Dest:   gsiftp://gridftp1.jasmin.ac.uk/dev/
-      zero  ->  null
-    
-    4153409536 bytes       792.20 MB/sec avg       792.20 MB/sec inst
-    
+{{<command user="user" host="remoteclient">}}
+./onlineca-get-cert-wget.sh -U https://slcs.jasmin.ac.uk/certificate/ -l USERNAME -o ./cred.jasmin
+globus-url-copy -cred cred.jasmin -vb -p 8 -fast /dev/zero gsiftp://gridftp1.jasmin.ac.uk/dev/null
+(out)    Source: file:///dev/
+(out)    Dest:   gsiftp://gridftp1.jasmin.ac.uk/dev/
+(out)      zero  ->  null
+(out)
+(out)    4153409536 bytes       792.20 MB/sec avg       792.20 MB/sec inst
+{{</command>}}
 
 This server is also used as the JASMIN GridFTP Server globus endpoint, see
 [GridFTP transfers using Globus Online]({{< ref "globus-command-line-interface" >}}) (however you can only currently use your CEDA
@@ -234,32 +218,37 @@ url-copy` client installed, so can be used as clients to connect to remote
 gridftp servers, and also support [gridftp over SSH]({{< ref "gridftp-ssh-auth" >}}) (both incoming and outgoing), but do not act as
 servers for certificate-based gridftp as shown in these examples. The JASMIN
 gridftp server for read-write access to home directories and group workspaces
-is `gridftp1.jasmin.ac.uk`. Access to this requires [registration for high-
-performance data transfer (hpxfer)]({{< ref "hpxfer-access-role" >}}). See
+is `gridftp1.jasmin.ac.uk`. Access to this requires the {{<link "hpxfer-access-role">}}hpxfer access role{{</link>}}. See
 also [Transfer Servers]({{< ref "transfer-servers" >}}).
 
 ## Third-party transfers
 
 It should be possible, with the correct configuration at each site, to
-initiate on host A a transfer of data between two other gridftp servers B and
-C (a third party transfer). Both URIs would use `gsiftp:` as the protocol:
+initiate on host `A` a transfer of data between two other gridftp servers `B` and
+`C` (a third party transfer). Both URIs would use `gsiftp:` as the protocol:
 
-```bash
+{{<command>}}
 globus-url-copy -vb -p 4 gsiftp://B/source gsiftp://C/destination
-```
+{{</command>}}
 
 Further information can be found in the documentation for globus-url-copy.
-However [Globus Online](https://www.globus.org/app/transfer) provides a
+
+This is the basis of the [Globus Online](https://www.globus.org/app/transfer) 
 managed service to orchestrate and monitor transfers between gridftp endpoints
-in a more user-friendly way, so is recommended as an alternative to setting up
-third-party transfers manually. See [Data Transfer Tools: using the Globus web interface]({{< ref "globus-web-interface" >}})
+in a more user-friendly way. It has evolved considerably since diverging from 
+the "traditional" gridftp setup described in this article and is recommended as 
+it provides a much easier user experience and better reliability.
+
+See {{<link "globus-transfers-with-jasmin" />}}.
 
 ## Future plans
 
 As [support for the open-source Globus Toolkit (including globus-url-copy) has
 now been withdrawn by Globus](https://www.globus.org/blog/support-open-source-
 globus-toolkit-ends-january-2018), the future of direct gridftp transfers is
-uncertain. We advise users to spend some time understanding and testing
-transfer workflows with the Globus Online (or cloud-based) transfer service,
-including the Globus Command-Line and web interfaces and Python SDK as these
-are likely to replace direct gridftp in due course.
+uncertain. It is currently maintained by the Grid Community Forum. 
+
+**We advise users to spend some time understanding and testing
+transfer workflows with the {{<link "globus-transfers-with-jasmin" >}}Globus Online{{</link>}} transfer service,
+including the command-Line, web interfaces and (for advanced users) a Python SDK, as these
+are likely to replace direct gridftp on JASMIN in due course.**
