@@ -11,7 +11,6 @@ This article explains how to:
 - run these tools on the scientific analysis servers and LOTUS
 - make efficient use of the IDL licences
 
-
 ## What is IDL?
 
 [IDL](https://www.nv5geospatialsoftware.com/Products/IDL) stands for
@@ -92,7 +91,7 @@ IDL run-time licences are available for use on the LOTUS cluster. In order to
 specify use of the run-time licences please follow the instructions here. You
 need to compile your IDL code in order to run in run-time mode.
 
-**Here is an example program that you might want to compile**
+### Example program
 
 The example program, "foo", depends on some other functions.
 
@@ -119,7 +118,7 @@ end
 ========================
 ```
 
-**You must save a compiled version of the code:**
+You must save a compiled version of the code in order to run it.
 
 1\. Compile the program:
 
@@ -186,14 +185,14 @@ help
         (out)DOUBLEIT    TWO            <=== so were these
 {{</command>}}
 
-**Passing arguments**
+### Passing arguments
 
 You can also pass arguments in to your code as follows:
 
 In your code, use function `command_line_args`, for example:
 
 ```
-argsarray = command_line_args(count = nparams)<br>
+argsarray = command_line_args(count = nparams)
 ```
 
 Call the code with -args flag:
@@ -203,3 +202,7 @@ idl -rt=foo.sav -args 10 20 30
 {{</command>}}
 
 `command_line_args` returns a string array, so convert type as required, e.g. `n = fix(argsarray[0]) `
+
+### Further reading
+
+- Vendor documentation: {{<link "https://www.nv5geospatialsoftware.com/docs/using_idl_home.html">}}Using IDL{{</link>}} (although may be for a newer version than on JASMIN)

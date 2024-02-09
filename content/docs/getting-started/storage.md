@@ -1,33 +1,19 @@
 ---
 aliases: /article/176-storage
 description: Access to storage
-slug: storage
 tags:
 - quota
 - backup
 - scratch
-- nopw
-- pw
-- ssd
-- smf
 title: Access to storage
 weight: 150
 ---
 
 This article provides information about JASMIN storage. It covers:
 
-- Home directory 
-- JASMIN disk mounts
-- Where to write data
-- How to use the temporary disk space
-- Cleaning up the work scratch and `/tmp`
-- Access to the CEDA archive
-- Tape access
-- Advice on inter-volume symlinks in JASMIN storage
-
 **IMPORTANT:** Please see also [Understanding new JASMIN storage]({{< ref
 "understanding-new-jasmin-storage" >}}) which explains more about the
-different types of storage as of Phase 4.
+different types of storage as of Phase 4 of JASMIN's history.
 
 ## Home directory
 
@@ -36,20 +22,21 @@ at`/home/users/<user_id>`. This directory is available across most of the
 interactive and batch computing resources, including the JASMIN login and
 transfer servers.
 
-Each home directory has a default **quota of 100 GB** (as of [JASMIN Phase
-4](http://www.jasmin.ac.uk/phase4) \- Please note that information about how
-to check your quota is still pending, due to a change of storage technology
-for this area). You can find your current usage by running the following Linux
-command:
+Each home directory has a default **quota of 100 GB**. Although you can't 
+directly check usage against your quota, you can find out the current size
+of your home directory as follows (the `pdu` command is a parallel variant
+of the `du` command, designed to work with the particular storage used for home
+directories on JASMIN).
 
 {{<command>}}
 pdu -sh /home/users/<username>
 {{</command>}}
 
-**IMPORTANT** : You are only allowed to exceed the 100 GB quota for a very
-brief period of time but if you continue to exceed the limit, you will be
-unable to add any more files or run jobs and will be required to reduce your
-usage.
+{{<alert type="danger">}}You are only allowed to exceed the 100 GB quota for a very
+brief period of time. If you continue to exceed the limit, you will be
+unable to add any more files, which means that jobs may fail, and other things may
+stop working for you. You will need to reduce your usage below the 100GB quota to resolve this.
+{{</alert>}}
 
 ### Backups of your home directory
 
@@ -64,32 +51,37 @@ accidentally deleted. These are stored in
 The most recent backup is the one with the highest snapshot id number.
 
 Find the ones relevant to your username with a command line this: (
-`${USER}`is the environment variable containing your username, so can be
+`${USER}` is the environment variable containing your username, so can be
 copied in this case)
 
 {{<command>}}
-ls -ld /home/users/.snapshot/homeusers.*/${USER}
+ls -ld /home/users/.snapshot/homeusers2.*/${USER}
 {{</command>}}
 
-Within each of these, you can look for your own username to find snapshot
-directories for your data. File(s) can then be copied (by users themselves)
-back from one of these directories to their original location.
+There should be up to 14 directories like this: 
+
+```bash
+drwx------ 113 joeblogs users 0 Jan 26 15:00 /home/users/.snapshot/homeusers2.2024_01_28_02_01/joebloggs
+drwx------ 113 joeblogs users 0 Jan 26 15:00 /home/users/.snapshot/homeusers2.2024_01_29_02_01/joebloggs
+drwx------ 113 joeblogs users 0 Jan 29 09:51 /home/users/.snapshot/homeusers2.2024_01_30_02_01/joebloggs
+drwx------ 113 joeblogs users 0 Jan 30 09:29 /home/users/.snapshot/homeusers2.2024_01_31_02_01/joebloggs
+drwx------ 113 joeblogs users 0 Jan 30 09:29 /home/users/.snapshot/homeusers2.2024_02_01_02_01/joebloggs
+```
+
+Each of these snapshot directories effectively contains your home directory as it was on that date. You can copy files back from them (yourself) to their original location.
 
 {{<command>}}
-ls -l /home/users/.snapshot/homeusers.45678/joebloggs/
+ls -l /home/users/.snapshot/homeusers2.45678/joebloggs/
 (out)total 1170964
 (out)-rw-r--r-- 1 joebloggs users              104857600 Jun 26  2017 100M.dat
 (out)-rw-r--r-- 1 joebloggs users             1024000000 Feb  1  2017 1G.dat
 (out)-rw-r--r-- 1 joebloggs users                      0 Dec 18 12:09 6181791.err
-cp /home/users/.snapshot/homeusers.45678/joebloggs/100M.dat ~/100M.dat
+cp /home/users/.snapshot/homeusers2.45678/joebloggs/100M.dat ~/100M.dat
 {{</command>}}
 
-**Home directories should not be used for storing large amounts of data**. See
-below for guidance on where to write your data.
-
-A snapshot backup is also provided for `/gws/smf`volumes (small allocations of
+A snapshot backup is also provided for `/gws/smf` volumes (similar allocations of
 SSD storage for GWS groups to share): snapshots in this case are made hourly
-and kept for 10 hours and then daily snapshots are kept for 2 weeks. These can
+and kept for 10 hours, then daily snapshots are kept for 2 weeks. These can
 be retrieved in a similar manner to that shown above. In this case the
 relevant directories should be found at
 
@@ -99,10 +91,10 @@ relevant directories should be found at
 
 (where `NN` = `04` or `07` depending on where the volume is located)
 
-But **note that`/gws/smf`volumes are not subject to tape backups and, like
-other group workspace volumes, are NOT backed up.**
+{{<alert type="danger">}}All other group workspace volumes are **not backed up**. The only exception to this is the snapshot backups for `smf` SSD volumes just described.
+{{</alert>}}
 
-Please note advice on inter-volume symlinks, below: these are to be avoided.
+Please also note the {{<link "#advice-on-inter-volume-symlinks-in-jasmin-storage">}}advice on inter-volume symlinks{{</link>}}, below: these are to be avoided.
 
 ## JASMIN disk mounts
 
@@ -145,17 +137,18 @@ As indicated in table 1 there are three main disk mounts where data can be
 written. Please follow these general principles when deciding where to write
 your data:
 
-  1. HOME directories (`/home/users`) are relatively small (100GB as of Phase 4) and **should NOT be used for storing large data volumes**.
-  2. Group Workspaces (`/group_workspaces/*/<project>` and `/gws/nopw/*/<project`) are **usually the correct place to write your data**. Please refer to the [Group Workspace]({{< ref "short-term-project-storage" >}}) documentation for details. But please note that Group Workspaces are **NOT backed up**. 
-    1. `/group_workspaces/jasmin2` volumes are parallel-write-capable storage from Phases 2 and 3 of JASMIN. Some of this storage is due for retirement by the end of 2018 with data to be migrated to new volumes on `/gws/nopw/j04`
-    2. `/gws/pw/j05` volumes are parallel-write-capable storage from Phase 5 of JASMIN
-    3. `/gws/nopw/j04` volumes are "Scale out Filesystem" (SOF) storage which is not parallel-write-capable. This new naming convention will be used for all new volumes and whenever existing volumes are migrated to SOF storage from now on.
-  3. The "scratch" areas (`/work/scratch-pw2`, `/work/scratch-pw3 ` and `/work/scratch-nopw`) are available as a temporary file space for jobs running on [LOTUS]({{< ref "slurm" >}}) (see next section below).
-  4. The (`/tmp`) directory is **not an appropriate location to write your data (see next section below).**
+- HOME directories (`/home/users`) are relatively small (100GB) and should NOT be used for storing large data volumes or for sharing data with other users.
+0 Group Workspaces (mostly `/gws/nopw/*/<project>` but some `/gws/pw/*/<project`) are **usually the correct place to write your data**, although they are **not backed up**. Please refer to the [Group Workspace]({{< ref "short-term-project-storage" >}}) documentation for details.
+  - `/gws/pw/j07` volumes are parallel-write-capable storage from Phase 7 (onwards) of JASMIN
+  - `/gws/nopw/j04` volumes are "Scale out Filesystem" (SOF) from Phase 4 (onwaards) of JASMIN: this storage is not parallel-write-capable
+- The "scratch" areas (`/work/scratch-pw2`, `/work/scratch-pw3` and `/work/scratch-nopw`) are available as a temporary file space for jobs running on [LOTUS]({{< ref "slurm" >}}) (see next section below).
+- The (`/tmp`) directory is **not usually an appropriate location to write your data (see next section below).**
 
 ## How to use the temporary disk space
 
-The scratch areas `/work/scratch-pw2`, `/work/scratch-pw3 ` and
+### Scratch
+
+The scratch areas `/work/scratch-pw2`, `/work/scratch-pw3` and
 `/work/scratch-nopw` are a temporary file space shared across the entire LOTUS
 cluster and the scientific analysis servers.
 
@@ -163,67 +156,89 @@ These scratch areas are ideal for processes that generate _intermediate_ data
 files that are consumed by other parts of the processing before being deleted.
 Please remember that these volumes are resources shared between all users, so
 consider other users and remember to clean up after your jobs. **** Any data
-that you wish to keep should be written to a Group Workspace.
+that you wish to keep should be written to a Group Workspace (but remember to
+change the group-ownership of the data if you do).
 
-There are now 2 types of scratch storage available:
+There are 2 types of scratch storage available:
 
-  * `/work/scratch-nopw` suitable for most users (90 TB available, introduced in [JASMIN Phase 4](http://www.jasmin.ac.uk/phase4/#scratch)) 
-    * Please use this area unless you have a good reason not to. The flash-based storage has significant performance benefits particularly for operations involving lots of small files, but it is not suitable for MPI-IO operations that attempt to write in parallel to different parts of the same file. Please be aware of this if your code (perhaps inadvertently?) writes to a shared log file.
-  * `/work/scratch-pw[2,3]` and for users with a specific need for storage that is capable of shared-file writes with MPI-IO (1 PB available) 
-    * Please use this area ONLY if you know that your code has a parallel-write requirement.
+- **PFS scratch** (lots of it, fast, less good for small files) as 2 x 1 PB volumes `/work/scratch-pw[2,3]` and particularly suitable for users with a need for storage capabale of shared-file writes with MPI-IO, but good for most purposes.
+- **SSD scratch** (less of it, very fast, good for small files) `/work/scratch-nopw2` as 1 x 220 TB volume. Do not use for operations that attempt to write to multiple parts of a file simultaneously. Please be aware of this if your code (perhaps inadvertently?) writes to a shared log file.
 
 When using the "scratch" areas, please create a sub-directory (e.g.
-`/work/scratch-nopw/<username>`) and write your data there.
+`/work/scratch-????/<username>`) labelled with your username and write your data there.
 
-In contrast to the "scratch" space, the `/tmp` directories are all local
-directories, one per cluster node (or interactive server). These can be used
+### /tmp
+
+In contrast to the "scratch" space, `/tmp` directories on LOTUS nodes 
+and physical sci machines are all local to the machine. These can be used
 to store _small_ volumes of temporary data for a job that only needs to be
-read by the local process.
+read by the local process. But `/tmp` on virtual sci machines, are not local and
+therefore should not usually be used by users.
 
 ## Cleaning up the scratch and tmp directories
 
-Please make sure that your jobs delete any files under the `/tmp`and scratch
+**Please** make sure that your jobs delete any files under the `/tmp`and scratch
 directories when they are complete ( _especially_ if jobs have not been
 completed normally!).
 
-**IMPORTANT:** Please note that an automated cleanup script runs daily and
-deletes files that are older than 28 days from the last time of being
+Please do this yourself so that you are not taken by surprise when automated 
+deletion processes clear up any residual data:
+
+{{<alert type="danger">}}
+Automated cleanup processes run daily and
+delete files that are older than 28 days from the last time of being
 accessed. This applies to `/work/scratch-pw2`, `/work/scratch-pw3` and
-`/work/scratch-nopw`
+`/work/scratch-nopw2`
 
-**Data in the** `/tmp` **,**`/work/scratch-pw[2,3]` and `/work/scratch-nopw`
-**directories are temporary and may be arbitrarily removed at any point once
-your job has finished running. Do not use them to store important output for
-any significant length of time. Any important data should be written to
-a[group workspace](http://www.jasmin.ac.uk/services/group-workspaces/) so that
-you do not lose it, or to your home directory if appropriate.**
+Please remember that shared temporary storage is for the use of all 2,000 users
+of JASMIN, not just you. If you persistently store large amounts (100s of TB) of data in scratch 
+for long periods of tine, you deny use of that storage to other users (so expect action from the JASMIN team).
 
-The `/work/scratch-pw[2,3]` and `/work/scratch-nopw`areas are NOT available on
-the xfer or login servers.
+Please be a good JASMIN citizen!
+{{</alert>}}
 
-**Any temporary data files can reside in a subdirectory of your group
-workspace instead of /tmp.** To do this, please add the following lines (or
+Any important data for keeping should be written to
+a [group workspace](http://www.jasmin.ac.uk/services/group-workspaces/)
+or to your home directory if appropriate.**
+
+The `/work/scratch-pw[2,3]` and `/work/scratch-nopw`areas are not available on
+the xfer, login or nx-login servers.
+
+### Avoid inadvertently writing to /tmp
+
+Sometimes software is configured by default to write to `/tmp`. Where possible, you 
+should over-ride this and use your group workspace or a username-labelled directory 
+within the scratch space instead.
+
+To do this, please add the following lines (or
 similar) to your $HOME/.bashrc file:
 
-    
-    
-    export TMPDIR=/group_workspaces/jasmin/<your_project>/<your_username>/tmp
-    
-
-  * # create the directory if needed
-
+```bash
+export TMPDIR=/<path-to-your-GWS-or-scratch>/<your_username>/tmp
+# create the directory if needed
 [ -d $TMPDIR ] || mkdir -p $TMPDIR
+```
+
+...but please check that location regularly to clear it out!
 
 ## Access to the CEDA archive
 
-The CEDA archive is mounted read-only under `/badc` (British Atmospheric Data
-Centre) and `/neodc` (NERC Earth Observation Data Centre). The archive
-includes a range of data sets that are provided under varying licences. Access
+The CEDA Archive is mounted read-only under paths refleting the NERC data centres
+which merged to form CEDA, i.e.
+- `/badc` (British Atmospheric Data Centre)
+- `/neodc` (NERC Earth Observation Data Centre).
+
+(other data centre paths now also exist at that level: see {{<link "ceda_helpdocs">}}CEDA Help docs{{</link>}} for more info)
+
+The Archive includes a range of data sets that are provided under varying licences. Access
 to these groups is managed through standard Unix groups. Information about the
-data and their access restrictions is available from the [CEDA Data
-Catalogue](http://catalogue.ceda.ac.uk/). **As a JASMIN user, it is your
+data and their access restrictions is available from the {{<link "ceda_catalogue">}}CEDA Catalogue{{</link>}}. 
+
+{{<alert type="info">}}
+As a JASMIN user, it is your
 responsibility to ensure that you have the correct permissions to access data
-from the CEDA archive.**
+any data in CEDA Archive from within JASMIN, even if file system permissions permit access.
+{{</alert>}}
 
 ## Tape access
 
@@ -237,7 +252,7 @@ It is highly recommended that you do not exceed more than 100,000 files in a
 single directory on any type of storage on JASMIN. Large numbers of files
 place unnecessary load on components of the file system and can be the source
 of slow performance for you and other storage volumes in the system. To count
-the number of files, please note the advice in "Slow ls response" below, or
+the number of files, please note the advice in {{<link "#slow-ls-response">}}slow `ls` response{{</link>}} below, or
 use an alternative command e.g. `find`.
 
 ## Slow 'ls' response
@@ -254,8 +269,8 @@ We highly recommend users _not_ to use symbolic links in their home
 directories to other parts of the JASMIN file systems, such as GWSs or scratch
 areas. There are a number of conditions when the petabyte-scale JASMIN storage
 can become unusable for all users due to these links. There is a more
-technical explanation below. We would advise path substitutions using
-environment variables instead.
+technical explanation below. We would advise **path substitutions using
+environment variables** instead.
 
 Symlinks in users' home directories that point to other volumes (for example
 group workspaces) make matters worse _when_ there are problems on the
@@ -277,12 +292,5 @@ hangs other users who may be trying to ls their own home directory (even if
 theirs contains no symlinks). The situation can then escalate out of control
 as more and more users try and fail.
 
-This is already recognised as an issue particularly with the older part of our
-storage estate, but especially where one or more of the volumes involved
+This is happens especially where one or more of the volumes involved
 contains large numbers of small files.
-
-There are likely other issues at play as well, some of which may be addressed
-by our current upgrade plans which involve replacing older parts of the
-storage over the next few months.
-
-
