@@ -198,7 +198,7 @@ Please be a good JASMIN citizen!
 {{</alert>}}
 
 Any important data for keeping should be written to
-a [group workspace](http://www.jasmin.ac.uk/services/group-workspaces/)
+a {{<link "../short-term-project-storage/introduction-to-group-workspaces">}}group workspace{{</link>}}
 or to your home directory if appropriate.**
 
 The `/work/scratch-pw[2,3]` and `/work/scratch-nopw`areas are not available on
