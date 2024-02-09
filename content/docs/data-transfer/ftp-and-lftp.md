@@ -9,9 +9,9 @@ title: 'ftp and lftp'
 This article provides information about FTP (File Transfer Protocol) as a data
 transfer tool. In particular:
 
-  * what is FTP?
-  * where and how can I use FTP on JASMIN?
-  * what are its limitations?
+- what is FTP?
+- where and how can I use FTP on JASMIN?
+- what are its limitations?
 
 ## What is FTP?
 
@@ -28,21 +28,15 @@ FTP can only be used as a client on JASMIN, to pull data from external FTP
 servers to local storage on JASMIN, for example a Group Workspace or your home
 directory. **There is no FTP server within JASMIN providing the ability to
 upload files to these locations.** Please use an alternative, more secure
-method instead. See other [Data Transfer Tools]({{< ref "data-transfer-tools"
->}}) such as [scp/rsync/sftp]({{< ref "rsync-scp-sftp"
->}}), [bbcp]({{< ref "bbcp" >}}) or GridFTP ([over
-SSH]({{< ref "gridftp-ssh-auth" >}}), [certificate-
-based]({{< ref "gridftp-cert-based-auth" >}}) or using
-[Globus Online]({{< ref "globus-web-interface"
->}}))
+method instead. See other [Data Transfer Tools]({{< ref "data-transfer-tools">}}) such as [scp/rsync/sftp]({{< ref "rsync-scp-sftp">}}), [bbcp]({{< ref "bbcp" >}}) or GridFTP ([over SSH]({{< ref "gridftp-ssh-auth" >}}), [certificate-based]({{< ref "gridftp-cert-based-auth" >}}) or using [Globus Online]({{< ref "globus-transfers-with-jasmin">}}))
 
 On the [transfer servers]({{< ref "transfer-servers" >}}), you can use one of
 the installed FTP clients to download data from elsewhere. These are:
 
-  * `ftp`
-    * basic ftp client. Usage details
-  * `lftp`
-    * parallel-capable ftp client. Usage details
+- `ftp`
+- basic ftp client. Usage details
+- `lftp`
+- parallel-capable ftp client. Usage details
 
 CEDA however runs 2 FTP servers within the JASMIN environment providing
 download-only access to the CEDA archive. Access to these is controlled by
@@ -51,9 +45,9 @@ with that account.
 
 ## What are its limitations?
 
-  * FTP was never designed as a secure protocol and has [several limitations](https://en.wikipedia.org/wiki/File_Transfer_Protocol#Security) affecting how it can be used safely within an environment like JASMIN.
-  * Some external sites offer anonymous FTP download. In this case, no username or password needs to be exchanged and (as long as the data resources do not need to be protected in any way) this can provide a simple but effective data transfer method.
-  * Few external sites now provide FTP access to protected data resources, hence many data-intensive institutions are now focussing on more sophisticated data delivery methods which can meet the demands of security and performance in a multi-user environment.
+- FTP was never designed as a secure protocol and has [several limitations](https://en.wikipedia.org/wiki/File_Transfer_Protocol#Security) affecting how it can be used safely within an environment like JASMIN.
+- Some external sites offer anonymous FTP download. In this case, no username or password needs to be exchanged and (as long as the data resources do not need to be protected in any way) this can provide a simple but effective data transfer method.
+- Few external sites now provide FTP access to protected data resources, hence many data-intensive institutions are now focussing on more sophisticated data delivery methods which can meet the demands of security and performance in a multi-user environment.
 
 ## Basic client usage: ftp
 
