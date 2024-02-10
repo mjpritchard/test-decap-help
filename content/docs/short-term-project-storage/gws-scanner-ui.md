@@ -10,7 +10,12 @@ The [Group Workspace (GWS) Scanner](https://gws-scanner.jasmin.ac.uk/) UI is an 
 
 ## What is the GWS Scanner UI?
 
-A GWS is a collaborative storage made available to a group for a project. The GWS Scanner UI provides information about the structure of GWSs in the form of a tree graph showing the folders within the GWS. The tiles of the graph can be scaled or coloured by size, count or heat. **Size** refers to the size (in TB or GB) of the folder, **count** refers to the number of files and folders within the directory and **heat** refers to the average time of last access. The tree graph only shows tiles for the folders within the GWS, the files are lumped together as **unindexed children**, but the files are considered in the calculation of the GWS statistics - e.g. the number of **children** is the number of folders *and* files within the GWS. There are also doughnut graphs with additional breakdowns in terms of users, filetypes and heats which can be scaled by either size or count. 
+A GWS is collaborative storage made available to a group for a project. The GWS Scanner UI provides information about the structure of GWSs in the form of a tree graph showing the folders within the GWS. The tiles of the graph can be scaled or coloured by size, count or heat. 
+- **Size** refers to the size (in TB or GB) of the folder
+- **count** refers to the number of files and folders within the directory
+- **heat** refers to the average time since last access (hot = recent).
+
+The tree graph only shows tiles for the folders within the GWS, the files are lumped together as **unindexed children**, but the files are considered in the calculation of the GWS statistics - e.g. the number of **children** is the number of folders and files within the GWS. There are also doughnut graphs with additional breakdowns in terms of users, filetypes and heats which can be scaled by either size or count.
 
 ## Using the GWS Scanner UI
 
@@ -47,7 +52,7 @@ Scrolling down the page, you will find the doughnut graphs. There is one for the
   * Sometimes, if there are lots of tiles they can be hard to read - you can hover over the tile to get the full title or if you want to view the tree graph for that folder, you search for it by URL instead. 
   * If you are ever stuck and requiring help, the help beacon can be accessed from any page.
 
-{{<image src="img/docs/gws-scanner-ui/gws-scanner-beacon.png" caption="">}}
+{{<image src="img/docs/gws-scanner-ui/gws-scanner-beacon.png" wrapper="col-2 mx-auto" caption="">}}
 
 ## Further information
 

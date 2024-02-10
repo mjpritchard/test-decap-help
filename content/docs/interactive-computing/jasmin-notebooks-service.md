@@ -1,13 +1,13 @@
 ---
 aliases: /article/4851-jasmin-notebook-service
 date: 2023-03-20 12:25:18
-description: JASMIN Notebook Service
-slug: jasmin-notebook-service
+description: Jupyter Notebooks service on JASMIN
+slug: jasmin-notebooks-service
 tags:
 - Jupyter
 - notebook server
 - Two-step verification
-title: JASMIN Notebook Service
+title: JASMIN Notebooks Service
 ---
 
 The JASMIN Notebook Service provides access to [Jupyter

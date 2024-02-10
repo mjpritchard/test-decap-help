@@ -32,6 +32,7 @@
     - title: Sci servers
     - title: Tenancy sci analysis vms
     - title: Transfer servers
+    - title: JASMIN notebooks service
     - title: Creating a virtual environment in the notebooks service
     - title: Project specific servers
     #- title: Centos7 sci login xfer servers
