@@ -1,14 +1,9 @@
 ---
 aliases: /article/3801-apply-for-access-to-a-gws
-categories:
-- Short-term project storage
-collection: jasmin-documentation
-date: 2023-01-24 11:56:40
 description: Apply for access to a GWS
-slug: apply-for-access-to-a-gws
 tags:
-- project
-- storage
+- group workspace
+- access
 title: Apply for access to a GWS
 ---
 

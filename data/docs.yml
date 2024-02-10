@@ -58,6 +58,7 @@
     - title: python virtual environments
     - title: additional software
     - title: community software esmvaltool
+    - title: community software checksit
     - title: conda environments and python virtual environments
     - title: creating and using miniconda environments
     - title: idl
@@ -80,8 +81,7 @@
     - title: Globus transfers with JASMIN
     - title: bbcp
     - title: ftp and lftp
-    #- title: globus web interface
-    - title: globus command line interface
+    - title: Globus command line interface
     #- title: globus connect personal
     - title: gridftp cert based auth
     - title: gridftp ssh auth

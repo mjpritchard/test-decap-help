@@ -1,8 +1,6 @@
 ---
 aliases: /article/4847-using-the-jasmin-object-store
-date: 2021-12-07 09:42:33
 description: Using the JASMIN Object Store
-slug: using-the-jasmin-object-store
 title: Using the JASMIN Object Store
 ---
 
@@ -27,7 +25,8 @@ JASMIN firewall, for example to the JASMIN External Cloud. Data can be read
 **and written** in the same way, using the same tools, from inside and outside
 JASMIN. Contrast this with Group Workspaces, where you must be logged in to a
 JASMIN host in order to write data using the file system, and data is only
-accessible externally in a readonly way using HTTP or OPeNDAP.
+accessible externally in a readonly way using HTTP or OPeNDAP or via data 
+transfer methods.
 
 Object stores are seen as the most efficient (and cheapest!) way to store and
 access data from the cloud, and all the major cloud providers support some
@@ -55,7 +54,55 @@ For details on how to request and manage an object
 store tenancy, please see the help article "JASMIN Object Store for Managers"
 (forthcoming).
 
+## Default access policies
+
+As of Jan 2024, we have changed the default access policy for newly created tenancies to provide a more sensible and flexible set of access policies.
+
+The old policy allowed any members of the tenancy access to any bucket created in the tenancy by default. The new policy allow Users (USER only in the JASMIN Accounts Portal) of the tenancy only access to buckets they own by default. This can be effectively changed to the old policy by setting the policy of the bucket to the LDAP group for the tenancy members (<tenancy>-members, e.g. cedadev-o-members) - this can be done using the JASMIN Object Store portal (below) or the Swarm portal. Specific JASMIN users or groups can also be given permission to buckets (group access is controlled by LDAP groups, and only existing LDAP group will work - you may need to ask for one to be created).
+
+The new policy also gives admin access for tenancy MANAGER and DEPUTY roles, who have access to all the buckets in the tenancy.
+
 ## Creating an access key and secret
+
+Authentication with the object store uses an access key and secret that are separate to your JASMIN username and password. You can generate keys and manage bucket permissions through the {{<link "jasmin_object_store_portal">}}JASMIN Object Store Portal.{{</link>}}
+
+{{<image src="img/docs/using-the-jasmin-object-store/file-OkGcJm0Mpo.png" caption="JASMIN sbject store portal">}}
+
+You can log in with your JASMIN username and password. You can then click on the "Object Stores" button on the right. This will present you with the list of object store tenancies that you have access to. If you don't see an object store tenancy that you expect to, please check you have access in the {{<link "jasmin_accounts_portal">}}JASMIN Accounts Portal{{</link>}}. If you have access in the Accounts Portal, but not in the Object Store Portal then please email the helpdesk.
+
+{{<image src="img/docs/using-the-jasmin-object-store/file-3kmJDqsPGr.png" caption="List of object store tenancies">}}
+
+The URL for the object store tenancy is also presented here for convenience. You can click on the "Manage Object Store" button to manage you keys and buckets. This will ask you to confirm your JASMIN password.
+
+{{<image src="img/docs/using-the-jasmin-object-store/file-J7sWRXVp9D.png" caption="Prompt for password">}}
+
+You will then be presented with the following page.
+
+{{<image src="img/docs/using-the-jasmin-object-store/file-gRPOhQpGBG.png" caption="existing keys">}}
+
+From this page you can view your existing keys, and delete them if you require. You can also use the "Create Key" tab on the left.
+
+{{<image src="img/docs/using-the-jasmin-object-store/file-L8tOrtBj7z.png" caption="Create access key">}}
+
+You need to name the key and enter an expiry date for it. This will then present you with a pop-up with details on your access key and secret key. **This is the only time your secret key will visible, so save it immediately in a secure password manager.**
+
+## Managing bucket permissions
+
+You can also manage the permissions on buckets using the "Buckets" tab from this page. This allows you to manage the access policies for your buckets without using the S3 API or the Swarm portal.
+
+{{<image src="img/docs/using-the-jasmin-object-store/file-6m0rwBsm9K.png" caption="Bucket permissions">}}
+
+Click on the "Manage permissions" button for a bucket to add or change access policies for that bucket.
+
+{{<image src="img/docs/using-the-jasmin-object-store/file-CxoXaC08wI.png" caption="Granting access">}}
+
+By default this lets you grant access to specific JASMIN Users and/or groups (these are LDAP groups and you might need to request that one is created for you if you require a subgroup for your tenancy). The advanced tab gives you the same options as available through the Swarm portal - including making buckets publicly accessible. Once done, hit the save to add the policy to the bucket. You can edit or delete permissions from that bucket through the "View Bucket Policies" tab.
+
+## Legacy method for key creation
+
+This is the old way of creating keys which still works, but the new way above is accessible outside JASMIN on the public internet.
+
+You can generate an access key and secret using the Caringo portal. 
 
 Authentication with the object store uses an access key and secret that are
 separate to your JASMIN username and password. You can generate an access key

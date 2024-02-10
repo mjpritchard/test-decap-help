@@ -255,6 +255,7 @@
     jasmin_accounts_portal = "https://accounts.jasmin.ac.uk"
     jasmin_cloud_portal = "https://cloud.jasmin.ac.uk"
     jasmin_projects_portal = "https://projects.jasmin.ac.uk"
+    jasmin_object_store_portal = "https://s3-portal.jasmin.ac.uk/"
     jasmin_notebooks_service = "https://notebooks.jasmin.ac.uk"
     jasmin_community_discussions = "https://github.com/cedadev/jasmin-community/discussions"
     jasmin_help_docs_issues = "https://github.com/cedadev/jasmin-help-hugo-hinode/issues"
