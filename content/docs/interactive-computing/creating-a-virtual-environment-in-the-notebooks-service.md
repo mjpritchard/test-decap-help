@@ -111,6 +111,7 @@ right of any open notebook. No changes to the python code within are required.
 ## Other tips & useful knowledge
 
 ### Activating an environment without it being a kernel.
+
 If you follow Step 1 above to create a virtual environment, it is possible to
 use the packages from this environment in a python file without making it a
 kernel. While this can be useful, it has the very distinct disadvantage of
@@ -202,7 +203,8 @@ Make the notebook service recognise your environment as a kernel:
 conda run --name name-insert-here python -m ipykernel install --user --name name-insert-here
 {{</command>}}
 
-### Can get rid of old kernels from the notebook service?
+### Can I get rid of my old kernels from the notebook service?
+
 Yes.
 
 To list the names of kernels you have installed, run the following at the
