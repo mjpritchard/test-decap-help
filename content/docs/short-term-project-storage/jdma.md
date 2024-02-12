@@ -6,6 +6,10 @@ slug: jdma
 title: Joint-storage Data Migration App (JDMA)
 ---
 
+{{<alert type="info">}}
+A new system called [NLDS](https://techblog.ceda.ac.uk/2022/03/09/near-line-data-store-intro.html) is coming very shortly (as of Feb 2023) and will eventually replace both Elastic Tape and JDMA.
+{{</alert>}}
+
 **See the JDMA user documentation
 at:[cedadev.github.io/jdma_client](https://cedadev.github.io/jdma_client/docs/build/html/index.html)
 for more information about using JDMA.**
@@ -23,12 +27,12 @@ API.
 
 JDMA was designed with the following usability criteria in mind:
 
-  * The user experience for moving data, regardless of the underlying storage systems, should be identical.
-  * The user should not be responsible for maintaining the connection to the storage system in the case of asynchronous transfers.
-  * User and group ownership and permissions should be preserved and restored on downloading the data
-  * The user should receive notifications when the transfers are complete.
-  * Users should be able to transfer data from one storage system to another
-  * JDMA is only a request and query layer. Any cataloguing of data should be carried out by the backend system. So that, if JDMA fails, then the data is still available, independently of JDMA, from the storage backend.
+- The user experience for moving data, regardless of the underlying storage systems, should be identical.
+- The user should not be responsible for maintaining the connection to the storage system in the case of asynchronous transfers.
+- User and group ownership and permissions should be preserved and restored on downloading the data
+- The user should receive notifications when the transfers are complete.
+- Users should be able to transfer data from one storage system to another
+- JDMA is only a request and query layer. Any cataloguing of data should be carried out by the backend system. So that, if JDMA fails, then the data is still available independently of JDMA, from the storage backend.
 
 **See the JDMA user documentation
 at:[cedadev.github.io/jdma_client/](http://cedadev.github.io/jdma_client/docs/build/html/index.html)
@@ -48,15 +52,12 @@ The JDMA client github is at:
 If you are working on JASMIN and you wish to use the JDMA client, then you can
 install it as follows on a `sci` server:
 
-    
-    
-    module load jaspy
-    python -m venv ~/venvs/jdma-venv
-    source ~/venvs/jdma-venv/bin/activate
-    pip install git+https://github.com/cedadev/jdma_client  
-    
+{{<command user="user" host="sci1">}}
+module load jaspy
+python -m venv ~/venvs/jdma-venv
+source ~/venvs/jdma-venv/bin/activate
+pip install git+https://github.com/cedadev/jdma_client
+{{</command>}}
 
 You should then have the **jdma** command-line tool available in your terminal
 session.
-
-

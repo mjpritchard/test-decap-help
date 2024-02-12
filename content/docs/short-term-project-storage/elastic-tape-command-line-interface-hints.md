@@ -6,6 +6,11 @@ slug: elastic-tape-command-line-interface-hints
 title: Elastic Tape command-line interface hints
 ---
 
+{{<alert type="info">}}
+- Information below relates to the Elastic Tape command-line tools. The [JDMA]({{<ref "jdma">}}) system provides a better interface for putting/retrieving data into the Elastic Tape System)
+- A new system called [NLDS](https://techblog.ceda.ac.uk/2022/03/09/near-line-data-store-intro.html) is coming very shortly (as of Feb 2023) and will eventually replace both of these.
+{{</alert>}}
+
 This article explains the return codes of certain Elastic Tape (ET) commands.
 
 ## et_put.py

@@ -1,10 +1,14 @@
 ---
 aliases: /article/3842-secondary-copy-using-elastic-tape
-date: 2021-11-16 09:00:38
 description: Secondary copy using Elastic Tape
 slug: secondary-copy-using-elastic-tape
 title: Secondary copy using Elastic Tape
 ---
+
+{{<alert type="info">}}
+- Information below relates to the Elastic Tape command-line tools. The [JDMA]({{<ref "jdma">}}) system provides a better interface for putting/retrieving data into the Elastic Tape System)
+- A new system called [NLDS](https://techblog.ceda.ac.uk/2022/03/09/near-line-data-store-intro.html) is coming very shortly (as of Feb 2023) and will eventually replace both of these.
+{{</alert>}}
 
 ## Introduction
 
@@ -19,27 +23,15 @@ than individual members of a GWS. It is the responsibility of a GWS Manager to
 create and manage backups or additional copies of data in a GWS.  
   
 The servers used to access Elastic Tape changed in January 2021.
-Previous users should note that the server to use now is `et.jasmin.ac.uk`
+Previous users should note that the server to use now is `et.jasmin.ac.uk`.
+
+**The maximum size for any file put into Elastic Tape is 500GB.  This changed in 2023, when the underlying tape system was upgraded.  Please limit your files to less than 500GB.**
 
 ## Who can use ET?
 
-ET is only for use by the named GWS manager, i.e. the individual responsible
-for managing the GWS disk space. The high-performance disk space used for a
-GWS is a valuable commodity and the role of the GWS Manager involves making
-best use of the online space. This may mean moving data to tape to free up
-space online, or taking a copy of online data to make a secondary copy. **No
-undertaking is provided that the secondary copy will exist beyond the lifetime
-of the Group Workspace itself, hence it is called a secondary copy and not a
-backup.** **It is also NOT long-term archive storage** : some data in GWSs may
-need to be earmarked for longer-term archive storage and wider availability
-via the CEDA Archive, but this is a **separate process** for which data
-management plans, ingest processes and metadata need to be put in place.
-Please contact the **CEDA** (rather than the JASMIN) helpdesk (`support@ceda.ac.uk`) if this is
-the case.
+ET is only for use by the named GWS manager, i.e. the individual responsible for managing the GWS disk space. The high-performance disk space used for a GWS is a valuable commodity and the role of the GWS Manager involves making best use of the online space. This may mean moving data to tape to free up space online, or taking a copy of online data to make a secondary copy. **No undertaking is provided that the secondary copy will exist beyond the lifetime of the Group Workspace itself, hence it is called a secondary copy and not a backup. It is also NOT long-term archive storage:** some data in GWSs may need to be earmarked for longer-term archive storage and wider availability via the CEDA Archive, but this is a **separate process** for which data management plans, ingest processes and metadata need to be put in place. Please contact the helpdesk if this is the case, but ideally this needs to be considered at project design phase (as it may need funding!).
 
-Each GWS has a quota of online disk space (agreed at the time of its creation)
-and initially the ET quota has been set to the same value. So if you have a 10
-Tb workspace, you initially have a 10Tb quota of ET storage to match.
+Each GWS has a quota of online disk space (agreed at the time of its creation) and initially the ET quota has been set to the same value. So if you have a 10 Tb workspace, you initially have a 10Tb quota of ET storage to match.
 
 ### How does it work?
 
@@ -75,8 +67,8 @@ attached.
 It is recommended to try sending **and retrieving** some small data transfers
 (a few Gb) at first using the documentation below, but the system has been
 designed to cope with storing entire GWSs. You will need ssh login access to
-`et.jasmin.ac.uk` first. This should have been arranged for you by the time
-you receive this message. If not, please contact the CEDA helpdesk. Once
+`et.jasmin.ac.uk` first. This should have been arranged for you as part of the 
+GWS setup process. If not, please contact the JASMIN helpdesk. Once
 there, you should be able to see your group workspace and try out the commands
 on a small set of test data.
 
@@ -90,10 +82,10 @@ transfer jobs.
 
 The system comprises:
 
-  * A command-line interface on a client machine
-  * A backend system, consisting of 
-    * I/O servers connected to an online disk cache and database
-    * A near-line tape system
+- A command-line interface on a client machine
+- A backend system, consisting of 
+  - I/O servers connected to an online disk cache and database
+  - A near-line tape system
 
 ## Configuration file
 
@@ -109,31 +101,29 @@ If needed, you need to create a small text file in your home directory named
 `.et_config`, which contains the following, replacing "myworkspace" with the
 name of your default workspace:
 
-    
-    
-    [Batch]
-    Workspace = myworkspace
-    				
+```ini
+[Batch]
+Workspace = myworkspace
+```
 
-"myworkspace" should just be the short name of the workspace, not the full
+`myworkspace` should just be the short name of the workspace, not the full
 path to it.
 
 The workspace specified in any command-line option overrides that specified in
-the user's ( `~/.et_config`) config file, which in turn overrides that
+the user's (`~/.et_config`) config file, which in turn overrides that
 specified in the system (`/etc/et_config`) config file.
 
-Please REMOVE any previous reference to host and port from your individual
-~/.et_config file. This setting is now set from the system /etc/et_config
+Please **REMOVE** any previous reference to host and port from your individual
+`~/.et_config file`. This setting is now set from the system /etc/et_config
 file.
 
 Further configuration options are available in the `[DIRECTORY]` section of
 the file, see the system-wide file /etc/et_config for examples. The main
 parameter for which you may wish to override the default is:
 
-    
-    
-    outputLevel = workspace|batch|file
-    			
+```ini
+outputLevel = workspace|batch|file
+```
 
 although these can be over-ridden at the command line anyway. See `et_ls.py`
 command documentation below for the meaning of these options.
@@ -146,11 +136,11 @@ those features described below.
 
 The user interface consists of the following components:
 
-  * **et_put.py** Put data onto tape
-  * **et_get.py** Retrieve data from tape
-  * **et_rm.py** Remove data from tape
-  * **et_ls.py** List data holdings on tape
-  * **Alerts** Get information about processes and holdings via web interface
+- **et_put.py** Put data onto tape
+- **et_get.py** Retrieve data from tape
+- **et_rm.py** Remove data from tape
+- **et_ls.py** List data holdings on tape
+- **Alerts** Get information about processes and holdings via web interface
 
 The commands are available on host `et.jasmin.ac.uk`. As a GWS manager you
 should have been granted login access to this machine using your JASMIN
@@ -168,10 +158,9 @@ Put data onto tape.
 
 ### Synopsis
 
-    
-    
-    $ et_put.py [-v] [-l LOGFILE] [-w WORKSPACE] [-c] [-t one-word-tag] [ -f LISTFILE | DIR ]
-    						
+```bash
+et_put.py [-v] [-l LOGFILE] [-w WORKSPACE] [-c] [-t one-word-tag] [ -f LISTFILE | DIR ]
+```
 
 ### Description
 
@@ -192,21 +181,25 @@ completion time. Large numbers of small files will degrade performance.
 
 ### Options
 
--v  |  Verbose output   
+option | details
 ---|---  
--l LOGFILE  |  Log file in which to record process output   
--f LISTFILE  |  Text file containing ABSOLUTE paths of files to be stored, 1 file per line. NB Files and directory names are case-sensitive. The list should not contain any blank lines or extraneous white space.   
--w WORKSPACE  |  Name of the group workspace to use. Overrides default set in config file. Case sensitive.   
+-v  |  Verbose output
+-l LOGFILE  |  Log file in which to record process output
+-f LISTFILE  |  Text file containing ABSOLUTE paths of files to be stored, 1 file per line. NB Files and directory names are case-sensitive. The list should not contain any blank lines or extraneous white space.
+-w WORKSPACE  |  Name of the group workspace to use. Overrides default set in config file. Case sensitive.
 DIR  |  ABSOLUTE path to top of directory tree containing files to be stored  
--c  |  Continue if errors encountered.   
--t tag  |  Tag batch with descriptive label meaningful to user. Should be single one-word string. Appears as "Batch name" in ET alert output and "Tag" in et_ls output.   
+-c  |  Continue if errors encountered.
+-t tag  |  Tag batch with descriptive label meaningful to user. Should be single one-word string. Appears as "Batch name" in ET alert output and "Tag" in et_ls output.
+{.table .table-striped}
   
 ### Example usage
 
 Simple case, using a file input.list which contains paths of all the files to
 be included in the batch:
 
-`et_put.py -v -l et_put.log -f input.list -w myworkspace`
+{{<command user="user" host="et1">}}
+et_put.py -v -l et_put.log -f input.list -w myworkspace
+{{</command>}}
 
 In the following example, the `-c`option is used to continue on errors. One
 error that may be encountered is that a file already exists in the system
@@ -214,19 +207,17 @@ error that may be encountered is that a file already exists in the system
 errors and continue with the transfer. Note that this should not be used by
 default (we would rather know about errors and fix them!)
 
-    
-    
-    $ et_put.py -v -l et_put.log -f input.list -w myworkspace -c
-    						
+{{<command user="user" host="et1">}}
+et_put.py -v -l et_put.log -f input.list -w myworkspace -c
+{{</command>}}
 
 Alternative usage specifying a directory beneath which all files / directories
 will be included. In this case the directory must be the last parameter in the
 command:
 
-    
-    
-    $ et_put.py -v -l et_put.log -w myworkspace /group_workspaces/jasmin/myworkspace/mydir
-    						
+{{<command user="user" host="et1">}}
+et_put.py -v -l et_put.log -w myworkspace /group_workspaces/jasmin/myworkspace/mydir
+{{</command>}}
 
 **Symbolic links:** Attempting to include symbolic links in an et_put
 operation should cause an error. You can override this with the `-c` option
@@ -245,10 +236,9 @@ Retrieve data from tape
 
 ### Synopsis
 
-    
-    
-    $ et_get.py [-v] [-l LOGFILE] [-b BATCHID | -f FILELIST] [-w WORKSPACE] [-r DIR] [-t MAXPROC]<br>
-    				
+```bash
+et_get.py [-v] [-l LOGFILE] [-b BATCHID | -f FILELIST] [-w WORKSPACE] [-r DIR] [-t MAXPROC]
+```
 
 ### Description
 
@@ -269,28 +259,24 @@ for this, please contact the [CEDA help desk](mailto:support@ceda.ac.uk).
 
 ### Options
 
--v  |  Verbose output   
+option | details
 ---|---  
+-v  |  Verbose output
 -l LOGFILE  |  Log file in which to record process output. Note that the log file location must be capable of accepting multi-threaded input, or this parameter should be omitted and instead the output from the et_get command be piped to the log file from stdout   
--b BATCHID  |  ID of batch to be retrieved   
--f FILELIST  |  A list of individual files to be retrieved, with one file per line. Note that: 
-
-  * entries in the list must contain the full name of the file, including path, just as it was archived;
-  * the list should not contain blank lines or any extraneous white space.
-
-  
+-b BATCHID  |  ID of batch to be retrieved
+-f FILELIST  |  A list of individual files to be retrieved, with one file per line. Note that:<br>- entries in the list must contain the full name of the file, including path, just as it was archived<br>- the list should not contain blank lines or any extraneous white space.
 -w WORKSPACE  |  name of the group workspace to use. Overrides default set in config file. Case sensitive.   
 -r DIR  |  ABSOLUTE path of retrieval location   
 -t MAXPROC  |  Maximum number of worker processes to use in retrieval. MAXPROC recommended to be between 5 and 10. Please feed back your experience of performance improvement with this feature.   
-  
+{.table .table-striped}
+
 ### Example usage
 
-    
-    
-    $ cd /group_workspaces/jasmin/myworkspace
-    $ mkdir ettmp
-    $ et_get.py -v -l et_get.log -w myworkspace -b 507 -r /group_workspaces/jasmin/myworkspace/ettmp
-    				
+{{<command user="user" host="et1">}}
+cd /group_workspaces/jasmin/myworkspace
+mkdir ettmp
+et_get.py -v -l et_get.log -w myworkspace -b 507 -r /group_workspaces/jasmin/myworkspace/ettmp
+{{</command>}}
 
 At this point, data will be transferred into the specified retrieval
 directory. Files and directories will be restored with their ABSOLUTE path
@@ -302,10 +288,9 @@ When the retrieval process has finished, you should satisfy yourself that it
 is correct (using your preferred method). When this is the case, you can move
 the data to the required location as shown below:
 
-    
-    
-    $ mv /group_workspaces/jasmin/myworkspace/ettmp/group_workspaces/jasmin/myworkspace/* /group_workspaces/jasmin/myworkspace
-    				
+{{<command user="user" host="et1">}}
+mv /group_workspaces/jasmin/myworkspace/ettmp/group_workspaces/jasmin/myworkspace/* /group_workspaces/jasmin/myworkspace
+{{</command>}}
 
 * * *
 
@@ -315,10 +300,9 @@ Remove data from tape
 
 ### Synopsis
 
-    
-    
-    $ et_rm.py [-v] -b BATCHID [-w WORKSPACE]
-    			
+```bash
+et_rm.py [-v] -b BATCHID [-w WORKSPACE]
+```    			
 
 ### Description
 
@@ -326,13 +310,18 @@ Deletes the files in the specified batch from the Elastic Tape system.
 
 ### Options
 
--v  |  Verbose output   
----|---  
+option | details
+---|---
+-v  |  Verbose output
 -b BATCHID  |  ID of batch to be removed   
--w WORKSPACE  |  name of the group workspace to use. Overrides default set in config file. Case sensitive.   
+-w WORKSPACE  |  name of the group workspace to use. Overrides default set in config file. Case sensitive.
+{.table .table-striped}
+
 Example usage:
 
-`et_rm.py -v -b 507`
+{{<command user="user" host="et1">}}
+et_rm.py -v -b 507
+{{</command>}}
 
 * * *
 
@@ -342,10 +331,9 @@ List holdings on tape
 
 ### Synopsis
 
-    
-    
-    $ et_ls.py [-h] [-X XMLSOURCE] [-H] [-b BATCHID] [-w WORKSPACE] [-L {file,batch,workspace}] [-F {text}]
-    		
+```bash
+et_ls.py [-h] [-X XMLSOURCE] [-H] [-b BATCHID] [-w WORKSPACE] [-L {file,batch,workspace}] [-F {text}]
+```
 
 ### Description
 
@@ -354,30 +342,32 @@ workspace level.
 
 ### Options
 
--h, --help  |  show this help message and exit   
----|---  
+option | details
+---|---
+-h, --help  |  show this help message and exit
 -x XMLSOURCE --xmlsource XMLSOURCE  |  Base XML source, if not default. Note that this has to be compatible with the current base source currently, so can’t be pointed at files, for example   
 -H --headerWanted  |  Print headers showing column names for text output   
 -b BATCHID --batchid BATCHID  |  ID of batch by which to filter results   
 -w WORKSPACE  |  Name of the group workspace to use. Overrides default set in config file. Case sensitive.   
 -L {file, batch, workspace} --outputLevel {file, batch, workspace}  |  Level of detail to display for results (default is "workspace")   
 -F {text} --outputFormat {text}  |  Format to use for the display of results   
-  
+{.table .table-striped}
+
+
+
 Example usage:
 
-    
-    
-    $ et_ls.py -w myworkspace -H -L file -b 504
-    		
+{{<command user="user" host="et1">}}
+et_ls.py -w myworkspace -H -L file -b 504
+{{</command>}}
 
 Works with the workspace "myworkspace", selects display of headers in output,
 results at file level, filter by batchid 504 (i.e. shows the files present in
 ET in the given batch.)
 
-    
-    
-    $ et_ls.py -w myworkspace -H -L batch
-    		
+{{<command user="user" host="et1">}}
+et_ls.py -w myworkspace -H -L batch
+{{</command>}}
 
 Works with the workspace "myworkspace", selects display of headers in output,
 results at batch level (i.e. shows the batches present in ET holdings for this
