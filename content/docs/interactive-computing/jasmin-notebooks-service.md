@@ -1,16 +1,13 @@
 ---
 aliases: /article/4851-jasmin-notebook-service
-date: 2023-03-20 12:25:18
 description: Jupyter Notebooks service on JASMIN
 slug: jasmin-notebooks-service
 tags:
 - Jupyter
-- notebook server
-- Two-step verification
 title: JASMIN Notebooks Service
 ---
 
-The JASMIN Notebook Service provides access to [Jupyter
+The JASMIN Notebooks Service provides access to [Jupyter
 Notebooks](https://jupyter.org/) in the web browser.
 
 ## What is a Jupyter Notebook?
@@ -32,7 +29,7 @@ as explained below.
 The JASMIN Notebook Service uses
 [JupyterHub](https://jupyter.org/hub) to manage multiple Jupyter Notebook
 servers. After authenticating with a JASMIN account (with the correct access),
-a user gets access to their own notebook server. The notebook server runs as
+a user gets access to **their own notebook server**. The notebook server runs as
 the authenticated user, and the user can access their home directory, Group
 Workspaces and CEDA Archive data as they would from a scientific analysis
 server.
@@ -43,11 +40,13 @@ In order to access the JASMIN Notebook service, first, follow the steps in
 [Getting started with JASMIN]({{< ref "get-started-with-jasmin" >}}) to get a
 JASMIN account and the `jasmin-login` service.
 
-**Important:** From 16/6/2021, access to the JASMIN Jupyter Notebook service
+{{<alert type="info">}}
+From 16/6/2021, access to the JASMIN Jupyter Notebook service
 is controlled simply by having a valid `jasmin-login` grant. [2-step
 verification](http://notebooks.jasmin.ac.uk/) is still required as shown
 below, but it is no longer necessary to apply for and be granted the
-additional `jupyter-notebooks` role, which is now deprecated.)
+additional `jupyter-notebooks` role, which is now deprecated.
+{{</alert>}}
 
 ## Using the JASMIN Notebook Service
 
@@ -61,7 +60,7 @@ The first time you access the JASMIN Notebook Service from a new computer or
 browser, you will be asked to verify your email address after signing in. To
 do this, make sure the "Email" method is selected and click "Send me a code":
 
-![](file-9fa76fPQdE.png)
+{{<image src="img/docs/jasmin-notebooks-service/file-9fa76fPQdE.png" caption="Sign in with 2-factor authentication">}}
 
 This will result in an email being sent to your registered email address
 containing a six-digit verification code. Enter this code and press "Verify
@@ -71,12 +70,12 @@ Upon successfully signing in and verifying your email if required, you will be
 redirected back to the JASMIN Notebook Service. The service will then create a
 notebook server for you to use, and you will see a loading page:
 
-![](file-nkDFYlwSg1.png)
+{{<image src="img/docs/jasmin-notebooks-service/file-nkDFYlwSg1.png" caption="Loading page">}}
 
 After a few seconds, or in some rare cases a minute or two, you will be taken
 to the JupyterLab interface:
 
-![](file-fhTnvJz3xx.png)
+{{<image src="img/docs/jasmin-notebooks-service/file-fhTnvJz3xx.png" caption="JupyterLab interface">}}
 
 The folder shown in the left-hand panel will be your home directory on JASMIN,
 exactly as if you had logged in to a scientific analysis server. Any changes
@@ -87,7 +86,7 @@ CEDA Archive, and also have read-only access to group workspaces. For example,
 this notebook reads a file belonging to the CCI project from the CEDA Archive
 and plots the data on a map:
 
-![](file-LvHEu70CM6.png)
+{{<image src="img/docs/jasmin-notebooks-service/file-LvHEu70CM6.png" caption="Example notebook">}}
 
 A full discussion of the power of the JupyterLab interface is beyond the scope
 of this documentation, but the [JupyterLab
@@ -96,16 +95,25 @@ there are many tutorials available on the internet.
 
 ### Intended usage and limitations
 
-The JupyterLab environment provided by the JASMIN Notebook Service is
+The JupyterLab environment provided by the JASMIN Notebooks Service is
 powerful, but it has some limitations that reflect the type of usage that we
 want to encourage.
 
-The service is primarily intended for interactively producing visualisations
+The JASMIN Notebooks Service is primarily intended for interactively producing visualisations
 of existing data, not for processing vast amounts of data. As such, the
-resources made available to each notebook server are limited, and Group
-Workspaces are only mounted in read-only mode. For heavy processing, users
-should still use the [LOTUS batch processing system]({{< ref "slurm" >}})
-before using the notebook service to visualise the data.
+resources made available to each notebook server are limited.
+
+For larger processing tasks with Notebooks, users
+should consider using the {{<link "https://github.com/cedadev/jasmin-daskgateway">}}JASMIN Dask Gateway service{{</link>}}, which provides an easy way for processing managed from within a Jupyter Notebook to be scaled out to multiple LOTUS jobs in parallel.
+
+Alternatively, use the [LOTUS batch processing system]({{< ref "slurm" >}})
+separately, before using the notebooks service to visualise the output.
+
+Doing this means that the bulk of the resource usage will be shared by the LOTUS cluster rather than the Notebooks service itself.
+
+{{<alert type="info">}}
+Although it was previously the case that Group Workspaces were only available in Notebooks read-only, this is no longer the case (as of 2023), so you should have full read-write access to any group workspace volume.
+{{</alert>}}
 
 ### Common issues and questions
 
@@ -122,8 +130,8 @@ listed on the [Jaspy page]({{< ref "jaspy-envs" >}}).
 #### Can I install additional packages?
 
 The recommended way to do this is to [create your own virtual environment in
-the notebooks service and install additional packages into that.]({{< ref
-"creating-a-virtual-environment-in-the-notebooks-service" >}}) You can
+the notebooks service and install additional packages into that.]({{< ref "creating-a-virtual-environment-in-the-notebooks-service" >}})
+You can
 make that virtual environment persist as a kernel to use again next time you
 use the Notebooks service.
 
@@ -134,8 +142,6 @@ update to Jaspy.
 
 Yes, the article linked above also describes how to use Conda to create your
 own custom environment.
-
-####
 
 #### I get "503 service unavailable" when I try to access the JASMIN Notebook
 Service
@@ -153,11 +159,13 @@ notebook server should be able to start again.
 
 #### I get the following message when my notebook is queued for spawning
 
-![](file-NHYStoV3nD.png)The message above indicates that the Notebook service
+{{<image src="img/docs/jasmin-notebooks-service/file-NHYStoV3nD.png" caption="Error message">}}
+
+The message above indicates that the Notebook service
 is oversubscribed -busy- and there are no resources available to start your
 Notebook server. Please try again later!
 
-Please use the scientific analysis server and LOTUS for processing and jupyter
+Please use the scientific analysis server and LOTUS for processing and Jupyter
 Notebook for lighter visualisation.
 
 ## Example Notebooks
@@ -167,8 +175,7 @@ repository with a collection of Notebooks that demonstrate some of the
 important features of the service. The following provides a general
 introduction:
 
-<https://github.com/cedadev/ceda-
-notebooks/blob/master/notebooks/training/intro/notebook-tour.ipynb>
+<https://github.com/cedadev/ceda-notebooks/blob/master/notebooks/training/intro/notebook-tour.ipynb>
 
 Other Notebooks can be found within the repository, under:
 
@@ -176,8 +183,7 @@ Other Notebooks can be found within the repository, under:
 
 ## Webinar / video tutorial
 
-A [CEDA webinar on 16th June 2020](https://www.ceda.ac.uk/events/demo-of-the-jasmin-notebook-
-service-webinar/) demonstrated how to use the service. A recording of the event is available:
+A [CEDA webinar on 16th June 2020](https://www.ceda.ac.uk/events/past/jasmin-notebook-service-webinar/) demonstrated how to use the service. A recording of the event is available:
 
 {{< youtube nle9teGLAb0 >}}
 
@@ -186,12 +192,10 @@ service-webinar/) demonstrated how to use the service. A recording of the event 
 Here are a set of links to learn more about Jupyter Notebooks and the JASMIN
 Notebook Service:
 
-  * [The JASMIN Notebook Service](https://notebooks.jasmin.ac.uk/)
-  * [Intro to Jupyter Lab](https://jupyter.org/)
-  * [Try a Jupyter Lab Notebook in your browser](https://jupyter.org/try) (this link does not use the JASMIN Notebook Service)
-  * [Tour of the JASMIN Notebook Service](https://github.com/cedadev/ceda-notebooks/tree/master/notebooks/training/intro) \- set of notebooks highlighting different features
-  * [Intro to the JASMIN Notebook Service](https://www.ceda.ac.uk/events/demo-of-the-jasmin-notebook-service-webinar/) \- video of a webinar from June 2020
-  * [Instructions to create a Python virtual environment](https://github.com/cedadev/ceda-notebooks/blob/master/notebooks/training/rerunnable-virtualenv-maker.ipynb) \- example notebook
-  * [Instructions to create a Conda environment for use with the Notebook Service](https://github.com/cedadev/ceda-notebooks/blob/master/notebooks/docs/add_conda_envs.ipynb) \- example notebook
-
-
+- [The JASMIN Notebook Service](https://notebooks.jasmin.ac.uk/)
+- [Intro to Jupyter Lab](https://jupyter.org/)
+- [Try a Jupyter Lab Notebook in your browser](https://jupyter.org/try) (this link does not use the JASMIN Notebook Service)
+- [Tour of the JASMIN Notebook Service](https://github.com/cedadev/ceda-notebooks/tree/master/notebooks/training/intro) \- set of notebooks highlighting different features
+- [Intro to the JASMIN Notebook Service](https://www.ceda.ac.uk/events/demo-of-the-jasmin-notebook-service-webinar/) \- video of a webinar from June 2020
+- [Instructions to create a Python virtual environment](https://github.com/cedadev/ceda-notebooks/blob/master/notebooks/training/rerunnable-virtualenv-maker.ipynb) \- example notebook
+- [Instructions to create a Conda environment for use with the Notebook Service](https://github.com/cedadev/ceda-notebooks/blob/master/notebooks/docs/add_conda_envs.ipynb) \- example notebook
