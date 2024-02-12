@@ -1,17 +1,17 @@
 ---
 aliases: /article/4702-faqs-storage
-date: 2022-11-16 08:50:53
 description: New storage FAQs and issues
 slug: faqs-storage
 tags:
 - netCDF3
 - small files
-- ''
 title: New storage FAQs and issues
 ---
 
+{{<alert type="info">}}This article was originally written in 2018/19 to introdice new forms of storage which were brought into produciton at that stage. Some of the information and terminology is now out of date, pending further review of JASMIN documentation.{{</alert>}}
+
 Workflows with some of the issues highlighted below will have a knock on
-effect for other users - so please take the time to check and change your code
+effect for other users, so please take the time to check and change your code
 to make appropriate use of new storage system. If used correctly, the new
 storage offers us a high performance scalable file system, with the capability
 for object storage as tools and interfaces evolve, and we can continue to
@@ -31,12 +31,11 @@ _Parallel threads can update the same file concurrently on same or from
 different servers._
 
 **Suggested solution:** use a `/work/scratch-pw*` volume which is PFS (but not
-`/work/scratch-nopw*` !), then move output to SOF
+`/work/scratch-nopw*` !), then move output to SOF storage.
 
 ---
 
-#### Writing all the logs from a LOTUS job or job array to the same output or
-log file
+#### Writing all the logs from a LOTUS job or job array to the same output or log file
 
 **Suggested solution:** see job submission advice 
 [here]({{< ref "how-to-submit-a-job-to-slurm" >}}) showing how to use SBATCH options to use distinct output and log files for each job, or element of a job array.
@@ -54,9 +53,7 @@ into (eg. sci1.jasmin.ac.uk)
 
 ---
 
-#### Attempting to kill a process that was writing/modifying files, but not
-checking that it has been killed before starting a replacement process which
-attempts to do the same thing
+#### Attempting to kill a process that was writing/modifying files, but not checking that it has been killed before starting a replacement process which attempts to do the same thing
 
 _This can happen with rsync leading to duplicate copying processes._
 
@@ -65,27 +62,25 @@ starting another.
 
 ---
 
-#### Opening the same file for editing in more than one editor on the same or
-different servers
+#### Opening the same file for editing in more than one editor on the same or different servers
 
 _Here’s an example of how this shows up using “lsof” and by listing user
 processes with “ps”. The same file “ISIMIPnc_to_SDGVMtxt.py” is being edited
 in 2 separate “vim” editors. In this case, the system team was unable to kill
 the processes on behalf of the user, so the only solution was to reboot sci1._
  
-```
+{{<command user="user" host="sci1">}}
 lsof /gws/nopw/j04/gwsnnn/
-COMMAND   PID     USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
-vim     20943 fbloggs  cwd    DIR   0,43        0 2450 /gws/nopw/j04/gwsnnn/fbloggs/sdgvm/ISIMIP
-vim     20943 fbloggs    4u   REG   0,43    24576 2896 /gws/nopw/j04/gwsnnn/fbloggs/sdgvm/ISIMIP/.ISIMIPnc_to_SDGVMtxt.py.swp
-vim     31843 fbloggs  cwd    DIR   0,43        0 2450 /gws/nopw/j04/gwsnnn/fbloggs/sdgvm/ISIMIP
-vim     31843 fbloggs    3r   REG   0,43    12111 2890 /gws/nopw/j04/gwsnnn/fbloggs/sdgvm/ISIMIP/ISIMIPnc_to_SDGVMtxt.py
-
+(out)COMMAND   PID     USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+(out)vim     20943 fbloggs  cwd    DIR   0,43        0 2450 /gws/nopw/j04/gwsnnn/fbloggs/sdgvm/ISIMIP
+(out)vim     20943 fbloggs    4u   REG   0,43    24576 2896 /gws/nopw/j04/gwsnnn/fbloggs/sdgvm/ISIMIP/.ISIMIPnc_to_SDGVMtxt.py.swp
+(out)vim     31843 fbloggs  cwd    DIR   0,43        0 2450 /gws/nopw/j04/gwsnnn/fbloggs/sdgvm/ISIMIP
+(out)vim     31843 fbloggs    3r   REG   0,43    12111 2890 /gws/nopw/j04/gwsnnn/fbloggs/sdgvm/ISIMIP/ISIMIPnc_to_SDGVMtxt.py
 ps -ef | grep fbloggs
-......
-fbloggs 20943     1  0 Jan20 ?        00:00:00 vim ISIMIPnc_to_SDGVMtxt.py
-fbloggs 31843     1  0 Jan20 ?        00:00:00 vim ISIMIPnc_to_SDGVMtxt.py smc_1D-2D_1979-2012_Asia_NewDelhi.py
-```
+(out)......
+(out)fbloggs 20943     1  0 Jan20 ?        00:00:00 vim ISIMIPnc_to_SDGVMtxt.py
+(out)fbloggs 31843     1  0 Jan20 ?        00:00:00 vim ISIMIPnc_to_SDGVMtxt.py smc_1D-2D_1979-2012_Asia_NewDelhi.py
+{{</command>}}
 
 **Suggested solution:** If you are unable to kill the processes yourself,
 contact the helpdesk with sufficient information to ask for it to be done for
@@ -112,25 +107,25 @@ files, transparent to the user. SOF however, can’t do this (until later in
 well as an additional and larger scratch area._
 
 **Suggested solution:** Please consider using your home directory for small-
-file storage, or `/work/scratch-nopw*` for situations involving LOTUS
+file storage, or `/work/scratch-nopw2` for situations involving LOTUS
 intermediate job storage. It should be possible to share code, scripts and
 other small files from your home directory by changing the file and directory
 permissions yourself.
 
 We are planning to address this further in Phase 5 by deploying additional SSD
 storage which could be made available in small amounts to GWSs as an
-additional type of storage.
+additional type of storage. [Now available: please ask about adding an "SMF" volume to your workspace]
 
 #### Issues writing netCDF3 classic files to SOF storage type
 
-Writing netCDF3 classic files to SOF storage e.g. /gws/nopw/j04/* should be
+Writing netCDF3 classic files to SOF storage e.g. `/gws/nopw/j04/*` should be
 avoided. This is due to the fact that operations involving a lot of
 repositioning of the file pointer (as happens with netCDF3 writing) has
 similar issues from writing large numbers of small files to SOF storage (known
 as QB ).
 
 **Suggested solution:** It is more efficient to write netCDF3 classic files to
-another filesystem type (e.g. /work/scratch/pw* or /work/scratch-nopw*) and then move them to a SOF
+another filesystem type (e.g. /work/scratch/pw* or /work/scratch-nopw2) and then move them to a SOF
 GWS, rather than writing directly to SOF.
 
 ---
@@ -151,5 +146,3 @@ This can help you select a less-used machine (but don’t necessarily expect the
 same machine to be the right choice next time!).
 
 ---
-
-
