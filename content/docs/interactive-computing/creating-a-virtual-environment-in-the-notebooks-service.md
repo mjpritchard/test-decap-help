@@ -24,7 +24,7 @@ packages into it.
 
 {{<alert type="danger">}}
 These commands are intended for use at the jupyter
-notebooks' shell, **not on the JASMIN sci machines**
+notebooks shell, **not on the JASMIN sci machines**
 {{</alert>}}
 
 To get started, head to <https://notebooks.jasmin.ac.uk> and click the
@@ -101,12 +101,12 @@ python -m ipykernel install --user --name=name-of-environment
 
 ## Step3: Using Your New Kernel
 
-{{<image src="/img/docs/creating-a-virtual-environment-in-the-jasmin-notebooks-service/197739637-1e75ce45-c0de-49ec-b168-d2dc101ca7fe.png" caption="">}}
+{{<image src="/img/docs/creating-a-virtual-environment-in-the-jasmin-notebooks-service/197739637-1e75ce45-c0de-49ec-b168-d2dc101ca7fe.png" caption="Select kernel, in this case: 'name-of-environment'" wrapper="col-6 mx-auto">}}
 
 You can then choose this kernel from the jupyterhub homepage, or from the top
 right of any open notebook. No changes to the python code within are required.
 
-{{<image src="/img/docs/creating-a-virtual-environment-in-the-jasmin-notebooks-service/197740127-074abd6d-f0f2-4450-8c4c-232a5800137c.png" caption="">}}
+{{<image src="/img/docs/creating-a-virtual-environment-in-the-jasmin-notebooks-service/197740127-074abd6d-f0f2-4450-8c4c-232a5800137c.png" caption="kernel name in notebook title tab">}}
 
 ## Other tips & useful knowledge
 
