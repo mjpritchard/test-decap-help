@@ -15,11 +15,9 @@ _**Trial period extended**_
 This article defines the types of account available on JASMIN and their
 purpose. It covers:
 
-  * STANDARD accounts (with note about training accounts)
-  * SHARED accounts
-  * SERVICE accounts
-
-# Multiple account types on JASMIN
+- STANDARD accounts (with note about training accounts)
+- SHARED accounts
+- SERVICE accounts
 
 ## Introduction
 
@@ -33,12 +31,9 @@ defined set of account types for each purpose.
 **These are being introduced on a trial basis as of 1st June 2023 for an
 initial period of 7 months.**
 
-**  
-**
+## Definitions
 
-# Definitions
-
-## STANDARD accounts
+### STANDARD accounts
 
 A standard account:
 
@@ -53,7 +48,7 @@ training events.
 A **standard account** holder may act as a **responsible user** on one more
 **service** or **shared accounts.**
 
-## SHARED accounts
+### SHARED accounts
 
 A shared account:
 
@@ -75,7 +70,7 @@ specific list of other individuals in an encrypted form. Password sharing via
 unencrypted means (such as a text file, email or post-it note) is not
 permitted.
 
-## SERVICE accounts
+### SERVICE accounts
 
 A service account:
 
@@ -94,5 +89,5 @@ A service account:
   * Membership of a **shared** or **service account** , and availability of the account itself, may be withdrawn if behaviour falls outside the [JASMIN Terms and Conditions](https://accounts.jasmin.ac.uk/account/conditions/). In serious cases, individual users may be barred from further use of JASMIN altogether. Users are reminded to familiarise themselves with the **Terms and Conditions** and have a responsibility to keep up to date with them as they change. Users must also pay attention to service announcements made by the JASMIN team by email and other means.
 
 Requests for shared or service accounts should be sent to
-[support@jasmin.ac.uk](mailto:support@jasmin.ac.uk) with "shared account
+the JASMIN helpdesk with "shared account
 request" or "service account request" in the subject line.

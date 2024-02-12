@@ -16,8 +16,10 @@ part of JASMIN. It covers:
 LOTUS is not, in itself, a High-Performance Computing (HPC) facility, but
 provides the batch and parallel processing component of the JASMIN data-
 intensive scientific analysis environment. LOTUS is a cluster of physical
-machines, running the [SLURM workload manager]({{< ref "slurm-scheduler-overview" >}}), enabling efficient scheduling of larger data analysis tasks
-across nodes in the cluster as a single unit -see Figure 1. Each node in the
+machines, running the [Slurm workload manager]({{< ref "slurm-scheduler-overview" >}}), enabling efficient scheduling of larger data analysis tasks
+across nodes in the cluster as a single unit -see Figure 1.
+
+Each node in the
 cluster is connected by 10Gbit/s Ethernet to JASMIN's high-performance
 40Gbit/s core network. Although not its primary function, LOTUS also
 facilitates MPI-based parallel processing.
@@ -43,7 +45,7 @@ LOTUS is ideally suited to workflows which need to process or compare entire
 datasets, stored either in Group Workspaces or in the CEDA archives. The
 latter are directly accessible read-only so can be processed in-place without
 the need to copy files. Intermediate working files (within batch jobs) should
-be stored temporarily in `/work/scratch-pw* ` and ` /work/scratch-nopw*`
+be stored temporarily in `/work/scratch-pw*` and ` /work/scratch-nopw*`
 volumes which are shared across the cluster, while persistent outputs can be
 written efficiently to Group Workspaces and shared with collaborators for the
 duration of a project.
@@ -51,13 +53,13 @@ duration of a project.
 See [Access to Storage]({{< ref path="/docs/getting-started/storage" >}}) for details about which file
 systems are appropriate to use and how to access them.
 
-LOTUS currently has around 13000 cores, but is heavily used and implements a
+LOTUS currently has around 19,000 cores, but is heavily used and implements a
 fair-share scheduling system between users. It is not intended as a substitute
 for dedicated HPC facilities, rather as a complementary environment in which
 model outputs can be analyzed and compared with observational data. Users with
 large-scale compute-heavy requirements (in particular those requiring large-
 scale parallel processing) should look to access other parts of the national
-HPC infrastructure such as [ARCHER](http://www.archer.ac.uk/) or
+HPC infrastructure such as [ARCHER2](http://www.archer2.ac.uk/) or
 [MONSooN](http://collab.metoffice.gov.uk/twiki/bin/view/Support/MONSooN).
 
 In order to maintain a safe and reliable working environment for all within
@@ -84,5 +86,4 @@ unsuccessful attempt to submit to the `short-serial` queue:
 sbatch: error: Batch job submission failed: Invalid account or account/partition combination specified
 ```
 
-If this occurs, please try again in 24 hours before contacting the JASMIN help
-desk.
+If this occurs, please try again in 24 hours before contacting the JASMIN helpdesk.

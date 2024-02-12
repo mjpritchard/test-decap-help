@@ -5,20 +5,20 @@ tags:
 - ssh
 - password
 - connection
-title: Login problems?
+title: Login problems
 weight: 40
 ---
 
 Having problems connecting to a host on JASMIN? Details of how to login to
 JASMIN can be found [here]({{< ref path="docs/getting-started/login" >}}), but this article may help to
-diagnose login problems. It provides information for the following issues:
+resolve login problems. It provides information for the following issues:
 
-  * Unable to login to a login server e.g. `login1.jasmin.ac.uk`
-  * Can login to login server but can't login to a subsequent server
-  * ssh-add command gives error: "Could not open a connection to your authentication agent."
-  * Errors when trying to connect with MobaXterm
+- Unable to login to a login server e.g. `login1.jasmin.ac.uk`
+- Can login to login server but can't login to a subsequent server
+- ssh-add command gives error: "Could not open a connection to your authentication agent."
+- Errors when trying to connect with MobaXterm
 
-### Unable to login to login server
+## Unable to login to login server
 
 If you are unable to login to a login server e.g. `login1.jasmin.ac.uk` then
 look carefully at any error messages displayed as this can help diagnose what
@@ -32,20 +32,19 @@ list of network domains (the domain is the part **after** the host name e.g.
 myhost. **mylocalnetwork.ac.uk** ). For this to happen, 2 things need to be in
 place:
 
-  * the IP address of your machine needs to resolve to a full-qualified host name (so that it can be checked against the list)
-  * the domain part of the hostname needs to be on JASMIN's allow list.
+- the IP address of your machine needs to resolve to a full-qualified host name (so that it can be checked against the list)
+- the domain part of the hostname needs to be on JASMIN's allow list.
 
 Use the tool provided on the JASMIN accounts portal to check that your IP
 address does indeed resolve:
 
 Visit <https://accounts.jasmin.ac.uk/services/reverse_dns_check/> with your
-browser, or do the following at the command line, on the machine from which
+browser, or do the following at the command line, on the machine **from which**
 you're trying to connect:
 
-    
-    
+{{<command user="user" host="localhost">}}
     curl https://accounts.jasmin.ac.uk/services/reverse_dns_check
-    
+{{</command>}}
 
 Depending on your system, this will either provide output to the terminal (via
 stdout) or on some systems this might save the output in the file
@@ -60,8 +59,8 @@ connect from your home broadband, then please be aware that this is not the
 the preferred route, for security reasons. If you connect from home, please be
 aware that:
 
-  * The IP address which you are allocated by your internet service provider (ISP) may not resolve to a full hostname
-  * That domain name is unlikely to be on the allow list.
+- The IP address which you are allocated by your internet service provider (ISP) may not resolve to a full hostname
+- That domain name is unlikely to be on the allow list.
 
 One solution is to connect via your VPN to your institution first. This
 assigns you another IP address belonging to that institution, but you need to
@@ -81,8 +80,6 @@ network.
 
 **2) "Permission denied"**
 
-![](file-JdvJWHUysI.png)
-
 Here, the most likely cause is that the SSH key which your client is
 presenting does not match the one in your JASMIN account. This can be for a
 number of reasons:
@@ -100,7 +97,7 @@ number of reasons:
     * To check, go to [List my services](https://accounts.jasmin.ac.uk/services/my_services/?page=1&active=1&_apply_filters=1) on the JASMIN accounts portal and check that "Login services: jasmin-login" is listed. If not then you either need to [apply for jasmin-login access](https://accounts.jasmin.ac.uk/account/login/?next=/services/login_services/jasmin-login/), or if you have already done this recently you may simply need to wait for it to be approved. Note that if you have applied for access to a group workspace you still need jasmin-login access in order to connect to jasmin machines.
 
 **3) "The authenticity of host 'nnnn ( <ip address>)' can't be established."
-or "key for host nnnn has changed"** ****
+or "key for host nnnn has changed"**
 
 Your local computer stores a list of all the other SSH hosts which it has
 successfully connected to in the past. If you use an intermediate host like a
@@ -115,48 +112,45 @@ may get a message like the following:
 
 **Message 1:**
 
-    
-    
-    The authenticity of host 'nnnn (<ip address>)' can't be established.
-    ECDSA key fingerprint is SHA256:8QY9iBcOQFyEYkpOtBUU8WQGeADb0DyMff01BRuvYls.
-    ECDSA key fingerprint is MD5:f9:19:c4:5f:2b:fa:ed:aa:34:86:c9:23:dd:1c:44:30.
-    Are you sure you want to continue connecting (yes/no)?
-    
+{{<command>}}
+(out)The authenticity of host 'nnnn (<ip address>)' can't be established.
+(out)ECDSA key fingerprint is SHA256:8QY9iBcOQFyEYkpOtBUU8WQGeADb0DyMff01BRuvYls.
+(out)ECDSA key fingerprint is MD5:f9:19:c4:5f:2b:fa:ed:aa:34:86:c9:23:dd:1c:44:30.
+(out)Are you sure you want to continue connecting (yes/no)?
+{{</command>}}
 
 **Message 2:**
 
-    
-    
-    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-    @       WARNING: POSSIBLE DNS SPOOFING DETECTED!          @
-    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-    The ECDSA host key for nnnn has changed,
-    and the key for the corresponding IP address <IP address>
-    has a different value. This could either mean that
-    DNS SPOOFING is happening or the IP address for the host
-    and its host key have changed at the same time.
-    Offending key for IP in /home/users/username/.ssh/known_hosts:62
-    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-    @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
-    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-    IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
-    Someone could be eavesdropping on you right now (man-in-the-middle attack)!
-    It is also possible that a host key has just been changed.
-    The fingerprint for the ECDSA key sent by the remote host is
-    SHA256:Evr7U40sEGSLVypfafLYtbF2oYvGDuBxTyrALdx11pk.
-    Please contact your system administrator.
-    Add correct host key in /home/users/username/.ssh/known_hosts to get rid of this message.
-    Offending ECDSA key in /home/users/username/.ssh/known_hosts:115
-    ECDSA host key for nnnn has changed and you have requested strict checking.
-    Host key verification failed.
-    
+{{<command>}}
+(out)@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+(out)@       WARNING: POSSIBLE DNS SPOOFING DETECTED!          @
+(out)@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+(out)The ECDSA host key for nnnn has changed,
+(out)and the key for the corresponding IP address <IP address>
+(out)has a different value. This could either mean that
+(out)DNS SPOOFING is happening or the IP address for the host
+(out)and its host key have changed at the same time.
+(out)Offending key for IP in /home/users/username/.ssh/known_hosts:62
+(out)@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+(out)@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+(out)@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+(out)IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+(out)Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+(out)It is also possible that a host key has just been changed.
+(out)The fingerprint for the ECDSA key sent by the remote host is
+(out)SHA256:Evr7U40sEGSLVypfafLYtbF2oYvGDuBxTyrALdx11pk.
+(out)Please contact your system administrator.
+(out)Add correct host key in /home/users/username/.ssh/known_hosts to get rid of this message.
+(out)Offending ECDSA key in /home/users/username/.ssh/known_hosts:115
+(out)ECDSA host key for nnnn has changed and you have requested strict checking.
+(out)Host key verification failed.
+{{</command>}}
 
 This can happen when:
 
-  * machines are re-installed
-  * when you modify your `~/.ssh/known_hosts` file  
-
-  * when you access a "known" host but via a different name (e.g. `sci1` vs `sci1.jasmin.ac.uk`) 
+- machines are re-installed (as part of maintenance by the JASMIN team)
+- when you modify your `~/.ssh/known_hosts` file  
+- when you access a "known" host but via a different name (e.g. `sci1` vs `sci1.jasmin.ac.uk`) 
 
 Message 1 means that you don't have an entry for that host in your
 `~/.ssh/known_hosts` file. In most cases, you can safely reply "yes" and the
@@ -175,22 +169,26 @@ the reason for failure. Using a terminal session (in MobaXterm on Windows, or
 Mac/Linux terminal) to the problem host will likely reveal the messages and
 enable you to follow the steps above to solve the problem.
 
-### Can login to login server but can't login to a subsequent host
+## Can login to login server but can't login to a subsequent host
 
 Here, there are 3 main possibilities:
 
 **1) You have not set up agent forwarding correctly on your local machine.**
 
-****This allows your ssh key to be used for logging in from jasmin-login1 to
+****This allows your ssh key to be used for logging in from `login1.jasmin.ac.uk` to
 other machines. To check, run the following command on the login server:
 
-    
-    
-    $ echo "$SSH_AUTH_SOCK"
-    
+{{<command user="user" host="login1">}}
+echo "$SSH_AUTH_SOCK"
+{{</command>}}
 
 This should display something that looks similar to (but not identical to)
-"/tmp/ssh-RNjiHr2844/agent.2844". If nothing is displayed then it indicates
+
+{{<command user="user" host="login1">}}
+(out)/tmp/ssh-RNjiHr2844/agent.2844
+{{</command>}}
+
+If nothing is displayed then it indicates
 that agent forwarding is not working. Please read 
 [how to login]({{< ref path="docs/getting-started/login" >}}) and make sure
  you are running ssh-agent (or similar), have loaded
@@ -205,8 +203,8 @@ The "sci" servers (e.g. `sci1.jasmin.ac.uk`) and "xfer" machines (e.g.
 `xfer1.jasmin.ac.uk`) should be available to all with `jasmin-login` access
 (see above). However, some other machines are restricted to particular project
 participants and require special permission to use. For example, the high-
-performance transfer servers `hpxfer[12].jasmin.ac.uk` requires the the
-`hpxfer` access role, which can be applied for at the JASMIN accounts portal,
+performance transfer servers `hpxfer[12].jasmin.ac.uk` requires the
+{{<link "../data-transfer/hpxfer-access-role">}}hpxfer access role{{</link>}}, which can be applied for at the JASMIN accounts portal,
 as can most roles currently in use.
 
 **3) There is a problem with the host you are trying to connect to.**
@@ -224,43 +222,41 @@ If you still have problems then please contact us using the help beacon below.
 It would be helpful if you can include as much of the following information as
 possible:
 
-  * The IP address and full hostname of the machine you are trying to connect from.
-  * The date and time that you tried connecting (to the nearest minute if possible). This will help us to identify any relevant messages in any log files.
-  * The exact command you were using
-  * Add "-vvv" to your SSH command and send us the the output (please include the SSH command itself)
-  * List the SSH keys directory on your local machine. On a linux machine this can be done with the command: "ls -l ~/.ssh"
+- The IP address and full hostname of the machine you are trying to connect from.
+- The date and time that you tried connecting (to the nearest minute if possible). This will help us to identify any relevant messages in any log files.
+- The exact command you were using
+- Add "-vvv" to your SSH command and send us the the output (please include the SSH command itself)
+- List the SSH keys directory on your local machine. On a linux machine this can be done with the command: `ls -l ~/.ssh`
 
-### ssh-add command gives error: "Could not open a connection to your
-authentication agent."
+## ssh-add command gives error: "Could not open a connection to your authentication agent."
 
 On some terminal sessions the usual instructions for starting the ssh-agent
 session and adding the key may give the following error:
 
-    
-    
-    $ ssh-add ~/.ssh/id_rsa_jasmin
-    Could not open a connection to your authentication agent.
-    
+{{<command user="user" host="localhost">}}
+ssh-add ~/.ssh/id_rsa_jasmin
+(out)Could not open a connection to your authentication agent.
+{{</command>}}
 
-If you get this error please try either:
+If you get this message, please try either:
 
 modifying the method you use to start the ssh-agent, to:
 
-    
-    
-    eval $(ssh-agent -s)
-    
+{{<command user="user" host="localhost">}}
+eval $(ssh-agent -s)
+{{</command>}}
 
-or see below if using MobaXterm which now has a better way of loading the SSH
-key.
+(and then trying to load the key again)
 
-### Errors when connecting with Mobaxterm
+or see below (if using MobaXterm) which now has a better way of loading the SSH key.
+
+## Errors when connecting with Mobaxterm
 
 Please follow the [instructions for MobaXterm]({{< ref "mobaxterm" >}}) (which
-include a screen video to show how to load your key into MobAgent).
+include a video to show how to load your key into its own ssh-agent, `MobAgent`).
 
 These instructions have changed with more recent versions of MobaXterm, and
-replace the need to use the ssh-add command, so please make sure that both the
+replace the need to use the `ssh-add` command, so please make sure that both the
 version you are using, and your method, are up to date!
 
 Please note that even if your initial connection to (for example) your
@@ -268,5 +264,3 @@ university host does not require your JASMIN SSH key, you should still load
 the key AND enable agent forwarding, for your initial connection to that host,
 so that the key can be used for the subsequent connection to the JASMIN login
 host. This actually applies to any connection method, not just MobaXterm.
-
-
