@@ -1,6 +1,5 @@
 ---
 aliases: /article/3822-scheduling-automating-transfers
-date: 2021-07-07 14:35:42
 description: Scheduling/Automating Transfers
 slug: scheduling-automating-transfers
 title: Scheduling/Automating Transfers
@@ -8,8 +7,8 @@ title: Scheduling/Automating Transfers
 
 This article explains how to schedule or automate data transfers. It covers:
 
-  * Scheduling download tasks using cron and LOTUS
-  * Using Globus for transfer automation [TODO]
+- Scheduling download tasks using cron and LOTUS
+- Using Globus for transfer automation
 
 ## Overview
 
@@ -20,12 +19,11 @@ task downloading of some large datasets, or simply to be able rely on data
 being pulled in from some external source to an accumulating dataset used for
 periodic analysis.
 
-
-##  Using Globus for transfer automation
+## Using Globus for transfer automation
 
 It is easy to automate transfers using {{<link "globus-transfers-with-jasmin">}}Globus{{</link>}}. This method has the advantage that you 
 do not need to remain connected or logged in to any JASMIN server for the automated transfers
-to take place on your behalf, and is more efficient and reliable than the other methods described below.
+to take place on your behalf, and the transfer itself can be more efficient than other methods described below.
 
 Some introductory information about how to do this is available in this article
 {{<link "globus-command-line-interface/#automation">}}Using the Globus command-line interface{{</link>}}
@@ -37,10 +35,29 @@ Python code that uses this functionality.
 
 ## Scheduling download tasks using cron and LOTUS
 
-While the [cron server]({{< ref "using-cron" >}}) is provided for scheduling
-tasks, **it should not be used for the work of executing those tasks itself.**
-So we need a way for a task to be invoked from cron but executed where there
-is lots of processing resource (i.e. LOTUS).
+While the [cron server]({{< ref "using-cron" >}}) `cron.jasmin.ac.uk` is provided for scheduling
+general tasks, **it should not be used for the work of executing those tasks itself, and not for transfer tasks.**
+
+### xfer3 - transfer machine with cron
+
+The transfer server `xfer3.jasmin.ac.uk` is also provided with `cron`, and should be used where 
+a task is primarily a transfer rather than a processing task and needs the functionality
+of a transfer server. For access to `xfer3` you will need the 
+{{<link "https://accounts.jasmin.ac.uk/services/additional_services/xfer-sp/">}}xfer-sp access role{{</link>}}.
+Please refer to the above `cron` guidance for best practice advice.
+
+### invoking LOTUS from cron to carry out multiple download tasks
+
+Sometimes we need a tasks to be invoked from `cron` but executed where there
+are lots of nodes to parallelise the tasks (i.e. the LOTUS cluster). In this case, we DO need to use the `cron`
+server rather than `xfer3`, since we need to be able to talk to LOTUS (`xfer3` can't do that, as a transfer server).
+
+This will only work where the download can happen over HTTP(S), so depends on how the remote data is made available.
+
+We need it to:
+
+- invoke a job submission script at regular intervals
+- have that script initiate downloads using LOTUS nodes
 
 In the examples below, we use the `test` queue (or partition, as queues are
 known in SLURM). You can use this for testing, but once you know roughly how
@@ -51,19 +68,19 @@ way alongside other users' jobs.
 ### 1\. Single download script
 
 The simple script below is used to download a single file from an external
-source via HTTP using `wget`:
+source via HTTP using `wget`. It initially uses the `test` partition (queue), but 
+once you had tested it, you would need to use a more appropriate queue.
 
-    
-    
-    #!/bin/bash 
-    #SBATCH --partition=test
-    #SBATCH -o %j.out 
-    #SBATCH -e %j.err
-    #SBATCH --time=00:30
-    
-    # executable 
-    wget -q -O 1MB_${SLURM_JOBID}.zip http://speedtest.tele2.net/1MB.zip
-    
+```bash
+#!/bin/bash 
+#SBATCH --partition=test
+#SBATCH -o %j.out 
+#SBATCH -e %j.err
+#SBATCH --time=00:30
+
+# executable 
+wget -q -O 1MB_${SLURM_JOBID}.zip http://speedtest.tele2.net/1MB.zip
+```  
 
 In this example, the file is labelled with the id of the job which downloaded
 it, e.g. `1MB_61117380.zip`
@@ -81,6 +98,8 @@ available via libraries in the Python environment such (which you do have
 access to and can easily customise to install additional libraries using
 virtual environments).
 
+Due to networking limitations, LOTUS nodes cannot perform downloads using SSH-based methods, i.e. scp/rsync/sftp.
+
 Download tools installed on LOTUS nodes include:
 
   * `wget`
@@ -90,26 +109,23 @@ Download tools installed on LOTUS nodes include:
 In our simple example above, we can subit this script to LOTUS from the
 command line with
 
-    
-    
-    sbatch test_download.sh
-    
+{{<command>}}
+sbatch test_download.sh
+{{</command>}}
 
 This could be invoked on a regular basis by adding a crontab entry like this
 
-    
-    
-    30 * * * * sbatch /home/users/username/test_download.sh
-    
+```bash
+30 * * * * sbatch /home/users/username/test_download.sh
+```
 
 However it would be safer to wrap this in a `crontamer` command like this to
 ensure one instance of the task had finished before the next started: (see
 [Using cron]({{< ref "using-cron" >}}) for details)
 
-    
-    
-    30 * * * * crontamer -t 2h 'sbatch /home/users/username/test_download.sh'
-    
+```bash
+30 * * * * crontamer -t 2h 'sbatch /home/users/username/test_download.sh'
+```
 
 ## 2\. Multi-node downloads
 
@@ -134,21 +150,20 @@ We'll simulate this here by downloading the same external file to 10 different
 output files, but you could adapt this concept for your own purposes depending
 on the layout of the source and destination data.
 
-    
-    
-    #!/bin/bash 
-    #SBATCH --partition=test
-    #SBATCH -o %A_%a.out
-    #SBATCH -e %A_%a.err
-    #SBATCH --time=00:30
-    #SBATCH --array=1-10
-    #SBATCH --time=00:30
-    
-    # executable 
-    wget -q -O 1MB_${SLURM_ARRAY_TASK_ID}.zip http://speedtest.tele2.net/1MB.zip
-    
-    echo "script completed"
-    
+```bash
+#!/bin/bash 
+#SBATCH --partition=test
+#SBATCH -o %A_%a.out
+#SBATCH -e %A_%a.err
+#SBATCH --time=00:30
+#SBATCH --array=1-10
+#SBATCH --time=00:30
+
+# executable 
+wget -q -O 1MB_${SLURM_ARRAY_TASK_ID}.zip http://speedtest.tele2.net/1MB.zip
+
+echo "script completed"
+```
 
 In this (perhaps contrived) example, we're setting up an array of 10 elements
 and using the `SLURM_ARRAY_TASK_ID` environment variable to name the output
@@ -163,4 +178,3 @@ Some tools provide functionality for mirroring or synchronising directories,
 i.e. only downloading those files in a directory which are new have been added
 since the last time a task was run. These can be useful to avoid repeated
 downloads of the same data.
-
