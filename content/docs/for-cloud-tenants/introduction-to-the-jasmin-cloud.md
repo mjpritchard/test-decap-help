@@ -1,6 +1,5 @@
 ---
 aliases: /article/282-introduction-to-the-jasmin-cloud
-date: 2023-05-23 08:56:41
 description: Introduction to the JASMIN Cloud
 slug: introduction-to-the-jasmin-cloud
 title: Introduction to the JASMIN Cloud
@@ -19,7 +18,7 @@ flexibility. The JASMIN Cloud also allows users to provision clusters for
 Identity Management, Kubernetes, and Slurm clusters amongst others (see
 Cluster-as-a-Service).
 
-The thing that makes the JASMIN Cloud unique is it's colocation with the CEDA
+The thing that makes the JASMIN Cloud unique is its colocation with the CEDA
 Archive and Group Workspaces. The JASMIN Cloud is ideally suited to projects
 that work with such data, and can enable novel solutions for the manipulation
 and presentation of data to end-users.
@@ -62,11 +61,13 @@ Kubernetes cluster.
 
 ### External Cloud patching policy
 
+{{<alert type="info">}}
 We expect tenants to react in a timely manner to any security vulnerabilities.
 This means critical vulnerabilities are patched within 7 days, and high
 vulnerabilities are patched within 14 days. This is following UKRI security
 policy. Failure to comply may result in tenancy access being revoked and
 machines powered down.
+{{</alert>}}
 
 By contrast, the **JASMIN Managed Cloud** is a Platform-as-a-Service (PaaS)
 offering, sitting inside the main JASMIN firewall, meaning it can reach the
@@ -97,7 +98,7 @@ address that is visible on the _public internet_.
 
 Attribute |  Managed Cloud  |  External Cloud  
 ---|---|---  
-**Self-service provisioning**  |  Yes  |  Yes  
+Self-service provisioning  |  Yes  |  Yes  
 Filesystem level access to JASMIN Storage (PFS, SOF)  |  Yes  |  No  
 Root access  |  No  |  Yes  
 Provision custom infrastructure  |  SSH bastion or Scientific Analysis server only  |  Build from generic Ubuntu or CentOS templates  
