@@ -10,12 +10,10 @@ weight: 40
 ---
 
 This article explains how to apply for access to the shared JASMIN servers.
-There is a video **tutorial** available on [Access login server
-](https://www.youtube.com/watch?v=SLeTq4VX6ok&index=3&list=PLyBwrm7gQcuV3I1zrI8Rop2WgEP6vPXJL)
 
 ## Get a login account
 
-A user with a `jasmin -login` account is allocated a `HOME` directory of
+A user with a `jasmin-login` account is allocated a `HOME` directory of
 **100GB** and can access the shared JASMIN servers (Scientific servers, data
 transfer servers) and the LOTUS batch cluster. Sign in into your [JASMIN accounts
 portal](https://accounts.jasmin.ac.uk/) where you can apply for a JASMIN login

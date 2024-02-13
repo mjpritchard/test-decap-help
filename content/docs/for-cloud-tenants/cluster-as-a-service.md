@@ -18,47 +18,45 @@ providing a simple, intuitive interface via the JASMIN Cloud Portal.
 CaaS is only available in the External Cloud, and machines provisioned by the
 CaaS system are subject to the usual constraints:
 
-  * Root Access 
-    * The provisioning user gets root access to the hosts.
-    * Clusters can be customised, for example to add new packages.
-    * But be careful not to break the configuration of the clustering software!
-      *  **Note:** If a tenants makes a change which breaks the cluster patching, the cluster will have to be rebuilt
-  * Patching 
-    * Users are responsible for applying patches. 
-    * However, patching a cluster is a simple task triggered in the JASMIN Cloud Portal.
-    * Cluster admins to decide when to trigger a patch.
-  * Access to CEDA archive and JASMIN Group Workspaces  
+### Root access
 
-    * No POSIX access to the CEDA archive or JASMIN Group Workspaces. 
-    * Read-only access via HTTP/OPeNDAP is possible.
-    * Read-write access to the JASMIN Object Store is also possible.
-    * The CaaS system has cluster types that provide shared storage between clusters.
-  * User management  
+- The provisioning user gets root access to the hosts.
+- Clusters can be customised, for example to add new packages.
+- But be careful not to break the configuration of the clustering software!
+  - **Note:** If a tenants makes a change which breaks the cluster patching, the cluster will have to be rebuilt.
 
-    * Tenancies must manage their own users/groups.
-    * Users of services in a tenancy do not need a JASMIN account.
-    * However a JASMIN account **is** required to use the JASMIN Cloud Portal.
-    * Encourages a structure where admins provision and maintain clusters on behalf of their users.
-    * The CaaS system has an Identity Manager which provides identity services for a tenancy, i.e. users have a single identity across all clusters within in a single tenancy.
-    * However this identity is not linked to a JASMIN account.
+### Patching
+
+- Users are responsible for applying patches.
+- However, patching a cluster is a simple task triggered in the JASMIN Cloud Portal.
+- Cluster admins to decide when to trigger a patch.
+
+### Access to CEDA archive and JASMIN Group Workspaces
+
+- No POSIX access to the CEDA archive or JASMIN Group Workspaces.
+- Read-only access via HTTP/OPeNDAP is possible.
+- Read-write access to the JASMIN Object Store is also possible.
+- The CaaS system has cluster types that provide shared storage between clusters.
+
+### User management
+
+- Tenancies must manage their own users/groups.
+- Users of services in a tenancy do not need a JASMIN account.
+- However a JASMIN account **is** required to use the JASMIN Cloud Portal.
+- Encourages a structure where admins provision and maintain clusters on behalf of their users.
+- The CaaS system has an Identity Manager which provides identity services for a tenancy, i.e. users have a single identity across all clusters within in a single tenancy.
+- However this identity is not linked to a JASMIN account.
 
 ###  Available cluster types
 
-[Identity Manager]({{< ref "cluster-as-a-service-identity-manager" >}})  
-|  Manages identity and permissions for other clusters using a combination of
-[FreeIPA](https://www.freeipa.org/page/Main_Page) and
-[Keycloak](https://www.keycloak.org/).  
----|---  
-[NFS]({{< ref "cluster-as-a-service-shared-storage" >}})  
-|  Shared storage for other clusters using a simple NFS server.  
-[Kubernetes]({{< ref "cluster-as-a-service-kubernetes" >}})  
-|  A Kubernetes cluster deployed using [Rancher Kubernetes
-Engine](https://rancher.com/docs/rke/latest/en/).  
-[Pangeo]({{< ref "cluster-as-a-service-pangeo" >}})  
-|  The [Pangeo](https://pangeo.io/) stack deployed on Kubernetes.  
-[Slurm]({{< ref "cluster-as-a-service-slurm" >}}) (currently disabled)  
-|  A batch cluster running the [Slurm workload
-manager](https://slurm.schedmd.com/).  
+Cluster type | Details
+---|--- 
+[Identity Manager]({{< ref "cluster-as-a-service-identity-manager" >}})  |  Manages identity and permissions for other clusters using a combination of [FreeIPA](https://www.freeipa.org/page/Main_Page) and [Keycloak](https://www.keycloak.org/).  
+[NFS]({{< ref "cluster-as-a-service-shared-storage" >}}) |  Shared storage for other clusters using a simple NFS server.  
+[Kubernetes]({{< ref "cluster-as-a-service-kubernetes" >}}) |  A Kubernetes cluster deployed using [Rancher Kubernetes Engine](https://rancher.com/docs/rke/latest/en/).
+[Pangeo]({{< ref "cluster-as-a-service-pangeo" >}}) |  The [Pangeo](https://pangeo.io/) stack deployed on Kubernetes.  
+[Slurm]({{< ref "cluster-as-a-service-slurm" >}}) (currently disabled) |  A batch cluster running the [Slurm workload manager](https://slurm.schedmd.com/).
+{.table .table-striped}
   
 ## Creating a cluster
 
@@ -66,7 +64,7 @@ Clusters are created via the JASMIN Cloud Portal using a new **Clusters** tab
 alongside **Overview** , **Machines** , and **Volumes**. If you do not see
 this tab, then clusters are not enabled for your tenancy.
 
-{{< image src="img/docs/cluster-as-a-service/file-N77Jt6iuMA.png" caption="Select clusters tab if available" >}}
+{{< image src="img/docs/cluster-as-a-service/file-N77Jt6iuMA.png" caption="Select clusters tab if available" wrapper="col-6 mx-auto" >}}
 
 Click on the tab and you will see a list of your existing clusters. To create
 a new cluster, click on the **New cluster** button - this will launch a
@@ -105,12 +103,12 @@ Some cluster options, such the number of workers in a Kubernetes cluster, can
 be updated after a cluster has been created. To do this, select **Update
 cluster options** from the **Actions...** dropdown for the cluster:
 
-![](file-hjbidWNoWg.png)
+{{<image src="img/docs/cluster-as-a-service/file-hjbidWNoWg.png" caption="Select update cluster options">}}
 
 This will launch a dialogue similar to the one for creating a cluster, except
 some of the options will be greyed out as they cannot be changed:
 
-![](file-gov0vLALmy.png)
+{{<image src="img/docs/cluster-as-a-service/file-gov0vLALmy.png" caption="Next dialogue">}}
 
 After updating the options, click **Update cluster** to re-configure the
 cluster. As with cluster creation the cluster status will change to
@@ -130,9 +128,9 @@ The CaaS system makes patching clusters easy - just select **Patch cluster**
 from the **Actions...** dropdown for the cluster and confirm the operation in
 the dialogue that appears:
 
-![](file-8UgmxTXHq4.png)
+{{<image src="img/docs/cluster-as-a-service/file-8UgmxTXHq4.png" caption="Select patch cluster">}}
 
-![](file-dUZ0anUR7C.png)
+{{<image src="img/docs/cluster-as-a-service/file-dUZ0anUR7C.png" caption="Patch cluster - confirmation">}}
 
 As with creating and updating, the cluster status will first become
 **CONFIGURING** , becoming **READY** once the patching is complete. Where
@@ -142,23 +140,21 @@ possible.
 Clusters that have not been patched recently will be flagged in the Cloud
 Portal:
 
-![](file-O49bJXoZzQ.png)
+{{<image src="img/docs/cluster-as-a-service/file-O49bJXoZzQ.png" caption="Unpatched clusters">}}
 
 ## Deleting a cluster
 
 To delete a cluster, just select **Delete** from the **Actions...** dropdown
 for the cluster and confirm the operation in the dialogue that appears:
 
-![](file-YbBzoEzWVV.png)
+{{<image src="img/docs/cluster-as-a-service/file-YbBzoEzWVV.png" caption="Select delete cluster">}}
 
-![](file-90OF1EFAXx.png)
+{{<image src="img/docs/cluster-as-a-service/file-90OF1EFAXx.png" caption="Delete confirmation">}}
 
 The cluster status will become **DELETING** :
 
-![](file-qxaWljk6Op.png)
+{{<image src="img/docs/cluster-as-a-service/file-qxaWljk6Op.png" caption="Deleting">}}
 
 This will delete the machines associated with the cluster. Once the machines
 have been deleted, the cluster will be removed. A deleted cluster cannot be
 restored.
-
-

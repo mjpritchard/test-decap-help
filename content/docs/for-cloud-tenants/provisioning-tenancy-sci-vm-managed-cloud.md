@@ -5,8 +5,8 @@ slug: provisioning-tenancy-sci-vm-managed-cloud
 title: Provisioning a Sci VM in a Managed Cloud Tenancy
 ---
 
-This article is for admin and manager of the JASMIN managed-cloud tenancy
-and shows how to provision a sci VM. It involves the following:
+This article is for admins and managers of managed-cloud tenancies
+and shows how to provision a sci VM within one. It involves the following:
 
 - Becoming a member of a managed cloud tenancy
 - Provisioning a VM

@@ -290,9 +290,6 @@ spec:
                 port: 
       number: 8080
 ```
-
-####
-
 ### Storage
 
 CaaS Kubernetes is also configured to take advantage of the fact that it is

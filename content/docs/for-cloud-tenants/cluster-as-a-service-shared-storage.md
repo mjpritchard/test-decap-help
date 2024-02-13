@@ -1,6 +1,5 @@
 ---
 aliases: /article/4798-cluster-as-a-service-shared-storage
-date: 2023-05-23 10:59:44
 description: Cluster-as-a-Service - Shared storage
 slug: cluster-as-a-service-shared-storage
 title: Cluster-as-a-Service - Shared storage

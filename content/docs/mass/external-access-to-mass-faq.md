@@ -1,11 +1,11 @@
 ---
 aliases: /article/231-external-access-to-mass-faq
-date: 2023-01-26 15:28:47
 description: External Access to MASS FAQ
 slug: external-access-to-mass-faq
 tags:
-- mass partition
+- met office
 - moose
+- tape
 title: External Access to MASS FAQ
 ---
 

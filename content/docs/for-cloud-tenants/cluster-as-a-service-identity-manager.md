@@ -1,6 +1,5 @@
 ---
 aliases: /article/4736-cluster-as-a-service-identity-manager
-date: 2023-05-23 09:56:23
 description: Cluster-as-a-Service - Identity Manager
 slug: cluster-as-a-service-identity-manager
 title: Cluster-as-a-Service - Identity Manager
@@ -70,7 +69,7 @@ Admin IP ranges  |  One or more IP ranges from which admins will access the Free
 FreeIPA size  |  The machine size to use for the FreeIPA server.  |  Yes  | No  
 Keycloak size  |  The machine size to use for the Keycloak server.  |  Yes  | No  
 Gateway size  |  The machine size to use for the gateway server.  |  Yes  | No  
-Gateway domain  |  The domain to use for the gateway server.  If left empty, `<dashed-gateway-ip>.sslip.io` is used (this uses the [sslip.io](https://sslip.io/) service). For example, if the selected gateway IP is `192.171.139.83`, the domain will be `192-171-139-83.sslip.io`.  If given, the domain must already be configured to point to the **External IP** , otherwise configuration will fail. Only use this option if you have control over your own DNS entries - the CaaS system will **not** create a DNS entry for you.  |  No  |  No  
+Gateway domain  |  The domain to use for the gateway server.<br>If left empty, `<dashed-gateway-ip>.sslip.io` is used (this uses the [sslip.io](https://sslip.io/) service). For example, if the selected gateway IP is `192.171.139.83`, the domain will be `192-171-139-83.sslip.io`.<br>If given, the domain must already be configured to point to the **External IP** , otherwise configuration will fail. Only use this option if you have control over your own DNS entries - the CaaS system will **not** create a DNS entry for you.  |  No  |  No  
 {.table .table-striped}
 
 Once configuration is complete, the FreeIPA web interface will be available at

@@ -1,6 +1,5 @@
 ---
 aliases: /article/3824-data-transfer-tools-bbcp
-date: 2023-01-26 15:31:07
 description: 'Data transfer tool bbcp'
 slug: bbcp
 title: bbcp
@@ -53,33 +52,27 @@ transferring in either direction are:
 
 ### Initiate on JASMIN: Pull Data from remote server
 
-    
-    
-    [user@hpxfer1]$ bbcp -v -4 -P 5 -F --port 50000:51000 username@remote-server:<PATH-TO-SOURCE-FILE> <PATH-TO-TARGET-FILE>
-    
+{{<command user="user" host="hpxfer1">}}
+bbcp -v -4 -P 5 -F --port 50000:51000 username@remote-server:<PATH-TO-SOURCE-FILE> <PATH-TO-TARGET-FILE>
+{{</command>}}
 
 ### Initiate on JASMIN: Push Data
 
-    
-    
-    [user@hpxfer1]$ bbcp -v -4 -P 5 --port 50000:51000 <PATH-TO-SOURCE-FILE> username@remote-server:<PATH-TO-TARGET-FILE>
-    
+{{<command user="user" host="hpxfer1">}}
+bbcp -v -4 -P 5 --port 50000:51000 <PATH-TO-SOURCE-FILE> username@remote-server:<PATH-TO-TARGET-FILE>
+{{</command>}}
 
 ### Initiate on remote server: Pull Data from JASMIN
 
-###
-
-    
-    
-    [user@remote-server]$ bbcp -v -z -4 -P 5 --port 50000:51000 username@hpxfer1.jasmin.ac.uk:<PATH-TO-SOURCE-FILE> <PATH-TO-TARGET-FILE>
-    
+{{<command user="user" host="remote">}}
+bbcp -v -z -4 -P 5 --port 50000:51000 username@hpxfer1.jasmin.ac.uk:<PATH-TO-SOURCE-FILE> <PATH-TO-TARGET-FILE>
+{{</command>}}
 
 ### Initiate on remote server: Push Data to JASMIN
 
-    
-    
-    [user@remote-server]$ bbcp -v -4 -P 5 -F --port 50000:51000 <PATH-TO-SOURCE-FILE> username@hpxfer1.jasmin.ac.uk:<PATH-TO-TARGET-FILE>
-    
+{{<command user="user" host="remote">}}
+bbcp -v -4 -P 5 -F --port 50000:51000 <PATH-TO-SOURCE-FILE> username@hpxfer1.jasmin.ac.uk:<PATH-TO-TARGET-FILE>
+{{</command>}}
 
 In this case the `-v` flag produces verbose output .`-V` can be used for even
 more verbose output. The `-4` option forces use of IP version 4 instead of
@@ -96,22 +89,19 @@ For the full set of options, see: <https://www.slac.stanford.edu/~abh/bbcp/>
 Note: the `bbcp` command must be in your `$PATH` on both the source and target
 machine.
 
-### Initiate on JASMIN: Pull Data from remote server, specifying SSH command
-to start bbcp
+### Initiate on JASMIN: Pull Data from remote server, specifying SSH command to start bbcp
 
-    
-    
-    [user@hpxfer1]$ bbcp -v -4 -P 5 -F --port 50000:51000 -S "/usr/bin/ssh %I -l %U %H /path/to/bbcp" username@remote-server:<PATH-TO-SOURCE-FILE> <PATH-TO-TARGET-FILE>
-    
+{{<command user="user" host="hpxfer1">}}
+bbcp -v -4 -P 5 -F --port 50000:51000 -S "/usr/bin/ssh %I -l %U %H /path/to/bbcp" username@remote-server:<PATH-TO-SOURCE-FILE> <PATH-TO-TARGET-FILE>
+{{</command>}}
 
 The path `/path/to/bbcp` can be replaced by `module load bbcp; bbcp` (or
 whatever is the appropriate local requirement) in environments where `bbcp` is
 a module which needs to be loaded first.
 
-    
-    
-    [user@hpxfer1]$ bbcp -v -4 -P 5 -F --port 50000:51000 -S "/usr/bin/ssh %I -l %U %H module load bbcp; bbcp" username@remote-server:<PATH-TO-SOURCE-FILE> <PATH-TO-TARGET-FILE>
-    
+{{<command user="user" host="hpxfer1">}}
+bbcp -v -4 -P 5 -F --port 50000:51000 -S "/usr/bin/ssh %I -l %U %H module load bbcp; bbcp" username@remote-server:<PATH-TO-SOURCE-FILE> <PATH-TO-TARGET-FILE>
+{{</command>}}
 
 For specifying the SSH command to start bbcp on the TARGET node, use the `-T`
 option.
@@ -121,23 +111,30 @@ documentation on further options, including the `-r` option for recursive
 transfers. A number of useful tutorials are also available elsewhere on the
 web.
 
-##  **bbcp - Tuning Recommendations**
+## Tuning Recommendations
 
 We recommend you tune your connection by trying various different options on a
 few GBs of data.
 
-  1. By default 4 streams are opened. Try 1 stream first, particularly on fast connections, it may be faster. This is achieved with the option `-s 1`.
-  2. We ask users of JASMIN to tune up to a **maximum of 16 streams** (`-s 16`). If you believe you need to open more streams please contact the [JASMIN Helpdesk](mailto:support@jasmin.ac.uk).
-  3. Do not tune the window size unless you continue to get very poor bandwidth after adjusting the number of streams. Most modern operating systems will auto-tune this parameter.
-  4. `bbcp` is not ideal for large directory trees of small files. If you have thousands of small files you may be better off with rsync or possibly GridFTP/Globus, depending on the network. Another simpler option is tarring/zipping the data first before transferring.
+1. By default 4 streams are opened. Try 1 stream first, particularly on fast connections, it may be faster. This is achieved with the option `-s 1`.
+2. We ask users of JASMIN to tune up to a **maximum of 16 streams** (`-s 16`). If you believe you need to open more streams please contact the [JASMIN Helpdesk](mailto:support@jasmin.ac.uk).
+3. Do not tune the window size unless you continue to get very poor bandwidth after adjusting the number of streams. Most modern operating systems will auto-tune this parameter.
+4. `bbcp` is not ideal for large directory trees of small files. If you have thousands of small files you may be better off with rsync or possibly GridFTP/Globus, depending on the network. Another simpler option is tarring/zipping the data first before transferring.
 
-##  **bbcp - Troubleshooting**
+## Troubleshooting
 
-  * `bbcp` uses SSH to establish the control connection so you need to set up your SSH key in the same way as you would to SSH into `hpxfer[12].jasmin.ac.uk`. If `bbcp` isn't working you should first check you can SSH to `hpxfer[12].jasmin.ac.uk`. If you can't, please review the steps in the [Getting Started](../getting-started/get-started-with-jasmin) section before contacting the [JASMIN Helpdesk](mailto:support@jasmin.ac.uk).
-  * Make that you have logged in (via SSH) to both the JASMIN transfer server and the remote server with the `-A` option (agent-forwarding enabled), to ensure that your credentials are used by SSH as it invokes `bbcp` on the other server.
-  * Try adding the `-F`option to disable `bbcp`'s filesystem checking if you get the following error:
+- `bbcp` uses SSH to establish the control connection so you need to set up your SSH key in the same way as you would to SSH into `hpxfer[12].jasmin.ac.uk`. If `bbcp` isn't working you should first check you can SSH to `hpxfer[12].jasmin.ac.uk`. If you can't, please review the steps in the [Getting Started](../getting-started/get-started-with-jasmin) section before contacting the [JASMIN Helpdesk](mailto:support@jasmin.ac.uk).
+- Make that you have logged in (via SSH) to both the JASMIN transfer server and the remote server with the `-A` option (agent-forwarding enabled), to ensure that your credentials are used by SSH as it invokes `bbcp` on the other server.
+- Try adding the `-F`option to disable `bbcp`'s filesystem checking if you get the following error:
 
-  *     bbcp: Insufficient space to copy all the files from <hostname>.<br>
-    	
+```txt
+bbcp: Insufficient space to copy all the files from <hostname>.
+```
 
-  * If you see the error message `Address family not supported by protocol creating inet socket`, this is most likely because the `-4` flag was not specified. This may happen with commands that once worked, as a previously installed version of `bbcp` on JASMIN defaulted to IPv4. Currently there is no support for IPv6 on JASMIN. If the version of `bbcp` you have available on your system is old and does not have the `-4` option, consider downloading the appropriate (newer) version from the link above. It is also possible to compile the executable from source.
+- If you see the following error message:
+
+```txt
+Address family not supported by protocol creating inet socket
+```
+
+this is most likely because the `-4` flag was not specified. This may happen with commands that once worked, as a previously installed version of `bbcp` on JASMIN defaulted to IPv4. Currently there is no support for IPv6 on JASMIN. If the version of `bbcp` you have available on your system is old and does not have the `-4` option, consider downloading the appropriate (newer) version from the link above. It is also possible to compile the executable from source.

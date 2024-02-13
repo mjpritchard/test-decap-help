@@ -1,6 +1,5 @@
 ---
 aliases: /article/5075-creating-and-using-miniconda-environments
-date: 2023-01-24 12:04:38
 description: Creating and using miniconda environments
 slug: creating-and-using-miniconda-environments
 title: Creating and using miniconda environments
@@ -14,7 +13,7 @@ To decide whether you should use a _Python virtual enviro_ _nment_ or a _Conda
 environment_ , first see the page: [overview of software environments]({{< ref
 "conda-environments-and-python-virtual-environments" >}}).
 
-###  Obtaining miniconda
+## Obtaining miniconda
 
 In order to create your own conda environments, you will first need to
 download the [miniconda](https://docs.conda.io/en/latest/miniconda.html)
@@ -30,7 +29,7 @@ This can be downloaded using:
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 ```
 
-###  Deactivating Jaspy
+## Deactivating Jaspy
 
 You cannot have your own conda environment activated at the same time as
 Jaspy, so it is recommended that if you have loaded the jaspy module, then you
@@ -40,7 +39,7 @@ start by typing:
 module unload jaspy
 ```
 
-###  Creating a base environment
+## Creating a base environment
 
 You can run the installer by typing:
 
@@ -57,7 +56,7 @@ that you:
 batch mode, which will also skip the "conda init". Or add `-h` to see help on
 other available command-line options.)
 
-###  Activating the base environment
+## Activating the base environment
 
 Assuming that you made the choices recommended above when running the
 installer, you should type the following in order to activate the base
@@ -79,7 +78,7 @@ environment by typing:
 conda deactivate
 ```
 
-###  Creating and activating a sub-environment
+## Creating and activating a sub-environment
 
 Although once you have activated the base conda environment, you can in
 principle start to install packages immediately, your use of conda will
@@ -120,7 +119,7 @@ conda env list
 ```
  will list your environments.
 
-###  Installing conda packages
+## Installing conda packages
 
 Once you have activated a named environment, you can install packages with the
 `conda install` command, for example:
@@ -136,7 +135,7 @@ cheatsheet.pdf) for details.
 To list the packages installed in the currently activated environment, you can
 type `conda list`.
 
-###  Running packages from your conda environment
+## Running packages from your conda environment
 
 In order to run packages from a conda environment that you installed
 previously, you will first need to activate the environment in the session
@@ -150,7 +149,7 @@ source ~/miniconda3/bin/activate`
 conda activate myenv`
 ```
 
-###  Installing pip packages
+## Installing pip packages
 
 Many python packages that are available via PyPI are also available as conda
 packages in conda-forge, and it is generally best to use these via "conda
@@ -176,7 +175,7 @@ If you do not install pip into your sub-environment, then either:
 
 Explicitly installing pip into your sub-environment will guard against this.
 
-###  The mamba installer
+## The mamba installer
 
 When you install packages into a conda environment, the installer first has to
 _resolve_ the environment. This means using available package dependency
@@ -201,7 +200,7 @@ into named sub-environments. To do this, you might need to use `conda
 deactivate` to return to the base environment before installing mamba, then
 re-activate your sub-environment to install other packages.
 
-###  Cloning a conda environment
+## Cloning a conda environment
 
 There can be occasions when you wish to create a conda environment which is
 based on the contents of an existing environment. An example when you might
@@ -240,7 +239,7 @@ to give the environment solver more flexibility about what versions to install
 (for example if you do not require particular legacy versions, or if the
 versions in the original environment are no longer available).
 
-###  Varying the installation location
+## Varying the installation location
 
 (This is the section that is referred to above, where running the Miniconda
 installer is discussed.)
@@ -262,5 +261,3 @@ on most of the "sci" machines at time of writing, although sci3, sci6 and sci8
 have larger /tmp areas. Choose an appropriate machine, make use of the `df`
 command to check available disk space, and ensure that you do not fill up /tmp
 as this would impact negatively on other users.
-
-

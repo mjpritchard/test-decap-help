@@ -1,6 +1,5 @@
 ---
 aliases: /article/4799-cluster-as-a-service-slurm
-date: 2023-05-23 11:01:07
 description: Cluster-as-a-Service - Slurm
 slug: cluster-as-a-service-slurm
 title: Cluster-as-a-Service - Slurm

@@ -1,31 +1,23 @@
 ---
 aliases: /article/5022-requesting-resources
-categories:
-- Uncategorized
-collection: jasmin-documentation
-date: 2023-01-25 10:32:05
 description: Requesting resources
 slug: requesting-resources
 tags:
 - projects
 - portal
-- group workspace
-- tenancy
-- tenancies
-- resources
-- compute
-- cloud
+- quota
+- requirement
 title: Requesting resources
 ---
 
 This article explains:
 
-  * How projects and resources are managed
-  * How to access the JASMIN projects portal
-  * How to create a project to record resource requirements (for a new project)
-  * How to join an existing project, by invitation from another user
-  * How to invite another user
-  * How to request additional resources for an existing project
+- How projects and resources are managed
+- How to access the JASMIN projects portal
+- How to create a project to record resource requirements (for a new project)
+- How to join an existing project, by invitation from another user
+- How to invite another user
+- How to request additional resources for an existing project
 
 ## How projects and resources are managed
 
@@ -48,17 +40,17 @@ including a list of current consortia and their managers.
 The [JASMIN projects portal](https://projects.jasmin.ac.uk) provides a place
 to:
 
-  * document the resources required for a project (new projects, or changes to existing projects)
-  * submit those requirements for review
-  * track the provision of those resources
+- document the resources required for a project (new projects, or changes to existing projects)
+- submit those requirements for review
+- track the provision of those resources
 
 Usually, you would only need to access the projects portal if you are:
 
-  * the Principal Investigator (or their delegated project manager) for a project 
-    * to document requirements for a project
-    * to invite other individuals (with a JASMIN account) who may wish to view and/or discuss the requirements
-  * a consortium manager 
-    * to review/approve resource requirements
+- the Principal Investigator (or their delegated project manager) for a project
+  - to document requirements for a project
+  - to invite other individuals (with a JASMIN account) who may wish to view and/or discuss the requirements
+- a consortium manager
+  - to review/approve resource requirements
 
 **Note: Please do not make requests yourself unless you are involved in the
 management of the project: speak to the project or group workspace (GWS)
@@ -81,8 +73,8 @@ about how to process requests for resources is available [here]({{< ref
 
 To create a new project:
 
-  * Go to "My Projects"
-  * Click "Start new project"
+- Go to "My Projects"
+- Click "Start new project"
 
 {{<image src="img/docs/requesting-resources/file-zl6tBZHWsW.png" caption="">}}
 
@@ -90,23 +82,23 @@ Enter details for the project, as described below.
 
 A project can have several Services, such as:
 
-  * a group workspace
-  * a managed cloud tenancy
-  * an external cloud tenancy
-  * [particular compute requirements*] 
-    * some services are not yet able to be described/requested via this tool, but will be soon.
-    * please contact the helpdesk if you're not able to describe what you need.
+- a group workspace
+- a managed cloud tenancy
+- an external cloud tenancy
+  - [particular compute requirements*]
+  - some services are not yet able to be described/requested via this tool, but will be soon.
+  - please contact the helpdesk if you're not able to describe what you need.
 
 To add the services needed for the project:
 
-  * in the panel on the right, click "Add Service"
-  * Select the category of service required: in this case, we're making requirements for a group workspace, but the available options are: 
-    * **Group Workspace** (for shared disk storage for a project)
-    * **External Tenancy VIO** (for an external cloud tenancy on the VIO cloud platform)
-    * **Managed Tenancy VIO** (for a managed cloud tenancy on the VIO cloud platform)
-    * (please do not use the "... Tenancy **MCP** " options as these will soon be removed)
-  * Provide a short name for the service
-  * Click "create".
+- in the panel on the right, click "Add Service"
+- Select the category of service required: in this case, we're making requirements for a group workspace, but the available options are: 
+  - **Group Workspace** (for shared disk storage for a project)
+  - **External Tenancy VIO** (for an external cloud tenancy on the VIO cloud platform)
+  - **Managed Tenancy VIO** (for a managed cloud tenancy on the VIO cloud platform)
+  - (please do not use the "... Tenancy **MCP** " options as these will soon be removed)
+- Provide a short name for the service
+- Click "create".
 
 {{<image src="img/docs/requesting-resources/file-bo7r6lG1NA.png" caption="">}}
 
@@ -124,17 +116,17 @@ TB of SOF storage for our GWS:
 SOF (scale-out filesystem) is the usual type of storage used for GWS volumes,
 but you could also request:
 
-  * HPOS (high-performance object store available via an S3-like interface)
-  * PFS (parallel file system, by special request if certain workflows specifically need this)
-  * SSD (Solid State Disk, used for "small files" or "SMF" volumes for storing code or virtual environments to share within a GWS.
+- HPOS (high-performance object store available via an S3-like interface)
+- PFS (parallel file system, by special request if certain workflows specifically need this)
+- SSD (Solid State Disk, used for "small files" or "SMF" volumes for storing code or virtual environments to share within a GWS.
 
 It is assumed that you've considered carefully how you will do your work on
 JASMIN, with some knowledge of its services and components. You may find the
 following helpful:
 
-  * Article: [Understanding new JASMIN storage]({{< ref "understanding-new-jasmin-storage" >}})
-  * [JASMIN workshop](https://github.com/cedadev/jasmin-workshop) overview talk, explaining the main services offered by JASMIN
-  * how your request will be [scrutinised]({{< ref "processing-requests-for-resources" >}}) by the relevant consortium manager.
+- Article: [Understanding new JASMIN storage]({{< ref "understanding-new-jasmin-storage" >}})
+- [JASMIN workshop](https://github.com/cedadev/jasmin-workshop) overview talk, explaining the main services offered by JASMIN
+- how your request will be [scrutinised]({{< ref "processing-requests-for-resources" >}}) by the relevant consortium manager.
 
 Once created, the requirements appear in the list, along with their start and
 end dates and status. This one is "REQUESTED".
@@ -177,19 +169,19 @@ the JASMIN Team (or others involved in the provision of JASMIN services). To
 share your plans for what's needed on a project with other individuals, you
 can invite another user to the project:
 
-  * Go to "My Projects"
-  * In the panel on the right, click the link with the number of current collaborators
-  * Enter the email address of the other user you wish to invite, and press "Invite" 
-    * Although you are inviting them by email address, they must have a JASMIN account in order to access the projects portal.
+- Go to "My Projects"
+- In the panel on the right, click the link with the number of current collaborators
+- Enter the email address of the other user you wish to invite, and press "Invite"
+  - Although you are inviting them by email address, they must have a JASMIN account in order to access the projects portal.
 
 ## Join an existing project by invitation from another user
 
 If you have received an invitation code from an existing collaborator on a
 project, you can use it to join a project as follows:
 
-  * Go to "My Projects"
-  * Click "Join existing project"
-  * Enter the invitation code which the other user has sent you.
+- Go to "My Projects"
+- Click "Join existing project"
+- Enter the invitation code which the other user has sent you.
 
 ## Request additional resources for an existing project
 
@@ -201,11 +193,11 @@ To add new requirements, go to "My Projects" and create the new requirement.
 For example, if a GWS currently has 10 TB of SOF space provisioned, and the
 new and an additional 5 TB of space is needed, then:
 
-  * If the GWS as a whole has the same end date, then create a new requirement for 15TB, with that end date, and submit this so that it can be reviewed.
-  * If it's just a temporary / short-term boost of storage that's needed 
-    * consider whether scratch or XFC storage would suffice
-    * create a requirement for the additional storage only, confirming the start and end dates of the new storage
-    * in some cases, the end dates of the original storage will be out-of-date, so please agree new dates with your consortium manager as part of this process.
+- If the GWS as a whole has the same end date, then create a new requirement for 15TB, with that end date, and submit this so that it can be reviewed.
+- If it's just a temporary / short-term boost of storage that's needed 
+  - consider whether scratch or XFC storage would suffice
+  - create a requirement for the additional storage only, confirming the start and end dates of the new storage
+  - in some cases, the end dates of the original storage will be out-of-date, so please agree new dates with your consortium manager as part of this process.
 
 Although these examples have concentrated on storage requirements, the same
 methods apply to requesting cloud tenancies. More detail on how to request
@@ -227,9 +219,9 @@ The following "generic" Group Workspaces exist for general use by members of
 these communities and often solve the problem of a small GWS needed by an
 individual:
 
-  * [ncas_generic](https://accounts.jasmin.ac.uk/account/login/?next=/services/group_workspaces/%3Fquery%3Dncas_generic) : (National Centre for Atmospheric Science)
-  * [nceo_generic](https://accounts.jasmin.ac.uk/account/login/?next=/services/group_workspaces/%3Fquery%3Dnceo_generic) : (National Centre for Earth Observation)
-  * [ceh_generic](https://accounts.jasmin.ac.uk/account/login/?next=/services/group_workspaces/%3Fquery%3Dceh_generic) : (UK Centre for Ecology and Hydrology)
+- [ncas_generic](https://accounts.jasmin.ac.uk/account/login/?next=/services/group_workspaces/%3Fquery%3Dncas_generic) : (National Centre for Atmospheric Science)
+- [nceo_generic](https://accounts.jasmin.ac.uk/account/login/?next=/services/group_workspaces/%3Fquery%3Dnceo_generic) : (National Centre for Earth Observation)
+- [ceh_generic](https://accounts.jasmin.ac.uk/account/login/?next=/services/group_workspaces/%3Fquery%3Dceh_generic) : (UK Centre for Ecology and Hydrology)
 
 In these cases, the relevant consortium manager is usually the manager of the
 "generic" workspace so can approve applications for access to these workspaces

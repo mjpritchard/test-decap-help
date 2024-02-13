@@ -8,8 +8,7 @@ title: Apply for access to a GWS
 ---
 
 This article explains how to apply for access to a GWS from the JASMIN account
-portal. There is a video **tutorial** at [Accessing a group
-workspace](https://www.youtube.com/watch?v=J6zW23P1Wf0&index=4&list=PLyBwrm7gQcuV3I1zrI8Rop2WgEP6vPXJL)
+portal.
 
 **Step 1** : Sign in into your [JASMIN accounts
 portal](https://accounts.jasmin.ac.uk/). Navigate to the JASMIN services tab

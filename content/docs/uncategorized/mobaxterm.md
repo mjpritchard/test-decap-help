@@ -9,10 +9,10 @@ title: MobaXterm (windows terminal client)
 Windows users are strongly recommended to connect to JASMIN using the freely
 available MobaXterm This article provides information about:
 
-  * Downloading and installing MobaXterm
-  * Basic usage
-  * Setting up MobAgent to store your private key
-  * Additional features
+- Downloading and installing MobaXterm
+- Basic usage
+- Setting up MobAgent to store your private key
+- Additional features
 
 ## Versions of MobaXterm
 
@@ -30,8 +30,8 @@ Download the free Home edition of
 
 There are 2 editions available:
 
-  * "Portable" edition (can be installed as a regular user)
-  * "Installer" edition (may need admin privileges on your machine)
+- "Portable" edition (can be installed as a regular user)
+- "Installer" edition (may need admin privileges on your machine)
 
 Both editions should be functionally the same once installed, but your choice
 may depend on what level of access you have to your Windows machine.
@@ -68,37 +68,32 @@ You need to enable MobAgent in MobaXterm's _Settings / Configuration / SSH_ :
 
 To do this:
 
-  * Tick "Use internal SSH agent "MobAgent"
-  * UN-tick "Use external Pageant"
-  * Click the "+" symbol to locate your private key file (e.g. id_rsa_jasmin)
-  * Click OK to save the settings. MobaXterm will now need to restart.
-  * When you restart MobaXterm you will be prompted for the passphrase associated with your private key.
+- Tick "Use internal SSH agent "MobAgent"
+- UN-tick "Use external Pageant"
+- Click the "+" symbol to locate your private key file (e.g. id_rsa_jasmin)
+- Click OK to save the settings. MobaXterm will now need to restart.
+- When you restart MobaXterm you will be prompted for the passphrase associate with your private key.
 
 {{<image src="img/docs/mobaxterm/file-Ktmdc5zxnP.png" caption="passphrase prompt">}}
 
 Once MobaXterm has started, you can check that your SSH key has been loaded by
-clicking on 'Start local terminal' and entering the following command:
+clicking on 'Start local terminal' and using `ssh-add -l` to list the keys currently loaded.
 
 **IMPORTANT: in the command examples below, the dollar symbol '$' at the start
 of the command line in these example represents the shell prompt as displayed
 in your terminal - it does not need to be typed!**
 
-    
-    
-     $ ssh-add -l
-    
+When you type the following command in the Mobaxterm terminal, you should see output similar to below:
 
-You should see something similar to the output below.
-
-    
-    
-    2048 SHA256:1WgYUGSqffxJX6bWqBZvFsutN3Psjn5mcPV37r6D7vQ Imported-Openssh-Key (RSA)
-    
+{{<command user="user" host="mobaxterm">}}
+ssh-add -l
+(out)2048 SHA256:1WgYUGSqffxJX6bWqBZvFsutN3Psjn5mcPV37r6D7vQ
+(out)Imported-Openssh-Key (RSA)
+{{</command>}}
 
 Sometimes the last part of this output shows your email address, but it is
 just a comment field at the end of the key, which can be ignored. The fact
-that it's returned something which looks like a key, shows that your key is
-loaded successfully into the agent.
+that it's returned something which looks like a key "fingerprint", shows that your key is loaded successfully into the agent.
 
 If you don't see your key listed in output similar to the above, please try
 again: perhaps you entered the wrong passphrase? But you will need to succeed
@@ -111,30 +106,25 @@ JASMIN by creating a new terminal window. Click the **"Start local terminal"**
 button.  
 Next, try connecting to the login server:
 
-    
-    
-    $ ssh -A <user_id>@login2.jasmin.ac.uk
-    
+{{<command user="user" host="mobaxterm">}}
+ssh -A <user_id>@login2.jasmin.ac.uk
+{{</command>}}
 
-(obviously, you need to replace `<user_id>` with your own username on JASMIN,
-for example user `jpax` would enter
-
-    
-    
-    $ ssh -A jpax@login2.jasmin.ac.uk
+(replace `<user_id>` with your own JASMIN username)
 
 ## Logging in to JASMIN without storing your key in MobAgent
 
 MobAgent provides the most convenient way of accessing JASMIN. However, if you
 want to login to JASMIN without setting up MobAgent you can do so as follows.
 
-Click on the 'Start local terminal' button then enter the following commands:
+Click on the 'Start local terminal' button then enter the following command. The final 2 lines show the output you should see: you are prompted for your key's passphrase, then if successful, you see confirmation that the key is loaded.
 
-    
-    
-    $ eval $(ssh-agent -s) 
-    ssh-add ~/.ssh/id_rsa_jasmin
-    
+{{<command user="user" host="mobaxterm">}}
+eval $(ssh-agent -s) 
+ssh-add ~/.ssh/id_rsa_jasmin
+(out)Enter passphrase for ~/.ssh/id_rsa_jasmin:
+(out)Identity added: ~/.ssh/id_rsa_jasmin
+{{</command>}}
 
 If your key is named something different, or stored at a different location
 than shown above, you will need to specify its location in the ssh-add
@@ -146,12 +136,11 @@ path to that **might** be `/drives/c/Users/fred/Desttop/id_rsa_jasmin` (if "
 You will need to do this each time you open a new terminal session. To connect
 to JASMIN:
 
-    
-    
-    $ ssh -A <user_id>@login2.jasmin.ac.uk
-    
+{{<command user="user" host="mobaxterm">}}
+ssh -A <user_id>@login2.jasmin.ac.uk
+{{</command>}}
 
-Where <user_id> is your JASMIN username.
+Again, you must replace <user_id> with your JASMIN username.
 
 As you can see, the MobAgent method mentioned previously makes this a bit
 easier, because it persists between sessions and you navigate to the location
@@ -162,17 +151,14 @@ of your private key using graphical tools instead of having to type the path.
 MobaXterm is a comprehensive application that enables many useful features
 such as:
 
-  * Saved session configurations
-  * X-forwarding / X11 / X server ( **Not recommended on JASMIN** : see [NoMachine NX for graphical linux desktop]({{< ref "graphical-linux-desktop-access-using-nx" >}}) instead)
-  * SSH agent forwarding
-  * SFTP access (with graphical drag-n-drop)
-  * Split-tab mode
-  * SSH tunnelling
-  * Basic Linux commands such as: `cd, ls, pwd, cat`
-  * Command-line transfer utilities: `scp, rsync, wget`
+- Saved session configurations
+- X-forwarding / X11 / X server ( **Not recommended on JASMIN** : see [NoMachine NX for graphical linux desktop]({{< ref "graphical-linux-desktop-access-using-nx" >}}) instead)
+- SSH agent forwarding
+- SFTP access (with graphical drag-n-drop)
+- Split-tab mode
+- SSH tunnelling
+- Basic Linux commands such as: `cd, ls, pwd, cat`
+- Command-line transfer utilities: `scp, rsync, wget`
 
-Please see the [MobaXterm
-documentation](https://mobaxterm.mobatek.net/documentation.html) for details
+Please see the [MobaXterm documentation](https://mobaxterm.mobatek.net/documentation.html) for details
 on these.
-
-
