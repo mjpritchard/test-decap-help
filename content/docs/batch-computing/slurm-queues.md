@@ -18,15 +18,15 @@ submissions to the LOTUS and ORCHID clusters.
 
 The Slurm queues in the LOTUS cluster are:
 
-  * `test`
-  * `short-serial`
-  * `long-serial`
-  * `par-single`
-  * `par-multi`
-  * `high-mem`
-  * `short-serial-4hr` (see Note 3)
+- `test`
+- `short-serial`
+- `long-serial`
+- `par-single`
+- `par-multi`
+- `high-mem`
+- `short-serial-4hr`
 
-Each queue has an attribute of run-length limits (e.g. short, long) and
+Each queue is has attributes of run-length limits (e.g. short, long) and
 resources. A full breakdown of each queue and its associated resources is
 shown below in Table 1.
 
@@ -34,18 +34,21 @@ shown below in Table 1.
 
 Queues represent a set of pending jobs, lined up in a defined order, and
 waiting for their opportunity to use resources. The queue is specified in the
-job script file using SLURM scheduler directive `#SBATCH -p <partition=queue_name>` where `<queue_name>` is the name of the
-queue/partition (Table 1. column 1)
+job script file using Slurm scheduler directive like this:
+
+```bash
+#SBATCH -p <partition=queue_name>`
+```
+
+where `<queue_name>` is the name of the queue/partition (Table 1. column 1)
 
 Table 1 summarises important specifications for each queue such as run time
-limits and the number of CPU core limits. If the queue is not specified, SLURM
+limits and the number of CPU core limits. If the queue is not specified, Slurm
 will schedule the job to the queue `short-serial` by default.
 
 Table 1. LOTUS/Slurm queues and their specifications
 
-Queue name  |  Max run time  |  Default run time  |  Max CPU cores  
-per job  |  Max CpuPer  
-UserLimit  |  Priority  
+Queue name  |  Max run time  |  Default run time  |  Max CPU cores per job  |  MaxCpuPerUserLimit  |  Priority  
 ---|---|---|---|---|---  
 `test` |  4 hrs  |  1hr  |  8  |  8  |  30  
 `short-serial` |  24 hrs  |  1hr  |  1  |  2000  |  30  
@@ -53,25 +56,24 @@ UserLimit  |  Priority
 `par-multi` |  48 hrs  |  1hr  |  256  |  300  |  20  
 `long-serial` |  168 hrs  |  1hr  |  1  |  300  |  10  
 `high-mem` |  48 hrs  |  1hr  |  1  |  75  |  30  
-`short-serial-4hr` ( **Note 3** )  |  4 hrs  |  1hr  |  1  |  1000  |  30
+`short-serial-4hr`<br>(**Note 3**)  |  4 hrs  |  1hr  |  1  |  1000  |  30
 {.table .table-striped}
   
-**Note 1** : Resources that the job requests must be within the resource
+**Note 1** : Resources requested by a job must be within the resource
 allocation limits of the selected queue.
 
 **Note 2:** The default value for `--time=[hh:mm:ss]` (predicted maximum wall
-time) is 1 hour for the six SLURM queues. If you do not specify this option
+time) is 1 hour for the all queues. If you do not specify this option
 and/or your job exceeds the default maximum run time limit then it will be
-terminated by the SLURM scheduler.
+terminated by the Slurm scheduler.
 
-**Note 3** : A user must specify the SLURM job account `--account=short4hr`
-when submitting a batch job to the provisional SLURM partition `short-
-serial-4hr`
+**Note 3** : A user must specify the Slurm job account `--account=short4hr`
+when submitting a batch job to the `short-serial-4hr` queue.
 
 ## State of queues
 
-The Slurm command `sinfo `reports the state of queues/partitions and nodes
-managed by SLURM. It has a wide variety of filtering, sorting, and formatting
+The Slurm command `sinfo` reports the state of queues and nodes
+managed by Slurm. It has a wide variety of filtering, sorting, and formatting
 options.
 
 {{<command shell="bash">}}
@@ -97,14 +99,14 @@ as they implement different job scheduling and control policies.
 
 ## 'sinfo' Output field description:
 
-By default, the SLURM command 'sinfo' displays the following information:
+By default, the Slurm command 'sinfo' displays the following information:
 
-  * **PARTITION** : Partition name followed by "*" for the default queue/partition
-  * **AVAIL** : State/availability of a queue/partition. Partition state: up or down.
-  * **TIMELIMIT** : The maximum run time limit per job in each queue/partition is shown in TIMELIMIT in days- hours:minutes  :seconds . e.g. 2-00:00:00 is two days maximum runtime limit 
-  * **NODES** : Count of nodes with this particular configuration e.g. 48 nodes
-  * **STATE** : State of the nodes. Possible states include: allocated, down, drained, and idle. For example, the state "idle" means that the node is not allocated to any jobs and is available for use.
-  * **NODELIST** List of node names associated with this queue/partition
+- **PARTITION** : Partition name followed by **\*** for the default queue/partition
+- **AVAIL** : State/availability of a queue/partition. Partition state: up or down.
+- **TIMELIMIT** : The maximum run time limit per job in each queue/partition is shown in TIMELIMIT in days- hours:minutes  :seconds . e.g. 2-00:00:00 is two days maximum runtime limit 
+- **NODES** : Count of nodes with this particular configuration e.g. 48 nodes
+- **STATE** : State of the nodes. Possible states include: allocated, down, drained, and idle. For example, the state "idle" means that the node is not allocated to any jobs and is available for use.
+- **NODELIST** List of node names associated with this queue/partition
 
 The `sinfo` example below, reports more complete information about the
 partition/queue short-serial
@@ -116,12 +118,12 @@ sinfo --long --partition=short-serial
 (out)short-serial* up  1-00:00:00  1-infinite  no  NO    all     48  idle host[146-193]
 {{</command>}}
 
-## How to choose a SLURM queue/partition
+## How to choose a Slurm queue/partition
 
 ### Test queue
 
-The test  queue `test` can be used to test new workflows and also to help new
-users to familiarise themselves with the SLURM batch system. Both serial and
+The `test` queue can be used to test new workflows and also to help new
+users to familiarise themselves with the Slurm batch system. Both serial and
 parallel code can be tested on the `test`queue. The maximum runtime is 4 hrs
 and the maximum number of jobs per user is 8 job slots. The maximum number of
 cores for a parallel job e.g. MPI, OpenMP, or multi-threads is limited to 8
@@ -171,7 +173,7 @@ submitted to  the `par-single` queue . Each thread should be allocated one CPU
 core. Oversubscribing the number of threads to the CPU cores will cause the
 job to run very slow. The number of CPU cores should be specified via the
 submission command line `sbatch -n <number of CPU cores>` or  by adding the
-SLURM directive `#SBATCH -n <number of CPU cores>`in the job script file. An
+Slurm directive `#SBATCH -n <number of CPU cores>`in the job script file. An
 example is shown below:
 
 {{<command>}}
@@ -179,7 +181,7 @@ sbatch --ntasks=4 --partition=par-single < myjobscript
 {{</command>}}
 
 Note: Jobs submitted with a number of CPU cores greater than 16 will be
-terminated (killed) by the SLURM scheduler with the following statement in the
+terminated (killed) by the Slurm scheduler with the following statement in the
 job output file:
 
 #### par-multi
@@ -187,16 +189,16 @@ job output file:
 Distributed memory jobs with inter-node communication using the MPI library
 should be submitted to  the `par-multi` queue . A single MPI process (rank)
 should be allocated  a  single CPU core. The number of CPU cores should be
-specified via the SLURM submission command  flag `sbatch -n <number of CPU
-cores>` or  by adding the SLURM directive `#SBATCH -n <number of CPU cores>`
+specified via the Slurm submission command  flag `sbatch -n <number of CPU
+cores>` or  by adding the Slurm directive `#SBATCH -n <number of CPU cores>`
 to  the job script file. An example is shown below:
 
 {{<command>}}
 sbatch --ntasks=4 --partition=par-multi < myjobscript
 {{</command>}}
 
-Note 1: The number of CPU cores gets passed from SLURM submission  flag `-n` .
+Note 1: The number of CPU cores gets passed from Slurm submission  flag `-n` .
 Do not add  the `-np` flag  to `mpirun` command  .
 
-Note 2: SLURM will reject a job that requires a number of CPU cores greater
+Note 2: Slurm will reject a job that requires a number of CPU cores greater
 than the limit of 256.

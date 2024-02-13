@@ -5,11 +5,9 @@ title: Slurm scheduler overview
 weight: 20
 ---
 
-This article gives an overview of the Slurm Scheduler.
-
 ## What is a Job Scheduler?
 
-A job scheduler, or "batch" scheduler, is a tool that manages how user jobs
+A job or batch scheduler, is a tool that manages how user jobs
 are queued and run on a set of compute resources. In the case of LOTUS the
 compute resources are the set of compute nodes that make up the [LOTUS hardware]({{< ref "lotus-cluster-specification" >}}). Each user can submit
 jobs to the scheduler which then decides which jobs to run and where to
@@ -23,9 +21,9 @@ those resources.
 scheduler deployed on JASMIN. It allows users to submit, monitor, and control
 jobs on the LOTUS cluster.
 
-## General principles for working with SLURM
+## General principles for working with Slurm
 
-Before learning how to use SLURM, it is worthwhile becoming familiar with the
+Before learning how to use Slurm, it is worthwhile becoming familiar with the
 basic principles of scheduler operation in order to get the best use out of
 the LOTUS cluster. Scheduler software exists simply because the amount of jobs
 that users wish to run on a cluster at any given time is usually greatly in
@@ -54,11 +52,11 @@ jobs that are run (bottom row).
 
 ## LOTUS queues
 
-There are five standard SLURM queues for batch job submissions to LOTUS
+There are five standard Slurm queues (also known as "partitions" in Slurm terminology) for batch job submissions to the LOTUS
 cluster: `short-serial`, `long-serial`, `par-single`, `par-multi` and `high-mem`.
 The default queue is `short-serial`. For testing new workflows, the
 additional queue `test`is recommended. The specification of each queue is
-described in detail in this article: [SLURM queues on LOTUS]({{< ref "slurm-queues" >}})
+described in detail in this article: [Slurm queues on LOTUS]({{< ref "slurm-queues" >}})
 
 Queues other than the five standard queues with the test queue should be
 ignored unless you have been specifically instructed to use them.
@@ -86,5 +84,5 @@ The typical workflow for setting up and running LOTUS jobs is as follows:
 Occasionally a project has a specific requirement for a collection of compute
 nodes that involve the provision of a project-specific queue. If you are
 working on such a project your project lead will provide guidance on which
-queue to use. Please [contact us](http://www.jasmin.ac.uk/help/contact/) If
+queue to use. Please contact the helpdesk if
 you are interested in setting up a project-specific queue.
