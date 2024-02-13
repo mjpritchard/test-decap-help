@@ -91,6 +91,7 @@
     - title: JASMIN external connections
     - title: hpxfer access role
     - title: Scheduling automating transfers
+    - title: Transfers from ARCHER2
 
 - title: Short term project storage
   pages:
@@ -132,7 +133,7 @@
     - title: cluster as a service pangeo
     - title: cluster as a service shared storage
     - title: Adding and removing ssh keys from an external cloud vm
-    - title: Tenancy based sci vm managed cloud
+    - title: Provisioning tenancy sci vm managed cloud
     - title: Sysadmin guidance external cloud
     - title: Best practice
 

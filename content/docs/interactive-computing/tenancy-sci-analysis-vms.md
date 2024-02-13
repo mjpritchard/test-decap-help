@@ -1,7 +1,7 @@
 ---
 aliases: /article/4805-tenancy-sci-analysis-vms
 description: Tenancy-Sci Analysis VMs
-title: Tenancy-Sci Analysis VMs
+title: Tenancy Sci Analysis VMs
 weight: 70
 ---
 
@@ -18,21 +18,21 @@ service named `Sci Analysis VMs`.
 
 ## How to request access
 
-Step 1: Find the Sci Analysis VMs under the Menu 'Discover services' at https://accounts.jasmin.ac.uk/services/
+**Step 1:** Find the Sci Analysis VMs under the Menu 'Discover services' at https://accounts.jasmin.ac.uk/services/
 
-Step 2: Check the name of the service and the description that your supervisor
+**Step 2:** Check the name of the service and the description that your supervisor
 or PI recommended you to choose and click "More information"
 
 {{<image src="img/docs/tenancy-sci-analysis-vms/file-EUW05EGJj3.png" caption="Locate the correct service" >}}
 
 {{<image src="img/docs/tenancy-sci-analysis-vms/file-pyW8yyQboJ.png" caption="Click +Apply" >}}
 
-Step 3: Apply for `USER` role and provide details on your project and a
+**Step 3:** Apply for `USER` role and provide details on your project and a
 reference then click "Apply"
 
 {{<image src="img/docs/tenancy-sci-analysis-vms/file-QyGyIDjEcM.png" caption="Apply for USER role" >}}
 
-Step 4:
+**Step 4:** Notification
 
 {{<image src="img/docs/tenancy-sci-analysis-vms/file-pY8gr70WNK.png" caption="Status PENDING" >}}
 

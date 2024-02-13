@@ -1,37 +1,34 @@
 ---
 aliases: /article/4581-tenancy-based-sci-vm-managed-cloud
-categories:
-- For Cloud Tenants
-collection: jasmin-documentation
-date: 2023-07-05 10:02:59
 description: Provisioning a Sci VM in a Managed Cloud Tenancy
-slug: tenancy-based-sci-vm-managed-cloud
+slug: provisioning-tenancy-sci-vm-managed-cloud
 title: Provisioning a Sci VM in a Managed Cloud Tenancy
-layout: docs
 ---
 
-This article is for admin and manager of the JASMIN managed-cloud Sci tenancy.
-It illustrates how to provision a sci VM within a JASMIN managed-cloud Sci
-tenancy. It involves the following:
+This article is for admin and manager of the JASMIN managed-cloud tenancy
+and shows how to provision a sci VM. It involves the following:
 
-- Becoming a member of a managed cloud Sci tenancy
+- Becoming a member of a managed cloud tenancy
 - Provisioning a VM
 
-The Sci tenancy has four access roles:
+A "sci vm" is essentially the same as the general-access scientific analysis
+servers, but created within a specific tenancy aimed at a certain group of users. 
+The manager/deputy then has the responsibility to stop/start/restart or redeploy the VM, and to
+control who can access it.
+
+The managed cloud tenancy has four access roles:
 
 - `MANAGER` role: can approve `DEPUTY`, `ADMIN`, and `USER` role access requests
 - `DEPUTY` manager role: can approve `ADMIN` and `USER` role access requests
 - `ADMIN` role: can access the cloud portal and can restart or provision the Sci VM
-- `USER` role: can log in into the Sci VM from a JASMIN login node
+- `USER` role: can log in into the sci VM from a JASMIN login node
 
-**Note:** `MANAGER`, `DEPUTY` and `ADMIN` have access to the JASMIN cloud portal
+## Apply for access to the Sci tenancy
 
-### 1\. Apply for access to the Sci tenancy
+A managed cloud tenancy is accessible via the {{<link "jasmin_cloud_portal">}}JASMIN cloud portal{{</link>}}. 
+Access is controlled by a service corresponding to the name of the tenancy: these services are listed under {{<link "https://accounts.jasmin.ac.uk/services/analysis_vms/">}}Sci Analysis VMs{{</link>}} category of "My Services".
 
-A managed cloud Sci tenancy is accessible via the [JASMIN cloud portal](https://cloud.jasmin.ac.uk/) and this access is controlled by the "Sci Analysis VMs" service via the [JASMIN accounts
-portal](https://accounts.jasmin.ac.uk). See MISSING LINK for instructions about requesting access to the `USER` and `ADMIN` roles via the Sci Analysis VMs service on the JASMIN accounts portal.
-
-### 2\. Access the tenancy
+## Access the tenancy
 
 With an ADMIN role, you can log in to the [JASMIN cloud portal](https://cloud.jasmin.ac.uk/) using the same credentials for signing into the JASMIN accounts portal.
 
@@ -44,7 +41,7 @@ tenancy to find out the VM provisioned within a given tenancy, e.g ncas-sci-M
 Note: The "ncas-sci-M" tenancy shown below has 0 machines as this is a new tenancy.
 We will proceed next to the provisioning of a virtual machine.
 
-### 3\. Provision a virtual machine
+## Provision a virtual machine
 
 **Step 1:** Select "Machines" from the top menu, then click "New machine" to
 create a new VM. Choose a name for the new VM. Then select a size from the
@@ -97,7 +94,7 @@ not be granted root access.
 **Note 2:** ADMIN and MANAGER roles will not allow you to SSH into the Sci VM.
 It is necessary to have a USER role to do so.
 
-### 4\. Connect to Sci analysis VMs
+## Connect to the VM
 
 From a JASMIN login server, login to the machine using the External IP address.
 In the same way, as you login to a JASMIN scientific server via login1. Your

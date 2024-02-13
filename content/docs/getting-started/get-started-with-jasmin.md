@@ -9,8 +9,8 @@ weight: 10
 This article explains the steps involved for most users to gain
 access to the JASMIN environment.
 
-The [JASMIN](http://www.jasmin.ac.uk/) scientific data analysis environment is
-administered by [CEDA](http://www.ceda.ac.uk/) and supports a wide variety of
+The {{<link "jasmin_site">}}JASMIN{{</link>}} scientific data analysis environment is
+administered by {{<link "ceda_site">}}CEDA{{</link>}} and supports a wide variety of
 scientific workflows across environmental science domains.
 
 ## Essential steps
@@ -20,7 +20,7 @@ to gain ssh access to the JASMIN login machines which are the "front door" for
 most users. Other services are available once these basic steps have been
 completed.
 
-An overview of JASMIN compute & storage components are summarised in the
+An overview of JASMIN compute & storage components is given in the
 presentation given at the [JASMIN workshop](https://github.com/cedadev/jasmin-workshop) \- we strongly encourage all new users to watch this video recording
 and take a look at the [accompanying
 exercises](https://github.com/cedadev/jasmin-workshop). These go into detail
@@ -32,15 +32,15 @@ each step.
 
 Step  |  Details  |  Comments  
 ---|---|---  
-1  |  [Generate an SSH key]({{< ref "generate-ssh-key-pair" >}}) |  Create this locally, ready to upload it to your JASMIN Account profile (see Step 2)  
-2  |  [Get a JASMIN portal account]({{< ref "get-jasmin-portal-account" >}}) |  Access to JASMIN services is controlled by the [JASMIN Accounts Portal](https://accounts.jasmin.ac.uk/) \- you must register for an account. Using the JASMIN Accounts portal, you will then need to make a request to access JASMIN services and privileges you require (as described in the steps below). Some of these services will require manual approval by individuals external to the CEDA/JASMIN team. Please note that registering on the JASMIN accounts portal does not by itself provide you with any access to JASMIN machines or services. You must complete all the steps below to gain full access. For further information [See Getting started with JASMIN Webinar - section 2](https://www.ceda.ac.uk/events/getting-started-with-jasmin-webinar/)  
-  3  |  [Check network details]({{< ref "check-network-details" >}}) |  In order to maintain a secure and reliable scientific infrastructure for its users, JASMIN restricts login access by maintaining an "allow list" of network domains. Check details of your network connection to JASMIN to ensure you are able to connect.  
-  4  |  [Request ssh login access to JASMIN]({{< ref "get-login-account" >}}) |  Your account so far is just a profile on the accounts portal but has no privileges. If you intend to use JASMIN computing resources you need to apply for the "jasmin-login" service, which will allow you to connect to JASMIN machines using ssh. [See Getting started with JASMIN Webinar - section 2](https://www.ceda.ac.uk/events/getting-started-with-jasmin-webinar/)  
-  5  |  Apply for access to additional services on JASMIN  |  JASMIN has a vast number of additional services, access to these is all managed in the Accounts Portal. Search and apply for any services you require in the portal. In most cases, users will "belong" to a particular scientific project which may already have a presence on JASMIN, often in the form of a [Group Workspace]({{< ref "short-term-project-storage" >}}). See here how to [Apply for access to a Group Workspace]({{< ref "apply-for-access-to-a-gws" >}}).
-  6  |  [How to login]({{< ref "login" >}}) |  The 'how to login' document explains all the basic steps about logging in to JASMIN via ssh, but we also have several other tutorials that may be useful - see [Exercises 1-3 here](https://github.com/cedadev/jasmin-workshop).  
-  7  |  [Get a CEDA account]({{< ref "ceda-archive" >}}) |  The CEDA Archive provides access to thousands of atmospheric, climate change, and earth observation datasets. This is directly accessible as a file system from the shared science machines on JASMIN. Some datasets on the CEDA Archive require specific agreements, to apply for access to these, you will need a CEDA account.  
-  8  |  [Link your JASMIN and CEDA accounts]({{< ref "update-a-jasmin-account" >}})  |  The final step is to link your CEDA account to your JASMIN account. This allows you filesystem access to data on CEDA Archive. This is a step that you will be guided through in the JASMIN accounts portal.
-  {.table .table-striped}
+1  |  [Generate an SSH key]({{< ref "generate-ssh-key-pair" >}}) |  Create this locally, ready to upload it to your JASMIN Account profile  
+2  |  [Get a JASMIN portal account]({{< ref "get-jasmin-portal-account" >}}) |  Access to JASMIN services is controlled by the [JASMIN Accounts Portal](https://accounts.jasmin.ac.uk/) \- you must register for an account. Using this portal, you will then need to apply for access to the JASMIN services and privileges you require (as described in the steps below). Some of these services will require manual approval by individuals external to the CEDA/JASMIN team. Creating a JASMIN portal account does not by itself provide you with any access to JASMIN machines or services. You must complete all the steps below to gain full access.  
+3  |  [Check network details]({{< ref "check-network-details" >}}) |Check details of your network connection to JASMIN to ensure you are able to connect.   In order to maintain a secure and reliable scientific infrastructure for its users, JASMIN restricts login access by maintaining an "allow list" of network domains. 
+4  |  [Request ssh login access to JASMIN]({{< ref "get-login-account" >}}) |  Apply for the `jasmin-login` service, which will allow you to connect to JASMIN machines using ssh.  
+5  |  Apply for access to additional services on JASMIN  |  JASMIN has a range of additional services, access to which is managed via the Accounts Portal. Search and apply for any services you require in the portal. In most cases, users will "belong" to a particular scientific project which may already have a presence on JASMIN, often in the form of a [Group Workspace]({{< ref "short-term-project-storage" >}}). See here how to [Apply for access to a Group Workspace]({{< ref "apply-for-access-to-a-gws" >}}).
+6  |  [How to login]({{< ref "login" >}}) |  Follow these steps for logging in to JASMIN via ssh, but we also have several other tutorials that may be useful - see [Exercises 1-3 here](https://github.com/cedadev/jasmin-workshop).
+7  |  [Get a CEDA account]({{< ref "ceda-archive" >}}) |  The CEDA Archive provides access to thousands of atmospheric, climate change, and earth observation datasets. The Archive is directly accessible read-only throughout JASMIN. Some datasets on the CEDA Archive require specific agreements, and to apply for access to these, you will need a CEDA account.  
+8  |  [Link your JASMIN and CEDA accounts]({{< ref "update-a-jasmin-account" >}})  |  The final step is to link your CEDA account to your JASMIN account. This allows you filesystem access to data on CEDA Archive. This is a step that you will be guided through in the JASMIN accounts portal.
+{.table .table-striped}
   
 The table above describes the initial steps to get you started on JASMIN -
 however, there are a variety of ways that users can get the most out of
@@ -53,19 +53,17 @@ areas/services on JASMIN. You can navigate these sections in the menu on the
 left-hand side of your screen. A short description of each of these sections
 is below:
 
-  * [Getting Started]({{< ref "getting-started" >}}) \- this details all the steps needed to get started on JASMIN. Most documents are linked to from the table above, but there may be some other useful information there too.
-  * [Interactive Computing]({{< ref "interactive-computing" >}}) \- this introduces the resources on JASMIN available for interactive computing. This type of computing is the most common workflow on JASMIN for new users. 
-  * [SLURM Batch Computing on LOTUS]({{< ref "slurm" >}}) \- this introduces the available resources on JASMIN for batch computing. 
-  * [Software on JASMIN]({{< ref "software-overview" >}}) \- Information on running software packages within JASMIN
-  * [Data Transfer]({{< ref "data-transfer" >}}) \- this category includes guidance on transferring data to and from JASMIN.
-  * [MASS]({{< ref "mass" >}}) \- JASMIN has Read-only access to the Met Office MASS storage archive. This section explains how to get access. 
-  * [Short-term project storage]({{< ref "short-term-project-storage" >}}) \- this section introduces the concept of shared Group Workspaces and the different storage types on JASMIN. Group Workspaces (GWSs) are portions of disk allocated for particular projects to manage themselves, enabling collaborating scientists to share network accessible storage on JASMIN. 
-  * [Long-term archive storage]({{< ref "long-term-archive-storage" >}}) \- this section describes the long-term CEDA Archive which consists of thousands of atmospheric, climate change, and earth observation datasets. This is directly accessible as a file system from the shared science machines on JASMIN.
-  * [For Cloud Tenants]({{< ref "for-cloud-tenants" >}}) \- JASMIN also provides a cloud computing service, this section describes this. 
-  * [Workflow management]({{< ref "workflow-management" >}}) \- this category details the various tools available for managing your workflow.
+- [Getting Started]({{< ref "getting-started" >}}) \- this details all the steps needed to get started on JASMIN. Most documents are linked to from the table above, but there may be some other useful information there too.
+- [Interactive Computing]({{< ref "interactive-computing" >}}) \- this introduces the resources on JASMIN available for interactive computing. This type of computing is the most common workflow on JASMIN for new users. 
+- [SLURM Batch Computing on LOTUS]({{< ref "slurm" >}}) \- this introduces the available resources on JASMIN for batch computing. 
+- [Software on JASMIN]({{< ref "software-overview" >}}) \- Information on running software packages within JASMIN
+- [Data Transfer]({{< ref "data-transfer" >}}) \- this category includes guidance on transferring data to and from JASMIN.
+- [MASS]({{< ref "mass" >}}) \- JASMIN has Read-only access to the Met Office MASS storage archive. This section explains how to get access. 
+- [Short-term project storage]({{< ref "short-term-project-storage" >}}) \- this section introduces the concept of shared Group Workspaces and the different storage types on JASMIN. Group Workspaces (GWSs) are portions of disk allocated for particular projects to manage themselves, enabling collaborating scientists to share network accessible storage on JASMIN. 
+- [Long-term archive storage]({{< ref "long-term-archive-storage" >}}) \- this section describes the long-term CEDA Archive which consists of thousands of atmospheric, climate change, and earth observation datasets. This is directly accessible as a file system from the shared science machines on JASMIN.
+- [For Cloud Tenants]({{< ref "for-cloud-tenants" >}}) \- JASMIN also provides a cloud computing service, this section describes this. 
+- [Workflow management]({{< ref "workflow-management" >}}) \- this category details the various tools available for managing your workflow.
 
 The CEDA team also regularly hosts training workshops and events. Details
 about past and future events can be found on the [events
 section](https://www.ceda.ac.uk/events/) of the CEDA website.
-
-
