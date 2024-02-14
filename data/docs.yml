@@ -19,7 +19,7 @@
     - title: storage
     - title: understanding new jasmin storage
     - title: update a jasmin account
-    - title: updating your ssh key
+    #- title: updating your ssh key
     #- title: migrate jasmin account from ceda
 
 - title: Interactive computing
@@ -64,7 +64,7 @@
     - title: creating and using miniconda environments
     - title: idl
     - title: jasmin sci software
-    - title: jasmin software faqs
+    - title: jasmin software FAQs
     - title: jaspy envs
     - title: matplotlib
     - title: nag library
@@ -113,7 +113,7 @@
 
 - title: Long term archive storage
   pages:
-    - title: ceda archive
+    - title: CEDA Archive
 
 - title: MASS
   pages:

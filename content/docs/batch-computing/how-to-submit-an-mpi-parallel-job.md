@@ -1,19 +1,13 @@
 ---
 aliases: /article/4896-how-to-submit-an-mpi-parallel-job-to-slurm
-date: 2022-11-16 08:46:58
 description: How to submit an MPI parallel job
 slug: how-to-submit-an-mpi-parallel-job
 title: How to submit an MPI parallel job
 ---
 
-This article explains the submission of an MPI parallel job to SLURM/ LOTUS.
-It covers:
+This article explains the submission of an MPI parallel job to Slurm/ LOTUS.
 
-  * What is an MPI parallel job?
-  * MPI implementation and SLURM
-  * Parallel MPI job submission 
-
-# What is an MPI parallel job?
+## What is an MPI parallel job?
 
 An MPI parallel job runs on more than one core and more than one host using
 the Message Passing Interface (MPI) library for communication between all
@@ -57,13 +51,13 @@ are allocated only to run this job. This ensures the best MPI communication
 consistency and bandwidth/latency for the job and ensures no interference from
 other users' jobs that might otherwise be running on those hosts.
 
-# MPI implementation and SLURM
+## MPI implementation and Slurm
 
 The OpenMPI library is the only supported MPI library on the cluster. OpenMPI
 v3.1.1 and v4.0.0 are provided which are fully MPI3 compliant. MPI I/O
 features are fully supported *only* on the LOTUS /work/scratch-pw* volumes as
 these use a Panasas fully parallel file system. The MPI implementation on
-CentOS7 LOTUS/SLURM is available via the module environment for each compiler
+CentOS7 LOTUS/Slurm is available via the module environment for each compiler
 as listed below:
 
 ```bash
@@ -74,7 +68,7 @@ eb/OpenMPI/intel/3.1.1
 
 **Note:** OPenMPI Intel compiler is due shortly as is 4.0.3  
 
-# Parallel MPI compiler with OpenMPI
+## Parallel MPI compiler with OpenMPI
 
 Compile and link to OpenMPI libraries using the mpif90, mpif77, mpicc, mpiCC
 wrapper scripts which are in the default unix path. The scripts will detect

@@ -6,13 +6,7 @@ title: How to login
 weight: 100
 ---
 
-This article explains how to login to JASMIN. It covers:
-
-- Preparing your credentials: loading your private key
-- The JASMIN login servers
-- Logging in to JASMIN
-- X-forwarding for graphical applications (within JASMIN only)
-- Where next?
+This article explains how to login to JASMIN.
 
 The instructions below cover the process of logging in using a terminal client
 only. For a graphical linux desktop, please see alternative instructions using

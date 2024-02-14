@@ -4,6 +4,7 @@ description: How to update your SSH key
 slug: updating-your-ssh-key
 title: How to update your SSH key
 weight: 180
+draft: true
 ---
 
 ## Introduction

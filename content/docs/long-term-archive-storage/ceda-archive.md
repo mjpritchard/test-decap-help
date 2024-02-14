@@ -110,6 +110,6 @@ ls -l /badc/cru/data
 (out)drwxr-x---  3 badc open 4096 Feb 18  2015 PDSI
 {{</command>}}
 
-The {{<link "ceda_data">}}CEDA Archive Data Browser{{</link>}} is a good place to start as it gives a web-based view of the data with additional metadata but enables copying the directory path which you can then copy & paste for use within the JASMIN environment:
+The {{<link "ceda_data">}}CEDA Archive Data Browser{{</link>}} is a good place to start as it gives a web-based view of the data with additional metadata but enables copying & pasting the directory path for use within the JASMIN environment:
 
 {{<image src="img/docs/ceda-archive/ceda-archive-cru.png" caption="ceda archive data browser">}}
