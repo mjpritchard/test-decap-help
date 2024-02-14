@@ -1,6 +1,5 @@
 ---
 aliases: /article/285-system-administration-guidance-for-the-unmanaged-cloud
-date: 2023-01-24 12:01:12
 description: System administration guidance (external cloud)
 slug: sysadmin-guidance-external-cloud
 title: System administration guidance (external cloud)

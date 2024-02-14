@@ -1,12 +1,8 @@
 ---
 aliases: /article/4448-nag-library
-categories:
-- Software on JASMIN
-collection: jasmin-documentation
-date: 2023-01-24 11:58:04
 description: The Numerical Algorithm Group (NAG) Library
 slug: nag-library
-title: The Numerical Algorithm Group (NAG) Library
+title: NAG Library
 ---
 
 This article introduces the Fortran and C library of software under the
@@ -33,21 +29,19 @@ and [LOTUS cluster]({{< ref "lotus-overview" >}}) on JASMIN. In addition to
 loading a module for the library, you will usually need to load a module for
 the compiler you are using. For example:
 
-    
-    
-    $ module load contrib/nag/25
-    $ module list
-    Currently Loaded Modulefiles:
-      1) intel/fce/15.0.090   2) contrib/nag/25
-    
+{{<command user="user" host="sci1">}}
+module load contrib/nag/25
+module list
+(out)Currently Loaded Modulefiles:
+(out)    1) intel/fce/15.0.090   2) contrib/nag/25
+{{</command>}}
 
 The NAG library is loaded as well as the Intel Fortran compiler. Now you can
 compile your code and link to the NAG library, for example:
 
-    
-    
-    $ ifort your_code.f90 -lnag_nag -o your_code.exec
-    
+{{<command user="user" host="sci1">}}
+ifort your_code.f90 -lnag_nag -o your_code.exec
+{{</command>}}
 
 ## How to find a NAG library routine
 
@@ -59,54 +53,53 @@ Please search the NAG documentation when looking for specific routines:
 
 The following shows the directory and file organisation of the materials.
 
-    
-    
-    /apps/contrib/nag/fll6i25dcl/
-    
-                        |- in.html  (Installer's Note - this document)
-                |- doc -|- un.html  (Users' Note)
-                |       |- lic_agr.txt  (license agreement)
-                |
-                |       |- libnag_nag.a      (static self-contained library
-                |       |                     including NAG BLAS/LAPACK)
-                |       |- libnag_nag.so.25  (shareable self-contained library
-                |       |                     including NAG BLAS/LAPACK)
-                |       |- libnag_nag.so     (symbolic link pointing at
-                |- lib -|                     libnag_nag.so.26)
-                |       |- libnag_mkl.a      (static library requiring
-                |       |                     MKL BLAS/LAPACK)
-                |       |- libnag_mkl.so.25  (shareable library requiring
-                |       |                     MKL BLAS/LAPACK)
-                |       |- libnag_mkl.so     (symbolic link pointing at
-                |                             libnag_mkl.so.26)
-    fll6i25dcl -|
-                |- nag_interface_blocks -|- *  (interface blocks for Intel compiler)
-                |
-                |            |- source --|- ??????e.f90
-                |            |
-                |- examples -|- data ----|- ??????e.d
-                |            |           |- ??????e.opt
-                |            |
-                |            |- results -|- ??????e.r
-                |
-                |           |- nag_example*  (scripts to compile and run
-                |- scripts -|                  NAG example programs)
-                |           |
-                |           |- nag_recompile_mods  (script to recompile
-                |                                   interface blocks)
-                |
-                |- c_headers -|- * (C/C++ header file and information)
-                |
-                |- mkl_intel64_11.2.0 -|- *  (Intel Math Kernel Library)
-                |
-                |- rtl -|- *  (Intel compiler run-time libraries)
-                |
-                |           |- bin -|- *  (directories of license management
-                |           |              binaries for supported platforms)
-                |- license -|- README.txt
-                            |
-                            |- doc -|- *  (license management documentation)
-    
+```txt
+/apps/contrib/nag/fll6i25dcl/
+
+                    |- in.html  (Installer's Note - this document)
+            |- doc -|- un.html  (Users' Note)
+            |       |- lic_agr.txt  (license agreement)
+            |
+            |       |- libnag_nag.a      (static self-contained library
+            |       |                     including NAG BLAS/LAPACK)
+            |       |- libnag_nag.so.25  (shareable self-contained library
+            |       |                     including NAG BLAS/LAPACK)
+            |       |- libnag_nag.so     (symbolic link pointing at
+            |- lib -|                     libnag_nag.so.26)
+            |       |- libnag_mkl.a      (static library requiring
+            |       |                     MKL BLAS/LAPACK)
+            |       |- libnag_mkl.so.25  (shareable library requiring
+            |       |                     MKL BLAS/LAPACK)
+            |       |- libnag_mkl.so     (symbolic link pointing at
+            |                             libnag_mkl.so.26)
+fll6i25dcl -|
+            |- nag_interface_blocks -|- *  (interface blocks for Intel compiler)
+            |
+            |            |- source --|- ??????e.f90
+            |            |
+            |- examples -|- data ----|- ??????e.d
+            |            |           |- ??????e.opt
+            |            |
+            |            |- results -|- ??????e.r
+            |
+            |           |- nag_example*  (scripts to compile and run
+            |- scripts -|                  NAG example programs)
+            |           |
+            |           |- nag_recompile_mods  (script to recompile
+            |                                   interface blocks)
+            |
+            |- c_headers -|- * (C/C++ header file and information)
+            |
+            |- mkl_intel64_11.2.0 -|- *  (Intel Math Kernel Library)
+            |
+            |- rtl -|- *  (Intel compiler run-time libraries)
+            |
+            |           |- bin -|- *  (directories of license management
+            |           |              binaries for supported platforms)
+            |- license -|- README.txt
+                        |
+                        |- doc -|- *  (license management documentation)
+```
 
 ## Further information
 
