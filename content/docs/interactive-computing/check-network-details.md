@@ -7,8 +7,8 @@ weight: 20
 
 This article explains how to:
 
-  * check that your network domain is able to access JASMIN resources
-  * check that the particular host from which you are intending to connect to JASMIN has the required network configuration
+- check that your network domain is able to access JASMIN resources
+- check that the particular host from which you are intending to connect to JASMIN has the required network configuration
 
 ## Check network domain (non .ac.uk users)
 
@@ -17,7 +17,7 @@ users, JASMIN restricts login access by maintaining an "allow list" of network
 domains that are allowed to make SSH connections to the JASMIN login gateways
 and data transfer servers.
 
-All .ac.uk network domains (i.e. UK universities and "academic" institutions)
+All `.ac.uk` network domains (i.e. UK universities and "academic" institutions)
 are already registered.
 
 If your institution's network domain is not .ac.uk, please request for it to
@@ -41,19 +41,17 @@ If you don't have a web browser on that machine, you can use the 'curl' or
 'wget' Linux commands to make an HTTP request to that URL, and inspect the
 output. A successful response will look like this:
 
-    
-    
-    External IP address: 130.246.123.456
-    Resolved to host: vpn-3-167.rl.ac.uk
-    
+```txt
+External IP address: 130.246.123.456
+Resolved to host: vpn-3-167.rl.ac.uk
+```
 
 Whereas an unsuccessful response will look like this:
 
-    
-    
-    External IP address: 130.246.123.456 
-    Reverse DNS lookup failed
-    
+```txt
+External IP address: 130.246.123.456 
+Reverse DNS lookup failed
+```
 
 If your IP address does not resolve, please contact your local IT technical
 support desk and show them this article to help explain the context.
@@ -88,5 +86,3 @@ transfer tasks, an additional transfer server `xfer3.jasmin.ac.uk` is
 available. See [login servers]({{< ref "login-servers" >}}) and [transfer
 servers]({{< ref "transfer-servers" >}}), but note the additional access role
 required in the case of the transfer server.
-
-

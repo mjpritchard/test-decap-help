@@ -15,9 +15,9 @@ transfer tool. In particular:
 
 ## What is FTP?
 
-[FTP](https://en.wikipedia.org/wiki/File_Transfer_Protocol) is a well-
-established transfer protocol enabling connections from a client to download
-files from, or upload files to, a server. A wide variety of client tools are
+[FTP](https://en.wikipedia.org/wiki/File_Transfer_Protocol) is a well-established
+transfer protocol enabling connections from a client to download
+files from, or upload files to, a server, although limited in security. A wide variety of client tools are
 available to the user, 2 implementations of which are available on the JASMIN
 transfer servers, although no server is provided. `ftp` is also the name of
 the basic FTP client program, see below.
@@ -33,10 +33,8 @@ method instead. See other [Data Transfer Tools]({{< ref "data-transfer-tools">}}
 On the [transfer servers]({{< ref "transfer-servers" >}}), you can use one of
 the installed FTP clients to download data from elsewhere. These are:
 
-- `ftp`
-- basic ftp client. Usage details
-- `lftp`
-- parallel-capable ftp client. Usage details
+- `ftp` basic ftp client. Usage details
+- `lftp` parallel-capable ftp client. Usage details
 
 CEDA however runs 2 FTP servers within the JASMIN environment providing
 download-only access to the CEDA archive. Access to these is controlled by
@@ -61,41 +59,39 @@ this case, using anonymous FTP), you use FTP commands to interact with the
 remote server and locate and download the data you require. The session is
 terminated with `bye`.
 
-    
-    
-    [username@xfer1 temp]$ ftp someserver.somesite.ac.uk
-    Trying 123.456.78.123...
-    Connected to someserver.somesite.ac.uk (123.456.78.123).
-    220----------------------------------------------------------------------------
-    220-Welcome message from somesite.ac.uk
-    220----------------------------------------------------------------------------
-    220 
-    Name (123.456.78.123:username): anonymous
-    331 Please specify the password.
-    Password:
-    230 Login successful.
-    Remote system type is UNIX.
-    Using binary mode to transfer files.
-    ftp> cd /sites/pub/testdir/
-    250-
-    250-This is the somesite ftp repository.
-    250-
-    250 Directory successfully changed.
-    ftp> get md5.sum
-    local: md5.sum remote: md5.sum
-    227 Entering Passive Mode.
-    150 Opening BINARY mode data connection for md5.sum (45 bytes).
-    226 Transfer complete.
-    45 bytes received in 0.00267 secs (16.83 Kbytes/sec)
-    ftp> bye
-    221 Goodbye.
-    
+{{<command user="user" host="xfer1">}}
+ftp someserver.somesite.ac.uk
+(out)Trying 123.456.78.123...
+(out)Connected to someserver.somesite.ac.uk (123.456.78.123).
+(out)220----------------------------------------------------------------------------
+(out)220-Welcome message from somesite.ac.uk
+(out)220----------------------------------------------------------------------------
+(out)220 
+(out)Name (123.456.78.123:username): anonymous
+(out)331 Please specify the password.
+(out)Password:
+{{</command>}}
 
-##
+Once connected, the prompt changes to `ftp>`:
 
-##
-
-##
+{{<command prompt="ftp>">}}
+(out)230 Login successful.
+Remote system type is UNIX.
+(out)Using binary mode to transfer files.
+cd /sites/pub/testdir/
+(out)(out)(out)250-
+250-This is the somesite ftp repository.
+250-
+(out)250 Directory successfully changed.
+get md5.sum
+(out)local: md5.sum remote: md5.sum
+(out)227 Entering Passive Mode.
+(out)150 Opening BINARY mode data connection for md5.sum (45 bytes).
+(out)226 Transfer complete.
+(out)45 bytes received in 0.00267 secs (16.83 Kbytes/sec)
+bye
+(out)221 Goodbye.
+{{</command>}}
 
 Full details of commands available within an interactive session with the
 `ftp` client are available via the man page (`man ftp`).
@@ -105,15 +101,19 @@ Full details of commands available within an interactive session with the
 The alternative client `lftp` is less verbose, but the basic workflow is the
 same.
 
-    
-    
-    [username@xfer1 temp]$ lftp someserver.somesite.ac.uk
-    lftp someserver.somesite.ac.uk:~> cd /sites/pub/testdir
-    cd ok, cwd=/sites/pub/testdir/                 
-    lftp ftp.mirrorservice.org:/sites/pub/testdir> get md5.sum
-    45 bytes transferred                           
-    lftp ftp.mirrorservice.org:/sites/sourceware.org/pub/cygwin> bye
-    
+{{<command user="user" host="xfer1">}}
+lftp someserver.somesite.ac.uk
+{{</command>}}
+
+Once connected, the prompt changes to `lftp` and the name of the remote server:
+
+{{<command prompt="lftp someserver.somesite.ac.uk:~>">}}
+cd /sites/pub/testdir
+(out)cd ok, cwd=/sites/pub/testdir/
+get md5.sum
+(out)45 bytes transferred
+bye
+{{</command>}}
 
 The interactive shell provided by `lftp` also benefits from tab completion and
 use of up/down arrows for command history.
@@ -121,22 +121,21 @@ use of up/down arrows for command history.
 In fact, lftp can also be used as an SFTP client, with the added benefit that
 it can handle multiple SFTP transfers in parallel.
 
-In the following example, we connect to a remote SFTP server using the sftp://
+In the following example, we connect to a remote SFTP server using the `sftp://`
 syntax. Once logged in to the remote server, the prompt changes and you can
-enter lftp-specific commands like mirror, in this case with -P 4 as the option
-to use 4 sftp processes in parallel. Try other values but please consider
+enter lftp-specific commands like `mirror`, in this case with `-P 4` as the option
+to use 4 `sftp` processes in parallel. Try other values but please consider
 other users so a suggested limit is 16.
 
-    
-    
-    [username@xfer1 temp]$ lftp sftp://username@someserver.somesite.ac.uk
-    Password: (enter password when prompted)
-    lftp username@ftp.cnag.cat:~> mirror -P 4 sourcedata
-    lftp username@ftp.cnag.cat:~> bye
-    
+{{<command user="user" host="xfer1">}}
+lftp sftp://username@someserver.somesite.ac.uk
+Password: (enter password when prompted)
+{{</command>}}
+{{<command prompt="lftp username@ftp.cnag.cat:~>">}}
+mirror -P 4 sourcedata
+bye
+{{</command>}}
 
 Note that if you're connecting **_to_** a JASMIN transfer server in this way,
 then you would need to make your JASMIN private key available in an ssh agent
 locally, and you would not be prompted for the password.
-
-

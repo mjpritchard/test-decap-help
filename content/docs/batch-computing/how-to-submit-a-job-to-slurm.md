@@ -6,27 +6,27 @@ slug: how-to-submit-a-job
 title: How to submit a job
 ---
 
-This article explains how to submit a batch job to the new scheduler SLURM.
+This article explains how to submit a batch job to the new scheduler Slurm.
 
 ## What is a batch job?
 
 A batch job is controlled by a script written by the user who submits the job
-to the batch system SLURM. The batch system then selects the resources for the
+to the batch system Slurm. The batch system then selects the resources for the
 job and decides when to run the job. Note: the term "job" is used throughout
 this documentation to mean a "batch job".
 
-There are two ways of submitting a job to SLURM:
+There are two ways of submitting a job to Slurm:
 
-  1. Submit via a SLURM job script - create a bash script that includes directives to the SLURM scheduler
-  2. Submit via command-line options - provide directives to SLURM via command-line arguments
+  1. Submit via a Slurm job script - create a bash script that includes directives to the Slurm scheduler
+  2. Submit via command-line options - provide directives to Slurm via command-line arguments
 
 Both options are described below.
 
 ## Which servers can you submit jobs from?
 
-Jobs can be submitted to SLURM from the following Sci machines:
+Jobs can be submitted to Slurm from the following Sci machines:
 
-```bash
+```txt
 sci1.jasmin.ac.uk 
 sci2.jasmin.ac.uk 
 sci3.jasmin.ac.uk 
@@ -36,16 +36,16 @@ sci6.jasmin.ac.uk
 sci8.jasmin.ac.uk
 ```
 
-## Method 1: Submit via a SLURM job script
+## Method 1: Submit via a Slurm job script
 
-The SLURM job submission command is:
+The Slurm job submission command is:
 
-```bash
+{{<command user="user" host="sci1">}}
 sbatch myjobscript
-```
+{{</command>}}
 
 The job script is a Bash script of user's application and includes a list of
-SLURM directives, prefixed with `#SBATCH` as shown in this example:
+Slurm directives, prefixed with `#SBATCH` as shown in this example:
 
 ```bash
 #!/bin/bash 
@@ -59,12 +59,12 @@ sleep 5m
 ```
 
 For job specification of resources please refer to Table 2 of the help article
-[LSF to SLURM quick reference]({{< ref "lsf-to-slurm-quick-reference" >}})
+[LSF to Slurm quick reference]({{< ref "lsf-to-slurm-quick-reference" >}})
 
 ## Method 2: Submit via command-line options
 
 If you have an existing script, written in any language, that you wish to
-submit to LOTUS then you can do so by providing SLURM directives as command-
+submit to LOTUS then you can do so by providing Slurm directives as command-
 line arguments. For example, if you have a script "my-script.py" that takes a
 single argument "-f <filepath>", you can submit it using "sbatch" as follows:
 
@@ -78,14 +78,14 @@ to wrap your existing code.
 ## Method 3: Submit an interactive session via salloc
 
 Testing a job on LOTUS can be carried out in an interactive manner by
-obtaining a Slurm job allocation or resources (a set of nodes) via the SLURM
+obtaining a Slurm job allocation or resources (a set of nodes) via the Slurm
 command `salloc` . The code/application is executed and the allocation are
 released after a specific time -default 1 hour - when the testing is finished.
 There are two ways:
 
-#### Interactive execution with pseudo-shell terminal on the compute LOTUS node
+## Interactive execution with pseudo-shell terminal on the compute LOTUS node
 
-The job is executed on the LOTUS compute node by invoking the SLURM command
+The job is executed on the LOTUS compute node by invoking the Slurm command
 srun after allocating resources with `salloc`. See example below.
 
 ```bash
@@ -113,7 +113,7 @@ srun --pty /bin/bash
 @host580 ~]$
 ```
 
-####  Interactive execution with no shell
+##  Interactive execution with no shell
 
 A code/application can be executed on the LOTUS compute node without a shell
 session on the node itself. For example the command 'hostname' is executed
@@ -136,9 +136,9 @@ for ‘high throughput' tasks, for example where you want to run your simulation
 with different driving data or run the same processing task on multiple data
 files.
 
-Important note: The maximum job array size that SLURM is configured for is
+Important note: The maximum job array size that Slurm is configured for is
 MaxArraySize = 10000. If a Job array of size is greater than 10000 is
-submitted, SLURM will reject the job submission with the following error
+submitted, Slurm will reject the job submission with the following error
 message: "Job array index too large. Job not submitted."
 
 Taking a simple R submission script as an example:
@@ -169,16 +169,16 @@ submission would look something like this:
 #SBATCH --time=30:00
 #SBATCH --array=1-10
 module add jasr
-Rscript TestRFile.R datset${SLURM_ARRAY_TASK_ID}.csv
+Rscript TestRFile.R datset${Slurm_ARRAY_TASK_ID}.csv
 ```
 
 Here the important differences are :
 
-  * The array is created by SLURM directive --array=1-10 by including elements numbered `[1-10]`to represent our 10 variations
-  * The error and output file have the array  index `%a` included  in the name and "%A" is the job ID.
-  * The environment variable `$SLURM_ARRAY_TASK_ID` in the `Rscript` command is expanded to give the job index
+- The array is created by Slurm directive `--array=1-10` by including elements numbered `[1-10]`to represent our 10 variations
+- The error and output file have the array  index `%a` included  in the name and `%A` is the job ID.
+- The environment variable `$Slurm_ARRAY_TASK_ID` in the `Rscript` command is expanded to give the job index
 
-When the job is submitted, SLURM will create 10 tasks under  the single  job
+When the job is submitted, Slurm will create 10 tasks under the single job
 ID. The job array script is submitted in the usual way:
 
 ```bash

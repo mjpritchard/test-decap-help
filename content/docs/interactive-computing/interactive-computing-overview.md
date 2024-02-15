@@ -8,16 +8,16 @@ weight: 10
 This article introduces the resources on JASMIN available for interactive
 computing (as opposed to [batch computing]({{< ref "slurm-scheduler-overview" >}})). It covers:
 
-  * Login servers
-  * Scientific Analysis servers
-  * Data Transfer Servers
-  * Project Specific Servers
+- Login servers
+- Scientific Analysis servers
+- Data Transfer Servers
+- Project Specific Servers
 
 ## Login Severs
 
 The [login (also known as gateway or bastion) servers]({{< ref "login-servers">}}) provide external* users with access to services inside of JASMIN.
 
-*external = outside of the STFC/RAL firewall. 
+*external = outside of the STFC/RAL firewall.
 
 ## Scientific Analysis Servers
 

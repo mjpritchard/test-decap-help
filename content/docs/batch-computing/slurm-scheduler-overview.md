@@ -35,9 +35,9 @@ and size, but the basic principles remain the same throughout - every user
 gets a fair share of the cluster based on the jobs that they have submitted.
 This leads to a small number of important principles:
 
-  * Do not try to second guess the scheduler! Submit all of your jobs when you want to run them and let the scheduler figure it out for you. You will get a fair share, and if you don't then we need to adjust the scheduler (so get in touch and let us know).
-  * Give the scheduler as much information as possible. There are a number of optional parameters (see "[How to submit jobs]({{< ref "how-to-submit-a-job-to-slurm" >}})") such as job duration, and if you put these in then you have an even better chance of getting your jobs to run.
-  * It is very difficult for one user to monopolise the cluster, even if they submit thousands of jobs. The scheduler will still aim to give everyone else a fair share, so long as there are other jobs waiting to be run.
+- Do not try to second guess the scheduler! Submit all of your jobs when you want to run them and let the scheduler figure it out for you. You will get a fair share, and if you don't then we need to adjust the scheduler (so get in touch and let us know).
+- Give the scheduler as much information as possible. There are a number of optional parameters (see "[How to submit jobs]({{< ref "how-to-submit-a-job-to-slurm" >}})") such as job duration, and if you put these in then you have an even better chance of getting your jobs to run.
+- It is very difficult for one user to monopolise the cluster, even if they submit thousands of jobs. The scheduler will still aim to give everyone else a fair share, so long as there are other jobs waiting to be run.
 
 ## Fair share for all users
 

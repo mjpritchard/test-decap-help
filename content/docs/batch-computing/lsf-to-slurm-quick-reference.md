@@ -4,24 +4,9 @@ date: 2022-10-11 15:15:57
 description: Slurm quick reference
 slug: lsf-to-slurm-quick-reference
 tags:
-- scancel
-- sbatch
-- squeue
-- cancel
-- kill
 - lotus
-- spec
-- specify
-- job
-- submission
-- submit
-- batch
-- cluster
-- bsub
-- bqueues
-- bjobs
-- bkill
-- bmod
+- orchid
+- slurm
 title: Slurm quick reference
 ---
 
@@ -33,7 +18,7 @@ scheduler (LSF was replaced by Slurm in September 2020): [this webinar](https://
 [Slurm](https://slurm.schedmd.com/) is the job scheduler deployed on JASMIN. It
 allows users to submit, monitor, and control jobs on the LOTUS (cpu) and ORCHID (gpu) clusters.
 
-**Table 1** Essential LSF/SLURM commands
+## Essential LSF/Slurm commands
 
 **LSF** |  **Slurm** |  **Description**  
 ---|---|---  
@@ -43,7 +28,7 @@ bjobs  |  squeue -u _\<username\>_ |  List user's pending and running jobs
 bsub -n 1 -q test -Is /bin/bash |  srun -n 1 -p test --pty /bin/bash  | Request an interactive session on LOTUS
 {.table .table-striped}
   
-**Table 2** Job specification
+## Job specification
 
 **LSF** |  **Slurm** |  **Description**  
 ---|---|---  
@@ -67,7 +52,7 @@ bsub -n 1 -q test -Is /bin/bash |  srun -n 1 -p test --pty /bin/bash  | Request 
 -m <host-group-name> |  \--constraint="_\< host-group-name\>_"  |  To select a node with a specific processor model   
 {.table .table-striped}
 
-**Table 3** Job control commands
+## Job control commands
 
 **LSF** |  **Slurm** |  **Description**  
 ---|---|---  
@@ -77,7 +62,7 @@ bmod _\<jobid\>_ |  scontrol update job _\<jobid\>_ |  Modify a pending job
 bkill 0  |  scancel --user=_\<username\>_ |  Kill all jobs owned by a user
 {.table .table-striped}
   
-**Table 4** Job environment variables
+## Job environment variables
 
 **LSF** |  **Slurm** |  **Description**  
 ---|---|---  
