@@ -1,9 +1,5 @@
 ---
 aliases: /article/5023-processing-requests-for-resources
-categories:
-- Uncategorized
-collection: jasmin-documentation
-date: 2021-11-08 14:24:58
 description: Processing requests for resources
 slug: processing-requests-for-resources
 tags:

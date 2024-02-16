@@ -1,6 +1,5 @@
 ---
 aliases: /article/3809-data-transfer-tools
-date: 2022-01-19 12:25:45
 description: Data Transfer Tools
 slug: data-transfer-tools
 title: Data Transfer Tools

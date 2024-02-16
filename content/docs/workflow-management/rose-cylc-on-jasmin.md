@@ -21,13 +21,13 @@ into the Cylc server in order to launch the JULES suite.
 
 Rose and Cylc are very useful workflow management tools. You can:
 
-  * Configure a Rose suite to work with the LOTUS batch cluster on JASMIN.
-  * Run a Rose suite and monitor its progress using the Cylc GUI.
+- Configure a Rose suite to work with the LOTUS batch cluster on JASMIN.
+- Run a Rose suite and monitor its progress using the Cylc GUI.
 
 Find out more
 
-  * Rose: <https://metomi.github.io/rose/doc/html/>
-  * Cylc: <https://cylc.github.io/doc/built-sphinx/>
+- Rose: <https://metomi.github.io/rose/doc/html/>
+- Cylc: <https://cylc.github.io/doc/built-sphinx/>
 
 Getting started with rose/cylc
 
@@ -36,12 +36,11 @@ on all LOTUS nodes and the dedicated cylc server:
 
 ## Add the location of the rose/cylc executables to $PATH
 
-    
-    
-    export PATH=/apps/jasmin/metomi/bin:$PATH
-    
+```bash
+export PATH=/apps/jasmin/metomi/bin:$PATH
+```
 
-Jobs must be scheduled from the JASMIN server: `**cylc.jasmin.ac.uk**`
+Jobs must be scheduled from the JASMIN server: `cylc.jasmin.ac.uk`
 
 All users with a JASMIN login account can log in to this server.
 
@@ -56,25 +55,19 @@ servers]({{< ref "graphical-linux-desktop-access-using-nx" >}}).
 
 ## Example rose/cylc suite
 
-Please see the JASMIN Workshop tutorial for a [worked
-example](https://github.com/cedadev/jasmin-
-workshop/tree/master/tutorials/tut02) of setting up a rose/cylc suite and run
-it on LOTUS.
+Please see the JASMIN Workshop tutorial for a [worked example](https://github.com/cedadev/jasmin-workshop/tree/master/tutorials/tut02) of setting up a rose/cylc suite and run it on LOTUS.
 
 ## Setting up the "suite.rc" file for use with LOTUS
 
-For use on JASMIN, you will need to configure the `suite.rc `to run on LOTUS
+For use on JASMIN, you will need to configure the `suite.rc` to run on LOTUS
 (using the Slurm scheduling tool):
 
-    
-    
-            [[[job submission]]]
-                method = slurm
-                execution time limit = PT15M
-            [[[directives]]]
-                -q = short-serial
-                -W = 05:00
-                -n = 1
-    
-
-
+```txt
+[[job submission]]
+    method = slurm
+    execution time limit = PT15M
+[[directives]]
+    -q = short-serial
+    -W = 05:00
+    -n = 1
+```

@@ -1,6 +1,6 @@
-# This file holds all menu entries for the docs sidebar
+# this file holds all menu entries for the docs sidebar
 
-- title: Getting started
+- title: getting started
   pages:
     - title: get started with jasmin
     - title: generate ssh key pair
@@ -22,37 +22,37 @@
     #- title: updating your ssh key
     #- title: migrate jasmin account from ceda
 
-- title: Interactive computing
+- title: interactive computing
   pages:
-    - title: Interactive computing overview   
-    - title: Check network details     
-    - title: Login servers
-    - title: Login problems    
-    - title: Graphical linux desktop access using nx
-    - title: Sci servers
-    - title: Tenancy sci analysis vms
-    - title: Transfer servers
-    - title: JASMIN notebooks service
-    - title: Creating a virtual environment in the notebooks service
-    - title: Project specific servers
-    #- title: Centos7 sci login xfer servers
+    - title: interactive computing overview   
+    - title: check network details     
+    - title: login servers
+    - title: login problems    
+    - title: graphical linux desktop access using nx
+    - title: sci servers
+    - title: tenancy sci analysis vms
+    - title: transfer servers
+    - title: jasmin notebooks service
+    - title: creating a virtual environment in the notebooks service
+    - title: project specific servers
+    #- title: centos7 sci login xfer servers
 
-- title: Batch computing
+- title: batch computing
   pages:
-    - title: LOTUS overview
-    - title: Slurm scheduler overview
-    - title: Slurm queues
-    - title: LOTUS cluster specification
-    - title: How to monitor slurm jobs
-    - title: How to submit a job
-    - title: How to submit an mpi parallel job
-    - title: Example job 2 calc md5s
-    - title: ORCHID GPU cluster
-    - title: GPU testing
-    - title: Slurm status
-    - title: LSF to Slurm quick reference
+    - title: lotus overview
+    - title: slurm scheduler overview
+    - title: slurm queues
+    - title: lotus cluster specification
+    - title: how to monitor slurm jobs
+    - title: how to submit a job
+    - title: how to submit an mpi parallel job
+    - title: example job 2 calc md5s
+    - title: orchid gpu cluster
+    - title: gpu testing
+    - title: slurm status
+    - title: lsf to slurm quick reference
 
-- title: Software on JASMIN
+- title: software on jasmin
   pages: 
     - title: software overview
     - title: quickstart software envs
@@ -63,8 +63,8 @@
     - title: conda environments and python virtual environments
     - title: creating and using miniconda environments
     - title: idl
-    - title: jasmin sci software
-    - title: jasmin software FAQs
+    - title: jasmin sci software environment
+    - title: jasmin software faqs
     - title: jaspy envs
     - title: matplotlib
     - title: nag library
@@ -75,25 +75,25 @@
     - title: software migration 2020
     - title: share software envs
 
-- title: Data transfer
+- title: data transfer
   pages:
-    - title: Data Transfer Overview
-    - title: Data Transfer Tools
-    - title: Globus transfers with JASMIN
+    - title: data transfer overview
+    - title: data transfer tools
+    - title: globus transfers with jasmin
     - title: bbcp
     - title: ftp and lftp
-    - title: Globus command line interface
-    #- title: globus connect personal
+    - title: globus command line interface
+    - title: globus connect personal
     - title: gridftp cert based auth
     - title: gridftp ssh auth
     - title: rclone
     - title: rsync scp sftp
-    - title: JASMIN external connections
+    - title: jasmin external connections
     - title: hpxfer access role
-    - title: Scheduling automating transfers
-    - title: Transfers from ARCHER2
+    - title: scheduling automating transfers
+    - title: transfers from archer2
 
-- title: Short term project storage
+- title: short term project storage
   pages:
     - title: apply for access to a gws
     - title: elastic tape command line interface hints
@@ -111,20 +111,20 @@
     - title: share gws data via http
     - title: using the jasmin object store
 
-- title: Long term archive storage
+- title: long term archive storage
   pages:
-    - title: CEDA Archive
+    - title: ceda archive
 
-- title: MASS
+- title: mass
   pages:
     - title: external access to mass faq
     - title: how to apply for mass access
     - title: moose the mass client user guide
     - title: setting up your jasmin account for access to mass
 
-- title: For cloud tenants
+- title: for cloud tenants
   pages:
-    - title: Introduction to the jasmin cloud
+    - title: introduction to the jasmin cloud
     - title: jasmin cloud portal
     - title: cluster as a service
     - title: cluster as a service kubernetes
@@ -132,17 +132,17 @@
     - title: cluster as a service slurm
     - title: cluster as a service pangeo
     - title: cluster as a service shared storage
-    - title: Adding and removing ssh keys from an external cloud vm
-    - title: Provisioning tenancy sci vm managed cloud
-    - title: Sysadmin guidance external cloud
-    - title: Best practice
+    - title: adding and removing ssh keys from an external cloud vm
+    - title: provisioning tenancy sci vm managed cloud
+    - title: sysadmin guidance external cloud
+    - title: best practice
 
-- title: Workflow management
+- title: workflow management
   pages:
-    - title: Rose cylc on JASMIN
-    - title: Using cron
+    - title: rose cylc on jasmin
+    - title: using cron
 
-- title: Uncategorized
+- title: uncategorized
   pages:
     - title: mobaxterm
     - title: requesting resources

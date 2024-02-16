@@ -6,24 +6,31 @@ slug: globus-connect-personal
 title: 'Globus Connect Personal'
 ---
 
-This article describes:
+## Introduction
 
-- how to create your own Globus endpoint using Globus Connect Personal
+This article describes how to create your own Globus endpoint using Globus Connect Personal.
 
-This would enable you to transfer files to/from another Globus Endpoint using
+Please read {{<link "globus-transfers-with-jasmin"/>}} first for a wider introduction to Globus.
+
+Using Globus Connect Personal (GCP) would enable you to transfer files to/from another Globus Endpoint using
 any of the Globus Online transfer tools ([Web app](https://app.globus.org),
 [CLI](https://docs.globus.org/cli/) or [Python SDK](https://globus-sdk-
 python.readthedocs.io/en/stable/)).
 
-For example, if you set up Globus Connect Personal (GCP) on your
+The term "endpoint" has changed meaning with version 5 of Globus, so users now interact with "collections". 
+but see {{<link "https://docs.globus.org/cli/collections_vs_endpoints/#:~:text=The%20Endpoint%20is%20used%20for%20some%20operations%20like%20collection%20listing,management%20capabilities%20and%20data%20transfers.">}}Endpoints vs Collections{{</link>}} for a fuller explanation of these entities.
+
+
+For example, if you set up GCP on your
 desktop/laptop, you could transfer data files to/from your home directory or
 other storage on JASMIN.
 
-**Notes:**
+{{<alert type="info">}}
 
-- You may NOT need to do this if your institution already has a Globus endpoint available to you.
-- You should NOT install this on a JASMIN server, as a Globus Endpoint is already provided for you.
-- If you plan to install it in your user area on your departmental server, check with your local IT administrator whether that's an OK thing to do. Point them at the relevant Globus documentation but note that you should be able to do the install with regular/user privileges and that the software does not need to be left running: it can be started for the duration of any data transfer tasks, then stopped once they have completed.
+- You may not need to do this if your institution already has a Globus endpoint available to you.
+- You should NOT install this on a JASMIN server, as a Globus endpoint is already provided for you.
+- If you plan to install it in your user area on your departmental server, check with your local IT administrator whether that's an OK thing to do. Point them at the relevant Globus documentation but note that you should be able to do the install with regular/user privileges and that the software does not usually need to be left running: it can be started for the duration of any data transfer tasks, then stopped once they have completed.
+{{</alert>}}
 
 ## Set up Globus Connect Personal on end-user machine
 
@@ -50,6 +57,8 @@ cd globusconnectpersonal-x.y.z
 ./globusconnectpersonal
 {{</command>}}
 
+(see links above for details of how to install without the graphical user interface, if you need to)
+
 Complete the installation using the setup key. If a graphical environment is
 detected, a window will appear, to guide you through the steps. If not, text
 prompts will appear.
@@ -64,8 +73,8 @@ for further details)**
 {{</command>}}
 
 If you use the web application at <https://app.globus.org>, you should now be
-able to see your endpoint listed under "Endpoints" when you filter by
-"Administered by me". You can now try listing the files on the endpoint and
+able to see your GCP endpoint listed under "Collections" when you filter by
+"Administered by you". You can now try listing the files on it and
 perhaps transferring a file to/from one of the Globus Tutorial endpoints using
 the web interface.
 
@@ -87,3 +96,11 @@ For example, you could list the files on the endpoint:
 {{<command>}}
 globus ls <endpoint_id>:<path>
 {{</command>}}
+
+## Set directory permissions
+
+**Don't forget** to configure which directory paths on your system can be accessed by GCP. By default these may NOT be accessible, so you need to allow access.
+
+- Windows: GCP icon in taskbar, then Options / Access
+- Mac: menu bar icon / Preferences / Access
+- Linux: by editing the config file `~/.globusonline/lta/config-paths`, see {{<link "https://docs.globus.org/globus-connect-personal/install/linux/#config-paths">}}here{{</link>}} for syntax.

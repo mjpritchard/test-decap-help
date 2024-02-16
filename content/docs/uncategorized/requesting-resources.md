@@ -1,23 +1,17 @@
 ---
-aliases: /article/5022-requesting-resources
+aliases:
+- /article/5022-requesting-resources
+- /article/4467-request-gws
 description: Requesting resources
 slug: requesting-resources
 tags:
-- projects
-- portal
 - quota
 - requirement
+- gws
+- workspace
+- tenancy
 title: Requesting resources
 ---
-
-This article explains:
-
-- How projects and resources are managed
-- How to access the JASMIN projects portal
-- How to create a project to record resource requirements (for a new project)
-- How to join an existing project, by invitation from another user
-- How to invite another user
-- How to request additional resources for an existing project
 
 ## How projects and resources are managed
 
@@ -35,7 +29,7 @@ provisioning.
 [See here for further details](https://jasmin.ac.uk/users/resources-projects),
 including a list of current consortia and their managers.
 
-##  Accessing the JASMIN projects portal
+## Accessing the JASMIN projects portal
 
 The [JASMIN projects portal](https://projects.jasmin.ac.uk) provides a place
 to:
@@ -69,7 +63,7 @@ about how to process requests for resources is available [here]({{< ref
 
 {{<image src="img/docs/requesting-resources/file-CFe92vMRQV.png" caption="">}}
 
-##  Create a project to record resource requirements
+## Create a project to record resource requirements
 
 To create a new project:
 
@@ -232,5 +226,4 @@ workspaces](https://accounts.jasmin.ac.uk/account/login/?next=/services/group_wo
 for other options.
 
 Another alternative, for easily accessible short-term storage for an
-individual user is the [JASMIN Transfer Cache (XFC) service]({{< ref "xfc"
->}}).
+individual user is the [JASMIN Transfer Cache (XFC) service]({{< ref "xfc" >}}).
