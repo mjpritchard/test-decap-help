@@ -1,6 +1,5 @@
 ---
 aliases: /article/4535-xfc
-date: 2021-04-22 14:59:13
 description: Transfer Cache (XFC)
 slug: xfc
 title: Transfer Cache (XFC)
@@ -9,7 +8,7 @@ title: Transfer Cache (XFC)
 ## What is the XFC?
 
 The Transfer Cache (XFC) provides a large area of temporary storage for
-users of JASMIN to store large files and / or a large volume of files on a
+users of JASMIN to store large files and/or a large volume of files on a
 short-term basis.
 
 Users are granted a quota of space in their user area on the temporary
@@ -45,14 +44,14 @@ The above figure shows an example of the quota system in use. The red line
 shows the temporal quota used (TQ) and the blue line shows the hard quota
 (HQ).
 
-  * The user initialises their XFC.
-  * On day **5** , the user copies a 1 TB file into their XFC
-  * For the next 4 weeks (on days **12** , **19** , **26** and **31** ) the user copies in another 1 TB file
-  * The TQ steadily grows until on day **79** it has reached it's limit of 300TB days, the first 1TB file is deleted
-  * On day **98** another 1TB file is deleted
-  * On day **120** , the user copies 10TB into their XFC
-  * On days **122** , **130** and **140** the 1TB files that were copied in on days **19** , **26** and **31** are deleted.
-  * On day **151** , the 10TB file is deleted.
+- The user initialises their XFC.
+- On day **5** , the user copies a 1 TB file into their XFC
+- For the next 4 weeks (on days **12** , **19** , **26** and **31** ) the user copies in another 1 TB file
+- The TQ steadily grows until on day **79** it has reached it's limit of 300TB days, the first 1TB file is deleted
+- On day **98** another 1TB file is deleted
+- On day **120** , the user copies 10TB into their XFC
+- On days **122** , **130** and **140** the 1TB files that were copied in on days **19** , **26** and **31** are deleted.
+- On day **151** , the 10TB file is deleted.
 
 ### Default Quota values:
 
@@ -112,14 +111,14 @@ scheduled deletions etc) of a user's XFC storage volume:
   1. To see all the available options: `xfc -h`
   2. To initialise your user area: `xfc init`
 
-```
+{{<command user="user" host="sci1">}}
 xfc init
-** SUCCESS ** - user initiliazed with:  
-username: username  
-email: user.name@stfc.ac.uk  
-quota: 300TB  
-path: /work/xfc/vol1/user_cache/username
-```
+(out)** SUCCESS ** - user initiliazed with:
+(out)username: username  
+(out)email: user.name@stfc.ac.uk  
+(out)quota: 300TB  
+(out)path: /work/xfc/vol1/user_cache/username
+{{</command>}}
 
 The `path` is the path on the JASMIN system to the user area. Data can be
 copied here using standard UNIX command-line tools cp, mv, rsync.
@@ -127,74 +126,96 @@ Subdirectories can be created using mkdir. Change read/write permissions on
 the directories and files using `chmod`, etc. The user area is just a standard
 POSIX directory and so any POSIX commands can be used on it.
 
-  3. To get the user area path again: ` xfc path `
+  3. To get the user area path again: 
+  
+{{<command user="user" host="sci1">}}
+xfc path
+(out)/work/xfc/vol1/user_cache/username
+{{</command>}}
 
-```
-/work/xfc/vol1/user_cache/username
-```    	
 
-  4. To set the user email for notifications: ` xfc email --email=user.name@stfc.ac.uk `
-```
-** SUCCESS ** - user email updated to: user.name@stfc.ac.uk
-```
+  4. To set the user email for notifications: 
+  
+{{<command user="user" host="sci1">}}
+xfc email --email=user.name@stfc.ac.uk
+(out)** SUCCESS ** - user email updated to: user.name@stfc.ac.uk
+{{</command>}}
 
   5. To query the email set for the user: `xfc email `
-```
-user.name@stfc.ac.uk
-```
-  6. To switch deletion notifications on / off: ` xfc notify `
-```
-** SUCCESS ** - user notifcations updated to: on
-```    	
+  
+{{<command user="user" host="sci1">}}
+xfc email
+(out)user.name@stfc.ac.uk
+{{</command>}}
 
-  7. To see remaining quota: ` xfc quota `
-```    
-------------------------
-Quota for user: username 
-------------------------
-Temporal Quota (TQ)
-  Used : 1.7 TB  
-  Allocated : 300.0 TB
-  Remaining : 298.3 TB
-------------------------  
-Hard Quota (HQ)
-  Used      : 444.9 GB  
-  Allocated : 40.0 TB  
-  Remaining : 39.6 TB
-```
+  6. To switch deletion notifications on / off:
 
-  8. To see which files are scheduled for deletion: ` xfc schedule `
-    
-        No files scheduled for deletion
-    	
+{{<command user="user" host="sci1">}}
+xfc notify
+(out)** SUCCESS ** - user notifcations updated to: on
+{{</command>}}
 
-  9. To list the files in your user area: ` xfc list`
-    
-    user_cache/username/historical/.ftpaccess 
-    user_cache/username/historical/00README_catalogue_and_licence.txt 
-    user_cache/username/historical/day/atmos/day/r1i1p1/COPY_CURRENT_20150326.txt
-    	
+  7. To see remaining quota:
+
+{{<command user="user" host="sci1">}}
+xfc quota
+(out)------------------------
+(out)Quota for user: username 
+(out)------------------------
+(out)Temporal Quota (TQ)
+(out)  Used : 1.7 TB  
+(out)  Allocated : 300.0 TB
+(out)  Remaining : 298.3 TB
+(out)------------------------  
+(out)Hard Quota (HQ)
+(out)  Used      : 444.9 GB  
+(out)  Allocated : 40.0 TB  
+(out)  Remaining : 39.6 TB
+{{</command>}}
+
+  8. To see which files are scheduled for deletion:
+
+{{<command user="user" host="sci1">}}
+xfc schedule
+(out)No files scheduled for deletion
+{{</command>}}
+
+  9. To list the files in your user area:
+
+{{<command user="user" host="sci1">}}
+xfc list
+(out)user_cache/username/historical/.ftpaccess 
+(out)user_cache/username/historical/00README_catalogue_and_licence.txt 
+(out)user_cache/username/historical/day/atmos/day/r1i1p1/COPY_CURRENT_20150326.txt
+{{</command>}}
 
 Pattern matching can be used to search for a file. This is just a simple
-substring search, e.g. ` xfc list -m r1i1p1_19500101-19541231.nc `
+substring search, e.g. `r1i1p1_19500101-19541231.nc`
 
-```
-user_cache/username/historical/day/atmos/day/r1i1p1/v20120907/va/va_day_CMCC-CESM_historical_r1i1p1_19500101-19541231.nc
-user_cache/username/historical/day/atmos/day/r1i1p1/v20120907/rsds/rsds_day_CMCC-CESM_historical_r1i1p1_19500101-19541231.nc 
-user_cache/username/historical/day/atmos/day/r1i1p1/v20120907/prc/prc_day_CMCC-CESM_historical_r1i1p1_19500101-19541231.nc
-```    	
+{{<command user="user" host="sci1">}}
+xfc list -m r1i1p1_19500101-19541231.nc
+(out)user_cache/username/historical/day/atmos/day/r1i1p1/v20120907/va/va_day_CMCC-CESM_historical_r1i1p1_19500101-19541231.nc
+(out)user_cache/username/historical/day/atmos/day/r1i1p1/v20120907/rsds/rsds_day_CMCC-CESM_historical_r1i1p1_19500101-19541231.nc
+(out)user_cache/username/historical/day/atmos/day/r1i1p1/v20120907/prc/prc_day_CMCC-CESM_historical_r1i1p1_19500101-19541231.nc
+{{</command>}}
 
 File names are given relative to the `user_cache/ ` directory. To list the
-full file path use the `-f ` list option: `xfc list -f`
+full file path use the `-f ` list option:
+
+{{<command user="user" host="sci1">}}
+xfc list -f
+{{</command>}}
 
   10. To predict when the files will be deleted, if no other files are added to the user area, and none of the current files are removed: ` xfc predict`
-    
-    Quota is predicted to be exceeded on 21 Aug 2019 14:58 by 252.1 GB 
-    Files predicted to be deleted  
-    user_cache/username/historical/.ftpaccess
-    user_cache/username/historical/00README_catalogue_and_licence.txt
-    user_cache/username/historical/day/atmos/day/r1i1p1/COPY_CURRENT_20150326.txt
-    	
+
+{{<command user="user" host="sci1">}}
+xfc predict
+(out)Quota is predicted to be exceeded on 21 Aug 2019 14:58 by 252.1 GB
+(out)Files predicted to be deleted  
+(out)user_cache/username/historical/.ftpaccess
+(out)user_cache/username/historical/00README_catalogue_and_licence.txt
+(out)user_cache/username/historical/day/atmos/day/r1i1p1/COPY_CURRENT_20150326.txt
+{{</command>}}
 
 ## Example of initial use
 
@@ -203,26 +224,17 @@ XFC.
 
 ### initial setup
 
-    
-    xfc init 
-    xfc path
-    xfc email --email=user.name@email.com
-    xfc notify
-    	
-
-### copy data
-
-    
-    mkdir /subdir
-    cp /some/data/path /subdir
-    	
+{{<command user="user" host="sci1">}}
+xfc init
+xfc path
+xfc email --email=user.name@email.com
+xfc notify
+{{</command>}}
 
 ### query the quota
 
-    
-    xfc quota 
-    xfc predict 
-    xfc schedule
-    	
-
-
+{{<command user="user" host="sci1">}}
+xfc quota 
+xfc predict 
+xfc schedule
+{{</command>}}
