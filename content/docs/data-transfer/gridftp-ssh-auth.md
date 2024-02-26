@@ -169,9 +169,9 @@ and the JASMIN host is the server specified in the destination URI. The
 following command should work connecting to one of the following transfer
 servers: (see also [Transfer Servers]({{< ref "transfer-servers" >}}))
 
-  - `xfer[12].jasmin.ac.uk`
-  - `xfer3.jasmin.ac.uk` ([additional access role](https://accounts.jasmin.ac.uk/services/additional_services/xfer-sp) required)
-  - `hpxfer[12].jasmin.ac.uk` ([high-performance data transfer access]({{< ref "hpxfer-access-role" >}}) required)
+- `xfer[12].jasmin.ac.uk`
+- `xfer3.jasmin.ac.uk` ([additional access role](https://accounts.jasmin.ac.uk/services/additional_services/xfer-sp) required)
+- `hpxfer[12].jasmin.ac.uk` ([high-performance data transfer access]({{< ref "hpxfer-access-role" >}}) required)
 
 Push data to JASMIN from a remote server:
 
