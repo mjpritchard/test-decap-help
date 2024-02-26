@@ -60,4 +60,3 @@ particularly if you have multiple terminal windows open on your own computer,
 that you do not accidentally attempt `sudo`on a JASMIN machine: expect some
 follow-up from the JASMIN team if you do!
 {{</alert>}}
-

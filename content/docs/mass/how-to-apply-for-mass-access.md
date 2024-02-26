@@ -1,9 +1,5 @@
 ---
 aliases: /article/228-how-to-apply-for-mass-access
-categories:
-- MASS
-collection: jasmin-documentation
-date: 2021-09-07 12:33:03
 description: How to apply for MASS access
 slug: how-to-apply-for-mass-access
 title: How to apply for MASS access
@@ -13,9 +9,9 @@ title: How to apply for MASS access
 
 To access data held in the Met Office MASS archive, you will need:
 
-  - a sponsor 
-  - access to the mass-cli1 client machine
-  - a MASS account 
+- a sponsor 
+- access to the mass-cli1 client machine
+- a MASS account 
 
 Your sponsor will need to be a **Senior Met Office Scientist** with whom you
 are working on a collaborative research project. If you are a Met Office
@@ -36,14 +32,14 @@ Please note that the link above is only visible to those in the Met Office.
 The following information will be asked for, so please provide your sponsor
 with any details they may not have:
 
-  - Your full name
-  - Your official email address
-  - Your organization's name
-  - Your department name
-  - The host country of your organization
-  - A list of MASS projects and/or data sets that you need access to. A full MOOSE dataset path is required, and your sponsor should help you determine this.
-  - Your JASMIN username
-  - Your JASMIN user ID number (UID). You can get this by typing echo $UID at the terminal on any JASMIN machine.
+- Your full name
+- Your official email address
+- Your organization's name
+- Your department name
+- The host country of your organization
+- A list of MASS projects and/or data sets that you need access to. A full MOOSE dataset path is required, and your sponsor should help you determine this.
+- Your JASMIN username
+- Your JASMIN user ID number (UID). You can get this by typing echo $UID at the terminal on any JASMIN machine.
 
 The information you provide to the Met Office will be treated in accordance
 with the [Met Office Privacy Policy](https://www.metoffice.gov.uk/about-
@@ -73,5 +69,3 @@ Note: If you have access to MASS on other systems you cannot copy those MOOSE
 credentials file/s onto JASMIN – they will not work! Please also see the
 [External Users’ MOOSE Guide]({{< ref "moose-the-mass-client-user-guide" >}})
 for what MOOSE commands are available on JASMIN.
-
-

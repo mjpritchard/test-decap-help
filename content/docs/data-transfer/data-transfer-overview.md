@@ -1,6 +1,5 @@
 ---
 aliases: /article/219-data-transfer-overview
-date: 2021-06-16 17:39:34
 description: Overview of data transfer
 slug: data-transfer-overview
 title: Data transfer overview

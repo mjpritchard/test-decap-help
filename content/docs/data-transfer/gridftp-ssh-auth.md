@@ -1,6 +1,5 @@
 ---
 aliases: /article/3806-data-transfer-tools-gridftp-ssh-auth
-date: 2021-06-16 17:41:08
 description: 'Data Transfer Tools: GridFTP (SSH authentication)'
 slug: gridftp-ssh-auth
 title: 'GridFTP (SSH authentication)'
@@ -8,7 +7,6 @@ title: 'GridFTP (SSH authentication)'
 
 This article describes how to transfer data using GridFTP with SSH
 authentication.
-
 
 {{<alert type="info">}}The `globus-url-copy` command used here should not be confused with the Globus online data transfer service. They used to be associated, but no longer. If you are starting out and looking for a reliable, high-performance transfer method, the recommendation now is to learn about [Globus Transfers with JASMIN](../globus-transfers-with-jasmin) (using the Globus online data transfer service) instead of command-line gridftp as described in this document.{{</alert>}}
 
@@ -39,10 +37,9 @@ Since you will be using SSH as the authentication mechanism, you should ensure
 that your initial connection to the JASIMN transfer server is made with the -A
 option enabled, to enable agent forwarding:
 
-    
-    
-    $ ssh -A username1@hpxfer1.jasmin.ac.uk
-    
+{{<command user="user" host="localhost">}}
+ssh -A username1@hpxfer1.jasmin.ac.uk
+{{</command>}}
 
 Note that in order to use `hpxfer[12].jasmin.ac.uk` you will need to have
 [high-performance data transfer access]({{< ref "hpxfer-access-role" >}}) on
@@ -54,10 +51,9 @@ on the remote server (This will only work if you already know that that server
 supports GridFTP over SSH). In this case, we are making the connection to a
 fictitious server `gridftp.remotesite.ac.uk`:
 
-    
-    
-    $ globus-url-copy -vb -list sshftp://username2@gridftp.remotesite.ac.uk/
-    
+{{<command user="username" host="hpxfer1">}}
+globus-url-copy -vb -list sshftp://username2@gridftp.remotesite.ac.uk/
+{{</command>}}
 
 If `username` and `username2` are the same (on the different systems, the
 `username@` part of the sshftp URI can be omitted.
@@ -79,10 +75,9 @@ the `username@` part of the sshftp URI can be omitted.
 Please consult the documentation for the `globus-url-copy` command for the
 full range of options and arguments.
 
-    
-    
-    $ globus-url-copy -help
-    
+{{<command user="username" host="hpxfer1">}}
+globus-url-copy -help
+{{</command>}}
 
 See also <http://toolkit.globus.org/toolkit/docs/latest-
 stable/gridftp/user/#gridftp-user-basic>
@@ -91,10 +86,9 @@ stable/gridftp/user/#gridftp-user-basic>
 destination on the local (client) machine, for example a group workspace on
 JASMIN:
 
-    
-    
-    $ globus-url-copy -vb sshftp://username@gridftp.remotesite.ac.uk/home/users/USERNAME/myfile /group_workspaces/jasmin/myworkspace/myfile
-    
+{{<command user="username" host="hpxfer1">}}
+globus-url-copy -vb sshftp://username@gridftp.remotesite.ac.uk/home/users/USERNAME/myfile /group_workspaces/jasmin/myworkspace/myfile
+{{</command>}}
 
 The `-p N` and `-fast` options can additionally be used in combination to
 enable `N` parallel streams at once, as shown below. You can experiment with N
@@ -102,10 +96,9 @@ in the range 4 to 32 to obtain the best performance, but please be aware that
 many parallel transfers can draw heavily on shared resources and degrade
 performance for other users:
 
-    
-    
-    $ globus-url-copy -vb -p 16 -fast sshftp://username@gridftp.remotesite.ac.uk/home/users/USERNAME/myfile /group_workspaces/jasmin/myworkspace/myfile
-    
+{{<command user="username" host="hpxfer1">}}
+globus-url-copy -vb -p 16 -fast sshftp://username@gridftp.remotesite.ac.uk/home/users/USERNAME/myfile /group_workspaces/jasmin/myworkspace/myfile
+{{</command>}}
 
 3\. Test performance with large files by downloading from /dev/zero on the
 remote server to /dev/null locally. This excludes any interaction with either
@@ -115,26 +108,24 @@ that the performance takes a while to "ramp up", so you will not see the best
 rates if transferring small files individually as the process never gets up to
 full speed:
 
-    
-    
-    $ globus-url-copy -vb -p 16 -fast sshftp://username@gridftp.remotesite.ac.uk/dev/zero /dev/null
-    
+{{<command user="username" host="hpxfer1">}}
+globus-url-copy -vb -p 16 -fast sshftp://username@gridftp.remotesite.ac.uk/dev/zero /dev/null
+{{</command>}}
 
 Press CTRL-C to interrupt the transfer. Alternatively you can specify that the
 transfer should continue for a fixed duration in seconds using the `-t`
 option. In this example, data is transferred from the remote host
 gridftp.remotesite.ac.uk to jasmin-xfer2.ceda.ac.uk.
 
-    
-    
-    [username@hpxfer1 ~]$ globus-url-copy -p 16 -fast -t 10 -vb sshftp://username2@gridftp.remotesite.ac.uk/dev/zero /dev/null
-    Source: sshftp://username2@gridftp.remotesite.ac.uk/dev/
-    Dest:   file:///dev/
-      zero  ->  null
-    
-       7797473280 bytes       929.52 MB/sec avg      1024.49 MB/sec inst
-    Cancelling copy...
-    
+{{<command user="username" host="hpxfer1">}}
+globus-url-copy -p 16 -fast -t 10 -vb sshftp://username2@gridftp.remotesite.ac.uk/dev/zero /dev/null
+(out)    Source: sshftp://username2@gridftp.remotesite.ac.uk/dev/
+(out)    Dest:   file:///dev/
+(out)      zero  ->  null
+(out)    
+(out)       7797473280 bytes       929.52 MB/sec avg      1024.49 MB/sec inst
+(out)    Cancelling copy...
+{{</command>}}
 
 Note the transfer rate achieved in Megabytes/second (MB/sec), although for
 various reasons this is not to be relied upon as an accurate expectation of
@@ -146,17 +137,16 @@ this is considered by some as easier to use.
 4\. Recursively download the contents of a directory on a remote location to a
 local destination.
 
-    
-    
-    $ globus-url-copy -vb -p 4 -fast -cc 4 -cd -r sshftp://username2@gridftp.remotesite.ac.uk/home/users/USERNAME/mydir/ /group_workspaces/jasmin/myworkspace/mydir/
-    
+{{<command user="username" host="hpxfer1">}}
+globus-url-copy -vb -p 4 -fast -cc 4 -cd -r sshftp://username2@gridftp.remotesite.ac.uk/home/users/USERNAME/mydir/ /group_workspaces/jasmin/myworkspace/mydir/
+{{</command>}}
 
 Where:
 
-  * `-cc N` requests `N` concurrent transfers (in this case, each with `p=4` parallel streams)
-  * `-cd` requests creation of the destination directory if this does not already exist
-  * `-r` denotes recursive transfer of directories
-  * `-sync` and `-sync-level` options can be used to synchronise data between the two locations, where destination files do not exist or differ (by criteria that can be selected) from corresponding source files. See `-help` option for details.
+- `-cc N` requests `N` concurrent transfers (in this case, each with `p=4` parallel streams)
+- `-cd` requests creation of the destination directory if this does not already exist
+- `-r` denotes recursive transfer of directories
+- `-sync` and `-sync-level` options can be used to synchronise data between the two locations, where destination files do not exist or differ (by criteria that can be selected) from corresponding source files. See `-help` option for details.
 
 ## Upload data (push data from JASMIN to remote server)
 
@@ -164,10 +154,9 @@ The above commands can also be adapted to invoke transfers from a local source
 to a remote destination, i.e. uploading data, since the commands all take the
 following general form:
 
-    
-    
-    $ globus-url-copy [OPTIONS] source-uri desination-uri
-    
+{{<command user="username" host="hpxfer1">}}
+globus-url-copy [OPTIONS] source-uri desination-uri
+{{</command>}}
 
 Be sure to check your connection with the remote machine via a simple SSH
 login and then a directory listing as shown above.
@@ -180,15 +169,17 @@ and the JASMIN host is the server specified in the destination URI. The
 following command should work connecting to one of the following transfer
 servers: (see also [Transfer Servers]({{< ref "transfer-servers" >}}))
 
-  * `xfer[12].jasmin.ac.uk`
-  * `xfer3.jasmin.ac.uk` ([additional access role](https://accounts.jasmin.ac.uk/services/additional_services/xfer-sp) required)
-  * `hpxfer[12].jasmin.ac.uk` ([high-performance data transfer access]({{< ref "hpxfer-access-role" >}}) required)
+  - `xfer[12].jasmin.ac.uk`
+  - `xfer3.jasmin.ac.uk` ([additional access role](https://accounts.jasmin.ac.uk/services/additional_services/xfer-sp) required)
+  - `hpxfer[12].jasmin.ac.uk` ([high-performance data transfer access]({{< ref "hpxfer-access-role" >}}) required)
 
 Push data to JASMIN from a remote server:
 
-    
-    
-    $ globus-url-copy -vb -p 8 -fast mydir/myfile sshftp://username@hpxfer1.jasmin.ac.uk/group_workspaces/jasmin/myworkspace/mydir/
-    
+{{<command user="username2" host="remotehost">}}
+globus-url-copy -vb -p 8 -fast mydir/myfile sshftp://username@hpxfer1.jasmin.ac.uk/group_workspaces/jasmin/myworkspace/mydir/
+{{</command>}}
 
+Note that for this to work, you need to be able to authenticate over SSH to the JASMIN host. This should be possible if you can log in interactively, but will NOT work if you are using the command in a cron job or other situation where your ssh-agent (on the host remote to JASMIN) is not running and/or does not have access to your private key. For those situations, consider using either
 
+- {{<link "globus-transfers-with-jasmin" >}}Globus (recommended){{</link>}}, or
+- {{<link "gridftp-cert-based-auth">}}Gridftp using certificate-based authentication{{</link>}})

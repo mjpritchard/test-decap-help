@@ -1,8 +1,5 @@
 ---
 aliases: /article/3836-example-job-2-calc-md5s
-categories:
-- LOTUS Batch Computing
-collection: jasmin-documentation
 description: 'Example Job 2: Calculating MD5 Checksums on many files'
 slug: example-job-2-calc-md5s
 title: 'Example Job 2: Calculating MD5 Checksums on many files'
@@ -14,36 +11,37 @@ point for developing their own workflows on LOTUS.
 
 ## Case 1: Calculating MD5 Checksums on many files
 
-This is a simple case because (1) the archive only needs to be read by the
-code and (2) the code that we need to run involves only the basic linux
-commands so there are no issues with picking up dependencies from elsewhere.
+This is a simple case because:
 
-**Case Description**
+1. the archive only needs to be read by the code and
+2. the code that we need to run involves only the basic linux commands so there are no issues with picking up dependencies from elsewhere.
 
-  * we want to calculate the MD5 checksums of about 220,000 files. It will take a day or two to run them all in series.
-  * we have a text file that contains 220,000 lines - one file per line.
+### Case Description**
 
-**Solution under LOTUS**
+- we want to calculate the MD5 checksums of about 220,000 files. It will take a day or two to run them all in series.
+- we have a text file that contains 220,000 lines - one file per line.
 
-  * Split the 220,000 lines into 22 files of 10,000 lines.
-  * Write a template script to: 
-    * Read a text file full of file paths
-    * Run the `md5sum` command on each file and log the result.
-  * Write a script to create 22 new scripts (based on the template script), each of which takes one of the input files and works through it.
+### Solution under LOTUS
 
-**And this is how it looks**
+- Split the 220,000 lines into 22 files of 10,000 lines.
+- Write a template script to: 
+- Read a text file full of file paths
+- Run the `md5sum` command on each file and log the result.
+- Write a script to create 22 new scripts (based on the template script), each of which takes one of the input files and works through it.
 
-Log in to jasmin-sci1 server:
+### And this is how it looks
 
-```
+Log in to the `sci` server (from a `login` server):
+
+{{<command user="user" host="login1">}}
 ssh -A <username>@sci1.jasmin.ac.uk
-```
+{{</command>}}
 
 Split the big file
 
-```
+{{<command user="user" host="sci1">}}
 split -l 10000 -d file_list.txt # Produces 22 files called "x00"..."x21"
-```
+{{</command>}}
 
 Create the template file: `scan_files_template.sh`
 
@@ -71,7 +69,7 @@ done
 
 Submit all 22 jobs to LOTUS:
 
-```
+```bash
 for i in `ls /home/users/astephen/sst_cci/to_scan/` ; do      
     echo $i     
     sbatch -p short-serial -o /home/users/astephen/sst_cci/output/$i /home/users/astephen/sst_cci/bin/scan_files_${i}.sh  
@@ -80,20 +78,21 @@ done
 
 Watch the jobs running:
 
+{{<command user="user" host="sci1">}}
 squeue -u <username>
+{{</command>}}
 
-**And the result**
+### And the result
 
 All jobs ran within about an hour.
 
 ## Case 2: Checksumming CMIP5 Data
 
 A variation on Case 2 has been used for checksumming datasets in the CMIP5
-archive. The script below will find all NetCDF files in a DRS dataset and
+archive. The Python code below will find all NetCDF files in a DRS dataset and
 generate a checksums file and error log. Each dataset is submitted as a
 separate bsub job.
 
-    
 ```python
 """ 
 Checksum a CMIP5 dataset
@@ -140,12 +139,8 @@ if __name__ == '__main__':
 If you have a file containing a list of dataset ids you can submit each as a
 separate job by invoking the above script as follows:
 
-```console
-./checksum_dataset.py $(cat datasets_to_checksum.dat) 
-
-sbatch-q short-serial -J cmip5.output1.MOHC.HadGEM2-ES.rcp85.day.seaIce.day.r1i1p1.v20111128 -o cmip5.output1.MOHC.HadGEM2-ES.rcp85.day.seaIce.day.r1i1p1.v20111128.checksums -e cmip5.output1.MOHC.HadGEM2-ES.rcp85.day.seaIce.day.r1i1p1.v20111128.err /usr/bin/md5sum '/badc/cmip5/data/cmip5/output1/MOHC/HadGEM2-ES/rcp85/day/seaIce/day/r1i1p1/v20111128/*/*.nc' 
-
-Job <745307> is submitted to queue <lotus>.  ...
-``` 
-
-
+{{<command user="user" host="sci1">}}
+./checksum_dataset.py $(cat datasets_to_checksum.dat)
+sbatch-q short-serial -J cmip5.output1.MOHC.HadGEM2-ES.rcp85.day.seaIce.day.r1i1p1.v20111128 -o cmip5.output1.MOHC.HadGEM2-ES.rcp85.day.seaIce.day.r1i1p1.v20111128.checksums -e cmip5.output1.MOHC.HadGEM2-ES.rcp85.day.seaIce.day.r1i1p1.v20111128.err /usr/bin/md5sum '/badc/cmip5/data/cmip5/output1/MOHC/HadGEM2-ES/rcp85/day/seaIce/day/r1i1p1/v20111128/*/*.nc'
+(out)Job <745307> is submitted to queue <lotus>.  ...
+{{</command>}}
