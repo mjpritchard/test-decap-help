@@ -1,6 +1,5 @@
 ---
 aliases: /article/4733-matplotlib
-date: 2021-05-14 11:59:35
 description: Using Matplotlib for visualisation on JASMIN
 slug: matplotlib
 title: Using Matplotlib for visualisation on JASMIN
@@ -18,37 +17,35 @@ PNG file using matplotlib.
 
 Load the Jaspy Python 3 environment, and start a Python session:
 
-    
-    
-    $ module load jaspy
-    $ python
-    
+{{<command user="user" host="sci1">}}
+module load jaspy
+python
+{{</command>}}
 
 In python, set some x-values, y-values, axis labels and a title, and plot:  
 
-    
-    
-    import matplotlib
-    matplotlib.use('agg')
-    
-    import matplotlib.pyplot as plt
-    
-    x_values = [1, 5, 3, 9, 14]
-    y_values = [2000, 2005, 2010, 2015, 2020]
-    
-    x_label = 'Temperature (degC)'
-    y_label = 'Year'
-    
-    title = 'Average temperature of garden shed (2000-2020)'
-    
-    plt.plot(y_values, x_values, 'g--')
-    
-    plt.ylabel(y_label)
-    plt.xlabel(x_label)
-    plt.title(title)
-    
-    plt.savefig('output.png')
-    
+```python
+import matplotlib
+matplotlib.use('agg')
+
+import matplotlib.pyplot as plt
+
+x_values = [1, 5, 3, 9, 14]
+y_values = [2000, 2005, 2010, 2015, 2020]
+
+x_label = 'Temperature (degC)'
+y_label = 'Year'
+
+title = 'Average temperature of garden shed (2000-2020)'
+
+plt.plot(y_values, x_values, 'g--')
+
+plt.ylabel(y_label)
+plt.xlabel(x_label)
+plt.title(title)
+
+plt.savefig('output.png')
+```
 
 ## Plotting with matplotlib on LOTUS
 
@@ -58,20 +55,18 @@ done **before** importing `matplotlib.pyplot`.
 
 On JASMIN it is safe to use:
 
-    
-    
-    import matplotlib
-    matplotlib.use('agg')
-    import matplotlib.pyplot as plt
-    
+```python
+import matplotlib
+matplotlib.use('agg')
+import matplotlib.pyplot as plt
+```
 
 or alternatively, the `MPLBACKEND` environment variable can be set in the job
 script before invoking python:
 
-    
-    
-    export MPLBACKEND=agg
-    
+```bash
+export MPLBACKEND=agg
+```
 
 If you do not set this option or you choose an alternative backend then you
 may see **failures which include very large dump (error) files being written
@@ -84,12 +79,9 @@ to use the default GTK backend on LOTUS (as GTK is only available in an
 interactive X-windows environment). The solution is to use `agg`, as described
 above.  
 
-    
-    
-    ValueError: Namespace Gtk not available for version 3.0
-    
+{{<command>}}
+(out)ValueError: Namespace Gtk not available for version 3.0
+{{</command>}}
 
 For more information please see the [matplotlib back-ends
 page](https://matplotlib.org/faq/usage_faq.html#what-is-a-backend).
-
-
