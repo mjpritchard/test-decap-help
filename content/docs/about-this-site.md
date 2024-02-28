@@ -20,7 +20,6 @@ This site should redirect you from any previous URLs you may have stored, but pl
 - {{< icon fas tag >}} {{<link url="/tags"  >}}tags{{</link>}} to group together articles covering similar topics
 - links between articles
 
-
 ## Issues with this site
 
 If you spot any broken links or incorrect information, please let us know by opening an issue in the GitHub repository for this site's source code:
