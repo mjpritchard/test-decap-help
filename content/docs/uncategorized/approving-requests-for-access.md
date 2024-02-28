@@ -1,13 +1,12 @@
 ---
 aliases: /article/4490-resource-applications
-date: 2020-07-21 09:00:40
-description: 'Approving requests for access roles in the JASMIN Accounts Portal'
+description: Approving requests for access roles
 slug: approving-requests-for-access
 tags:
 - approvals
-- resources
 - application
-title: 'Approving requests for access'
+- access
+title: Approving requests for access roles
 ---
 
 Managers of JASMIN resources will also be set up to approve applications from

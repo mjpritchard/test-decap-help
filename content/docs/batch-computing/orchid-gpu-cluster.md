@@ -1,5 +1,7 @@
 ---
-aliases: /article/5068-gpu-cluster-orchid
+aliases:
+- /article/5068-gpu-cluster-orchid
+- /article/4951-gpu-testing
 date: 2023-05-26 14:25:07
 description: Orchid GPU cluster
 title: Orchid GPU cluster

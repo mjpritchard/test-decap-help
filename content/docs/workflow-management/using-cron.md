@@ -23,7 +23,11 @@ cron service machine is provided. `cron.jasmin.ac.uk` is configured like
 `sci*.jasmin.ac.uk`, except cron is enabled. Anyone who can log into `sci*`
 should also be able to login to `cron.jasmin.ac.uk`. (the actual hostname of
 the machine is `cron1.ceda.ac.uk` but please refer to it as
-`cron.jasmin.ac.uk` wherever possible)
+`cron.jasmin.ac.uk` wherever possible).
+
+An additional transfer server `xfer3.jasmin.ac.uk` is equipped with `cron` for
+scheduling transfers only (no processing), although other methods for
+{{<link "../data-transfer/scheduling-automating-transfers">}}scheduling/automating transfers{{</link>}} are available.
 
 There are a few rules of the road to using this service:
 
@@ -70,10 +74,10 @@ with the right options.
 
 The flow of the crontamer script is like this:
 
-  * Check for existing lock file to indicate if the script is already running. If the lockfile is there and it can see the matching process still running then it exits silently. 
-  * If the lock file is not there or it can't see the matching process on the system then it starts the wrapped script. 
-  * Periodically check the wrapped script is running. If the script fails, with a non-zero exit return code, then it can email you.
-  * If the script has been running longer than specified timeout (default 12hr) then it will be killed. 
+- Check for existing lock file to indicate if the script is already running. If the lockfile is there and it can see the matching process still running then it exits silently. 
+- If the lock file is not there or it can't see the matching process on the system then it starts the wrapped script. 
+- Periodically check the wrapped script is running. If the script fails, with a non-zero exit return code, then it can email you.
+- If the script has been running longer than specified timeout (default 12hr) then it will be killed. 
 
 Unless a named lock file is given the lock files are created in the /tmp
 directory as
@@ -87,3 +91,7 @@ checks or find them helpful for identifying problems running their scripts.
 The {unique_id} is based on a combination of the username, passed script and
 arguments, enabling multiple calls of a script with different arguments to be
 handled separately.
+
+All the principles above apply whether using cron on:
+- the cron server `cron.jasmin.ac.uk` (for initiating processing workflows)
+- the transfer server `xfer3.jasmin.ac.uk` (for initiating automated transfers)

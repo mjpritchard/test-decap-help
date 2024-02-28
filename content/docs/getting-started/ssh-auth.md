@@ -10,7 +10,7 @@ JASMIN employs SSH public key authentication for login instead of username and
 password. This article provides a basic overview of public key
 authentication.
 
-##  Public key authentication (for SSH)
+## Public key authentication (for SSH)
 
 SSH stands for "Secure Shell", a protocol that allows login to another
 computer over the network. This allows the user to execute commands on a
@@ -20,7 +20,7 @@ may pass through the connection.
 
 Public key authentication is an alternative means of identifying yourself to a
 login server, instead of typing a password. It is more secure and flexible,
-but more difficult to set up.
+but can appear more difficult for new users.
 
 ## Why is public key authentication more secure than a password?
 
@@ -29,9 +29,15 @@ password when you log on to a server. If the server you are working on has
 been compromised then an attacker could learn your password and then use it to
 gain access to the remote server you are connecting to.
 
-With public key authentication the attacker requires both knowledge of the
+With public key authentication, the private key is kept only on your own machine
+and the passphrase to unlock it is entered there too. An attacker would require both knowledge of the
 passphrase used to protect your private key as well as the private key file
 itself.
+
+{{<alert type="danger">}}
+It is imperative that your private key is protected by a strong passphrase so
+that only you can use it.
+{{</alert>}}
 
 ## Public key authentication setup
 
@@ -62,7 +68,4 @@ private key so it is only readable by you.
 ## Using public key authentication with other applications
 
 Many other tools use the SSH protocol for their communication with remote
-servers. SSH public key authentication can be used with many tools, including
-rsync, scp, git and subversion.
-
-
+servers or services, for example rsync, scp, git and subversion.

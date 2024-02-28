@@ -1,9 +1,8 @@
 ---
 aliases: /article/3839-gws-etiquette
-date: 2020-12-22 11:11:27
 description: GWS  etiquette
 slug: gws-etiquette
-title: GWS  etiquette
+title: GWS etiquette
 ---
 
 This article highlights the essential principles of working with group
@@ -12,15 +11,13 @@ workspaces.
 ##  Keeping informed
 
 Please maintain contact throughout the life of the GWS via the following
-channels:
+methods:
 
-  * Using the [JASMIN dashboard](https://mon.jasmin.ac.uk) to check on the status of your GWS (used versus available space).
-  * Email alerts from the system when the GWS reaches >83% full
-  * Email from the CEDA/JASMIN team
-  * News articles on the CEDA or JASMIN websites and by monitoring CEDA social media feeds which may be used to post messages regarding system status or security. 
-    * [CEDA Website](https://www.ceda.ac.uk/)
-    * [CEDA News RSS feed](https://www.ceda.ac.uk//blog/feeds/rss/)
-    * [CEDA on Twitter](https://twitter.com/cedanews)
+- Using the [JASMIN dashboard](https://mon.jasmin.ac.uk) to check on the status of your GWS (used versus available space).
+- Using the {{<link "gws-scanner-ui">}}GWS Scanner User Interface{{</link>}} to check on where, for how long and by whom, space is being used.
+- GWS Managers should {{<link "gws-scanner">}}configure the GWS Scanner{{</link>}} to gather the above information and arrange email alerts.
+- Look out for emails from the CEDA/JASMIN team
+- News articles on the {{<link "ceda_site">}}CEDA{{</link>}} or {{<link "jasmin_site">}}JASMIN{{</link>}} websites and by monitoring {{<link name="ceda_x" cue="true" >}}CEDA social media{{</link>}}feeds which may be used to post messages regarding system status or security.
 
 If you are aware that a user who has access to your GWS leaves your project,
 or, for whatever reason, no longer needs to be a member of the GWS, please let

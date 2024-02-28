@@ -48,7 +48,6 @@
     - title: how to submit an mpi parallel job
     - title: example job 2 calc md5s
     - title: orchid gpu cluster
-    - title: gpu testing
     - title: slurm status
     - title: lsf to slurm quick reference
 

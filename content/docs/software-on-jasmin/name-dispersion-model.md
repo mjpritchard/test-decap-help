@@ -1,6 +1,5 @@
 ---
 aliases: /article/3835-name-dispersion-model
-date: 2021-04-20 08:45:40
 description: Met Office NAME Model
 slug: name-dispersion-model
 title: Met Office NAME Model
@@ -13,7 +12,7 @@ atmospheric dispersion model, NAME, on JASMIN.
 
 The Met Office's Numerical Atmospheric-dispersion Modelling Environment (NAME)
 <https://www.metoffice.gov.uk/research/modelling-systems/dispersion-model> can
-be run on JASMIN using the LOTUS cluster. An 80 TB NAME Group Workspace is
+be run on JASMIN using the LOTUS cluster. A NAME Group Workspace is
 provided to store both the Numerical Weather Prediction (NWP) met data needed
 to drive NAME as well as the user outputs derived from NAME itself.
 
@@ -22,6 +21,4 @@ Met Office Atmospheric Dispersion and Air Quality team and the University of
 Leicester.
 
 If you would like to know more about running NAME on JASMIN, please contact us
-at
-[atmospheric.dispersion@metoffice.gov.uk](mailto:atmospheric.dispersion@metoffice.gov.uk)
-.
+at [atmospheric.dispersion@metoffice.gov.uk](mailto:atmospheric.dispersion@metoffice.gov.uk).

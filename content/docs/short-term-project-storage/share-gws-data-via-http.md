@@ -6,27 +6,21 @@ slug: share-gws-data-via-http
 title: Sharing GWS data via HTTP
 ---
 
-This article describes how data in a GWS can be shared via HTTP. it covers:
-
-  * What is HTTP data sharing?
-  * Public access set up
-  * Restricted access set up
-
 ## What is HTTP data sharing?
 
 Specific parts of JASMIN Group Workspaces (GWSs) can be made available via
 HTTP, so that:
 
-  * data can be shared with users who do not have JASMIN accounts
-  * common clients such as `wget`, `curl`, client libraries and web browsers can be used to access the data via a commonly-supported protocol.
+- data can be shared with users who do not have JASMIN accounts
+- common clients such as `wget`, `curl`, client libraries and web browsers can be used to access the data via a commonly-supported protocol.
 
 In this respect, the service should be regarded as another [data transfer
 tool]({{< ref "data-transfer-tools" >}}). However it must be arranged in
 advance between the Group Workspace manager and the JASMIN Helpdesk. It
 involves:
 
-  1. A member of the workspace creating a `public` directory and placing data inside it
-  2. The **GWS manager** making a request to the [JASMIN Helpdesk](mailto:support@jasmin.ac.uk) to request that this specific GWS is configured to be shared via HTTP.
+1. A member of the workspace creating a `public` directory and placing data inside it
+2. The **GWS manager** making a request to the [JASMIN Helpdesk](mailto:support@jasmin.ac.uk) to request that this specific GWS is configured to be shared via HTTP.
 
 Both these steps need to be completed in order for the GWS to be visible via
 HTTP. By default, GWSs are not visible by HTTP.
@@ -69,11 +63,11 @@ membership of the GWS) can access the data via a web browser or other HTTP-
 based tools. This can be done by creating a `public` directory in the top-
 level directory of the GWS, for example:
 
-```
-cd /group_workspace/jasmin/foobaa/ 
+{{<command user="user" host="sci1">}}
+cd /group_workspace/jasmin/foobaa/
 mkdir public 
 chmod -Rf 755 public
-``` 
+{{</command>}}
 
 You should then contact [JASMIN Support](mailto:support@jasmin.ac.uk) and ask
 for this directory to be made visible via the `gws-access` server. The JASMIN
@@ -100,12 +94,16 @@ directories, you will need to create an ".htaccess" file within it. In turn,
 the ".htaccess" file must point to a ".htpasswd" file which lists the
 usernames and encrypted passwords that have read-access to that directory.
 
-**NOTE: This method of access control is entirely independent of the SSH login
+{{<alert type="danger">}}
+This method of access control is entirely independent of the SSH login
 accounts used on JASMIN and would be the responsibility of the GWS Manager to
 maintain. It is not secure by modern standards and not particularly
 recommended as it adds complication for GWS managers and users, but is an
-option for some basic access control if no other options are available. Future
+option for some basic access control if no other options are available.
+
+**Future
 revisions of the service may revise or remove this feature.**
+{{</alert>}}
 
 In order to create the ".htpasswd" file, you will need access to the
 "htpasswd" command. This is available on the transfer servers
@@ -114,37 +112,33 @@ xfer[12].jasmin.ac.uk
 You can then create the ".htpasswd" file as follows (using the example of a
 Group Workspace called "foobaa"):
 
-
-```
-export GWS=/group_workspaces/jasmin/foobaa/ 
+{{<command user="user" host="sci1">}}
+export GWS=/group_workspaces/jasmin/foobaa/
 cd $GWS
 mkdir -p public 
 cd public
 htpasswd -b -m -c $GWS/public/.htpasswd i_am_a_user i_am_a_password
-``` 
+{{</command>}}
 
 Before this will work, you also need to create a ".htaccess" file which you
 could do as follows
 
-```
-cat >.htaccess <<EOL 
-AuthType Basic 
-AuthName "Password Required" 
-AuthUserFile /group_workspaces/jasmin/foobaa/public/.htpasswd 
+{{<command user="user" host="sci1">}}
+cat >.htaccess <<EOL
+AuthType Basic
+AuthName "Password Required"
+AuthUserFile /group_workspaces/jasmin/foobaa/public/.htpasswd
 Require valid-user
 EOL
-```
+{{</command>}}
 
 Finally, change the permissions on these files:
 
-```
+{{<command user="user" host="sci1">}}
 chmod 644 .htaccess .htpasswd
-```    
+{{</command>}}
 
 Now, you can test that you get prompted for the username and password by
 visiting
 
 https://gws-access.jasmin.ac.uk/public/foobaa/
-    
-
-

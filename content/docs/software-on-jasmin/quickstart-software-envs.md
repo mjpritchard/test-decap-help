@@ -13,30 +13,26 @@ This article provides a minimum quick-start guide for working with software envi
 To activate an environment containing the "current" common software packages
 (including a modern Python):
 
-    
-    
-    module load jaspy
+{{<command user="user" host="sci1">}}
+module load jaspy
+{{</command>}}
+
+or for a specific version, see {{<link "jaspy-envs/#discover-which-environments-are-available">}}how to discover what versions are available{{</link>}}
 
 To activate additional packages (known as "jasmin-sci"):
 
-    
-    
-    module load jasmin-sci
-
-To activate an environment containing Python2.7:
-
-    
-    
-    module load jaspy/2.7
+{{<command user="user" host="sci1">}}
+module load jasmin-sci
+{{</command>}}
 
 ### Deactivate (unload) an environment
 
 If you want to deactivate an environment that you have previously activated,
 do:
 
-    
-    
-    module unload <env-id>
+{{<command user="user" host="sci1">}}
+module unload <env-id>
+{{</command>}}
 
 Where "<env-id>" is the name used when you activated the environment.
 
@@ -45,5 +41,3 @@ Where "<env-id>" is the name used when you activated the environment.
 If you are not sure which environment(s) to use please see details on the
 [overview]({{< ref "software-overview" >}}) of Jaspy and "jasmin-sci"
 environments page.
-
-

@@ -1,6 +1,5 @@
 ---
 aliases: /article/4732-share-software-envs
-date: 2019-10-28 14:28:17
 description: Sharing software environments
 slug: share-software-envs
 title: Sharing software environments
@@ -28,15 +27,15 @@ environments.
 
 If you need to create your own environment it is important to be aware of
 which file system you are working on:
-- SOF (e.g. `/gws/nopw/j04/*`): does not perform well with small files at present.
-- SSD (e.g. `$HOME` and `/gws/smf/j04/*`): performs much better with small files.
+
+- SOF (e.g. `/gws/nopw/j04/*`): does not perform well with small files.
+- SSD (e.g. `$HOME` and `/gws/smf/j04/*`): performs much better with small files, but is expensive so only limited quotas are available.
 
 If you are building an environment for your use only then it makes sense to
 create it under your $HOME directory.
 
 If you need to share an environment with other JASMIN users you can:
-- Request a "small files" Group Workspace (GWS).
-- Install the software environment within the "small files" GWS.
+
+- Request a "small files" (**smf**) Group Workspace volume.
+- Install the software environment within the "small files" volume.
 - Then all users with access to that GWS will be able to access the environment.
-
-

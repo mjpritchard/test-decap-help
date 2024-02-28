@@ -1,24 +1,25 @@
 ---
 aliases: /article/4917-software-migration-2020
-categories:
-- Software on JASMIN
-collection: jasmin-documentation
-date: 2020-08-06 15:57:47
 description: 'JASMIN software changes: migration to CentOS7 (2020)'
 slug: software-migration-2020
 title: 'JASMIN software changes: migration to CentOS7 (2020)'
+tags:
+- centos7
+- jaspy
+- jasmin-sci
 ---
+
+{{<alert type="danger">}}
+This article is now out of date, but a similar exercise is about to get underway
+for the migration of the JASMIN platform from CentOS7 operating system (end of life June 2024) to Rocky Linux 9. Look out for futher details in due course.
+{{</alert>}}
+
+## Introduction
 
 This article explains the changes in the provision of common software on
 JASMIN ("sci" servers and LOTUS) when upgrading to main operating system from
 RedHat Enterprise Linux 6 (RHEL6) to CentOS7. It answers for the following
 questions:
-
-  * What is changing?
-  * Which systems are affected?
-  * Why is it changing?
-  * Comparison of packages in old JASMIN Analysis Platform and new Jaspy/"jasmin-sci" environments
-  * How do I get started (quickly)?
 
 ## What is changing?
 
@@ -39,11 +40,11 @@ packages:
 This change applies to all generally available JASMIN servers and the LOTUS
 cluster. These include:
 
-  * jasmin-sci*
-  * cems-sci*
-  * jasmin-cylc
-  * cron
-  * All LOTUS nodes (accessed via LSF)
+- jasmin-sci*
+- cems-sci*
+- jasmin-cylc
+- cron
+- All LOTUS nodes (accessed via LSF)
 
 ## Why is it changing?
 
@@ -52,8 +53,8 @@ support multiple versions of software packages, and environments, on a single
 platform. From the perspective of reproducible science, the [Jaspy]({{< ref
 "jaspy-envs" >}}) approach is more useful because it:
 
-  * keeps previous environments on the system when a new version of an environment is launched
-  * includes a listing of all packages (and their versions) that are provided in each date-stamped software environment
+-  keeps previous environments on the system when a new version of an environment is launched
+- includes a listing of all packages (and their versions) that are provided in each date-stamped software environment
 
 From a management point-of-view, Jaspy builds on the packaging tool
 "[conda](https://docs.conda.io/en/latest/)" and the community repositories
@@ -61,8 +62,7 @@ known as "[conda-forge](https://conda-forge.org/)". These tools are widely
 used in the scientific community and provide many components that are re-used
 in Jaspy.
 
-## Comparison of packages in old JASMIN Analysis Platform and new
-Jaspy/"jasmin-sci" environments
+## Comparison of packages in old JASMIN Analysis Platform and new Jaspy/"jasmin-sci" environments
 
 Most packages that were previously provided as part of the JASMIN Analysis
 Platform (JAP) are now included in Jaspy environments or the "jasmin-sci"
@@ -77,18 +77,16 @@ sci" is provided below.
 If you want to access most of the packages you can find them in the most
 recent Jaspy environment. This can be activated using:
 
-    
-    
-     module load jaspy
-    
+```bash
+module load jaspy
+```
 
 If you need packages that are provided in the "jasmin-sci" environment then
 you can activate it using:
 
-    
-    
-     module load jasmin-sci
-    
+```bash
+module load jasmin-sci
+```
 
 ## Full table of packages from JAP
 
@@ -97,10 +95,10 @@ provided for use on CentOS7 machines (as of initial release).
 
 In the summary column:
 
-  * **C** \- package is provided via Conda environment (i.e. Jaspy)
-  * **R** \- package is provided via an RPM (as part of the base OS or via jasmin-sci)
-  * **CR** \- package is provided both via Jaspy and via an RPM. The version in Jaspy is recommended for use with user code; the RPM version is also installed in order to satisfy an RPM dependency only, and may be subject to change.
-  * **N** \- not provided (mostly these have been deprecated by the third-party sources)
+- **C** \- package is provided via Conda environment (i.e. Jaspy)
+- **R** \- package is provided via an RPM (as part of the base OS or via jasmin-sci)
+- **CR** \- package is provided both via Jaspy and via an RPM. The version in Jaspy is recommended for use with user code; the RPM version is also installed in order to satisfy an RPM dependency only, and may be subject to change.
+- **N** \- not provided (mostly these have been deprecated by the third-party sources)
 
 **NAME (in JAP)** | **Version in Jaspy 3.7 (conda)** | **Version in Jaspy 2.7 (conda)** | **Version in RPMs (base or jasmin-sci SCL)** | **Summary:** **(C)onda/** **(R)PM /** **(N)one** | **Comments**  
 ---|---|---|---|---|---  

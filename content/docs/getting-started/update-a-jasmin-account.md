@@ -1,7 +1,7 @@
 ---
 aliases:
 - /article/4552-update-a-jasmin-account
--  /article/4834-updating-your-ssh-key
+- /article/4834-updating-your-ssh-key
 description: Update a JASMIN account
 slug: update-a-jasmin-account
 title: Update a JASMIN account
