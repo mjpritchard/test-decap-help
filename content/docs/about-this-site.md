@@ -32,3 +32,4 @@ The date of update date and commit message for each page should be just above th
 ## Other issues
 
 For all other reports of problems, or for any information you can't find (don't forget the other JASMIN sites linked in the footer!), please use the contact form via "Ask" in the JASMIN Help beacon (bottom right, orange button) and use the contact form to send a message to the helpdesk: this is the best method to get in touch.
+Note that the beacon no longer contains the links to the help docs themselves, but still provides the contact form. Hopefully the other naviation features described above should enable you to find what you need.
