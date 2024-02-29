@@ -14,8 +14,8 @@ lastmod: 2024-01-26
 ## Ministri ingens non et
 
 **Lorem markdownum**, tanta horum Cymeli; annum fumavit terreris agmina
-processisse eodem aura. Est functo signataque vestes [Bacchus mergum
-inferius](http://www.abesse.org/) Astyanax acta quoque toto qua Ancaeus, cum.
+processisse eodem aura. Est functo signataque vestes Bacchus mergum
+inferius Astyanax acta quoque toto qua Ancaeus, cum.
 Parem manibus viro, fixo labor pascere explorat vultus, ait.
 
 ```
@@ -38,7 +38,7 @@ if (bus_address(file_device_arp, 48, 4) + toolbar_dvi + 5) {
 }
 ```
 
-[Petita](http://www.syringa-contorta.net/cervicibus.html) mecum sic: cum, te
+Petita mecum sic: cum, te
 Iphis dixerat liquidi. Tantum quis Iuno, anus quod arescere domitae facies
 virtute, rabie venenis in. Laevum tyranni Iovisque. Dixit inque fortes lumina,
 est et nomine **longa**, latices sumpserat sapies. Solis pro tertia volenti
@@ -46,8 +46,8 @@ sorbent inguine illic at mihi Astyages.
 
 ## Dixit pecudes quid timeam volat
 
-Faceres blanditus digiti exit, ait. Ripas tua, mensura rursusque superentur [qui
-manibus nate](http://www.lingua.net/) amo. Passa habitantem labores verba,
+Faceres blanditus digiti exit, ait. Ripas tua, mensura rursusque superentur qui
+manibus nate amo. Passa habitantem labores verba,
 Pentheus, **ait**, illinc dextro intrarant quantum! Recognoscit Mercurium; ea
 neque socii finitimosque nec debueram officium, occiderat Tereusque denique nec.
 
@@ -64,7 +64,7 @@ memory_nntp(p_seo_xhtml);
 dns_pci += 502897 + hdtv_finder_service;
 ```
 
-Inquit antrum; invia verba [figuris nescio regibus](http://prodit.org/protelum),
+Inquit antrum; invia verba figuris nescio regibus,
 non nos. Est fontem et Epidauria silvae. Novis caelo ferunt, natus medium
 inmurmurat infelix voce ante metiris, rettulit corpus fecit naufragus si
 dubitat.

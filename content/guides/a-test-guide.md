@@ -3,7 +3,6 @@ author: Matt Pritchard
 title: A Test Guide
 description: An example of a guide
 tags: quickstart
-lastmod: 2024-01-26
 ---
 
 # Tua ad est rogis proicit annum inmoriuntur
@@ -12,7 +11,7 @@ lastmod: 2024-01-26
 
 Lorem markdownum circumspexit Iunone molis flerunt cum perstant descendunt
 locum: quoque ad. Huius quanto; Hectora undaeque umeros multoque genetrix
-cupiens [ossa](http://www.rogumqueaudito.com/) non mea nescio, et ipsa pianda
+cupiens ossa non mea nescio, et ipsa pianda
 concepta, et. Amantem imitatur foedoque instabilesque Delphica regna sequitur
 verus, est.
 
@@ -32,11 +31,11 @@ nisi.
 
 Tulit pro neque formosus aut inclusit pando iam nocte Venulus vimque adiuvat
 absumere, *iter*. Pro fumantiaque Cepheus membra quodcumque venerabile
-[notas](http://repagula.com/matrona.aspx), de exsecrere facit cornus heres:
+notas, de exsecrere facit cornus heres:
 sanguine prosit imitatus. **Multorumque quoque parce** taedia, nec det et maior,
 funeribus aditus. Diu omnia habuit, totis, habenis refert tu non citharaque
-radicibus potest **a partim**, potuit ipsis. In manus [socio traxit
-adcommodat](http://haec.net/iubet) crinem attonitas **saepe** seri illum quodque
+radicibus potest **a partim**, potuit ipsis. In manus socio traxit
+adcommodat crinem attonitas **saepe** seri illum quodque
 tenes recondidit est, nec!
 
 ```
@@ -56,8 +55,8 @@ Sub torvos superum Peparethos terram ignem series. Volucris annisque suadet.
 **Decerpserat riguerunt** aglauros somno ore, non squamis, lingua forma Athenas
 angustum luctor.
 
-Pietas suorum lapillo tenus. Cum quique [fui](http://dum.net/umeris.html) sui,
-**quod ferunt** dammis corpore [inmanem](http://www.que-generis.net/) satis:
+Pietas suorum lapillo tenus. Cum quique fui sui,
+**quod ferunt** dammis corpore inmanem satis:
 praedaeque.
 
 Dicta robora quaerere et leni remis sumpsisse nuper odiique ingredior *ipsosque
