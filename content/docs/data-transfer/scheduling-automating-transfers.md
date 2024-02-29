@@ -7,8 +7,8 @@ title: Scheduling/Automating Transfers
 
 This article explains how to schedule or automate data transfers. It covers:
 
-- Scheduling download tasks using cron and LOTUS
 - Using Globus for transfer automation
+- Scheduling download tasks using cron and LOTUS
 
 ## Overview
 
@@ -30,8 +30,7 @@ Some introductory information about how to do this is available in this article
 (with more to follow)
 but please also refer to the comprehensive Globus documentation and their 
 [automation examples](https://github.com/globus/automation-examples). You can choose whether 
-to schedule/automate tasks via the Globus web interface, command-line interface, or use their Globus SDK to build
-Python code that uses this functionality.
+to schedule/automate tasks via the {{<link "https://www.globus.org/blog/scheduled-and-recurring-transfers-now-available-globus-web-app">}}Globus web interface{{</link>}}, {{<link "https://docs.globus.org/cli/reference/">}}command-line interface{{</link>}}, or use their {{<link "https://globus-sdk-python.readthedocs.io/en/stable/examples/index.html" >}}Globus Python SDK{{</link>}} to build Python code that uses this functionality.
 
 ## Scheduling download tasks using cron and LOTUS
 
@@ -40,15 +39,15 @@ general tasks, **it should not be used for the work of executing those tasks its
 
 ### xfer3 - transfer machine with cron
 
-The transfer server `xfer3.jasmin.ac.uk` is also provided with `cron`, and should be used where 
+The transfer server `xfer3.jasmin.ac.uk` is also provided with `cron`, and should be used where
 a task is primarily a transfer rather than a processing task and needs the functionality
-of a transfer server. For access to `xfer3` you will need the 
+of a transfer server. For access to `xfer3` you will need the
 {{<link "https://accounts.jasmin.ac.uk/services/additional_services/xfer-sp/">}}xfer-sp access role{{</link>}}.
 Please refer to the above `cron` guidance for best practice advice.
 
-### invoking LOTUS from cron to carry out multiple download tasks
+### Invoking LOTUS from cron to carry out multiple download tasks
 
-Sometimes we need a tasks to be invoked from `cron` but executed where there
+Sometimes we need a task to be invoked from `cron` but executed where there
 are lots of nodes to parallelise the tasks (i.e. the LOTUS cluster). In this case, we DO need to use the `cron`
 server rather than `xfer3`, since we need to be able to talk to LOTUS (`xfer3` can't do that, as a transfer server).
 
@@ -102,9 +101,9 @@ Due to networking limitations, LOTUS nodes cannot perform downloads using SSH-ba
 
 Download tools installed on LOTUS nodes include:
 
-  * `wget`
-  * `curl`
-  * `ftp` (but not `lftp`)
+- `wget`
+- `curl`
+- `ftp` (but not `lftp`)
 
 In our simple example above, we can subit this script to LOTUS from the
 command line with
@@ -127,7 +126,7 @@ ensure one instance of the task had finished before the next started: (see
 30 * * * * crontamer -t 2h 'sbatch /home/users/username/test_download.sh'
 ```
 
-## 2\. Multi-node downloads
+### 2\. Multi-node downloads
 
 We could expand this example to download multiple items, perhaps 1 directory
 of data for each day of a month, and have 1 element of a job array handle the
