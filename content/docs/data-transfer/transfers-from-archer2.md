@@ -1,6 +1,5 @@
 ---
 aliases: /article/4997-transfers-from-archer2
-date: 2023-02-08 08:44:09
 description: Transfers from ARCHER2
 slug: transfers-from-archer2
 title: Transfers from ARCHER2
@@ -14,8 +13,7 @@ covers:
 
 ## Choice of available Tools/Routes
 
-See [JASMIN external connections]({{< ref "jasmin-external-connections" >}})
-and [Data Transfer Tools]({{< ref "data-transfer-tools" >}}) for general
+See [Data Transfer Tools]({{< ref "data-transfer-tools" >}}) for general
 details.
 
 Users transferring data between ARCHER2 and JASMIN are often transferring

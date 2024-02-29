@@ -87,7 +87,6 @@
     - title: gridftp ssh auth
     - title: rclone
     - title: rsync scp sftp
-    - title: jasmin external connections
     - title: hpxfer access role
     - title: scheduling automating transfers
     - title: transfers from archer2

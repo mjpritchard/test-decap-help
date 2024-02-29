@@ -8,9 +8,8 @@ This article explains about access to high-performance data transfer services.
 
 ## Applying for access
 
-Some data transfer services are hosted in the [JASMIN Data Transfer Zone]({{<
-ref "jasmin-external-connections" >}}) for increased performance. However, to
-maintain security in this zone, access is controlled via an additional access
+Some data transfer services are hosted in the JASMIN Data Transfer Zone (a special area of JASMIN's network, located optimally for connections to the outside world via {{<link href="https://www.jisc.ac.uk/janet" cue="true">}}JANET{{</link>}}) for increased performance. However, to
+maintain security in this zone, access to some services is controlled via an additional access
 role `hpxfer`. If you have a login account already, you can apply here for
 this additional role:
 
