@@ -33,7 +33,7 @@ ET is only for use by the named GWS manager, i.e. the individual responsible for
 
 Each GWS has a quota of online disk space (agreed at the time of its creation) and initially the ET quota has been set to the same value. So if you have a 10 Tb workspace, you initially have a 10Tb quota of ET storage to match.
 
-### How does it work?
+## How does it work?
 
 Putting data into ET storage involves creating a "batch" of data which is
 transferred to the ET system. Using either a file list or top-level directory
@@ -62,7 +62,7 @@ access to the python tools `et_put.py`, `et_get.py`, `et_rm.py` and
 `et_ls.py`. Some initial documentation for these command line tools is
 attached.
 
-### What should I do next?
+## What should I do next?
 
 It is recommended to try sending **and retrieving** some small data transfers
 (a few Gb) at first using the documentation below, but the system has been
@@ -150,19 +150,27 @@ need to use the login gateways `login1.jasmin.ac.uk`, `login2.jasmin.ac.uk`,
 equivalent for agent forwarding in ssh. STFC users may use the STFC VPN to
 connect to `et.jasmin.ac.uk` as if it were a local connection.
 
+{{<alert type="danger">}}
+When writing data to the ET system, it is very important that data remains in place on disk, in the location where ET expects to find them, until the status of the batch in question has reached `CACHED_SYNCED` or `SYNCED`.  This means that the data have actually been written to tape, but is not the case until that status is shown.
+
+The location where ET expects to find the files will be specified in the `LISTFILE` that the user supplied to the `et_put.py` command, or all files and directories under the `DIR`.  The status of user's batches can be checked by going to the webpage: http://et-monitor.fds.rl.ac.uk/et_user/ET_AlertWatch.php. You need to be logged into JASMIN to see this webpage, via the [nx-login servers](/docs/interactive-computing/graphical-linux-desktop-access-using-nx/), and use Firefox as the web browser.
+
+Deleting the data from disk prematurely can cause problems for the ET system as a whole (impacting other users) so please be careful with this aspect.
+{{</alert>}}
+
 * * *
 
 ### et_put.py
 
 Put data onto tape.
 
-### Synopsis
+#### Synopsis
 
 ```bash
 et_put.py [-v] [-l LOGFILE] [-w WORKSPACE] [-c] [-t one-word-tag] [ -f LISTFILE | DIR ]
 ```
 
-### Description
+#### Description
 
 Data files to be stored can be specified either in an input list file (-f) or
 by specifying the path to the top of a directory tree containing files to be
@@ -179,7 +187,7 @@ throughput capacity of about 25 TB/day, which may increase over time. Please
 consider this when organising your input batches and expectations of
 completion time. Large numbers of small files will degrade performance.
 
-### Options
+#### Options
 
 option | details
 ---|---  
@@ -192,7 +200,7 @@ DIR  |  ABSOLUTE path to top of directory tree containing files to be stored
 -t tag  |  Tag batch with descriptive label meaningful to user. Should be single one-word string. Appears as "Batch name" in ET alert output and "Tag" in et_ls output.
 {.table .table-striped}
   
-### Example usage
+#### Example usage
 
 Simple case, using a file input.list which contains paths of all the files to
 be included in the batch:
@@ -234,13 +242,13 @@ batch ID for your own records.
 
 Retrieve data from tape
 
-### Synopsis
+#### Synopsis
 
 ```bash
 et_get.py [-v] [-l LOGFILE] [-b BATCHID | -f FILELIST] [-w WORKSPACE] [-r DIR] [-t MAXPROC]
 ```
 
-### Description
+#### Description
 
 Data files to be retrieved should be specified by referring to the `batch ID`
 of the batch in which they were stored. If files have been stored by
@@ -257,7 +265,7 @@ the retrieval has completed correctly, data can be moved back to their
 original location in the workspace. NB if you need additional storage space
 for this, please contact the [CEDA help desk](mailto:support@ceda.ac.uk).
 
-### Options
+#### Options
 
 option | details
 ---|---  
@@ -270,7 +278,7 @@ option | details
 -t MAXPROC  |  Maximum number of worker processes to use in retrieval. MAXPROC recommended to be between 5 and 10. Please feed back your experience of performance improvement with this feature.   
 {.table .table-striped}
 
-### Example usage
+#### Example usage
 
 {{<command user="user" host="et1">}}
 cd /group_workspaces/jasmin/myworkspace
@@ -298,17 +306,17 @@ mv /group_workspaces/jasmin/myworkspace/ettmp/group_workspaces/jasmin/myworkspac
 
 Remove data from tape
 
-### Synopsis
+#### Synopsis
 
 ```bash
 et_rm.py [-v] -b BATCHID [-w WORKSPACE]
 ```    			
 
-### Description
+#### Description
 
 Deletes the files in the specified batch from the Elastic Tape system.
 
-### Options
+#### Options
 
 option | details
 ---|---
@@ -329,18 +337,18 @@ et_rm.py -v -b 507
 
 List holdings on tape
 
-### Synopsis
+#### Synopsis
 
 ```bash
 et_ls.py [-h] [-X XMLSOURCE] [-H] [-b BATCHID] [-w WORKSPACE] [-L {file,batch,workspace}] [-F {text}]
 ```
 
-### Description
+#### Description
 
 Lists the holdings of a workspace within Elastic Tape at the file, batch or
 workspace level.
 
-### Options
+#### Options
 
 option | details
 ---|---
