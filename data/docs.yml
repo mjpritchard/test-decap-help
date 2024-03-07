@@ -35,6 +35,7 @@
     - title: jasmin notebooks service
     - title: creating a virtual environment in the notebooks service
     - title: project specific servers
+    - title: dask gateway
     #- title: centos7 sci login xfer servers
 
 - title: batch computing
