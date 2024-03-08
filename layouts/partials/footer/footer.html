@@ -76,11 +76,11 @@
 
         </div>
         <small>
-            {{ $link := partial "assets/link.html" (dict "destination" "https://help.ceda.ac.uk/article/4641-accessibility" "text" "Accessibility | " "class" "link-bg-footer" "page" .Page) }}
+            {{ $link := partial "assets/link.html" (dict "destination" "/accessibility" "text" "Accessibility | " "class" "link-bg-footer" "page" .Page) }}
             {{ $link | safeHTML }}
-            {{ $link := partial "assets/link.html" (dict "destination" "https://help.ceda.ac.uk/article/4642-disclaimer" "text" "Disclaimer | " "class" "link-bg-footer" "page" .Page) }} 
+            {{ $link := partial "assets/link.html" (dict "destination" "/conditions" "text" "Terms and Conditions | " "class" "link-bg-footer" "page" .Page) }} 
             {{ $link | safeHTML }}
-            {{ $link := partial "assets/link.html" (dict "destination" "https://help.ceda.ac.uk/article/4639-privacy-and-cookies" "text" "Privacy and Cookies" "class" "link-bg-footer" "page" .Page) }}
+            {{ $link := partial "assets/link.html" (dict "destination" "/privacy" "text" "Privacy and Cookies" "class" "link-bg-footer" "page" .Page) }}
             {{ $link | safeHTML }}
             <br>
             {{- $copyright := printf "%s © %s %s %s." (T "copyright") (dateFormat "2006" now) .Site.Title (T "rights") }}
