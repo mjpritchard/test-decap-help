@@ -69,6 +69,7 @@
     - title: matplotlib
     - title: nag library
     - title: name dispersion model
+    - title: geocat replaces ncl
     - title: postgres databases on request
     - title: running python on jasmin
     - title: running r on jasmin
