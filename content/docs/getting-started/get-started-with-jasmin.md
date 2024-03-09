@@ -55,7 +55,7 @@ is below:
 
 - [Getting Started]({{< ref "getting-started" >}}) \- this details all the steps needed to get started on JASMIN. Most documents are linked to from the table above, but there may be some other useful information there too.
 - [Interactive Computing]({{< ref "interactive-computing" >}}) \- this introduces the resources on JASMIN available for interactive computing. This type of computing is the most common workflow on JASMIN for new users. 
-- [SLURM Batch Computing on LOTUS]({{< ref "slurm" >}}) \- this introduces the available resources on JASMIN for batch computing. 
+- {{<link "../batch-computing/lotus-overview">}}LOTUS batch processing cluster{{</link>}} \- this introduces the available resources on JASMIN for batch computing. 
 - [Software on JASMIN]({{< ref "software-overview" >}}) \- Information on running software packages within JASMIN
 - [Data Transfer]({{< ref "data-transfer" >}}) \- this category includes guidance on transferring data to and from JASMIN.
 - [MASS]({{< ref "mass" >}}) \- JASMIN has Read-only access to the Met Office MASS storage archive. This section explains how to get access. 
