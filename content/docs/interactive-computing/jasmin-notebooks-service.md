@@ -106,7 +106,7 @@ resources made available to each notebook server are limited.
 For larger processing tasks with Notebooks, users
 should consider using the {{<link "https://github.com/cedadev/jasmin-daskgateway">}}JASMIN Dask Gateway service{{</link>}}, which provides an easy way for processing managed from within a Jupyter Notebook to be scaled out to multiple LOTUS jobs in parallel.
 
-Alternatively, use the [LOTUS batch processing system]({{< ref "slurm" >}})
+Alternatively, use the {{<link "../batch-computing/lotus-overview">}}LOTUS batch processing cluster{{</link>}}
 separately, before using the notebooks service to visualise the output.
 
 Doing this means that the bulk of the resource usage will be shared by the LOTUS cluster rather than the Notebooks service itself.

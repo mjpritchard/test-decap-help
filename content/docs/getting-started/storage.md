@@ -117,12 +117,12 @@ location |  login  |  sci  |  transfer  |  LOTUS  |  Type  |  Parallel-write
 /badc, /neodc (archives)  |  No  |  RO  |  RO  |  RO  |  n/a  |  n/a  
 {.table .table-striped}
   
-login = [login servers]({{< ref "login-servers" >}}): login[1-4].jasmin.ac.uk  
-sci = [scientific analysis servers]({{< ref "sci-servers" >}}):
+login = {{<link "../interactive-computing/login-servers">}}login servers{{</link>}}: login[1-4].jasmin.ac.uk  
+sci = {{<link "../interactive-computing/sci-servers">}}scientific analysis servers{{</link>}}:
 sci[1-6,8].jasmin.ac.uk  
-transfer = [data transfer servers]({{< ref "transfer-servers" >}}):
+transfer = {{<link "../interactive-computing/transfer-servers">}}data transfer servers{{</link>}}:
 xfer[1-2].jasmin.ac.uk  
-LOTUS = [LOTUS batch processing cluster]({{< ref "slurm" >}}) (all cluster
+LOTUS = {{<link "../batch-computing/lotus-overview">}}LOTUS batch processing cluster{{</link>}}(all cluster
 nodes)  
 Disks are mounted read/write (" **R/W** ") or read-only (" **RO** ").
 
@@ -141,7 +141,7 @@ your data:
 0 Group Workspaces (mostly `/gws/nopw/*/<project>` but some `/gws/pw/*/<project`) are **usually the correct place to write your data**, although they are **not backed up**. Please refer to the [Group Workspace]({{< ref "short-term-project-storage" >}}) documentation for details.
   - `/gws/pw/j07` volumes are parallel-write-capable storage from Phase 7 (onwards) of JASMIN
   - `/gws/nopw/j04` volumes are "Scale out Filesystem" (SOF) from Phase 4 (onwaards) of JASMIN: this storage is not parallel-write-capable
-- The "scratch" areas (`/work/scratch-pw2`, `/work/scratch-pw3` and `/work/scratch-nopw`) are available as a temporary file space for jobs running on [LOTUS]({{< ref "slurm" >}}) (see next section below).
+- The "scratch" areas (`/work/scratch-pw2`, `/work/scratch-pw3` and `/work/scratch-nopw`) are available as a temporary file space for jobs running on {{<link "../batch-computing/lotus-overview">}}LOTUS{{</link>}} (see next section below).
 - The (`/tmp`) directory is **not usually an appropriate location to write your data (see next section below).**
 
 ## How to use the temporary disk space
