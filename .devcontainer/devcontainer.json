@@ -49,7 +49,7 @@
 			"extensions": [
 				"bierner.markdown-footnotes",
 				"budparr.language-hugo-vscode",
-				"bungcip.better-toml",
+				"tamasfe.even-better-toml",
 				"davidanson.vscode-markdownlint",
 				"dbaeumer.vscode-eslint",
                                 "eamodio.gitlens",
