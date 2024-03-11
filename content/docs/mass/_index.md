@@ -4,4 +4,5 @@ title: MASS
 slug: mass
 weight: 80
 icon: fas tape
+aliases: /category/227-mass
 ---
