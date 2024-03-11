@@ -4,4 +4,5 @@ description: How to manage chains of processing tasks more efficiently
 weight: 100
 slug: workflow-management
 icon: fas list-check
+aliases: /category/109-workflow-management
 ---
