@@ -122,6 +122,20 @@ If the package requires other packages that are not already installed into the
 virtual environment, then `pip` will use the package's requirements file to
 install them automatically from PyPI.
 
+One thing to consider when doing this, is that some temporary space is needed
+by the install process. The location of this temporary space may be set by default
+to `/tmp`, which is restricted on the `sci` machines.
+
+You might see this error, despite having ample free space in your own home directory:
+
+```bash
+ERROR: Could not install packages due to an OSError: \
+[Errno 122] Disk quota exceeded
+```
+
+In order to avoid encountering this, 
+you are advised to {{<link "../getting-started/storage/#avoid-inadvertently-writing-to-tmp">}}follow this advice{{</link>}} to over-ride the `TMPDIR` environment variable, setting it to the location of somewhere you know have free space. Don't forget to clean up afterwards!
+
 To upgrade an existing package, use:
 
 {{<command user="user" host="sci1">}}
