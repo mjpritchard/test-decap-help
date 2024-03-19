@@ -55,8 +55,11 @@ cluster.shutdown()
 ```
 
 ### Elsewhere on JASMIN
-
 (eg. on the `sci` machines)
+
+{{<alert type="info">}}
+It is not necessary to do this if you only want to use dask in the JASMIN notebook service.
+{{</alert>}}
 
 At the current time, it is still necessary to use the notebooks service to generate an API token to allow you to connect to the gateway server.
 
@@ -94,7 +97,7 @@ gateway:
   auth:
     type: jupyterhub
     kwargs:
-      api_token: <replaceWithYourSecretAPIToken>
+      api_token: replaceWithYourSecretAPIToken
 ```
 
 6. You're done. You can now use dask gateway from the command line.
@@ -112,7 +115,7 @@ By default the jasmin notebooks service and dask gateway use the latest version 
 When dask gateway greates a dask cluster for a user, it runs a setup command to activate a conda environment or python `venv`.
 To have dask use your packages, you need to create a custom environment which you can pass to dask gateway to activate.
 
-However, for techical reasons, it is not currently possible to use the same virtual environment in both the notebook service and on jasmin. So you will need to make two envirnments, one for your notebook to use and one for dask to use. 
+However, for techical reasons, it is not currently possible to use the same virtual environment in both the notebook service and on jasmin. So you will need to make two environments, one for your notebook to use and one for dask to use.
 
 {{<alert type="info">}}
 It is VERY important that these environments have the same packages installed in them, and that the packages are exactly the same version in both environments.
