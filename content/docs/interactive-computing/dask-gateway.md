@@ -55,8 +55,11 @@ cluster.shutdown()
 ```
 
 ### Elsewhere on JASMIN
-
 (eg. on the `sci` machines)
+
+{{<alert type="info">}}
+It is not necessary to do this if you only want to use dask in the JASMIN notebook service.
+{{</alert>}}
 
 At the current time, it is still necessary to use the notebooks service to generate an API token to allow you to connect to the gateway server.
 
