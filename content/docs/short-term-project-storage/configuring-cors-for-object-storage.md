@@ -65,9 +65,9 @@ You can create a new file on your filesystem to store your CORS configuration us
 
 To apply the CORS XML file you've created, you can use any S3 compatible client to set the CORS configuration.
 
-The following example uses s3cmd on a Linux system.
+The following example uses `s3cmd` on a Linux system.
 
-First,You can confirm that your s3cmd setting are correct by showing info of the bucket.
+First confirm that your `s3cmd` settings are correct by showing the `info` of the bucket.
 
 e.g.
 
@@ -103,7 +103,10 @@ s3cmd info s3://testbin1
 
 This example shows a bucket which currently doesn't have a CORS policy set. Specifically, this is the section we're interested in:
 
+```txx
    CORS:      none
+```
+
 In this example, we'll set a simple "allow all" CORS configuration. We've already created a file named `test-cors-file` which we will be uploading to the bucket:
 
 ```xml
