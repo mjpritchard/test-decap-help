@@ -110,6 +110,7 @@
     - title: share gws data on jasmin
     - title: share gws data via http
     - title: using the jasmin object store
+    - title: configuring cors for object storage
 
 - title: long term archive storage
   pages:
