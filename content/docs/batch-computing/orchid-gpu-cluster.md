@@ -9,7 +9,7 @@ type: docs
 ---
 
 This article provides details on JASMIN's GPU
-cluster, named **Orchid**.
+cluster, named **ORCHID**.
 
 ## GPU cluster spec
 
@@ -20,20 +20,23 @@ The JASMIN GPU cluster is composed of 16 GPU nodes:
 
 {{< image src="img/docs/gpu-cluster-orchid/file-NZmhCFPJx9.png" caption="ORCHID GPU cluster" >}}
 
-## Request access to Orchid
+## Request access to ORCHID
 
-Access to the GPU cluster (and a GPU interactive node) is controlled by being a member of the Slurm account
-`orchid`. Please request access via the link below which will
-take you to the ORCHID service page on the JASMIN accounts portal:
+Before using ORCHID on JASMIN, you will need: 
 
-{{<button href="https://accounts.jasmin.ac.uk/services/additional_services/orchid/" >}}Apply here{{</button>}}
+1. An existing JASMIN account and valid `jasmin-login` access role: {{<button size="sm" href="https://accounts.jasmin.ac.uk/services/login_services/jasmin-login/">}}Apply here{{</button>}}
+2. **Subsequently** (once `jasmin-login` has been approved and completed), the `orchid` access role: {{<button size="sm" href="https://accounts.jasmin.ac.uk/services/additional_services/orchid/">}}Apply here{{</button>}}
 
-**Note:** In the supporting info on the request form, please provide details
+The `jasmin-login` access role ensures that your account is set up with access to the LOTUS batch processing cluster, while the `orchid` role grants access to the special LOTUS partition used by ORCHID.
+
+Holding the `orchid` role also gives access to the GPU interactive node.
+
+**Note:** In the supporting info on the `orchid` request form, please provide details
 on the software and the workflow that you will use/run on ORCHID.
 
 ## Test a GPU job
 
-Testing a job on the JASMIN Orchid GPU cluster can be carried out in an
+Testing a job on the JASMIN ORCHID GPU cluster can be carried out in an
 interactive mode by launching a pseudo-shell terminal Slurm job from a JASMIN
 scientific server e.g. `sci2`:
 

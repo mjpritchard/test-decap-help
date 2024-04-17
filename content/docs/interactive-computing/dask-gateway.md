@@ -11,9 +11,14 @@ tags:
 [Dask Gateway](https://gateway.dask.org/) is a service which manages [dask](https://dask.org) clusters for users.
 On JASMIN, it creates a dask cluster in {{<link "../batch-computing/lotus-overview.md">}}LOTUS{{</link>}}, our batch computing cluster. It automatically creates a dask for you, scheduling Slurm jobs to create dask schedulers and workers as appropriate.
 
-Before using dask gateway on JASMIN, you first need to apply for the `dask` service on the JASMIN accounts portal.
+## Prerequisites
 
-{{<button href="https://accounts.jasmin.ac.uk/services/additional_services/dask/">}}Apply here{{</button>}}
+Before using Dask Gateway on JASMIN, you will need: 
+
+1. An existing JASMIN account and valid `jasmin-login` access role: {{<button size="sm" href="https://accounts.jasmin.ac.uk/services/login_services/jasmin-login/">}}Apply here{{</button>}}
+2. **Subsequently** (once `jasmin-login` has been approved and completed), the `dask` access role: {{<button size="sm" href="https://accounts.jasmin.ac.uk/services/additional_services/dask/">}}Apply here{{</button>}}
+
+The `jasmin-login` access role ensures that your account is set up with access to the LOTUS batch processing cluster, while the `dask` role grants access to the special LOTUS partition used by the Dask Gateway service.
 
 ## Creating a dask cluster
 
