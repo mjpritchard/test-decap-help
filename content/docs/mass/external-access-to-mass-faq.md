@@ -138,6 +138,22 @@ If you have a retrieval in progress, it is safe to run this command as it will
 not affect processes already running.
     {{</accordion-item>}}
 
+    {{< accordion-item header="ERROR_SINGLE_COPY_UNAVAILABLE" >}}
+    
+MOOSE - Single Copy Unavailable error
+
+On occasion, a tape library needs to be taken down for maintenance. If a user is trying to retrieve a single-copy file stored on one of those tapes, the retrieval will temporarily fail with the message `ERROR_SINGLE_COPY_UNAVAILABLE`. As soon as the maintenance is completed, the file will be available again.
+
+Tapes are taken out of MASS for copying to the new MASS system and become unavailable for roughly 14 days. The process is as follows:
+
+- Thursday (week one): Tapes are marked unavailable for indexing by the system.
+- Tuesday (week two): Tapes get taken out for copying to the new MASS system.
+- Following Thursday (week three): Tapes are returned to Met Office library and should be available again.
+
+So, if you find that data or files are unavailable due to the `ERROR_SINGLE_COPY_UNAVAILABLE` error, try reading the data again on Friday, and if still not available, try the following Friday when the migration should have completed.
+
+    {{< /accordion-item >}}
+
 {{< /accordion >}}
 
 ## MOOSE basics
