@@ -47,9 +47,13 @@ If it says "You are already logged in with a JASMIN account" then you need take 
 ### File system permissions and groups
 
 File system access to a GWS is managed using a Unix group that begins with
-`gws_`. But you are added as a member of that group by being granted the `USER` role of the corresponding service in the Accounts Portal. As manager, you are normally granted access at the time that the GWS is set up by the JASMIN team, so it should be in place when you first access the storage.
+`gws_` and normally corresponds with the name of the service in the Accounts Portal. When users are granted the `USER` role for the workspace, they are also made members of the corresponding `gws_<gwsname>` group. As manager, you are normally granted `USER` and `MANAGER` access at the time that the GWS is set up by the JASMIN team, so it should be in place when you first access the storage. This means that:
 
-A good first task is then to set up the {{<link "introduction-to-group-workspaces/#recommended-directory-structure-for-a-gws">}}recommended directory structure{{</link>}}.
+- you have access yourself to the workspace (via the `USER` role giving you membership of the `gws_<gwsname>` group)
+- you take over responsibility (via the `MANAGER` role) for approving other users' applications for the `USER` role.
+- you can unilaterally grant `DEPUTY` access to other users if you know their username and want them to help you in the task of approving requests for `USER` access.
+
+Once you yourself have access, a good first task is to set up the {{<link "introduction-to-group-workspaces/#recommended-directory-structure-for-a-gws">}}recommended directory structure{{</link>}}.
 
 A list of the user IDs that have access to a given GWS can be found by using
 the "getent group" command and piping it through "grep" to select only your
@@ -90,14 +94,26 @@ ls -l testdir
 (out)drwxrws--- 2 jdoe gws_cedaproc 4096 Jan 26 14:36 testdir
 {{</command>}}
 
-Check the umask:
+Or (as separate steps):
+
+{{<command user="user" host="sci1">}}
+mkdir testdir
+chgrp g+rws testdir
+chgrp o-rwx testdir
+ls -l testdir
+(out)drwxrws--- 2 jdoe gws_cedaproc 4096 Jan 26 14:36 testdir
+{{</command>}}
+
+However, please also see {{<link "#security" />}}, below (and make sure your users are aware of this).
+
+Check your umask:
 
 {{<command user="user" host="sci1">}}
 umask
 (out)0022
 {{</command>}}
 
-Modify the "umask" so that any new file or directory that you create will be
+Modify your "umask" so that any new file or directory that you create will be
 writable anyone with the group permission:
 
 {{<command user="user" host="sci1">}}
@@ -106,6 +122,8 @@ touch testdir/newfile
 ls -l testdir
 (out)-rw-rw-r-- 1 jdoe gws_cedaproc 0 Jan 26 14:39 newfile
 {{</command>}}
+
+If you want the `umask` setting to persist, you should set it for yourself in your `~/.bashrc` file, and advise your users to do the same.
 
 ## Quota, resource allocation and GWS lifetime
 
