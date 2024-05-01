@@ -3,6 +3,7 @@ author: Matt Pritchard
 title: A Test Guide
 description: An example of a guide
 tags: quickstart
+draft: true
 ---
 
 # Tua ad est rogis proicit annum inmoriuntur
