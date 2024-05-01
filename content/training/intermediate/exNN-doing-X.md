@@ -7,6 +7,7 @@ tags:
     - intermediate
     - lorem markdownum
 lastmod: 2024-01-26
+draft: true
 ---
 
 # Corpus induere protinus mercede fuerit quoque qui
@@ -129,3 +130,5 @@ undis solidorum iunctura ubi, non redemit aera. Magnum quem erat rura, herbis.
 Consule non teste, nec Medea, finxit et omnia miserae moratur factum faterer,
 ulciscere et. Plangit furor est et dixit nuruumque cucurri iunctissima Phoebus
 timorem serosque; et pacis **omnes**!
+
+Aliqua abbreviationes hic adhibitae sunt {{<abbr "sof">}} et {{<abbr "pfs">}}
