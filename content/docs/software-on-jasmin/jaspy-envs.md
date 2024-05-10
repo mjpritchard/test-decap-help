@@ -67,7 +67,7 @@ module avail jaspy
 (out)-------------------------  /apps/modulefiles  ----------------------------
 (out)   jaspy/2.7/r20190715    jaspy/3.7/r20200606     jaspy/3.10/r20230718 (D)
 (out)   jaspy/3.7/r20181219    jaspy/3.7/r20210320     jaspy/3.11/r20240302
-(out)   jaspy/3.7/r20190612    jaspy/3.8/r20211105
+(out)   jaspy/3.7/r20190612    jaspy/3.8/r20211105     jaspy/3.11/r20240508
 (out)   jaspy/3.7/r20190627    jaspy/3.10/r20220721
 {{</command>}}
 
@@ -82,7 +82,8 @@ the current (default) version.
 
 Jaspy Python 3.7 Environment |  Versioned list of software packages |  Default? |  Comments / Issues  
 ---|---|---|---
-jaspy/3.11/r20240302  |  [List of packages including versions](https://github.com/cedadev/ceda-jaspy-envs/blob/main/environments/py3.11/mf3-23.11.0-0/jaspy3.11-mf3-23.11.0-0-r20240302/final-spec.yml) | No (will become the default on 16/04/2024) | 
+jaspy/3.11/r20240508  |  [List of packages including versions](https://github.com/cedadev/ceda-jaspy-envs/blob/main/environments/py3.11/mf3-23.11.0-0/jaspy3.11-mf3-23.11.0-0-r20240508/final-spec.yml) | No (will become the default on 22/05/2024) | [Release notes](https://github.com/cedadev/ceda-jaspy-envs/releases/tag/jaspy3.11_r20240508)
+jaspy/3.11/r20240302  |  [List of packages including versions](https://github.com/cedadev/ceda-jaspy-envs/blob/main/environments/py3.11/mf3-23.11.0-0/jaspy3.11-mf3-23.11.0-0-r20240302/final-spec.yml) | No | [Release notes](https://github.com/cedadev/ceda-jaspy-envs/releases/tag/jaspy3.11_r20240302)
 jaspy/3.10/r20220721  |  [List of packages including versions](https://github.com/cedadev/ceda-jaspy-envs/blob/main/environments/py3.10/m3-4.9.2/jaspy3.10-m3-4.9.2-r20220721/final-spec.yml) |  Yes (from: 18/10/2022)  |  NCO and NCL have now been moved to the ["jasmin-sci" packages]({{< ref "jasmin-sci-software" >}}) installation.  
 jaspy/3.8/r20211105  |  [List of packages including versions](https://github.com/cedadev/ceda-jaspy-envs/blob/master/environments/py3.8/m3-4.9.2/jaspy3.8-m3-4.9.2-r20211105/final-spec.yml) |  No (was default: 16/11/2021 - 17/102022)  |  Known problem with NCL rendering Shapefiles (see [issue](https://github.com/cedadev/ceda-jaspy-envs/issues/56)). Some packages were removed in this release due to dependency problems: theano, pymc3, pystan, pyngl,pyferret (see[issue](https://github.com/cedadev/ceda-jaspy-envs/issues/81)).  
 jaspy/3.7/r20210320  |  [List of packages including versions](https://github.com/cedadev/ceda-jaspy-envs/blob/master/environments/py3.7/m3-4.9.2/jaspy3.7-m3-4.9.2-r20210320/final-spec.yml)  |  No (was default:  20/05/2021 - 16/11/2021)  |  Known problem with NCL rendering Shapefiles (see [issue](https://github.com/cedadev/ceda-jaspy-envs/issues/56))  
