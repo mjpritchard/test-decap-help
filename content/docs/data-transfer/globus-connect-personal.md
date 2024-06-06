@@ -8,21 +8,18 @@ title: 'Globus Connect Personal'
 
 ## Introduction
 
-This article describes how to create your own Globus endpoint using Globus Connect Personal.
+This article describes how to create your own Globus collection using Globus Connect Personal.
 
 Please read {{<link "globus-transfers-with-jasmin"/>}} first for a wider introduction to Globus.
 
-Using Globus Connect Personal (GCP) would enable you to transfer files to/from another Globus Endpoint using
+Using {{<link "https://www.globus.org/globus-connect-personal">}}Globus Connect Personal (GCP){{</link>}} would enable you to transfer files to/from another Globus collection using
 any of the Globus Online transfer tools ([Web app](https://app.globus.org),
-[CLI](https://docs.globus.org/cli/) or [Python SDK](https://globus-sdk-
-python.readthedocs.io/en/stable/)).
+[CLI](https://docs.globus.org/cli/) or [Python SDK](https://globus-sdk-python.readthedocs.io/en/stable/)).
 
 The term "endpoint" has changed meaning with version 5 of Globus, so users now interact with "collections". 
 but see {{<link "https://docs.globus.org/cli/collections_vs_endpoints/#:~:text=The%20Endpoint%20is%20used%20for%20some%20operations%20like%20collection%20listing,management%20capabilities%20and%20data%20transfers.">}}Endpoints vs Collections{{</link>}} for a fuller explanation of these entities.
 
-
-For example, if you set up GCP on your
-desktop/laptop, you could transfer data files to/from your home directory or
+For example, if you set up GCP on your desktop/laptop, you could transfer data files to/from your home directory or
 other storage on JASMIN.
 
 {{<alert type="info">}}

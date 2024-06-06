@@ -9,6 +9,8 @@ title: 'Globus Command-Line Interface'
 Updated for new JASMIN Default Collection (replaces previous JASMIN Globus Endpoint)
 {{</alert>}}
 
+Please read {{<link "globus-transfers-with-jasmin"/>}} first for a wider introduction to Globus on JASMIN.
+
 This article describes
 
 - how to transfer data using the Globus Command Line Interface. It covers:
@@ -19,9 +21,7 @@ It is not necessary to use the Globus CLI on a JASMIN server: it is a tool
 that you can use anywhere (for example your own desktop/laptop) to interact
 with the Globus service, to orchestrate a transfer between 2 endpoints (collections, in new Globus terminology). The
 CLI is not centrally installed on JASMIN, and does not need to be in the same
-place as either of the 2 collections involved in the transfer. The fact that one
-of those collections is the JASMIN collection does not mean that you need
-to be on JASMIN to orchestrate the transfer: you could use the CLI on your own
+place as either of the 2 collections involved in the transfer. You could use the CLI on your own
 laptop/desktop, even if the 2 collections were 2 institutional Globus collections
 on opposite sides of the world. You could of course decide to install the CLI
 in your home directory on JASMIN if that were useful as part of your
@@ -551,6 +551,10 @@ path. Modify the corresponding variables in the script to these values:
 DESTINATION_COLLECTION='a2f53b7f-1b4e-4dce-9b7c-349ae760fee0' ##JASMIN Default Collection ID
 DESTINATION_PATH='/home/users/<username>/sync-demo/' ##replace <username> with your JASMIN username
 {{</command>}}
+
+{{<alert type="info">}}
+For **STFC users only** where the other collection in the transfer is within the STFC network, an additional collection is provided ["JASMIN STFC Internal Collection"](https://app.globus.org/file-manager/collections/591d44ac-adbb-43db-9931-977708d07450/overview) and has ID `591d44ac-adbb-43db-9931-977708d07450`.
+{{</alert>}}
 
 2\. If you haven't already, activate the Python virtual environment where you
 have the CLI installed, and login:
