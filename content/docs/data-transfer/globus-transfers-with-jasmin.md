@@ -27,7 +27,7 @@ There are some differences to how the new (v5) version of Globus works on JASMIN
 
 - Users now interact with a **collection**
   - **Most users**: please use ["JASMIN Default Collection"](https://app.globus.org/file-manager/collections/a2f53b7f-1b4e-4dce-9b7c-349ae760fee0/overview) with ID `a2f53b7f-1b4e-4dce-9b7c-349ae760fee0`
-  - For **STFC users only** where the other collection (either {{<link "globus-connect-personal">}}GCP{{</link>}} or {{<link "https://www.globus.org/globus-connect-server">}}GCS{{</link>}}) is within STFC, an additional collection is provided ["JASMIN STFC Internal Collection"](https://app.globus.org/file-manager/collections/591d44ac-adbb-43db-9931-977708d07450/overview) and has ID `591d44ac-adbb-43db-9931-977708d07450`.
+  - For **STFC users only** where the other collection (either {{<link "globus-connect-personal">}}GCP{{</link>}} or {{<link "https://www.globus.org/globus-connect-server">}}GCS{{</link>}}) is within STFC, an additional collection is provided ["JASMIN STFC Internal Collection"](https://app.globus.org/file-manager/collections/591d44ac-adbb-43db-9931-977708d07450/overview) and has ID `6197984a-8b64-4942-943b-8244306b1601`.
 - You now use the JASMIN Accounts Portal to authenticate (using your JASMIN account credentials) via OpenID Connect (OIDC). 
 - During the authentication process, you are redirected to the JASMIN Accounts Portal to link your Globus identity with your JASMIN account.
 - Consent needs to be granted at a number of points in the process to allow the Globus service to carry out actions on your behalf.
