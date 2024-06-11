@@ -16,7 +16,7 @@ actions:
     icon: "fas circle-info"
     weight: 20
   about-jasmin:
-    url: "about"
+    url: "https://www.jasmin.ac.uk"
     title: "About JASMIN"
     weight: 30
 ---
