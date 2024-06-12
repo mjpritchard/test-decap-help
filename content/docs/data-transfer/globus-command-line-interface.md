@@ -553,7 +553,7 @@ DESTINATION_PATH='/home/users/<username>/sync-demo/' ##replace <username> with y
 {{</command>}}
 
 {{<alert type="info">}}
-For **STFC users only** where the other collection in the transfer is within the STFC network, an additional collection is provided ["JASMIN STFC Internal Collection"](https://app.globus.org/file-manager/collections/591d44ac-adbb-43db-9931-977708d07450/overview) and has ID `6197984a-8b64-4942-943b-8244306b1601`.
+For **STFC users only** where the other collection in the transfer is within the STFC network, an additional collection is provided ["JASMIN STFC Internal Collection"](https://app.globus.org/file-manager/collections/591d44ac-adbb-43db-9931-977708d07450/overview) and has ID `9efc947f-5212-4b5f-8c9d-47b93ae676b7`.
 {{</alert>}}
 
 2\. If you haven't already, activate the Python virtual environment where you
