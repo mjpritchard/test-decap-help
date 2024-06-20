@@ -1,7 +1,7 @@
 ---
 description: Software and operating system changes - migration to Rocky Linux 9 (Summer 2024)
 slug: rocky9-migration-2024
-title: Miration to Rocky Linux 9 2024
+title: Migration to Rocky Linux 9 2024
 tags:
 - centos7
 - rocky9
