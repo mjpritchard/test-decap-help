@@ -8,7 +8,7 @@ weight: 30
 
 This article explains how to register on the JASMIN accounts portal.
 
-Having a jasmin portal account does not by itself provide you with any access to JASMIN machines or services.
+Having a JASMIN portal account does not by itself provide you with any access to JASMIN machines or services.
 
 ## JASMIN accounts portal
 
@@ -18,7 +18,7 @@ The [JASMIN accounts portal](https://accounts.jasmin.ac.uk/) is the place where 
 
 ## Apply for a new JASMIN account
 
-To apply for a JASMIN account you need to use an email address affiliated with your academic institution. Then proceed as follows:
+To apply for a JASMIN account you need to use an email address affiliated with your academic institution. This is the preferred option — otherwise your email address may not be immediately approved. Then proceed as follows:
 
 **Step 1** : On [JASMIN accounts portal](https://accounts.jasmin.ac.uk/)
 select "Apply for a new JASMIN account". This will take you to the following
