@@ -33,7 +33,7 @@ directories on JASMIN).
 
 {{<command>}}
 pdu -sh /home/users/<username>
-(out)#                  ^^^^^^^^^^ replace with your username
+(out)#                   ^^^^^^^^^^ replace with your username
 {{</command>}}
 
 {{<alert type="danger">}}You are only allowed to exceed the 100 GB quota for a very
