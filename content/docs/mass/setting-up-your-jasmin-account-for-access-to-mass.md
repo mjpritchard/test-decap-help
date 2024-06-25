@@ -37,7 +37,8 @@ ssh -A -X <userid>@login1.jasmin.ac.uk
 
 From the login machine, you can then login to the MASS client host.
 
-**Note:** If you are prompted for a password at this stage, then you have
+**Note:** If it does not let you log in even when you have agent
+forwarding correctly set up and can log into the "sci" nodes, then you have
 either not requested additional access to the dedicated client machine, or
 access hasn't been approved yet, email the Met Office Service Manager
 [monsoon@metoffice.gov.uk](mailto:monsoon@metoffice.gov.uk), to verify that
