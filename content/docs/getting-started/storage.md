@@ -1,6 +1,6 @@
 ---
 aliases: /article/176-storage
-description: Access to storage
+description: This article provides an overview of JASMIN storage.
 tags:
 - quota
 - backup
@@ -9,8 +9,6 @@ title: Access to storage
 weight: 150
 ---
 
-This article provides information about JASMIN storage. It covers:
-
 **IMPORTANT:** Please see also [Understanding new JASMIN storage]({{< ref
 "understanding-new-jasmin-storage" >}}) which explains more about the
 different types of storage as of Phase 4 of JASMIN's history.
@@ -18,9 +16,14 @@ different types of storage as of Phase 4 of JASMIN's history.
 ## Home directory
 
 Every JASMIN user is allocated a HOME directory located
-at`/home/users/<user_id>`. This directory is available across most of the
+at `/home/users/<username>`. This directory is available across most of the
 interactive and batch computing resources, including the JASMIN login and
 transfer servers.
+
+{{< alert color="info" >}}
+In the commands on this page, please replace `<username>` with your username, or use the environment variable `${USER}`. 
+For example, `/home/users/<username>`  becomes `/home/users/joebloggs`.
+{{</alert>}}
 
 Each home directory has a default **quota of 100 GB**. Although you can't 
 directly check usage against your quota, you can find out the current size
@@ -30,6 +33,7 @@ directories on JASMIN).
 
 {{<command>}}
 pdu -sh /home/users/<username>
+(out)#                  ^^^^^^^^^^ replace with your username
 {{</command>}}
 
 {{<alert type="danger">}}You are only allowed to exceed the 100 GB quota for a very
@@ -50,12 +54,10 @@ accidentally deleted. These are stored in
 
 The most recent backup is the one with the highest snapshot id number.
 
-Find the ones relevant to your username with a command line this: (
-`${USER}` is the environment variable containing your username, so can be
-copied in this case)
+Find the ones relevant to your username with a command line this:
 
 {{<command>}}
-ls -ld /home/users/.snapshot/homeusers2.*/${USER}
+ls -ld /home/users/.snapshot/homeusers2.*/<username>  ## replace <username> with your own, as before
 {{</command>}}
 
 There should be up to 14 directories like this: 
@@ -201,7 +203,7 @@ Any important data for keeping should be written to
 a {{<link "../short-term-project-storage/introduction-to-group-workspaces">}}group workspace{{</link>}}
 or to your home directory if appropriate.**
 
-The `/work/scratch-pw[2,3]` and `/work/scratch-nopw`areas are not available on
+The `/work/scratch-pw[2,3]` and `/work/scratch-nopw` areas are not available on
 the xfer, login or nx-login servers.
 
 ### Avoid inadvertently writing to /tmp
