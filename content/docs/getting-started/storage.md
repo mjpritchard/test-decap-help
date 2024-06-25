@@ -36,10 +36,6 @@ pdu -sh /home/users/<username>
 (out)                    ^^^^^^^^^^ replace with your username
 {{</command>}}
 
-```genshi
-pdu -sh /home/users/<username>
-```
-
 {{<alert type="danger">}}You are only allowed to exceed the 100 GB quota for a very
 brief period of time. If you continue to exceed the limit, you will be
 unable to add any more files, which means that jobs may fail, and other things may
