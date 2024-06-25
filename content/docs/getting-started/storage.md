@@ -57,7 +57,7 @@ The most recent backup is the one with the highest snapshot id number.
 Find the ones relevant to your username with a command line this:
 
 {{<command>}}
-ls -ld /home/users/.snapshot/homeusers2.*/<username>  # replace <username> with your own, as before
+ls -ld /home/users/.snapshot/homeusers2.*/<username>  ## replace <username> with your own, as before
 {{</command>}}
 
 There should be up to 14 directories like this: 
