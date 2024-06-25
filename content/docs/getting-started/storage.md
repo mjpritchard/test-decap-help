@@ -16,12 +16,13 @@ different types of storage as of Phase 4 of JASMIN's history.
 ## Home directory
 
 Every JASMIN user is allocated a HOME directory located
-at`/home/users/<username>`. This directory is available across most of the
+at `/home/users/<username>`. This directory is available across most of the
 interactive and batch computing resources, including the JASMIN login and
 transfer servers.
 
 {{< alert color="info" >}}
-In the commands on this page, please replace `<username>` with your username, or use the environment variable `${USER}`.
+In the commands on this page, please replace `<username>` with your username, or use the environment variable `${USER}`. 
+For example, `/home/users/username`  becomes `/home/users/joebloggs`.
 {{</alert>}}
 
 Each home directory has a default **quota of 100 GB**. Although you can't 
@@ -32,7 +33,12 @@ directories on JASMIN).
 
 {{<command>}}
 pdu -sh /home/users/<username>
+(out)                    ^^^^^^^^^^ replace with your username
 {{</command>}}
+
+```genshi
+pdu -sh /home/users/<username>
+```
 
 {{<alert type="danger">}}You are only allowed to exceed the 100 GB quota for a very
 brief period of time. If you continue to exceed the limit, you will be
@@ -201,7 +207,7 @@ Any important data for keeping should be written to
 a {{<link "../short-term-project-storage/introduction-to-group-workspaces">}}group workspace{{</link>}}
 or to your home directory if appropriate.**
 
-The `/work/scratch-pw[2,3]` and `/work/scratch-nopw`areas are not available on
+The `/work/scratch-pw[2,3]` and `/work/scratch-nopw` areas are not available on
 the xfer, login or nx-login servers.
 
 ### Avoid inadvertently writing to /tmp
