@@ -64,6 +64,8 @@ The direct link is:
 When steps one and two are complete, you will be provided with a specific MASS account to
 use on JASMIN and emailed a MOOSE credentials file. Please see [Setting up
 your JASMIN account for access to MASS]({{< ref "setting-up-your-jasmin-account-for-access-to-mass" >}}) once you have received the credentials file.
+Your MASS account will give (read-only) access to the relevant data on MASS based on the information provided by your sponsor;
+please note that the access control is handled by the Met Office and not by the JASMIN team.
 
 Note: If you have access to MASS on other systems you cannot copy those MOOSE
 credentials file/s onto JASMIN – they will not work! Please also see the
