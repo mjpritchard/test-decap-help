@@ -94,6 +94,11 @@ greater as earlier versions do not support the `-W` flag. You can check your
 version using: `ssh -v`
   {{< /accordion-item >}}
 
+  {{< accordion-item header="Can I write to MASS from JASMIN?" >}}
+    No, MASS access from JASMIN is strictly read-only. If you need to write to the MASS archive,
+    contact monsoon@metoffice.gov.uk and ask to be put in touch with the relevant team.
+  {{< /accordion-item >}}
+
 {{< /accordion >}}
 
 ## MOOSE messages and what to do
