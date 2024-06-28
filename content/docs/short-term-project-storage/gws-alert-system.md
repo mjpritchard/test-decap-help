@@ -25,9 +25,6 @@ The threshold value at which alerts are sent is obtained from a file within the 
 ```
 [general]
 volume_warning_threshold =
-dirs = 
-excl_dirs =
-exts =
 ```
 
 where the `volume_warning_threshold` is the threshold value used in the GWS Alert system.
