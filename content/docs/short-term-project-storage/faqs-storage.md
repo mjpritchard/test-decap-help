@@ -8,7 +8,7 @@ tags:
 title: New storage FAQs and issues
 ---
 
-{{<alert type="info">}}This article was originally written in 2018/19 to introdice new forms of storage which were brought into produciton at that stage. Some of the information and terminology is now out of date, pending further review of JASMIN documentation.{{</alert>}}
+{{<alert type="info">}}This article was originally written in 2018/19 to introduce new forms of storage which were brought into production at that stage. Some of the information and terminology is now out of date, pending further review of JASMIN documentation.{{</alert>}}
 
 Workflows with some of the issues highlighted below will have a knock on
 effect for other users, so please take the time to check and change your code
@@ -64,10 +64,10 @@ starting another.
 
 #### Opening the same file for editing in more than one editor on the same or different servers
 
-_Here’s an example of how this shows up using “lsof” and by listing user
+Here’s an example of how this shows up using “lsof” and by listing user
 processes with “ps”. The same file “ISIMIPnc_to_SDGVMtxt.py” is being edited
 in 2 separate “vim” editors. In this case, the system team was unable to kill
-the processes on behalf of the user, so the only solution was to reboot sci1._
+the processes on behalf of the user, so the only solution was to reboot sci1.
  
 {{<command user="user" host="sci1">}}
 lsof /gws/nopw/j04/gwsnnn/
@@ -91,7 +91,7 @@ be rebooted.
 
 ## 2\. Issues with small files
 
-_The larger file systems in operation within JASMIN are suitable for storing
+The larger file systems in operation within JASMIN are suitable for storing
 and manipulating large datasets and not currently optimised for handling small
 ( <64kBytes) files. These systems are not the same as those you would find on
 a desktop computer or even large server, and often involve many disks to store
@@ -99,12 +99,12 @@ the data itself and metadata servers to store the file system metadata (such
 as file size, modification dates, ownership etc). If you are compiling code
 from source files, or running code from python virtual environments, these are
 examples of activities which can involve accessing large numbers of small
-files._
+files.
 
-_Later versions of our PFS systems handled this by using SSD storage for small
+Later versions of our PFS systems handled this by using SSD storage for small
 files, transparent to the user. SOF however, can’t do this (until later in
 2019), so in Phase 4, we introduced larger home directories based on SSD, as
-well as an additional and larger scratch area._
+well as an additional and larger scratch area.
 
 **Suggested solution:** Please consider using your home directory for small-
 file storage, or `/work/scratch-nopw2` for situations involving LOTUS
@@ -125,14 +125,13 @@ similar issues from writing large numbers of small files to SOF storage (known
 as QB ).
 
 **Suggested solution:** It is more efficient to write netCDF3 classic files to
-another filesystem type (e.g. /work/scratch/pw* or /work/scratch-nopw2) and then move them to a SOF
-GWS, rather than writing directly to SOF.
+another filesystem type (e.g. `/work/scratch/pw*` or `/work/scratch-nopw2`) and then move them to a SOF GWS, rather than writing directly to SOF.
 
 ---
 
 ## 3\. "Everything's running slowly today"
 
-_This can be due to overloading of the scientific analysis servers
+This can be due to overloading of the scientific analysis servers
 (`sci*.jasmin.ac.uk`) which we provide for interactive use. They’re great
 for testing a code and developing a workflow, but are not designed for
 actually doing the big processing. Please take this heavy-lifting or
@@ -140,7 +139,7 @@ long-running work to the LOTUS batch processing cluster, leaving the
 interactive compute nodes responsive enough for everyone to use.
 
 **Suggested solution:** When you log in via one of the `login*.jasmin.ac.uk`
-nodes, you are shown a 'message of the day" a list of all the `sci*` machines,
+nodes, you are shown a 'message of the day': a list of all the `sci*` machines,
 along with memory usage and the number of users on each node at that time.
 This can help you select a less-used machine (but don’t necessarily expect the
 same machine to be the right choice next time!).

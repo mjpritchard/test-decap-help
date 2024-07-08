@@ -47,7 +47,7 @@ shows the temporal quota used (TQ) and the blue line shows the hard quota
 - The user initialises their XFC.
 - On day **5** , the user copies a 1 TB file into their XFC
 - For the next 4 weeks (on days **12** , **19** , **26** and **31** ) the user copies in another 1 TB file
-- The TQ steadily grows until on day **79** it has reached it's limit of 300TB days, the first 1TB file is deleted
+- The TQ steadily grows until on day **79** it has reached its limit of 300TB days, the first 1TB file is deleted
 - On day **98** another 1TB file is deleted
 - On day **120** , the user copies 10TB into their XFC
 - On days **122** , **130** and **140** the 1TB files that were copied in on days **19** , **26** and **31** are deleted.
