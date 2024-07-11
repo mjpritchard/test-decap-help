@@ -277,7 +277,7 @@ scp userid@xfer1.jasmin.ac.uk:/group_workspaces/cems/<project>/jasmin_file.pp my
   
   {{< accordion-item header="Can I run MASS retrievals on LOTUS or through a workload manager?" >}}
 In addition to the interactive mass-cli server there is also the moose1 server
-that is only accessible through the {{<link "../batch-computing/lotus-overview">}}LOTUS batch processing cluster{{</link>}}. To submit jobs to moose1 you must use the [SLURM scheduler]({{< ref
+that is only accessible through the {{<link "../batch-computing/lotus-overview">}}LOTUS batch processing cluster{{</link>}}. To submit jobs to moose1 you must use the [Slurm scheduler]({{< ref
 "slurm-scheduler-overview" >}}). You will need to specify the account
 mass and partition mass, for example:
 
@@ -293,7 +293,7 @@ moo get $SRC_URI jasmin_copy.pp
 exit
 ```       
 
-It is also easy to configure the [Rose/Cylc workflow manager]({{< ref "rose-cylc-on-jasmin" >}}) to submit jobs to moose1 through the SLURM scheduler by
+It is also easy to configure the [Rose/Cylc workflow manager]({{< ref "rose-cylc-on-jasmin" >}}) to submit jobs to moose1 through the Slurm scheduler by
 including the following lines in your suite.rc file:
 
 ```

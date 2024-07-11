@@ -36,8 +36,8 @@ gw = dask_gateway.Gateway("https://dask-gateway.jasmin.ac.uk", auth="jupyterhub"
 options = gw.cluster_options()
 options.worker_cores = 2
 
-# Create a dask cluster, or, if one already exists, connect to it.
-# This stage creates the scheduler job in SLURM, so it may take some
+# Create a Dask cluster, or, if one already exists, connect to it.
+# This stage creates the scheduler job in Slurm, so it may take some
 # time while your job queues.
 clusters = gw.list_clusters()
 if not clusters:
@@ -48,7 +48,7 @@ else:
 # Create at least one worker, and allow your cluster to scale to three.
 cluster.adapt(minimum=1, maximum=3)
 
-# Get a dask client.
+# Get a Dask client.
 client = cluster.get_client()
 
 #########################

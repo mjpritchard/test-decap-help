@@ -51,7 +51,7 @@ workflows/tasks that:
 1. Use the [new software environments](https://drive.google.com/file/d/1gD9C0TZyNITibgDhlv3pRzgd4JjzVfBW/view)
 2. Do not make use of the software `/apps/contrib` (which has only been tested for RHEL6 operating systems)
 3. Do not make use of the software available under the `module` environment (which has only been tested for RHEL6 operating systems) except the modules `jaspy` and `jasmin-sci`
-4. A job submitted to the new batch scheduler SLURM will run on a CentOS7 node in the LOTUS cluster.
+4. A job submitted to the new batch scheduler Slurm will run on a CentOS7 node in the LOTUS cluster.
 
 **Table 2:** List of CentOS7 Scientific analysis servers
 
