@@ -1,12 +1,10 @@
 ---
 aliases: /article/187-login
-description: How to login
+description: This article explains how to login to JASMIN
 slug: login
 title: How to login
 weight: 100
 ---
-
-This article explains how to login to JASMIN.
 
 The instructions below cover the process of logging in using a terminal client
 only. For a graphical linux desktop, please see alternative instructions using
@@ -24,15 +22,15 @@ should ensure that the key is available to subsequent host(s) in the chain of
 SSH "hops".
 
 The details of how to do this can vary depending on whether your local machine
-runs Windows, MacOS or Linux.
+runs Windows, macOS or Linux.
 
 Whichever system you're using, you will need to use an appropriate tool to
 load your private key so that it can be presented at the time of logging in.
 
-**Linux and MacOS users:** `ssh-agent` can be used (see instructions below).
+**Linux and macOS users:** `ssh-agent` can be used (see instructions below).
 
 **Windows users:** we recommend the [MobAgent utility within MobaXterm]({{<ref "mobaxterm" >}}).
-MobXterm is a linux terminal emulator for Windows.
+MobXterm is a Linux terminal emulator for Windows.
 
 `ssh-agent` is a utility that stores private keys and makes them available to
 other software that use the SSH protocol to connect to remote clients.
@@ -77,15 +75,24 @@ use.
 
 Mac users (OS X Leopard onwards) can optionally benefit from linking the SSH
 key to Keychain, which securely stores the passphrase as well. This means that
-even after a reboot, your SSH key is always available in any Terminal session
-automatically. See `man ssh-add` and look for the `--apple-use-keychain` or
-`--apple-load-keychain` options, if available (These replace the now-
-deprecated `-K` option).
+even after a reboot, your SSH key is always available in any terminal session
+automatically. You can do this by running `ssh-add` with `--apple-use-keychain`:
+
+{{<command>}}
+ssh-add ~/.ssh/id_rsa_jasmin --apple-use-keychain
+{{</command>}}
+
+And then by adding the corresponding command with `--apple-load-keychain`  to your `.zshrc` file so
+that it loads it for every new terminal session:
+
+{{<command>}}
+echo "ssh-add --apple-load-keychain" >> ~/.zshrc
+{{</command>}}
 
 ## The JASMIN login servers
 
 See this article for a [description and listing of the login servers]({{< ref
-"login-servers" >}})
+"login-servers" >}}).
 
 ## Logging in to JASMIN
 
@@ -109,21 +116,21 @@ SSH connections. (Windows users can [enable X-forwarding in
 MobaXterm](https://mobaxterm.mobatek.net/documentation.html#4_1_6) saved
 sessions).
 
- ## Can't login?
+## Can't login?
 
-  * Check our troubleshooting guide: [login problems]({{< ref "login-problems" >}})
+- Check our troubleshooting guide: [login problems]({{< ref "login-problems" >}})
 
 ## The login message
 
 When you first login you will see a message that provides some useful
 information (see Figure 1).
 
-{{<image src="img/docs/login/file-dKz1hO4aLb.png" caption="The login message shown on login1.jasmin.ac.uk. Note that in this case, the -A option enabling onward connections was omitted.">}}
+{{<image src="img/docs/login/motd-labelled.png" caption="The login message shown on login1.jasmin.ac.uk.">}}
 
 ## X-forwarding for graphical applications (within JASMIN only)
 
 Some applications involve displaying graphical output from a remote server,
-typically to display plots or interace with a user interface. You can instruct
+typically to display plots or interface with a user interface. You can instruct
 your SSH connection to enable forwarding of X-server capability by adding the
 `-X` argument to the `ssh` command, as follows:
 
@@ -131,8 +138,8 @@ your SSH connection to enable forwarding of X-server capability by adding the
 ssh -X <user>@<hostname>
 {{</command>}}
 
-Note that the `-X` argument can be used in conjunction with the agent-
-forwarding`-A` argument. In some cases the `-Y` option may be needed instead of
+Note that the `-X` argument can be used in conjunction with the agent-forwarding
+`-A` argument. In some cases the `-Y` option may be needed instead of
 `-X`.
 
 Please note that this arrangement sends your graphical output back to your
@@ -154,7 +161,7 @@ all within the JASMIN network.
 Having been through all the steps and logged in to JASMIN (well done!) you
 will be keen to do some real work. You could try the [general purpose
 scientific analysis servers]({{< ref "sci-servers" >}}) to get started. Use
-the list presented on the login screen to select a sci server which is not
+the list presented on the login screen to select a `sci` server which is not
 under heavy usage.
 
 For example, from the JASMIN login server, you might choose to login to
