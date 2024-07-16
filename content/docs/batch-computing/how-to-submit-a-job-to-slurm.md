@@ -169,14 +169,14 @@ submission would look something like this:
 #SBATCH --time=30:00
 #SBATCH --array=1-10
 module add jasr
-Rscript TestRFile.R datset${Slurm_ARRAY_TASK_ID}.csv
+Rscript TestRFile.R datset${SLURM_ARRAY_TASK_ID}.csv
 ```
 
 Here the important differences are :
 
 - The array is created by Slurm directive `--array=1-10` by including elements numbered `[1-10]`to represent our 10 variations
 - The error and output file have the array  index `%a` included  in the name and `%A` is the job ID.
-- The environment variable `$Slurm_ARRAY_TASK_ID` in the `Rscript` command is expanded to give the job index
+- The environment variable `$SLURM_ARRAY_TASK_ID` in the `Rscript` command is expanded to give the job index
 
 When the job is submitted, Slurm will create 10 tasks under the single job
 ID. The job array script is submitted in the usual way:
