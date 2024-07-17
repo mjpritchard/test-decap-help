@@ -39,11 +39,21 @@ There are two stages to loading your private key into `ssh-agent`: starting
 the agent and then loading your private key. Use the following commands to do
 this:
 
-**IMPORTANT: The dollar symbol '$' at the start of the command line in these
-example represents the shell prompt as displayed in your terminal - it does
-not need to be typed!**
+{{<alert type="info">}}
+IMPORTANT: The box below is an example of what your command line prompt
+might look like.
 
-{{<command>}}
+The username and computer name on the left indicates which machine you are
+currently on. Everything to the right of the dollar symbol '$' is the command
+which you are entering into the terminal.
+
+You don't need to type the '$' or anything before it!
+
+The rest of the documentation will use this format to show whether you should
+run the command on your local machine (`user@localhost`) or on JASMIN (`user@sci1`).
+{{</alert>}}
+
+{{<command user="user" host="localhost">}}
 eval $(ssh-agent -s)
 ssh-add ~/.ssh/id_rsa_jasmin
 (out)Enter passphrase for /home/users/jpax/.ssh/id_rsa_jasmin:
@@ -52,13 +62,12 @@ ssh-add ~/.ssh/id_rsa_jasmin
 
 When you run the `ssh-add` command you will be prompted to enter the
 passphrase that you specified when generating your SSH key pair. (If you use
-the c shell, replace the command "eval $(ssh-agent -s)" with "exec ssh-agent
-$SHELL")
+the c shell, replace the command `eval $(ssh-agent -s)` with `exec ssh-agent $SHELL`)
 
 You can test whether your key has been loaded by using the "-l" option to list
 the currently loaded keys in your agent:
 
-{{<command>}}
+{{<command user="user" host="localhost">}}
 ssh-add -l
 (out)2048 SHA256:iqX3NkPCpschVdqPxVde/ujap2cM0mYaAYYedzBGPaI /Users/jpax/.ssh/id_rsa_jasmin (RSA)
 {{</command>}}
@@ -78,14 +87,14 @@ key to Keychain, which securely stores the passphrase as well. This means that
 even after a reboot, your SSH key is always available in any terminal session
 automatically. You can do this by running `ssh-add` with `--apple-use-keychain`:
 
-{{<command>}}
+{{<command user="user" host="localhost">}}
 ssh-add ~/.ssh/id_rsa_jasmin --apple-use-keychain
 {{</command>}}
 
 And then by adding the corresponding command with `--apple-load-keychain`  to your `.zshrc` file so
 that it loads it for every new terminal session:
 
-{{<command>}}
+{{<command user="user" host="localhost">}}
 echo "ssh-add --apple-load-keychain" >> ~/.zshrc
 {{</command>}}
 
@@ -99,13 +108,13 @@ See this article for a [description and listing of the login servers]({{< ref
 Assuming that you have loaded your SSH private key using one of the methods
 described above, then you can login to a login server as follows (do this on your own/local machine):
 
-{{<command>}}
+{{<command user="user" host="localhost">}}
 ssh -A <user_id>@<login_server>
 {{</command>}}
 
 For example, user "jpax" might login to the JASMIN login server with:
 
-{{<command>}}
+{{<command user="user" host="localhost">}}
 ssh -A jpax@login1.jasmin.ac.uk
 {{</command>}}
 
