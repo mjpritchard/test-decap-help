@@ -1,6 +1,6 @@
 ---
 aliases: /article/187-login
-description: This article explains how to login to JASMIN
+description: How to login to JASMIN
 slug: login
 title: How to login
 weight: 100
@@ -30,7 +30,7 @@ load your private key so that it can be presented at the time of logging in.
 **Linux and macOS users:** `ssh-agent` can be used (see instructions below).
 
 **Windows users:** we recommend the [MobAgent utility within MobaXterm]({{<ref "mobaxterm" >}}).
-MobXterm is a Linux terminal emulator for Windows.
+MobaXterm is a Linux terminal emulator for Windows.
 
 `ssh-agent` is a utility that stores private keys and makes them available to
 other software that use the SSH protocol to connect to remote clients.
@@ -138,8 +138,8 @@ information (see Figure 1).
 
 ## X-forwarding for graphical applications (within JASMIN only)
 
-Some applications involve displaying graphical output from a remote server,
-typically to display plots or interface with a user interface. You can instruct
+Some applications involve displaying graphical output from an application or user interface running on a remote server,
+typically to display or interact with data graphically. You can instruct
 your SSH connection to enable forwarding of X-server capability by adding the
 `-X` argument to the `ssh` command, as follows:
 
