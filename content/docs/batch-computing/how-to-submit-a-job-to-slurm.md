@@ -59,7 +59,7 @@ sleep 5m
 ```
 
 For job specification of resources please refer to Table 2 of the help article
-[LSF to Slurm quick reference]({{< ref "lsf-to-slurm-quick-reference" >}})
+[Slurm quick reference]({{< ref "slurm-quick-reference" >}})
 
 ## Method 2: Submit via command-line options
 

@@ -203,7 +203,7 @@ button.
 ## Managing groups
 
 When you deploy a cluster through CaaS, it may create one or more access
-control groups in FreeIPA as part of it's configuration. Some clusters can
+control groups in FreeIPA as part of its configuration. Some clusters can
 also consume additional groups created in FreeIPA. This is discussed in more
 detail in the documentation for each cluster type, but the way you manage
 group membership is the same in all cases.

@@ -14,7 +14,7 @@ Cluster-as-a-Service (CaaS).
 [Kubernetes](https://kubernetes.io/) is an open-source system for automating
 the deployment, scaling and management of containerised applications.
 
-Kubernetes is an extremely powerful system, and a full discussion of it's
+Kubernetes is an extremely powerful system, and a full discussion of its
 capabilities is beyond the scope of this article - please refer to the
 Kubernetes documentation. This article assumes some knowledge of Kubernetes
 terminology and focuses on things that are specific to the way Kubernetes is

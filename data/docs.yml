@@ -50,7 +50,7 @@
     - title: example job 2 calc md5s
     - title: orchid gpu cluster
     - title: slurm status
-    - title: lsf to slurm quick reference
+    - title: slurm quick reference
 
 - title: software on jasmin
   pages: 

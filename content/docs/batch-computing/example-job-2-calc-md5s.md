@@ -16,7 +16,7 @@ This is a simple case because:
 1. the archive only needs to be read by the code and
 2. the code that we need to run involves only the basic linux commands so there are no issues with picking up dependencies from elsewhere.
 
-### Case Description**
+### Case Description
 
 - we want to calculate the MD5 checksums of about 220,000 files. It will take a day or two to run them all in series.
 - we have a text file that contains 220,000 lines - one file per line.
@@ -91,7 +91,7 @@ All jobs ran within about an hour.
 A variation on Case 2 has been used for checksumming datasets in the CMIP5
 archive. The Python code below will find all NetCDF files in a DRS dataset and
 generate a checksums file and error log. Each dataset is submitted as a
-separate bsub job.
+separate Slurm job.
 
 ```python
 """ 
@@ -116,7 +116,7 @@ def submit_job(dataset):
     if not op.exists(path):
         raise Exception('%s does not exist' % path)
     job_name = dataset
-    cmd = ('bsub -q lotus -J {job_name} '
+    cmd = ('sbatch -q short-serial -J {job_name} '
             '-o {job_name}.checksums -e {job_name}.err '
             "/usr/bin/md5sum '{path}/*/*.nc'").format(job_name=job_name,
                                                     path=path)
@@ -141,6 +141,6 @@ separate job by invoking the above script as follows:
 
 {{<command user="user" host="sci1">}}
 ./checksum_dataset.py $(cat datasets_to_checksum.dat)
-sbatch-q short-serial -J cmip5.output1.MOHC.HadGEM2-ES.rcp85.day.seaIce.day.r1i1p1.v20111128 -o cmip5.output1.MOHC.HadGEM2-ES.rcp85.day.seaIce.day.r1i1p1.v20111128.checksums -e cmip5.output1.MOHC.HadGEM2-ES.rcp85.day.seaIce.day.r1i1p1.v20111128.err /usr/bin/md5sum '/badc/cmip5/data/cmip5/output1/MOHC/HadGEM2-ES/rcp85/day/seaIce/day/r1i1p1/v20111128/*/*.nc'
+sbatch -q short-serial -J cmip5.output1.MOHC.HadGEM2-ES.rcp85.day.seaIce.day.r1i1p1.v20111128 -o cmip5.output1.MOHC.HadGEM2-ES.rcp85.day.seaIce.day.r1i1p1.v20111128.checksums -e cmip5.output1.MOHC.HadGEM2-ES.rcp85.day.seaIce.day.r1i1p1.v20111128.err /usr/bin/md5sum '/badc/cmip5/data/cmip5/output1/MOHC/HadGEM2-ES/rcp85/day/seaIce/day/r1i1p1/v20111128/*/*.nc'
 (out)Job <745307> is submitted to queue <lotus>.  ...
 {{</command>}}

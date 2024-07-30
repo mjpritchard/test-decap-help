@@ -57,9 +57,9 @@ account (this is the same process used to access the JASMIN notebook service).
 
 Once you have logged in, you are presented with a view of the projects where
 you are named as owner or collaborator (or, for consortium managers, where you
-are the relevant consortium manager. [A further guide for consortium managers
+are the relevant consortium manager). A further guide for consortium managers
 about how to process requests for resources is available [here]({{< ref
-"processing-requests-for-resources" >}})).
+"processing-requests-for-resources" >}}).
 
 {{<image src="img/docs/requesting-resources/file-CFe92vMRQV.png" caption="">}}
 
@@ -85,7 +85,7 @@ A project can have several Services, such as:
 
 To add the services needed for the project:
 
-- in the panel on the right, click "Add Service"
+- In the panel on the right, click "Add Service"
 - Select the category of service required: in this case, we're making requirements for a group workspace, but the available options are: 
   - **Group Workspace** (for shared disk storage for a project)
   - **External Tenancy VIO** (for an external cloud tenancy on the VIO cloud platform)
