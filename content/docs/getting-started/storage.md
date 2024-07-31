@@ -114,7 +114,7 @@ location |  login  |  sci  |  transfer  |  LOTUS  |  Type  |  Parallel-write
 /home/users  |  R/W  |  R/W  |  R/W  |  R/W  |  SSD  |  no
 /gws/pw/j07<br>/gws/nopw/j04 (see note 1 below)<br>/gws/smf/j0[4,7] |  no<br>no<br>no | R/W<br>R/W<br>R/W | R/W<br>R/W<br>R/W | R/W<br>R/W<br>R/W | PFS<br>SOF<br>SSD | yes (hence "pw")<br>no (hence "nopw")<br>no
 /work/xfc/volX (see note 2 below) |  no<br>no  |  R/W  |  R/W |  R/W  | PFS  | yes
-/work/scratch-pw[2,3]<br>/work/scratch-nopw  |  no<br>no  |  R/W<br>R/W  |  R/W<br>R/W |  R/W<br>R/W  | PFS<br>SSD  | yes<br>no
+/work/scratch-pw[2,3]<br>/work/scratch-nopw  |  no<br>no  |  R/W<br>R/W  |  no<br>no |  R/W<br>R/W  | PFS<br>SSD  | yes<br>no
 /apps/contrib  |  No  |  RO  |  No  |  RO  |  n/a  |  n/a  
 /badc, /neodc (archives)  |  No  |  RO  |  RO  |  RO  |  n/a  |  n/a  
 {.table .table-striped}
