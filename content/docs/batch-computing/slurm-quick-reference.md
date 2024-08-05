@@ -2,8 +2,7 @@
 aliases: 
     - /article/4891-lsf-to-slurm-quick-reference
     - /docs/batch-computing/lsf-to-slurm-quick-reference/
-date: 2022-10-11 15:15:57
-description: An overview of Slurm commands and its environment variables
+description: Slurm commands and environment variables
 slug: slurm-quick-reference
 tags:
 - lotus
@@ -12,7 +11,7 @@ tags:
 title: Slurm quick reference
 ---
 
-## The Slurm Scheduler
+## Slurm Scheduler
 
 [Slurm](https://slurm.schedmd.com/) is the job scheduler deployed on JASMIN. It
 allows users to submit, monitor, and control jobs on the [LOTUS]({{< ref "lotus-overview" >}}) (CPU) and [ORCHID]({{< ref "orchid-gpu-cluster" >}}) (GPU) clusters.
@@ -29,27 +28,81 @@ allows users to submit, monitor, and control jobs on the [LOTUS]({{< ref "lotus-
   
 ## Job specification
 
-<!-- Turn word wrap off to edit this table, or use a site such as https://tableconvert.com/markdown-to-markdown -->
-| **Slurm parameter**                                                                                                                             | **Description**                                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| #SBATCH                                                                                                                                         | Scheduler directive                                                                                                                 |
-| \--partition=_queue_name_ <br> -p _queue_name_                                                                                                  | Specify the scheduling queue                                                                                                        |
-| \--time=_hh:mm:ss_ or -t _hh:mm:ss_                                                                                                             | Set the maximum runtime limit                                                                                                       |
-| \--time-min=_hh:mm:ss_                                                                                                                          | Set an estimated runtime                                                                                                            |
-| \--job-name=_jobname_                                                                                                                           | Specify a name for the job                                                                                                          |
-| \--output=_filename_ or  -o _filename_ <br> \--error=_filename_ or -e _filename_                                                                | Standard job output and error output. Default append. The default file name is `slurm-%j.out`, where `%j` is replaced by the job ID |
-| \--open-mode=append\|truncate                                                                                                                   | Write mode for error/output files                                                                                                   |
-| %j                                                                                                                                              | Job ID                                                                                                                              |
-| %a                                                                                                                                              | Job array index                                                                                                                     |
-| \--mem=_XXX_                                                                                                                                    | Memory XXX is required for the job. Default units are megabytes                                                                     |
-| \--array= _index_  (e.g. \--array=1-10)                                                                                                         | Specify a job array. The default file name is `slurm-%A_%a.out`, `%A` is replaced by the job ID and `%a` with the array index.      |
-| \--array=index% _ArrayTaskThrottle_  <br> (e.g. \--array=1-15%4 will limit the number of simultaneously running tasks from this job array to 4) | A maximum number of simultaneously running tasks from the job array may be specified using a `%` separator.                         |
-| -D <br> \--chdir=_\<directory\>_                                                                                                                | Set the working directory of the batch script to < _directory >_ before it is executed.                                             |
-| \--exclusive                                                                                                                                    | Exclusive execution mode                                                                                                            |
-| \--dependency= _\<dependency_list\>_                                                                                                            | Defer the start of this job until the specified dependencies have been satisfied completed                                          |
-| \--ntasks=_number-of-cores_ <br> -n _number-of-cores_                                                                                           | Number of CPU cores                                                                                                                 |
-| \--constraint="_\< host-group-name\>_"                                                                                                          | To select a node with a specific processor model                                                                                    |
-{.table .table-striped}
+Long and short argument names are separated by a comma.
+
+##### `#SBATCH`
+
+- Scheduler directive - goes in front of the arguments below in a job script file
+- An example Slurm job script file is available [here]({{<ref "how-to-submit-a-job-to-slurm/#method-1-submit-via-a-slurm-job-script" >}})
+
+##### `--partition=QUEUE_NAME, -p QUEUE_NAME`
+
+- Specify the scheduling queue/partition by replacing `QUEUE_NAME`
+- A list of queues/partitions that you can use are available [here]({{<ref "slurm-queues" >}})
+
+##### `--time=hh:mm:ss, -t hh:mm:ss`
+
+- Set the maximum runtime limit by replacing `hh:mm:ss`
+
+##### `--time-min=hh:mm:ss`
+
+- Set an estimated runtime by replacing `hh:mm:ss`
+
+##### `--job-name=JOB_NAME`
+
+- Specify a name for the job by replacing `JOB_NAME`
+
+##### `--output=FILE_NAME, -o FILE_NAME`
+
+- Standard job output - where your program prints to normally (`stdout`)
+- Defaults: appends to the file and file name is `slurm-%j.out`, where `%j` is replaced by the job ID
+
+##### `--error=FILE_NAME, -e FILE_NAME`
+
+- Standard error output - where your program prints to if an error occurs (`stderr`)
+- Defaults: appends to the file and file name is `slurm-%j.err`, where `%j` is replaced by the job ID
+
+##### `--open-mode=append|truncate`
+
+- Write mode for error/output files
+- Pick either `append` or `truncate`
+
+##### `--mem=XXX`
+
+- Specify that `XXX` memory is required for the job. Default units are megabytes (e.g. `--mem=250` means 250MB)
+
+##### `--array=INDEX`
+
+- Specify a job array, e.g. `--array=1-10` - for an example submission script, see [this page]({{<ref "how-to-submit-a-job-to-slurm/#job-array-submission" >}})
+- The default standard output file name is `slurm-%A_%a.out`, where `%A` is replaced by the job ID and `%a` with the array index
+- To change this, use `--output` and `--error` as above with `%A` and `%a` instead of `%j`
+
+##### `--array=INDEX%ArrayTaskThrottle`
+
+- A maximum number of simultaneously running tasks from the job array may be specified using a `%` separator
+- For example, `--array=1-15%4` will limit the number of simultaneously running tasks from this job array to 4
+
+##### `--chdir=DIRECTORY, -D DIRECTORY`
+
+- Set the working directory of the batch script to `DIRECTORY` before it is executed
+
+##### `--exclusive`
+
+- Exclusive execution mode
+
+##### `--dependency=<dependency_list>`
+
+- Defer the start of this job until the specified dependencies have been satisfied as completed
+- See the [Slurm documentation](https://slurm.schedmd.com/sbatch.html#OPT_dependency) for examples
+
+##### `--ntasks=NUMBER_OF_CORES, -n NUMBER_OF_CORES`
+
+- Number of CPU cores
+
+##### `--constraint=HOST_GROUP_NAME`
+
+- To select a node with a specific processor model
+- A list of host groups that you can use are available [here]({{<ref "lotus-cluster-specification" >}})
 
 ## Job control commands
 
