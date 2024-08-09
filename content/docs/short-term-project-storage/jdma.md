@@ -7,7 +7,7 @@ title: Joint-storage Data Migration App (JDMA)
 ---
 
 {{<alert type="info">}}
-A new system called [NLDS](https://techblog.ceda.ac.uk/2022/03/09/near-line-data-store-intro.html) is coming very shortly (as of Feb 2023) and will eventually replace both Elastic Tape and JDMA.
+A new system called [NLDS](https://techblog.ceda.ac.uk/2022/03/09/near-line-data-store-intro.html) is in development and will eventually replace both Elastic Tape and JDMA.
 {{</alert>}}
 
 **See the JDMA user documentation
@@ -61,3 +61,22 @@ pip install git+https://github.com/cedadev/jdma_client
 
 You should then have the **jdma** command-line tool available in your terminal
 session.
+
+{{<alert type="info">}}
+  In **August 2024** the JDMA server was upgraded to a new operating system.
+  This requires an upgraded JDMA client to be installed.
+  If you were using JDMA prior to **August 2024** then you will *have* to upgrade your client.
+  This is a straightforward process of three steps, shown below:
+
+  1. Activate the virtual environment as above:
+  2. Install the upgraded JDMA client:
+  3. Check the version of the JDMA client:
+
+  The correct version is ``1.0.1``
+  {{<command user="user" host="sci1">}}
+  source ~/jdma_venv/bin/activate
+  pip install --upgrade git+https://github.com/cedadev/jdma_client
+  pip list | grep jdma-client
+  {{</command>}}
+
+{{</alert>}}
