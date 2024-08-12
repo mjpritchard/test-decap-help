@@ -4,7 +4,6 @@ paginate = 12
 enableGitInfo = true
 
 # additional settings
-googleAnalytics = "G-JJZZ5F2KN4"
 baseURL = 'https://help.jasmin.ac.uk' # temp value until we have a domain
 canonifyURLs = false
 enableEmoji = true
@@ -70,6 +69,8 @@ home = ["HTML", "RSS", "REDIR"]
     disableInlineCSS = true
   [services.twitter]
     disableInlineCSS = true
+  [services.googleAnalytics]
+    ID = "G-JJZZ5F2KN4"
 
 [outputFormats]
   [outputFormats.XML]
