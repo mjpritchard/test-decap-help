@@ -14,16 +14,6 @@
     [main.build]
         transpiler = "libsass"
 
-[modules]
-    core = ["bootstrap", "fontawesome", "flexsearch"] #"flexsearch", 
-    optional = ["leaflet", "katex", "lottie"]
-    excludeSCSS = ["bootstrap"]
-    disableTemplate = ["katex"]
-    [modules.fontawesome]
-        inline = true
-        debug = true
-        skipMissing = false
-
 [debugging]
     showJS = false
     showSCSS = false
@@ -42,7 +32,7 @@
 [navigation]
     anchor = true
     logo = "/img/jasmin-logo.svg" # store -light and -dark variants
-    logoHeight = 45 # height to control size of logo in layouts/partials/assets/navbar.html
+    logoHeight = 80 # height to control size of logo in layouts/partials/assets/navbar.html
     color = "success"
     fixed = true
     #offset = "5em"
