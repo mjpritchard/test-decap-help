@@ -81,10 +81,25 @@ home = ["HTML", "RSS", "REDIR"]
     permalinkable = false
     name = "xml"
 
+[minify] # see https://discourse.gohugo.io/t/minify-config-tutorials/28179/5
+  disableHTML = false
+  disableJS = true
+  disableJSON = false
+  disableSVG = false
+  disableXML = false
+  minifyOutput = true
+  [minify.tdewolff]
+    [minify.tdewolff.html]
+      keepWhitespace = true
+    [minify.tdewolff.js]
+      keepVarNames = true
+      precision = 0
+      keepWhitespace = true
+
 [module]
   [module.hugoVersion]
     extended = true
-    min = "0.110.0"
+    min = "0.120.0"
     max = ""
   [[module.mounts]]
     source = "archetypes"
@@ -107,7 +122,6 @@ home = ["HTML", "RSS", "REDIR"]
   [[module.mounts]]
     source = "netlify.toml"
     target = "assets/config/netlify.toml"
+    
   [[module.imports]]
     path = "github.com/gethinode/hinode"
-  [[module.imports]]
-    path = "github.com/gethinode/mod-utils"
