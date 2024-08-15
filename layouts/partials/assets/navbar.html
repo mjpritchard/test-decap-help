@@ -167,7 +167,7 @@
 <!-- Main code -->
 <div class="container-fluid {{ if $fixed }}fixed-top{{ end }} p-0{{ with $class }} {{ . }}{{ end }}">
     {{- partial "assets/page-alert.html" (dict "page" $page) -}}
-    <nav class="navbar p-0
+    <nav class="navbar p-1
         {{- if not $overlay }}{{ with $color }} bg-{{ . }}{{ end }}{{ end -}}
         {{ if $fixed }} navbar-fixed-top{{ end }} navbar-expand-{{ $size -}}
         {{ if $contrast }} navbar-contrast{{ end }}"
@@ -177,7 +177,7 @@
         {{ end }}
         {{ if $overlay }}data-navbar-color="{{ $color }}"{{ end }}
         >
-        <div class="container-xxl p-1">
+        <div class="container-xxl p-0">
             <div class="d-flex navbar-container justify-content-center">
                 <!-- Insert sidebar toggler when applicable -->
                 <div class="d-flex align-items-center">
@@ -201,7 +201,7 @@
                             <img src="{{if $absoluteURL }}{{ absURL $logoLight }}{{ else }}{{ $logoLight }}{{ end }}" class="d-none-inline-dark" alt="{{ $title }} logo" height="80"{{ with $width }} width="{{ . }}"{{ end }}>
                             <img src="{{if $absoluteURL }}{{ absURL $logoDark }}{{ else }}{{ $logoDark }}{{ end }}" class="d-none-inline-light" alt="{{ $title }} logo" height="80"{{ with $width }} width="{{ . }}"{{ end }}>
                         {{- else if $logo -}}
-                            {{ $width := partial "utilities/GetWidth.html" (dict "path" $logo "height" 30) }}
+                            {{ $width := partial "utilities/GetWidth.html" (dict "path" $logo "height" 40) }}
                             <img src="{{if $absoluteURL }}{{ absURL $logo }}{{ else }}{{ $logo }}{{ end }}" alt="{{ $title }} logo" height="80"{{ with $width }} width="{{ . }}"{{ end }}>
                         {{- else -}}
                             <div class="navbar-title fw-bold h-100">{{ $title }}</div>
@@ -222,8 +222,6 @@
     
             <div class="navbar-collapse collapse" id="{{ $id }}-collapse">
                 <!-- Insert search input -->
-                <!-- Google CSE Search form -->
-                <div class="gcse-searchbox-only"></div>
                 {{- if and $search (not $searchModal)  }}{{ partial "assets/search-input.html" }}{{ end -}}
                 
                 <!-- Render top-menu items (maximum depth of 2) -->
@@ -269,14 +267,14 @@
                             <a class="nav-link dropdown-toggle d-none d-{{ $size }}-block" href="#!" role="button" data-bs-toggle="dropdown" aria-label="{{ T "languageSwitcherLabel" }}" aria-expanded="false">
                                 {{- partial "assets/icon.html" (dict "icon" "fas globe fa-fw" "spacing" false) }}
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-end ">
+                            <ul class="dropdown-menu dropdown-menu-end " id="language-selector">
                                 {{- if $page.IsTranslated -}}
                                     {{- range $page.AllTranslations -}}
-                                        <li><a class="dropdown-item {{ if eq .Language.Lang $currentLang }}active{{ end }}" href="{{ .RelPermalink }}">{{ .Language.LanguageName  }}</a></li>
+                                        <li><a class="dropdown-item {{ if eq .Language.Lang $currentLang }}active{{ end }}" hreflang="{{.Language.Lang}}" href="{{ .RelPermalink }}">{{ .Language.LanguageName  }}</a></li>
                                     {{- end -}}
                                 {{- else -}}
                                     {{- range site.Languages -}}
-                                        <li><a class="dropdown-item" href="{{ urls.JoinPath $baseURL .Lang }}">{{ default .Lang .LanguageName }}</a></li>
+                                        <li><a class="dropdown-item" href="{{ urls.JoinPath $baseURL .Lang }}" hreflang="{{.Lang}}">{{ default .Lang .LanguageName }}</a></li>
                                     {{- end -}}
                                 {{- end -}}
                             </ul>
@@ -312,7 +310,7 @@
 {{- if $searchModal }}
     <div class="modal fade search-modal" tabindex="-1" id="search-modal" aria-labelledby="searchModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
-            <div class="modal-content h-50">
+            <div class="modal-content h-100">
                 <div class="modal-header">
                     <div class="w-100">
                         <form class="search position-relative me-auto">
@@ -323,6 +321,15 @@
                 </div>
                 <div class="modal-body p-2 search-background">
                     <div class="search-suggestions" data-no-results="{{ T "ui_no_results" }}"></div>
+                </div>
+                <div class="modal-footer">
+                    <div class="w-100">
+                        <h4>Can't find what you're looking for?</h3>
+                        <div class="gcse-searchbox-only"></div>
+                        <p>Try our Google custom search, across all JASMIN sites</p>
+                        
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{{ T "close" }}"></button>
                 </div>
             </div>
         </div>
