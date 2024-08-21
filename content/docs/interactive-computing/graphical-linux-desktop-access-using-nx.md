@@ -50,9 +50,10 @@ used as described below:
 
 ## Installing NoMachine Enterprise Client
 
-Download the appropriate version of the NoMachine Enterprise Client from
-[NoMachine](https://www.nomachine.com/download-enterprise#NoMachine-
-Enterprise-Client). This page contains links to several different products.
+Download the 
+[appropriate version of the NoMachine Enterprise Client](https://www.nomachine.com/download-enterprise#NoMachine-Enterprise-Client) 
+from NoMachine.
+That page contains links to several different products: 
 **The only one you need to install is "NoMachine Enterprise Client".**
 
 Versions are available for Windows, Mac and Linux. You may need privileges on
