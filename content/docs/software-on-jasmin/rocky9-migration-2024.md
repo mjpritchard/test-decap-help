@@ -35,7 +35,7 @@ Much of this work is already underway by teams in CEDA and STFC’s Scientific C
 Some services have already been migrated and are already running under Rocky 9, but there is still much work to be done over the coming weeks so please watch this space as we do our best to keep you informed of the progress we’re making, and of any actions you may need to take to minimise disruption to your work on JASMIN.
 
 {{<alert type="info">}}
-Please find below details of the new Rocky 9 environment on JASMIN. We will update other documentation to match this in due course, but the below information will be the most up-to-date source until further notice.
+Please find below details of the new Rocky 9 environment on JASMIN. We will update other documentation to match this in due course, but the information below will be the most up-to-date source until further notice.
 {{</alert>}}
 
 ## Details of the new Rocky Linux 9 environment
@@ -103,15 +103,15 @@ The new list is as follows:
 name | status | specs
 --- | --- | ---
 Virtual servers | | 
-`sci-vm-01.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Finalising configuration | (specs tbc)
+`sci-vm-01.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | (specs tbc)
 `sci-vm-02.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Finalising configuration | (specs tbc)
 `sci-vm-03.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Finalising configuration | (specs tbc)
 `sci-vm-04.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Finalising configuration | (specs tbc)
 `sci-vm-05.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Finalising configuration | (specs tbc)
 `sci-vm-06.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Finalising configuration | (specs tbc)
 Physical servers | |
-`sci-ph-01.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Finalising configuration | (specs tbc)
-`sci-ph-01.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Finalising configuration | (specs tbc)
+`sci-ph-01.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} | Ready to use (specs tbc)
+`sci-ph-01.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} | Ready to use (specs tbc)
 {.table .table-striped .w-auto}
 
 Notes:
@@ -120,8 +120,11 @@ Notes:
 should be accessible directly within that network without need to go via a login node.
 - Replacements for common tools:
   - `lxterminal` has been replaced with {{<link href="https://docs.xfce.org/apps/terminal/start">}}xfce-terminal{{</link>}}
-  - users should consider using {{<link href="https://code.visualstudio.com/docs/remote/ssh">}}VSCode's{{</link>}} remote
-  editing features (using an xfer server as the target) if they require a richly-featured editor, since this 
+  - for a more richly-featured editor or Integrated Development Environment (IDE), users should consider using
+   the remote editing features of {{<link href="https://code.visualstudio.com/docs/remote/ssh">}}VSCode{{</link>}} or 
+   {{<link "https://www.jetbrains.com/pycharm/">}}PyCharm{{</link>}}, since these can be installed and customised locally
+   by the user to their taste rather than needing central installation and management on JASMIN. Watch this space for
+   further advice about how to configure and use VSCode in this way.
 - See {{<link "#jaspy">}}jaspy{{</link>}}, {{<link "#jasr">}}jasr{{</link>}} and {{<link "#jasmin-sci">}}jasmin-sci{{</link>}}
 sections below for further information on software.
 - For graphical applications, use the {{<link "#nx-login-nodes">}}NoMachine NX service{{</link>}} rather than
@@ -181,13 +184,24 @@ Notes:
 - These collections can be used with the Globus {{<link "https://app.globus.org">}}web interface{{</link>}},
 {{<link href="https://docs.globus.org/cli/">}}command-line interface (CLI){{</link>}}, or its {{<link href="https://globus-sdk-python.readthedocs.io/en/stable/">}}Python software development kit (SDK){{</link>}}, and use the JASMIN accounts portal for authentication.
 
+### Upgraded LOTUS cluster
+
+Further information to follow.
+
 ### Other services
+
+Further information to follow.
 
 ### Software
 
 #### jaspy
 
+Further information to follow.
+
 #### jasr
+
+Further information to follow.
 
 #### jasmin-sci
 
+Further information to follow.
