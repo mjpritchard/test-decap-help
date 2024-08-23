@@ -61,7 +61,7 @@
     - title: community software esmvaltool
     - title: community software checksit
     - title: conda environments and python virtual environments
-    - title: creating and using miniconda environments
+    - title: Creating and using miniforge environments
     - title: idl
     - title: jasmin sci software environment
     - title: jasmin software faqs
