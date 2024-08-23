@@ -42,7 +42,9 @@ module unload jaspy
 
 You can run the installer by typing:
 
-` bash Miniforge3-Linux-x86_64.sh `
+```
+bash Miniforge3-Linux-x86_64.sh
+```
 
 You will be asked to confirm the licence agreement, to choose an installation
 location, and to decide whether it should run "conda init". It is recommended
