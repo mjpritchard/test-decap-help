@@ -50,8 +50,8 @@ You will be asked to confirm the licence agreement, to choose an installation
 location, and to decide whether it should run "conda init". It is recommended
 that you:
 
-  * Accept the default location (~/miniforge3). If you need to change this, see the section "Varying the installation location" near the end of this page for more info.
-  * Say _no_ to the question about "conda init", because saying yes will cause it to add lines to your ~/.bashrc file causing your base environment to be activated every time you log in, which may interfere with the use of Jaspy. If you say no, you can still follow the instructions below when you wish to activate your base environment.  
+  * Accept the default location (`~/miniforge3`). If you need to change this, see the section "Varying the installation location" near the end of this page for more info.
+  * Say _no_ to the question about "conda init", because saying yes will cause it to add lines to your `~/.bashrc` file causing your base environment to be activated every time you log in, which may interfere with the use of Jaspy. If you say no, you can still follow the instructions below when you wish to activate your base environment.  
 
 (Add the `-b` option at the end of the above command to run the installer in
 batch mode, which will also skip the "conda init". Or add `-h` to see help on
@@ -71,7 +71,7 @@ source ~/miniforge3/bin/activate
 instead, but the above command is a workaround for the fact that you have not
 run "conda init", the reasons for which are explained above.)
 
-Your command prompt will then change to include "(base) " at the start, in
+Your command prompt will then change to include `(base) ` at the start, in
 order to remind you that this environment is activated. You can deactivate the
 environment by typing:
 
@@ -154,7 +154,7 @@ mamba install "gcc>=13.2.0,<14"  # AND
 ```
 (Here, quotation marks are needed to protect the `<` and `>` symbols from the shell.)
 
-and you can search for available versions, using for example:
+You can also search for available versions, using for example:
 ```
 mamba search gcc
 ```
@@ -164,7 +164,7 @@ type `mamba list`.  This should normally indicate that all packages are from the
 `conda-forge` channel.  You can install from a channel other than `conda-forge`
 by using the `-c` option, for example:
 ```
-mamba install -c ncas cf-python
+mamba install -c ncas cf-python   # install cf-python from 'ncas' channel
 ```
 but for licensing reasons, do not use the Anaconda defaults channel.
 
@@ -205,11 +205,11 @@ pip install numpy
 If you do not install pip into your sub-environment, then either:
 
   * your shell will fail to find the `pip` executable, or
-  * your shell will find `pip` in some other location, which might lead to pip packages being installed in an unexpected location, possibly resulting in potential interference between your environments
+  * your shell will find `pip` in some other location, which might lead to pip packages being installed in an unexpected location, possibly resulting in interference between your environments
 
 Explicitly installing pip into your sub-environment will guard against this.
 
-You can check that `pip` is being run from the correct place, by typing:
+Before running `pip install`, you could check that `pip` is being run from the correct place, by typing:
 ```
 which pip
 ```
@@ -276,8 +276,8 @@ If you are creating a conda environment for very short-term testing only, you
 may find best performance using `/tmp` due to the large number of files.
 However, you may need several gigabytes, which is too big for the /tmp areas
 on most of the "sci" machines at time of writing, although the physical
-sci machines (currently sci-ph-01 and sci-ph-02 for Rocky 9)
-have larger /tmp areas.
+sci machines (currently `sci-ph-01` and `sci-ph-02` for Rocky 9)
+have larger `/tmp` areas.
 Choose an appropriate machine, make use of the `df`
-command to check available disk space, and ensure that you do not fill up /tmp
+command to check available disk space, and ensure that you do not fill up `/tmp`
 as this would impact negatively on other users.
