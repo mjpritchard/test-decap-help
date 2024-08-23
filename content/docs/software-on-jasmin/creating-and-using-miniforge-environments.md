@@ -88,21 +88,21 @@ base environment, but instead use a named sub-environment. You can have
 multiple sub-environments under a single base environment, and activate the
 one that is required at any one time. These sub-environments will work independently.
 
-Miniforge provides two installer programs: "conda" and "mamba". These use
+Miniforge provides two installer programs: `conda` and `mamba`. These use
 different algorithms, and mamba is implemented in C++ while conda is
 implemented in Python.  Both commands work with the same type of environments,
 here referred to as "conda environments", but in our experience from preparing the
 Jaspy environments, mamba is faster than conda and uses less memory. Therefore,
 our recommendation is to use mamba for installing environments.  However, if
-you are not running "mamba init", then you will need to use the "conda"
+you are not running `mamba init`, then you will need to use the `conda`
 command when activating or deactivating environments.  The commands shown on this
-page reflect this, but if you prefer, you can use "conda" throughout.
+page reflect this, but if you prefer, you can use `conda` throughout.
 Also, for some of the commands not involving package installation, e.g. when
 listing environments, the two commands can be used interchangeably, although
-the "mamba" command is shown on this help page.
+the `mamba` command is shown on this help page.
 
-To create a named environment (for example, called "myenv"), ensure that the
-base environment is activated (the command prompt should start with "(base) "),
+To create a named environment (for example, called `myenv`), ensure that the
+base environment is activated (the command prompt should start with `(base) `),
 and type:
 
 ```
@@ -128,7 +128,7 @@ although you can also activate it using its full path, useful if you used the
 conda activate /gws/smf/j04/mygws/myenv
 ```
 
-The command prompt will then change (e.g. to start with "(myenv) ") to reflect
+The command prompt will then change (e.g. to start with `(myenv) `) to reflect
 this. Typing `conda deactivate` once will return you to the base environment;
 typing it a second time will deactivate conda completely (as above).
 
@@ -186,7 +186,7 @@ conda activate myenv
 ## Installing pip packages
 
 Many python packages that are available via PyPI are also available as conda
-packages in conda-forge, and it is generally best to use these via "mamba install"
+packages in conda-forge, and it is generally best to use these via `mamba install`
 as above.
 
 Nonetheless, you can also install pip packages (as opposed to conda packages)
@@ -232,7 +232,7 @@ To do this, you can export a list of packages to a YAML file and use this file
 to create the new environment -- as follows:
 
   * first activate the conda environment that you wish to clone (for Jaspy, load the jaspy module)
-  * export a list of contents to a YAML file (for example "environment.yml") by typing  
+  * export a list of contents to a YAML file (for example `environment.yml`) by typing  
 
 ```
 mamba env export > environment.yml
@@ -240,14 +240,14 @@ mamba env export > environment.yml
 
   * deactivate this environment (or as the case may be, unload the jaspy module)
   * ensure that the relevant base environment is activated
-  * create the new environment (for example "my_new_env") by using:  
+  * create the new environment (for example `my_new_env`) by using:  
 
 
 ```
 mamba env create -n my_new_env -f environment.yml
 ```  
 
-Note the use of "mamba env create", rather than "mamba create" as above.  
+Note the use of `mamba env create`, rather than `mamba create` as above.  
 
 You might also edit the YAML file before using it to create the environment if
 you do not want an exact clone -- for example, adding packages, removing
@@ -263,7 +263,7 @@ versions in the original environment are no longer available).
 installer is discussed.)
 
 The default installation location offered by the installer for your base
-environment will be `~/miniforge3` (that is, a "miniforge3" subdirectory of
+environment will be `~/miniforge3` (that is, a `miniforge3` subdirectory of
 your home directory). We recommend accepting this default, or using another
 location under your home directory. It is possible to change this, but note
 that a conda environment can have tens of thousands of files and that group
