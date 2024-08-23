@@ -42,11 +42,11 @@ Please find below details of the new Rocky 9 environment on JASMIN. We will upda
 
 ### General
 
-The move to Rocky Linux 9 (abbreviated to "Rocky9" or "R9" from here on) involves many changes,
-mostly transparent to users, so we will focus here on those most relevant to JASMIN is accessed
-and used. The reasons for the choice of Rocky 9 itself, and for some of the associated changes
-to software, machines and services provided, will not be covered in detail, but has been influenced
-by a number of factors including, among others:
+The move to Rocky Linux 9 (abbreviated to "Rocky9" or "R9" from here on) involves many changes at
+lower levels transparent to users, so we will focus here on those most relevant to how services on 
+JASMIN are accessed and used. The reasons for the choice of Rocky 9 itself, and for some of the
+associated changes to software, machines and services provided, will not be covered in detail,
+but have been influenced by a number of factors including:
 
 - organisational security and maintenance policies
 - availablity of packages and dependencies for the chosen operating system
@@ -94,6 +94,8 @@ the same as the old `nx4` in this respect.
 - Use only with the NoMachine NX graphical linux desktop, from where you can
   - use the Firefox browser on the linux desktop to access web resources only accessible within JASMIN
   - make onward connections to a sci server for using graphics-intensive applications
+- Make sure you are using the most up-to-date version of 
+{{<link "https://downloads.nomachine.com/download-enterprise/#NoMachine-Enterprise-Client">}}NoMachine Enterprise Client{{</link>}}.
 
 ### sci servers
 
@@ -110,8 +112,8 @@ Virtual servers | |
 `sci-vm-05.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Finalising configuration | (specs tbc)
 `sci-vm-06.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Finalising configuration | (specs tbc)
 Physical servers | |
-`sci-ph-01.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} | Ready to use (specs tbc)
-`sci-ph-01.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} | Ready to use (specs tbc)
+`sci-ph-01.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | (specs tbc)
+`sci-ph-01.jasmin.ac.uk` | {{< icon fas circle-check text-success >}}Ready to use |  (specs tbc)
 {.table .table-striped .w-auto}
 
 Notes:
