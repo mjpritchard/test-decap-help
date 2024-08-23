@@ -15,14 +15,14 @@ if they are not likely to be relevant to other users.
 
 Separate pages explain the details of how to create and install [Python
 virtual environments]({{< ref "python-virtual-environments" >}}) and [Conda
-environments]({{< ref "creating-and-using-miniconda-environments" >}}). This
+environments]({{< ref "creating-and-using-miniforge-environments" >}}). This
 page gives an overview of what they are, and how to choose which one is most
 suitable for your needs.
 
 ## Description of Python virtual environments and Conda environments
 
 - A Python virtual environment is a relatively lightweight environment, which is used for running Python packages, typically installed using the "pip" installer from the Python Package Index ([pypi](https://pypi.org/)) or locally from Python source containing a "setup.py" file. This enables you to install packages in your home directory without writing to the underlying Python installation itself (for example when you do not have write permission), and you can have any number of separate virtual environments and "activate" the relevant one when needed. When you run "pip" to install a Python package, additional Python packages may be installed automatically in order to satisfy dependencies. Depending on the package being installed, if it requires compiled libraries to accompany it, it may try to compile these locally, but depending what development libraries are available, occasionally this might not succeed.
-- By contrast, a Conda environment is a much bulkier, more fully featured environment, using the conda package manager. This enables the installation of packages from conda channels, typically [conda-forge](https://conda-forge.org/), which are not restricted to being Python packages. Where packages contain compiled libraries, these are generally available as pre-compiled binaries. As with python virtual environments, you can have any number of these environments and activate the required one. When you run the conda installer, similarly it will install whatever additional packages are required in order to satisfy dependencies. (It is also possible to use the pip installer when working with conda environments.)
+- By contrast, a Conda environment is a much bulkier, more fully featured environment, using the "mamba" or "conda" package managers. This enables the installation of packages from conda channels, usually [conda-forge](https://conda-forge.org/), which are not restricted to being Python packages. Where packages contain compiled libraries, these are generally available as pre-compiled binaries. As with python virtual environments, you can have any number of these environments and activate the required one. When you run the mamba or conda installer, similarly it will install whatever additional packages are required in order to satisfy dependencies. (It is also possible to use the pip installer when working with conda environments.) Various versions of the conda installer are available, but for use on JASMIN, we now ask users to use Miniforge, for licensing reasons.
 
 ### Environment size
 
@@ -39,14 +39,14 @@ numerical expression evaluator for NumPy. It is available as a pip package
 called `numexpr`, and also as a conda package called `numexpr`. (For some
 packages, the two may have slightly different names.) It can be installed
 successfully into either a Python virtual environment using `pip install
-numexpr` or a conda environment using `conda install numexpr`. In either case,
+numexpr` or a conda environment using `mamba install numexpr` (or `conda install numexpr`). In either case,
 the `numpy` package on which it depends, amongst other things, will be
 installed automatically if required.
 
 To give an example of installing a non-python package, `zsh` is a Unix shell
 which combines various features of bash and csh. You cannot install this using
 `pip install` because it is not a python package, but it is available on
-conda-forge, and can be installed into a conda environment using `conda
+conda-forge, and can be installed into a conda environment using `mamba
 install zsh`.
 
 ## Combining environments
