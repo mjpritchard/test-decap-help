@@ -35,5 +35,159 @@ Much of this work is already underway by teams in CEDA and STFC’s Scientific C
 Some services have already been migrated and are already running under Rocky 9, but there is still much work to be done over the coming weeks so please watch this space as we do our best to keep you informed of the progress we’re making, and of any actions you may need to take to minimise disruption to your work on JASMIN.
 
 {{<alert type="info">}}
-Further details to follow soon.
+Please find below details of the new Rocky 9 environment on JASMIN. We will update other documentation to match this in due course, but the below information will be the most up-to-date source until further notice.
 {{</alert>}}
+
+## Details of the new Rocky Linux 9 environment
+
+### General
+
+The move to Rocky Linux 9 (abbreviated to "Rocky9" or "R9" from here on) involves many changes,
+mostly transparent to users, so we will focus here on those most relevant to JASMIN is accessed
+and used. The reasons for the choice of Rocky 9 itself, and for some of the associated changes
+to software, machines and services provided, will not be covered in detail, but has been influenced
+by a number of factors including, among others:
+
+- organisational security and maintenance policies
+- availablity of packages and dependencies for the chosen operating system
+- user feedback
+
+### login nodes
+
+The list of new login nodes is as follows:
+
+name | status
+--- | ---
+`login-01.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} ready to use
+`login-02.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} ready to use
+`login-03.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} ready to use
+`login-04.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} ready to use
+{.table .table-striped .w-auto}
+
+Notes:
+
+- There is no longer any requirement for forward/reverse DNS lookup or any restriction by 
+institutional domain. You no longer need to register non-`*.ac.uk` domains with the JAMSIN 
+team (exception: {{<link "#hpxfer-servers">}}hpxfer{{</link>}})
+- This means all users can access all login servers (previously some users could only use
+ `login2`)
+- As before, no filesystems other than the home directory are mounted.
+- Use only as a "hop" to reach other servers within JASMIN.
+
+### NX login nodes
+
+name | status
+--- | ---
+`nx1.jasmin.ac.uk` | {{< icon fas square-xmark text-danger >}} Not yet ready: issue with Windows 11 clients
+`nx2.jasmin.ac.uk` | {{< icon fas square-xmark text-danger >}} Not yet ready: issue with Windows 11 clients
+`nx3.jasmin.ac.uk` | {{< icon fas square-xmark text-danger >}} Not yet ready: issue with Windows 11 clients
+`nx4.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Not yet moved to Rocky9 (works as previously for now)
+{.table .table-striped .w-auto}
+
+Notes:
+
+- Nodes have identical configuration so no need for some users to only use certain nodes as before.
+- By keeping the host names as short as possible, we mitigate the issue some users (with long
+usernames created before the 8-character rule) had with agent forwarding: all should behave
+the same as the old `nx4` in this respect.
+- As before, no filesystems other than the home directory are mounted.
+- Use only with the NoMachine NX graphical linux desktop, from where you can
+  - use the Firefox browser on the linux desktop to access web resources only accessible within JASMIN
+  - make onward connections to a sci server for using graphics-intensive applications
+
+### sci servers
+
+We have introduced a new naming convention which helps idendify virtual and physical/high-memory sci servers.
+The new list is as follows:
+
+name | status | specs
+--- | --- | ---
+Virtual servers | | 
+`sci-vm-01.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Finalising configuration | (specs tbc)
+`sci-vm-02.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Finalising configuration | (specs tbc)
+`sci-vm-03.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Finalising configuration | (specs tbc)
+`sci-vm-04.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Finalising configuration | (specs tbc)
+`sci-vm-05.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Finalising configuration | (specs tbc)
+`sci-vm-06.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Finalising configuration | (specs tbc)
+Physical servers | |
+`sci-ph-01.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Finalising configuration | (specs tbc)
+`sci-ph-01.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Finalising configuration | (specs tbc)
+{.table .table-striped .w-auto}
+
+Notes:
+
+- For users within the STFC network, there is no longer any reverseDNS restriction, so all
+should be accessible directly within that network without need to go via a login node.
+- Replacements for common tools:
+  - `lxterminal` has been replaced with {{<link href="https://docs.xfce.org/apps/terminal/start">}}xfce-terminal{{</link>}}
+  - users should consider using {{<link href="https://code.visualstudio.com/docs/remote/ssh">}}VSCode's{{</link>}} remote
+  editing features (using an xfer server as the target) if they require a richly-featured editor, since this 
+- See {{<link "#jaspy">}}jaspy{{</link>}}, {{<link "#jasr">}}jasr{{</link>}} and {{<link "#jasmin-sci">}}jasmin-sci{{</link>}}
+sections below for further information on software.
+- For graphical applications, use the {{<link "#nx-login-nodes">}}NoMachine NX service{{</link>}} rather than
+sending X11 graphics over the network back to your laptop/desktop, to ensure performance.
+- As before, physical servers are actually re-configured nodes within the LOTUS cluster and as such have different a network
+configuration from the virtual `sci` servers, with limited outward connectivity.
+
+### xfer servers
+
+name | status | notes
+--- | --- | ---
+`xfer-vm-01.jasmin.ac.uk` | {{< icon fas square-xmark text-danger >}} Not yet ready | Virtual server
+`xfer-vm-02.jasmin.ac.uk` | {{< icon fas square-xmark text-danger >}} Not yet ready | Virtual server
+`xfer-vm-03.jasmin.ac.uk` | {{< icon fas square-xmark text-danger >}} Not yet ready | Virtual server, will have `cron`.
+{.table .table-striped .w-auto}
+
+### hpxfer servers
+
+name | status | notes
+--- | --- | ---
+`hpxfer3.jasmin.ac.uk` | {{< icon fas square-xmark text-danger >}} Not yet ready | Physical server
+`hpxfer4.jasmin.ac.uk` | {{< icon fas square-xmark text-danger >}} Not yet ready | Physical server
+{.table .table-striped .w-auto}
+
+### gridftp server
+
+For users of certificate-based gridftp only (specifially, `gsiftp://` using the `globus-url-copy` client), there is a new server:
+
+name | status
+--- | ---
+`gridftp2.jasmin.ac.uk` | {{< icon fas square-xmark text-danger >}} Not yet ready
+{.table .table-striped .w-auto}
+
+Notes:
+
+- Make sure you are using `slcs.jasmin.ac.uk` as the short-lived credentials server, with your JASMIN
+account credentials. CEDA identities can no longer be used for authentication with this server.
+- We now encourage users of this service to migrate to use the {{<link "#globus-data-transfer-service">}}Globus service{{</link>}}
+for data transfers. This older gridftp service will likely be decomissioned over the next 12 months.
+- Use of `globus-url-copy` is nothing to do with the {{<link "#globus-data-transfer-service">}}Globus service{{</link>}}: they are now very separate things.
+
+### Globus data transfer service
+
+Where possible you should now use the Globus data transfer service for any data transfer in or out of JASMIN: this is now the recommended method,
+which will get you the best performance & has a number of advantages over logging into a server and doing transfers manually.
+
+As introduced earlier this year, the following Globus collections are available to all users of JASMIN, with no special access roles required:
+
+name | uuid | status | notes
+--- | --- | --- | ---
+JASMIN Default Collection | `a2f53b7f-1b4e-4dce-9b7c-349ae760fee0` | {{< icon fas circle-check text-success >}} Ready to use | Best performance, currently has 2 physical Data Transfer Nodes (DTNs).
+JASMIN STFC Internal Collection | `9efc947f-5212-4b5f-8c9d-47b93ae676b7` | {{< icon fas circle-check text-success >}} Ready to use | For transfers involving other collections inside the STFC network. 2 DTNs, 1 physical, 1 virtual. Can be used by any user in case of issues with the above collection.
+{.table .table-striped .w-auto}
+
+Notes:
+
+- These collections can be used with the Globus {{<link "https://app.globus.org">}}web interface{{</link>}},
+{{<link href="https://docs.globus.org/cli/">}}command-line interface (CLI){{</link>}}, or its {{<link href="https://globus-sdk-python.readthedocs.io/en/stable/">}}Python software development kit (SDK){{</link>}}, and use the JASMIN accounts portal for authentication.
+
+### Other services
+
+### Software
+
+#### jaspy
+
+#### jasr
+
+#### jasmin-sci
+
