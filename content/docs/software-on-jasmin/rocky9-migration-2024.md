@@ -184,26 +184,40 @@ JASMIN STFC Internal Collection | `9efc947f-5212-4b5f-8c9d-47b93ae676b7` | {{< i
 Notes:
 
 - These collections can be used with the Globus {{<link "https://app.globus.org">}}web interface{{</link>}},
-{{<link href="https://docs.globus.org/cli/">}}command-line interface (CLI){{</link>}}, or its {{<link href="https://globus-sdk-python.readthedocs.io/en/stable/">}}Python software development kit (SDK){{</link>}}, and use the JASMIN accounts portal for authentication.
+{{<link href="https://docs.globus.org/cli/">}}command-line interface (CLI){{</link>}}, or its {{<link href="https://globus-sdk-python.readthedocs.io/en/stable/">}}Python software development kit (SDK){{</link>}}, and use the JASMIN accounts portal for authentication
+
+### Software
+
+Please see the table below and accompanying notes which together summarise the upcoming changes to aspects of software on JASMIN:
+
+Software | CentOS7 | Rocky 9
+--- | --- | ---
+IDL versions<br>IDL licence server<br>**see Note 1** | 8.2, 8.5 (D), 8.5, 8.6<br>Flexnet | 8.9, 9.0. (8.6?)<br>Next generation
+Cylc<br>Cylc UI visualisation<br>**see Note 2**  | 7.8.14 and 8.3.3-1<br>UI functionality integrated | 8.3.3-1<br>UI via browser: discussion ongoing
+Jaspy<br>Jasr<br>jasmin-sci | 2.7, 3.7 (all variants), 3.10 (all variants)<br>3.6, 4.0 (all variants), 4.2<br>URL page of the packages | 3.11<br>4.3<br>rpm/Glibc compatibility tba?
+Intel compilers | 12.1.5-20.0.0 (11 variants) | Intel oneAPI
+MPI library/ OpenMPI<br>versions/compiler<br>**see Note 3**  | 3.1.1/Intel,GNU, 4.0.0<br>4.1.[0-1,4-5]/Intel<br>4.1.2, 5.0.1, 5.1.2 | 4.1.5/Intel/gcc &  5.0.4 /intel/gcc<br><br>Possibility to support mpich or IntelMPI
+NetCDF C library<br>NetCDF Fortran binding lib. | netcdf/gnu/4.4..7, netcdf/intel/14.0/<br>netcdff/gnu/4.4.7/*, netcdff/intel/4.4.7<br>parallel-netcdf/gnu/201411/22<br>parallel-netcdf/intel/20141122 | A new module env for serial and parallel version GNU and Intel oneAPI build of NetCDF against either OpenMPI and/or Intel MPI
+GNU compilers | 7.2.0 ,8.1.0,  8.2.0<br>13.2.0 conda-forge (12.1.0 from legacy JASPY) | 11.4.1 (OS)<br>13.2.0 conda-forge via JASPY
+JULES <br>**see Note 4**| | Information to follow
+{.table .table-striped .w-auto}
+
+#### Notes
+
+1. **IDL:** We will not support IDL 8.5 & older versions on Rocky9 but we might continue to support IDL 8.6 if there is a need from the user community: we are still assessing that. The present version of IDL 8.6 must be migrated from the current "Flexnet" to the new "Next Generation" licensing system.
+We obtained IDL 8.9 and IDL 9 from NV5 and are in the process to setup “Next Generation" licensing to activate the licence. Once this is done on server and client machines and testing is completed, a new module environment will be created users for IDL 8.9 and 9.0 on the new sci machines and a subset of the new LOTUS Rocky9 nodes. The default `module add idl` will then load IDL 8.9 instead of IDL 8.6.
+
+2. **Cylc:** Note that Cylc 8 differs from Cylc7 in many ways: architecture, scheduling algorithm, security, UIs, working practices and more. The Cylc 8 web UI requires the use of a browser (e.g. Firefox in the NoMachine desktop service)
+
+3. **MPI:** (further details to follow)
+
+4. **JULES:** (further details to follow)
+
 
 ### Upgraded LOTUS cluster
 
 Further information to follow.
 
 ### Other services
-
-Further information to follow.
-
-### Software
-
-#### jaspy
-
-Further information to follow.
-
-#### jasr
-
-Further information to follow.
-
-#### jasmin-sci
 
 Further information to follow.
