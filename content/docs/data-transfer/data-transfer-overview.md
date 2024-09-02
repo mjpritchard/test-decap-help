@@ -12,9 +12,10 @@ This article introduces the topic of data transfer to/from JASMIN.
 As a JASMIN user you are very likely to be involved in data transfer. You
 might need to copy data files/directories from JASMIN to remote sites (such as
 your own PC, MONSooN or ARCHER2) or bring new data on to JASMIN. These data
-transfer articles explain how to use the basic [transfer tools]({{< ref "data-transfer-tools" >}}) such as `rsync` and `scp` as well as more sophisticated
-methods such as GridFTP. They also cover which transfer services and servers
-are available to JASMIN users.
+transfer articles explain how to use the basic
+{{<link "data-transfer-tools">}}transfer tools{{</link>}} such as `rsync` and `scp`
+as well as more sophisticated services such as Globus. They also cover which
+transfer services and servers are available to JASMIN users.
 
 For many users, moving small amounts of data over short distances, the basic
 tools will meet their requirements. However, data transfer is a complicated
@@ -49,10 +50,10 @@ these locations are available on the transfer servers.
 
 ### JASMIN Transfer servers
 
-JASMIN provides specific [servers for managing data transfers]({{< ref
-"transfer-servers" >}}). Please read about the different servers available for
-particular data transfer needs, and about the various [data transfer
-tools]({{< ref "data-transfer-tools" >}}) available.
+JASMIN provides specific {{<link "../interactive-computing/transfer-servers">}}servers{{</link>}}servers for
+managing data transfers. Please read about the different servers available for
+particular data transfer needs, and about the various
+{{<link "data-transfer-tools">}}data transfer tools{{</link>}} available.
 
 ## Improving your transfer rates
 

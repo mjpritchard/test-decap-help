@@ -12,10 +12,10 @@ packages to be installed to meet specific requirements. This allows a user to
 run multiple environments with different dependencies without conflicts.
 
 There are a number of ways to create a virtual environment to use with the
-Notebook Service. This document outlines the most common and recommended
+Notebooks Service. This document outlines the most common and recommended
 methods, and then some other ways which you might find useful.
 
-Please note that environments created for the Notebook Service **will not work**
+Please note that environments created for the Notebooks Service **will not work**
 on the JASMIN scientific analysis servers or the LOTUS batch processing.
 
 ## Step 1: Creating a virtual environment
@@ -78,7 +78,7 @@ If you change your mind and need to add more packages in the future, it is
 simple to activate the virtual environment in the same way as above and use
 `pip` to install more packages.
 
-## Step 2: Making the notebook service recognise your new kernel
+## Step 2: Making the notebooks service recognise your new kernel
 
 These steps are also run from the notebooks' service shell, as above.
 
@@ -202,13 +202,13 @@ Install any packages you which to use in the environment:
 conda install --name name-insert-here pyjokes
 {{</command>}}
 
-Make the Notebook Service recognise your environment as a kernel:
+Make the Notebooks Service recognise your environment as a kernel:
 
 {{<command user="user" host="jupyter-user">}}
 conda run --name name-insert-here python -m ipykernel install --user --name name-insert-here
 {{</command>}}
 
-### Can I get rid of my old kernels from the Notebook Service?
+### Can I get rid of my old kernels from the Notebooks Service?
 
 Yes.
 
