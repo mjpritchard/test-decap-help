@@ -113,7 +113,7 @@ Virtual servers | |
 `sci-vm-06.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Finalising configuration | (specs tbc)
 Physical servers | |
 `sci-ph-01.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | (specs tbc)
-`sci-ph-01.jasmin.ac.uk` | {{< icon fas circle-check text-success >}}Ready to use |  (specs tbc)
+`sci-ph-01.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use |  (specs tbc)
 {.table .table-striped .w-auto}
 
 Notes:
@@ -138,7 +138,7 @@ configuration from the virtual `sci` servers, with limited outward connectivity.
 
 name | status | notes
 --- | --- | ---
-`xfer-vm-01.jasmin.ac.uk` | {{< icon fas square-xmark text-danger >}} Not yet ready | Virtual server
+`xfer-vm-01.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} ready to use | Virtual server
 `xfer-vm-02.jasmin.ac.uk` | {{< icon fas square-xmark text-danger >}} Not yet ready | Virtual server
 `xfer-vm-03.jasmin.ac.uk` | {{< icon fas square-xmark text-danger >}} Not yet ready | Virtual server, will have `cron`.
 {.table .table-striped .w-auto}
@@ -147,8 +147,8 @@ name | status | notes
 
 name | status | notes
 --- | --- | ---
-`hpxfer3.jasmin.ac.uk` | {{< icon fas square-xmark text-danger >}} Not yet ready | Physical server
-`hpxfer4.jasmin.ac.uk` | {{< icon fas square-xmark text-danger >}} Not yet ready | Physical server
+`hpxfer3.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} ready to use | Physical server
+`hpxfer4.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} ready to use  | Physical server
 {.table .table-striped .w-auto}
 
 ### gridftp server
