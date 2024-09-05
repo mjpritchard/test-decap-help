@@ -1,6 +1,5 @@
 title = "JASMIN Help Site"
 copyright = "Copyright © 2024 Science and Technology Facilities Council."
-paginate = 12
 enableGitInfo = true
 
 # additional settings
@@ -45,6 +44,9 @@ home = ["HTML", "RSS", "REDIR"]
   
 [taxonomies]
   tag = 'tags'
+
+[pagination]
+  pagerSize = 12
 
 [privacy]
   [privacy.vimeo]
@@ -99,7 +101,7 @@ home = ["HTML", "RSS", "REDIR"]
 [module]
   [module.hugoVersion]
     extended = true
-    min = "0.132.0"
+    min = "0.134.0"
     max = ""
   [[module.mounts]]
     source = "archetypes"
