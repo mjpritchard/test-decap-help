@@ -24,8 +24,8 @@ that is used to limit access to NAG.
 ### Loading the NAG Library for use on JASMIN
 
 The NAG library is made available via `module` command which is only available
-once you are on the [scientific analysis servers]({{< ref "sci-servers" >}})
-and [LOTUS cluster]({{< ref "lotus-overview" >}}) on JASMIN. In addition to
+once you are on the [scientific analysis servers]({{% ref "sci-servers" %}})
+and [LOTUS cluster]({{% ref "lotus-overview" %}}) on JASMIN. In addition to
 loading a module for the library, you will usually need to load a module for
 the compiler you are using. For example:
 
@@ -106,5 +106,3 @@ fll6i25dcl -|
 See the full NAG library manual at:
 
 <https://www.nag.co.uk/numeric/fl/nagdoc_fl26/html/frontmatter/manconts.html>
-
-

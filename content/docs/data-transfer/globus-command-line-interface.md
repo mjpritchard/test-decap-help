@@ -55,7 +55,7 @@ retry automatically until some pre-set deadline.
 - Python environment for that platform, with ability to create virtual environments (to enable installation of additional packages)
 - For use of the JASMIN Default Collection: 
   - An active JASMIN user account, with “jasmin-login” role
-- You may also wish to [set up your own Globus endpoint using Globus Connect Personal]({{< ref "globus-connect-personal" >}}), though this is not needed for these examples.
+- You may also wish to [set up your own Globus endpoint using Globus Connect Personal]({{% ref "globus-connect-personal" %}}), though this is not needed for these examples.
 
 ## Initial Setup
 

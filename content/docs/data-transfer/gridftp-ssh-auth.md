@@ -8,7 +8,7 @@ title: 'GridFTP (SSH authentication)'
 This article describes how to transfer data using GridFTP with SSH
 authentication.
 
-{{<alert type="info">}}The `globus-url-copy` command used here should not be confused with the Globus online data transfer service. They used to be associated, but no longer. If you are starting out and looking for a reliable, high-performance transfer method, the recommendation now is to learn about [Globus Transfers with JASMIN](../globus-transfers-with-jasmin) (using the Globus online data transfer service) instead of command-line gridftp as described in this document.{{</alert>}}
+{{<alert type="info">}}The `globus-url-copy` command used here should not be confused with the Globus online data transfer service. They used to be associated, but no longer. If you are starting out and looking for a reliable, high-performance transfer method, the recommendation now is to learn about [Globus Transfers with JASMIN]({{% ref "globus-transfers-with-jasmin" %}}) (using the Globus online data transfer service) instead of command-line gridftp as described in this document.{{</alert>}}
 
 ## Introduction
 
@@ -28,8 +28,8 @@ and can do verification and sync operations as part of the transfer.
 
 See also:
 
-- [Transfer servers]({{< ref "transfer-servers" >}}) for details on which servers within JASMIN have GridFTP available.
-- [Transfers from ARCHER2]({{< ref "transfers-from-archer2" >}}) for details of different routes affecting your choice of server (since this is the one of the most likely places to which JASMIN users will want to transfer data to/from)
+- [Transfer servers]({{% ref "transfer-servers" %}}) for details on which servers within JASMIN have GridFTP available.
+- [Transfers from ARCHER2]({{% ref "transfers-from-archer2" %}}) for details of different routes affecting your choice of server (since this is the one of the most likely places to which JASMIN users will want to transfer data to/from)
 
 ## Establishing a connection
 
@@ -41,10 +41,9 @@ option enabled, to enable agent forwarding:
 ssh -A username1@hpxfer1.jasmin.ac.uk
 {{</command>}}
 
-Note that in order to use `hpxfer[12].jasmin.ac.uk` you will need to have
-[high-performance data transfer access]({{< ref "hpxfer-access-role" >}}) on
-your JASMIN account. An alternative to try out beforehand, is to use `jasmin-
-xfer1.ceda.ac.uk`.
+Note that in order to use `hpxfer[12].jasmin.ac.uk` you will need to have the
+[hpxfer access role]({{% ref "hpxfer-access-role" %}}) on
+your JASMIN account. An alternative to try out beforehand, is to use `xfer1.ceda.ac.uk`.
 
 Use the `globus-url-copy` command to list the contents of your home directory
 on the remote server (This will only work if you already know that that server
@@ -130,8 +129,8 @@ globus-url-copy -p 16 -fast -t 10 -vb sshftp://username2@gridftp.remotesite.ac.u
 Note the transfer rate achieved in Megabytes/second (MB/sec), although for
 various reasons this is not to be relied upon as an accurate expectation of
 speed for real transfers. However, **you are unlikely to achieve even half of
-this data rate via`scp`, `rsync` or `sftp` over the same route**. [Bbcp]({{<
-ref "bbcp" >}}) may achieve similar rates, however, and
+this data rate via`scp`, `rsync` or `sftp` over the same route**.
+[Bbcp]({{% ref "bbcp" %}}) may achieve similar rates, however, and
 this is considered by some as easier to use.
 
 4\. Recursively download the contents of a directory on a remote location to a
@@ -167,11 +166,11 @@ So far the examples have used a server within JASMIN as the client in the
 GridFTP transfer. The transfer can be reversed so that the client is elsewhere
 and the JASMIN host is the server specified in the destination URI. The
 following command should work connecting to one of the following transfer
-servers: (see also [Transfer Servers]({{< ref "transfer-servers" >}}))
+servers: (see also [Transfer Servers]({{% ref "transfer-servers" %}}))
 
 - `xfer[12].jasmin.ac.uk`
 - `xfer3.jasmin.ac.uk` ([additional access role](https://accounts.jasmin.ac.uk/services/additional_services/xfer-sp) required)
-- `hpxfer[12].jasmin.ac.uk` ([high-performance data transfer access]({{< ref "hpxfer-access-role" >}}) required)
+- `hpxfer[12].jasmin.ac.uk` ([hpxfer access role]({{% ref "hpxfer-access-role" %}}) required)
 
 Push data to JASMIN from a remote server:
 
@@ -181,5 +180,5 @@ globus-url-copy -vb -p 8 -fast mydir/myfile sshftp://username@hpxfer1.jasmin.ac.
 
 Note that for this to work, you need to be able to authenticate over SSH to the JASMIN host. This should be possible if you can log in interactively, but will NOT work if you are using the command in a cron job or other situation where your ssh-agent (on the host remote to JASMIN) is not running and/or does not have access to your private key. For those situations, consider using either
 
-- {{<link "globus-transfers-with-jasmin" >}}Globus (recommended){{</link>}}, or
-- {{<link "gridftp-cert-based-auth">}}Gridftp using certificate-based authentication{{</link>}})
+- [Globus (recommended)]({{% ref "globus-transfers-with-jasmin" %}}), or
+- [Gridftp using certificate-based authentication]({{% ref "gridftp-cert-based-auth" %}})

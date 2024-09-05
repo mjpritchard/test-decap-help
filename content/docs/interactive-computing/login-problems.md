@@ -10,7 +10,7 @@ weight: 40
 ---
 
 Having problems connecting to a host on JASMIN? Details of how to login to
-JASMIN can be found [here]({{< ref path="docs/getting-started/login" >}}), but this article may help to
+JASMIN can be found [here]({{% ref "how-to-login" %}}), but this article may help to
 resolve login problems. It provides information for the following issues:
 
 - Unable to login to a login server e.g. `login1.jasmin.ac.uk`
@@ -50,7 +50,7 @@ Depending on your system, this will either provide output to the terminal (via
 stdout) or on some systems this might save the output in the file
 "reverse_dns_check". You may need to look in that file for the result.
 
-See [check network details]({{< ref "check-network-details" >}}) for further
+See [check network details]({{% ref "check-network-details" %}}) for further
 information on how to interpret the result from this.
 
 Most institutional networks for UK universities and partner organisations are
@@ -73,7 +73,7 @@ the outward SSH connection to JASMIN from there. In this case, you need to
 have your JASMIN SSH key loaded on your local machine first, and remember to
 include the -A flag for "agent forwarding" for ALL the intermediate steps.
 
-If all else fails, you can use the ["contingency route"]({{< ref "login-servers" >}}) provide by login2.jasmin.ac.uk (see article for further
+If all else fails, you can use the ["contingency route"]({{% ref "login-servers" %}}) provide by login2.jasmin.ac.uk (see article for further
 details), but you will be limited in what you can do / connect to within
 JASMIN as a result. We prefer all users to connect from their institutional
 network.
@@ -90,7 +90,7 @@ number of reasons:
     * Try waiting a few minutes before trying again.
   * **You don't have your key loaded in your local authentication agent (e.g. ssh-agent).**
     * Check that you are following the method suitable for your operating system 
-      * The article "[How to login]({{< ref path="docs/getting-started/login" >}})" has instructions for linux, mac and windows.  
+      * The article "[How to login]({{% ref "how-to-login" %}})" has instructions for linux, mac and windows.  
 
     * Note that connections using NoMachine NX don't require an authentication agent: this can be a good alternative if you're having problems.
   * **You have not yet been granted jasmin-login access or your access has expired.**
@@ -190,7 +190,7 @@ This should display something that looks similar to (but not identical to)
 
 If nothing is displayed then it indicates
 that agent forwarding is not working. Please read 
-[how to login]({{< ref path="docs/getting-started/login" >}}) and make sure
+[how to login]({{% ref "how-to-login" %}}) and make sure
  you are running ssh-agent (or similar), have loaded
 your private key and are using the -A option on your ssh command for the
 connection to the login server. NX users should make sure that the "agent
@@ -252,7 +252,7 @@ or see below (if using MobaXterm) which now has a better way of loading the SSH 
 
 ## Errors when connecting with Mobaxterm
 
-Please follow the [instructions for MobaXterm]({{< ref "mobaxterm" >}}) (which
+Please follow the [instructions for MobaXterm]({{% ref "mobaxterm" %}}) (which
 include a video to show how to load your key into its own ssh-agent, `MobAgent`).
 
 These instructions have changed with more recent versions of MobaXterm, and

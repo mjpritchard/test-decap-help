@@ -8,7 +8,7 @@ title: 'GridFTP (certificate-based authentication)'
 This article describes how to transfer data using gridftp with certificate-
 based authentication.
 
-{{<alert type="info">}}The `globus-url-copy` command used here should not be confused with the Globus online data transfer service. They used to be associated, but no longer. If you are starting out and looking for a reliable, high-performance transfer method, the recommendation now is to learn about [Globus Transfers with JASMIN](../globus-transfers-with-jasmin) (using the Globus online data transfer service) instead of command-line gridftp as described in this document.{{</alert>}}
+{{<alert type="info">}}The `globus-url-copy` command used here should not be confused with the Globus online data transfer service. They used to be associated, but no longer. If you are starting out and looking for a reliable, high-performance transfer method, the recommendation now is to learn about [Globus Transfers with JASMIN]({{% ref "globus-transfers-with-jasmin" %}}) (using the Globus online data transfer service) instead of command-line gridftp as described in this document.{{</alert>}}
 
 ## Basics of certificate-based authentication
 
@@ -38,7 +38,7 @@ log in to <https://accounts.jasmin.ac.uk> to administer your JASMIN account.
 Here's what to do:
 
   1. Download tools to interact with JASMIN's Online Certificate Authority (OnlineCA). You can use these to interact with other OnlineCAs too (not just JASMIN's. These replace the "myproxy-logon" tool previously mentioned here)
-  2. Use these tools to: 
+  2. Use these tools to:
     1. "Bootstrap trust" i.e. to setup your local certificate store with those needed to interact with the JASMIN server [First time use only]
     2. Obtain a short-term credential using your JASMIN account details [First time, and to renew your short-term credendial as needed]
   3. Use this short-term credential to authenticate with a remote gridftp server which trusts this credential (for example, the JASMIN gridftp server)
@@ -123,7 +123,7 @@ globus-url-copy -help
 
 **NOTE:** On some systems, you have to load a relevant module to get access to the globus-url-copy command, however not on the JASMIN \[hp\]xfer servers.
 
-It is recommended to try things out using the regular xfer servers xfer[12] but to perform "real" transfers using hpxfer[12] for better performance, but to use the latter you will need the {{<link "hpxfer-access-role">}}hpxfer access role{{</link>}}.
+It is recommended to try things out using the regular xfer servers xfer[12] but to perform "real" transfers using hpxfer[12] for better performance, but to use the latter you will need the [hpxfer access role]({{% ref "hpxfer-access-role" %}}).
 
 1\. Remote directory listing issued by client on `gridftp-
 client.localsite.ac.uk` to server `gridftp-server.remotesite.ac.uk` where you
@@ -178,7 +178,7 @@ globus-url-copy [OPTIONS] source-uri desination-uri
 You can use the above examples by replacing the local machine `gridftp-client.localsite.ac.uk` with one of the jasmin transfer hosts
 `xfer[12].jasmin.ac.uk` as a client, To do this, you first need to be logged in via SSH to one of these hosts and can initiate a transfer by invoking `globus-url-copy` in one of the ways above.
 
-- For high-performance transfer (large volumes and/or longer distances), use `hpxfer[12].jasmin.ac.uk` for which you will need to have the {{<link "hpxfer-access-role">}}hpxfer access role{{</link>}}. `hpxfer[12].jasmin.ac.uk` are also recommended for transfers to/from ARCHER2 if initiated at the JASMIN end, but if you are initiating the transfer from the ARCHER2 end, you will need to connect to the JASMIN GridFTP server as described below, see also {{<link "transfers-from-archer2">}}{{</link>}}.
+- For high-performance transfer (large volumes and/or longer distances), use `hpxfer[12].jasmin.ac.uk` for which you will need to have the [hpxfer access role]({{% ref "hpxfer-access-role" %}}). `hpxfer[12].jasmin.ac.uk` are also recommended for transfers to/from ARCHER2 if initiated at the JASMIN end, but if you are initiating the transfer from the ARCHER2 end, you will need to connect to the JASMIN GridFTP server as described below, see also [Transfers from Archer2]({{% ref "transfers-from-archer2" %}}).
 - `hpxfer2.jasmin.ac.uk` is tuned for very long path transfers (e.g. Western US or Australia/NZ)
 - For remote hosts using JASMIN's dedicated network link (Met Office only) use `xfer[12].jasmin.ac.uk` as the client (These are virtual machines so have limited performance, but your transfer will be over a dedicated network connection)
 
@@ -208,18 +208,18 @@ globus-url-copy -cred cred.jasmin -vb -p 8 -fast /dev/zero gsiftp://gridftp1.jas
 {{</command>}}
 
 This server is also used as the JASMIN GridFTP Server globus endpoint, see
-[GridFTP transfers using Globus Online]({{< ref "globus-command-line-interface" >}}) (however you can only currently use your CEDA
+[GridFTP transfers using Globus Online]({{% ref "globus-command-line-interface" %}}) (however you can only currently use your CEDA
 SLCSs credential with Globus Online. The JASMIN team is working on a solution
 for this).
 
 Please note that the servers `xfer[12].jasmin.ac.uk` and
 `hpxfer[12].ceda.ac.uk` are not gridftp **servers**. They have the `globus-
 url-copy` client installed, so can be used as clients to connect to remote
-gridftp servers, and also support [gridftp over SSH]({{< ref "gridftp-ssh-auth" >}}) (both incoming and outgoing), but do not act as
+gridftp servers, and also support [gridftp over SSH]({{% ref "gridftp-ssh-auth" %}}) (both incoming and outgoing), but do not act as
 servers for certificate-based gridftp as shown in these examples. The JASMIN
 gridftp server for read-write access to home directories and group workspaces
-is `gridftp1.jasmin.ac.uk`. Access to this requires the {{<link "hpxfer-access-role">}}hpxfer access role{{</link>}}. See
-also [Transfer Servers]({{< ref "transfer-servers" >}}).
+is `gridftp1.jasmin.ac.uk`. Access to this requires the [hpxfer access role]({{% ref "hpxfer-access-role" %}}). See
+also [Transfer Servers]({{% ref "transfer-servers" %}}).
 
 ## Third-party transfers
 

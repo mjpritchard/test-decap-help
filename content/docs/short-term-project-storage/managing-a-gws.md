@@ -17,9 +17,9 @@ a duty to:
 - Ensure that GWS is being used appropriately: this may include enforcement of limits on particular users.
 - Advertise the URL for requesting access to the GWS.
 - Respond to e-mail authorisation requests from CEDA.
-- Manage disk and tape effectively: specifically the use of the [Elastic Tape system]({{< ref "secondary-copy-using-elastic-tape" >}}) to back-up or migrate data.
-- Communicate [GWS etiquette]({{< ref "gws-etiquette" >}}) to the project scientists.
-- Manage additional services such as [sharing of GWS data via HTTP server]({{< ref "share-gws-data-via-http" >}}).
+- Manage disk and tape effectively: specifically the use of the [Elastic Tape system]({{% ref "secondary-copy-using-elastic-tape" %}}) to back-up or migrate data.
+- Communicate [GWS etiquette]({{% ref "gws-etiquette" %}}) to the project scientists.
+- Manage additional services such as [sharing of GWS data via HTTP server]({{% ref "share-gws-data-via-http" %}}).
 - Manage the closing down of the GWS effectively: all GWSs have a termination date and data may be lost if not managed effectively.
 - Communicate any issues to the CEDA Helpdesk.
 
@@ -28,8 +28,8 @@ a duty to:
 ### Authorising access to the GWS
 
 When your GWS has been set up, users can submit requests for access to the GWS
-via the JASMIN accounts portal: the new GWS will appear in the list of [JASMIN
-Services](https://accounts.jasmin.ac.uk/account/login/?next=/services/group_workspaces/).
+via the JASMIN accounts portal: the new GWS will appear in the list of
+{{< link "https://accounts.jasmin.ac.uk/account/login/?next=/services/group_workspaces/" >}}JASMIN Services{{</link>}}.
 An access request from a user will trigger an e-mail to you that asks you to
 approve (or refuse) the request. The e-mail will include details of the user
 and their intended use of the resource. As GWS manager, **you** are now
@@ -53,7 +53,7 @@ File system access to a GWS is managed using a Unix group that begins with
 - you take over responsibility (via the `MANAGER` role) for approving other users' applications for the `USER` role.
 - you can unilaterally grant `DEPUTY` access to other users if you know their username and want them to help you in the task of approving requests for `USER` access.
 
-Once you yourself have access, a good first task is to set up the {{<link "introduction-to-group-workspaces/#recommended-directory-structure-for-a-gws">}}recommended directory structure{{</link>}}.
+Once you yourself have access, a good first task is to set up the [recommended directory structure](introduction-to-group-workspaces/#recommended-directory-structure-for-a-gws).
 
 A list of the user IDs that have access to a given GWS can be found by using
 the "getent group" command and piping it through "grep" to select only your
@@ -168,7 +168,7 @@ find /gws/nopw/j04/upscale/cache -type f -atime +365
 
 1. The {{<link "gws-scanner">}}GWS Scanner{{</link>}} runs this for you, centrally, on a roughly 2-week cycle, and stores all the output in a database from which results can be visualised in the {{<link "gws-scanner-ui">}}GWS Scanner User Interface{{</link>}}.
 
-1. There is also a live view of GWSs and the available space left on the [JASMIN Dashboard](https://mon.jasmin.ac.uk). The “JASMIN Storage” tab shows many
+1. There is also a live view of GWSs and the available space left on the {{< link "https://mon.jasmin.ac.uk" >}}JASMIN Dashboard{{</link>}}. The “JASMIN Storage” tab shows many
 JASMIN storage volumes with information about current usage.
 
 **So please don't run large `du` or `find` jobs yourself, as this will be duplicating something already running in the background.**
@@ -176,7 +176,7 @@ JASMIN storage volumes with information about current usage.
 As a GWS Manager
 you will receive e-mails summarising the usage and contents of the GWS. If you
 wish for additional directories to be scanned and summarised please add these
-to the [GWS scanner configuration]({{< ref "gws-scanner" >}}).
+to the [GWS scanner configuration]({{% ref "gws-scanner" %}}).
 
 The typical lifetime of a GWS is 3 years. All GWS managers are expected to
 actively manage the space during its lifetime and plan for the eventual
@@ -191,7 +191,7 @@ CEDA Helpdesk, ideally before the project starts.
 Proactive data management is an important part of providing an effective GWS.
 We recommend that the GWS Manager discusses use of the space with the project
 team to ensure that the use of disk and tape are being optimised. This may
-involve use of the [Elastic Tape system]({{< ref "secondary-copy-using-elastic-tape" >}})
+involve use of the [Elastic Tape system]({{% ref "secondary-copy-using-elastic-tape" %}})
 for backup or data migration (from disk to tape).
 
 ### Requesting a change to the GWS size
@@ -207,7 +207,7 @@ requested.
 Requests for an increase in GWS size will be considered by the Consortium
 Manager with responsibility for managing an overall allocation to that
 particular scientific community. See 
-[Requesting Resources]({{< ref "../uncategorized/requesting-resources" >}}). Depending on available resources and competing
+[Requesting Resources]({{% ref "requesting-resources" %}}). Depending on available resources and competing
 demand, it may not always be possible to increase the allocation, and you may
 be asked to move data to Elastic Tape to free up disk space.
 
@@ -240,12 +240,12 @@ We provide a UNIX a group corresponding to each group workspace, which all membe
 Please maintain contact throughout the life of the GWS via the following
 channels:
 
-- Using the [JASMIN dashboard](https://mon.jasmin.ac.uk) to check on the status of your GWS (used versus available space).
+- Using the {{< link "https://mon.jasmin.ac.uk" >}}JASMIN Dashboard{{</link>}} to check on the status of your GWS (used versus available space).
 - Email alerts from the system when the GWS reaches >83% full
 - Email from the CEDA/JASMIN team
 - News articles on the CEDA or JASMIN websites and by monitoring CEDA social media feeds which may be used to post messages regarding system status or security. 
-  - [CEDA Website](http://www.ceda.ac.uk/)
-  - [CEDA News on Twitter](https://twitter.com/cedanews)
+  - {{< link "ceda_site" >}}CEDA Website{{</link>}}
+  - {{< link "https://twitter.com/cedanews" >}}CEDA News on Twitter{{</link>}}
 
 If you are aware that a user who has access to your GWS leaves your project
 or, for whatever reason, no longer needs to be a member of the GWS, please let

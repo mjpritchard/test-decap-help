@@ -27,7 +27,7 @@ accounts portal.
 
 ## Update SSH public key
 
-To update your SSH public key, first you need to generate a new SSH key pair as described here: [Generate an SSH key pair]({{< ref "generate-ssh-key-pair" >}}). This should be done on
+To update your SSH public key, first you need to generate a new SSH key pair as described here: [Generate an SSH key pair]({{% ref "generate-ssh-key-pair" %}}). This should be done on
 your local machine (e.g. Windows / Linux / Mac). You MUST protect your key
 with a strong passphrase. Then follow step 1 to step 5 to update your SSH
 public key. You will be asked for a verification token during this process.
@@ -75,8 +75,8 @@ Re-enter the new password to confirm, then click "Change password"
 
 Linking your CEDA account to your JASMIN account allows you filesystem access
 to data on CEDA Archive. If you need to access data on the CEDA Archive and
-you do not have an account, you will need to apply for a [CEDA account]({{<
-ref "ceda-archive#register" >}}).
+you do not have an account, you will need to apply for a 
+[CEDA account]({{% ref "ceda-archive#register" %}}).
 
 **Step 1** : On the profile page, select "Link now" which is opposite to the
 field "Linked CEDA Account". This will take you to the CEDA accounts portal

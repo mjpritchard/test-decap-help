@@ -15,7 +15,7 @@ HTTP, so that:
 - common clients such as `wget`, `curl`, client libraries and web browsers can be used to access the data via a commonly-supported protocol.
 
 In this respect, the service should be regarded as another [data transfer
-tool]({{< ref "data-transfer-tools" >}}). However it must be arranged in
+tool]({{% ref "data-transfer-tools" %}}). However it must be arranged in
 advance between the Group Workspace manager and the JASMIN Helpdesk. It
 involves:
 

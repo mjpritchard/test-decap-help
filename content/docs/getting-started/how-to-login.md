@@ -1,14 +1,16 @@
 ---
-aliases: /article/187-login
+aliases: 
+  - /article/187-login
+  - /docs/getting-started/logn
 description: How to login to JASMIN
-slug: login
+slug: how-to-login
 title: How to login
 weight: 100
 ---
 
 The instructions below cover the process of logging in using a terminal client
 only. For a graphical linux desktop, please see alternative instructions using
-[NoMachine NX]({{< ref "graphical-linux-desktop-access-using-nx" >}}).
+[NoMachine NX]({{% ref "graphical-linux-desktop-access-using-nx" %}}).
 
 ## Preparing your credentials: loading your SSH private key
 
@@ -29,7 +31,7 @@ load your private key so that it can be presented at the time of logging in.
 
 **Linux and macOS users:** `ssh-agent` can be used (see instructions below).
 
-**Windows users:** we recommend the [MobAgent utility within MobaXterm]({{<ref "mobaxterm" >}}).
+**Windows users:** we recommend the [MobAgent utility within MobaXterm]({{% ref "mobaxterm" %}}).
 MobaXterm is a Linux terminal emulator for Windows.
 
 `ssh-agent` is a utility that stores private keys and makes them available to
@@ -79,7 +81,7 @@ use.
 
 - The `ssh-agent` session should persist until killed or until system shutdown, even if you close the terminal in which you set it up.
 - It is very important that you protect your private key with a strong passphrase, known only to you. Keys must not be shared between individuals.
-- If you get an error when attempting the above commands please see [login problems]({{< ref "login-problems" >}}).
+- If you get an error when attempting the above commands please see [login problems]({{% ref "login-problems" %}}).
 - Your public key will have been automatically propagated by the JASMIN accounts system to all the machines to which you have access rights, so should already be present in the correct place. Do not attempt to place the public key manually on any host within JASMIN: it will get automatically overwritten.
 
 Mac users (OS X Leopard onwards) can optionally benefit from linking the SSH
@@ -100,8 +102,7 @@ echo "ssh-add --apple-load-keychain" >> ~/.zshrc
 
 ## The JASMIN login servers
 
-See this article for a [description and listing of the login servers]({{< ref
-"login-servers" >}}).
+See this article for a [description and listing of the login servers]({{% ref "login-servers" %}}).
 
 ## Logging in to JASMIN
 
@@ -127,7 +128,7 @@ sessions).
 
 ## Can't login?
 
-- Check our troubleshooting guide: [login problems]({{< ref "login-problems" >}})
+- Check our troubleshooting guide: [login problems]({{% ref "login-problems" %}})
 
 ## The login message
 
@@ -154,8 +155,8 @@ Note that the `-X` argument can be used in conjunction with the agent-forwarding
 Please note that this arrangement sends your graphical output back to your
 desktop machine over the network, so **should only be used within JASMIN, not
 to your local desktop machine**. A solution has been put in place for a
-[graphical linux desktop environment within JASMIN using NoMachine NX]({{< ref
-"graphical-linux-desktop-access-using-nx" >}}), removing the need to send X11
+[graphical linux desktop environment within JASMIN using NoMachine NX]({{% ref "graphical-linux-desktop-access-using-nx" %}}),
+removing the need to send X11
 graphics over the wide-area network. You are strongly advised to use NX for
 any situation which involves graphical output on JASMIN. **Using X11 graphics
 over the wide-area network outside of JASMIN is not supported: you will not
@@ -169,7 +170,7 @@ all within the JASMIN network.
 
 Having been through all the steps and logged in to JASMIN (well done!) you
 will be keen to do some real work. You could try the [general purpose
-scientific analysis servers]({{< ref "sci-servers" >}}) to get started. Use
+scientific analysis servers]({{% ref "sci-servers" %}}) to get started. Use
 the list presented on the login screen to select a `sci` server which is not
 under heavy usage.
 

@@ -76,7 +76,7 @@ are expecting to see is not listed at the top level ( /gws/nopw/j04/) you
 should use the full path of the volume to access it, and after a very short delay, the
 volume should appear.
 
-See also [here]({{< ref "storage" >}}) to see where these are mounted
+See also [here]({{% ref "storage" %}}) to see where these are mounted
 throughout JASMIN.
 
 ## The BIG issue: why you need to be careful about parallel file access
@@ -113,4 +113,4 @@ performance.
 ## FAQs, issues and solutions
 
 Please read our collection of FAQs and known issues (and solutions!) which
-we've put together [HERE]({{< ref "faqs-storage" >}}).
+we've put together [HERE]({{% ref "faqs-storage" %}}).

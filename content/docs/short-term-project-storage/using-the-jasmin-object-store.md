@@ -8,7 +8,7 @@ This article describes how to use the JASMIN high-performance object storage.
 
 ## What is object storage?
 
-An [object store](https://en.wikipedia.org/wiki/Object_storage) is a data
+An {{< link "https://en.wikipedia.org/wiki/Object_storage" >}}object store{{</link>}} is a data
 storage system that manages data as objects referenced by a globally unique
 identifier, with attached metadata. This is a fundamental change from
 traditional file systems that you may be used to, as there is no directory
@@ -30,8 +30,8 @@ transfer methods.
 
 Object stores are seen as the most efficient (and cheapest!) way to store and
 access data from the cloud, and all the major cloud providers support some
-variant of object store. The JASMIN object store is [S3
-compatible](https://www.scality.com/topics/what-is-s3-compatible-storage/) \-
+variant of object store. The JASMIN object store is 
+{{< link "https://www.scality.com/topics/what-is-s3-compatible-storage/" >}}S3 compatible{{</link>}} \-
 S3 is the object store for Amazon Web Services (AWS), and has become a de-
 facto standard interface for object stores. This means that all the same tools
 that work with AWS S3 will also work with the JASMIN object store.
@@ -111,7 +111,7 @@ outside of JASMIN - you will need to use a graphical session on JASMIN to
 access a Firefox browser running on a JASMIN system.
 
 **The recommended way to do this is using the** [NX Graphical Desktop
-service]({{< ref "graphical-linux-desktop-access-using-nx" >}}). You can start Firefox from
+service]({{% ref "graphical-linux-desktop-access-using-nx" %}}). You can start Firefox from
 the "Activities" menu once you have logged in to your graphical desktop on one
 of the `nx-login*` servers (so no need to make an onward connection to a `sci`
 server).
@@ -183,8 +183,8 @@ used - note the `https://` prefix and additional `-ext`.
 `s3cmd` is a command line tool provided by Amazon to work with S3 compatible
 Object Storage. It is installed on JASMIN, both on the sci-machines and on
 LOTUS. It is a little more complicated to use than the MinIO client, but is
-more powerful and flexible. For full details on `s3cmd`, see the [s3tools.org
-website](http://s3tools.org).
+more powerful and flexible. For full details on `s3cmd`, see the 
+{{< link "http://s3tools.org" >}}s3tools.org website{{</link>}}.
 
 To configure `s3cmd` to use the JASMIN object store, you need to create and
 edit a `~/.s3cfg` file. To access the `my-os-tenancy-o` tenancy (where "my-os-
@@ -260,8 +260,8 @@ filesystem. As such, many of the UNIX file management commands found in
 standard installations of the OS are found within this client ( `ls`, `cat`,
 `cp`, `rm` for example).
 
-There are a number of ways to install this client as shown in the [quickstart
-guide](https://docs.min.io/docs/minio-client-quickstart-guide.html). Methods
+There are a number of ways to install this client as shown in the
+{{< link "https://docs.min.io/docs/minio-client-quickstart-guide.html" >}}quickstart guide{{</link>}}. Methods
 include: docker, Homebrew for macOS, wget for Linux and instructions for
 Windows. Follow these steps to get the client installed on the relevant
 system.
@@ -311,14 +311,14 @@ mc cp jasmin-store/my-bucket/object-1 jasmin-store/different-bucket/
 ## From Python
 
 One method of accessing the object store from Python is using
-[s3fs](https://s3fs.readthedocs.io/en/latest/index.html). This library builds
+{{< link "https://s3fs.readthedocs.io/en/latest/index.html" >}}s3fs{{</link>}}. This library builds
 on
-[botocore](https://botocore.amazonaws.com/v1/documentation/api/latest/index.html)
+{{< link "https://botocore.amazonaws.com/v1/documentation/api/latest/index.html" >}}botocore{{</link>}}
 but abstracts a lot of the complexities away. There are three main types of
 object in this library:
-[S3FileSystem](https://s3fs.readthedocs.io/en/latest/api.html#s3fs.core.S3FileSystem),
-[S3File](https://s3fs.readthedocs.io/en/latest/api.html#s3fs.core.S3File) and
-[S3Map](https://s3fs.readthedocs.io/en/latest/api.html#s3fs.mapping.S3Map).
+{{< link "https://s3fs.readthedocs.io/en/latest/api.html#s3fs.core.S3FileSystem" >}}S3FileSystem{{</link>}},
+{{< link "https://s3fs.readthedocs.io/en/latest/api.html#s3fs.core.S3File" >}}S3File{{</link>}} and
+{{< link "https://s3fs.readthedocs.io/en/latest/api.html#s3fs.mapping.S3Map" >}}S3Map{{</link>}}.
 The filesystem object is used to configure a connection to the object store.
 Note: it's **strongly** recommended to store the endpoint, token and secret
 outside of the Python file, either using environment variables or an external
@@ -375,7 +375,7 @@ file_object.write(data)
 file_object.flush()
 ```
 
-S3Map is very useful when using [xarray](http://xarray.pydata.org/en/stable/)
+S3Map is very useful when using {{< link "http://xarray.pydata.org/en/stable/" >}}xarray{{</link>}}
 to open a number of data files (netCDF4 for example), and turn them into the
 zarr format ready to be stored as objects on the store. The function for this
 can store a `.zarr` file in a POSIX filesystem, or can be streamed directly to
@@ -390,5 +390,3 @@ dataset.to_zarr(store=s3_store, mode='w')
 # Reopening the dataset from object store using xarray
 xarray.open_zarr(s3_store, consolidated=True)
 ```
-
-

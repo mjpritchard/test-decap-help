@@ -76,4 +76,4 @@ without activating the virtualenv. **Python 3** users   load jaspy
 using the command `module load jaspy`
 
 For instructions on how to use the xfc client, see the article [JASMIN
-Transfer Cache (XFC).]({{< ref "xfc" >}})
+Transfer Cache (XFC).]({{% ref "xfc" %}})

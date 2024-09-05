@@ -50,10 +50,9 @@ cluster. These include:
 
 The reason for moving away from the JAP was to provide a system that could
 support multiple versions of software packages, and environments, on a single
-platform. From the perspective of reproducible science, the [Jaspy]({{< ref
-"jaspy-envs" >}}) approach is more useful because it:
+platform. From the perspective of reproducible science, the [Jaspy]({{% ref "jaspy-envs" %}}) approach is more useful because it:
 
--  keeps previous environments on the system when a new version of an environment is launched
+- keeps previous environments on the system when a new version of an environment is launched
 - includes a listing of all packages (and their versions) that are provided in each date-stamped software environment
 
 From a management point-of-view, Jaspy builds on the packaging tool

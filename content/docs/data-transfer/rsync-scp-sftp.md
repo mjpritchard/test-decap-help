@@ -48,8 +48,8 @@ rsync [OPTION] ... [USER@]HOST:SRC [DEST]
 directories) to copy from, and `DEST` represents the file or directory to copy
 to. (Square brackets indicate optional parameters.)
 
-For more information visit the [official rsync
-website](http://rsync.samba.org/).
+For more information visit the
+{{< link "http://rsync.samba.org/" >}}official rsync website{{</link>}}.
 
 ### rsync example with JASMIN
 
@@ -110,8 +110,8 @@ For basic transfer of a file on JASMIN to the local machine:
 sftp remoteuser@xfer1.jasmin.ac.uk:/group_workspaces/jasmin/myproject/data/notes.txt ./
 {{</command>}}
 
-For more information see the [Wikipedia page on
-SFTP](https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol).
+For more information see the
+{{< link "https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol" >}}Wikipedia page on SFTP{{</link>}}.
 
 There are various 3rd-party tools and clients, for example, WinSCP, FileZilla,
 MobaXterm and others, which can do transfers using the SCP and/or SFTP
@@ -125,5 +125,5 @@ line tool, but often through a graphical user interface instead.
 While convenient and familiar to many users, the tools described above do not
 make efficient use of available bandwidth for transferring large quantities of
 data via high-speed networks over long distances. Please consult [Data
-Transfer Tools]({{< ref "data-transfer-tools" >}}) to learn more about which
+Transfer Tools]({{% ref "data-transfer-tools" %}}) to learn more about which
 might be the most appropriate tool to use in different contexts.

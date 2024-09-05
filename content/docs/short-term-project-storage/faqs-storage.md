@@ -25,7 +25,7 @@ We will continue to add to this page when new issues or solutions are found.
 
 ## 1\. Known cases where parallel write can occur (may be unknowingly to you!):
 
-#### Use of MPI-IO or OpenMPI
+### Use of MPI-IO or OpenMPI
 
 _Parallel threads can update the same file concurrently on same or from
 different servers._
@@ -35,14 +35,14 @@ different servers._
 
 ---
 
-#### Writing all the logs from a LOTUS job or job array to the same output or log file
+### Writing all the logs from a LOTUS job or job array to the same output or log file
 
 **Suggested solution:** see job submission advice 
-[here]({{< ref "how-to-submit-a-job-to-slurm" >}}) showing how to use SBATCH options to use distinct output and log files for each job, or element of a job array.
+[here]({{% ref "how-to-submit-a-job-to-slurm" %}}) showing how to use SBATCH options to use distinct output and log files for each job, or element of a job array.
 
 ---
 
-#### Deleting a file via one host before another host has closed it
+### Deleting a file via one host before another host has closed it
 
 _This is a form of parallel write truncation_
 
@@ -53,7 +53,7 @@ into (eg. sci1.jasmin.ac.uk)
 
 ---
 
-#### Attempting to kill a process that was writing/modifying files, but not checking that it has been killed before starting a replacement process which attempts to do the same thing
+### Attempting to kill a process that was writing/modifying files, but not checking that it has been killed before starting a replacement process which attempts to do the same thing
 
 _This can happen with rsync leading to duplicate copying processes._
 
@@ -62,7 +62,7 @@ starting another.
 
 ---
 
-#### Opening the same file for editing in more than one editor on the same or different servers
+### Opening the same file for editing in more than one editor on the same or different servers
 
 Here’s an example of how this shows up using “lsof” and by listing user
 processes with “ps”. The same file “ISIMIPnc_to_SDGVMtxt.py” is being edited
@@ -116,7 +116,7 @@ We are planning to address this further in Phase 5 by deploying additional SSD
 storage which could be made available in small amounts to GWSs as an
 additional type of storage. [Now available: please ask about adding an "SMF" volume to your workspace]
 
-#### Issues writing netCDF3 classic files to SOF storage type
+### Issues writing netCDF3 classic files to SOF storage type
 
 Writing netCDF3 classic files to SOF storage e.g. `/gws/nopw/j04/*` should be
 avoided. This is due to the fact that operations involving a lot of

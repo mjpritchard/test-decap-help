@@ -17,7 +17,7 @@ automatically.
 
 Users interact with the XFC in two ways:
 
-  1. to initialise their user area, and to get information about their quota, a [command-line client]({{< ref "install-xfc-client" >}}) is used.
+  1. to initialise their user area, and to get information about their quota, a [command-line client]({{% ref "install-xfc-client" %}}) is used.
   2. to move data in and out of their user area, the standard UNIX command-line tools (cp, mkdir, rm, mv, rsync, etc.) are used.
 
 ## Quotas
@@ -89,7 +89,7 @@ has been designed to discourage long term storage of files on it.
 
 JASMIN provides access to XFC via a command-line client: `xfc`
 
-Once [installed]({{< ref "install-xfc-client" >}}) into your `$HOME`
+Once [installed]({{% ref "install-xfc-client" %}}) into your `$HOME`
 directory (using one of the `sci` servers), the `xfc` client can be run on
 either the `sci` (`sci[1-8].jasmin.ac.uk`) or `xfer` (`xfer[12].jasmin.ac.uk`)
 servers, but should NOT be run on the high-performance transfer servers
@@ -100,7 +100,7 @@ for accessing the storage it provides. The storage provided is mounted in most
 places across JASMIN: the path to your XFC volume is returned by the client in
 one of the steps shown below.
 
-Users are expected to use the [xfer servers]({{< ref "transfer-servers" >}})
+Users are expected to use the [xfer servers]({{% ref "transfer-servers" %}})
 or a high-performance data transfer service to do any data transfers either
 within or in/out of JASMIN. This reduces the load on the `sci` servers which
 are for general-purpose interactive computing.
@@ -199,14 +199,14 @@ xfc list -m r1i1p1_19500101-19541231.nc
 (out)user_cache/username/historical/day/atmos/day/r1i1p1/v20120907/prc/prc_day_CMCC-CESM_historical_r1i1p1_19500101-19541231.nc
 {{</command>}}
 
-File names are given relative to the `user_cache/ ` directory. To list the
+File names are given relative to the `user_cache/` directory. To list the
 full file path use the `-f ` list option:
 
 {{<command user="user" host="sci1">}}
 xfc list -f
 {{</command>}}
 
-  10. To predict when the files will be deleted, if no other files are added to the user area, and none of the current files are removed: ` xfc predict`
+  10. To predict when the files will be deleted, if no other files are added to the user area, and none of the current files are removed: `xfc predict`
 
 {{<command user="user" host="sci1">}}
 xfc predict
