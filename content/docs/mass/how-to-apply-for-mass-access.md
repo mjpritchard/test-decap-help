@@ -19,15 +19,11 @@ employee, your sponsor will be your manager.
 
 Note: The following instructions also assume you already have a **JASMIN login
 account** and the **jasmin-login** service. If you do not, please follow steps
-1-4 [here]({{< ref "get-started-with-jasmin" >}}).
+1-4 [here]({{% ref "get-started-with-jasmin" %}}).
 
 ### Step One - Sponsor Form
 
-Ask your sponsor to:
-
-  1. [Complete the sponsor form](https://metoffice.service-now.com/sp?id=sc_cat_item&sys_id=f00fb9d4dbd06b404690fe9b0c9619a6)
-
-Please note that the link above is only visible to those in the Met Office.
+**Ask your Met Office sponsor** to complete the sponsor form {{<link "https://metoffice.service-now.com/sp?id=sc_cat_item&sys_id=f00fb9d4dbd06b404690fe9b0c9619a6">}} available here only to those in the Met Office{{</link>}}
 
 The following information will be asked for, so please provide your sponsor
 with any details they may not have:
@@ -63,11 +59,11 @@ The direct link is:
 
 When steps one and two are complete, you will be provided with a specific MASS account to
 use on JASMIN and emailed a MOOSE credentials file. Please see [Setting up
-your JASMIN account for access to MASS]({{< ref "setting-up-your-jasmin-account-for-access-to-mass" >}}) once you have received the credentials file.
+your JASMIN account for access to MASS]({{% ref "setting-up-your-jasmin-account-for-access-to-mass" %}}) once you have received the credentials file.
 Your MASS account will give (read-only) access to the relevant data on MASS based on the information provided by your sponsor;
 please note that the access control is handled by the Met Office and not by the JASMIN team.
 
 Note: If you have access to MASS on other systems you cannot copy those MOOSE
 credentials file/s onto JASMIN – they will not work! Please also see the
-[External Users’ MOOSE Guide]({{< ref "moose-the-mass-client-user-guide" >}})
+[External Users’ MOOSE Guide]({{% ref "moose-the-mass-client-user-guide" %}})
 for what MOOSE commands are available on JASMIN.

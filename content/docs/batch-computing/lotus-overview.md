@@ -16,7 +16,7 @@ part of JASMIN. It covers:
 LOTUS is not, in itself, a High-Performance Computing (HPC) facility, but
 provides the batch and parallel processing component of the JASMIN data-
 intensive scientific analysis environment. LOTUS is a cluster of physical
-machines, running the [Slurm workload manager]({{< ref "slurm-scheduler-overview" >}}), enabling efficient scheduling of larger data analysis tasks
+machines, running the [Slurm workload manager]({{% ref "slurm-scheduler-overview" %}}), enabling efficient scheduling of larger data analysis tasks
 across nodes in the cluster as a single unit -see Figure 1.
 
 Each node in the
@@ -31,7 +31,7 @@ within LOTUS run the same stack of software and can access the same high-
 performance storage as the JASMIN Scientific Analysis servers, ensuring a
 consistent working environment for all phases of users' workflows.
 
-See [LOTUS Hardware]({{< ref "lotus-cluster-specification" >}}) for details of
+See [LOTUS Hardware]({{% ref "lotus-cluster-specification" %}}) for details of
 the current LOTUS environment summarised in this schematic presentation
 
 **Figure 1** shows a schematic presentation of the LOTUS cluster and its
@@ -50,7 +50,7 @@ volumes which are shared across the cluster, while persistent outputs can be
 written efficiently to Group Workspaces and shared with collaborators for the
 duration of a project.
 
-See [Access to Storage]({{< ref path="/docs/getting-started/storage" >}}) for details about which file
+See [Access to Storage]({{% ref path="/docs/getting-started/storage" %}}) for details about which file
 systems are appropriate to use and how to access them.
 
 LOTUS currently has around 19,000 cores, but is heavily used and implements a
@@ -64,7 +64,7 @@ HPC infrastructure such as [ARCHER2](http://www.archer2.ac.uk/) or
 
 In order to maintain a safe and reliable working environment for all within
 LOTUS and more widely within JASMIN, users are expected to follow [the best
-practice outlined in this documentation]({{< ref "tips-for-new-users" >}}).
+practice outlined in this documentation]({{% ref "tips-for-new-users" %}}).
 
 ## How to gain access to LOTUS
 
@@ -75,7 +75,7 @@ From the above servers, it is possible to submit, monitor, and control batch
 jobs using the Slurm commands.
 
 Please note that if you have only recently requested access to [JASMIN login
-services]({{< ref "get-login-account" >}}) and had this approved, there can
+services]({{% ref "get-login-account" %}}) and had this approved, there can
 sometimes be a delay (typically up to a day, but in rare cases can be longer)
 before the necessary configuration is created for you on LOTUS. You will not
 be able to submit jobs to LOTUS queues until this has been completed.

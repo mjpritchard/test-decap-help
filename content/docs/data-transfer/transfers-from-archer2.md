@@ -13,7 +13,7 @@ covers:
 
 ## Choice of available Tools/Routes
 
-See [Data Transfer Tools]({{< ref "data-transfer-tools" >}}) for general
+See [Data Transfer Tools]({{% ref "data-transfer-tools" %}}) for general
 details.
 
 Users transferring data between ARCHER2 and JASMIN are often transferring
@@ -42,7 +42,7 @@ NOTE:
 
 ### Basic SSH transfer
 
-[**scp/rsync/sftp**]({{< ref "rsync-scp-sftp" >}}): Simple transfers using easy method, pushing data to general purpose xfer nodes. Convenient, but limited performance.
+[**scp/rsync/sftp**]({{% ref "rsync-scp-sftp" %}}): Simple transfers using easy method, pushing data to general purpose xfer nodes. Convenient, but limited performance.
 
 _source_ |  _dest_ |  _notes_  
 --- | --- | ---
@@ -52,7 +52,7 @@ _source_ |  _dest_ |  _notes_
 
 ### GridFTP over SSH
 
-[GridFTP over SSH]({{< ref "gridftp-ssh-auth" >}}): GridFTP performance with convenience of SSH. Requires persistent ssh agent
+[GridFTP over SSH]({{% ref "gridftp-ssh-auth" %}}): GridFTP performance with convenience of SSH. Requires persistent ssh agent
 on local machine where you have your JASMIN key. **2nd choice method**
 
 _source_ |  _dest_ |  _notes_  
@@ -63,7 +63,7 @@ _source_ |  _dest_ |  _notes_
 
 ### GridFTP using certificate auth
 
-[GridFTP using certificate auth]({{< ref "gridftp-cert-based-auth" >}}): Fully-featured GridFTP. Suitable for person-not-present transfers & long-
+[GridFTP using certificate auth]({{% ref "gridftp-cert-based-auth" %}}): Fully-featured GridFTP. Suitable for person-not-present transfers & long-
 running ARCHER2 workflows. **1st choice method**
 
 _source_ |  _dest_ |  _notes_  
@@ -91,7 +91,7 @@ This method **does not** require you to use your JASMIN SSH key. It involves:
 
 A fuller explanation of the process is given in this document:
 
-- [Data Transfer Tools: GridFTP (certificate-based authentication)]({{< ref "gridftp-cert-based-auth" >}})
+- [Data Transfer Tools: GridFTP (certificate-based authentication)]({{% ref "gridftp-cert-based-auth" %}})
 
 Once you have done these steps, you should be able to obtain a short-term
 credential as follows (do this command at the ARCHER2 end, after having
@@ -279,4 +279,3 @@ with
 ```bash
 sshftp://<jasmin-username>@hpxfer1.jasmin.ac.uk
 ```
-

@@ -12,7 +12,7 @@ title: Running python on JASMIN
 ---
 
 On the JASMIN analysis machines and on Lotus, we currently support
-Python version 3.10 through [Jaspy]({{< ref "jaspy-envs" >}}).
+Python version 3.10 through [Jaspy]({{% ref "jaspy-envs" %}}).
 
 When you log in, the default version of Python is `2.7.5` which is the used by the
 operating system. You shoud now use a more modern version of Python as v2.x is now deprecated. 
@@ -51,5 +51,5 @@ chmod 755 your_script.py
 ./your_script.py
 {{</command>}}
 
-You should work with Python on the {{<link "../interactive-computing/sci-servers">}}scientific analysis servers{{</link>}}. 
+You should work with Python on the [scientific analysis servers]({{% ref "sci-servers" %}}).
 Login servers do not have any software installed, or filesystems mounted other than home directories.

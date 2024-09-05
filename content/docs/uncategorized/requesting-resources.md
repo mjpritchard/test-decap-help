@@ -31,7 +31,7 @@ including a list of current consortia and their managers.
 
 ## Accessing the JASMIN projects portal
 
-The [JASMIN projects portal](https://projects.jasmin.ac.uk) provides a place
+The {{< link "https://projects.jasmin.ac.uk" >}}JASMIN projects portal{{</link>}} provides a place
 to:
 
 - document the resources required for a project (new projects, or changes to existing projects)
@@ -58,8 +58,8 @@ account (this is the same process used to access the JASMIN notebook service).
 Once you have logged in, you are presented with a view of the projects where
 you are named as owner or collaborator (or, for consortium managers, where you
 are the relevant consortium manager). A further guide for consortium managers
-about how to process requests for resources is available [here]({{< ref
-"processing-requests-for-resources" >}}).
+about how to process requests for resources is available
+[here]({{% ref "processing-requests-for-resources" %}}).
 
 {{<image src="img/docs/requesting-resources/file-CFe92vMRQV.png" caption="">}}
 
@@ -112,15 +112,15 @@ but you could also request:
 
 - HPOS (high-performance object store available via an S3-like interface)
 - PFS (parallel file system, by special request if certain workflows specifically need this)
-- SSD (Solid State Disk, used for "small files" or "SMF" volumes for storing code or virtual environments to share within a GWS.
+- SSD (Solid State Disk), used for "small files" or "SMF" volumes for storing code or virtual environments to share within a GWS.
 
 It is assumed that you've considered carefully how you will do your work on
 JASMIN, with some knowledge of its services and components. You may find the
 following helpful:
 
-- Article: [Understanding new JASMIN storage]({{< ref "understanding-new-jasmin-storage" >}})
+- Article: [Understanding new JASMIN storage]({{% ref "understanding-new-jasmin-storage" %}})
 - [JASMIN workshop](https://github.com/cedadev/jasmin-workshop) overview talk, explaining the main services offered by JASMIN
-- how your request will be [scrutinised]({{< ref "processing-requests-for-resources" >}}) by the relevant consortium manager.
+- how your request will be [scrutinised]({{% ref "processing-requests-for-resources" %}}) by the relevant consortium manager.
 
 Once created, the requirements appear in the list, along with their start and
 end dates and status. This one is "REQUESTED".
@@ -221,9 +221,9 @@ In these cases, the relevant consortium manager is usually the manager of the
 "generic" workspace so can approve applications for access to these workspaces
 themselves.
 
-Please consult the [list of available group
-workspaces](https://accounts.jasmin.ac.uk/account/login/?next=/services/group_workspaces/)
+Please consult the
+[list of available group workspaces](https://accounts.jasmin.ac.uk/account/login/?next=/services/group_workspaces/)
 for other options.
 
 Another alternative, for easily accessible short-term storage for an
-individual user is the [JASMIN Transfer Cache (XFC) service]({{< ref "xfc" >}}).
+individual user is the [JASMIN Transfer Cache (XFC) service]({{% ref "xfc" %}}).

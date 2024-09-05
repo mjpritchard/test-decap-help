@@ -9,9 +9,9 @@ This article provides information about the bbcp data transfer tool.
 
 ## What is bbcp?
 
-[bbcp](http://www.slac.stanford.edu/~abh/bbcp/) is a simple command-line tool
+{{<link "http://www.slac.stanford.edu/~abh/bbcp/">}}bbcp{{</link>}} is a simple command-line tool
 which can use your SSH connection to transfer data in and out of JASMIN
-efficiently. It works in a similar way to [GridFTP over SSH]({{< ref "gridftp-ssh-auth" >}}) in that it connects to the transfer
+efficiently. It works in a similar way to [GridFTP over SSH]({{% ref "gridftp-ssh-auth" %}}) in that it connects to the transfer
 server using your usual SSH credentials but then can set up parallel data
 streams for transferring data. One advantage of `bbcp` that it is provided as
 a single binary executable which is easy to download and use.
@@ -20,7 +20,7 @@ a single binary executable which is easy to download and use.
 
 Check with your local administrator to see if it is installed centrally on
 your own system. If it isn't, you may need to download the correct binary from
-the [bbcp download site](http://www.slac.stanford.edu/~abh/bbcp/bin/) and
+the {{<link "http://www.slac.stanford.edu/~abh/bbcp/bin/">}}bbcp download site{{</link>}} and
 simply place it in your path on your local filesystem: this can be done as a
 regular/unprivileged user. At the JASMIN end, you can put the same executable
 in your home directory (somewhere in your `$PATH` e.g. in your `~/bin`
@@ -123,7 +123,7 @@ few GBs of data.
 
 ## Troubleshooting
 
-- `bbcp` uses SSH to establish the control connection so you need to set up your SSH key in the same way as you would to SSH into `hpxfer[12].jasmin.ac.uk`. If `bbcp` isn't working you should first check you can SSH to `hpxfer[12].jasmin.ac.uk`. If you can't, please review the steps in the [Getting Started](../getting-started/get-started-with-jasmin) section before contacting the [JASMIN Helpdesk](mailto:support@jasmin.ac.uk).
+- `bbcp` uses SSH to establish the control connection so you need to set up your SSH key in the same way as you would to SSH into `hpxfer[12].jasmin.ac.uk`. If `bbcp` isn't working you should first check you can SSH to `hpxfer[12].jasmin.ac.uk`. If you can't, please review the steps in the [Getting Started]({{% ref "get-started-with-jasmin" %}}) section before contacting the [JASMIN Helpdesk](mailto:support@jasmin.ac.uk).
 - Make that you have logged in (via SSH) to both the JASMIN transfer server and the remote server with the `-A` option (agent-forwarding enabled), to ensure that your credentials are used by SSH as it invokes `bbcp` on the other server.
 - Try adding the `-F`option to disable `bbcp`'s filesystem checking if you get the following error:
 

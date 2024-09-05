@@ -6,7 +6,7 @@ title: Secondary copy using Elastic Tape
 ---
 
 {{<alert type="info">}}
-- Information below relates to the Elastic Tape command-line tools. The [JDMA]({{<ref "jdma">}}) system provides a better interface for putting/retrieving data into the Elastic Tape System)
+- Information below relates to the Elastic Tape command-line tools. The [JDMA]({{% ref "jdma" %}}) system provides a better interface for putting/retrieving data into the Elastic Tape System)
 - A new system called [NLDS](https://techblog.ceda.ac.uk/2022/03/09/near-line-data-store-intro.html) is coming very shortly (as of Feb 2023) and will eventually replace both of these.
 {{</alert>}}
 
@@ -153,7 +153,7 @@ connect to `et.jasmin.ac.uk` as if it were a local connection.
 {{<alert type="danger">}}
 When writing data to the ET system, it is very important that data remains in place on disk, in the location where ET expects to find them, until the status of the batch in question has reached `CACHED_SYNCED` or `SYNCED`.  This means that the data have actually been written to tape, but is not the case until that status is shown.
 
-The location where ET expects to find the files will be specified in the `LISTFILE` that the user supplied to the `et_put.py` command, or all files and directories under the `DIR`.  The status of user's batches can be checked by going to the webpage: http://et-monitor.fds.rl.ac.uk/et_user/ET_AlertWatch.php. You need to be logged into JASMIN to see this webpage, via the [nx-login servers](/docs/interactive-computing/graphical-linux-desktop-access-using-nx/), and use Firefox as the web browser.
+The location where ET expects to find the files will be specified in the `LISTFILE` that the user supplied to the `et_put.py` command, or all files and directories under the `DIR`.  The status of user's batches can be checked by going to the webpage: http://et-monitor.fds.rl.ac.uk/et_user/ET_AlertWatch.php. You need to be logged into JASMIN to see this webpage, via the [nx-login servers]({{% ref "graphical-linux-desktop-access-using-nx" %}}), and use Firefox as the web browser.
 
 Deleting the data from disk prematurely can cause problems for the ET system as a whole (impacting other users) so please be careful with this aspect.
 {{</alert>}}
@@ -263,19 +263,19 @@ within your workspace, e.g. `/group_workspaces/jasmin/myworkspace/ettmp` and
 to do the initial retrieval into that directory. Once you are satisfied that
 the retrieval has completed correctly, data can be moved back to their
 original location in the workspace. NB if you need additional storage space
-for this, please contact the [CEDA help desk](mailto:support@ceda.ac.uk).
+for this, please see [requesting resources]({{% ref "requesting-resources" %}}).
 
 #### Options
 
 option | details
 ---|---  
 -v  |  Verbose output
--l LOGFILE  |  Log file in which to record process output. Note that the log file location must be capable of accepting multi-threaded input, or this parameter should be omitted and instead the output from the et_get command be piped to the log file from stdout   
+-l LOGFILE  |  Log file in which to record process output. Note that the log file location must be capable of accepting multi-threaded input, or this parameter should be omitted and instead the output from the et_get command be piped to the log file from stdout
 -b BATCHID  |  ID of batch to be retrieved
 -f FILELIST  |  A list of individual files to be retrieved, with one file per line. Note that:<br>- entries in the list must contain the full name of the file, including path, just as it was archived<br>- the list should not contain blank lines or any extraneous white space.
--w WORKSPACE  |  name of the group workspace to use. Overrides default set in config file. Case sensitive.   
--r DIR  |  ABSOLUTE path of retrieval location   
--t MAXPROC  |  Maximum number of worker processes to use in retrieval. MAXPROC recommended to be between 5 and 10. Please feed back your experience of performance improvement with this feature.   
+-w WORKSPACE  |  name of the group workspace to use. Overrides default set in config file. Case sensitive.
+-r DIR  |  ABSOLUTE path of retrieval location
+-t MAXPROC  |  Maximum number of worker processes to use in retrieval. MAXPROC recommended to be between 5 and 10. Please feed back your experience of performance improvement with this feature.
 {.table .table-striped}
 
 #### Example usage
@@ -353,15 +353,13 @@ workspace level.
 option | details
 ---|---
 -h, --help  |  show this help message and exit
--x XMLSOURCE --xmlsource XMLSOURCE  |  Base XML source, if not default. Note that this has to be compatible with the current base source currently, so can’t be pointed at files, for example   
--H --headerWanted  |  Print headers showing column names for text output   
--b BATCHID --batchid BATCHID  |  ID of batch by which to filter results   
--w WORKSPACE  |  Name of the group workspace to use. Overrides default set in config file. Case sensitive.   
--L {file, batch, workspace} --outputLevel {file, batch, workspace}  |  Level of detail to display for results (default is "workspace")   
--F {text} --outputFormat {text}  |  Format to use for the display of results   
+-x XMLSOURCE --xmlsource XMLSOURCE  |  Base XML source, if not default. Note that this has to be compatible with the current base source currently, so can’t be pointed at files, for example
+-H --headerWanted  |  Print headers showing column names for text output
+-b BATCHID --batchid BATCHID  |  ID of batch by which to filter results
+-w WORKSPACE  |  Name of the group workspace to use. Overrides default set in config file. Case sensitive.
+-L {file, batch, workspace} --outputLevel {file, batch, workspace}  |  Level of detail to display for results (default is "workspace")
+-F {text} --outputFormat {text}  |  Format to use for the display of results
 {.table .table-striped}
-
-
 
 Example usage:
 
@@ -381,14 +379,12 @@ Works with the workspace "myworkspace", selects display of headers in output,
 results at batch level (i.e. shows the batches present in ET holdings for this
 workspace.)
 
-* * *
-
 ### Alerts
 
 The system provides real-time status messages on the progress of operations
 requested. **These services are now available only inside the RAL firewall** ,
 so JASMIN users outside of RAL should use the 
-[NX graphical desktop service]({{< ref "graphical-linux-desktop-access-using-nx" >}}) to open a
+[NX graphical desktop service]({{% ref "graphical-linux-desktop-access-using-nx" %}}) to open a
 firefox browser on one of the nx-login servers, to access these URLs
 
 **Alerts Dashboard** <http://et-monitor.fds.rl.ac.uk/et_user/ET_AlertWatch.php>

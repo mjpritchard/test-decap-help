@@ -16,14 +16,14 @@ SSH:
 Login server name | details |
 |---|---|  
 | `login1.jasmin.ac.uk`  | best for use from university networks (requires fwd/reverse DNS lookup to domain in allow-list) | 
-| `login2.jasmin.ac.uk`  | {{<link "#contingency-login-servers">}}Contingency config{{</link>}}, see notes below  |
+| `login2.jasmin.ac.uk`  | [Contingency config](#contingency-login-servers), see notes below  |
 | `login3.jasmin.ac.uk`  | as per login1 |
 | `login4.jasmin.ac.uk`  | as per login1 |
 {.table .table-striped}
   
-See also [How to login]({{< ref path="docs/getting-started/login" >}}) and other articles in the [Getting started]({{< ref "getting-started" >}}) category.
+See also [How to login]({{% ref "how-to-login" %}}) and other articles in the [Getting started]({{% ref "getting-started" %}}) category.
 
-See also [NoMachine NX service]({{< ref "graphical-linux-desktop-access-using-nx" >}}) which provides login to a graphical Linux desktop, rather than a
+See also [NoMachine NX service]({{% ref "graphical-linux-desktop-access-using-nx" %}}) which provides login to a graphical Linux desktop, rather than a
 single terminal window.
 
 ## Features of login servers
@@ -37,8 +37,8 @@ Login servers have minimal resources and software installed. They provide:
 
 ## "Contingency" login servers
 
-There are [requirements on your local network]({{< ref "check-network-details">}}) which apply to accessing the login servers **and** the [transfer
-servers]({{< ref "transfer-servers" >}}) via SSH. If you cannot meet these
+There are [requirements on your local network]({{% ref "check-network-details"%}}) which apply to accessing the login servers **and** the [transfer
+servers]({{% ref "transfer-servers" %}}) via SSH. If you cannot meet these
 requirements, even after discussion with your local network admin team, a
 contingency route is provided in the form of login server
 `login2.jasmin.ac.uk`
@@ -48,12 +48,12 @@ server. Specifically:
 
 - You will not be able to access the transfer servers `xfer[1,2].jasmin.ac.uk` via SSH directly from an external host.  
 - You can access these via SSH from `login2`, but can then only initiate an inward pull of data from an external SSH server, if available at your institution. You cannot push data directly to `xfer[1,2].jasmin.ac.uk` via SSH from outside in this case.
-- Instead, an alternative transfer server `xfer3.jasmin.ac.uk` is provided with equivalent configuration to `login2`. This should provide what you need for direct SSH transfers from outside, but you will need the additional `"xfer-sp"` access role in in this case: see [here for further details]({{< ref "transfer-servers" >}}).
+- Instead, an alternative transfer server `xfer3.jasmin.ac.uk` is provided with equivalent configuration to `login2`. This should provide what you need for direct SSH transfers from outside, but you will need the additional `"xfer-sp"` access role in in this case: see [here for further details]({{% ref "transfer-servers" %}}).
 
 ## How to use the login servers
 
 For full details of how to log in, including making onward connections to
-other machines, please see the article ["How to login"]({{< ref path="docs/getting-started/login" >}}).
+other machines, please see the article ["How to login"]({{% ref "how-to-login" %}}).
 
 {{<alert type="danger">}}
 Users are **not permitted to execute commands which require

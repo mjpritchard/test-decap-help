@@ -17,7 +17,7 @@ covers the following topics:
 ## Overview of the "jasmin-sci" software environment
 
 The `jasmin-sci` software environment is intended as a supplement to 
-[Jaspy]({{<ref "jaspy-envs" >}}) and contains extra software packages for use with
+[Jaspy]({{% ref "jaspy-envs" %}}) and contains extra software packages for use with
 scientific data analysis which, for various reasons, are not provided as part
 of Jaspy itself. These packages are generally installed on the same
 machines where Jaspy is available, for example, the `sci` machines
@@ -54,10 +54,9 @@ software might provide some software that happens to be implemented in Python,
 any such Python modules are not intended to be imported into your own code.
 For Python development, packages from Jaspy should be used.
 
-The development for `jasmin-sci` takes place via the [extra-sci-packages](https://github.com/cedadev/extra-sci-packages) GitHub repository,
-and an associated [issues](https://github.com/cedadev/extra-sci-packages/issues) page. The readme file on the repository has some package-
-specific documentation (including how to build the python bindings for Misr
-toolkit).
+The development for `jasmin-sci` takes place via the {{< link "https://github.com/cedadev/extra-sci-packages" >}}extra-sci-packages{{</link>}} GitHub repository,
+and an associated {{< link "https://github.com/cedadev/extra-sci-packages/issues" >}}issues{{</link>}} page. The readme file on the repository has some
+package-specific documentation (including how to build the python bindings for Misr toolkit).
 
 ## Activating and deactivating the "jasmin-sci" environment
 

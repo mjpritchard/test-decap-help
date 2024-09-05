@@ -6,7 +6,7 @@ title: Setting up your JASMIN account for access to MASS
 ---
 
 The following notes are written assuming you are using a Linux machine in your
-home institution, that you have [applied for a new MASS account]({{< ref "how-to-apply-for-mass-access" >}}), and that you have received an email from the
+home institution, that you have [applied for a new MASS account]({{% ref "how-to-apply-for-mass-access" %}}), and that you have received an email from the
 Met Office Storage Team with your new MASS credentials file attached.
 
 ## Load your SSH key
@@ -113,4 +113,4 @@ moo projlist
 You have now successfully accessed MASS from JASMIN!
 
 If you are new to MOOSE, you might like to read the 
-[User Guide]({{< ref "moose-the-mass-client-user-guide" >}}) next.
+[User Guide]({{% ref "moose-the-mass-client-user-guide" %}}) next.

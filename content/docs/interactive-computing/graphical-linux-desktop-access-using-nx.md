@@ -38,20 +38,20 @@ The following "special" login servers have the NX service available and can be
 used as described below:
 
 - `nx-login1.jasmin.ac.uk` (best for use from university networks)
-- `nx-login2.jasmin.ac.uk` ([Contingency config]({{< ref "login-servers#contingency-login-servers" >}}) similar to `login2.jasmin.ac.uk`, to make it available from clients without reverse DNS lookup to a domain in the JASMIN allow-list. Use this option if you need to connect from home and do not have an institutional VPN available)
-- `nx-login3.jasmin.ac.uk` ([Contingency config]({{< ref "login-servers#contingency-login-servers" >}}) as above) 
-- `nx-login4.jasmin.ac.uk` ([Contingency config]({{< ref "login-servers#contingency-login-servers" >}}) as above, but also supports users with usernames > 8 but also supports users with usernames > 8 characters. No support for usernames > 14 characters: contact helpdesk for advice)
+- `nx-login2.jasmin.ac.uk` ([Contingency config]({{% ref "login-servers#contingency-login-servers" %}}) similar to `login2.jasmin.ac.uk`, to make it available from clients without reverse DNS lookup to a domain in the JASMIN allow-list. Use this option if you need to connect from home and do not have an institutional VPN available)
+- `nx-login3.jasmin.ac.uk` ([Contingency config]({{% ref "login-servers#contingency-login-servers" %}}) as above) 
+- `nx-login4.jasmin.ac.uk` ([Contingency config]({{% ref "login-servers#contingency-login-servers" %}}) as above, but also supports users with usernames > 8 but also supports users with usernames > 8 characters. No support for usernames > 14 characters: contact helpdesk for advice)
 
 ### Notes
 
-- In all other respects these are the same as the standard [login servers]({{< ref "login-servers" >}}), but should only be used with the NX enterprise client as described below, (other than for testing your connection) as this preserves system resources for their intended purpose.
+- In all other respects these are the same as the standard [login servers]({{% ref "login-servers" %}}), but should only be used with the NX enterprise client as described below, (other than for testing your connection) as this preserves system resources for their intended purpose.
 - Although the graphical desktop session which you create with this service should persist when you close the client (unless you specifically log out), you should not rely on this feature, so please don't report this as a problem: occasionally machines run out of resources and sessions get killed. Keeping sessions open consumes resources on the server even when you're not using the session, which may mean that other users can't use the service.
 - `nx-login4` has been introduced to help cater for users whose usernames exceed 8 characters length. This works around a known limitation in the NX server software but may not solve the problem for users with very long names (created before we introduced a limit to prevent this happening: if this still affects you and you cannot make onward connections to other machines in NX, please contact the helpdesk)
 
 ## Installing NoMachine Enterprise Client
 
-Download the 
-[appropriate version of the NoMachine Enterprise Client](https://www.nomachine.com/download-enterprise#NoMachine-Enterprise-Client) 
+Download the
+{{<link "https://www.nomachine.com/download-enterprise#NoMachine-Enterprise-Client" >}}appropriate version of the NoMachine Enterprise Client{{</link>}}
 from NoMachine.
 That page contains links to several different products: 
 **The only one you need to install is "NoMachine Enterprise Client".**
@@ -126,9 +126,9 @@ Instructions for v8.x clients: (older clients may vary but same concept overall)
   3. **Note the instructions for how to reach the NX menu once in the session, and select screen settings from the list of icons: Recommended setting is "Fit to window" (leftmost icon)**
   4. Click OK on this and subsequent screens giving information about the NX and desktop environments.
   5. You should be presented with a linux deskop on the server to which you connected, e.g. `nx-login2.jasmin.ac.uk`
-  6. Click "Activities" (top left menu on desktop) ![](file-XXVsbhxQi8.jpg)
+  6. Click "Activities" (top left menu on desktop) {{<image src="img/docs/graphical-linux-desktop-access-using-nx/file-XXVsbhxQi8.jpg" caption="Activities menu" wrapper="col-5 mx-auto">}}
   7. Open a terminal window by clicking the "Terminal" icon in the menu down the left hand side.  
-  ![](file-chi3HNdvmk.jpg)
+  {{<image src="img/docs/graphical-linux-desktop-access-using-nx/file-chi3HNdvmk.jpg" caption="Activities menu" wrapper="col-5 mx-auto">}}
 
   8. To see the list of sci servers which is normally presented at login (which helps in selected a less-loaded sci server), type the following:  
 {{<command user="user" host="nx-login1">}}
@@ -145,15 +145,15 @@ Once you have set up the environment to your liking, you can
 
   1. Click "Activities" (top left menu on desktop) 
 
-{{<image src="img/docs/graphical-linux-desktop-access-using-nx/file-XXVsbhxQi8.jpg" caption="click Activities">}}
+{{<image src="img/docs/graphical-linux-desktop-access-using-nx/file-XXVsbhxQi8.jpg" caption="click Activities"  wrapper="col-5 mx-auto">}}
 
   2. Click the Firefox icon in the side bar menu to start the Firefox web browser. Use this to access web-based resources only available within JASMIN. Do not use for personal web browsing. To toggle Firefox between taking up the whole of your desktop, and running in a smaller, sizeable window, double-click its title bar (this applies to any windowed application on the desktop).
 
-{{<image src="img/docs/graphical-linux-desktop-access-using-nx/file-zykeLBbqgb.jpg" caption="open Firefox browser">}}
+{{<image src="img/docs/graphical-linux-desktop-access-using-nx/file-zykeLBbqgb.jpg" caption="open Firefox browser" wrapper="col-5 mx-auto">}}
 
   3. Click the Terminal icon 
 
-{{<image src="img/docs/graphical-linux-desktop-access-using-nx/file-RMJ4FzLkUz.jpg" caption="open Terminal application">}}
+{{<image src="img/docs/graphical-linux-desktop-access-using-nx/file-RMJ4FzLkUz.jpg" caption="open Terminal application"  wrapper="col-5 mx-auto">}}
 
   4. Try an onward SSH connection, for example to a SCI machine. 
     
@@ -248,7 +248,7 @@ Please use "Private key" as the authentication method, not "Authentication agent
 
 ### Client version
 
-Make sure you have installed and are using the most recent version of the [NoMachine Enterprise Client](https://www.nomachine.com/download-enterprise#NoMachine-Enterprise-Client) (not the NoMachine Enterprise Desktop or any other applications from NoMachine).
+Make sure you have installed and are using the correct and most recent version of the {{<link "https://www.nomachine.com/download-enterprise#NoMachine-Enterprise-Client" >}}NoMachine Enterprise Client{{</link>}} (not the NoMachine Enterprise Desktop or any other applications from NoMachine).
 
 ### Key format
 

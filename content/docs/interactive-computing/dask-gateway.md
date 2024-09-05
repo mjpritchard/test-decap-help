@@ -24,7 +24,7 @@ The `jasmin-login` access role ensures that your account is set up with access t
 
 ### In the JASMIN Notebooks service
 
-In the {{<link "jasmin-notebooks-service">}}JASMIN notebooks service{{</link>}}, authentication to `dask-gateway` happens automatically. You can use the snippet below to create a cluster and get a Dask client which you can use:
+In the {{<link "jasmin_notebooks_service">}}JASMIN notebooks service{{</link>}}, authentication to `dask-gateway` happens automatically. You can use the snippet below to create a cluster and get a Dask client which you can use:
 
 ```python
 import dask_gateway
@@ -93,7 +93,7 @@ It is very important that your API token is not shared between users and remains
     chmod 600 ~/.config/dask/gateway.yaml
     {{</command>}}
 
-4. Head to the [API token generator page](https://notebooks.jasmin.ac.uk/hub/token), put a note in the box to remind yourself what this token is for, press the **big orange button**, then {{<mark>}}copy{{</mark>}} the {{<mark>}}token{{</mark>}}.
+4. Head to the {{< link "https://notebooks.jasmin.ac.uk/hub/token" >}}API token generator page{{</link>}}, put a note in the box to remind yourself what this token is for, press the **big orange button**, then {{<mark>}}copy{{</mark>}} the {{<mark>}}token{{</mark>}}.
 
 5. Paste the following snippet into `~/.config/dask/gateway.yaml`, replace the entry on the final line with the API token you just created.
 
@@ -116,7 +116,8 @@ To get the link to your Dask dashboard, run the following:
 print(client.dashboard_link)
 ```
 
-Currently the Dask dashboard is not accessible from a browser outside the JASMIN firewall. If your browser fails to load the dashboard link returned, please use our {{<link "graphical-linux-desktop-access-using-nx">}}graphical desktop service{{</link>}} to run a Firefox browser inside the firewall to view your dashboard.
+Currently the Dask dashboard is not accessible from a browser outside the JASMIN firewall. If your browser fails to load the dashboard link returned,
+please use our [graphical desktop service]({{% ref "graphical-linux-desktop-access-using-nx" %}}) to run a Firefox browser inside the firewall to view your dashboard.
 
 ## Use a custom Python environment
 
@@ -166,7 +167,7 @@ pip install dask-gateway dask lz4
 
 ### Creating a virtual environment for the notebooks service
 
-- Follow the instructions {{<link "creating-a-virtual-environment-in-the-notebooks-service">}}here{{</link>}} to create a virtual environment.
+- Follow the instructions [here]({{% ref "creating-a-virtual-environment-in-the-notebooks-service" %}}) to create a virtual environment.
 - Install Dask and Dask Gateway and dependencies: without this step your environment will not work with Dask.
 
 {{<command>}}
@@ -186,4 +187,5 @@ options.worker_setup = "source /home/users/example/name-of-environment/bin/activ
 
 ## Code Examples
 
-Examples of code and notebooks which can be used to test the JASMIN Dask Gateway service are [available on GitHub](https://github.com/cedadev/jasmin-daskgateway/tree/main/examples).
+Examples of code and notebooks which can be used to test the JASMIN Dask Gateway service are
+{{< link "https://github.com/cedadev/jasmin-daskgateway/tree/main/examples" >}}available on GitHub{{</link>}}.

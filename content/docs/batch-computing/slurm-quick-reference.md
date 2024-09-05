@@ -13,8 +13,9 @@ title: Slurm quick reference
 
 ## Slurm Scheduler
 
-[Slurm](https://slurm.schedmd.com/) is the job scheduler deployed on JASMIN. It
-allows users to submit, monitor, and control jobs on the [LOTUS]({{< ref "lotus-overview" >}}) (CPU) and [ORCHID]({{< ref "orchid-gpu-cluster" >}}) (GPU) clusters.
+{{< link "https://slurm.schedmd.com/" >}}Slurm{{</link>}} is the job scheduler deployed on JASMIN. It
+allows users to submit, monitor, and control jobs on the [LOTUS]({{% ref "lotus-overview" %}}) (CPU)
+and [ORCHID]({{% ref "orchid-gpu-cluster" %}}) (GPU) clusters.
 
 ## Essential Slurm commands
 
@@ -33,12 +34,12 @@ Long and short argument names are separated by a comma.
 ##### `#SBATCH`
 
 - Scheduler directive - goes in front of the arguments below in a job script file
-- An example Slurm job script file is available [here]({{<ref "how-to-submit-a-job-to-slurm/#method-1-submit-via-a-slurm-job-script" >}})
+- An example Slurm job script file is available [here]({{% ref "how-to-submit-a-job-to-slurm/#method-1-submit-via-a-slurm-job-script" %}})
 
 ##### `--partition=QUEUE_NAME, -p QUEUE_NAME`
 
 - Specify the scheduling queue/partition by replacing `QUEUE_NAME`
-- A list of queues/partitions that you can use are available [here]({{<ref "slurm-queues" >}})
+- A list of queues/partitions that you can use are available [here]({{% ref "slurm-queues" %}})
 
 ##### `--time=hh:mm:ss, -t hh:mm:ss`
 
@@ -73,7 +74,7 @@ Long and short argument names are separated by a comma.
 
 ##### `--array=INDEX`
 
-- Specify a job array, e.g. `--array=1-10` - for an example submission script, see [this page]({{<ref "how-to-submit-a-job-to-slurm/#job-array-submission" >}})
+- Specify a job array, e.g. `--array=1-10` - for an example submission script, see [this page]({{% ref "how-to-submit-a-job-to-slurm/#job-array-submission" %}})
 - The default standard output file name is `slurm-%A_%a.out`, where `%A` is replaced by the job ID and `%a` with the array index
 - To change this, use `--output` and `--error` as above with `%A` and `%a` instead of `%j`
 
@@ -93,7 +94,7 @@ Long and short argument names are separated by a comma.
 ##### `--dependency=<dependency_list>`
 
 - Defer the start of this job until the specified dependencies have been satisfied as completed
-- See the [Slurm documentation](https://slurm.schedmd.com/sbatch.html#OPT_dependency) for examples
+- See the {{< link "https://slurm.schedmd.com/sbatch.html#OPT_dependency" >}}Slurm documentation{{</link>}} for examples
 
 ##### `--ntasks=NUMBER_OF_CORES, -n NUMBER_OF_CORES`
 
@@ -102,7 +103,7 @@ Long and short argument names are separated by a comma.
 ##### `--constraint=HOST_GROUP_NAME`
 
 - To select a node with a specific processor model
-- A list of host groups that you can use are available [here]({{<ref "lotus-cluster-specification" >}})
+- A list of host groups that you can use are available [here]({{% ref "lotus-cluster-specification" %}})
 
 ## Job control commands
 

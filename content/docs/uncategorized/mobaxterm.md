@@ -5,8 +5,9 @@ slug: mobaxterm
 title: MobaXterm (Windows terminal client)
 ---
 
-Windows users are strongly recommended to connect to JASMIN using the freely
-available program MobaXterm.
+Windows users are recommended to try the 3rd party application MobaXterm for
+connecting to JASMIN from Windows.
+Please note its licence conditions for ongoing use, however.
 
 ## Versions of MobaXterm
 
@@ -19,7 +20,7 @@ below.
 
 ## Downloading and installing MobaXterm
 
-Visit the [MobaXterm website](https://mobaxterm.mobatek.net/download-home-edition.html)
+Visit the {{< link "https://mobaxterm.mobatek.net/download-home-edition.html" >}}MobaXterm website{{</link>}}
 to download the free Home edition.
 
 There are 2 editions available:
@@ -162,7 +163,7 @@ MobaXterm is a comprehensive application that enables many useful features
 such as:
 
 - Saved session configurations
-- X-forwarding / X11 / X server (**Not recommended on JASMIN**, see [NoMachine NX for graphical linux desktop]({{< ref "graphical-linux-desktop-access-using-nx" >}}) instead)
+- X-forwarding / X11 / X server (**Not recommended on JASMIN**, see [NoMachine NX for graphical linux desktop]({{% ref "graphical-linux-desktop-access-using-nx" %}}) instead)
 - SSH agent forwarding
 - SFTP access (with graphical drag-n-drop)
 - Split-tab mode
@@ -170,5 +171,5 @@ such as:
 - Basic Linux commands such as: `cd, ls, pwd, cat`
 - Command-line transfer utilities: `scp, rsync, wget`
 
-Please see the [MobaXterm documentation](https://mobaxterm.mobatek.net/documentation.html) for details
+Please see the {{< link "https://mobaxterm.mobatek.net/documentation.html" >}}MobaXterm documentation{{</link>}} for details
 on these.

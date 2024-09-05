@@ -13,7 +13,7 @@ title: Running R on JASMIN
 ---
 
 On the JASMIN `sci` servers and LOTUS, we support the use of **R** through the
-"jasr" environment(s), as listed on the [Jaspy page]({{< ref "jaspy-envs">}}).
+"jasr" environment(s), as listed on the [Jaspy page]({{% ref "jaspy-envs" %}}).
 
 In order to activate the R environment, you will need to use:
 
@@ -21,7 +21,7 @@ In order to activate the R environment, you will need to use:
 module load jasr
 {{</command>}}
 
-Note that the Jaspy page lists [all available environments]({{< ref "jaspy-envs" >}}). You can also list the R packages that are available in the
+Note that the Jaspy page lists [all available environments]({{% ref "jaspy-envs" %}}). You can also list the R packages that are available in the
 environment by typing:
 
 {{<command user="user" host="sci1">}}

@@ -10,7 +10,7 @@ weight: 60
 
 ## Intro
 
-Once you have logged on to one of the [login servers]({{< ref "login-servers" >}}) you can then `ssh` to a scientific analysis (sci) server to do your work.
+Once you have logged on to one of the [login servers]({{% ref "login-servers" %}}) you can then `ssh` to a scientific analysis (sci) server to do your work.
 The sci servers are not directly accessible outside the firewall of RAL (JASMIN's host instution) so most users will need to access them via a login server.
 
 ## Available sci servers
@@ -61,7 +61,7 @@ particularly if you have multiple terminal windows open on your own computer,
 that you do not accidentally attempt `sudo` on a JASMIN machine: expect some
 follow-up from the JASMIN team if you do!
 
-See also {{< link "#software-installed">}}Software installed{{</link>}}, below.
+See also {{% link "#software-installed" %}}Software installed{{</link>}}, below.
 
 ## Purpose
 
@@ -86,11 +86,12 @@ servers:
 Each sci server has the following features:
 
 - CentOS7 operating system with development tools. [NB: Rocky9 from summer 2024]
-- Software packages that make up the [JASMIN Analysis Platform]({{< ref "software-overview#common-software" >}}) are all installed - providing commonly-used open-source analysis tools. These packages include NCO, CDO, Python (with netCDF4, matplotlib, numpy etc.,) and R.
+- Software packages that make up the [JASMIN Analysis Platform]({{% ref "software-overview#common-software" %}}) are all installed - providing commonly-used open-source analysis tools. These packages include NCO, CDO, Python (with netCDF4, matplotlib, numpy etc.,) and R.
 - Access to proprietary tools, e.g. IDL and Intel Fortran, through the `module` system.
-- Ability to run graphical applications: use the [NX graphical desktop service]({{< ref "graphical-linux-desktop-access-using-nx" >}}) for best performance.
+- Ability to run graphical applications: use the
+[NX graphical desktop service]({{% ref "graphical-linux-desktop-access-using-nx" %}}) for best performance.
 
-Further information on using the software provided on JASMIN [can be found here]({{< ref "software-overview" >}}).
+Further information on using the software provided on JASMIN [can be found here]({{% ref "software-overview" %}}).
 
 See [[Note 4]](#4-privileges) above about privileges: you can only install software for yourself if it can be done with user-level privileges.
 
@@ -99,5 +100,5 @@ See [[Note 4]](#4-privileges) above about privileges: you can only install softw
 Each sci server has:
 
 - Access to the LOTUS `/work/scratch-pw*` and `/work/scratch-nopw2` volumes.
-- Read access to the [CEDA Archive]({{< ref "ceda-archive" >}}) according to permissions on your CEDA account.
+- Read access to the [CEDA Archive]({{% ref "ceda-archive" %}}) according to permissions on your CEDA account.
 - Read/Write access to Group Workspaces according to membership.
