@@ -141,3 +141,17 @@ a listing of your home directory.
 8\. Use the `globus transfer` command to copy data to/from another
 **collection** (previously known as endpoint) to your home directory, within
 the JASMIN Default Collection. (see `globus transfer --help` for details)
+
+## Where to/from?
+
+Don't forget that to actually transfer data to/from JASMIN (e.g. step 8, above), you'll need another
+collection somewhere else. If you're transferring data from ARCHER2, you can use their
+{{<link "https://app.globus.org/file-manager/collections/3e90d018-0d05-461a-bbaf-aab605283d21/overview">}}ARCHER2 filesystems collection{{</link>}}
+
+If not, unless your institution runs a Globus collection, you'll need to 
+install a small piece of software called [Globus Connect Personal]({{% ref "globus-connect-personal" %}})
+on a machine at that end that is able to read/write the data that you want to transfer.
+A good idea is to try this on your own desktop/laptop first.
+
+Our help doc guides you through how to do this and some examples of how to use it. Versions available for
+Windows, Mac and Linux.

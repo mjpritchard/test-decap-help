@@ -9,8 +9,8 @@ tags:
 - jasmin-sci
 ---
 
-{{<alert type="info">}}
-Watch this space for further updates about the details and timetable for the migration to Rocky Linux 9 on JASMIN.
+{{< alert color="success" icon="fas circle-exclamation" >}}
+Lots of updated information below about the new Rocky Linux 9 environment on JASMIN: please read, and keep checking back here regularly for now.
 {{</alert>}}
 
 ## Introduction
@@ -142,9 +142,33 @@ configuration from the virtual `sci` servers, with limited outward connectivity.
 name | status | notes
 --- | --- | ---
 `xfer-vm-01.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} ready to use | Virtual server
-`xfer-vm-02.jasmin.ac.uk` | {{< icon fas square-xmark text-danger >}} Not yet ready | Virtual server
-`xfer-vm-03.jasmin.ac.uk` | {{< icon fas square-xmark text-danger >}} Not yet ready | Virtual server, will have `cron`.
+`xfer-vm-02.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} ready to use | Virtual server
+`xfer-vm-03.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} ready to use | Virtual server, has `cron`.
 {.table .table-striped .w-auto}
+
+Notes:
+
+- Similar config on all 3 (no domain or reverse DNS restrictions now)
+- Same applies re. **ssh client version**, see [login nodes]({{% ref "#login-nodes" %}})
+- If using cron on `xfer-vm-03`, you must use [crontamer]({{% ref "using-cron" %}})
+- Throttle any automated transfers to avoid many ssh connections in quick succession, this may get you blocked.
+- Consider using [crontamer]({{% ref "#globus-data-transfer-service" %}}) for any
+- new software collection `jasmin-xfer` now added to these servers, providing these tools:
+
+```txt
+emacs-nox
+ftp
+lftp
+parallel
+python3-requests
+python3.11
+python3.11-requests
+rclone
+rsync
+s3cmd
+screen
+xterm
+```
 
 ### hpxfer servers
 
@@ -153,6 +177,12 @@ name | status | notes
 `hpxfer3.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} ready to use | Physical server
 `hpxfer4.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} ready to use  | Physical server
 {.table .table-striped .w-auto}
+
+Notes:
+
+- tested with sshftp (gridftp over ssh) from ARCHER2
+- Same applies re. **ssh client version**, see [login nodes]({{% ref "#login-nodes" %}})
+- software collection `jasmin-xfer` available as per [xfer servers, above]({{% ref "#xfer-servers" %}})
 
 ### gridftp server
 
