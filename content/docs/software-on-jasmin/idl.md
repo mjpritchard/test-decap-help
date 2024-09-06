@@ -20,15 +20,26 @@ available on JASMIN.
 
 IDL is available on all [scientific analysis servers]({{% ref "sci-servers" %}}) and [LOTUS]({{% ref "lotus-overview" %}}).
 
-{{<alert type="info">}}
-The related software `MIDL` is no longer available on JASMIN
-{{</alert>}}
-
 To get started with **IDL**, login to one of scientific analysis servers and
 do as follows:
 
+Check which versions are available:
+
 {{<command user="user" host="sci1">}}
-module load idl
+module avail idl
+(out)
+(out)-------------------------------------------- /apps/jasmin/modulefiles -----------------------------------------------
+(out)  idl/8.2   idl/8.5 (D)   idl/8.6   idl/8.9
+(out)
+(out)  Where:
+(out)   D:  Default Module
+{{</command>}}
+
+The current default version is labelled with `(D)` and can be loaded using just `module load idl`. Alternatively, load a specific version by
+adding its version string to the command:
+
+{{<command user="user" host="sci1">}}
+module load idl ## or idl/8.5 to specify the version
 idl
 (out)IDL Version 8.5 (linux x86_64 m64). (c) 2015, Exelis Visual Information Solutions, Inc., a subsidiary of Harris Corporation.
 (out)Installation number: 406672.
@@ -47,8 +58,8 @@ For help on the `idl` module you can type the following :
 
 {{<command user="user" host="sci1">}}
 module help idl
-(out)----------- Module Specific Help for 'idl/8.2' --------------------  	
-(out)         Adds IDL 8.2 to your environment variables,  
+(out)----------- Module Specific Help for 'idl/8.5' --------------------
+(out)         Adds IDL 8.5 to your environment variables,  
 {{</command>}}
 
 ### Making efficient use of IDL development licences
@@ -56,6 +67,12 @@ module help idl
 We have a large pool of **run-time** licences but a much more limited pool of
 **development** licences. In each case, these consist of floating licences shared
 between JASMIN sci machines and the LOTUS cluster.
+
+{{<alert type="info">}}
+**6 September 2024: IDL v8.9** This version is available but without the full set of run-time
+licences. This may affect usage, particularly on the LOTUS cluster. This will be
+resolved in due course. Also please ignore the error message on startup re. GL graphics device.
+{{</alert>}}
 
 Users are welcome to run multiple instances of IDL code, but for that purpose
 please make use of the run-time licences by compiling your code using a **single**
@@ -77,7 +94,7 @@ To see what licences you and others are using, you can use the following
 sequence of commands:
 
 {{<command>}}
-module add idl/8.2
+module add idl/8.5
 lmstat -a
 {{</command>}}
 
@@ -130,11 +147,11 @@ Compiles top-level routine only
 
 2\. Use resolve_all to compile routines it depends on:
 
-Recursively search for and compile modules called 
+Recursively search for and compile modules called
 
 {{<command prompt="IDL>">}}
 resolve_all
-(out)% Compiled module: DOUBLEIT. 
+(out)% Compiled module: DOUBLEIT.
 (out)% Compiled module: TWO.
 {{</command>}}
 
@@ -148,9 +165,9 @@ save, /routines, file='foo.sav'
 
 {{<command user="user" host="sci1">}}
 idl -rt=foo.sav 
-(out)IDL Version 8.4 (linux x86_64 m64). (c) 2014, Exelis Visual Information Solutions, Inc.
-(out)Installation number: 406502. 
-(out)Licensed for use by: Science & Technology Facilities
+(out)IDL Version 8.5 (linux x86_64 m64). (c) 2015, Exelis Visual Information Solutions, Inc., a subsidiary of Harris Corporation.
+(out)Installation number: 406672.
+(out)Licensed for use by: Science & Technology Facilitie
 (out)  20
 {{</command>}}
     		
@@ -205,3 +222,7 @@ idl -rt=foo.sav -args 10 20 30
 ### Further reading
 
 - Vendor documentation: {{<link "https://www.nv5geospatialsoftware.com/docs/using_idl_home.html">}}Using IDL{{</link>}} (although may be for a newer version than on JASMIN)
+
+### Related software
+
+- The related software `MIDL` is no longer available on JASMIN.
