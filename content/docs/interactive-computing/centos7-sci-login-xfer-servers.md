@@ -32,7 +32,7 @@ Login server name
 `login3.jasmin.ac.uk` |  
 `login4.jasmin.ac.uk` |  
   
-See also NX login servers which are part of the [graphical linux desktop]({{<ref "graphical-linux-desktop-access-using-nx" >}}) service.
+See also NX login servers which are part of the [graphical linux desktop]({{% ref "graphical-linux-desktop-access-using-nx" %}}) service.
 
 You should use these servers as your default route into JASMIN.
 Additional servers in this series will follow in due course.  
@@ -40,7 +40,7 @@ These login servers provide a table displayed at login showing the
 list of available sci servers and their current load and number of logged-in
 users. Please make use of these to select the most appropriate sci server.
 
-[Further details of the login servers]({{< ref "login-servers" >}})
+[Further details of the login servers]({{% ref "login-servers" %}})
 
 ## Scientific analysis servers
 
@@ -48,7 +48,7 @@ CentOS7 Scientific analysis servers are now available (see **Table 2** ).
 These can be used by users with the `jasmin-login` access role to test
 workflows/tasks that:
 
-1. Use the [new software environments](https://drive.google.com/file/d/1gD9C0TZyNITibgDhlv3pRzgd4JjzVfBW/view)
+1. Use the {{< link "https://drive.google.com/file/d/1gD9C0TZyNITibgDhlv3pRzgd4JjzVfBW/view" >}}new software environments{{</link>}}
 2. Do not make use of the software `/apps/contrib` (which has only been tested for RHEL6 operating systems)
 3. Do not make use of the software available under the `module` environment (which has only been tested for RHEL6 operating systems) except the modules `jaspy` and `jasmin-sci`
 4. A job submitted to the new batch scheduler Slurm will run on a CentOS7 node in the LOTUS cluster.
@@ -65,7 +65,7 @@ Server name
 `sci6.jasmin.ac.uk`  |
 `sci8.jasmin.ac.uk`  |
   
-[Further details of the sci servers]({{< ref "sci-servers" >}}).
+[Further details of the sci servers]({{% ref "sci-servers" %}}).
 
 ## Transfer servers
 
@@ -82,4 +82,4 @@ Server name  | Details
 `xfer3.jasmin.ac.uk` | (special access rules similar to `login2`, but requires additional access role, apply [here](https://accounts.jasmin.ac.uk/services/additional_services/xfer-sp))  
 `hpxfer[12].jasmin.ac.uk` | (physical, high-performance transfer servers,require `hpxfer` access role)  |
   
-[Further details of the xfer servers]({{< ref "transfer-servers" >}})
+[Further details of the xfer servers]({{% ref "transfer-servers" %}})

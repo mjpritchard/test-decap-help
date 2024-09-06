@@ -73,6 +73,9 @@ team (exception: {{<link "#hpxfer-servers">}}hpxfer{{</link>}})
  `login2`)
 - As before, no filesystems other than the home directory are mounted.
 - Use only as a "hop" to reach other servers within JASMIN.
+- **Make sure your ssh client is up to date**. Check with `ssh -V`. If
+it's significantly older than `OpenSSH_8.7p1, OpenSSL 3.0.7 1 Nov 2022`, speak to your local
+admin team as it may need to be updated before you can connect securely to JASMIN.
 
 ### NX login nodes
 
@@ -105,15 +108,15 @@ The new list is as follows:
 name | status | specs
 --- | --- | ---
 Virtual servers | | 
-`sci-vm-01.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | (specs tbc)
-`sci-vm-02.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Finalising configuration | (specs tbc)
-`sci-vm-03.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Finalising configuration | (specs tbc)
-`sci-vm-04.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Finalising configuration | (specs tbc)
-`sci-vm-05.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Finalising configuration | (specs tbc)
-`sci-vm-06.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Finalising configuration | (specs tbc)
+`sci-vm-01.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 8 CPU / 32 GB RAM / 80 GB (virtual disk)
+`sci-vm-02.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Finalising configuration | 8 CPU / 32 GB RAM / 80 GB (virtual disk)
+`sci-vm-03.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Finalising configuration | 8 CPU / 32 GB RAM / 80 GB (virtual disk)
+`sci-vm-04.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Finalising configuration | 8 CPU / 32 GB RAM / 80 GB (virtual disk)
+`sci-vm-05.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Finalising configuration | 8 CPU / 32 GB RAM / 80 GB (virtual disk)
+`sci-vm-06.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Finalising configuration | 8 CPU / 32 GB RAM / 80 GB (virtual disk)
 Physical servers | |
-`sci-ph-01.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | (specs tbc)
-`sci-ph-01.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use |  (specs tbc)
+`sci-ph-01.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 48 CPU AMD EPYC 74F3 / 2 TB RAM / 2 x 446 GB SATA SSD
+`sci-ph-01.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 48 CPU AMD EPYC 74F3 / 2 TB RAM / 2 x 446 GB SATA SSD
 {.table .table-striped .w-auto}
 
 Notes:
@@ -213,10 +216,25 @@ We obtained IDL 8.9 and IDL 9 from NV5 and are in the process to setup “Next G
 
 4. **JULES:** (further details to follow)
 
-
 ### Upgraded LOTUS cluster
 
-Further information to follow.
+Preliminary node specification: further info to follow.
+
+type | selector | status | specs
+--- | --- | --- | ---
+standard | tbc | {{< icon fas square-xmark text-danger >}} Not yet available | 190 CPU / 1.5 TB RAM / 480 GB SATA SSD + 800 GB NvMe SSD
+high-mem | tbc | {{< icon fas square-xmark text-danger >}} Not yet available | 190 CPU / 6 TB RAM / 480 GB SATA SSD + 800 GB NvMe SSD
+{.table .table-striped .w-auto}
+
+Notes:
+
+- Overall ~55,000 cores: ~triples current capacity
+- New nodes will form a new cluster, managed separately to the "old" LOTUS
+- Submission to the new cluster will **only** be via the new `sci` machines: `sci-vm-[01-06]` and `sci-ph-[01-02]`
+  - and from **one** additional physical node (details TBC) with extended CentOS7 support, with restricted access to enable use of CYLCv7 for limited period.
+- Submission to "old" LOTUS will **only** be from current CentOS7 `sci` machines `sci[1-8]`
+  - and from **one** additional physical node (details TBC) with extended CentOS7 support, with restricted access to enable use of CYLCv7 for limited period.
+- Nodes will gradually be removed from the "old" cluster and retired, timetable TBC once new cluster is up & running.
 
 ### Other services
 
