@@ -186,7 +186,7 @@ Notes:
 
 ### GridFTP server
 
-For users of certificate-based GridFTP only (specifially, `gsiftp://` using the `globus-url-copy` client), there is a new server:
+For users of certificate-based GridFTP only (specifically, `gsiftp://` using the `globus-url-copy` client), there is a new server:
 
 name | status
 --- | ---
@@ -198,7 +198,7 @@ Notes:
 - Make sure you are using `slcs.jasmin.ac.uk` as the short-lived credentials server, with your JASMIN
 account credentials. CEDA identities can no longer be used for authentication with this server.
 - We now encourage users of this service to migrate to use the {{<link "#globus-data-transfer-service">}}Globus service{{</link>}}
-for data transfers. This older gridftp service will likely be decomissioned over the next 12 months.
+for data transfers. This older GridFTP service will likely be decommissioned over the next 12 months.
 - Use of `globus-url-copy` is nothing to do with the {{<link "#globus-data-transfer-service">}}Globus service{{</link>}}: they are now very separate things.
 
 ### Globus data transfer service
