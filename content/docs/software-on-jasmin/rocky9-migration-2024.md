@@ -17,7 +17,7 @@ Lots of updated information below about the new Rocky Linux 9 environment on JAS
 
 As with a previous migration completed in 2020, the change of operating system version is needed to make sure that the version in use is current and fully supported, i.e. that package updates are available and important security updates can be obtained and applied to keep the platform secure.
 
-The current operating system, CentOS7 is officially end-of-life as of the end of June 2024. We will be moving from CentOS7 to Rocky Linux 9, which is supported until May 2032. Rocky9 should provide a very similar user experience to that provided by CentOS7, but with more recent software packages. Some software may have been removed or replaced during this transition.
+The current operating system, CentOS7 is officially end-of-life as of the end of June 2024. We will be moving from CentOS7 to Rocky Linux 9, which is supported until May 2032. Rocky 9 should provide a very similar user experience to that provided by CentOS7, but with more recent software packages. Some software may have been removed or replaced during this transition.
 
 This change affects JASMIN and CEDA services in several ways, including but not limited to the following:
 
@@ -42,17 +42,17 @@ Please find below details of the new Rocky 9 environment on JASMIN. We will upda
 
 ### General
 
-The move to Rocky Linux 9 (abbreviated to "Rocky9" or "R9" from here on) involves many changes at
+The move to Rocky Linux 9 (abbreviated to "Rocky 9" or "R9" from here on) involves many changes at
 lower levels transparent to users, so we will focus here on those most relevant to how services on 
 JASMIN are accessed and used. The reasons for the choice of Rocky 9 itself, and for some of the
 associated changes to software, machines and services provided, will not be covered in detail,
 but have been influenced by a number of factors including:
 
 - organisational security and maintenance policies
-- availablity of packages and dependencies for the chosen operating system
+- availability of packages and dependencies for the chosen operating system
 - user feedback
 
-### login nodes
+### Login nodes
 
 The list of new login nodes is as follows:
 
@@ -68,12 +68,12 @@ Notes:
 
 - There is no longer any requirement for forward/reverse DNS lookup or any restriction by 
 institutional domain. You no longer need to register non-`*.ac.uk` domains with the JAMSIN 
-team (exception: {{<link "#hpxfer-servers">}}hpxfer{{</link>}})
+team (exception: {{<link "#hpxfer-servers">}}`hpxfer`{{</link>}})
 - This means all users can access all login servers (previously some users could only use
  `login2`)
 - As before, no filesystems other than the home directory are mounted.
 - Use only as a "hop" to reach other servers within JASMIN.
-- **Make sure your ssh client is up to date**. Check with `ssh -V`. If
+- **Make sure your SSH client is up to date**. Check with `ssh -V`. If
 it's significantly older than `OpenSSH_8.7p1, OpenSSL 3.0.7 1 Nov 2022`, speak to your local
 admin team as it may need to be updated before you can connect securely to JASMIN.
 
@@ -84,7 +84,7 @@ name | status
 `nx1.jasmin.ac.uk` | {{< icon fas square-xmark text-danger >}} Not yet ready: issue with Windows 11 clients
 `nx2.jasmin.ac.uk` | {{< icon fas square-xmark text-danger >}} Not yet ready: issue with Windows 11 clients
 `nx3.jasmin.ac.uk` | {{< icon fas square-xmark text-danger >}} Not yet ready: issue with Windows 11 clients
-`nx4.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Not yet moved to Rocky9 (works as previously for now)
+`nx4.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Not yet moved to Rocky 9 (works as previously for now)
 {.table .table-striped .w-auto}
 
 Notes:
@@ -94,15 +94,15 @@ Notes:
 usernames created before the 8-character rule) had with agent forwarding: all should behave
 the same as the old `nx4` in this respect.
 - As before, no filesystems other than the home directory are mounted.
-- Use only with the NoMachine NX graphical linux desktop, from where you can
+- Use only with the NoMachine Enterprise Client to get a graphical Linux desktop, from where you can
   - use the Firefox browser on the linux desktop to access web resources only accessible within JASMIN
-  - make onward connections to a sci server for using graphics-intensive applications
+  - make onward connections to a `sci` server for using graphics-intensive applications
 - Make sure you are using the most up-to-date version of 
 {{<link "https://downloads.nomachine.com/download-enterprise/#NoMachine-Enterprise-Client">}}NoMachine Enterprise Client{{</link>}}.
 
-### sci servers
+### `sci` servers
 
-We have introduced a new naming convention which helps idendify virtual and physical/high-memory sci servers.
+We have introduced a new naming convention which helps identify virtual and physical/high-memory `sci` servers.
 The new list is as follows:
 
 name | status | specs
@@ -121,7 +121,7 @@ Physical servers | |
 
 Notes:
 
-- For users within the STFC network, there is no longer any reverseDNS restriction, so all
+- For users within the STFC network, there is no longer any reverse DNS restriction, so all
 should be accessible directly within that network without need to go via a login node.
 - Replacements for common tools:
   - `lxterminal` has been replaced with {{<link href="https://docs.xfce.org/apps/terminal/start">}}xfce-terminal{{</link>}}
@@ -137,7 +137,7 @@ sending X11 graphics over the network back to your laptop/desktop, to ensure per
 - As before, physical servers are actually re-configured nodes within the LOTUS cluster and as such have different a network
 configuration from the virtual `sci` servers, with limited outward connectivity.
 
-### xfer servers
+### `xfer` servers
 
 name | status | notes
 --- | --- | ---
@@ -149,11 +149,11 @@ name | status | notes
 Notes:
 
 - Similar config on all 3 (no domain or reverse DNS restrictions now)
-- Same applies re. **ssh client version**, see [login nodes]({{% ref "#login-nodes" %}})
-- If using cron on `xfer-vm-03`, you must use [crontamer]({{% ref "using-cron" %}})
-- Throttle any automated transfers to avoid many ssh connections in quick succession, this may get you blocked.
-- Consider using [crontamer]({{% ref "#globus-data-transfer-service" %}}) for any
-- new software collection `jasmin-xfer` now added to these servers, providing these tools:
+- Same applies re. **SSH client version**, see [login nodes]({{% ref "#login-nodes" %}})
+- If using cron on `xfer-vm-03`, you must use [crontamer]({{% ref "using-cron/#crontamer" %}})
+- Throttle any automated transfers to avoid many SSH connections in quick succession, this may get you blocked.
+- Consider using [Globus]({{% ref "#globus-data-transfer-service" %}}) for any data transfer in or out of JASMIN
+- A new software collection `jasmin-xfer` has now been added to these servers, providing these tools:
 
 ```txt
 emacs-nox
@@ -170,7 +170,7 @@ screen
 xterm
 ```
 
-### hpxfer servers
+### `hpxfer` servers
 
 name | status | notes
 --- | --- | ---
@@ -180,13 +180,13 @@ name | status | notes
 
 Notes:
 
-- tested with sshftp (gridftp over ssh) from ARCHER2
-- Same applies re. **ssh client version**, see [login nodes]({{% ref "#login-nodes" %}})
-- software collection `jasmin-xfer` available as per [xfer servers, above]({{% ref "#xfer-servers" %}})
+- Tested with `sshftp` (GridFTP over SSH) from ARCHER2
+- Same applies re. **SSH client version**, see [login nodes]({{% ref "#login-nodes" %}})
+- The software collection `jasmin-xfer` available as per [xfer servers, above]({{% ref "#xfer-servers" %}})
 
-### gridftp server
+### GridFTP server
 
-For users of certificate-based gridftp only (specifially, `gsiftp://` using the `globus-url-copy` client), there is a new server:
+For users of certificate-based GridFTP only (specifically, `gsiftp://` using the `globus-url-copy` client), there is a new server:
 
 name | status
 --- | ---
@@ -198,13 +198,13 @@ Notes:
 - Make sure you are using `slcs.jasmin.ac.uk` as the short-lived credentials server, with your JASMIN
 account credentials. CEDA identities can no longer be used for authentication with this server.
 - We now encourage users of this service to migrate to use the {{<link "#globus-data-transfer-service">}}Globus service{{</link>}}
-for data transfers. This older gridftp service will likely be decomissioned over the next 12 months.
+for data transfers. This older GridFTP service will likely be decommissioned over the next 12 months.
 - Use of `globus-url-copy` is nothing to do with the {{<link "#globus-data-transfer-service">}}Globus service{{</link>}}: they are now very separate things.
 
 ### Globus data transfer service
 
 Where possible you should now use the Globus data transfer service for any data transfer in or out of JASMIN: this is now the recommended method,
-which will get you the best performance & has a number of advantages over logging into a server and doing transfers manually.
+which will get you the best performance and has a number of advantages over logging into a server and doing transfers manually.
 
 As introduced earlier this year, the following Globus collections are available to all users of JASMIN, with no special access roles required:
 
@@ -237,10 +237,10 @@ JULES <br>**see Note 4**| | Information to follow
 
 #### Notes
 
-1. **IDL:** We will not support IDL 8.5 & older versions on Rocky9 but we might continue to support IDL 8.6 if there is a need from the user community: we are still assessing that. The present version of IDL 8.6 must be migrated from the current "Flexnet" to the new "Next Generation" licensing system.
-We obtained IDL 8.9 and IDL 9 from NV5 and are in the process to setup “Next Generation" licensing to activate the licence. Once this is done on server and client machines and testing is completed, a new module environment will be created users for IDL 8.9 and 9.0 on the new sci machines and a subset of the new LOTUS Rocky9 nodes. The default `module add idl` will then load IDL 8.9 instead of IDL 8.6.
+1. **IDL:** We will not support IDL 8.5 & older versions on Rocky 9 but we might continue to support IDL 8.6 if there is a need from the user community: we are still assessing that. The present version of IDL 8.6 must be migrated from the current "Flexnet" to the new "Next Generation" licensing system.
+We obtained IDL 8.9 and IDL 9 from NV5 and are in the process to setup “Next Generation" licensing to activate the licence. Once this is done on server and client machines and testing is completed, a new module environment will be created users for IDL 8.9 and 9.0 on the new sci machines and a subset of the new LOTUS Rocky 9 nodes. The default `module add idl` will then load IDL 8.9 instead of IDL 8.6.
 
-2. **Cylc:** Note that Cylc 8 differs from Cylc7 in many ways: architecture, scheduling algorithm, security, UIs, working practices and more. The Cylc 8 web UI requires the use of a browser (e.g. Firefox in the NoMachine desktop service)
+2. **Cylc:** Note that Cylc 8 differs from Cylc 7 in many ways: architecture, scheduling algorithm, security, UIs, working practices and more. The Cylc 8 web UI requires the use of a browser (e.g. Firefox in the NoMachine desktop service)
 
 3. **MPI:** (further details to follow)
 
@@ -261,9 +261,9 @@ Notes:
 - Overall ~55,000 cores: ~triples current capacity
 - New nodes will form a new cluster, managed separately to the "old" LOTUS
 - Submission to the new cluster will **only** be via the new `sci` machines: `sci-vm-[01-06]` and `sci-ph-[01-02]`
-  - and from **one** additional physical node (details TBC) with extended CentOS7 support, with restricted access to enable use of CYLCv7 for limited period.
+  - and from **one** additional physical node (details TBC) with extended CentOS7 support, with restricted access to enable use of Cylc 7 for limited period.
 - Submission to "old" LOTUS will **only** be from current CentOS7 `sci` machines `sci[1-8]`
-  - and from **one** additional physical node (details TBC) with extended CentOS7 support, with restricted access to enable use of CYLCv7 for limited period.
+  - and from **one** additional physical node (details TBC) with extended CentOS7 support, with restricted access to enable use of Cylc 7 for limited period.
 - Nodes will gradually be removed from the "old" cluster and retired, timetable TBC once new cluster is up & running.
 
 ### Other services
