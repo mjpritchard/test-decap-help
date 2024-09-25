@@ -134,6 +134,11 @@ should be accessible directly within that network without need to go via a login
 sections below for further information on software.
 - For graphical applications, use the {{<link "#nx-login-nodes">}}NoMachine NX service{{</link>}} rather than
 sending X11 graphics over the network back to your laptop/desktop, to ensure performance.
+  - X11 graphics functionality is still to be added to these machines (coming shortly), but currently this will fail with an error like:
+    ```
+    xterm: Xt error: Can't open display: 
+    xterm: DISPLAY is not set
+    ```
 - As before, physical servers are actually re-configured nodes within the LOTUS cluster and as such have different a network
 configuration from the virtual `sci` servers, with limited outward connectivity.
 
