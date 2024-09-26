@@ -13,70 +13,24 @@ Having problems connecting to a host on JASMIN? Details of how to login to
 JASMIN can be found [here]({{% ref "how-to-login" %}}), but this article may help to
 resolve login problems. It provides information for the following issues:
 
-- Unable to login to a login server e.g. `login1.jasmin.ac.uk`
-- Can login to login server but can't login to a subsequent server
-- ssh-add command gives error: "Could not open a connection to your authentication agent."
+- Unable to login to a `login` server
+- Can login to `login` server but can't login to a subsequent server
+- `ssh-add` command gives error: "Could not open a connection to your authentication agent."
 - Errors when trying to connect with MobaXterm
 
 ## Unable to login to login server
 
-If you are unable to login to a login server e.g. `login1.jasmin.ac.uk` then
+If you are unable to login to a login server e.g. `login-01.jasmin.ac.uk` then
 look carefully at any error messages displayed as this can help diagnose what
 is wrong:
 
 **1) "Connection reset by peer"**
 
 This suggests a problem with the configuration of your machine or local
-network. Connections to JASMIN login servers are allowed from a specific set
-list of network domains (the domain is the part **after** the host name e.g.
-myhost. **mylocalnetwork.ac.uk** ). For this to happen, 2 things need to be in
-place:
-
-- the IP address of your machine needs to resolve to a full-qualified host name (so that it can be checked against the list)
-- the domain part of the hostname needs to be on JASMIN's allow list.
-
-Use the tool provided on the JASMIN accounts portal to check that your IP
-address does indeed resolve:
-
-Visit <https://accounts.jasmin.ac.uk/services/reverse_dns_check/> with your
-browser, or do the following at the command line, on the machine **from which**
-you're trying to connect:
-
-{{<command user="user" host="localhost">}}
-    curl https://accounts.jasmin.ac.uk/services/reverse_dns_check
-{{</command>}}
-
-Depending on your system, this will either provide output to the terminal (via
-stdout) or on some systems this might save the output in the file
-"reverse_dns_check". You may need to look in that file for the result.
-
-See [check network details]({{% ref "check-network-details" %}}) for further
-information on how to interpret the result from this.
-
-Most institutional networks for UK universities and partner organisations are
-on our allow list, which is updated on request. However if you are trying to
-connect from your home broadband, then please be aware that this is not the
-the preferred route, for security reasons. If you connect from home, please be
-aware that:
-
-- The IP address which you are allocated by your internet service provider (ISP) may not resolve to a full hostname
-- That domain name is unlikely to be on the allow list.
-
-One solution is to connect via your VPN to your institution first. This
-assigns you another IP address belonging to that institution, but you need to
-repeat the checks above to make sure that address resolves (not all do).
-
-Another option, if you have SSH terminal access to a machine at your
-institution from where you can also make outgoing SSH connections, is that you
-connect from your local machine to the machine at your institution, then make
-the outward SSH connection to JASMIN from there. In this case, you need to
-have your JASMIN SSH key loaded on your local machine first, and remember to
-include the -A flag for "agent forwarding" for ALL the intermediate steps.
-
-If all else fails, you can use the ["contingency route"]({{% ref "login-servers" %}}) provide by login2.jasmin.ac.uk (see article for further
-details), but you will be limited in what you can do / connect to within
-JASMIN as a result. We prefer all users to connect from their institutional
-network.
+network. We no longer restrict access to JASMIN by network domain, and no longer
+require registration of non-`*.ac.uk` domains, so you should be able to connect from
+anywhere. If your local admin team is not able to resolve the issue, please
+contact JASMIN support.
 
 **2) "Permission denied"**
 
@@ -84,17 +38,19 @@ Here, the most likely cause is that the SSH key which your client is
 presenting does not match the one in your JASMIN account. This can be for a
 number of reasons:
 
+  * **Your SSH client is old and needs updating**
+    * You can check this with `ssh -V` and comparing to the [versions mentioned here]({{% ref "login-servers#recent-changes" %}}).
+    * You will need to update your client before you can connect to JASMIN securely. Ask your local admin team for help.
   * **You have omitted to specify the username in your SSH connection**
     * In this case, you will be attempting to connect with the username you have on your local machine, which may not be the same.
   * **You have only recently uploaded your SSH key (it can take 20 to 60 minutes before the key propagates to all the places it needs to on JASMIN).**
     * Try waiting a few minutes before trying again.
   * **You don't have your key loaded in your local authentication agent (e.g. ssh-agent).**
-    * Check that you are following the method suitable for your operating system 
+    * Check that you are following the method suitable for your operating system
       * The article "[How to login]({{% ref "how-to-login" %}})" has instructions for linux, mac and windows.  
-
     * Note that connections using NoMachine NX don't require an authentication agent: this can be a good alternative if you're having problems.
   * **You have not yet been granted jasmin-login access or your access has expired.**
-    * To check, go to [List my services](https://accounts.jasmin.ac.uk/services/my_services/?page=1&active=1&_apply_filters=1) on the JASMIN accounts portal and check that "Login services: jasmin-login" is listed. If not then you either need to [apply for jasmin-login access](https://accounts.jasmin.ac.uk/account/login/?next=/services/login_services/jasmin-login/), or if you have already done this recently you may simply need to wait for it to be approved. Note that if you have applied for access to a group workspace you still need jasmin-login access in order to connect to jasmin machines.
+    * To check, go to [My services](https://accounts.jasmin.ac.uk/services/my_services/?page=1&active=1&_apply_filters=1) on the JASMIN accounts portal and check that "Login services: jasmin-login" is listed. If not then you either need to [apply for jasmin-login access](https://accounts.jasmin.ac.uk/account/login/?next=/services/login_services/jasmin-login/), or if you have already done this recently you may simply need to wait for it to be approved. Note that if you have applied for access to a group workspace you still need jasmin-login access in order to connect to jasmin machines.
 
 **3) "The authenticity of host 'nnnn ( <ip address>)' can't be established."
 or "key for host nnnn has changed"**
@@ -150,7 +106,7 @@ This can happen when:
 
 - machines are re-installed (as part of maintenance by the JASMIN team)
 - when you modify your `~/.ssh/known_hosts` file  
-- when you access a "known" host but via a different name (e.g. `sci1` vs `sci1.jasmin.ac.uk`) 
+- when you access a "known" host but via a different name (e.g. `sci-vm-01` vs `sci-vm-01.jasmin.ac.uk`)
 
 Message 1 means that you don't have an entry for that host in your
 `~/.ssh/known_hosts` file. In most cases, you can safely reply "yes" and the
@@ -159,7 +115,7 @@ SSH connection should proceed as normal from then on.
 If you get message 2, and are confident that the change is for a legitimate
 reason, the solution is to modify your `~/.ssh/known_hosts` file, removing the
 entries for that host (there may be more than one, as above for `sci1` vs
-`sci1.jasmin.ac.uk`) by deleting those lines. Next time you try and connect,
+`sci-vm-01.jasmin.ac.uk`) by deleting those lines. Next time you try and connect,
 you will get message 1, but can reply "yes" and the SSH connection should
 proceed as normal.
 
@@ -175,16 +131,16 @@ Here, there are 3 main possibilities:
 
 **1) You have not set up agent forwarding correctly on your local machine.**
 
-****This allows your ssh key to be used for logging in from `login1.jasmin.ac.uk` to
+****This allows your ssh key to be used for logging in from the login server to
 other machines. To check, run the following command on the login server:
 
-{{<command user="user" host="login1">}}
+{{<command user="user" host="login-01">}}
 echo "$SSH_AUTH_SOCK"
 {{</command>}}
 
 This should display something that looks similar to (but not identical to)
 
-{{<command user="user" host="login1">}}
+{{<command user="user" host="login-01">}}
 (out)/tmp/ssh-RNjiHr2844/agent.2844
 {{</command>}}
 
@@ -192,31 +148,31 @@ If nothing is displayed then it indicates
 that agent forwarding is not working. Please read 
 [how to login]({{% ref "how-to-login" %}}) and make sure
  you are running ssh-agent (or similar), have loaded
-your private key and are using the -A option on your ssh command for the
+your private key and are using the `-A` option on your ssh command for the
 connection to the login server. NX users should make sure that the "agent
 forwarding" option is ticked when setting up a connection profile.
 
 **2) Some hosts within JASMIN are restricted to particular (groups of)
 users.**
 
-The "sci" servers (e.g. `sci1.jasmin.ac.uk`) and "xfer" machines (e.g.
-`xfer1.jasmin.ac.uk`) should be available to all with `jasmin-login` access
+The [`sci` servers]({{% ref "sci-servers"%}}) and [`xfer` servers]({{% ref "transfer-servers" %}})
+should be available to all with `jasmin-login` access
 (see above). However, some other machines are restricted to particular project
 participants and require special permission to use. For example, the high-
-performance transfer servers `hpxfer[12].jasmin.ac.uk` requires the
+performance transfer servers `hpxfer[34].jasmin.ac.uk` requires the
 {{<link "../data-transfer/hpxfer-access-role">}}hpxfer access role{{</link>}}, which can be applied for at the JASMIN accounts portal,
 as can most roles currently in use.
 
 **3) There is a problem with the host you are trying to connect to.**
 
 Occasionally there may be problems with the host (machine) which you are
-trying to connect to. The sci servers (particularly the high-memory host
-jasmin-sci3) experience very high usage loads and occasionally run out of
+trying to connect to. The sci servers (particularly physical/high-memory hosts
+`sci-ph-[12]`) experience very high usage loads and occasionally run out of
 resources. This may prevent you from logging in. In some circumstances ask you
 for a password: this is normally a sign that something is wrong with the
-machine, since passwords are not used for host logins on JASMIN, so there is
+machine, since passwords are not used for SSH logins on JASMIN, so there is
 no point in trying to enter your account password or SSH passphrase at this
-point. In this case please contact us using the help beacon below.
+stage. In this case please contact the JASMIN helpdesk.
 
 If you still have problems then please contact us using the help beacon below.
 It would be helpful if you can include as much of the following information as
@@ -225,7 +181,7 @@ possible:
 - The IP address and full hostname of the machine you are trying to connect from.
 - The date and time that you tried connecting (to the nearest minute if possible). This will help us to identify any relevant messages in any log files.
 - The exact command you were using
-- Add "-vvv" to your SSH command and send us the the output (please include the SSH command itself)
+- Add `-vvv` to your `ssh` command and send us the the output (please include the command itself)
 - List the SSH keys directory on your local machine. On a linux machine this can be done with the command: `ls -l ~/.ssh`
 
 ## ssh-add command gives error: "Could not open a connection to your authentication agent."
