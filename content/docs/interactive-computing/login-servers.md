@@ -9,46 +9,46 @@ weight: 30
 
 ## Available login servers
 
-There are three login servers available to access resources within JASMIN.
+There are four login servers available to access resources within JASMIN.
 Users with the `jasmin-login` access role can access the following servers via
-SSH:
+{{<abbr SSH>}}.
 
-Login server name | details |
-|---|---|  
-| `login1.jasmin.ac.uk`  | best for use from university networks (requires fwd/reverse DNS lookup to domain in allow-list) | 
-| `login2.jasmin.ac.uk`  | [Contingency config](#contingency-login-servers), see notes below  |
-| `login3.jasmin.ac.uk`  | as per login1 |
-| `login4.jasmin.ac.uk`  | as per login1 |
-{.table .table-striped}
-  
-See also [How to login]({{% ref "how-to-login" %}}) and other articles in the [Getting started]({{% ref "getting-started" %}}) category.
+{{<alert type="info" >}}
+All four login servers now have identical configuration and should be accessible from any network.
+{{</alert>}}
 
-See also [NoMachine NX service]({{% ref "graphical-linux-desktop-access-using-nx" %}}) which provides login to a graphical Linux desktop, rather than a
-single terminal window.
+name |
+--- |
+`login-01.jasmin.ac.uk` |
+`login-02.jasmin.ac.uk` |
+`login-03.jasmin.ac.uk` |
+`login-04.jasmin.ac.uk` |
+{.table .table-striped .w-auto}
 
 ## Features of login servers
 
 Login servers have minimal resources and software installed. They provide:
 
-- Access to your home directory (`/home/users/<username>`).
-- Access via SSH to other hosts within JASMIN (inside the RAL firewall)
-- No analysis software is installed on the login servers.
-- No access to group workspaces or other volumes.
+- a means to access other resources within JASMIN (inside the {{<abbr STFC >}} firewall)
+- access to your home directory (`/home/users/<username>`)
+- no analysis software
+- no access to group workspaces
 
-## "Contingency" login servers
+### Recent changes
 
-There are [requirements on your local network]({{% ref "check-network-details"%}}) which apply to accessing the login servers **and** the [transfer
-servers]({{% ref "transfer-servers" %}}) via SSH. If you cannot meet these
-requirements, even after discussion with your local network admin team, a
-contingency route is provided in the form of login server
-`login2.jasmin.ac.uk`
+- There is no longer any requirement for forward/reverse DNS lookup or any restriction by
+institutional domain.
+- You no longer need to register non-`*.ac.uk` domains with the JASMIN team.
+- This means all users can access all login servers (previously some users could only use particular ones)
+- As before, no filesystems other than the home directory are mounted.
+- Use only as a "hop" to reach other servers within JASMIN.
+- **Make sure your SSH client is up to date**. Check the version with `ssh -V`. If
+it's significantly older than `OpenSSH_8.7p1, OpenSSL 3.0.7`, speak to your local
+admin team as it may need to be updated before you can connect securely to JASMIN.
+  
+See also [How to login]({{% ref "how-to-login" %}}) and other articles in the [Getting started]({{% ref "getting-started" %}}) category.
 
-However, you will be limited in what you can access within JASMIN from this
-server. Specifically:
-
-- You will not be able to access the transfer servers `xfer[1,2].jasmin.ac.uk` via SSH directly from an external host.  
-- You can access these via SSH from `login2`, but can then only initiate an inward pull of data from an external SSH server, if available at your institution. You cannot push data directly to `xfer[1,2].jasmin.ac.uk` via SSH from outside in this case.
-- Instead, an alternative transfer server `xfer3.jasmin.ac.uk` is provided with equivalent configuration to `login2`. This should provide what you need for direct SSH transfers from outside, but you will need the additional `"xfer-sp"` access role in in this case: see [here for further details]({{% ref "transfer-servers" %}}).
+See also [NoMachine NX service]({{% ref "graphical-linux-desktop-access-using-nx" %}}) which provides login to a graphical Linux desktop, rather than a single terminal window.
 
 ## How to use the login servers
 
@@ -58,7 +58,7 @@ other machines, please see the article ["How to login"]({{% ref "how-to-login" %
 {{<alert type="danger">}}
 Users are **not permitted to execute commands which require
 administrative privileges**. This applies to all hosts in the managed part of
-JASMIN where users have SSH login access (for example `login`, `nx-login`,
+JASMIN where users have SSH login access (for example `login`, `nx`,
 `sci`, `xfer` and `hpxfer` machines).
 
 In other words, the **use of `su` and `sudo` is not permitted**.

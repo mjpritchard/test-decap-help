@@ -67,14 +67,14 @@ name | status
 Notes:
 
 - There is no longer any requirement for forward/reverse DNS lookup or any restriction by 
-institutional domain. You no longer need to register non-`*.ac.uk` domains with the JAMSIN 
+institutional domain. You no longer need to register non-`*.ac.uk` domains with the JASMIN 
 team (exception: {{<link "#hpxfer-servers">}}`hpxfer`{{</link>}})
 - This means all users can access all login servers (previously some users could only use
  `login2`)
 - As before, no filesystems other than the home directory are mounted.
 - Use only as a "hop" to reach other servers within JASMIN.
-- **Make sure your SSH client is up to date**. Check with `ssh -V`. If
-it's significantly older than `OpenSSH_8.7p1, OpenSSL 3.0.7 1 Nov 2022`, speak to your local
+- **Make sure your SSH client is up to date**. Check the version with `ssh -V`. If
+it's significantly older than `OpenSSH_8.7p1, OpenSSL 3.0.7`, speak to your local
 admin team as it may need to be updated before you can connect securely to JASMIN.
 
 ### NX login nodes
