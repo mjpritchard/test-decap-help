@@ -49,3 +49,4 @@ Step  |  Details  |  Comments
 * Try exercises in the JASMIN workshop training materials
 * The CEDA team also hosts training workshops and events, see CEDA
 {{<link "ceda_events">}}events{{</link>}} and {{<link "ceda_news">}}news{{</link>}}.
+* Keep an eye on the {{<link "ceda_status">}}status{{</link>}} info (also provided in the terminal when you log in).
