@@ -5,16 +5,16 @@
   long: "HyperText Markup Language"
 
 - id: pfs
-  long: parallel file system
+  long: "parallel file system"
 
 - id: sof
-  long: scale out file system
+  long: "scale out file system"
 
 - id: ssh
-  long: secure shell -  a protocol for connecting and sharing data with remote computing resources
+  long: "secure shell -  a protocol for connecting and sharing data with remote computing resources"
 
 - id: stfc
-  long: Science and Technology Facilities Council - the organisation that operates JASMIN on behalf of NERC  
+  long: "Science and Technology Facilities Council - the organisation that operates JASMIN on behalf of NERC"
 
 - id: svg
   long: "Scalable Vector Graphics"
