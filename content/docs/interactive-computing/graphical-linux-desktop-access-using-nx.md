@@ -19,7 +19,7 @@ JASMIN environment using NoMachine NX.
 
 - This service provides a graphical Linux desktop on JASMIN, ideal
 for use with graphics-heavy tasks like interactive work with large images.
-- The desktop environment includes a Firefox web browser which can be used to access 
+- The desktop environment includes a Firefox web browser which can be used to access
 internal-only web resources.
 
 Using graphical applications over a wide-area network can be very slow, and is
@@ -27,26 +27,28 @@ not recommended or supported on JASMIN. This service provides a better alternati
 graphical desktop **within** the JASMIN environment itself, rather than on the user's local machine.
 
 A small client application, available for you to install on your local machine,
-enables you to connect to specific servers within JASMIN. Graphics are then relayed to the client 
-application in a more efficient form, resulting in much better performance particularly if you need 
+enables you to connect to specific servers within JASMIN. Graphics are then relayed to the client
+application in a more efficient form, resulting in much better performance particularly if you need
 to interact with what's being displayed.
 
 The service provides an improved user experience and is strongly
 recommended over standard X11 graphics.
 
-The following "special" login servers have the NX service available and can be
-used as described below:
+The following servers have the NX service available and can be
+used as described below. These now have **identical configuration**, so you can use any one of them from any network location.
 
-- `nx-login1.jasmin.ac.uk` (best for use from university networks)
-- `nx-login2.jasmin.ac.uk` ([Contingency config]({{% ref "login-servers#contingency-login-servers" %}}) similar to `login2.jasmin.ac.uk`, to make it available from clients without reverse DNS lookup to a domain in the JASMIN allow-list. Use this option if you need to connect from home and do not have an institutional VPN available)
-- `nx-login3.jasmin.ac.uk` ([Contingency config]({{% ref "login-servers#contingency-login-servers" %}}) as above) 
-- `nx-login4.jasmin.ac.uk` ([Contingency config]({{% ref "login-servers#contingency-login-servers" %}}) as above, but also supports users with usernames > 8 but also supports users with usernames > 8 characters. No support for usernames > 14 characters: contact helpdesk for advice)
+name |
+--- |
+`nx1.jasmin.ac.uk` |
+`nx2.jasmin.ac.uk` |
+`nx3.jasmin.ac.uk` |
+`nx4.jasmin.ac.uk` |
+{.table .table-striped .w-auto}
 
 ### Notes
 
-- In all other respects these are the same as the standard [login servers]({{% ref "login-servers" %}}), but should only be used with the NX enterprise client as described below, (other than for testing your connection) as this preserves system resources for their intended purpose.
+- These only be used with Nomachine Enterprise Client as described below, other than for testing your connection, as this preserves system resources for their intended purpose.
 - Although the graphical desktop session which you create with this service should persist when you close the client (unless you specifically log out), you should not rely on this feature, so please don't report this as a problem: occasionally machines run out of resources and sessions get killed. Keeping sessions open consumes resources on the server even when you're not using the session, which may mean that other users can't use the service.
-- `nx-login4` has been introduced to help cater for users whose usernames exceed 8 characters length. This works around a known limitation in the NX server software but may not solve the problem for users with very long names (created before we introduced a limit to prevent this happening: if this still affects you and you cannot make onward connections to other machines in NX, please contact the helpdesk)
 
 ## Installing NoMachine Enterprise Client
 
@@ -61,14 +63,14 @@ your local machine in order to install the software so you may need to ask for
 help from your local IT helpdesk.
 
 Note that **"Nomachine Enterprise Client"** is a different application to the
-"Nomachine Enterprise Desktop" available from the more publicised download
-link on the NoMachine website or other applications in the NoMachine suite:
+"Nomachine Enterprise Desktop" or "Nomachine" available from the more publicised download
+links on the NoMachine website or other applications in the NoMachine suite:
 the desktop edition contains additional components to enable remote access to
 your **own** (local) machine from a remote location: perhaps convenient
 but not what we are trying to enable for you here.
 
-The **NoMachine Enterprise Client** is purely a client to connect to a remote
-server: in our case the server is at the JASMIN end, where the desktop session will exist.
+The **NoMachine Enterprise Client** is a cut-down client to which connects to a remote
+server: in your case the server is at the JASMIN end, where the desktop session will exist.
 
 Remember to check for updates for the enterprise client to ensure you always
 have the latest stable version. You can configure the application to check for
@@ -77,13 +79,30 @@ Updates in the menu.
 
 ## Setting up your connection
 
-As you can see from the following videos, the instruction steps below are very
-similar for Windows / Mac / Linux, once the enterprise client is installed.
+In theory, there are 2 methods of setting up a connection which should work with JASMIN:
+1. Creating a connection profile where you specify the location of your SSH private key
+2. Using your key stored in a local ssh-agent
+
+Until recently, we recommended (1) but with the move to Rocky 9 Linux, there are some problems with this approach which
+are yet to be resolved by the software vendor.
+However we have described a method based on (2) which, once you've done the one-off configuration, should be be particularly useful if you're planning to use other applications like VSCode locally. Using this method, Windows users no longer need to create and use a reformatted version of the SSH private key.
+
+### Overview
+
+To set up an agent-based connection we need to:
+
+- Load the SSH private key into a local ssh-agent
+- Edit the NX configuration file to use the native ssh client instead of the bundled one
+- Create a connection profile which makes uses the key from the ssh-agent
+- Connect with that profile to the nx server
+- Make an onward connection to a sci server, which is where you will actually do your work.
+
+The tabs below show a) videos and b) instructions for each of Windows, Mac and Linux, showing the setup process for each platform, once the software has been installed.
 Note that the interface may look slightly different depending on which version
 number of the client you have installed (we can't promise to keep the videos
 up to date with every new version, unfortunately!)
 
-{{< nav type="tabs" id="tabs-os" >}}
+{{< nav type="tabs" id="tabs-video-os" >}}
   {{< nav-item header="Windows" show="true" >}}
     {{< youtube id="-O-Ec4lZJuE" title="Windows" >}}
   {{< /nav-item >}}
@@ -97,17 +116,64 @@ up to date with every new version, unfortunately!)
 
 Instructions for v8.x clients: (older clients may vary but same concept overall)
 
-  1. Open the NX client 
-      1. On Mac and Windows, click the NoMachine Icon
-      1. On Linux, the default location for the executable once installed is `/usr/NX/bin/nxplayer`, so you may want to add this to your path. Your desktop environment may enable you to add an icon to your desktop.
+{{< nav type="tabs" id="tabs-intstrs-os" >}}
+  {{< nav-item header="Windows" show="true" >}}
+  Open Windows PowerShell **as administrator**
+  
+  Type the following commands, replacing `<path to key>` with your the path to your private key.
+
+  {{< command prompt="PS C:\Users\User>" shell="powershell" >}}
+  Get-Service ssh-agent
+  Set-Service ssh-agent -StartupType Automatic
+  Start-Service ssh-agent
+  ssh-add <path to key>
+  (out)Enter passphrase for <path to key>: ## right-click to paste your passphrase, then press return
+  (out)Identity added: <path to key> ## comment from key echoed
+  {{< /command >}}
+
+  If you have installed NoMachine Enterprise Client in the default location, then you should be able to open the config file you need to edit in Notepad using this command (press return at the end):
+  (Make sure NoMachine Enterprise Client remains closed for this)
+
+  {{< command prompt="PS C:\Users\User>" shell="powershell" >}}
+  notepad C:\Users\User\.nx\config\player.cfg
+  {{< /command >}}
+
+  Towards the end of the file, you should see two lines like this:
+  ```xml
+  <option key="SSH client mode" value="library">
+  <option key="SSH Client" value="nxssh.exe">
+  ```
+
+  Change them as follows, then **save** and **close** the file:
+
+  ```xml
+  <option key="SSH client mode" value="native">
+  <option key="SSH Client" value="C:\Windows\System32\OpenSSH\ssh.exe">
+  ```
+
+  Now, open the application: either using the NoMachine icon on the desktop or by locating it using Windows Search.
+  Follow the next instructions which are the same for all platforms.
+
+  {{< /nav-item >}}
+  {{< nav-item header="Mac" >}}
+
+    Instructions for Mac here
+
+  {{< /nav-item >}}
+  {{< nav-item header="Linux">}}
+
+    Instructions for Linux here
+
+  {{< /nav-item >}}
+{{< /nav >}}
+
+<br>
+In NoMachine Enterprise Client:
+
   1. In the "Machines" view, select "Add"
-      1. You're now in the "Address" tab. Type a name for this connection profile, and the full hostname, e.g. `nx-login2.jasmin.ac.uk`. Set the Protocol to "SSH", which will change the port to 22.
+      1. You're now in the "Address" tab. Type a name for this connection profile, and the full hostname, e.g. `nx1.jasmin.ac.uk`. Set the Protocol to "SSH", which will change the port to 22.
   1. Go to the "Configuration" tab.
-      1. Choose **"Use key-based authentication with a key you provide"** , then click the Modify button to the right.
-      1. The default is "Use password authentication": **don't** use this.
-      1. Use the button to the right to navigate to your private key, or type the path in the box.
-      1. Your private key may be in a hidden directory e.g. `~/.ssh` (see {{<link "#cant-find-your-private-key">}}Troubleshooting{{</link>}})
-      1. It is recommended NOT to "import the private key to the connection file".
+      1. Choose **"Use key-based authentication with a SSH agent"** , then click the Modify button to the right.
       1. Make sure you tick the box "Forward Authentication" **IMPORTANT**
 
   1. Go back to the "Add connection" dialog
@@ -120,7 +186,7 @@ Instructions for v8.x clients: (older clients may vary but same concept overall)
 
 ## Connecting
 
-  1. Enter your JASMIN username and your SSH passphrase (it is NOT recommended to save your passphrase in the connection file). Click OK.
+  1. Enter your JASMIN username. You don't need to enter your passphrase, because you did this when you loaded the key into your SSH agent. Click OK.
   1. You may see a list of all the other desktop sessions currently in progress from other users. Ignore these and click "New desktop".
   2. Select "Create a new virtual desktop", then click "Create"
   3. **Note the instructions for how to reach the NX menu once in the session, and select screen settings from the list of icons: Recommended setting is "Fit to window" (leftmost icon)**
@@ -131,7 +197,7 @@ Instructions for v8.x clients: (older clients may vary but same concept overall)
   {{<image src="img/docs/graphical-linux-desktop-access-using-nx/file-chi3HNdvmk.jpg" caption="Activities menu" wrapper="col-5 mx-auto">}}
 
   8. To see the list of sci servers which is normally presented at login (which helps in selected a less-loaded sci server), type the following:  
-{{<command user="user" host="nx-login1">}}
+{{<command user="user" host="nx1">}}
 cat /etc/motd
 {{</command>}}
 
