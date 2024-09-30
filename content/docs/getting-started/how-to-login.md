@@ -1,7 +1,7 @@
 ---
 aliases: 
   - /article/187-login
-  - /docs/getting-started/logn
+  - /docs/getting-started/login
 description: How to login to JASMIN
 slug: how-to-login
 title: How to login
@@ -26,79 +26,12 @@ SSH "hops".
 The details of how to do this can vary depending on whether your local machine
 runs Windows, macOS or Linux.
 
-Whichever system you're using, you will need to use an appropriate tool to
-load your private key so that it can be presented at the time of logging in.
-
-**Linux and macOS users:** `ssh-agent` can be used (see instructions below).
-
-**Windows users:** we recommend the [MobAgent utility within MobaXterm]({{% ref "mobaxterm" %}}).
-MobaXterm is a Linux terminal emulator for Windows.
-
-`ssh-agent` is a utility that stores private keys and makes them available to
-other software that use the SSH protocol to connect to remote clients.
-
-There are two stages to loading your private key into `ssh-agent`: starting
-the agent and then loading your private key. Use the following commands to do
-this:
-
 {{<alert type="info">}}
-IMPORTANT: The box below is an example of what your command line prompt
-might look like.
-
-The username and computer name on the left indicates which machine you are
-currently on. Everything to the right of the dollar symbol '$' is the command
-which you are entering into the terminal.
-
-You don't need to type the '$' or anything before it!
-
-The rest of the documentation will use this format to show whether you should
-run the command on your local machine (`user@localhost`) or on JASMIN (`user@sci1`).
+See [presenting your ssh key]({{%ref "present-ssh-key" %}}) for recommended methods
+to present your SSH key, depending on what type of machine you are using.
 {{</alert>}}
 
-{{<command user="user" host="localhost">}}
-eval $(ssh-agent -s)
-ssh-add ~/.ssh/id_rsa_jasmin
-(out)Enter passphrase for /home/users/jpax/.ssh/id_rsa_jasmin:
-(out)Identity added: /home/users/jpax/.ssh/id_rsa_jasmin (/home/users/jpax/.ssh/id_rsa_jasmin)
-{{</command>}}
-
-When you run the `ssh-add` command you will be prompted to enter the
-passphrase that you specified when generating your SSH key pair. (If you use
-the c shell, replace the command `eval $(ssh-agent -s)` with `exec ssh-agent $SHELL`)
-
-You can test whether your key has been loaded by using the "-l" option to list
-the currently loaded keys in your agent:
-
-{{<command user="user" host="localhost">}}
-ssh-add -l
-(out)2048 SHA256:iqX3NkPCpschVdqPxVde/ujap2cM0mYaAYYedzBGPaI /Users/jpax/.ssh/id_rsa_jasmin (RSA)
-{{</command>}}
-
-This confirms that the key in `id_rsa_jasmin` has been loaded and is ready for
-use.
-
-**Notes:**
-
-- The `ssh-agent` session should persist until killed or until system shutdown, even if you close the terminal in which you set it up.
-- It is very important that you protect your private key with a strong passphrase, known only to you. Keys must not be shared between individuals.
-- If you get an error when attempting the above commands please see [login problems]({{% ref "login-problems" %}}).
-- Your public key will have been automatically propagated by the JASMIN accounts system to all the machines to which you have access rights, so should already be present in the correct place. Do not attempt to place the public key manually on any host within JASMIN: it will get automatically overwritten.
-
-Mac users (OS X Leopard onwards) can optionally benefit from linking the SSH
-key to Keychain, which securely stores the passphrase as well. This means that
-even after a reboot, your SSH key is always available in any terminal session
-automatically. You can do this by running `ssh-add` with `--apple-use-keychain`:
-
-{{<command user="user" host="localhost">}}
-ssh-add ~/.ssh/id_rsa_jasmin --apple-use-keychain
-{{</command>}}
-
-And then by adding the corresponding command with `--apple-load-keychain`  to your `.zshrc` file so
-that it loads it for every new terminal session:
-
-{{<command user="user" host="localhost">}}
-echo "ssh-add --apple-load-keychain" >> ~/.zshrc
-{{</command>}}
+Once you have set that up successfully, return here and continue below.
 
 ## The JASMIN login servers
 
@@ -113,18 +46,16 @@ described above, then you can login to a login server as follows (do this on you
 ssh -A <user_id>@<login_server>
 {{</command>}}
 
-For example, user "jpax" might login to the JASMIN login server with:
+For example, user `jpax` might login to a JASMIN login server with:
 
 {{<command user="user" host="localhost">}}
-ssh -A jpax@login1.jasmin.ac.uk
+ssh -A jpax@login-01.jasmin.ac.uk
 {{</command>}}
 
 The `-A` **argument is important** because it enables "agent-forwarding".
 This means that your the information about your SSH private key is forwarded
 to your remote session on the login server so that you can use it for further
-SSH connections. (Windows users can [enable X-forwarding in
-MobaXterm](https://mobaxterm.mobatek.net/documentation.html#4_1_6) saved
-sessions).
+SSH connections.
 
 ## Can't login?
 
@@ -135,7 +66,7 @@ sessions).
 When you first login you will see a message that provides some useful
 information (see Figure 1).
 
-{{<image src="img/docs/login/motd-labelled.png" caption="The login message shown on login1.jasmin.ac.uk.">}}
+{{<image src="img/docs/login/motd-labelled.png" caption="The login message shown on login-01.jasmin.ac.uk.">}}
 
 ## X-forwarding for graphical applications (within JASMIN only)
 
@@ -168,17 +99,16 @@ all within the JASMIN network.
 
 ## Where next?
 
-Having been through all the steps and logged in to JASMIN (well done!) you
-will be keen to do some real work. You could try the [general purpose
-scientific analysis servers]({{% ref "sci-servers" %}}) to get started. Use
+Having been through all the steps and made an initial connection to JASMIN (well done!) you
+will be keen to do some real work. You should try the [sci servers]({{% ref "sci-servers" %}}) to get started. Use
 the list presented on the login screen to select a `sci` server which is not
 under heavy usage.
 
 For example, from the JASMIN login server, you might choose to login to
-`sci1`:
+`sci-vm-01`:
 
-{{<command user="user" host="login1">}}
-ssh <user>@sci1.jasmin.ac.uk
+{{<command user="user" host="login-01">}}
+ssh <user>@sci-vm-01.jasmin.ac.uk
 {{</command>}}
 
 If you are asked for a password when trying to login to this second machine,
@@ -201,16 +131,18 @@ is no harm in including it.
 Remember to log out of the login server in addition to the sci server when you
 have finished your work, to get back to your own (local) machine:
 
-{{<command user="user" host="sci1">}}
+{{<command user="user" host="sci-vm-01">}}
 exit
 (out)logout
 {{</command>}}
-{{<command user="user" host="login1">}}
-(out)Connection to sci1.jasmin.ac.uk closed.
+{{<command user="user" host="login-01">}}
+(out)Connection to sci-vm-01.jasmin.ac.uk closed.
 exit
 (out)logout
 {{</command>}}
 {{<command user="user" host="localhost">}}
-(out)Connection to login1.jasmin.ac.uk closed.
-## back on your own/local machine now
+#
+(out)Connection to login-01.jasmin.ac.uk closed.
 {{</command>}}
+
+You are then back on your own machine.
