@@ -197,12 +197,12 @@ Instructions for v8.x clients: (older clients may vary but same concept overall)
   {{< /nav-item >}}
   {{< nav-item header="Mac" >}}
 
-  Instructions for Mac
+    Instructions for Mac here
 
   {{< /nav-item >}}
   {{< nav-item header="Linux">}}
 
-  Instructions for Linux
+    Instructions for Linux here
 
   {{< /nav-item >}}
 {{< /nav >}}
