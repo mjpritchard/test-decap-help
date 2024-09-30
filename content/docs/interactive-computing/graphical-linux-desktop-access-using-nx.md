@@ -118,8 +118,48 @@ Instructions for v8.x clients: (older clients may vary but same concept overall)
 
 {{< nav type="tabs" id="tabs-intstrs-os" >}}
   {{< nav-item header="Windows" show="true" >}}
+
   Open Windows PowerShell **as administrator**
-  
+
+  First, check that you have the "OpenSSH Client" optional feature installed:
+
+  **Either**:
+
+  type the following command to check if it's installed:
+
+  {{< command prompt="PS C:\Users\User>" shell="powershell" >}}
+  Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH.Client*'
+  {{< /command >}}
+
+  if it **IS** installed, you'll see this:
+
+  {{< command prompt="PS C:\Users\User>" shell="powershell" >}}
+  (out)Name  : OpenSSH.Client~~~~0.0.1.0
+  (out)State : Installed
+  {{< /command >}}
+
+  if it's **NOT** installed, you'll see
+
+  {{< command prompt="PS C:\Users\User>" shell="powershell" >}}
+  (out)Name  : OpenSSH.Client~~~~0.0.1.0
+  (out)State : NotPresent
+  {{< /command >}}
+
+  Note the name/version, then use this command to install it: (be patient, it can be very slow):
+
+  {{< command prompt="PS C:\Users\User>" shell="powershell" >}}
+  Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
+  {{< /command >}}
+
+  **Or**
+
+  Search for "optional features" in the Windows search bar, and look for "OpenSSH Client" in the list of 
+  already-installed features.
+
+  If it's not installed, tick the box to install it (make sure you've selected **Client**, not Server)
+  then press Next, then Add (be patient: it can be very slow). If you don't have permission
+  you'll need to speak to the team that administers your Windows machine, and ask for administrator permissions.
+
   Type the following commands, replacing `<path to key>` with your the path to your private key.
 
   {{< command prompt="PS C:\Users\User>" shell="powershell" >}}
@@ -157,12 +197,12 @@ Instructions for v8.x clients: (older clients may vary but same concept overall)
   {{< /nav-item >}}
   {{< nav-item header="Mac" >}}
 
-    Instructions for Mac here
+  Instructions for Mac
 
   {{< /nav-item >}}
   {{< nav-item header="Linux">}}
 
-    Instructions for Linux here
+  Instructions for Linux
 
   {{< /nav-item >}}
 {{< /nav >}}
