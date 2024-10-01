@@ -63,7 +63,7 @@ membership of the GWS) can access the data via a web browser or other HTTP-
 based tools. This can be done by creating a `public` directory in the top-
 level directory of the GWS, for example:
 
-{{<command user="user" host="sci1">}}
+{{<command user="user" host="sci-vm-01">}}
 cd /group_workspace/jasmin/foobaa/
 mkdir public 
 chmod -Rf 755 public
@@ -111,6 +111,11 @@ xfer[12].jasmin.ac.uk
 
 You can then create the ".htpasswd" file as follows (using the example of a
 Group Workspace called "foobaa"):
+
+{{<alert type="info">}}
+The `htpasswd` tool is going to be put on the new sci and xfer-vm servers shortly, 
+but please use it on the old ones (e.g sci1) for now.
+{{</alert>}}
 
 {{<command user="user" host="sci1">}}
 export GWS=/group_workspaces/jasmin/foobaa/

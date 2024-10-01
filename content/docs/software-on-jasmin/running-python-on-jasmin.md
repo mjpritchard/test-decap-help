@@ -11,12 +11,11 @@ tags:
 title: Running python on JASMIN
 ---
 
-On the JASMIN analysis machines and on Lotus, we currently support
-Python version 3.10 through [Jaspy]({{% ref "jaspy-envs" %}}).
+On the JASMIN [scientific analysis servers]({{% ref "sci-servers" %}}) and on the Lotus batch cluster, we currently support Python version 3.11 with [Jaspy]({{% ref "jaspy-envs" %}}).
 
-When you log in, the default version of Python is `2.7.5` which is the used by the
-operating system. You shoud now use a more modern version of Python as v2.x is now deprecated. 
-We recomment using the Jaspy environments. In this example, we
+When you first log in, the default version of Python is that provided by the
+operating system. This is different to the one you shoud use for your work,
+and we recommend using the [Jaspy environments]({{% ref "jaspy-envs" %}}). In this example, we
 activate the current Jaspy environment before running Python.
 
 {{<command user="user" host="sci1">}}
@@ -27,7 +26,7 @@ Check the Python version:
 
 {{<command user="user" host="sci1">}}
 python -V
-(out)Python 3.10.8
+(out)Python 3.11.9
 {{</command>}}
 
 Run a script:

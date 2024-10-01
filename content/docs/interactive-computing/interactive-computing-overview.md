@@ -31,5 +31,4 @@ cluster]({{% ref "slurm-scheduler-overview" %}}) for larger processing runs.
 General [data transfer servers]({{% ref "transfer-servers" %}}) are provided
 for simple or smaller data transfer tasks. For larger data flows or where high
 performance is required, more sophisticated tools and services are available.
-Please read the guides in consult the [data transfer
-category](http://help.ceda.ac.uk/category/217-data-transfer) for more details.
+See also [data transfer overview]({{% ref "data-transfer-overview" %}}).

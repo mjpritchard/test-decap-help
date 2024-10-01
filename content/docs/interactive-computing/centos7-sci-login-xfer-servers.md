@@ -6,7 +6,7 @@ weight: 110
 draft: true
 ---
 
-{{<alert type="info">}}
+{{<alert type="warn">}}
 This article was used to describe the new servers introduced as part of the RHEL -> CentOS7 migration in 2020/2021. It is now superceded.
 {{</alert>}}
 

@@ -145,8 +145,7 @@ The user interface consists of the following components:
 The commands are available on host `et.jasmin.ac.uk`. As a GWS manager you
 should have been granted login access to this machine using your JASMIN
 account, however if accessing the host from outside the RAL network you will
-need to use the login gateways `login1.jasmin.ac.uk`, `login2.jasmin.ac.uk`,
-`login3.jasmin.ac.uk` or `login4.jasmin.ac.uk`. Use the -A option or
+need to use one of the login gateways `login*.jasmin.ac.uk`. Use the -A option or
 equivalent for agent forwarding in ssh. STFC users may use the STFC VPN to
 connect to `et.jasmin.ac.uk` as if it were a local connection.
 
@@ -205,7 +204,7 @@ DIR  |  ABSOLUTE path to top of directory tree containing files to be stored
 Simple case, using a file input.list which contains paths of all the files to
 be included in the batch:
 
-{{<command user="user" host="et1">}}
+{{<command user="user" host="et">}}
 et_put.py -v -l et_put.log -f input.list -w myworkspace
 {{</command>}}
 
@@ -215,7 +214,7 @@ error that may be encountered is that a file already exists in the system
 errors and continue with the transfer. Note that this should not be used by
 default (we would rather know about errors and fix them!)
 
-{{<command user="user" host="et1">}}
+{{<command user="user" host="et">}}
 et_put.py -v -l et_put.log -f input.list -w myworkspace -c
 {{</command>}}
 
@@ -223,7 +222,7 @@ Alternative usage specifying a directory beneath which all files / directories
 will be included. In this case the directory must be the last parameter in the
 command:
 
-{{<command user="user" host="et1">}}
+{{<command user="user" host="et">}}
 et_put.py -v -l et_put.log -w myworkspace /group_workspaces/jasmin/myworkspace/mydir
 {{</command>}}
 
@@ -280,7 +279,7 @@ option | details
 
 #### Example usage
 
-{{<command user="user" host="et1">}}
+{{<command user="user" host="et">}}
 cd /group_workspaces/jasmin/myworkspace
 mkdir ettmp
 et_get.py -v -l et_get.log -w myworkspace -b 507 -r /group_workspaces/jasmin/myworkspace/ettmp
@@ -296,7 +295,7 @@ When the retrieval process has finished, you should satisfy yourself that it
 is correct (using your preferred method). When this is the case, you can move
 the data to the required location as shown below:
 
-{{<command user="user" host="et1">}}
+{{<command user="user" host="et">}}
 mv /group_workspaces/jasmin/myworkspace/ettmp/group_workspaces/jasmin/myworkspace/* /group_workspaces/jasmin/myworkspace
 {{</command>}}
 
@@ -327,7 +326,7 @@ option | details
 
 Example usage:
 
-{{<command user="user" host="et1">}}
+{{<command user="user" host="et">}}
 et_rm.py -v -b 507
 {{</command>}}
 
@@ -363,7 +362,7 @@ option | details
 
 Example usage:
 
-{{<command user="user" host="et1">}}
+{{<command user="user" host="et">}}
 et_ls.py -w myworkspace -H -L file -b 504
 {{</command>}}
 
@@ -371,7 +370,7 @@ Works with the workspace "myworkspace", selects display of headers in output,
 results at file level, filter by batchid 504 (i.e. shows the files present in
 ET in the given batch.)
 
-{{<command user="user" host="et1">}}
+{{<command user="user" host="et">}}
 et_ls.py -w myworkspace -H -L batch
 {{</command>}}
 

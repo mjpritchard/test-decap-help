@@ -4,6 +4,11 @@ description: IDL
 title: IDL
 ---
 
+{{<alert type="danger">}}
+There are currently some licensing issues which are affecting how IDL can be used on new
+Rocky 9 servers. Please check back to our [Rocky 9 migration page]({{% ref "rocky9-migration-2024" %}}) for the latest updates as they become available.
+{{</alert>}}
+
 This article explains how to:
 
 - use the IDL software on JASMIN 
@@ -25,7 +30,7 @@ do as follows:
 
 Check which versions are available:
 
-{{<command user="user" host="sci1">}}
+{{<command user="user" host="sci-vm-01">}}
 module avail idl
 (out)
 (out)-------------------------------------------- /apps/jasmin/modulefiles -----------------------------------------------
@@ -38,7 +43,7 @@ module avail idl
 The current default version is labelled with `(D)` and can be loaded using just `module load idl`. Alternatively, load a specific version by
 adding its version string to the command:
 
-{{<command user="user" host="sci1">}}
+{{<command user="user" host="sci-vm-01">}}
 module load idl ## or idl/8.5 to specify the version
 idl
 (out)IDL Version 8.5 (linux x86_64 m64). (c) 2015, Exelis Visual Information Solutions, Inc., a subsidiary of Harris Corporation.
@@ -56,7 +61,7 @@ exit
 
 For help on the `idl` module you can type the following :
 
-{{<command user="user" host="sci1">}}
+{{<command user="user" host="sci-vm-01">}}
 module help idl
 (out)----------- Module Specific Help for 'idl/8.5' --------------------
 (out)         Adds IDL 8.5 to your environment variables,  
@@ -163,7 +168,7 @@ save, /routines, file='foo.sav'
 
 4\. To run the program, using a run-time licence only:
 
-{{<command user="user" host="sci1">}}
+{{<command user="user" host="sci-vm-01">}}
 idl -rt=foo.sav 
 (out)IDL Version 8.5 (linux x86_64 m64). (c) 2015, Exelis Visual Information Solutions, Inc., a subsidiary of Harris Corporation.
 (out)Installation number: 406672.
@@ -213,7 +218,7 @@ argsarray = command_line_args(count = nparams)
 
 Call the code with -args flag:
 
-{{<command user="user" host="sci1">}}
+{{<command user="user" host="sci-vm-01">}}
 idl -rt=foo.sav -args 10 20 30
 {{</command>}}
 

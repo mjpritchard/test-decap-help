@@ -116,12 +116,16 @@ the "Activities" menu once you have logged in to your graphical desktop on one
 of the `nx-login*` servers (so no need to make an onward connection to a `sci`
 server).
 
-An alternative option is to using X11 Forwarding on your SSH connection:
+An alternative option is to using X11 Forwarding on your SSH connection. You 
+need to do this on one of the `nx*` servers (not the sci servers as previously)
+because this is where firefox is now installed:
 
     
 ```bash
-ssh -AY <user>@sciX.jasmin.ac.uk firefox
-```    
+ssh -X <user>@nx1.jasmin.ac.uk firefox
+```
+
+(try `-Y` if `-X` does not work for you).
 
 Once you have Firefox open, navigate to
 
