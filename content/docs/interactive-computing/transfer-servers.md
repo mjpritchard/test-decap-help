@@ -62,8 +62,8 @@ xterm
 
 Server  |  Purpose  |  Access requirements  |  Further information  
 ---|---|---|---  
-`hpxfer3.jasmin.ac.uk` | Physical machine for higher-performance data transfers | `jasmin-login` access role | Apply for additional access role access[here](https://accounts.jasmin.ac.uk/services/additional_services/hpxfer)
-`hpxfer4.jasmin.ac.uk` | Physical machine for higher-performance data transfers | `jasmin-login` access role | Apply for additional access role access[here](https://accounts.jasmin.ac.uk/services/additional_services/hpxfer)
+`hpxfer3.jasmin.ac.uk` | Physical machine for higher-performance data transfers | `jasmin-login` access role | 
+`hpxfer4.jasmin.ac.uk` | Physical machine for higher-performance data transfers | `jasmin-login` access role | 
 {.table .table-striped .w-auto}
 
 Notes:
@@ -71,7 +71,7 @@ Notes:
 - Tested with `sshftp` (GridFTP over SSH) from ARCHER2
 - Same applies re. **SSH client version**, see [login nodes]({{% ref "#login-nodes" %}})
 - The software collection `jasmin-xfer` available as per [xfer servers, above]({{% ref "#xfer-servers" %}})
-- The `hpxfer` role, and the supplying of client IP address(es) is no longer required.
+- The `hpxfer` role, and the supplying of client IP addresses is no longer required.
 
 ### Avoid getting locked out with SSH transfers
 
@@ -99,7 +99,7 @@ For users of the (now legacy), certificate-based GridFTP only (specifically, `gs
 
 Server  |  Purpose  |  Access requirements  |  Further information  
 ---|---|---|---  
-`gridftp1.jasmin.ac.uk` | Physical machine for legacy GridFTP transfers.  | No SSH login access.<br>Apply for additional access role access [here](https://accounts.jasmin.ac.uk/services/additional_services/hpxfer). | Old machine, continue using for now
+`gridftp1.jasmin.ac.uk` | Physical machine for legacy GridFTP transfers.  | No SSH login access.<br>Apply for additional access role [here](https://accounts.jasmin.ac.uk/services/additional_services/hpxfer). | Old machine, continue using for now
 `gridftp2.jasmin.ac.uk` | Physical machine for legacy GridFTP transfers. | No SSH login access.<br>`jasmin-login` access role | New machine, NOT YET AVAILABLE
 {.table .table-striped}
 

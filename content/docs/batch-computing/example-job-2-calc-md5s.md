@@ -33,7 +33,7 @@ This is a simple case because:
 
 Log in to the `sci` server (from a `login` server):
 
-{{<command user="user" host="login1">}}
+{{<command user="user" host="login-01">}}
 ssh -A <username>@sci1.jasmin.ac.uk
 {{</command>}}
 

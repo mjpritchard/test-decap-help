@@ -34,22 +34,24 @@ to schedule/automate tasks via the {{<link "https://www.globus.org/blog/schedule
 
 ## Scheduling download tasks using cron and LOTUS
 
-While the [cron server]({{% ref "using-cron" %}}) `cron.jasmin.ac.uk` is provided for scheduling
+While the [cron server]({{% ref "using-cron" %}}) `cron-01.jasmin.ac.uk` is provided for scheduling
 general tasks, **it should not be used for the work of executing those tasks itself, and not for transfer tasks.**
 
-### xfer3 - transfer machine with cron
+### xfer-vm-03 - transfer machine with cron
 
-The transfer server `xfer3.jasmin.ac.uk` is also provided with `cron`, and should be used where
+The transfer server `xfer-vm-03.jasmin.ac.uk` is also provided with `cron`, and should be used where
 a task is primarily a transfer rather than a processing task and needs the functionality
-of a transfer server. For access to `xfer3` you will need the
-{{<link "https://accounts.jasmin.ac.uk/services/additional_services/xfer-sp/">}}xfer-sp access role{{</link>}}.
+of a transfer server.
 Please refer to the above `cron` guidance for best practice advice.
+
+In particular, you **must** use [crontamer]({{% ref "using-cron/#crontamer" %}}) to manage your cron jobs.
 
 ### Invoking LOTUS from cron to carry out multiple download tasks
 
 Sometimes we need a task to be invoked from `cron` but executed where there
 are lots of nodes to parallelise the tasks (i.e. the LOTUS cluster). In this case, we DO need to use the `cron`
-server rather than `xfer3`, since we need to be able to talk to LOTUS (`xfer3` can't do that, as a transfer server).
+server rather than the cron-equipped transfer server `xfer-vm-03`, since we need to be able to submit jobs to LOTUS 
+(the transfer server can't do that).
 
 This will only work where the download can happen over HTTP(S), so depends on how the remote data is made available.
 
@@ -67,8 +69,8 @@ way alongside other users' jobs.
 ### 1\. Single download script
 
 The simple script below is used to download a single file from an external
-source via HTTP using `wget`. It initially uses the `test` partition (queue), but 
-once you had tested it, you would need to use a more appropriate queue.
+source via HTTP using `wget`. It initially uses the `test` partition (queue), but
+once you have tested it, you should use a more appropriate queue.
 
 ```bash
 #!/bin/bash 

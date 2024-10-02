@@ -147,7 +147,7 @@ the JASMIN Default Collection. (see `globus transfer --help` for details)
 
 Don't forget that to actually transfer data to/from JASMIN (e.g. step 8, above), you'll need another
 collection somewhere else. If you're transferring data from ARCHER2, you can use their
-{{<link "https://app.globus.org/file-manager/collections/3e90d018-0d05-461a-bbaf-aab605283d21/overview">}}ARCHER2 filesystems collection{{</link>}}
+{{<link "https://app.globus.org/file-manager/collections/3e90d018-0d05-461a-bbaf-aab605283d21/overview">}}ARCHER2 filesystems collection (id: `3e90d018-0d05-461a-bbaf-aab605283d21`){{</link>}}
 
 If not, unless your institution runs a Globus collection, you'll need to 
 install a small piece of software called [Globus Connect Personal]({{% ref "globus-connect-personal" %}})
