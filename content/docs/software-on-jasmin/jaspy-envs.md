@@ -204,15 +204,34 @@ environments on JASMIN then please use one of the following approaches:
 Jaspy environments can also be activated in a more traditional way using
 standard the standard conda approach, for example:
 
-{{<command user="user" host="sci1">}}
-## Not yet updated with latest version labels
-export PATH=/apps/jasmin/jaspy/miniconda_envs/jaspy3.7/m3-4.6.14//bin/conda:$PATH
+List the available environments:
+
+{{<command>}}
+conda info --envs
+(out)# conda environments:
+(out)#
+(out)base                  *  /apps/jasmin/jaspy/miniforge_envs/jaspy3.11/mf3-23.11.0-0
+(out)jaspy3.11-mf3-23.11.0-0-v20240302     /apps/jasmin/jaspy/miniforge_envs/jaspy3.11/mf3-23.11.0-0/envs/jaspy3.11-mf3-23.11.0-0-v20240302
+(out)jaspy3.11-mf3-23.11.0-0-v20240508     /apps/jasmin/jaspy/miniforge_envs/jaspy3.11/mf3-23.11.0-0/envs/jaspy3.11-mf3-23.11.0-0-v20240508
+(out)jaspy3.11-mf3-23.11.0-0-v20240815     /apps/jasmin/jaspy/miniforge_envs/jaspy3.11/mf3-23.11.0-0/envs/jaspy3.11-mf3-23.11.0-0-v20240815
+{{</command>}}
+
+Select one of them, e.g. `jaspy3.11-mf3-23.11.0-0-v20240302` and set up to activate it:
+
+{{<command>}}
+export PATH=/apps/jasmin/jaspy/miniforge_envs/jaspy3.11/mf3-23.11.0-0/envs/jaspy3.11-mf3-23.11.0-0-v20240302:$PATH
 source activate
-conda activate jaspy3.10-m3-4.9.2-r20210320
+conda activate jaspy3.11-mf3-23.11.0-0-v20240302
+{{</command>}}
+
+Prompt changes to:
+
+{{<command prompt="(jaspy3.11-mf3-23.11.0-0-v20240302) user@host:~$">}}
+#
 {{</command>}}
 
 This has the same result as the `module load` approach. The naming of the
-environment identifiers includes the "Miniconda" version used to generate the
+environment identifiers includes the "miniforge" version used to generate the
 environment. The `module load` approach is recommended as the standard method
 for activating Jaspy environments.
 
