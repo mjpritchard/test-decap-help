@@ -47,8 +47,8 @@ name |
 
 ### Notes
 
-- These only be used with Nomachine Enterprise Client as described below, other than for testing your connection, as this preserves system resources for their intended purpose.
-- Although the graphical desktop session which you create with this service should persist when you close the client (unless you specifically log out), you should not rely on this feature, so please don't report this as a problem: occasionally machines run out of resources and sessions get killed. Keeping sessions open consumes resources on the server even when you're not using the session, which may mean that other users can't use the service.
+- The `nx*` servers should only be used with Nomachine Enterprise Client as described below, other than for testing your connection, as this preserves system resources for their intended purpose.
+- Although the graphical desktop session should persist when you close the client (unless you specifically log out), you should not rely on this feature, so please don't report this as a problem: occasionally machines run out of resources and sessions get killed. Keeping sessions open consumes resources on the server even when you're not using the session, which may mean that other users can't use the service.
 
 ## Installing NoMachine Enterprise Client
 
@@ -70,7 +70,7 @@ your **own** (local) machine from a remote location: perhaps convenient
 but not what we are trying to enable for you here.
 
 The **NoMachine Enterprise Client** is a cut-down client to which connects to a remote
-server: in your case the server is at the JASMIN end, where the desktop session will exist.
+server: in your case, the server is at the JASMIN end, where the desktop session will exist.
 
 Remember to check for updates for the enterprise client to ensure you always
 have the latest stable version. You can configure the application to check for
@@ -79,30 +79,31 @@ Updates in the menu.
 
 ## Setting up your connection
 
-In theory, there are 2 methods of setting up a connection which should work with JASMIN:
-1. Creating a connection profile where you specify the location of your SSH private key
+There are 2 methods of using your SSH key which should work with JASMIN, these affect how you set up the connection:
+
+1. Specify the location of your SSH private key
 2. Using your key stored in a local ssh-agent
 
-Until recently, we recommended (1) but with the move to Rocky 9 Linux, there are some problems with this approach which
-are yet to be resolved by the software vendor.
-However we have described a method based on (2) which, once you've done the one-off configuration, should be be particularly useful if you're planning to use other applications like VSCode locally. Using this method, Windows users no longer need to create and use a reformatted version of the SSH private key.
+For a simple terminal connection to JASMIN, you would follow the instructions in [presenting your ssh key]({{% ref "present-ssh-key/#2-specifying-the-key-location-each-time" %}}), but the NoMachine client needs you to do it a slightly different way. The same principles apply however.
 
-### Overview
+Until recently, we recommended only method (1) but with the move to Rocky 9 Linux, there is a problem with this approach for Windows 11 users, yet to be resolved by the software vendor. So we have also described a method based on (2) which, although requiring careful (one-off) configuration, should also be useful if you're planning to use other applications, like VSCode to connect to JASMIN. Using this method, Windows users no longer need to create and use a reformatted version of the SSH private key.
 
-To set up an agent-based connection we need to:
+### Method 1: specifying key location
 
-- Load the SSH private key into a local ssh-agent
-- Edit the NX configuration file to use the native ssh client instead of the bundled one
-- Create a connection profile which makes uses the key from the ssh-agent
-- Connect with that profile to the nx server
-- Make an onward connection to a sci server, which is where you will actually do your work.
+{{<alert type="info">}}
+Windows users please note:
 
-The tabs below show a) videos and b) instructions for each of Windows, Mac and Linux, showing the setup process for each platform, once the software has been installed.
+- **Windows 10**: you may need to [create reformatted formatted version of your private key]({{% ref "#authentication-error-windows-users" %}})  to use with this method.
+- **Windows 11**: this method currently may not work for you. We are awaiting a fix from the software vendor for this.
+{{</alert>}}
+
+As you can see from the following videos, the instruction steps below are very
+similar for Windows / Mac / Linux, once NoMachine Enterprise Client is installed.
 Note that the interface may look slightly different depending on which version
 number of the client you have installed (we can't promise to keep the videos
 up to date with every new version, unfortunately!)
 
-{{< nav type="tabs" id="tabs-video-os" >}}
+{{< nav type="tabs" id="tabs-os" >}}
   {{< nav-item header="Windows" show="true" >}}
     {{< youtube id="-O-Ec4lZJuE" title="Windows" >}}
   {{< /nav-item >}}
@@ -114,130 +115,126 @@ up to date with every new version, unfortunately!)
   {{< /nav-item >}}
 {{< /nav >}}
 
-Instructions for v8.x clients: (older clients may vary but same concept overall)
+Follow these steps to set up using the "specifying key location" method:
 
-{{< nav type="tabs" id="tabs-intstrs-os" >}}
-  {{< nav-item header="Windows" show="true" >}}
-
-  Open Windows PowerShell **as administrator**
-
-  First, check that you have the "OpenSSH Client" optional feature installed:
-
-  **Either**:
-
-  type the following command to check if it's installed:
-
-  {{< command prompt="PS C:\Users\User>" shell="powershell" >}}
-  Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH.Client*'
-  {{< /command >}}
-
-  if it **IS** installed, you'll see this:
-
-  {{< command prompt="PS C:\Users\User>" shell="powershell" >}}
-  (out)Name  : OpenSSH.Client~~~~0.0.1.0
-  (out)State : Installed
-  {{< /command >}}
-
-  if it's **NOT** installed, you'll see
-
-  {{< command prompt="PS C:\Users\User>" shell="powershell" >}}
-  (out)Name  : OpenSSH.Client~~~~0.0.1.0
-  (out)State : NotPresent
-  {{< /command >}}
-
-  Note the name/version, then use this command to install it: (be patient, it can be very slow):
-
-  {{< command prompt="PS C:\Users\User>" shell="powershell" >}}
-  Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
-  {{< /command >}}
-
-  **Or**
-
-  Search for "optional features" in the Windows search bar, and look for "OpenSSH Client" in the list of 
-  already-installed features.
-
-  If it's not installed, tick the box to install it (make sure you've selected **Client**, not Server)
-  then press Next, then Add (be patient: it can be very slow). If you don't have permission
-  you'll need to speak to the team that administers your Windows machine, and ask for administrator permissions.
-
-  Type the following commands, replacing `<path to key>` with your the path to your private key.
-
-  {{< command prompt="PS C:\Users\User>" shell="powershell" >}}
-  Get-Service ssh-agent
-  Set-Service ssh-agent -StartupType Automatic
-  Start-Service ssh-agent
-  ssh-add <path to key>
-  (out)Enter passphrase for <path to key>: ## right-click to paste your passphrase, then press return
-  (out)Identity added: <path to key> ## comment from key echoed
-  {{< /command >}}
-
-  If you have installed NoMachine Enterprise Client in the default location, then you should be able to open the config file you need to edit in Notepad using this command (press return at the end):
-  (Make sure NoMachine Enterprise Client remains closed for this)
-
-  {{< command prompt="PS C:\Users\User>" shell="powershell" >}}
-  notepad C:\Users\User\.nx\config\player.cfg
-  {{< /command >}}
-
-  Towards the end of the file, you should see two lines like this:
-  ```xml
-  <option key="SSH client mode" value="library">
-  <option key="SSH Client" value="nxssh.exe">
-  ```
-
-  Change them as follows, then **save** and **close** the file:
-
-  ```xml
-  <option key="SSH client mode" value="native">
-  <option key="SSH Client" value="C:\Windows\System32\OpenSSH\ssh.exe">
-  ```
-
-  Now, open the application: either using the NoMachine icon on the desktop or by locating it using Windows Search.
-  Follow the next instructions which are the same for all platforms.
-
-  {{< /nav-item >}}
-  {{< nav-item header="Mac" >}}
-
-    Instructions for Mac here
-
-  {{< /nav-item >}}
-  {{< nav-item header="Linux">}}
-
-    Instructions for Linux here
-
-  {{< /nav-item >}}
-{{< /nav >}}
-
-<br>
-In NoMachine Enterprise Client:
-
+  1. Open the NX client
+      1. On Mac and Windows, click the NoMachine Icon
+      1. On Linux, the default location for the executable once installed is `/usr/NX/bin/nxplayer`, so you may want to add this to your `$PATH`. Your desktop environment may enable you to add an icon to your desktop.
   1. In the "Machines" view, select "Add"
       1. You're now in the "Address" tab. Type a name for this connection profile, and the full hostname, e.g. `nx1.jasmin.ac.uk`. Set the Protocol to "SSH", which will change the port to 22.
   1. Go to the "Configuration" tab.
-      1. Choose **"Use key-based authentication with a SSH agent"** , then click the Modify button to the right.
+      1. Choose **"Use key-based authentication with a key you provide"** , then click the Modify button to the right.
+      1. The default is "Use password authentication": **don't** use this.
+      1. Use the button to the right to navigate to your private key, or type the path in the box.
+      1. Your private key may be in a hidden directory e.g. `~/.ssh` (see {{<link "#cant-find-your-private-key">}}Troubleshooting{{</link>}})
+      1. For security, it is recommended NOT to "import the private key to the connection file" (store it in an **encrypted** password manager instead).
       1. Make sure you tick the box "Forward Authentication" **IMPORTANT**
 
   1. Go back to the "Add connection" dialog
       1. If all is correct, click "Add"
 
-  1. In the "Machines" list
-      1. You should see your new connection listed.
-      1. Either double-click it, or right-click and select "Start connection"
-      1. (Note that you can right-click to Edit/Remove/Rename or see {{<link "#troubleshooting">}}Troubleshooting{{</link>}} )
+  1. Go to [Connecting]({{% ref "#connecting" %}}), below, and continue from there.
+
+### Method 2: using an agent
+
+{{<alert type="info">}}
+
+This method should work for all platforms, but does involve careful configuration file and may need administrator permissions on your machine, so you may need help from your local IT support team.
+
+{{</alert>}}
+
+#### Steps: overview
+
+(please read the list of steps first, then follow each one below)
+
+To set up an agent-based connection we need to:
+
+- Load the SSH private key into a local ssh-agent
+  - for windows, this **must** be the Windows "OpenSSH Client" optional feature, not any other ssh-agent.
+- Edit the NX configuration file to use the native ssh client instead of the NoMachine one
+- Create a connection profile which makes uses the key from the ssh-agent
+
+#### Steps in detail
+
+1\. Load the SSH private key
+
+- Follow the [instructions for your platform here]({{% ref "present-ssh-key/#1-loading-your-key-into-an-agent" %}}), then return once you have successfully loaded your key.
+  - Note however that using MobaXterm's ssh-agent MobAgent **does not work** in this case: you must use the Windows OpenSSH client.
+
+2\. Edit the NX configuration file
+
+- Open the file `.nx/config/player.cfg` in a simple text editor (e.g. Windows Notepad). The `.nx` directory should be in your home directory.
+- Towards the end of the file, you should see two lines like this:
+
+  ```xml
+  <option key="SSH client mode" value="library">
+  <option key="SSH Client" value="nxssh.exe">
+  ```
+
+  Change them as follows:
+  
+  (the changes are slightly different for each platform)
+{{< nav type="tabs" id="tabs-os2" >}}
+  {{< nav-item header="Windows" show="true" >}}
+```xml
+  <option key="SSH client mode" value="native" />
+  <option key="SSH Client" value="C:\Windows\System32\OpenSSH\ssh.exe" />
+```
+  {{< /nav-item >}}
+  {{< nav-item header="Mac" >}}
+```xml
+  <option key="SSH client mode" value="native" />
+  <option key="SSH Client" value="/usr/bin/ssh" />
+```
+  {{< /nav-item >}}
+  {{< nav-item header="Linux">}}
+```xml
+  <option key="SSH client mode" value="native" />
+  <option key="SSH Client" value="/usr/bin/ssh" />
+```
+  {{< /nav-item >}}
+{{< /nav >}}
+
+  **Save** and **close** the file before opening NoMachine Enterprise Client.
+
+3\. Create a connection profile which makes uses the key from the ssh-agent
+
+- In the "Machines" view, select "Add"
+- You're now in the "Address" tab. Type a name for this connection profile, and the full hostname, e.g. `nx1.jasmin.ac.uk`. Set the Protocol to "SSH", which will change the port to 22.
+- Go to the "Configuration" tab.
+- Choose **"Use key-based authentication with a SSH agent"** , then click the Modify button to the right.
+- Make sure you tick the box "Forward Authentication" **IMPORTANT**
+- Go back to the "Add connection" dialog
+- If all is correct, click "Add"
+
+4\. Go to [Connecting]({{% ref "#connecting" %}}), below, and continue from there.
 
 ## Connecting
 
-  1. Enter your JASMIN username. You don't need to enter your passphrase, because you did this when you loaded the key into your SSH agent. Click OK.
-  1. You may see a list of all the other desktop sessions currently in progress from other users. Ignore these and click "New desktop".
-  2. Select "Create a new virtual desktop", then click "Create"
-  3. **Note the instructions for how to reach the NX menu once in the session, and select screen settings from the list of icons: Recommended setting is "Fit to window" (leftmost icon)**
-  4. Click OK on this and subsequent screens giving information about the NX and desktop environments.
-  5. You should be presented with a linux deskop on the server to which you connected, e.g. `nx-login2.jasmin.ac.uk`
-  6. Click "Activities" (top left menu on desktop) {{<image src="img/docs/graphical-linux-desktop-access-using-nx/file-XXVsbhxQi8.jpg" caption="Activities menu" wrapper="col-5 mx-auto">}}
-  7. Open a terminal window by clicking the "Terminal" icon in the menu down the left hand side.  
+  When it comes to actually connecting using the profile you've made, the 2 methods are very simiar: there's a small difference, depending which method you've used.
+
+  In the "Machines" list: 
+
+  - You should see your new connection listed: either double-click it, or right-click and select "Start connection"
+    - (Note that you can right-click to Edit/Remove/Rename or see {{<link "#troubleshooting">}}Troubleshooting{{</link>}} )
+
+  - Complete the boxes as requested:
+
+    - If you've used method **(1. specifying the key location)**, you'll be asked for your username and the passphrase for your key. It is NOT recommended to save your passphrase in the connection file.
+    - If you've used method **(2. using an ssh-agent)**, you'll just be asked for your username.
+    - Click OK
+
+  - You may see a list of all the other desktop sessions currently in progress from other users. Ignore these and click "New desktop".
+  - Select "Create a new virtual desktop", then click "Create"
+  - **Note the instructions for how to reach the NX menu once in the session, and select screen settings from the list of icons: Recommended setting is "Fit to window" (leftmost icon)**
+  - Click OK on this and subsequent screens giving information about the NX and desktop environments.
+  - You should be presented with a linux deskop on the server to which you connected, e.g. `nx-login2.jasmin.ac.uk`
+  - Click "Activities" (top left menu on desktop) {{<image src="img/docs/graphical-linux-desktop-access-using-nx/file-XXVsbhxQi8.jpg" caption="Activities menu" wrapper="col-5 mx-auto">}}
+  - Open a terminal window by clicking the "Terminal" icon in the menu down the left hand side.  
   {{<image src="img/docs/graphical-linux-desktop-access-using-nx/file-chi3HNdvmk.jpg" caption="Activities menu" wrapper="col-5 mx-auto">}}
 
-  8. To see the list of sci servers which is normally presented at login (which helps in selected a less-loaded sci server), type the following:  
-{{<command user="user" host="nx1">}}
+  - To see the list of sci servers which is normally presented at login (which helps in selected a less-loaded sci server), type the following:  
+{{<command user="user" host="nx-login1">}}
 cat /etc/motd
 {{</command>}}
 
@@ -246,62 +243,44 @@ cat /etc/motd
 Once you have set up the environment to your liking, you can
 
   - use the web browser on that system to access web-based resources available only within JASMIN
-  - make SSH connections to other systems within JASMIN such as `sci1.jasmin.ac.uk`
+  - make SSH connections to other systems within JASMIN such as `sci-vm-01.jasmin.ac.uk`
   - use graphical applications on other systems within JASMIN and send the output bask to this desktop
 
-  1. Click "Activities" (top left menu on desktop) 
+  Here's how:
+
+  - Click "Activities" (top left menu on desktop) 
 
 {{<image src="img/docs/graphical-linux-desktop-access-using-nx/file-XXVsbhxQi8.jpg" caption="click Activities"  wrapper="col-5 mx-auto">}}
 
-  2. Click the Firefox icon in the side bar menu to start the Firefox web browser. Use this to access web-based resources only available within JASMIN. Do not use for personal web browsing. To toggle Firefox between taking up the whole of your desktop, and running in a smaller, sizeable window, double-click its title bar (this applies to any windowed application on the desktop).
+  - Click the Firefox icon in the side bar menu to start the Firefox web browser. Use this to access web-based resources only available within JASMIN. Do not use for personal web browsing. To toggle Firefox between taking up the whole of your desktop, and running in a smaller, sizeable window, double-click its title bar (this applies to any windowed application on the desktop).
 
 {{<image src="img/docs/graphical-linux-desktop-access-using-nx/file-zykeLBbqgb.jpg" caption="open Firefox browser" wrapper="col-5 mx-auto">}}
 
-  3. Click the Terminal icon 
+  - Click the Terminal icon 
 
 {{<image src="img/docs/graphical-linux-desktop-access-using-nx/file-RMJ4FzLkUz.jpg" caption="open Terminal application"  wrapper="col-5 mx-auto">}}
 
-  4. Try an onward SSH connection, for example to a SCI machine. 
+  - Try an onward SSH connection, for example to a SCI machine. 
     
-{{<command user="user" host="nx-login2">}}
-ssh -AX <user>@sci1.jasmin.ac.uk
+{{<command user="user" host="nx1">}}
+ssh -AX <user>@sci-vm-01.jasmin.ac.uk
 {{</command>}}
 
 (where `<user>` should be replaced by your JASMIN username).
 
-  5. Work interactively on a SCI machine as you would normally, but any graphical tools/applications should now work efficiently. 
+  - Work interactively on a SCI machine as you would normally, but any graphical tools/applications should now work efficiently. 
 
-  6. (Example of a graphical application on another machine within JASMIN). Try opening a simple graphical application on `sci1.jasmin.ac.uk` with the command:
+  - (Example of a graphical application on another machine within JASMIN). Try opening a simple graphical application on `sci-vm-01.jasmin.ac.uk` with the command:
     
-{{<command user="user" host="nx-login2">}}
-xclock
+{{<command user="user" host="sci-vm-01">}}
+xfce4-terminal
 {{</command>}}
-(you may find `-AY` works if `-AX` does not).
+(you may find `-AY` works if `-AX` does not). This opens a tabbed terminal on the sci server, which you can then close with "exit" or in the menu with "File / Close Window".
 
-  You may also get a few warning messages like this, which can safely be
-  ignored:
+  You may also get a few warning messages, which can safely be ignored.
 
-  ```
-  Warning: Missing charsets in String to FontSet conversion
-  ```
-
-  Cancel the graphical application (xclock) with `CTRL + c`, or use the
-  application's own exit command, if it has one.
-
-  With other graphical applications opened on other servers within JASMIN, you
-  may get warning/error messages like these as they start up: these can safely
-  be ignored. Sometimes an application window can take a few seconds to appear,
-  but should work normally after that.
-
-```
-Failed to open connection to "session" message bus: /usr/bin/dbus-launch terminated abnormally without any error message
-Running without a11y support!
-Gtk-Message: 08:58:38.169: Failed to load module "pk-gtk-module"
-Gtk-Message: 08:58:38.171: Failed to load module "canberra-gtk-module"<br>
-```
-
-  7. To log out of the virtual desktop, locate the menu top-right, and select your name, then "Log Out" 
-    1. Don't worry if it appears that you're able to power off the machine with other users logged in: you would need administratrive privileges for this (which you don't have) so you can't do this accidentally. Please don't try, however!
+  - To log out of the virtual desktop, locate the menu top-right, and select your name, then "Log Out" 
+    - Don't worry if it appears that you're able to power off the machine with other users logged in: you would need administratrive privileges for this (which you don't have) so you can't do this accidentally. Please don't try, however!
 
 ### Notes
 
