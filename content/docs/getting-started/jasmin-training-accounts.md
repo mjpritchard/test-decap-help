@@ -94,8 +94,8 @@ Please ensure you have given the following information to attendees:
 1. Before the event, familiarise yourself with the [JASMIN help documentation site]({{% ref "/" %}}). This should answer most questions you may have.
 
 If you are attending a 3rd-party-led event, we suggest taking a look at the
-[other JASMIN workshop training materials](https://github.com/cedadev/jasmin-
-workshop) \- especially if you are a new user. Your event organiser should
+[other JASMIN workshop training materials](https://github.com/cedadev/jasmin-workshop)
+\- especially if you are a new user. Your event organiser should
 provide full details of how the training account should be used for that
 particular event - please contact them if you have any issues.
 

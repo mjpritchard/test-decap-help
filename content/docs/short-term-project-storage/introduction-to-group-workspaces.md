@@ -48,7 +48,7 @@ GWSs are available on:
 - All nodes in the LOTUS and ORCHID clusters
 - Some application-specific servers (by arrangement)
 
-They are NOT available on `login` or `nx-login` servers.
+They are NOT available on `login` or `nx` servers.
 
 ### Requesting access to a GWS
 

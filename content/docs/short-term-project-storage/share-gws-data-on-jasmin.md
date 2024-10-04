@@ -49,7 +49,7 @@ sub-directory as well. Please consult the `chmod` man pages (by typing `man
 chmod`) for details.
 
 NOTE: if you have a `public` directory then it needs `755` access if you want it
-to be visible via the webserver on the `gws-access.jasmin.ac.uk` server. So
+to be visible via the webserver via the `gws-access.jasmin.ac.uk` service. So
 you may wish to re-add execute permission on that directory, e.g.:
 
 {{<command>}}

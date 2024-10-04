@@ -59,8 +59,8 @@ particular data transfer needs, and about the various
 
 To achieve better transfer rates, for large transfers or where speed and reliability are important, you are recommended to:
 
-- use the {{<link "globus-transfers-with-jasmin">}}Globus data transfer service{{</link>}} (recommended), or
-- use the high-performance data transfer servers ({{<link "hpxfer-access-role">}}hpxfer access role required{{</link>}})
+- use the {{<link "globus-transfers-with-jasmin">}}Globus data transfer service{{</link>}} (recommended as the best method), or
+- use the high-performance data transfer servers (physical equivalents of the transfer VMs, located in a special network zone)
 - use other parallel-capable transfer tools such as bbcp, lftp (parallel-capable ftp client), or gridftp: see {{<link "data-transfer-tools">}}Data transfer tools{{</link>}}
 
 Transfer rates depend on many factors, so try to consider all of these:

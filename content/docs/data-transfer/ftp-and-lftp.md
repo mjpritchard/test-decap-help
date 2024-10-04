@@ -48,7 +48,8 @@ with that account.
 
 ## Basic client usage: ftp
 
-The `ftp` client is available on the transfer servers `xfer[123].jasmin.ac.uk`
+The `ftp` client is available on the transfer servers `xfer*.jasmin.ac.uk`
+and high-performance transfer servers `hpxfer*.jasmin.ac.uk`.
 
 Example 1: Downloading a file to a location on JASMIN from a remote FTP
 server.
@@ -58,7 +59,7 @@ this case, using anonymous FTP), you use FTP commands to interact with the
 remote server and locate and download the data you require. The session is
 terminated with `bye`.
 
-{{<command user="user" host="xfer1">}}
+{{<command user="user" host="xfer-vm-01">}}
 ftp someserver.somesite.ac.uk
 (out)Trying 123.456.78.123...
 (out)Connected to someserver.somesite.ac.uk (123.456.78.123).
@@ -100,7 +101,7 @@ Full details of commands available within an interactive session with the
 The alternative client `lftp` is less verbose, but the basic workflow is the
 same.
 
-{{<command user="user" host="xfer1">}}
+{{<command user="user" host="xfer-vm-01">}}
 lftp someserver.somesite.ac.uk
 {{</command>}}
 
@@ -126,11 +127,11 @@ enter lftp-specific commands like `mirror`, in this case with `-P 4` as the opti
 to use 4 `sftp` processes in parallel. Try other values but please consider
 other users so a suggested limit is 16.
 
-{{<command user="user" host="xfer1">}}
+{{<command user="user" host="xfer-vm-01">}}
 lftp sftp://username@someserver.somesite.ac.uk
 Password: (enter password when prompted)
 {{</command>}}
-{{<command prompt="lftp username@ftp.cnag.cat:~>">}}
+{{<command prompt="lftp username@someserver.somesite.ac.uk:~>">}}
 mirror -P 4 sourcedata
 bye
 {{</command>}}

@@ -69,7 +69,7 @@ processes with “ps”. The same file “ISIMIPnc_to_SDGVMtxt.py” is being ed
 in 2 separate “vim” editors. In this case, the system team was unable to kill
 the processes on behalf of the user, so the only solution was to reboot sci1.
  
-{{<command user="user" host="sci1">}}
+{{<command user="user" host="sci-vm-01">}}
 lsof /gws/nopw/j04/gwsnnn/
 (out)COMMAND   PID     USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
 (out)vim     20943 fbloggs  cwd    DIR   0,43        0 2450 /gws/nopw/j04/gwsnnn/fbloggs/sdgvm/ISIMIP

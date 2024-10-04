@@ -91,9 +91,9 @@ JASMIN provides access to XFC via a command-line client: `xfc`
 
 Once [installed]({{% ref "install-xfc-client" %}}) into your `$HOME`
 directory (using one of the `sci` servers), the `xfc` client can be run on
-either the `sci` (`sci[1-8].jasmin.ac.uk`) or `xfer` (`xfer[12].jasmin.ac.uk`)
+either the `sci` (`sci*.jasmin.ac.uk`) or `xfer` (`xfer*.jasmin.ac.uk`)
 servers, but should NOT be run on the high-performance transfer servers
-`hpxfer[12].jasmin.ac.uk`.
+`hpxfer*.jasmin.ac.uk`.
 
 The client is used only for interacting with the service, but is not needed
 for accessing the storage it provides. The storage provided is mounted in most
@@ -111,7 +111,7 @@ scheduled deletions etc) of a user's XFC storage volume:
   1. To see all the available options: `xfc -h`
   2. To initialise your user area: `xfc init`
 
-{{<command user="user" host="sci1">}}
+{{<command user="user" host="sci-vm-01">}}
 xfc init
 (out)** SUCCESS ** - user initiliazed with:
 (out)username: username  
@@ -128,7 +128,7 @@ POSIX directory and so any POSIX commands can be used on it.
 
   3. To get the user area path again: 
   
-{{<command user="user" host="sci1">}}
+{{<command user="user" host="sci-vm-01">}}
 xfc path
 (out)/work/xfc/vol1/user_cache/username
 {{</command>}}
@@ -136,28 +136,28 @@ xfc path
 
   4. To set the user email for notifications: 
   
-{{<command user="user" host="sci1">}}
+{{<command user="user" host="sci-vm-01">}}
 xfc email --email=user.name@stfc.ac.uk
 (out)** SUCCESS ** - user email updated to: user.name@stfc.ac.uk
 {{</command>}}
 
-  5. To query the email set for the user: `xfc email `
+  5. To query the email set for the user: `xfc email`
   
-{{<command user="user" host="sci1">}}
+{{<command user="user" host="sci-vm-01">}}
 xfc email
 (out)user.name@stfc.ac.uk
 {{</command>}}
 
   6. To switch deletion notifications on / off:
 
-{{<command user="user" host="sci1">}}
+{{<command user="user" host="sci-vm-01">}}
 xfc notify
 (out)** SUCCESS ** - user notifcations updated to: on
 {{</command>}}
 
   7. To see remaining quota:
 
-{{<command user="user" host="sci1">}}
+{{<command user="user" host="sci-vm-01">}}
 xfc quota
 (out)------------------------
 (out)Quota for user: username 
@@ -175,14 +175,14 @@ xfc quota
 
   8. To see which files are scheduled for deletion:
 
-{{<command user="user" host="sci1">}}
+{{<command user="user" host="sci-vm-01">}}
 xfc schedule
 (out)No files scheduled for deletion
 {{</command>}}
 
   9. To list the files in your user area:
 
-{{<command user="user" host="sci1">}}
+{{<command user="user" host="sci-vm-01">}}
 xfc list
 (out)user_cache/username/historical/.ftpaccess 
 (out)user_cache/username/historical/00README_catalogue_and_licence.txt 
@@ -192,7 +192,7 @@ xfc list
 Pattern matching can be used to search for a file. This is just a simple
 substring search, e.g. `r1i1p1_19500101-19541231.nc`
 
-{{<command user="user" host="sci1">}}
+{{<command user="user" host="sci-vm-01">}}
 xfc list -m r1i1p1_19500101-19541231.nc
 (out)user_cache/username/historical/day/atmos/day/r1i1p1/v20120907/va/va_day_CMCC-CESM_historical_r1i1p1_19500101-19541231.nc
 (out)user_cache/username/historical/day/atmos/day/r1i1p1/v20120907/rsds/rsds_day_CMCC-CESM_historical_r1i1p1_19500101-19541231.nc
@@ -200,15 +200,15 @@ xfc list -m r1i1p1_19500101-19541231.nc
 {{</command>}}
 
 File names are given relative to the `user_cache/` directory. To list the
-full file path use the `-f ` list option:
+full file path use the `-f` list option:
 
-{{<command user="user" host="sci1">}}
+{{<command user="user" host="sci-vm-01">}}
 xfc list -f
 {{</command>}}
 
   10. To predict when the files will be deleted, if no other files are added to the user area, and none of the current files are removed: `xfc predict`
 
-{{<command user="user" host="sci1">}}
+{{<command user="user" host="sci-vm-01">}}
 xfc predict
 (out)Quota is predicted to be exceeded on 21 Aug 2019 14:58 by 252.1 GB
 (out)Files predicted to be deleted  
@@ -224,7 +224,7 @@ XFC.
 
 ### initial setup
 
-{{<command user="user" host="sci1">}}
+{{<command user="user" host="sci-vm-01">}}
 xfc init
 xfc path
 xfc email --email=user.name@email.com
@@ -233,8 +233,8 @@ xfc notify
 
 ### query the quota
 
-{{<command user="user" host="sci1">}}
-xfc quota 
-xfc predict 
+{{<command user="user" host="sci-vm-01">}}
+xfc quota
+xfc predict
 xfc schedule
 {{</command>}}

@@ -93,7 +93,7 @@ which you are entering into the terminal.
 You don't need to type the '$' or anything before it!
 
 The rest of the documentation will use this format to show whether you should
-run the command on your local machine (`user@localhost`) or on JASMIN (`user@sci1`).
+run the command on your local machine (`user@localhost`) or on JASMIN (`user@sci-vm-01`).
 {{</alert>}}
 
 {{<command user="user" host="mobaxterm">}}
@@ -110,7 +110,7 @@ If you don't see your key listed in output similar to the above, please try
 again: perhaps you entered the wrong passphrase? But you will need to succeed
 in loading your key before you can connect to JASMIN.
 
-## Logging in to JASMIN using key stored in MobAgent (recommended)
+## Logging in to JASMIN using key stored in MobAgent
 
 As shown in the video above, once you have set up MobAgent you can connect to
 JASMIN by creating a new terminal window. Click the `Start local terminal`
@@ -118,10 +118,13 @@ button.
 Next, try connecting to the login server:
 
 {{<command user="user" host="mobaxterm">}}
-ssh -A <user_id>@login2.jasmin.ac.uk
+ssh -A <user_id>@login-01.jasmin.ac.uk
 {{</command>}}
 
-(replace `<user_id>` with your own JASMIN username)
+Notes:
+
+- replace `<user_id>` with your own JASMIN username)
+- check the list of available [login servers]({{% ref "login-servers" %}}): you don't have to use the one above!
 
 ## Logging in to JASMIN without storing your key in MobAgent
 
@@ -148,7 +151,7 @@ You will need to do this each time you open a new terminal session. To connect
 to JASMIN:
 
 {{<command user="user" host="mobaxterm">}}
-ssh -A <user_id>@login2.jasmin.ac.uk
+ssh -A <user_id>@login-01.jasmin.ac.uk
 {{</command>}}
 
 Again, you must replace `<user_id>` with your JASMIN username.

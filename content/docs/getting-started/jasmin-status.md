@@ -9,7 +9,7 @@ This article lists sources of information about the status of JASMIN services.
 
 ## CEDA Status page
 
-The {{< link ceda_status >}}CEDA Status page{{< /link >}} is updated regularly to announce or track current and upcoming incidents which may affect JASMIN and CEDA services. Please check for known incidents or announced shceduled maintenance before contacting the helpdesk.
+The {{< link "ceda_status" >}}CEDA Status page{{< /link >}} is updated regularly to announce or track current and upcoming incidents which may affect JASMIN and CEDA services. Please check for known incidents or announced shceduled maintenance before contacting the helpdesk.
 
 ## JASMIN dashboard
 

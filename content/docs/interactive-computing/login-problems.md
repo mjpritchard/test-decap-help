@@ -158,8 +158,8 @@ users.**
 The [`sci` servers]({{% ref "sci-servers"%}}) and [`xfer` servers]({{% ref "transfer-servers" %}})
 should be available to all with `jasmin-login` access
 (see above). However, some other machines are restricted to particular project
-participants and require special permission to use. For example, the high-
-performance transfer servers `hpxfer[34].jasmin.ac.uk` requires the
+participants and require special permission to use. For example, **old** the high-
+performance transfer servers `hpxfer[12].jasmin.ac.uk` require the
 {{<link "../data-transfer/hpxfer-access-role">}}hpxfer access role{{</link>}}, which can be applied for at the JASMIN accounts portal,
 as can most roles currently in use.
 

@@ -26,11 +26,16 @@ sensible location such as ~/.ssh/jasmin_id_rsa.
 
 ## Test login to the JASMIN login node
 
+{{< alert type="info" >}}
+Please read the notes in [login servers]({{% ref "login-servers/#recent-changes" %}}) about the need to
+keep your SSH client up to date in order to be able to connect securely to JASMIN.
+{{< /alert >}}
+
 **Note:** that the `-A` in the first ssh command is mandatory to enable access
 to the client VM, the `-X` enables X11 forwarding and is optional.
 
 {{<command user="localuser" host="localhost">}}
-ssh -A -X <userid>@login1.jasmin.ac.uk
+ssh -A -X <userid>@login-01.jasmin.ac.uk
 {{</command>}}
 
 ## 3\. Test login to the MASS client host
@@ -45,7 +50,7 @@ access hasn't been approved yet, email the Met Office Service Manager
 approval has been granted. Allow a couple of days for this process to happen
 after submitting your request for access to the VM.
 
-{{<command user="user" host="login1">}}
+{{<command user="user" host="login-01">}}
 ssh -X <userid>@mass-cli.jasmin.ac.uk
 {{</command>}}
 {{<command user="user" host="mass-cli">}}
@@ -53,7 +58,7 @@ echo "Hello World"
 (out)Hello World
 exit
 {{</command>}}
-{{<command user="user" host="login1">}}
+{{<command user="user" host="login-01">}}
 exit
 {{</command>}}
 {{<command user="localuser" host="localhost">}}
@@ -76,9 +81,9 @@ by the running of moo install, so this process can be run only once.
 
 {{<command user="user" host="localhost">}}
 scp moose <userid>@xfer1.jasmin.ac.uk:~/moose
-ssh -A -X <userid>@login1.jasmin.ac.uk
+ssh -A -X <userid>@login-01.jasmin.ac.uk
 {{</command>}}
-{{<command user="user" host="login1">}}
+{{<command user="user" host="login-01">}}
 ssh -X <userid>@mass-cli.jasmin.ac.uk
 {{</command>}}
 {{<command user="user" host="mass-cli">}}

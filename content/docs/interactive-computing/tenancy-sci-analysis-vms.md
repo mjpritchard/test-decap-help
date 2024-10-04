@@ -5,7 +5,13 @@ title: Tenancy Sci Analysis VMs
 weight: 70
 ---
 
-This document explains how to access a tenancy-based sci machine. These are 
+{{<alert type="danger">}}
+**Deprecated feature** documented here to provide information about how to access existing instances.
+Tenancy sci analysis machines are no longer part of the JASMIN Cloud service, as most use cases can be
+served by using the shared [sci servers]({{% ref "sci-servers" %}}).
+{{</alert>}}
+
+This document explains how to access a tenancy-based sci machine. These are
 normally provisioned by an admin/manager representing a particular community/institution.
 
 Check which institutions/group you belong to:

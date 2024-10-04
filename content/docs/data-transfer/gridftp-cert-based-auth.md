@@ -5,6 +5,10 @@ slug: gridftp-cert-based-auth
 title: 'GridFTP (certificate-based authentication)'
 ---
 
+{{<alert type="danger">}}
+Not yet updated to work with with new Rocky9 servers, so please continue using CentOS7 equivalents for now, as documented below.
+{{</alert>}}
+
 This article describes how to transfer data using gridftp with certificate-
 based authentication.
 
@@ -71,7 +75,7 @@ Bootstrap trust between your own machine and the JASMIN gridftp server: (First t
 {{</command>}}
 
 Obtain a credential, to be written to an output file `credfile` using your
-JAMSIN Accounts Portal username USERNAME:
+JASMIN Accounts Portal username USERNAME:
 
 {{<command user="user" host="xfer1">}}
 ./onlineca-get-cert-wget.sh -U https://slcs.jasmin.ac.uk/certificate/ -l USERNAME -o ./cred.jasmin

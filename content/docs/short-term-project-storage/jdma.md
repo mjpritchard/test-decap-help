@@ -52,7 +52,7 @@ The JDMA client github is at:
 If you are working on JASMIN and you wish to use the JDMA client, then you can
 install it as follows on a `sci` server:
 
-{{<command user="user" host="sci1">}}
+{{<command user="user" host="sci-vm-01">}}
 module load jaspy
 python -m venv ~/venvs/jdma-venv
 source ~/venvs/jdma-venv/bin/activate
@@ -73,7 +73,7 @@ session.
   3. Check the version of the JDMA client:
 
   The correct version is ``1.0.1``
-  {{<command user="user" host="sci1">}}
+  {{<command user="user" host="sci-vm-01">}}
   source ~/jdma_venv/bin/activate
   pip install --upgrade git+https://github.com/cedadev/jdma_client
   pip list | grep jdma-client

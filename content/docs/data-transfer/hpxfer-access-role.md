@@ -4,6 +4,14 @@ description: 'Access to certain high-performance data transfer methods'
 title: 'hpxfer access role'
 ---
 
+{{<alert type="danger">}}
+This article is deprecated, since the `hpxfer` is no longer needed for
+the new Rocky 9 services introduced Autumn 2024.
+
+However, until the older machines (`hpxfer[12]` & `gridftp1`) are taken out of service,
+the role is still required for access to those.
+{{</alert>}}
+
 This article explains about access to high-performance data transfer services.
 
 ## Applying for access

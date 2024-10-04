@@ -16,7 +16,7 @@ It is intended for GWS Managers and provides details about how to customise the 
 There are two different scans of the Group Workspaces (GWSs).
 
 - A daily scan which checks for how full the GWS is, and will email the GWS manager if it is over the default threshold of 83%, or a defined threshold in the GWS config file (see below).
-- An approximately fortnightly check of the contents of all GWSs. 
+- An approximately fortnightly check of the contents of all GWSs.
 
 As a GWS Manager you will receive e-mails summarising the usage and contents
 of the GWS. By default this is a simple volume level summary of the GWS.
@@ -73,7 +73,7 @@ email, which looks like this:
 
 {{<alert color="light">}}
 
-```
+```txt
 ### Group Workspace Report for: {GWS_PATH}
 
 #### Scan Details

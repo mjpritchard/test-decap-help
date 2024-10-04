@@ -81,7 +81,7 @@ There is an interactive GPU node `gpuhost001.jc.rl.ac.uk`, with the same spec as
 other Orchid nodes, that you can access via a login server to prototype and
 test your GPU code prior to running as a batch job.
 
-{{<command user="user" host="login1">}}
+{{<command user="user" host="login-01">}}
 ssh -A gpuhost001.jc.rl.ac.uk
 {{</command>}}
 {{<command user="user" host="gpuhost001">}}

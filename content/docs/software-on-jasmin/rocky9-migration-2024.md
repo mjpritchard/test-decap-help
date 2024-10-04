@@ -157,7 +157,7 @@ Notes:
 - Similar config on all 3 (no domain or reverse DNS restrictions now)
 - Same applies re. **SSH client version**, see [login nodes]({{% ref "#login-nodes" %}})
 - If using cron on `xfer-vm-03`, you must use [crontamer]({{% ref "using-cron/#crontamer" %}})
-- Throttle any automated transfers to avoid many SSH connections in quick succession, this may get you blocked.
+- Throttle any automated transfers to avoid many SSH connections in quick succession, otherwise you may get blocked.
 - Consider using [Globus]({{% ref "#globus-data-transfer-service" %}}) for any data transfer in or out of JASMIN
 - A new software collection `jasmin-xfer` has now been added to these servers, providing these tools:
 

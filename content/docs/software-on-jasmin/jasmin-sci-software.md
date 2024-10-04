@@ -21,7 +21,7 @@ The `jasmin-sci` software environment is intended as a supplement to
 scientific data analysis which, for various reasons, are not provided as part
 of Jaspy itself. These packages are generally installed on the same
 machines where Jaspy is available, for example, the `sci` machines
-(e.g. `sci1.jasmin.ac.uk`) and LOTUS nodes, but not
+(e.g. `sci*.jasmin.ac.uk`) and LOTUS nodes, but not
 the login machines. It is not intended for the `jasmin-sci` environment 
 itself to provide a complete suite of analysis software.
 
@@ -62,13 +62,13 @@ package-specific documentation (including how to build the python bindings for M
 
 To **activate** the jasmin-sci environment, use the command:
 
-{{<command user="user" host="sci1">}}
+{{<command user="user" host="sci-vm-01">}}
 module load jasmin-sci
 {{</command>}}  
 
 and to **deactivate** it, use the command:
 
-{{<command user="user" host="sci1">}}
+{{<command user="user" host="sci-vm-01">}}
 module unload jasmin-sci
 {{</command>}}
 
@@ -89,7 +89,7 @@ its additional resource files.
 To activate both jasmin-sci and Jaspy, it is best to activate them in the
 following order:
 
-{{<command user="user" host="sci1">}}
+{{<command user="user" host="sci-vm-01">}}
 module load jasmin-sci
 module load jaspy
 {{</command>}}
