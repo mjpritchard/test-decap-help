@@ -81,15 +81,16 @@ admin team as it may need to be updated before you can connect securely to JASMI
 
 name | status
 --- | ---
-`nx1.jasmin.ac.uk` | {{< icon fas square-xmark text-danger >}} Not yet ready: issue with Windows 11 clients
-`nx2.jasmin.ac.uk` | {{< icon fas square-xmark text-danger >}} Not yet ready: issue with Windows 11 clients
-`nx3.jasmin.ac.uk` | {{< icon fas square-xmark text-danger >}} Not yet ready: issue with Windows 11 clients
+`nx1.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} [New setup steps recommended]({{% ref "graphical-linux-desktop-access-using-nx#setting-up-your-connection" %}})
+`nx2.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} [New setup steps recommended]({{% ref "graphical-linux-desktop-access-using-nx#setting-up-your-connection" %}})
+`nx3.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} [New setup steps recommended]({{% ref "graphical-linux-desktop-access-using-nx#setting-up-your-connection" %}})
 `nx4.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Not yet moved to Rocky 9 (works as previously for now)
 {.table .table-striped .w-auto}
 
 Notes:
 
-- Nodes have identical configuration so no need for some users to only use certain nodes as before.
+- [New steps are recommended]({{% ref "graphical-linux-desktop-access-using-nx#setting-up-your-connection" %}}) for setting up your connection, including a small edit to a config file.
+- New nodes have identical configuration so are accessible from all network locations (no further need for some users use only certain nodes).
 - By keeping the host names as short as possible, we mitigate the issue some users (with long
 usernames created before the 8-character rule) had with agent forwarding: all should behave
 the same as the old `nx4` in this respect.
