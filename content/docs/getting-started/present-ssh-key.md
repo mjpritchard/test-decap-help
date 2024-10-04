@@ -7,13 +7,29 @@ weight: 145
 
 There are 2 main ways to present your SSH key when connecting via SSH-based methods:
 
-1. **(recommended)** loading the key into an `ssh-agent`, which stores the key ready for any subsequent connections you want to make.
 1. specifying the path to the private key, and entering the passphrase each time
+1. **(recommended)** loading the key into an `ssh-agent`, which stores the key ready for any subsequent connections you want to make.
 
-**(1)** is more convenient, because you don't have to repeat the process each time you want to make a new connection, but **(2)** is useful to know for
+**(2)** is more convenient, because you don't have to repeat the process each time you want to make a new connection, but **(1)** is useful to know for
 testing and troubleshooting.
 
-## 1\. Loading your key into an agent
+## 1\. Specifying the key location each time
+
+This simply involves including the `-i` option in the SSH command to specify the location of your private key:
+
+(You would type this command in a terminal window on your local computer i.e. desktop/laptop). This might be:
+
+- Windows
+  - PowerShell terminal window (no additional software needed)
+  - MobaXterm (a 3rd party linux terminal emulator for windows, licence required for continued use)
+- Mac: "Terminal" or similar applications
+- Linux: "Terminal" or similar applications
+
+{{<command user="user" host="localhost">}}
+ssh -i path_to/my_private_key user@remotehost
+{{</command>}}
+
+## 2\. Loading your key into an agent
 
 We'll demonstrate the following methods:
 
@@ -27,9 +43,15 @@ We'll demonstrate the following methods:
 {{< nav type="tabs" id="tabs-methods" >}}
   {{< nav-item header="Windows (option 1: built-in OpenSSH client)" show="true">}}
 
-  **TODO** video
+  There are two ways to do this:
+  - with graphical tools in Windows
+  - via the Windows PowerShell (as administrator)
 
-  The video above shows the following steps:
+  The video below shows how to do it via graphical tools:
+
+  [Setting up OpenSSH in Windows](https://youtu.be/Tl631gh4DOU)
+
+  The equivalent steps in Powershell are as follows:
 
   - Check that the OpenSSH client installed with, either by
     
@@ -73,13 +95,15 @@ We'll demonstrate the following methods:
 
   Now you can set up the OpenSSH client:
 
-  - Set the ssh-agent service so that it starts automatically, and start it on this occasion:
+  - Set the ssh-agent service so that it starts manually, and start it on this occasion:
 
   {{< command prompt="PS C:\Users\User>" shell="powershell" >}}
   Get-Service ssh-agent
-  Set-Service ssh-agent -StartupType Automatic
+  Set-Service ssh-agent -StartupType Manual
   Start-Service ssh-agent
   {{</command>}}
+
+  (once you're confident that it's working correctly, you could set `-StartupType Automatic`)
 
   - Load your key into the ssh-agent
 
@@ -94,8 +118,9 @@ We'll demonstrate the following methods:
   {{< nav-item header="Windows (option 2: MobaXterm)">}}
 
   {{< youtube id="nEQB0ztE4yY" title="Windows" autoplay="true" >}}
-
-  (Remember that you need a licence to use MobaXterm beyond the intial free trial period)
+Notes:
+- Remember that you need a licence to use MobaXterm beyond the intial free trial period
+- The method shown above does not work with applications outside of MobaXterm (like NoMachine NX or VSCode): you would need to use the Windows OpenSSH client instead to use these with an agent.
   
   The video above shows the following steps to enable MobAgent and load your key:
   
@@ -182,18 +207,3 @@ We'll demonstrate the following methods:
   sessions may be dependent on your system configuration.
 
 
-## 2\. Specifying the key location each time
-
-This simply involves including the `-i` option in the SSH command to specify the location of your private key:
-
-(You would type this command in a terminal window on your local computer i.e. desktop/laptop). This might be:
-
-- Windows
-  - PowerShell terminal window (no additional software needed)
-  - MobaXterm (a 3rd party linux terminal emulator for windows, licence required for continued use)
-- Mac: "Terminal" or similar applications
-- Linux: "Terminal" or similar applications
-
-{{<command user="user" host="localhost">}}
-ssh -i path_to/my_private_key user@remotehost
-{{</command>}}
