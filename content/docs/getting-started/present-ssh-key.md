@@ -206,4 +206,70 @@ Notes:
   Once the key is loaded, it can be used in an SSH connection, but whether this persists between different
   sessions may be dependent on your system configuration.
 
+## Troubleshooting
+
+### Unprotected private key file
+
+Sometimes the SSH agent or application will refuse to load the private key from the file if the file's permissions 
+are set too loosely: some SSH clients insist that you and only you (no other users or services
+on the same machine) can access the file.
+
+To overcome this you have 2 options:
+
+- (quick/easy fix?) **send the contents of the file to the `ssh-add` command another way**
+
+  In your terminal where you give the ssh-add command, try this instead:
+
+  {{<command>}}
+  cat ~/.ssh/id_rsa_jasmin | ssh-add -
+  {{</command>}}
+  (replace `id_rsa_jasmin` with the path to and/or name of your private key file)
+
+  The `cat` command simply "streams" the contents of the file to standard output (`stdout`), while the trailing hyphen tells the `ssh-add` command to accept this streamed input (`stdin`) instead of from a file.
+
+  You should be asked for your passphrase in the normal way and can check that the key has loaded correctly with:
+
+  {{<command>}}
+  ssh-add -l
+  {{</command>}}
+
+  or (perhaps for a more permanent solution), and/or if you are getting similar errors mentioning the `~/.ssh/config` file, might need to change the permissions permanently on these file(s).
+
+- **change the permisisons on the file**
+
+  {{< nav type="tabs" id="tabs-key-perms">}}
+  {{< nav-item header="Linux/Mac/cygwin/Mobaxterm" show="true">}}
+  {{<command>}}
+chmod 600 ~/.ssh/id_rsa_jasmin
+  {{</command>}}
+  (replace `id_rsa_jasmin` with the path to and/or name of your private key file)
+  {{</nav-item>}}
+  {{< nav-item header="Windows: PowerShell">}}
+  The equivalent method in Windows PowerShell involves these steps,
+  replacing the expression with `id_rsa_jasmin` with the path to your key if different. 
+  You may need to open the PowerShell window with "run as administrator".
+{{< command prompt="PS C:\Users\User>" shell="powershell" >}}
+## Set a variable "Key" to hold the key filename:
+New-Variable -Name Key -Value "$env:UserProfile\.ssh\id_rsa_jasmin"
+## Remove Inheritance:
+Icacls $Key /c /t /Inheritance:d
+## Set Ownership to Owner:
+## For a key file located beneath directory $env:UserProfile:
+Icacls $Key /c /t /Grant ${env:UserName}:F
+## For a key file located outside of directory $env:UserProfile:
+TakeOwn /F $Key
+Icacls $Key /c /t /Grant:r ${env:UserName}:F
+## Remove All Users, except for Owner:
+Icacls $Key /c /t /Remove:g Administrator "Authenticated Users" BUILTIN\Administrators BUILTIN Everyone System Users
+## Verify:
+Icacls $Key
+## Remove Variable:
+Remove-Variable -Name Key
+{{</command>}}
+  {{</nav-item>}}
+  {{< nav-item header="Windows: GUI tools">}}
+(awaiting screenshots)
+  {{</nav-item>}}
+  {{</nav>}}
+
 

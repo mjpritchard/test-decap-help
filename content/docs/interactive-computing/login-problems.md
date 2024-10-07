@@ -40,7 +40,8 @@ number of reasons:
 
   * **Your SSH client is old and needs updating**
     * You can check this with `ssh -V` and comparing to the [versions mentioned here]({{% ref "login-servers#recent-changes" %}}).
-    * You will need to update your client before you can connect to JASMIN securely. Ask your local admin team for help.
+    * You will need to update your client before you can connect to JASMIN securely. Ask your local admin team for help: this is
+    not something that we can "fix" at the JASMIN end.
   * **You have omitted to specify the username in your SSH connection**
     * In this case, you will be attempting to connect with the username you have on your local machine, which may not be the same.
   * **You have only recently uploaded your SSH key (it can take 20 to 60 minutes before the key propagates to all the places it needs to on JASMIN).**
