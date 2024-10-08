@@ -11,4 +11,9 @@ weight: 120
 
 ## Introduction
 
-Some text here
+{{<link "https://code.visualstudio.com/docs/remote/ssh" >}}Visual Studio Code{{</link>}} is a richly-featured editor and Integrated Development Environment
+which has remote access features that can be used with JASMIN.
+
+This arcitle demonstrates how to use VSCode to connect to JASMIN, and shows some of the features.
+
+(More details coming shorty)
