@@ -31,15 +31,15 @@ This is a simple case because:
 
 ### Workflow steps
 
-Log in to the `sci` server (from a `login` server):
+Log in to the `sci` server (use any of `sci-vm-0[1-6]`, access from a `login` server):
 
 {{<command user="user" host="login-01">}}
-ssh -A <username>@sci1.jasmin.ac.uk
+ssh -A <username>@sci-vm-01.jasmin.ac.uk
 {{</command>}}
 
 Split the big file:
 
-{{<command user="user" host="sci1">}}
+{{<command user="user" host="sci-vm-01">}}
 split -l 10000 -d file_list.txt # Produces 22 files called "x00"..."x21"
 {{</command>}}
 
@@ -78,7 +78,7 @@ done
 
 Monitor the jobs by running:
 
-{{<command user="user" host="sci1">}}
+{{<command user="user" host="sci-vm-01">}}
 squeue -u <username>
 {{</command>}}
 
@@ -138,7 +138,7 @@ if __name__ == '__main__':
 If you have a file containing a list of dataset ids you can submit each as a
 separate job by invoking the above script as follows:
 
-{{<command user="user" host="sci1">}}
+{{<command user="user" host="sci-vm-01">}}
 ./checksum_dataset.py $(cat datasets_to_checksum.dat)
 (out)echo -e '#!/bin/bash
 (out)srun /usr/bin/md5sum /badc/cmip5/data/cmip5/output1/MOHC/HadGEM2-ES/rcp85/day/seaIce/day/r1i1p1/v20111128/*/*.nc' | sbatch -p short-serial -J cmip5.output1.MOHC.HadGEM2-ES.rcp85.day.seaIce.day.r1i1p1.v20111128 -o cmip5.output1.MOHC.HadGEM2-ES.rcp85.day.seaIce.day.r1i1p1.v20111128.checksums -e cmip5.output1.MOHC.HadGEM2-ES.rcp85.day.seaIce.day.r1i1p1.v20111128.err

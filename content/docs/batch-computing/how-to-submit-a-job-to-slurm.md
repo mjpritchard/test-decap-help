@@ -23,23 +23,14 @@ Both options are described below.
 
 ## Which servers can you submit jobs from?
 
-Jobs can be submitted to Slurm from the following Sci machines:
-
-```txt
-sci1.jasmin.ac.uk 
-sci2.jasmin.ac.uk 
-sci3.jasmin.ac.uk 
-sci4.jasmin.ac.uk 
-sci5.jasmin.ac.uk 
-sci6.jasmin.ac.uk 
-sci8.jasmin.ac.uk
-```
+Jobs can be submitted to Slurm from any of the [sci servers]({{% ref "sci-servers" %}}).
+Check the current list of machines on that page.
 
 ## Method 1: Submit via a Slurm job script
 
 The Slurm job submission command is:
 
-{{<command user="user" host="sci1">}}
+{{<command user="user" host="sci-vm-01">}}
 sbatch myjobscript
 {{</command>}}
 

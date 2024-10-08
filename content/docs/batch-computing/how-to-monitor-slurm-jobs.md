@@ -13,7 +13,7 @@ obtained from the Slurm command `squeue`. Note that information on completed
 jobs is only retained for a limited period. Information on jobs that ran in
 the past is via `sacct`. An example of the output `squeue` is shown below.
 
-{{<command user="user" host="sci1">}}
+{{<command user="user" host="sci-vm-01">}}
 squeue
 (out)JOBID PARTITION     NAME   USER ST       TIME  NODES NODELIST(REASON)
 (out)18957 short-ser     mean   user1  R       0:01      1 host147

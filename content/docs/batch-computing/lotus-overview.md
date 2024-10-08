@@ -68,8 +68,8 @@ practice outlined in this documentation]({{% ref "tips-for-new-users" %}}).
 
 ## How to gain access to LOTUS
 
-LOTUS is accessible via the batch scheduler system Slurm that is running
-across all JASMIN scientific analysis servers `sci[1-8].jasmin.ac.uk`.
+LOTUS is accessible via the Slurm batch scheduler that is available to use from
+all JASMIN [scientific analysis servers]({{% ref "sci-servers" %}}).
 
 From the above servers, it is possible to submit, monitor, and control batch
 jobs using the Slurm commands.
