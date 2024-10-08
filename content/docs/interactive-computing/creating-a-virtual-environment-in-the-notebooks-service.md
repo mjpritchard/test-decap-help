@@ -31,8 +31,16 @@ Notebooks shell, **not on the JASMIN sci machines**
 To get started, open the [JASMIN Notebooks Service](https://notebooks.jasmin.ac.uk/)
 and in the launcher click the terminal button.
 
-
 {{<image src="/img/docs/creating-a-virtual-environment-in-the-jasmin-notebooks-service/notebook-terminal.png" caption="Opening the terminal">}}
+
+{{<alert type="info">}}
+Don't worry if you see this: this is a known issue but should not cause you a problem.
+
+```txt
+id: cannot find name for user ID NNNNN
+[I have no name!@jupyter-user notebooks-misc]$ 
+```
+{{</alert>}}
 
 Then, type these commands at the bash shell which appears.
 

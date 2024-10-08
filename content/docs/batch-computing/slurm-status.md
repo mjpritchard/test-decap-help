@@ -1,6 +1,5 @@
 ---
 aliases: /article/4894-lotus-slurm-status
-date: 2021-03-08 15:47:16
 description: LOTUS/ORCHID Slurm scheduler status
 title: Slurm status
 ---
@@ -10,4 +9,4 @@ LOTUS queues/partitions status, including the number of running/completed/pendin
 
 {{<image src="img/docs/slurm-status/screenshot.png" caption="lotus status">}}
 
-Figure 1. LOTUS dashboard 
+Figure 1. LOTUS dashboard

@@ -68,3 +68,63 @@ particularly if you have multiple terminal windows open on your own computer,
 that you do not accidentally attempt `sudo`on a JASMIN machine: expect some
 follow-up from the JASMIN team if you do!
 {{</alert>}}
+
+## Connecting to a sci server via a login server
+
+The connection via a login server can be done either with 2 hops, or using a login server as a Jump Host (-J):
+
+- 2 hops method:
+
+{{<command user="user" host="localhost">}}
+ssh -A fred@login-01.jasmin.ac.uk
+{{</command>}}
+{{<command user="user" host="login-01">}}
+ssh fred@sci-vm-01.jasmin.ac.uk
+## no -A needed for this step, if no onward connections from sci server
+{{</command>}}
+{{<command user="user" host="sci-vm-01">}}
+## now on sci server
+{{</command>}}
+
+- Jump Host method:
+
+{{<command user="user" host="localhost">}}
+ssh -A fred@login-01.jasmin.ac.uk -J fred@login-01.jasmin.ac.uk
+{{</command>}}
+{{<command user="user" host="sci-vm-01">}}
+## now on sci server
+{{</command>}}
+
+Alternatively, the same effect can be achieved with a ProxyJump directive in your local `~/.ssh/config` file:
+
+```config
+Host Sci1ViaLogin01
+  User fred
+  ForwardAgent yes
+  HostName sci-vm-01.jasmin.ac.uk
+  ProxyJump fred@login-01.jasmin.ac.uk
+```
+
+You could then simply connect to `Sci1ViaLogin01`:
+
+{{<command user="user" host="localhost">}}
+ssh Sci1ViaLogin01
+{{</command>}}
+{{<command user="user" host="sci-vm-01">}}
+## now on sci server
+{{</command>}}
+
+This sort of configuration is useful for connections needed by remote editing/development tools such 
+as VSCode. The example above relies on having your key loaded locally in an ssh-agent.
+
+An alternative is to include a line specifying
+the location of your key, so you'll then be prompted for your passphrase whenever you connect:
+
+```config
+Host Sci1ViaLogin01
+  User fred
+  ForwardAgent yes
+  HostName sci-vm-01.jasmin.ac.uk
+  ProxyJump fred@login-01.jasmin.ac.uk
+  IdentityFile ~/.ssh/id_rsa_jasmin
+```

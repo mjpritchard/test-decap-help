@@ -146,3 +146,6 @@ exit
 {{</command>}}
 
 You are then back on your own machine.
+
+See also [connecting to a sci server via a login server]({{% ref "login-servers#connecting-to-a-sci-server-via-a-login-server" %}})
+for some options of different methods for connecting to a sci server.

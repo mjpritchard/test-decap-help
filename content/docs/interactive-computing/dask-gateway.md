@@ -77,19 +77,19 @@ It is very important that your API token is not shared between users and remains
 
 1. Make a Dask configuration folder in your home directory
 
-    {{<command user="user" host="sci1">}}
+    {{<command user="user" host="sci-vm-01">}}
     mkdir -p ~/.config/dask
     {{</command>}}
 
 2. Create a configuration file for `dask-gateway`
 
-    {{<command user="user" host="sci1">}}
+    {{<command user="user" host="sci-vm-01">}}
     touch ~/.config/dask/gateway.yaml
     {{</command>}}
 
 3. Change the permissions on the file so that only you can read it
 
-    {{<command user="user" host="sci1">}}
+    {{<command user="user" host="sci-vm-01">}}
     chmod 600 ~/.config/dask/gateway.yaml
     {{</command>}}
 
@@ -140,7 +140,7 @@ If you use a self-contained conda environment this is not a problem, and you can
 
 ### Creating a virtual environment for Dask
 
-- Login to the JASMIN `sci` machines.
+- Login to one of the JASMIN `sci` machines.
 - Activate `jaspy`
 
 {{<command>}}

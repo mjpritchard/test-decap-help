@@ -2,7 +2,6 @@
 aliases:
 - /article/5068-gpu-cluster-orchid
 - /article/4951-gpu-testing
-date: 2023-05-26 14:25:07
 description: Orchid GPU cluster
 title: Orchid GPU cluster
 type: docs
@@ -38,9 +37,9 @@ on the software and the workflow that you will use/run on ORCHID.
 
 Testing a job on the JASMIN ORCHID GPU cluster can be carried out in an
 interactive mode by launching a pseudo-shell terminal Slurm job from a JASMIN
-scientific server e.g. `sci2`:
+scientific server e.g. `sci-vm-01`:
 
-{{<command user="user" host="sci2">}}
+{{<command user="user" host="sci-vm-01">}}
 srun --gres=gpu:1 --partition=orchid --account=orchid --pty /bin/bash
 (out)srun: job 24096593 queued and waiting for resources
 (out)srun: job 24096593 has been allocated resources
@@ -54,7 +53,7 @@ The GPU node gpuhost016 is allocated for this interactive session on LOTUS
 Note that for batch mode, a GPU job is submitted using the Slurm command
 'sbatch':
 
-{{<command user="user" host="sci2">}}
+{{<command user="user" host="sci-vm-01">}}
 sbatch --gres=gpu:1 --partition=orchid --account=orchid gpujobscript.sbatch
 {{</command>}}
 
