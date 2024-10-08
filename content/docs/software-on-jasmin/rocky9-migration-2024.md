@@ -81,9 +81,9 @@ admin team as it may need to be updated before you can connect securely to JASMI
 
 name | status
 --- | ---
-`nx1.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} [New setup steps recommended]({{% ref "graphical-linux-desktop-access-using-nx#setting-up-your-connection" %}})
-`nx2.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} [New setup steps recommended]({{% ref "graphical-linux-desktop-access-using-nx#setting-up-your-connection" %}})
-`nx3.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} [New setup steps recommended]({{% ref "graphical-linux-desktop-access-using-nx#setting-up-your-connection" %}})
+`nx1.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} [Ready, but new setup steps recommended]({{% ref "graphical-linux-desktop-access-using-nx#setting-up-your-connection" %}})
+`nx2.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} [Ready, but new setup steps recommended]({{% ref "graphical-linux-desktop-access-using-nx#setting-up-your-connection" %}})
+`nx3.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} [Ready, but new setup steps recommended]({{% ref "graphical-linux-desktop-access-using-nx#setting-up-your-connection" %}})
 `nx4.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Not yet moved to Rocky 9 (works as previously for now)
 {.table .table-striped .w-auto}
 
@@ -110,11 +110,11 @@ name | status | specs
 --- | --- | ---
 Virtual servers | | 
 `sci-vm-01.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 8 CPU / 32 GB RAM / 80 GB (virtual disk)
-`sci-vm-02.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Finalising configuration | 8 CPU / 32 GB RAM / 80 GB (virtual disk)
-`sci-vm-03.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Finalising configuration | 8 CPU / 32 GB RAM / 80 GB (virtual disk)
-`sci-vm-04.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Finalising configuration | 8 CPU / 32 GB RAM / 80 GB (virtual disk)
-`sci-vm-05.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Finalising configuration | 8 CPU / 32 GB RAM / 80 GB (virtual disk)
-`sci-vm-06.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Finalising configuration | 8 CPU / 32 GB RAM / 80 GB (virtual disk)
+`sci-vm-02.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 8 CPU / 32 GB RAM / 80 GB (virtual disk)
+`sci-vm-03.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 8 CPU / 32 GB RAM / 80 GB (virtual disk)
+`sci-vm-04.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 8 CPU / 32 GB RAM / 80 GB (virtual disk)
+`sci-vm-05.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 8 CPU / 32 GB RAM / 80 GB (virtual disk)
+`sci-vm-06.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 8 CPU / 32 GB RAM / 80 GB (virtual disk)
 Physical servers | |
 `sci-ph-01.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 48 CPU AMD EPYC 74F3 / 2 TB RAM / 2 x 446 GB SATA SSD
 `sci-ph-02.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 48 CPU AMD EPYC 74F3 / 2 TB RAM / 2 x 446 GB SATA SSD

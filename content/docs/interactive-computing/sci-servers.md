@@ -10,39 +10,55 @@ weight: 60
 
 ## Intro
 
-Once you have logged on to one of the [login servers]({{% ref "login-servers" %}}) you can then `ssh` to a scientific analysis (sci) server to do your work.
-The sci servers are not directly accessible outside the firewall of RAL (JASMIN's host instution) so most users will need to access them via a login server.
+The scientific analysis (sci) servers are provided for general purpose use by all users with the `jasmin-login` access role.
+The sci servers are not directly accessible outside the firewall of the STFC network (JASMIN's host organisation) so most* users will need to access them via a [login server]({{% ref "login-servers" %}}).
+
+Users inside the STFC network (e.g. STFC staff on site, or remotely using the STFC VPN) should be able to access them directly.
 
 ## Available sci servers
 
 The following sci servers are available:
 
-Server name  |  Virtual/Physical (OperatingSystem)  |  Processor model  |  CPU Cores  |  RAM (GB)  |  /tmp (GB)  
----|---|---|---|---|---  
-sci1.jasmin.ac.uk  |  V (CentOS7)  |  Xeon(R) Silver 4114 CPU @ 2.20GHz  |  8  |  32  |  N/A [[Note 2.]](#2-tmp-on-vms)
-sci2.jasmin.ac.uk  |  V (CentOS7)  |  Xeon(R) E5-2630 @ 2.20GHz  |  8  |  32 |  [[Note 2.]](#2-tmp-on-vms)  
-sci3.jasmin.ac.uk  |  P (CentOS7) [[Note 1.]](#1-physical-servers) |  AMD EPYC 7402  |  48  |  1000|  25  
-sci4.jasmin.ac.uk  |  V (CentOS7)  |  Xeon E5-2660 @ 2.20GHz  |  8  |  32  | N/A  [[Note 2.]](#2-tmp-on-vms)
-sci5.jasmin.ac.uk  |  V (CentOS7)  |  Intel(R) Xeon(R) CPU E5-2630 v4 @2.20GHz  |  8  |  32  |  N/A  [[Note 2.]](#2-tmp-on-vms)
-sci6.jasmin.ac.uk  |  P (CentOS7), [[Note 1.]](#1-physical-servers) |  AMD EPYC 7402  |  48  |  1000|  25  
-sci8.jasmin.ac.uk  |  P (CentOS7), [[Note 1.]](#1-physical-servers) |  Intel(R) Xeon(R) Gold 5118CPU @ 2.30GHz  |  24  |  383  |  25  
-|  |  |  |  |
+Server name  |  Virtual/Physical |  Processor model  |  CPU Cores  |  RAM (GB)  |  /tmp (GB)  
+---|---|---|---|---|---
+`sci-vm-01` | virtual | tbc | 8 | 32 GB | 80 GB virtual disk
+`sci-vm-02` | virtual | tbc | 8 | 32 GB | 80 GB virtual disk
+`sci-vm-03` | virtual | tbc | 8 | 32 GB | 80 GB virtual disk
+`sci-vm-04` | virtual | tbc | 8 | 32 GB | 80 GB virtual disk
+`sci-vm-05` | virtual | tbc | 8 | 32 GB | 80 GB virtual disk
+`sci-vm-06` | virtual | tbc | 8 | 32 GB | 80 GB virtual disk
+`sci-ph-01` | physical | AMD EPYC 74F3 | 48 | 2 TB | 2 x 446 GB SATA SSD
+`sci-ph-02` | physical | AMD EPYC 74F3 | 48 | 2 TB | 2 x 446 GB SATA SSD
 {.table .table-striped}
 
 ### Notes
-  
-#### 1. Physical servers
 
-Hosts `sci[3,6,8].jasmin.ac.uk ` are physical servers on a private internal network, so outbound internet access (via NAT) is only
+#### 1\. Access
+
+Sci servers are not exposed outside the STFC network, so from external locations you need to access
+them via a login server.
+
+For users within the STFC network, there is no longer any reverse DNS restriction, so all
+should be accessible directly within that network without need to go via a login node.
+
+See [connecting to a sci server via a login server]({{% ref "login-servers#connecting-to-a-sci-server-via-a-login-server" %}})
+for some alternative methods of connecting.
+
+#### 2\. Physical servers
+
+Physical servers are actually re-configured nodes within the LOTUS cluster and as such have different a network
+configuration from the virtual `sci` servers, with limited outward connectivity.
+
+Outbound internet access (via NAT) is only
 for HTTP(S), so outbound SSH **will not work (to hosts outside of
 JASMIN) on these machines**. If you try to `git pull/clone` from external repositories e.g. Github, the operation will timeout with error `fatal: Could not read from remote repository`. The solution in this case is to access `git pull/clone` over **HTTPS** instead (check the repo for alternative access details).
 
-#### 2. /tmp on VMs
+#### 3. /tmp on VMs
 
 The local `/tmp` of the virtual sci servers is not available (N/A) for users
 as this is used by the VM itself. It also provides no performance advantage as it is not local to the server.
 
-#### 3. Arbiter
+#### 4. Arbiter
 
 A monitoring utility "**Arbiter**" is implemented across
 all sci machines to control CPU and memory usage. This utility
@@ -50,7 +66,7 @@ records the activity on the node, automatically sets limits on the resources
 available to each user. Users' processes are thus capped from
 using excessive resources, and can be slowed or have memory reduced in response to repeated violations.
 
-#### 4. Privileges
+#### 5. Privileges
 
 Users are **not permitted to execute commands which require
 administrative privileges.** This applies to all hosts in the managed part of
@@ -61,7 +77,7 @@ particularly if you have multiple terminal windows open on your own computer,
 that you do not accidentally attempt `sudo` on a JASMIN machine: expect some
 follow-up from the JASMIN team if you do!
 
-See also {{% link "#software-installed" %}}Software installed{{</link>}}, below.
+See also [software installed]({{% ref "#software-installed" %}}), below.
 
 ## Purpose
 
@@ -85,15 +101,19 @@ servers:
 
 Each sci server has the following features:
 
-- CentOS7 operating system with development tools. [NB: Rocky9 from summer 2024]
-- Software packages that make up the [JASMIN Analysis Platform]({{% ref "software-overview#common-software" %}}) are all installed - providing commonly-used open-source analysis tools. These packages include NCO, CDO, Python (with netCDF4, matplotlib, numpy etc.,) and R.
+- Rocky 9 operating system with development tools.
+- Software packages that make up the [JASMIN Analysis Platform]({{% ref "software-overview" %}}) are all installed - providing commonly-used open-source analysis tools. These packages include NCO, CDO, Python (with netCDF4, matplotlib, numpy etc.,) and R.
 - Access to proprietary tools, e.g. IDL and Intel Fortran, through the `module` system.
+- Editors: `emacs`, `vim`, `nedit`, `geany` and `nano` are installed.
+- For a more richly-featured editor or Integrated Development Environment (IDE), consider using
+a remote editor locally, for example {{<link href="https://code.visualstudio.com/docs/remote/ssh">}}VSCode{{</link>}} or
+{{<link "https://www.jetbrains.com/pycharm/">}}PyCharm{{</link>}}: these can be installed and customised on your own machine
+rather than needing central installation and management on JASMIN. Watch this space for
+further advice about how to configure and use VSCode in this way.
 - Ability to run graphical applications: use the
 [NX graphical desktop service]({{% ref "graphical-linux-desktop-access-using-nx" %}}) for best performance.
 
-Further information on using the software provided on JASMIN [can be found here]({{% ref "software-overview" %}}).
-
-See [[Note 4]](#4-privileges) above about privileges: you can only install software for yourself if it can be done with user-level privileges.
+See [[Note 4]](#5-privileges) above about privileges: you can only install software for yourself if it can be done with user-level privileges.
 
 ## Access to storage
 
