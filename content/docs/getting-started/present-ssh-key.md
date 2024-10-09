@@ -160,7 +160,11 @@ Notes:
   Some linux terminal and desktop environments provide an ssh-agent as a graphical application: consult the 
   documentation for your system.
 
-  In the absence of a graphical application, you can use the following commands in a terminal session:
+  A common one is `gnome-keyring-daemon`: check for this first in your list of processes: if it's there and
+  running already, skip to the `ssh-add` command, rather than starting up another ssh-agent (which might then
+  be ignored by the application you're trying to use).
+
+  In the absence of an already-running process, you can use the following commands in a terminal session:
 
   - Start the ssh-agent
 
