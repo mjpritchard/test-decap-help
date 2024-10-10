@@ -19,16 +19,16 @@ Users inside the STFC network (e.g. STFC staff on site, or remotely using the ST
 
 The following sci servers are available:
 
-Server name  |  Virtual/Physical |  Processor model  |  CPU Cores  |  RAM (GB)  |  /tmp (GB)  
----|---|---|---|---|---
-`sci-vm-01` | virtual | tbc | 8 | 32 GB | 80 GB virtual disk
-`sci-vm-02` | virtual | tbc | 8 | 32 GB | 80 GB virtual disk
-`sci-vm-03` | virtual | tbc | 8 | 32 GB | 80 GB virtual disk
-`sci-vm-04` | virtual | tbc | 8 | 32 GB | 80 GB virtual disk
-`sci-vm-05` | virtual | tbc | 8 | 32 GB | 80 GB virtual disk
-`sci-vm-06` | virtual | tbc | 8 | 32 GB | 80 GB virtual disk
-`sci-ph-01` | physical | AMD EPYC 74F3 | 48 | 2 TB | 2 x 446 GB SATA SSD
-`sci-ph-02` | physical | AMD EPYC 74F3 | 48 | 2 TB | 2 x 446 GB SATA SSD
+Server name  |  Virtual/Physical |  Processor model  |  CPU Cores  |  RAM (GB)  | /tmp max per user | /tmp size
+---|---|---|---|---|---|---
+`sci-vm-01` | virtual | Intel(R) Xeon(R) Gold 6348 CPU @ 2.60GHz | 8 | 32 GB | 512 MB | 80 GB virtual disk
+`sci-vm-02` | virtual | Intel(R) Xeon(R) Gold 6348 CPU @ 2.60GHz | 8 | 32 GB | 512 MB | 80 GB virtual disk
+`sci-vm-03` | virtual | Intel(R) Xeon(R) Gold 6348 CPU @ 2.60GHz | 8 | 32 GB | 512 MB | 80 GB virtual disk
+`sci-vm-04` | virtual | Intel(R) Xeon(R) Gold 6348 CPU @ 2.60GHz | 8 | 32 GB | 512 MB | 80 GB virtual disk
+`sci-vm-05` | virtual | Intel(R) Xeon(R) Gold 6348 CPU @ 2.60GHz | 8 | 32 GB | 512 MB | 80 GB virtual disk
+`sci-vm-06` | virtual | Intel(R) Xeon(R) Gold 6348 CPU @ 2.60GHz | 8 | 32 GB | 512 MB | 80 GB virtual disk
+`sci-ph-01` | physical | AMD EPYC 74F3 | 48 | 2 TB | 20 GB | 2 x 446 GB SATA SSD
+`sci-ph-02` | physical | AMD EPYC 74F3 | 48 | 2 TB | 20 GB | 2 x 446 GB SATA SSD
 {.table .table-striped}
 
 ### Notes
