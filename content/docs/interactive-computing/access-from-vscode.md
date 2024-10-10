@@ -16,7 +16,7 @@ which has remote access and other useful features that can be used with JASMIN.
 
 This article is in response to requests from users about how use VSCode with JASMIN and is not a product endorsement. Other IDEs with similar features are also available, for example {{<link "https://www.jetbrains.com/pycharm/" >}}PyCharm{{</link>}}.
 
-This arcitle demonstrates how to use VSCode to connect to JASMIN, and shows some of the features.
+The following demonstrates how to use VSCode to connect to JASMIN, and shows some of the features.
 
 ## Obtaining VSCode
 
@@ -86,17 +86,17 @@ Notes:
 - the demo shown assumes the SSH key is already loaded in an ssh-agent. To specify the key location instead, see below.
 - the `-A` option is only needed IF you will be making onward SSH connections from the remote host ...this can be omitted if not
 
-###  Essential steps
+### Essential steps
 
 - Install the extensions
 - Create a connection profile
   - start by entering the one-liner command you would use to connect to a sci server via a login server, i.e.
-  ```console
-  ssh -A username@sci-vm-01.jasmin.ac.uk -J username@login-01.jasmin.ac.uk
-  ```
+    ```bash
+    ssh -A username@sci-vm-01.jasmin.ac.uk -J username@login-01.jasmin.ac.uk
+    ```
   - this creates an entry in `~/.ssh/config` (it's recommended to choose that location)
 - This entry can be customised, by editing that file
-  - note that the `Host` is a "friendly name" which you can define, whereas `HostName` is the actual full name of the host including domain, e.g. `sci-vm-01.jasmin.ac.uk
+  - note that the `Host` is a "friendly name" which you can define, whereas `HostName` is the actual full name of the host including domain, e.g. `sci-vm-01.jasmin.ac.uk`
 - Add other entries as needed
   - in this case, we added a second profile for `xfer-vm-01` which, being an `xfer` server, is directly accessible so does not need the `ProxyJump`
 - Save the file `~/.ssh/config` and restart VSCode
@@ -133,7 +133,7 @@ stuck. One method of fixing this is to:
 ```
 ps -ef | grep $USER | grep vscode
 ```
-- note the process ID (PID) nunmber (1st numerical column) and kill that process
+- note the process ID (PID) number (1st numerical column) and kill that process
 ```
 kill <PID>
 ```
