@@ -127,7 +127,7 @@ globus-url-copy -help
 
 **NOTE:** On some systems, you have to load a relevant module to get access to the globus-url-copy command, however not on the JASMIN \[hp\]xfer servers.
 
-It is recommended to try things out using the regular xfer servers xfer[12] but to perform "real" transfers using hpxfer[12] for better performance, but to use the latter you will need the [hpxfer access role]({{% ref "hpxfer-access-role" %}}).
+It is recommended to try things out using the regular xfer servers xfer-vm-0[12] but to perform "real" transfers using hpxfer[34] for better performance.
 
 1\. Remote directory listing issued by client on `gridftp-
 client.localsite.ac.uk` to server `gridftp-server.remotesite.ac.uk` where you
@@ -179,12 +179,10 @@ following general form:
 globus-url-copy [OPTIONS] source-uri desination-uri
 {{</command>}}
 
-You can use the above examples by replacing the local machine `gridftp-client.localsite.ac.uk` with one of the jasmin transfer hosts
-`xfer[12].jasmin.ac.uk` as a client, To do this, you first need to be logged in via SSH to one of these hosts and can initiate a transfer by invoking `globus-url-copy` in one of the ways above.
+You can use the above examples by replacing the local machine `gridftp-client.localsite.ac.uk` with one of the jasmin `xfer` or `hpxfer` servers as a client, To do this, you first need to be logged in via SSH to one of these hosts and can initiate a transfer by invoking `globus-url-copy` in one of the ways above.
 
-- For high-performance transfer (large volumes and/or longer distances), use `hpxfer[12].jasmin.ac.uk` for which you will need to have the [hpxfer access role]({{% ref "hpxfer-access-role" %}}). `hpxfer[12].jasmin.ac.uk` are also recommended for transfers to/from ARCHER2 if initiated at the JASMIN end, but if you are initiating the transfer from the ARCHER2 end, you will need to connect to the JASMIN GridFTP server as described below, see also [Transfers from Archer2]({{% ref "transfers-from-archer2" %}}).
-- `hpxfer2.jasmin.ac.uk` is tuned for very long path transfers (e.g. Western US or Australia/NZ)
-- For remote hosts using JASMIN's dedicated network link (Met Office only) use `xfer[12].jasmin.ac.uk` as the client (These are virtual machines so have limited performance, but your transfer will be over a dedicated network connection)
+- For high-performance transfer (large volumes and/or longer distances), use [Globus]({{% ref "globus-transfers-with-jasmin" %}}) or the [hpxfer servers]({{% ref "transfer-servers/#hpxfer-servers" %}})
+- For remote hosts using JASMIN's dedicated network link (Met Office only) use `xfer-vm-0[123].jasmin.ac.uk` as the client (These are virtual machines so have limited performance, but your transfer will be over a dedicated network connection)
 
 ## Connecting to the JASMIN GridFTP server
 
@@ -216,9 +214,8 @@ This server is also used as the JASMIN GridFTP Server globus endpoint, see
 SLCSs credential with Globus Online. The JASMIN team is working on a solution
 for this).
 
-Please note that the servers `xfer[12].jasmin.ac.uk` and
-`hpxfer[12].ceda.ac.uk` are not gridftp **servers**. They have the `globus-
-url-copy` client installed, so can be used as clients to connect to remote
+Please note that the servers `xfer-vm-0[123].jasmin.ac.uk` and
+`hpxfer[34].ceda.ac.uk` are not gridftp **servers**. They have the `globus-url-copy` client installed, so can be used as clients to connect to remote
 gridftp servers, and also support [gridftp over SSH]({{% ref "gridftp-ssh-auth" %}}) (both incoming and outgoing), but do not act as
 servers for certificate-based gridftp as shown in these examples. The JASMIN
 gridftp server for read-write access to home directories and group workspaces
