@@ -71,7 +71,7 @@ Notes:
 - Tested with `sshftp` (GridFTP over SSH) from ARCHER2
 - Same applies re. **SSH client version**, see [login nodes]({{% ref "#login-nodes" %}})
 - The software collection `jasmin-xfer` available as per [xfer servers, above]({{% ref "#xfer-servers" %}})
-- The `hpxfer` role, and the supplying of client IP addresses is no longer required.
+- The `hpxfer` role, and the supplying of client IP addresses is no longer required for these **new** servers.
 
 ### Avoid getting locked out with SSH transfers
 

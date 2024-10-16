@@ -189,6 +189,7 @@ Notes:
 - Tested with `sshftp` (GridFTP over SSH) from ARCHER2
 - Same applies re. **SSH client version**, see [login nodes]({{% ref "#login-nodes" %}})
 - The software collection `jasmin-xfer` available as per [xfer servers, above]({{% ref "#xfer-servers" %}})
+- `hpxfer` access role **no longer required for these new servers** (role will be retired along with the old servers in due course, so no need to renew if you move to the new servers)
 
 ### GridFTP server
 
