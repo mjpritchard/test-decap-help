@@ -145,7 +145,7 @@ defined using powers of 10), but to obtain space available to users this
 should be **divided by roughly 1.3**, resulting in around 2TB of free space. Of
 this, 16GB is currently in use. The factor of 1.3 can depend on the number of
 small files stored in the GWS because lots of small files take up more space
-than expected. 
+than expected.
 
 For SOF (paths beginning `/gws/nopw/j04/*`), the value reported by `df -H` is the usable size.
 
@@ -206,7 +206,7 @@ requested.
 
 Requests for an increase in GWS size will be considered by the Consortium
 Manager with responsibility for managing an overall allocation to that
-particular scientific community. See 
+particular scientific community. See
 [Requesting Resources]({{% ref "requesting-resources" %}}). Depending on available resources and competing
 demand, it may not always be possible to increase the allocation, and you may
 be asked to move data to Elastic Tape to free up disk space.
@@ -235,6 +235,23 @@ By this we mean permissions where data are "world-writable" by anyone, for examp
 We provide a UNIX a group corresponding to each group workspace, which all members of that GWS belong to: this enables sharing within the group if you set permissions appropriately using that group. If you are unsure about setting permissions, please ask the helpdesk.
 {{< /alert >}}
 
+## Changing ownership of files in your GWS
+Sometimes, it is necessary for GWS managers or deputies to take ownership of files in their GWS which are owned by other users.
+Often this is necessary when members of staff no longer use JASMIN.
+
+JASMIN has a command line tool, named `gwschown` which allows managers to do this without assistance of the helpdesk. This tool is installed on the sci machines, and allows GWS managers and deputies to change the ownership of files in their group workspaces.
+
+To do this, call `gwschown` at the command line as below, replacing exampleuser with the user who you would like to take ownership of the files, and subsitiuting in your own path.
+
+{{<command user="user" host="sci-vm-01">}}
+gwschown exampleuser /gws/nopw/j04/workshop/myfile
+{{</command>}}
+
+As with chown, you can also operate recursively with the `-R` flag.
+This tool will only work in group workspaces where you are a manager or deputy.
+
+If you wish to change the group of files, you should first use the tool to change the ownership to your user- you will then be able to change the group in the usual way using `chgrp`.
+
 ## Keeping informed
 
 Please maintain contact throughout the life of the GWS via the following
@@ -243,7 +260,7 @@ channels:
 - Using the {{< link "https://mon.jasmin.ac.uk" >}}JASMIN Dashboard{{</link>}} to check on the status of your GWS (used versus available space).
 - Email alerts from the system when the GWS reaches >83% full
 - Email from the CEDA/JASMIN team
-- News articles on the CEDA or JASMIN websites and by monitoring CEDA social media feeds which may be used to post messages regarding system status or security. 
+- News articles on the CEDA or JASMIN websites and by monitoring CEDA social media feeds which may be used to post messages regarding system status or security.
   - {{< link "ceda_site" >}}CEDA Website{{</link>}}
   - {{< link "https://twitter.com/cedanews" >}}CEDA News on Twitter{{</link>}}
 
