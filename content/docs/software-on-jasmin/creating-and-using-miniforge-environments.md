@@ -7,13 +7,6 @@ slug: creating-and-using-miniforge-environments
 title: Creating and using miniforge environments
 ---
 
-{{<alert type="danger">}}
-Important changes took place in September 2024 affecting what software can be used on JASMIN.
-Please read [this announcement](https://www.ceda.ac.uk/news/updates/2024/2024-08-29-important-software-changes-autumn/) carefully.
-
-This supercedes the information below which has yet to be updated in line with this.
-{{</alert>}}
-
 On JASMIN, we provide a wide range of packages via the {{<link "jaspy-envs">}}jaspy{{</link>}}
 environment (which is itself a Conda environment). This page gives
 detail on how to create and use your own personal Conda environments via the
