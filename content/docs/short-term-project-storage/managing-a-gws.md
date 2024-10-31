@@ -145,7 +145,7 @@ defined using powers of 10), but to obtain space available to users this
 should be **divided by roughly 1.3**, resulting in around 2TB of free space. Of
 this, 16GB is currently in use. The factor of 1.3 can depend on the number of
 small files stored in the GWS because lots of small files take up more space
-than expected. 
+than expected.
 
 For SOF (paths beginning `/gws/nopw/j04/*`), the value reported by `df -H` is the usable size.
 
@@ -206,7 +206,7 @@ requested.
 
 Requests for an increase in GWS size will be considered by the Consortium
 Manager with responsibility for managing an overall allocation to that
-particular scientific community. See 
+particular scientific community. See
 [Requesting Resources]({{% ref "requesting-resources" %}}). Depending on available resources and competing
 demand, it may not always be possible to increase the allocation, and you may
 be asked to move data to Elastic Tape to free up disk space.
@@ -235,6 +235,43 @@ By this we mean permissions where data are "world-writable" by anyone, for examp
 We provide a UNIX a group corresponding to each group workspace, which all members of that GWS belong to: this enables sharing within the group if you set permissions appropriately using that group. If you are unsure about setting permissions, please ask the helpdesk.
 {{< /alert >}}
 
+## Changing ownership of files in your GWS
+
+Sometimes, it is necessary for GWS managers or deputies to take ownership of files in their GWS which are owned by other users, for example to delete them, or move them to other storage. Often this is necessary when a previous member of a GWS no longer uses JASMIN.
+
+JASMIN now has a command-line tool, `gwschown`, which allows managers or deputies to do this without assistance of the helpdesk. This tool is installed on the [sci servers]({{% ref "sci-servers" %}}), and allows GWS managers and deputies to change the ownership of files and directories in their group workspace.
+
+The command provides usage information via the `-h` or `--help` option, as shown:
+
+{{<command user="user" host="sci-vm-01">}}
+gwschown --help
+(out)usage: gwschown [-h] [-R] [-v] [-n] [--no-warn] user path [path ...]
+(out)
+(out)Changes ownership of files and directories in a group workspace.
+(out)
+(out)positional arguments:
+(out)  user             the user who will become the owner of the files
+(out)  path             path to the file(s) to change the ownership of
+(out)
+(out)optional arguments:
+(out)  -h, --help       show this help message and exit
+(out)  -R, --recursive  operate on files and directories recursively
+(out)  -v, --verbose    output a diagnostic for every file processed
+(out)  -n, --dry-run    check permissions but do not actually run chown (implies -v)
+(out)  --no-warn        run without prompting for confirmation
+{{</command>}}
+
+For example, replace `exampleuser` with the username of the user who will take ownership of the files, and substituting in your own path. A good idea is to run it with `--dry-run` first just to check everything is working.
+
+{{<command user="user" host="sci-vm-01">}}
+gwschown exampleuser /gws/nopw/j04/workshop/myfile --dry-run
+{{</command>}}
+
+As with `chown`, you can also operate recursively on directories with the `-R` flag.
+This tool will only work in group workspaces where **you** have the `MANAGER` or `DEPUTY` role.
+
+If you wish to change the **group** of files or directories, you should first use the tool to change the ownership to your user- you will then be able to change the group in the usual way using `chgrp`.
+
 ## Keeping informed
 
 Please maintain contact throughout the life of the GWS via the following
@@ -243,7 +280,7 @@ channels:
 - Using the {{< link "https://mon.jasmin.ac.uk" >}}JASMIN Dashboard{{</link>}} to check on the status of your GWS (used versus available space).
 - Email alerts from the system when the GWS reaches >83% full
 - Email from the CEDA/JASMIN team
-- News articles on the CEDA or JASMIN websites and by monitoring CEDA social media feeds which may be used to post messages regarding system status or security. 
+- News articles on the CEDA or JASMIN websites and by monitoring CEDA social media feeds which may be used to post messages regarding system status or security.
   - {{< link "ceda_site" >}}CEDA Website{{</link>}}
   - {{< link "https://twitter.com/cedanews" >}}CEDA News on Twitter{{</link>}}
 
