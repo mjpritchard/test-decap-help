@@ -236,21 +236,41 @@ We provide a UNIX a group corresponding to each group workspace, which all membe
 {{< /alert >}}
 
 ## Changing ownership of files in your GWS
-Sometimes, it is necessary for GWS managers or deputies to take ownership of files in their GWS which are owned by other users.
-Often this is necessary when members of staff no longer use JASMIN.
 
-JASMIN has a command line tool, named `gwschown` which allows managers to do this without assistance of the helpdesk. This tool is installed on the sci machines, and allows GWS managers and deputies to change the ownership of files in their group workspaces.
+Sometimes, it is necessary for GWS managers or deputies to take ownership of files in their GWS which are owned by other users, for example to delete them, or move them to other storage. Often this is necessary when a previous member of a GWS no longer uses JASMIN.
 
-To do this, call `gwschown` at the command line as below, replacing exampleuser with the user who you would like to take ownership of the files, and subsitiuting in your own path.
+JASMIN now has a command-line tool, `gwschown`, which allows managers or deputies to do this without assistance of the helpdesk. This tool is installed on the [sci servers]({{% ref "sci-servers" %}}), and allows GWS managers and deputies to change the ownership of files and directories in their group workspace.
+
+The command provides usage information via the `-h` or `--help` option, as shown:
 
 {{<command user="user" host="sci-vm-01">}}
-gwschown exampleuser /gws/nopw/j04/workshop/myfile
+gwschown --help
+(out)usage: gwschown [-h] [-R] [-v] [-n] [--no-warn] user path [path ...]
+(out)
+(out)Changes ownership of files and directories in a group workspace.
+(out)
+(out)positional arguments:
+(out)  user             the user who will become the owner of the files
+(out)  path             path to the file(s) to change the ownership of
+(out)
+(out)optional arguments:
+(out)  -h, --help       show this help message and exit
+(out)  -R, --recursive  operate on files and directories recursively
+(out)  -v, --verbose    output a diagnostic for every file processed
+(out)  -n, --dry-run    check permissions but do not actually run chown (implies -v)
+(out)  --no-warn        run without prompting for confirmation
 {{</command>}}
 
-As with chown, you can also operate recursively with the `-R` flag.
-This tool will only work in group workspaces where you are a manager or deputy.
+For example, replace `exampleuser` with the username of the user who will take ownership of the files, and substituting in your own path. A good idea is to run it with `--dry-run` first just to check everything is working.
 
-If you wish to change the group of files, you should first use the tool to change the ownership to your user- you will then be able to change the group in the usual way using `chgrp`.
+{{<command user="user" host="sci-vm-01">}}
+gwschown exampleuser /gws/nopw/j04/workshop/myfile --dry-run
+{{</command>}}
+
+As with `chown`, you can also operate recursively on directories with the `-R` flag.
+This tool will only work in group workspaces where **you** have the `MANAGER` or `DEPUTY` role.
+
+If you wish to change the **group** of files or directories, you should first use the tool to change the ownership to your user- you will then be able to change the group in the usual way using `chgrp`.
 
 ## Keeping informed
 
