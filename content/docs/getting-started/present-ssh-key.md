@@ -7,11 +7,10 @@ weight: 145
 
 There are 2 main ways to present your SSH key when connecting via SSH-based methods:
 
-1. specifying the path to the private key, and entering the passphrase each time
-1. **(recommended)** loading the key into an `ssh-agent`, which stores the key ready for any subsequent connections you want to make.
+1. **File method:** specifying the path to the private key file and entering the passphrase each time
+1. **Agent method:** loading the key into a persistent `ssh-agent`, which stores the key ready for any subsequent connections you want to make (sometimes, this works for other applications too).
 
-**(2)** is more convenient, because you don't have to repeat the process each time you want to make a new connection, but **(1)** is useful to know for
-testing and troubleshooting.
+**(2)** can be more convenient, because you don't have to repeat the process each time you want to make a new connection, but **(1)** can be simpler and is useful testing and troubleshooting.
 
 ## 1\. Specifying the key location each time
 
@@ -20,8 +19,9 @@ This simply involves including the `-i` option in the SSH command to specify the
 (You would type this command in a terminal window on your local computer i.e. desktop/laptop). This might be:
 
 - Windows
-  - PowerShell terminal window (no additional software needed)
-  - MobaXterm (a 3rd party linux terminal emulator for windows, licence required for continued use)
+  - Windows command or PowerShell terminal window (no additional software needed)
+  - MobaXterm (a 3rd party linux terminal emulator for windows, licence required)
+  - PuTTy (a 3rd party suite of SSH tools including some GUI utilities)
 - Mac: "Terminal" or similar applications
 - Linux: "Terminal" or similar applications
 
@@ -33,24 +33,56 @@ ssh -i path_to/my_private_key user@remotehost
 
 We'll demonstrate the following methods:
 
-- Windows (option 1): use the built-in ssh-agent in Windows OpenSSH Client
-- Windows (option 2): MobaXterm (a linux terminal emulator for Windows)
+- Windows (option 1): Windows OpenSSH Client in `cmd` window
+- Windows (option 2): MobaXterm
 - Mac: "Terminal" application
 - Linux: "Terminal" or similar application
 
 ### Methods to load your key
 
 {{< nav type="tabs" id="tabs-methods" >}}
-  {{< nav-item header="Windows (option 1: built-in OpenSSH client)" show="true">}}
+  {{< nav-item header="Windows (1: cmd, gui)" show="true">}}
 
-  There are two ways to do this:
-  - with graphical tools in Windows
-  - via the Windows PowerShell (as administrator)
+  {{< youtube id="DXZ-4UISkYg" title="MobaXterm" autoplay="true" >}}
 
-  The video below shows how to do it via graphical tools:
+  Follow the video above for how to set up the ssh-agent and load your key:
 
-  [Setting up OpenSSH in Windows](https://youtu.be/Tl631gh4DOU)
+  Once you have loaded your key this way, and if you have set the Windows OpenSSH Authentication Agent service to start automatically, then next time you restart windows, your key will load automatically when you log in to Windows. You should consider whether that is the desired behaviour, considering any shared use of that machine, and you should protect your Windows login with strong security.
+  
+  {{< /nav-item >}}
+  {{< nav-item header="Windows (2: MobaXterm)">}}
+  {{< youtube id="eoQG1jjoPsg" title="MobaXterm" autoplay="true" >}}
+Notes:
+- Remember that you need a licence to use MobaXterm beyond the intial free trial period
+- The method shown above does not work with applications outside of MobaXterm (like NoMachine NX or VSCode): you would need to use the Windows OpenSSH client instead to use these with an agent, or set MobaXterm to use the external Pageant agent.
+  
+  The video above shows the following steps to enable MobAgent and load your key:
+  
+  - Go to `Settings > Configuration > SSH`
+  - Tick `Use internal SSH agent "MobAgent"`
+  - **Un**-tick `Use external Pageant`
+  - Click the `+` symbol to locate your private key file (e.g. `id_ecdsa_jasmin`)
+  - Click OK to save the settings. MobaXterm will now need to restart.
+  - When you restart MobaXterm, you will be prompted for the passphrase associated with your private key.
+   
+  The equivalent action in a Mobaxterm terminal window is
 
+  {{<command user="user" host="mobaxterm">}}
+  ssh-add ~/.ssh/id_ecdsa_jasmin
+  {{</command>}}
+
+  but note the following:
+
+  1. This loads the key from `~/.ssh`, which is within your **MobaXterm** home directory. This may not be the same location as your **Windows** home directory `$USERPROFILE/.ssh`. Which one you use depends on where you saved your key when you generated it. Beware, though: the Windows representation of the path (e.g. `C:\Users\Fred\.ssh\`) needs to be converted to the cygwin representation using `cygpath`, for use within the MobaXterm terminal (`cygpath` is part of [Cygwin](https://cygwin.com), the underlying Linux emulation library used by MobaXterm). Or just `cd` to that directory first!
+  {{<command user="user" host="mobaxterm">}}
+  cygpath $USERPROFILE/.ssh/
+  (out)/drives/c/Users/Fred/.ssh/
+  {{</command>}}
+  2. This method only persists for this particular MobaXterm session. If you want it to always load your key when MobaXterm starts, use the method described in the video above.
+
+  {{< /nav-item >}}
+  {{< nav-item header="Windows (3: Powershell)" >}}
+  
   The equivalent steps in Powershell are as follows:
 
   - Check that the OpenSSH client installed with, either by
@@ -107,30 +139,18 @@ We'll demonstrate the following methods:
 
   - Load your key into the ssh-agent
 
+  Load the key from where it's saved: this should be your `.ssh` directory in your home directory. Storing it elsewhere can cause permissions problems.
+
+  Note that the windows environment variable `%USERPROFILE%` is `${env:USERPROFILE}` in PowerShell. In this example, we're in that directory already, so we can just use the relative path `.ssh\` to the key. But the full path would be `${env:USERPROFILE}\.ssh\id_ecdsa_jasmin`
+
   {{< command prompt="PS C:\Users\User>" shell="powershell" >}}
-  ssh-add <path to key>
+  ssh-add .ssh\id_ecdsa_jasmin
   (out)Enter passphrase for <path to key>: ## right-click to paste your passphrase, then press return
-  (out)2048 SHA256:1WgYUGSqffxJX6bWqBZvFsutN3Psjn5mcPV37r6D7vQ
-  (out)Imported-Openssh-Key (RSA)
+  (out)Identity added: (<path to key>)
   {{< /command >}}
 
-  {{< /nav-item >}}
-  {{< nav-item header="Windows (option 2: MobaXterm)">}}
+  Once you have loaded your key this way, and if you have set the Windows OpenSSH Authentication Agent service to start automatically, then next time you restart windows, your key will load automatically when you log in to Windows. You should consider whether that is the desired behaviour, considering any shared use of that machine, and you should protect your Windows login with strong security.
 
-  {{< youtube id="nEQB0ztE4yY" title="Windows" autoplay="true" >}}
-Notes:
-- Remember that you need a licence to use MobaXterm beyond the intial free trial period
-- The method shown above does not work with applications outside of MobaXterm (like NoMachine NX or VSCode): you would need to use the Windows OpenSSH client instead to use these with an agent.
-  
-  The video above shows the following steps to enable MobAgent and load your key:
-  
-  - Go to `Settings > Configuration > SSH`
-  - Tick `Use internal SSH agent "MobAgent"`
-  - **Un**-tick `Use external Pageant`
-  - Click the `+` symbol to locate your private key file (e.g. `id_rsa_jasmin`)
-  - Click OK to save the settings. MobaXterm will now need to restart.
-  - When you restart MobaXterm, you will be prompted for the passphrase associated with your private key.
-   
   {{< /nav-item >}}
   {{< nav-item header="Mac" >}}
   
@@ -142,7 +162,7 @@ Notes:
   automatically. You can do this by running `ssh-add` with `--apple-use-keychain`:
 
   {{<command user="user" host="localhost">}}
-  ssh-add ~/.ssh/id_rsa_jasmin --apple-use-keychain
+  ssh-add ~/.ssh/id_ecdsa_jasmin --apple-use-keychain
   {{</command>}}
 
   And then by adding the corresponding command with `--apple-load-keychain`  to your `.zshrc` file so
@@ -193,7 +213,7 @@ Notes:
 
   {{< command shell="bash" >}}
   ssh-add -l
-  (out)2048 SHA256:1WgYUGSqffxJX6bWqBZvFsutN3Psjn5mcPV37r6D7vQ (fred.bloggs@example.com)
+  (out)521 SHA256:ZeddNKK5U3am1vyCaUCq4CgMRpvoyv+cJiviqz3zvfw ~/.ssh/id_ecdsa_jasmin (ECDSA)
   {{< /command >}}
 
   If you see output similar to the above, your key is now ready to be used in an SSH connection.
@@ -214,22 +234,27 @@ Notes:
 
 ### Unprotected private key file
 
-Sometimes the SSH agent or application will refuse to load the private key from the file if the file's permissions 
-are set too loosely: some SSH clients insist that you and only you (no other users or services
+Sometimes the SSH agent or application will refuse to load the private key from the file if the file's permissions are set too loosely: some SSH clients insist that you and only you (no other users or services
 on the same machine) can access the file.
 
-To overcome this you have 2 options:
+To overcome this you have 3 options:
 
-- (quick/easy fix?) **send the contents of the file to the `ssh-add` command another way**
+- **(Solves most Windows cases)** Move the key files (`id_edcsa_jasmin` and `id_edcsa_jasmin.pub`: keep them together) to the `.ssh` directory which is inside your home directory. This is the "standard" location, helps to manage all
+your keys in one place. Windows also applies different permissions rules to files in this location, so 
+this usually solves the problem
+
+- **(Next simplest)** Another option is to send just the **contents of the file** to the `ssh-add` command:
 
   In your terminal where you give the ssh-add command, try this instead:
 
   {{<command>}}
-  cat ~/.ssh/id_rsa_jasmin | ssh-add -
+  cat ~/.ssh/id_ecdsa_jasmin | ssh-add -
   {{</command>}}
-  (replace `id_rsa_jasmin` with the path to and/or name of your private key file)
+  (replace `id_ecdsa_jasmin` with the path to and/or name of your private key file)
 
   The `cat` command simply "streams" the contents of the file to standard output (`stdout`), while the trailing hyphen tells the `ssh-add` command to accept this streamed input (`stdin`) instead of from a file.
+
+  (Windows: while the `cat` command **is** available in PowerShell and MobaXterm terminal environments, it is not in the Windows `cmd` environment).
 
   You should be asked for your passphrase in the normal way and can check that the key has loaded correctly with:
 
@@ -244,17 +269,17 @@ To overcome this you have 2 options:
   {{< nav type="tabs" id="tabs-key-perms">}}
   {{< nav-item header="Linux/Mac/cygwin/Mobaxterm" show="true">}}
   {{<command>}}
-chmod 600 ~/.ssh/id_rsa_jasmin
+chmod 600 ~/.ssh/id_ecdsa_jasmin
   {{</command>}}
-  (replace `id_rsa_jasmin` with the path to and/or name of your private key file)
+  (replace `id_ecdsa_jasmin` with the path to and/or name of your private key file)
   {{</nav-item>}}
   {{< nav-item header="Windows: PowerShell">}}
   The equivalent method in Windows PowerShell involves these steps,
-  replacing the expression with `id_rsa_jasmin` with the path to your key if different. 
+  replacing the expression with `id_ecdsa_jasmin` with the path to your key if different. 
   You may need to open the PowerShell window with "run as administrator".
 {{< command prompt="PS C:\Users\User>" shell="powershell" >}}
 ## Set a variable "Key" to hold the key filename:
-New-Variable -Name Key -Value "$env:UserProfile\.ssh\id_rsa_jasmin"
+New-Variable -Name Key -Value "$env:UserProfile\.ssh\id_ecdsa_jasmin"
 ## Remove Inheritance:
 Icacls $Key /c /t /Inheritance:d
 ## Set Ownership to Owner:
@@ -270,9 +295,6 @@ Icacls $Key
 ## Remove Variable:
 Remove-Variable -Name Key
 {{</command>}}
-  {{</nav-item>}}
-  {{< nav-item header="Windows: GUI tools">}}
-(awaiting screenshots)
   {{</nav-item>}}
   {{</nav>}}
 

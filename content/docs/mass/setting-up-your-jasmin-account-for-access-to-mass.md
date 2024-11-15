@@ -15,8 +15,8 @@ Start an ssh-agent on your home institution machine, load your private key, and 
 
 {{<command user="localuser" host="localhost">}}
 eval $(ssh-agent -s)
-ssh-add ~/.ssh/id_rsa_jasmin
-(out)Enter passphrase for ~/.ssh/id_rsa_jasmin:
+ssh-add ~/.ssh/id_ecdsa_jasmin
+(out)Enter passphrase for ~/.ssh/id_ecdsa_jasmin:
 {{</command>}}
 
 **Note:** it's a good idea to keep your private keys for different systems

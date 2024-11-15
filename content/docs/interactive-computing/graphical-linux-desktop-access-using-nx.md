@@ -316,7 +316,7 @@ Once you have set up the environment to your liking, you can
     * Click Load, navigate to your existing private key file (you may need to change the filter to show all files (*.*) instead of just (*.ppk). Select your key, click Open
     * You will be prompted for the passphrase which you set when creating the key.
     * In the MobaKeyGen menu, select Conversions / Export OpenSSH key (the 2nd option)
-    * Choose a new name for the file (it is recommended to just append something on to the end of your existing key name, so that it's clear that they are formats of the same key, e.g. id_rsa_jasmin -> id_rsa_jasmin_f (but the name is not significant).
+    * Choose a new name for the file (it is recommended to just append something on to the end of your existing key name, so that it's clear that they are formats of the same key, e.g. id_ecdsa_jasmin -> id_ecdsa_jasmin_f (but the name is not significant).
     * Close the "MobaXterm SSH Key Generator" window
     * Make yourself a new NX connection profile, pointing to the new file
     * You should now be able to connect.

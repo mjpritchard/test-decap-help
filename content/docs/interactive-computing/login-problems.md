@@ -191,7 +191,7 @@ On some terminal sessions the usual instructions for starting the ssh-agent
 session and adding the key may give the following error:
 
 {{<command user="user" host="localhost">}}
-ssh-add ~/.ssh/id_rsa_jasmin
+ssh-add ~/.ssh/id_ecdsa_jasmin
 (out)Could not open a connection to your authentication agent.
 {{</command>}}
 
