@@ -92,9 +92,7 @@ Videos for each platform (click the tab for your operating system):
     {{< video id="QVj05W9iFJE" >}}
 Notes:
 
-- This profile may not work currently for Windows 11 users
-- Windows 10 users need may need to first [create a reformatted formatted version of private key]({{% ref "#authentication-error-windows-users" %}})
-- Please try [Method 2]({{% ref "#method-2-using-an-agent" %}}) if if this does not work fully for you.
+- This method has now been tested with Windows 10 and 11, but requires you to [update your SSH key to ECDSA]({{%ref "generate-ssh-key-pair"%}}).
   {{< /nav-item >}}
   {{< nav-item header="Mac" >}}
     {{< video id="wXDhnP1Ut1c" >}}
@@ -136,7 +134,7 @@ Videos for each platform:
 
 {{< nav type="tabs" id="tabs-create-agent" >}}
   {{< nav-item header="Windows (OpenSSH)" show="true" >}}
-    {{< video id="QVj05W9iFJE" >}}
+    {{< video id="CxNJz2rLZuA" >}}
   {{< /nav-item >}}
   {{< nav-item header="Mac" >}}
     {{< video id="wBIBtBLGE1g" >}}
@@ -278,7 +276,7 @@ Next, follow the video below for actually connecting, or see the step-by-step in
     {{< video id="Q7JrBPacBao" >}}
   {{< /nav-item >}}
   {{< nav-item header="Linux" >}}
-    {{<video id="37iof53jpUM">}}
+    {{<video id="K98A2VdcZo8">}}
   {{< /nav-item >}}
 {{< /nav >}}
 
