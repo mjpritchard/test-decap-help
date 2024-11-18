@@ -58,7 +58,7 @@ Workspace on JASMIN:
 
 {{<command user="localuser" host="localhost">}}
 exec ssh-agent $SHELL
-ssh-add ~/.ssh/id_rsa_jasmin  ## local path to your private key file
+ssh-add ~/.ssh/id_ecdsa_jasmin  ## local path to your private key file
 rsync myfile <username>@xfer1.jasmin.ac.uk:/gws/nopw/j04/myproject/data/
 {{</command>}}
 

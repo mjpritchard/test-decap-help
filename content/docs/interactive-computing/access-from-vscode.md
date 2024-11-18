@@ -117,7 +117,7 @@ Host sci-vm-01-via-login-01
   User username
   ProxyJump username@login-01.jasmin.ac.uk
   ForwardAgent yes
-  IdentityFile ~/.ssh/id_rsa_jasmin
+  IdentityFile ~/.ssh/id_ecdsa_jasmin
 ```
 
 ## Further tips

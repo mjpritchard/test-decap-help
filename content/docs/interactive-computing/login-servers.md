@@ -126,5 +126,5 @@ Host Sci1ViaLogin01
   ForwardAgent yes
   HostName sci-vm-01.jasmin.ac.uk
   ProxyJump fred@login-01.jasmin.ac.uk
-  IdentityFile ~/.ssh/id_rsa_jasmin
+  IdentityFile ~/.ssh/id_ecdsa_jasmin
 ```
