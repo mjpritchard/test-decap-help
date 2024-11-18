@@ -89,7 +89,7 @@ Videos for each platform (click the tab for your operating system):
 
 {{< nav type="tabs" id="tabs-create-key" >}}
   {{< nav-item header="Windows" show="true" >}}
-    {{< video id="O2tzHD0iCYY" >}}
+    {{< video id="QVj05W9iFJE" >}}
 Notes:
 
 - This profile may not work currently for Windows 11 users
@@ -97,10 +97,10 @@ Notes:
 - Please try [Method 2]({{% ref "#method-2-using-an-agent" %}}) if if this does not work fully for you.
   {{< /nav-item >}}
   {{< nav-item header="Mac" >}}
-    {{< video id="tXSLXvdKHFE" >}}
+    {{< video id="wXDhnP1Ut1c" >}}
   {{< /nav-item >}}
   {{< nav-item header="Linux" >}}
-    {{<video id="b2-Ho1onU5I">}}
+    {{<video id="fsty4PC4Srk">}}
   {{< /nav-item >}}
 {{< /nav >}}
 
@@ -135,8 +135,8 @@ The alternative profile for using an agent instead, is very similar but we need 
 Videos for each platform:
 
 {{< nav type="tabs" id="tabs-create-agent" >}}
-  {{< nav-item header="Windows" show="true" >}}
-    {{< video id="wDZKV8lIY5M" >}}
+  {{< nav-item header="Windows (OpenSSH)" show="true" >}}
+    {{< video id="QVj05W9iFJE" >}}
   {{< /nav-item >}}
   {{< nav-item header="Mac" >}}
     {{< video id="wBIBtBLGE1g" >}}
@@ -172,12 +172,15 @@ Follow the steps in the video to show how to connect to the desktop on the `nx` 
 
 {{< nav type="tabs" id="tabs-connect-key" >}}
   {{< nav-item header="Windows" show="true" >}}
-    {{< video id="-bxqj6jWPJk" >}}
+    {{< video id="Ox7S8LOfUwQ" >}}
 Notes:
-
-- This profile may not work currently for Windows 11 users
-- Windows 10 users need may need to first [create a reformatted formatted version of private key]({{% ref "#authentication-error-windows-users" %}})
-- Please try [Method 2]({{% ref "#method-2-using-an-agent" %}}) if if this does not work fully for you.
+- This method has now been thoroughly tested with the new ECDSA keys and should work for Windows 10 and 11 users if you have updated your key.
+- Make sure you have returned your `~/.nx/config/player.cfg` file to its default state if you edited this previously. The relevant lines should be reset as follows, but remember to edit the file with the NoMachine Enterprise Client application **closed**:
+```xml
+<option key="SSH client mode" value="library">
+<option key="SSH Client" value="nxssh.exe">
+```
+- If it does not work for you particular setup however, please try one of [Methods 2: OpenSSH or 2: Pageant]({{% ref "#method-2-using-an-agent" %}}) instead.
   {{< /nav-item >}}
   {{< nav-item header="Mac" >}}
     {{< video id="kNu4oInzEb8" >}}
@@ -213,13 +216,13 @@ Notes:
 In summary, we need to:
 
 - Load the SSH private key into a local ssh-agent
-- Edit the NX configuration file to use the native ssh client instead of the NoMachine one
+- Unless using **Pageant** as the agent, edit the NX configuration file to use the native ssh client instead of the NoMachine "library" one.
 - Use the connection profile we created earlier, to connect.
 
 1\. Load your SSH private key into your authentication agent
 
 - Follow the [instructions for your platform here]({{% ref "present-ssh-key/#1-loading-your-key-into-an-agent" %}}), then return once you have successfully loaded your key.
-  - for **Windows**, this **must** be the Windows "OpenSSH Client" optional feature, not any other ssh-agent. The MobaXterm agent will not work for this purpose.
+  - for **Windows**, this can be either the **Windows "OpenSSH Client" optional feature**, or **Pageant**, which is part of the **PuTTY** suite of SSH tools, but not any other ssh-agent. The MobaXterm agent "MobAgent" will not work for this purpose. 
   - for **Linux**, you may find that a "local" ssh-agent does not work: for example using Gnome desktop, you may need to use the global one for your desktop environment, e.g.  `gnome-keyring-daemon --start` instead, before doing `ssh-add <key>`
 
 2\. Edit the NX configuration file
@@ -236,11 +239,14 @@ In summary, we need to:
   
   (the changes are slightly different for each platform)
 {{< nav type="tabs" id="tabs-os2" >}}
-  {{< nav-item header="Windows" show="true" >}}
+  {{< nav-item header="Windows (OpenSSH)" show="true" >}}
 ```xml
   <option key="SSH client mode" value="native" />
   <option key="SSH Client" value="C:\Windows\System32\OpenSSH\ssh.exe" />
 ```
+  {{< /nav-item >}}
+  {{< nav-item header="Windows (Pageant)" >}}
+  Leave the file unaltered, with the default settings, as above.
   {{< /nav-item >}}
   {{< nav-item header="Mac" >}}
 ```xml
@@ -261,8 +267,12 @@ In summary, we need to:
 Next, follow the video below for actually connecting, or see the step-by-step instructions below:
 
 {{< nav type="tabs" id="tabs-connect-agent" >}}
-  {{< nav-item header="Windows" show="true" >}}
-    {{< video id="BwKG_dGGtUU" >}}
+  {{< nav-item header="Windows (OpenSSH)" show="true" >}}
+    {{< video id="VUZYOVbugRc" >}}
+  {{< /nav-item >}}
+  {{< nav-item header="Windows (Pageant)">}}
+    {{< video id="4URCp5AcJdg" >}}
+  This video covers the whole process, incuding how to convert the key using PuTTYgen and load it using Pageant, then set up a connection and use it to connect.
   {{< /nav-item >}}
   {{< nav-item header="Mac" >}}
     {{< video id="Q7JrBPacBao" >}}
@@ -307,20 +317,9 @@ Once you have set up the environment to your liking, you can
 
 ## Troubleshooting
 
-### Authentication error (Windows users) 
+### Authentication error (Windows users)
 
-* Try reformatting your private key using a tool available within MobaXterm. 
-    * If you have tested and can successfully connect to `nx1.jasmin.ac.uk` from an SSH client in a terminal window, but **NOT** from the NoMachine NX client ("Authentication Failed"), then try following the steps below: these instructions are for Windows users.
-    * Note that this doesn't make you a new key, it just makes a reformatted version of your key, which can sit alongside your existing private key file. The public key stays the same, so there's no need to upload anything new to your JASMIN profile.
-    * Open the MobaKeyGen tool: MobaXterm menu / Tools / **MobaKeyGen (SSH Key Generator)**.
-    * Click Load, navigate to your existing private key file (you may need to change the filter to show all files (*.*) instead of just (*.ppk). Select your key, click Open
-    * You will be prompted for the passphrase which you set when creating the key.
-    * In the MobaKeyGen menu, select Conversions / Export OpenSSH key (the 2nd option)
-    * Choose a new name for the file (it is recommended to just append something on to the end of your existing key name, so that it's clear that they are formats of the same key, e.g. id_ecdsa_jasmin -> id_ecdsa_jasmin_f (but the name is not significant).
-    * Close the "MobaXterm SSH Key Generator" window
-    * Make yourself a new NX connection profile, pointing to the new file
-    * You should now be able to connect.
-    * The following video shows this sequence in action (although the key is named slightly differently)
+* Update your key to ECDSA (previous recommendation was RSA). This will solve most problems. See updated advice in [Generate SSH key pair]({{%ref "generate-ssh-key-pair"%}}). Remember to leave 15 minutes after uploading your new public key before trying again, so that the new key can be made available in all the places it needs to be.
 
 ### Transposed symbol keys
 
@@ -337,10 +336,6 @@ A connection timeout has occurred while trying to connect to 'nx1.jasmin.ac.uk' 
 The issue could either be caused by a networking problem, by a firewall or NAT blocking incoming
 traffic or by a wrong server address. Please verify your configuration and try again.
 ```
-
-### Authentication method
-
-Please use "Private key" as the authentication method, not "Authentication agent", as the former has been found to work more consistently and reliably, particularly for onward connections to other machines.
 
 ### Client version
 
@@ -364,15 +359,18 @@ Be sure to use the PASSPHRASE associated with your SSH private key, and not the 
 
 The location of your private key on your local machine may be in a hidden directory for example `~/.ssh`. In order to navigate to it to provide the location when setting up your connection profile, you may need to enable the display of hidden directories/files in your local desktop environment first. On a Mac you can do this with the shortcut {{<kbd "CMD+SHIFT+.">}}. In Windows this is under File Explorer / View / Hidden Items. It's also possible that your home directory itself (normally `/Users/<username>`) is not configured to be displayed by default in `Finder`. If this is case, go to Finder / Preferences / Sidebar / Show these items and tick the box next to the item representing your username: this should make it appear, and `.ssh` should be a subdirectory of this.
 
+Windows users may need to switch on "show hidden files" which is normally an option in File Explorer windows, and/or where you're asked to choose from a list of files.
+
 ### Can't make an onward connection
 
-Previous versions of the Windows client had problems with "forward authentication" enabled, but this is required for onward connection to other machines. If this happens, try:
-
-* Does your username have > 8 characters? If so, try using `nx4` (centos7), or any of the new Rocky 9 NX servers, `nx[1-3]`
-* Uninstalling the NoMachine Enterprise Client
-* Deleting the `C:\Users\<username>\.nx` directory on your machine
-* Re-installing and trying again.
-* Deleting and making a new connection profile for the nx server you're connecting to.
+* Does your username have more than 8 characters?
+  * Before we realised this was a problem, some users were not prevented from creating accounts with usernames over 8 characters. The names of the servers are now kept as short as possible e.g. `nx1`, `nx2` so this mitigates the problem in most cases. All the new Rocky 9 NX hosts are now the same in this respect. But if your username is very long (>13 characters) you may still run into problems here, in which case please contact the helpdesk.
+* [Update your key to ECDSA]({{%ref "generate-ssh-key-pair"%}}): this should solve the problem in most cases.
+* If it's still a problem 15 minutes after uploading your new public key, try:
+  * uninstalling the NoMachine Enterprise Client
+  * deleting the `%USERPROFILE%\.nx` (Windows) or `~\.nx` (Mac/Linux) directory on your machine
+  * deleting the `%USERPROFILE%\Documents\NoMachine` or `~\NoMachine` directory on your machine (beware this will remove **all** connection profiles)
+  * rebooting, then re-installing and trying again.
 
 ### Can't display graphics from sci machine or other onward connection
 
@@ -386,7 +384,7 @@ Check your disk usage in your JASMIN home directory: if this is over the 100G li
 
 Sometimes, you can't connect because you have a previous session which did not terminate correectly, or you might have problems reconnecting to a previous desktop session. Sometimes the client will get stuck with a "spinning wheel" before eventually timing out. You can terminate your own previous session as follows:
 
-- Follow instructions in {{<link "#connecting">}}Connecting{{</link>}} until step 2 where all the users' sessions on the machine are displayed.
+- Follow instructions in {{<link "#connecting">}}Connecting{{</link>}} until the point where all the other users' sessions on the machine are displayed.
 - Find the one corresponding to your username
 - Right-click it and select "Terminate session"
 
@@ -394,4 +392,4 @@ Note that you may lose any unsaved work in the session that you terminate, but i
 
 ### "It worked yesterday"
 
-For occasions where "it worked last time I tried to connect, but now doesn't", please first try the above step to clear any previous session which might have got stuck, otherwise the time-honoured IT support advice of "turning it off and on again" is applicable: try restarting your local machine where the NX client is running, as this can sometimes clear issues with the client, your machine or your network connection. Don't forget to re-connect via your VPN if available.
+For occasions where "it worked last time I tried to connect, but now doesn't", please first try the above step to clear any previous session which might have got stuck, otherwise the time-honoured IT support advice of "turning it off and on again" is applicable: try restarting the machine where you are using NoMachine Enterprise Client, as this can sometimes clear issues with the client, your machine or your network connection. Don't forget to re-connect via your VPN if available.
