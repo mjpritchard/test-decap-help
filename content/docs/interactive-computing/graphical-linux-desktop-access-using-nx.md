@@ -81,7 +81,7 @@ There are 2 methods of using your SSH key which should work with JASMIN, these a
 | Method | pros/cons |
 | ---|---|
 | 1. Specify the location of your SSH private key | {{< icon fas plus text-success >}} simple <br>{{< icon fas plus text-success >}} no admin permissions needed<br>{{< icon fas plus text-success >}} works for all platforms if you update your key to ECDSA |
-| 2. Use your key stored in a local ssh-agent | {{< icon fas plus text-success >}} useful if you use other applications which use SSH (e.g. VSCode)<br>{{< icon fas minus text-warning >}} may need admin permissions for 1st-time agent setup<br>{{< icon fas minus text-warning >}} careful editing of config file requires in some cases |
+| 2. Use your key stored in a local ssh-agent | {{< icon fas plus text-success >}} useful if you use other applications which use SSH (e.g. VSCode)<br>{{< icon fas minus text-warning >}} may need admin permissions for 1st-time agent setup<br>{{< icon fas minus text-warning >}} careful editing of config file required in some cases |
 {.table .table-striped}
 
 For a simple terminal connection to JASMIN, you would follow the instructions in [presenting your ssh key]({{% ref "present-ssh-key/#1-specifying-the-key-location-each-time" %}}), but the NoMachine client needs you to do it a slightly different way. The same principles apply however.
