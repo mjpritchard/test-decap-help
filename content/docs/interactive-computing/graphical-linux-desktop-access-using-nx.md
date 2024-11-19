@@ -10,6 +10,8 @@ title: Graphical linux desktop using NoMachine NX
 weight: 50
 ---
 
+{{<alert type="info">}}Updated advice Nov 2024, now works for all platforms if you update your SSH key.{{</alert>}}
+
 ## Introduction
 
 - This service provides a graphical Linux desktop on JASMIN, ideal
@@ -76,12 +78,13 @@ Updates in the menu.
 
 There are 2 methods of using your SSH key which should work with JASMIN, these affect how you set up the connection:
 
-1. Specify the location of your SSH private key
-2. Using your key stored in a local ssh-agent
+| Method | pros/cons |
+| ---|---|
+| 1. Specify the location of your SSH private key | {{< icon fas plus text-success >}} simple <br>{{< icon fas plus text-success >}} no admin permissions needed<br>{{< icon fas plus text-success >}} works for all platforms if you update your key to ECDSA |
+| 2. Use your key stored in a local ssh-agent | {{< icon fas plus text-success >}} useful if you use other applications which use SSH (e.g. VSCode)<br>{{< icon fas minus text-warning >}} may need admin permissions for 1st-time agent setup<br>{{< icon fas minus text-warning >}} careful editing of config file requires in some cases |
+{.table .table-striped}
 
 For a simple terminal connection to JASMIN, you would follow the instructions in [presenting your ssh key]({{% ref "present-ssh-key/#1-specifying-the-key-location-each-time" %}}), but the NoMachine client needs you to do it a slightly different way. The same principles apply however.
-
-Until recently, we recommended only method (1) but with the move to Rocky 9 Linux, there is a problem with this approach for Windows 11 users, yet to be resolved by the software vendor. So we have also described a method based on (2) which, although requiring careful (one-off) configuration, should also be useful if you're planning to use other applications, like VSCode to connect to JASMIN. Using this method, Windows users no longer need to create and use a reformatted version of the SSH private key.
 
 ### Method 1: specifying key location
 
