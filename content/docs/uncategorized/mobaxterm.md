@@ -98,8 +98,7 @@ run the command on your local machine (`user@localhost`) or on JASMIN (`user@sci
 
 {{<command user="user" host="mobaxterm">}}
 ssh-add -l
-(out)2048 SHA256:1WgYUGSqffxJX6bWqBZvFsutN3Psjn5mcPV37r6D7vQ
-(out)Imported-Openssh-Key (RSA)
+(out)521 SHA256:ZeddNKK5U3am1vyCaUCq4CgMRpvoyv+cJiviqz3zvfw ~/.ssh/id_ecdsa_jasmin (ECDSA)
 {{</command>}}
 
 Sometimes the last part of this output shows your email address, but it is
