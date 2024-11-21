@@ -10,7 +10,11 @@ There are 2 main ways to present your SSH key when connecting via SSH-based meth
 1. **File method:** specifying the path to the private key file and entering the passphrase each time
 1. **Agent method:** loading the key into a persistent `ssh-agent`, which stores the key ready for any subsequent connections you want to make (sometimes, this works for other applications too).
 
-**(2)** can be more convenient, because you don't have to repeat the process each time you want to make a new connection, but **(1)** can be simpler and is useful testing and troubleshooting.
+| Method | pros/cons |
+| ---|---|
+| 1. Specify the location of your SSH private key | {{< icon fas plus text-success >}} simple <br>{{< icon fas plus text-success >}} no admin permissions needed<br>{{< icon fas plus text-success >}} works for all platforms if you update your key to ECDSA |
+| 2. Use your key stored in a local ssh-agent | {{< icon fas plus text-success >}} useful if you use many applications which use SSH (e.g. NX, VSCode)<br>{{< icon fas minus text-warning >}} may need admin permissions for 1st-time agent setup<br>{{< icon fas minus text-warning >}} careful editing of config file required in some cases |
+{.table .table-striped}
 
 ## 1\. Specifying the key location each time
 
@@ -24,6 +28,8 @@ This simply involves including the `-i` option in the SSH command to specify the
   - PuTTy (a 3rd party suite of SSH tools including some GUI utilities)
 - Mac: "Terminal" or similar applications
 - Linux: "Terminal" or similar applications
+
+Note: the "standard" location to store your key is the `.ssh` directory within your home directory. Storing it elsewhere, particularly on Windows, can cause permissions problems.
 
 {{<command user="user" host="localhost">}}
 ssh -i path_to/my_private_key user@remotehost
@@ -50,10 +56,17 @@ We'll demonstrate the following methods:
   Once you have loaded your key this way, and if you have set the Windows OpenSSH Authentication Agent service to start automatically, then next time you restart windows, your key will load automatically when you log in to Windows. You should consider whether that is the desired behaviour, considering any shared use of that machine, and you should protect your Windows login with strong security.
   
   {{< /nav-item >}}
+
+  {{< nav-item header="Windows (2: Pageant)">}}
+
+  {{< youtube id="2__EzPqWZBc" title="MobaXterm" autoplay="true" >}}
+
+  Follow the video above for how to set up the ssh-agent and load your key. This method should not need any additional admin permissions once you have got the PuTTY suite of tools installed (PuTTY, PuTTYgen, Pageant, available from [here](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html))
+  {{< /nav-item >}}
   {{< nav-item header="Windows (2: MobaXterm)">}}
   {{< youtube id="eoQG1jjoPsg" title="MobaXterm" autoplay="true" >}}
 Notes:
-- Remember that you need a licence to use MobaXterm beyond the intial free trial period
+- Remember that you need a licence to use MobaXterm beyond the intial free trial period.
 - The method shown above does not work with applications outside of MobaXterm (like NoMachine NX or VSCode): you would need to use the Windows OpenSSH client instead to use these with an agent, or set MobaXterm to use the external Pageant agent.
   
   The video above shows the following steps to enable MobAgent and load your key:
@@ -200,8 +213,7 @@ Notes:
   {{< command shell="bash" >}}
   ssh-add <path to key>
   (out)Enter passphrase for <path to key>: ## right-click to paste your passphrase, then press return
-  (out)2048 SHA256:1WgYUGSqffxJX6bWqBZvFsutN3Psjn5mcPV37r6D7vQ
-  (out)Imported-Openssh-Key (RSA)
+  (out)Identity added (<path to key>)
   {{< /command >}}
 
   {{< /nav-item >}}
@@ -297,5 +309,3 @@ Remove-Variable -Name Key
 {{</command>}}
   {{</nav-item>}}
   {{</nav>}}
-
-
