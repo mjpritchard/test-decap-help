@@ -81,16 +81,16 @@ admin team as it may need to be updated before you can connect securely to JASMI
 
 name | status
 --- | ---
-`nx1.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} [Ready, but new setup steps recommended]({{% ref "graphical-linux-desktop-access-using-nx#setting-up-your-connection" %}})
-`nx2.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} [Ready, but new setup steps recommended]({{% ref "graphical-linux-desktop-access-using-nx#setting-up-your-connection" %}})
-`nx3.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} [Ready, but new setup steps recommended]({{% ref "graphical-linux-desktop-access-using-nx#setting-up-your-connection" %}})
-`nx4.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-warning >}} Not yet moved to Rocky 9 (works as previously for now)
+`nx1.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} [Ready for use, update your SSH key]({{% ref "graphical-linux-desktop-access-using-nx#setting-up-your-connection" %}})
+`nx2.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} [Ready for use, update your SSH key]({{% ref "graphical-linux-desktop-access-using-nx#setting-up-your-connection" %}})
+`nx3.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} [Ready for use, update your SSH key]({{% ref "graphical-linux-desktop-access-using-nx#setting-up-your-connection" %}})
+`nx4.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-danger >}} Old server, closing soon [see retirement timetable](#timetable-for-host-retirements)
 {.table .table-striped .w-auto}
 
 Notes:
 
-- [New steps are recommended]({{% ref "graphical-linux-desktop-access-using-nx#setting-up-your-connection" %}}) for setting up your connection, including a small edit to a config file.
-- New nodes have identical configuration so are accessible from all network locations (no further need for some users use only certain nodes).
+- [Updated advice for connection]({{% ref "graphical-linux-desktop-access-using-nx#setting-up-your-connection" %}}), requires updating your SSH key.
+- New nodes have identical configuration so are accessible from all network locations (no further need for some users to use only certain nodes).
 - By keeping the host names as short as possible, we mitigate the issue some users (with long
 usernames created before the 8-character rule) had with agent forwarding: all should behave
 the same as the old `nx4` in this respect.
@@ -122,8 +122,7 @@ Physical servers | |
 
 Notes:
 
-- For users within the STFC network, there is no longer any reverse DNS restriction, so all
-should be accessible directly within that network without need to go via a login node.
+- For users within the STFC network, there is no longer any reverse DNS restriction.
 - Replacements for common tools:
   - `lxterminal` has been replaced with {{<link href="https://docs.xfce.org/apps/terminal/start">}}xfce-terminal{{</link>}}
   - for a more richly-featured editor or Integrated Development Environment (IDE), users should consider using
@@ -193,20 +192,9 @@ Notes:
 
 ### GridFTP server
 
-For users of certificate-based GridFTP only (specifically, `gsiftp://` using the `globus-url-copy` client), there is a new server:
+Due to difficulties installing and configuring the suite of legacy components needed to support "old-style" gridftp, **we will not now be providing a replacement for the old server `gridftp1`**. Please familiarise yourself with using Globus, see below: this provides equivalent (and better) functionality.
 
-name | status
---- | ---
-`gridftp2.jasmin.ac.uk` | {{< icon fas square-xmark text-danger >}} Not yet ready
-{.table .table-striped .w-auto}
-
-Notes:
-
-- Make sure you are using `slcs.jasmin.ac.uk` as the short-lived credentials server, with your JASMIN
-account credentials. CEDA identities can no longer be used for authentication with this server.
-- We now encourage users of this service to migrate to use the {{<link "#globus-data-transfer-service">}}Globus service{{</link>}}
-for data transfers. This older GridFTP service will likely be decommissioned over the next 12 months.
-- Use of `globus-url-copy` is nothing to do with the {{<link "#globus-data-transfer-service">}}Globus service{{</link>}}: they are now very separate things.
+Note this does affect gridftp-over-ssh (`sshftp`) which is available on the new `hpxfer` nodes in the same way as their predecessors, see above.
 
 ### Globus data transfer service
 
@@ -245,7 +233,7 @@ JULES <br>**see Note 4**| | Information to follow
 #### Notes
 
 1. **IDL:** We will not support IDL 8.5 & older versions on Rocky 9 but we might continue to support IDL 8.6 if there is a need from the user community: we are still assessing that. The present version of IDL 8.6 must be migrated from the current "Flexnet" to the new "Next Generation" licensing system.
-We obtained IDL 8.9 and IDL 9 from NV5 and are in the process to setup “Next Generation" licensing to activate the licence. Once this is done on server and client machines and testing is completed, a new module environment will be created users for IDL 8.9 and 9.0 on the new sci machines and a subset of the new LOTUS Rocky 9 nodes. The default `module add idl` will then load IDL 8.9 instead of IDL 8.6.
+We obtained IDL 8.9 and IDL 9 from NV5 and are in the process to setup “Next Generation" licensing to activate the licence. Once this is done on server and client machines and testing is completed, a new module environment will be created users for IDL 8.9 and 9.0 on the new sci machines and a subset of the new LOTUS Rocky 9 nodes. The default `module add idl` will then load IDL 8.9 instead of IDL 8.6. There is currently an issue with this new licence server preventing availability of the full suite of licences, however.
 
 2. **Cylc:** Note that Cylc 8 differs from Cylc 7 in many ways: architecture, scheduling algorithm, security, UIs, working practices and more. The Cylc 8 web UI requires the use of a browser (e.g. Firefox in the NoMachine desktop service)
 
@@ -273,6 +261,26 @@ Notes:
   - and from **one** additional physical node (details TBC) with extended CentOS7 support, with restricted access to enable use of Cylc 7 for limited period.
 - Nodes will gradually be removed from the "old" cluster and retired, timetable TBC once new cluster is up & running.
 
-### Other services
+### Timetable for host retirements
 
-Further information to follow.
+Please find below a timetable of planned host retirements in line with our move to Rocky Linux 9. 
+
+Please start moving your work **NOW**
+so that any issues can be resolved and disruption minimized.
+
+| Host    | retirement date |
+| ---     | --- |
+| Group A | |
+| `cron1.ceda` aka `cron.jasmin`<br>`xfer3`<br>`nx-login[23]` | 21/11/2024 16:00 |
+| Group B | 
+| `nx4` aka `nx-login4` | 6/12/2024 |
+| Group C |
+| `xfer1`<br>`hpxfer1`<br>`sci[124]`<br>`login[12]` | 6/12/2024 |
+| Group D | |
+| `xfer2`<br>`hpxfer2`<br>`sci[568]`<br>`login[34]`| 13/12/2024 |
+{.table .table-striped}
+
+All the hosts listed have new Rocky 9 equivalents described in the document above.
+Please check back regularly to keep up to date with this schedule.
+
+
