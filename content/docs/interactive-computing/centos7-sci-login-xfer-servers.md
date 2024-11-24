@@ -7,7 +7,7 @@ draft: true
 ---
 
 {{<alert type="warn">}}
-This article was used to describe the new servers introduced as part of the RHEL -> CentOS7 migration in 2020/2021. It is now superceded.
+This article was used to describe the new servers introduced as part of the RHEL -> CentOS7 migration in 2020/2021. It is now superseded.
 {{</alert>}}
 
 This article describes the CentOS7 versions of the 3 familiar

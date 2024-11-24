@@ -89,7 +89,7 @@ ssh fred@sci-vm-01.jasmin.ac.uk
 - Jump Host method:
 
 {{<command user="user" host="localhost">}}
-ssh -A fred@login-01.jasmin.ac.uk -J fred@login-01.jasmin.ac.uk
+ssh -A fred@sci-vm-01.jasmin.ac.uk -J fred@login-01.jasmin.ac.uk
 {{</command>}}
 {{<command user="user" host="sci-vm-01">}}
 ## now on sci server
@@ -126,5 +126,5 @@ Host Sci1ViaLogin01
   ForwardAgent yes
   HostName sci-vm-01.jasmin.ac.uk
   ProxyJump fred@login-01.jasmin.ac.uk
-  IdentityFile ~/.ssh/id_rsa_jasmin
+  IdentityFile ~/.ssh/id_ecdsa_jasmin
 ```
