@@ -59,28 +59,22 @@
     weight = 10
 
 [[sharing.providers]]
-    name = "Twitter"
-    url = "https://twitter.com/home?status={url}"
-    icon = "fab x-twitter"
-    weight = 20
-
-[[sharing.providers]]
     name = "Facebook"
     url = "https://www.facebook.com/sharer.php?u={url}"
     icon = "fab facebook"
-    weight = 30
+    weight = 20
 
 [[sharing.providers]]
     name = "WhatsApp"
     url = "whatsapp://send?text={title}%20{url}"
     icon = "fab whatsapp"
-    weight = 40
+    weight = 30
 
 [[sharing.providers]]
     name = "email"
     url = "{url}"
     icon = "fas link"
-    weight = 50
+    weight = 40
     clipboard = true
 
 [sections]
@@ -265,3 +259,7 @@
 
 [beacon]
     html = "<p>Beacon</p><script src=\"/static/js/beacon.js\" type=\"text/javascript\">"
+
+[videos]
+    [videos.youtube]
+        host = "youtube"

@@ -32,4 +32,3 @@ This is still under active development and further dashboards may be added in du
 Please also keep an eye on:
 - `JASMIN-USERS` email list (all users should be on this list. If not, please ask)
 - {{< link ceda_news >}}CEDA News{{< /link >}} articles on the CEDA website
-- {{< link ceda_x >}}@cedanews on X (formerly Twitter){{</link>}}
