@@ -277,12 +277,11 @@ If you wish to change the **group** of files or directories, you should first us
 Please maintain contact throughout the life of the GWS via the following
 channels:
 
-- Using the {{< link "https://mon.jasmin.ac.uk" >}}JASMIN Dashboard{{</link>}} to check on the status of your GWS (used versus available space).
+- {{<link "ceda_status">}}CEDA Status Board{{</link>}} with live updates on incidents affecting CEDA and JASMIN services.
+- {{< link "https://mon.jasmin.ac.uk" >}}JASMIN Dashboard{{</link>}} to check on the status of your GWS (used versus available space).
 - Email alerts from the system when the GWS reaches >83% full
 - Email from the CEDA/JASMIN team
-- News articles on the CEDA or JASMIN websites and by monitoring CEDA social media feeds which may be used to post messages regarding system status or security.
-  - {{< link "ceda_site" >}}CEDA Website{{</link>}}
-  - {{< link "https://twitter.com/cedanews" >}}CEDA News on Twitter{{</link>}}
+- News articles on the {{< link "ceda_site" >}}CEDA{{</link>}} or {{< link "jasmin_site" >}}JASMIN{{</link>}} websites.
 
 If you are aware that a user who has access to your GWS leaves your project
 or, for whatever reason, no longer needs to be a member of the GWS, please let
