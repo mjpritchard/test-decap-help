@@ -271,13 +271,13 @@ so that any issues can be resolved and disruption minimized.
 | Host    | retirement date |
 | ---     | --- |
 | Group A | |
-| `cron1.ceda` aka `cron.jasmin`<br>`xfer3`<br>`nx-login[23]` | 21/11/2024 16:00 |
+| `cron1.ceda` aka `cron.jasmin`<br>`xfer3`<br>`nx-login[2,3]` | 21/11/2024 16:00 |
 | Group B | 
 | `nx4` aka `nx-login4` | 6/12/2024 16:00 |
 | Group C |
-| `xfer1`<br>`hpxfer1` - already shut down due to technical issue<br>`sci[124]`<br>`login[12]` | 6/12/2024 16:00 |
+| `xfer1`<br>`hpxfer1` - already shut down due to technical issue<br>`sci[1,2,4]`<br>`login[1,2]` | 6/12/2024 16:00 |
 | Group D | |
-| `xfer2`<br>`hpxfer2`<br>`sci[568]`<br>`login[34]`| 13/12/2024 16:00 |
+| `xfer2`<br>`hpxfer2`<br>`sci[5,6,8]`<br>`login[3,4]`| 13/12/2024 16:00 |
 {.table .table-striped}
 
 All the hosts listed have new Rocky 9 equivalents described in the document above.
