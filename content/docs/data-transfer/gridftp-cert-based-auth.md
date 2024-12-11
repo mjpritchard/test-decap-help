@@ -6,7 +6,7 @@ title: 'GridFTP (certificate-based authentication)'
 ---
 
 {{<alert type="danger">}}
-Not yet updated to work with with new Rocky9 servers, so please continue using CentOS7 equivalents for now, as documented below.
+Deprecated: please use Globus instead for transfers which previously used this method.
 {{</alert>}}
 
 This article describes how to transfer data using gridftp with certificate-
