@@ -277,7 +277,7 @@ so that any issues can be resolved and disruption minimized.
 | Group C |
 | `xfer1`<br>`hpxfer1` - already shut down due to technical issue<br>`sci[1,2,4]`<br>`login[1,2]` | 6/12/2024 16:00 |
 | Group D | |
-| `xfer2`<br>`hpxfer2`<br>`sci[5,6,8]`<br>`login[3,4]`| 13/12/2024 16:00 |
+| `xfer2`<br>`hpxfer2`<br>`sci[5,6,8]`<br>`login[3,4]`<br>`gridftp1`| 13/12/2024 16:00 |
 {.table .table-striped}
 
 All the hosts listed have new Rocky 9 equivalents described in the document above.

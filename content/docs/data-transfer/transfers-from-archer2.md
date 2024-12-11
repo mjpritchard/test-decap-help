@@ -258,7 +258,13 @@ with
 sshftp://<jasmin-username>@hpxfer1.jasmin.ac.uk
 ```
 
+
+
 ## 3rd choice method: certificate-based gridftp
+
+{{<alert>}}The use of certificate-based gridtp for transfers to JASMIN has now been replaced by Globus.
+Server `gridftp1` will be closed on Friday 13th December 2024 at 16:00
+{{</alert>}}
 
 This method for transfers between ARCHER2 and JASMIN uses
 globus-url-copy with the concurrency option, as described below, but using
