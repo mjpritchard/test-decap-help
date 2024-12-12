@@ -220,7 +220,7 @@ Please see the table below and accompanying notes which together summarise the u
 
 Software | CentOS7 | Rocky 9
 --- | --- | ---
-IDL versions<br>IDL licence server<br>**see Note 1** | 8.2, 8.5 (D), 8.5, 8.6<br>Flexnet | 8.9, 9.0. (8.6?)<br>Next generation
+IDL versions<br>IDL licence server<br>**see Note 1** | 8.2, 8.5 (D), 8.5, 8.6<br>Flexnet | 8.9, 9.1(D)<br>Next generation
 Cylc<br>Cylc UI visualisation<br>**see Note 2**  | 7.8.14 and 8.3.3-1<br>UI functionality integrated | 8.3.3-1<br>UI via browser: discussion ongoing
 Jaspy<br>Jasr<br>jasmin-sci | 2.7, 3.7*, 3.10* (*: all variants)<br>3.6, 4.0 (all variants), 4.2<br>URL page of the packages | 3.11<br>4.3<br>rpm/Glibc compatibility tba?
 Intel compilers | 12.1.5-20.0.0 (11 variants) | Intel oneAPI
@@ -232,8 +232,11 @@ JULES <br>**see Note 4**| | Information to follow
 
 #### Notes
 
-1. **IDL:** We will not support IDL 8.5 & older versions on Rocky 9 but we might continue to support IDL 8.6 if there is a need from the user community: we are still assessing that. The present version of IDL 8.6 must be migrated from the current "Flexnet" to the new "Next Generation" licensing system.
-We obtained IDL 8.9 and IDL 9 from NV5 and are in the process to setup “Next Generation" licensing to activate the licence. Once this is done on server and client machines and testing is completed, a new module environment will be created users for IDL 8.9 and 9.0 on the new sci machines and a subset of the new LOTUS Rocky 9 nodes. The default `module add idl` will then load IDL 8.9 instead of IDL 8.6. There is currently an issue with this new licence server preventing availability of the full suite of licences, however.
+1. **IDL:**
+   1. IDL versions 8.9 and 9.1 are now available on the Rocky 9 sci servers.
+   1. These will also be the versions available on the new cluster, which will be announced in early 2025.
+   1. Licensing is now in place to enable use of these versions on Rocky 9 servers, in runtime or interactive mode.
+   1. For the limited remaining time that the existing LOTUS cluster is available (with CentOS7 nodes), 8.5 is the default with other legacy versions still available on those nodes.
 
 2. **Cylc:** Note that Cylc 8 differs from Cylc 7 in many ways: architecture, scheduling algorithm, security, UIs, working practices and more. The Cylc 8 web UI requires the use of a browser (e.g. Firefox in the NoMachine desktop service)
 
