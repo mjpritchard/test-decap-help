@@ -68,7 +68,7 @@ For all the above methods, you are now recommended to update your key to ECDSA: 
 
 - Create a new key pair using this command. Save the files `id_ecdsa_jasmin` and `id_ecdsa_jasmin.pub` to your `~/.ssh` directory which is in your home directory on your local machine. Storing in this location avoids permissions problems. Remember, do this command on your local machine: your private key should never leave that machine and must be protected with a strong passphrase. **Do not copy your private key to anywhere on JASMIN**
 {{<command>}}
-ssh-keygen -m PEM -t ecdsa -b 521 -f ~/.ssh/id_ecdsa_jasmin
+ssh-keygen -m PEM -t ecdsa -b 521 -C "me@somewhere.ac.uk" -f ~/.ssh/id_ecdsa_jasmin
 {{</command>}}
 - The equivalent using PuTTYgen or MobaKeyGen is with these settings: choose these **before** clicking "Generate"
 {{< image src="img/docs/generate-ssh-key-pair/puttygen-ecdsa-key.png" caption="Settings for ECDSA key in PuTTYgen (same for MobaKeyGen). Choose settings before clicking Generate." wrapper="col-8 mx-auto">}}
