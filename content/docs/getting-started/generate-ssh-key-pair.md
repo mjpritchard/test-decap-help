@@ -45,10 +45,10 @@ Please note the updated command and filenames generated.
 {{</alert>}}
 
 The Linux command `ssh-keygen` should be used to generate your SSH key pair.
-Open a terminal and generate your public and private key, as follows:
+Open a terminal and generate your public and private key, as follows, replacing the e-mail address with your own:
 
 {{<command user="localuser" host="localhost">}}
-ssh-keygen -m PEM -t ecdsa -b 521 -f ~/.ssh/id_ecdsa_jasmin
+ssh-keygen -m PEM -t ecdsa -b 521 -C "me@somewhere.ac.uk" -f ~/.ssh/id_ecdsa_jasmin
 {{</command>}}
 
 (Here, `~/` or `$HOME` both mean "your home directory". The equivalent on Windows is `%USERPROFILE%`)
