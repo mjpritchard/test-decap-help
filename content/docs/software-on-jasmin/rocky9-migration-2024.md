@@ -246,23 +246,107 @@ JULES <br>**see Note 4**| | Information to follow
 
 ### Upgraded LOTUS cluster
 
-Preliminary node specification: further info to follow.
+Preliminary node specification:
 
-type | selector | status | specs
---- | --- | --- | ---
-standard | tbc | {{< icon fas square-xmark text-danger >}} Not yet available | 190 CPU / 1.5 TB RAM / 480 GB SATA SSD + 800 GB NvMe SSD
-high-mem | tbc | {{< icon fas square-xmark text-danger >}} Not yet available | 190 CPU / 6 TB RAM / 480 GB SATA SSD + 800 GB NvMe SSD
+type | status | specs
+--- | --- | ---
+standard | {{< icon fas triangle-exclamation text-warning >}} Available for testing | 190 CPU / 1.5 TB RAM / 480 GB SATA SSD + 800 GB NvMe SSD
+high-mem | {{< icon fas triangle-exclamation text-warning >}} Available for testing | 190 CPU / 6 TB RAM / 480 GB SATA SSD + 800 GB NvMe SSD
 {.table .table-striped .w-auto}
 
 Notes:
 
 - Overall ~55,000 cores: ~triples current capacity
 - New nodes will form a new cluster, managed separately to the "old" LOTUS
-- Submission to the new cluster will **only** be via the new `sci` machines: `sci-vm-[01-06]` and `sci-ph-[01-02]`
+- Submission to the new cluster will initially be via `sci-ph-03`, until **30 Jan 2025** when remaining physical sci nodes `sci-ph-0[1,2]` will be switched over to the new cluster.
   - and from **one** additional physical node (details TBC) with extended CentOS7 support, with restricted access to enable use of Cylc 7 for limited period.
-- Submission to "old" LOTUS will **only** be from current CentOS7 `sci` machines `sci[1-8]`
+- Submission to "old" LOTUS will **only** be from current CentOS7 `sci` machines `sci[1-8]` **until 18 Feb 2025**.
   - and from **one** additional physical node (details TBC) with extended CentOS7 support, with restricted access to enable use of Cylc 7 for limited period.
 - Nodes will gradually be removed from the "old" cluster and retired, timetable TBC once new cluster is up & running.
+
+### New LOTUS2 cluster initial submission guide
+
+{{<alert type="info">}}
+Please see the details below on how to access LOTUS2 and how to submit a job to the new Slurm scheduling partitions.
+
+**These require a Slurm account, partition and quality of service (QoS) to be specified at job submission time**.
+{{</alert>}}
+
+#### LOTUS2 batch job submission host
+
+Login to `sci-ph-03.jasmin.ac.uk`. The hostname will be displayed as `host1000`. This host can be reached in the normal way via a login server.
+
+(Other submission hosts will be added in due course, see above)
+
+#### New Slurm job accounting hierarchy
+
+Slurm accounting by project has been introduced as a means of monitoring compute usage by projects on JASMIN. These projects align with group workspaces (GWSs),
+and you will automatically be added to Slurm accounts corresponding to any GWS projects that you belong to.
+
+To find what Slurm accounts and quality of services that you have access to, use the `useraccounts` command on the job submission host (currently `sci-ph-03.jasmin.ac.uk`).
+Output should be similar to one or more of the lines below.
+
+{{<command user="user" host="host1000">}}
+useraccounts
+(out)fred  mybiggws debug,highres,long,short,standard
+(out)fred  jules-test jules-test
+(out)fred  no-project debug,highres,long,short,standard
+(out)fred  orchid debug,highres,long,short,standard
+{{</command>}}
+
+Users who do not belong to any group workspaces will be assigned the `no-project` account and should use that in their job submissions.
+
+#### Partitions and QoS
+
+There are 3 partitions currently available on LOTUS2, with associated allowed quality of service (QoS) as shown below:
+
+| Partition | Allowed QoS |
+| --- | --- |
+| `standard` | `standard`, `short`, `long` |
+| `highres` | `highres`, `reservation` |
+| `debug` | `debug`, `reservation` |
+{.table .table-striped .w-auto}
+
+| QoS | Priority | Max CPUs per job | Max wall time |
+| --- | --- | --- | --- |
+| `standard` | 500 | 1 | 24 hours |
+| `short` | 550 | 1 | 4 hours |
+| `long` | 350 | 1 | 5 days |
+| `highres` | 450 |  | 2 days |
+| `debug` | 500 |  | 1 hour |
+{.table .table-striped .w-auto}
+
+#### Job submission
+
+In order to successfully submit a job to LOTUS2, 3 mandatory fields must be specified. These are a partition, an account, and a QoS. The LOTUS2 configuration has been set to use the `standard` partition as the default if none is specified. However, users are discouraged from relying on this.
+
+Example of a batch Script:
+
+```bash
+#!/bin/bash  
+#SBATCH --job-name="Job Name" 
+#SBATCH --time=<wall time required> 
+#SBATCH --mem=<memory required> 
+#SBATCH --cpus=<cpus required for multicores jobs e.g. MPI > 
+#SBATCH --account=<account_name>  
+#SBATCH --partition=<partition_name>  
+#SBATCH --qos=<qos_name> 
+
+# rest of script here
+```
+
+For a pseudo-interactive session on a LOTUS2 compute node:
+
+{{<command user="user" host="host1000">}}
+srun --account=cedaproc --qos=standard --pty /bin/bash
+(out)srun: job 586 queued and waiting for resources
+(out)srun: job 586 has been allocated resources
+module li
+(out)
+(out)
+(out)Currently Loaded Modules:
+(out)1) idl/9.1
+{{</command>}}
 
 ### Timetable for host retirements
 
@@ -285,5 +369,3 @@ so that any issues can be resolved and disruption minimized.
 
 All the hosts listed have new Rocky 9 equivalents described in the document above.
 Please check back regularly to keep up to date with this schedule.
-
-
