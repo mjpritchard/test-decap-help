@@ -215,8 +215,3 @@ is available at:
 <https://github.com/cedadev/ceda-notebooks/blob/master/notebooks/training/jasmin-gpu-notebook-intro.ipynb>
 
 It may provide a useful starting point for your journey.
-
-
-- {{<link "https://www.ceda.ac.uk/events/past/jasmin-notebook-service-webinar/">}}Intro to the JASMIN Notebooks Service{{</link>}} \- video of a webinar from June 2020
-- {{<link "https://github.com/cedadev/ceda-notebooks/blob/master/notebooks/training/rerunnable-virtualenv-maker.ipynb">}}Instructions to create a Python virtual environment{{</link>}} \- example notebook
-- {{<link "https://github.com/cedadev/ceda-notebooks/blob/master/notebooks/docs/add_conda_envs.ipynb">}}Instructions to create a Conda environment for use with the Notebook Service{{</link>}} \- example notebook
