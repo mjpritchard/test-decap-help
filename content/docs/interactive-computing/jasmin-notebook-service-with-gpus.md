@@ -1,45 +1,35 @@
 ---
 aliases:
-description: JASMIN Notebook Service with GPUs Enabled
-slug: jasmin-notebook-service-with-gpus
+description: JASMIN Notebooks Service with GPUs enabled
+slug: jasmin-notebooks-service-with-gpus
 tags:
 - Jupyter
 - GPU
 - AI
 - Machine Learning
 - ML
-title: The JASMIN Notebook Service with GPUs enabled
+title: The JASMIN Notebooks Service with GPUs enabled
 ---
 
 The [JASMIN Notebook Service]({{% ref "jasmin-notebooks-service" %}}) has recently been
 updated to include a GPU-enabled node. This means that JASMIN users can now run Machine
 Learning (ML) workflows in Notebooks. This page outlines:
 
-- Who can access the GPU-enabled Notebook Service?
-- Starting a Notebook Server with GPUs
-- Which packages are available by default?
-- GPU availability
-- Understanding the `nvidia-smi` command output
-- Resource allocation
-- Software environments and Machine Learning packages
-- Guidelines and Best Practices
-- A Notebook to get started
-
-## Who can access the GPU-enabled Notebook Service?
+## Who can access the GPU-enabled Notebooks Service?
 
 The service is available to all JASMIN users that have been granted access to the
-ORCHID (GPU) cluster. Existing JASMIN users can [apply here](https://accounts.jasmin.ac.uk/services/additional_services/orchid/).
+ORCHID (GPU) cluster. Existing JASMIN users can {{<link "https://accounts.jasmin.ac.uk/services/additional_services/orchid/">}}apply here{{</link>}}.
 
 ## Starting a Notebook Server with GPUs
 
 In order to start a Notebook Server with GPUs enabled, go to the initial start page
 and click on the "Launch Server" button:
 
-{{< image src="img/docs/jasmin-notebook-service-with-gpus/notebook-server-start-page.png" caption="Notebook server start page" >}}
+{{< image src="img/docs/jasmin-notebook-service-with-gpus/notebook-server-start-page.png" caption="Notebook server start page" wrapper="col-9 mx-auto text-center">}}
 
 Then select the "GPU" option and click "Start":
 
-{{< image src="img/docs/jasmin-notebook-service-with-gpus/notebook-server-select-gpu.png" caption="Selecting the GPU notebook server" >}}
+{{< image src="img/docs/jasmin-notebook-service-with-gpus/notebook-server-select-gpu.png" caption="Selecting the GPU notebook server" wrapper="col-9 mx-auto text-center">}}
 
 ## Which packages are available by default?
 
@@ -48,7 +38,7 @@ If you don't need any specialist Machine Learning (ML) libraries, you would typi
 choose `Python 3 + Jaspy` as this has many of the common open-source packages used within
 environmental science:
 
-{{< image src="img/docs/jasmin-notebook-service-with-gpus/notebook-kernel.png" caption="Notebook kernel" >}}
+{{< image src="img/docs/jasmin-notebook-service-with-gpus/notebook-kernel.png" caption="Notebook kernel"  wrapper="col-6 mx-auto text-center">}}
 
 You can click on the name of the kernel to select a different one.
 
@@ -66,7 +56,7 @@ use the built-in NVIDIA commands, such as:
 
 If GPUs are enabled, the output should look like this:
 
-{{< image src="img/docs/jasmin-notebook-service-with-gpus/nvidia-smi-output.png" caption="Output from the nvidia-smi command" >}}
+{{< image src="img/docs/jasmin-notebook-service-with-gpus/nvidia-smi-output.png" caption="Output from the nvidia-smi command"  wrapper="col-9 mx-auto text-center">}}
 
 ## Understanding the `nvidia-smi` command output
 
@@ -127,7 +117,7 @@ The current allocation of GPUs to the JASMIN Notebook Service is as follows:
 ## Software environments and Machine Learning packages
 
 In the current release of the Notebook Service, users are required to install their own ML packages for use with GPUs. We recommend this approach:
-1. Create a virtual environment ("_venv_"), for example `ml-venv`. Use this [guide to creating a virtual environment for the JASMIN Notebook Service]({{% ref "creating-a-virtual-environment-in-the-notebooks-service" %}})
+1. Create a virtual environment ("_venv_"), for example `ml-venv`. [Use our guide]({{% ref "creating-a-virtual-environment-in-the-notebooks-service" %}}) to help you.
 2. Install the packages you require into that _venv_. For example, if you needed `pytorch` and `torchvision`, you would run `pip install torch torchvision` (including specific versions if needed). **NOTE: Many ML packages are very big - this can take several minutes.**
 3. Be sure to follow the instructions for installing `ipykernel` into your _venv_ and running the relevant command to install the kernel so that JupyterHub can locate it and list it as one of the available kernels. Use the name of your _venv_ as the name of the _kernel_.
 4. Once you have installed your kernel, it should appear as an option in the Launcher as outlined in green in the diagram below. The Launcher is accessible from the File menu.
