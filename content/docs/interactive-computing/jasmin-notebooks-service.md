@@ -115,6 +115,11 @@ Doing this means that the bulk of the resource usage will be shared by the LOTUS
 Although it was previously the case that Group Workspaces were only available in Notebooks read-only, this is no longer the case (as of 2023), so you should have full read-write access to any group workspace volume.
 {{</alert>}}
 
+### Using the GPU-enabled Notebook Service
+
+Please see the [JASMIN Notebooks with GPUs enabled page]({{% ref "jasmin-notebook-service-with-gpus" %}}) 
+to learn about using Notebooks with GPU access.
+
 ### Common issues and questions
 
 #### I get "403 forbidden" when I try to access the JASMIN Notebook Service
