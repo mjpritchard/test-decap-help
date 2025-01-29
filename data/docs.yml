@@ -35,7 +35,7 @@
     - title: tenancy sci analysis vms
     - title: transfer servers
     - title: jasmin notebooks service
-    - title: jasmin notebook service with gpus
+    - title: jasmin notebooks service with gpus
     - title: creating a virtual environment in the notebooks service
     - title: project specific servers
     - title: dask gateway
