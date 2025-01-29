@@ -272,9 +272,13 @@ Please see the details below on how to access LOTUS2 and how to submit a job to 
 **These require a Slurm account, partition and quality of service (QoS) to be specified at job submission time**.
 {{</alert>}}
 
-#### LOTUS2 batch job submission host
+#### LOTUS2 batch job submission hosts
 
-Login to `sci-ph-03.jasmin.ac.uk`. The hostname will be displayed as `host1000`. This host can be reached in the normal way via a login server.
+Login to one of the following hosts:
+- `sci-ph-02.jasmin.ac.uk`
+- `sci-ph-03.jasmin.ac.uk`
+
+The hostname will be displayed as `hostNNN`. This host can be reached in the normal way via a login server.
 
 (Other submission hosts will be added in due course, see above)
 
