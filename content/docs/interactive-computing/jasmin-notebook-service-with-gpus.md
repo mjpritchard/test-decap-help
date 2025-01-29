@@ -68,7 +68,7 @@ If GPUs are enabled, the output should look like this:
 
 {{< image src="img/docs/jasmin-notebook-service-with-gpus/nvidia-smi-output.png" caption="Output from the nvidia-smi command" >}}
 
-## Understanding the nvidia-smi command output
+## Understanding the `nvidia-smi` command output
 
 ### 1. The Header section
 
@@ -182,7 +182,7 @@ The same thing is possible with `TensorFlow`:
 ### Warning about large ML packages and HOME directory disk quota
 
 Please be aware that installing these packages into your `$HOME` directory will
-require multiple Gigabytes of free space. If you are near your quota (100GB),
+require multiple gigabytes of free space. If you are near your quota (100GB),
 then the installation may fail. It is important to note that an
 **installation failure may not report a violation of disk quota** even if
 that is the underlying problem.
@@ -222,8 +222,4 @@ if you would like advice on how to migrate your workflows.
 ## A Notebook to get started
 
 An introductory notebook, which includes most of the information provided on this page,
-is available at:
-
-<https://github.com/cedadev/ceda-notebooks/blob/master/notebooks/training/jasmin-gpu-notebook-intro.ipynb>
-
-It may provide a useful starting point for your journey.
+is available on {{<link "https://github.com/cedadev/ceda-notebooks/blob/master/notebooks/training/jasmin-gpu-notebook-intro.ipynb">}}GitHub{{</link>}}. It may provide a useful starting point for your journey.
