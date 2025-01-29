@@ -16,6 +16,7 @@ updated to include a GPU-enabled node. This means that JASMIN users can now run 
 Learning (ML) workflows in Notebooks. This page outlines:
 
 - Who can access the GPU-enabled Notebook Service?
+- Starting a Notebook Server with GPUs
 - Which packages are available by default?
 - GPU availability
 - Understanding the `nvidia-smi` command output
@@ -28,6 +29,17 @@ Learning (ML) workflows in Notebooks. This page outlines:
 
 The service is available to all JASMIN users that have been granted access to the 
 ORCHID (GPU) cluster. Existing JASMIN users can [apply here](https://accounts.jasmin.ac.uk/services/additional_services/orchid/).
+
+## Starting a Notebook Server with GPUs
+
+In order to start a Notebook Server with GPUs enabled, go to the initial start page 
+and click on the "Launch Server" button:
+
+{{< image src="img/docs/jasmin-notebook-service-with-gpus/notebook-server-start-page.png" caption="Notebook server start page" >}}
+
+Then select the "GPU" option and click "Start":
+
+{{< image src="img/docs/jasmin-notebook-service-with-gpus/notebook-server-select-gpu.png" caption="Selecting the GPU notebook server" >}}
 
 ## Which packages are available by default?
 
