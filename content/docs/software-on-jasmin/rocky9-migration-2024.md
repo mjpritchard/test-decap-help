@@ -324,14 +324,16 @@ There are 3 partitions currently available on LOTUS2, with associated allowed qu
 
 In order to successfully submit a job to LOTUS2, 3 mandatory fields must be specified. These are a partition, an account, and a QoS. The LOTUS2 configuration has been set to use the `standard` partition as the default if none is specified. However, users are discouraged from relying on this.
 
-Example of a batch Script:
+Example of a batch Script: 
+
+**NB: remove any trailing whitespace**
 
 ```bash
 #!/bin/bash
 #SBATCH --job-name="Job Name"
 #SBATCH --time=<wall time required>
 #SBATCH --mem=<memory required>
-#SBATCH --cpus=<cpus required for multicores jobs e.g. MPI >
+#SBATCH --cpus=<cpus required for multicore jobs e.g. MPI>
 #SBATCH --account=<account_name>
 #SBATCH --partition=<partition_name>
 #SBATCH --qos=<qos_name>
