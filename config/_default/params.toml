@@ -185,16 +185,16 @@
     [author]
         name = "Matt Pritchard"
     [logo]
-        url = "/img/jasmin-logo-light.svg"
+        url = "img/jasmin-logo-light.svg"
         width = 89
         height = 48
     [image]
-        url = "/img/jasmin-logo-light.svg"
+        url = "img/jasmin-logo-light.svg"
         width = 89
         height = 48
 
 [opengraph]
-    images = ["/img/jasmin-logo-light.svg"]
+    images = ["img/favicon.png"]
     locale = "en_GB"
 
 [comments]
