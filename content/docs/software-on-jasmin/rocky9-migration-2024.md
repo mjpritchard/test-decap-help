@@ -324,7 +324,7 @@ There are 3 partitions currently available on LOTUS2, with associated allowed qu
 
 In order to successfully submit a job to LOTUS2, 3 mandatory fields must be specified. These are a partition, an account, and a QoS. The LOTUS2 configuration has been set to use the `standard` partition as the default if none is specified. However, users are discouraged from relying on this.
 
-Example of a batch Script: 
+Example of a batch Script:
 
 **NB: remove any trailing whitespace**
 
