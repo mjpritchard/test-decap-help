@@ -326,12 +326,14 @@ In order to successfully submit a job to LOTUS2, 3 mandatory fields must be spec
 
 Example of a batch Script:
 
+**NB: remove any trailing whitespace**
+
 ```bash
 #!/bin/bash
 #SBATCH --job-name="Job Name"
 #SBATCH --time=<wall time required>
 #SBATCH --mem=<memory required>
-#SBATCH --cpus=<cpus required for multicores jobs e.g. MPI >
+#SBATCH --cpus=<cpus required for multicore jobs e.g. MPI>
 #SBATCH --account=<account_name>
 #SBATCH --partition=<partition_name>
 #SBATCH --qos=<qos_name>
