@@ -1,6 +1,6 @@
 [main]
     separator = "-"
-    description = "Hinode is a clean documentation and blog theme for your Hugo site based on Bootstrap 5."
+    description = "Help documentation for JASMIN, the UK's environmental data analysis facility"
     enableDarkMode = true
     modes = ["light", "dark"]
     canonifyAssetsURLs = false
@@ -178,29 +178,24 @@
 
 [schema]
     type = "Organization"
-    name = "Hinode"
-    locale = "en-US"
-    # twitter = "https://twitter.com/gethinode"
-    # linkedIn = ""
-    github = "https://github.com/gethinode/hinode"
-    section = "news"
+    name = "JASMIN"
+    locale = "en-GB"
+    github = "https://github.com/cedadev"
+    section = "docs"
     [author]
-        name = "Mark Dumay"
-        # twitter = "https://twitter.com/markdumay"
-        linkedin = "https://www.linkedin.com/in/markdumay/"
-        github = "https://github.com/markdumay"
+        name = "Matt Pritchard"
     [logo]
-        url = "img/logo512x512.png"
-        width = 512
-        height = 512
+        url = "/img/jasmin-logo-light.svg"
+        width = 89
+        height = 48
     [image]
-        url = "img/logo1280x640.png"
-        width = 1280
-        height = 640
+        url = "/img/jasmin-logo-light.svg"
+        width = 89
+        height = 48
 
 [opengraph]
-    images = ["logo.png"]
-    locale = "en_US"
+    images = ["/img/jasmin-logo-light.svg"]
+    locale = "en_GB"
 
 [comments]
     enabled = false
