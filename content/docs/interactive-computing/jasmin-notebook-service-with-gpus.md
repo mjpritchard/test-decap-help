@@ -211,10 +211,10 @@ if you would like advice on how to migrate your workflows.
 
 ## Getting Advice on Machine Learning
 
-For advice on machine learning packages and suitability for different applications it 
-is possible to make use of the NERC Earth Observation Data Analysis and AI service (NEODAAS). 
-See the [NEODAAS website](https://neodaas.ac.uk/services/artificial_intelligence_service/) 
-for details.
+For advice on machine learning packages and suitability for different applications, you
+could make use of the NERC Earth Observation Data Analysis and AI service (NEODAAS).
+See the {{<link "https://neodaas.ac.uk/services/artificial_intelligence_service/">}}NEODAAS
+website{{</link>}} for details.
 
 ## A Notebook to get started
 
