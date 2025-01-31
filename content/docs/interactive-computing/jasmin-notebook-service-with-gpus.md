@@ -209,6 +209,13 @@ prototype your ML workflows, and migrate them to ORCHID if they require signific
 more compute power. Please contact the [JASMIN Helpdesk](mailto:support@jasmin.ac.uk)
 if you would like advice on how to migrate your workflows.
 
+## Getting Advice on Machine Learning
+
+For advice on machine learning packages and suitability for different applications it 
+is possible to make use of the NERC Earth Observation Data Analysis and AI service (NEODAAS). 
+See the [NEODAAS website](https://neodaas.ac.uk/services/artificial_intelligence_service/) 
+for details.
+
 ## A Notebook to get started
 
 An introductory notebook, which includes most of the information provided on this page,
