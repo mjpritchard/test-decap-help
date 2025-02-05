@@ -78,11 +78,11 @@ The connection via a login server can be done either with 2 hops, or using a log
 {{<command user="user" host="localhost">}}
 ssh -A fred@login-01.jasmin.ac.uk
 {{</command>}}
-{{<command user="user" host="login-01">}}
+{{<command user="fred" host="login-01">}}
 ssh fred@sci-vm-01.jasmin.ac.uk
 ## no -A needed for this step, if no onward connections from sci server
 {{</command>}}
-{{<command user="user" host="sci-vm-01">}}
+{{<command user="fred" host="sci-vm-01">}}
 ## now on sci server
 {{</command>}}
 
@@ -91,7 +91,7 @@ ssh fred@sci-vm-01.jasmin.ac.uk
 {{<command user="user" host="localhost">}}
 ssh -A fred@sci-vm-01.jasmin.ac.uk -J fred@login-01.jasmin.ac.uk
 {{</command>}}
-{{<command user="user" host="sci-vm-01">}}
+{{<command user="fred" host="sci-vm-01">}}
 ## now on sci server
 {{</command>}}
 
@@ -110,9 +110,36 @@ You could then simply connect to `Sci1ViaLogin01`:
 {{<command user="user" host="localhost">}}
 ssh Sci1ViaLogin01
 {{</command>}}
-{{<command user="user" host="sci-vm-01">}}
+{{<command user="fred" host="sci-vm-01">}}
 ## now on sci server
 {{</command>}}
+
+If you don't want to have to set up a separate alias for each machine that you want to log into, you can also set up a wildcard, for example:
+
+```config
+Host *.jasmin.ac.uk
+  User fred
+  ForwardAgent yes
+
+Host *.jasmin.ac.uk !login*.jasmin.ac.uk !xfer*.jasmin.ac.uk !nx*.jasmin.ac.uk
+  ProxyJump login-01.jasmin.ac.uk
+```
+
+Then you when you connect to any JASMIN host (other than a login or transfer host), it will go via login-01:
+
+{{<command user="user" host="localhost">}}
+ssh sci-vm-01.jasmin.ac.uk
+{{</command>}}
+{{<command user="fred" host="sci-vm-01">}}
+## now on sci server
+{{</command>}}
+
+If on your local machine you have also set up a domain search path for hostname lookups that includes `jasmin.ac.uk` so that you can use short hostnames e.g. `ssh sci-vm-01`, then you will also need to add the following lines so that ssh converts these to full hostnames -- otherwise the above wildcard will not match when you do this.
+
+```config
+CanonicalizeHostname yes
+CanonicalDomains jasmin.ac.uk
+```
 
 This sort of configuration is useful for connections needed by remote editing/development tools such 
 as VSCode. The example above relies on having your key loaded locally in an ssh-agent.
@@ -128,3 +155,4 @@ Host Sci1ViaLogin01
   ProxyJump fred@login-01.jasmin.ac.uk
   IdentityFile ~/.ssh/id_ecdsa_jasmin
 ```
+
