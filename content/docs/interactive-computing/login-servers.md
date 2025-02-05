@@ -125,7 +125,7 @@ Host *.jasmin.ac.uk !login*.jasmin.ac.uk !xfer*.jasmin.ac.uk !nx*.jasmin.ac.uk
   ProxyJump login-01.jasmin.ac.uk
 ```
 
-Then you when you connect to any JASMIN host (other than a login host), it will go via login-01:
+Then you when you connect to any JASMIN host (other than a login or transfer host), it will go via login-01:
 
 {{<command user="user" host="localhost">}}
 ssh sci-vm-01.jasmin.ac.uk
