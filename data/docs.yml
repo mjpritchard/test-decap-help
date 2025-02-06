@@ -30,7 +30,6 @@
     - title: login servers
     - title: login problems    
     - title: graphical linux desktop access using nx
-    - title: nx update nov24
     - title: sci servers
     - title: tenancy sci analysis vms
     - title: transfer servers
@@ -92,11 +91,9 @@
     - title: ftp and lftp
     - title: globus command line interface
     - title: globus connect personal
-    - title: gridftp cert based auth
     - title: gridftp ssh auth
     - title: rclone
     - title: rsync scp sftp
-    - title: hpxfer access role
     - title: scheduling automating transfers
     - title: transfers from archer2
 

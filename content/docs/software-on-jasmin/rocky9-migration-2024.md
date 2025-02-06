@@ -1,4 +1,6 @@
 ---
+aliases:
+- /docs/interactive-computing/centos7-sci-login-xfer-servers
 description: Software and operating system changes - migration to Rocky Linux 9 (Summer 2024)
 slug: rocky9-migration-2024
 title: Migration to Rocky Linux 9 2024
@@ -84,7 +86,7 @@ name | status
 `nx1.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} [Ready for use, update your SSH key]({{% ref "graphical-linux-desktop-access-using-nx#setting-up-your-connection" %}})
 `nx2.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} [Ready for use, update your SSH key]({{% ref "graphical-linux-desktop-access-using-nx#setting-up-your-connection" %}})
 `nx3.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} [Ready for use, update your SSH key]({{% ref "graphical-linux-desktop-access-using-nx#setting-up-your-connection" %}})
-`nx4.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-danger >}} Old server, closing soon [see retirement timetable](#timetable-for-host-retirements)
+`nx4.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} [Ready for use, update your SSH key]({{% ref "graphical-linux-desktop-access-using-nx#setting-up-your-connection" %}})
 {.table .table-striped .w-auto}
 
 Notes:
@@ -106,18 +108,19 @@ the same as the old `nx4` in this respect.
 We have introduced a new naming convention which helps identify virtual and physical/high-memory `sci` servers.
 The new list is as follows:
 
-name | status | specs
---- | --- | ---
-Virtual servers | | 
-`sci-vm-01.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 8 CPU / 32 GB RAM / 80 GB (virtual disk)
-`sci-vm-02.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 8 CPU / 32 GB RAM / 80 GB (virtual disk)
-`sci-vm-03.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 8 CPU / 32 GB RAM / 80 GB (virtual disk)
-`sci-vm-04.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 8 CPU / 32 GB RAM / 80 GB (virtual disk)
-`sci-vm-05.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 8 CPU / 32 GB RAM / 80 GB (virtual disk)
-`sci-vm-06.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 8 CPU / 32 GB RAM / 80 GB (virtual disk)
-Physical servers | |
-`sci-ph-01.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 48 CPU AMD EPYC 74F3 / 2 TB RAM / 2 x 446 GB SATA SSD
-`sci-ph-02.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 48 CPU AMD EPYC 74F3 / 2 TB RAM / 2 x 446 GB SATA SSD
+name | status | specs | slurm cluster
+--- | --- | --- | ---
+Virtual servers | | |
+`sci-vm-01.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 8 CPU / 32 GB RAM / 80 GB (virtual disk) | old
+`sci-vm-02.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 8 CPU / 32 GB RAM / 80 GB (virtual disk) | old
+`sci-vm-03.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 8 CPU / 32 GB RAM / 80 GB (virtual disk) | old
+`sci-vm-04.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 8 CPU / 32 GB RAM / 80 GB (virtual disk) | old
+`sci-vm-05.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 8 CPU / 32 GB RAM / 80 GB (virtual disk) | old
+`sci-vm-06.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-danger >}} Not yet available | 8 CPU / 32 GB RAM / 80 GB (virtual disk) | old
+Physical servers | | |
+`sci-ph-01.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 48 CPU AMD EPYC 74F3 / 2 TB RAM / 2 x 446 GB SATA SSD | new
+`sci-ph-02.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 48 CPU AMD EPYC 74F3 / 2 TB RAM / 2 x 446 GB SATA SSD | new
+`sci-ph-03.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 48 CPU AMD EPYC 74F3 / 2 TB RAM / 2 x 446 GB SATA SSD | new
 {.table .table-striped .w-auto}
 
 Notes:
@@ -258,7 +261,7 @@ Notes:
 
 - Overall ~55,000 cores: ~triples current capacity
 - New nodes will form a new cluster, managed separately to the "old" LOTUS
-- Submission to the new cluster will initially be via `sci-ph-03`, until **30 Jan 2025** when remaining physical sci nodes `sci-ph-0[1,2]` will be switched over to the new cluster.
+- Submission to the new cluster is now via `sci-ph-0[1,2,3]`
   - and from **one** additional physical node (details TBC) with extended CentOS7 support, with restricted access to enable use of Cylc 7 for limited period.
 - Submission to "old" LOTUS will **only** be from current CentOS7 `sci` machines `sci[1-8]` **until 18 Feb 2025**.
   - and from **one** additional physical node (details TBC) with extended CentOS7 support, with restricted access to enable use of Cylc 7 for limited period.
@@ -275,6 +278,8 @@ Please see the details below on how to access LOTUS2 and how to submit a job to 
 #### LOTUS2 batch job submission hosts
 
 Login to one of the following hosts:
+
+- `sci-ph-01.jasmin.ac.uk`
 - `sci-ph-02.jasmin.ac.uk`
 - `sci-ph-03.jasmin.ac.uk`
 

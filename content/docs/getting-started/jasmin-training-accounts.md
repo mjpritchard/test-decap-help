@@ -43,9 +43,8 @@ helpdesk with the following information:
 
 - Any special requests for accessing resources
   - By default, the training accounts have access to the following services. 
-  - Any request for other services beyond these would need to be considered by the JASMIN team: 
+  - Any request for other services beyond these would need to be considered by the JASMIN team:
     - Login, nx-login, sci and xfer servers
-    - `hpxfer` service
     - `workshop` group workspace (`/gws/pw/j07/workshop`)
     - use of LOTUS via the `workshop` Slurm queue
     - Jupyter Notebooks service (requires users to set password)
