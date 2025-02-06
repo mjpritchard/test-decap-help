@@ -1,6 +1,6 @@
 ---
 aliases: /article/4997-transfers-from-archer2
-description: Transfers from ARCHER2
+description: Transferring data from ARCHER2 to JASMIN, efficiently
 slug: transfers-from-archer2
 title: Transfers from ARCHER2
 ---
@@ -8,7 +8,7 @@ title: Transfers from ARCHER2
 ## Choice of available Tools/Routes
 
 See [Data Transfer Tools]({{% ref "data-transfer-tools" %}}) for general
-details.
+information.
 
 Users transferring data between ARCHER2 and JASMIN are often transferring
 relatively large sets of data, so it is important to choose the most
@@ -30,48 +30,11 @@ Please note:
 
 ## Available transfer methods
 
-### Basic SSH transfer
+1. [Globus](#1st-choide-method-globus) (recommended)
+2. [Basic SSH transfer](#basic-ssh-transfer) (slow but convenient)
+3. [Gridftp using SSH authentication](#gridftp-using-certificate-auth) (efficient, currently still available but now superceded in convenience/reliability by Globus)
 
-[**scp/rsync/sftp**]({{% ref "rsync-scp-sftp" %}}): Simple transfers using easy method, pushing data to general purpose xfer nodes. Convenient, but limited performance. 
-
-_source_ |  _dest_ |  _notes_  
---- | --- | ---
-`login.archer2.ac.uk` |  `xfer-vm-0[123].jasmin.ac.uk` |  to virtual machine at JASMIN end  
-`login.archer2.ac.uk` |  `hpxfer[34].jasmin.ac.uk` |  to high-performance physical machine at JASMIN end
-{.table .table-striped}
-
-### GridFTP over SSH
-
-[GridFTP over SSH]({{% ref "gridftp-ssh-auth" %}}): GridFTP performance with convenience of SSH. Requires persistent ssh agent
-on local machine where you have your JASMIN key. **2nd choice method**
-
-_source_ |  _dest_ |  _notes_  
---- | --- | ---
-`login.archer2.ac.uk` |  `hpxfer[34].jasmin.ac.uk` | 
-{.table .table-striped}
-
-### GridFTP using certificate auth
-
-[GridFTP using certificate auth]({{% ref "gridftp-cert-based-auth" %}}): Fully-featured GridFTP. Suitable for person-not-present transfers & long-
-running ARCHER2 workflows. **3rd choice method: legacy technology which will be discontinued on JASMIN in 2025**
-
-Additional requirement:
-
-- you need to have registered the subject of your JASMIN-issued short-term credential with ARCHER2 support.
-
-_source_ |  _dest_ |  _notes_  
---- | --- | ---
-`login.archer2.ac.uk` |  `gridftp1.jasmin.ac.uk` |  over 10G JANET.<br>Dedicated GridFTP server.<br>**No need for persistent SSH agent at ARCHER2 end**
-{.table .table-striped}
-
-Notes:
-
-- We are currently struggling to get the legacy components working on our new operating system, Rocky 9, so the current service
-continues on the old (CentOS7) server `gridftp1` for now, but may need to be withdrawn at short notice.
-- Even if/when we succeed in redeploying the service on Rocky 9, we plan to discontinue this service now that a better alternative
-is available with Globus.
-
-## 1st choide method: Globus
+## 1st choice method: Globus
 
 This is now the recommended method, because:
 
@@ -108,7 +71,7 @@ export jdc=a2f53b7f-1b4e-4dce-9b7c-349ae760fee0
 
 3\. Check access to these collections
 
-These collecitons are restricted-access rather than public, so your access to them is via a series of authentication/authorisation/consent steps which the following actions will guide you through:
+These collections are restricted-access rather than public, so your access to them is via a series of authentication/authorisation/consent steps which the following actions will guide you through:
 
 {{<command>}}
 globus ls $a2c:/~/
@@ -172,7 +135,7 @@ globus task wait aa0597a4-80a7-11ef-b36b-a1206a7ee65f
 
 will now return control immediately, since the task has completed.
 
-Globus transfer tasks are aysychronous, submitted to **your own** mini-queue,
+Globus transfer tasks are asynchronous, submitted to **your own** mini-queue,
 where you can have as many queued tasks as you like but only 3 in progress at any one time. This ensures good performance for
 all users, but your tasks do not linger in long multi-user queues. The best way to reassure yourself of this is to try it out.
 
@@ -185,7 +148,7 @@ Relevant examples:
 - [sync with wait](https://github.com/mjpritchard/my-globus-examples/blob/main/sync_wait_simple.sh) using the CLI.
 - [Repeatable transfer](https://github.com/mjpritchard/my-globus-examples/blob/main/repeatableTransferWithRefreshTokenStorage.py) using the PythonSDK (more advanced)
 
-Note that Globus transfers (and other actions) can be managed & monitoried by:
+Note that Globus transfers (and other actions) can be managed & monitored by:
 
 - a web interface
 - the command-line interface, and
@@ -196,10 +159,28 @@ all of which interact with the same underlying service.
 NCAS-CMS users should note that work is currently underway to adopt Globus as a drop-in replacement for certificate-based gridftp
 in Rose suites currently in use for automating processing and transferring to JASMIN.
 
-## 2nd choice method: gridftp over SSH
+## 2nd choice method: Basic SSH transfer
 
-The next-best method for transfers between ARCHER2 and JASMIN is using globus-
-url-copy with SSH authentication, as described below:
+[**scp/rsync/sftp**]({{% ref "rsync-scp-sftp" %}}): Simple transfers using easy method, pushing data to general purpose xfer nodes. Convenient, but limited performance.
+
+_source_ |  _dest_ |  _notes_  
+--- | --- | ---
+`login.archer2.ac.uk` |  `xfer-vm-0[123].jasmin.ac.uk` |  to virtual machine at JASMIN end  
+`login.archer2.ac.uk` |  `hpxfer[34].jasmin.ac.uk` |  to high-performance physical machine at JASMIN end
+{.table .table-striped}
+
+## 3rd choice method: gridftp over SSH
+
+[GridFTP over SSH]({{% ref "gridftp-ssh-auth" %}}): GridFTP performance with convenience of SSH. Requires persistent ssh agent
+on local machine where you have your JASMIN key.
+
+_source_ |  _dest_ 
+--- | --- |
+`login.archer2.ac.uk` |  `hpxfer[34].jasmin.ac.uk`
+{.table .table-striped}
+
+The next-best method for transfers between ARCHER2 and JASMIN is using the `globus-url-copy` client tool with SSH authentication, as described below:
+(**This is not [Globus](#1st-choice-method-globus), however, despite the tool name!**)
 
 1\. Load your SSH keys for both JASMIN and ARCHER2 on your local machine, then
 log in to ARCHER2.
@@ -238,119 +219,26 @@ which globus-url-copy
 3\. Transfer a single file to your home directory on JASMIN (limited space,
 but to check things work)
 
-
 {{<command user="user" host="login.archer2">}}
-globus-url-copy -vb <file> sshftp://<jasmin-username>@hpxfer1.jasmin.ac.uk/~/<file>
+globus-url-copy -vb <file> sshftp://<jasmin-username>@hpxfer3.jasmin.ac.uk/~/<file>
 {{</command>}}
 
 Obviously, replace `<file>` with the path to the file you want to transfer.
-
-From here on, the commands are the same as described above in the "1st choice
-method" but simply replace
-
-```bash
--cred cred.jasmin gsiftp://gridftp1.jasmin.ac.uk
-```
-
-with
-
-```bash
-sshftp://<jasmin-username>@hpxfer1.jasmin.ac.uk
-```
-
-
-
-## 3rd choice method: certificate-based gridftp
-
-{{<alert>}}The use of certificate-based gridtp for transfers to JASMIN has now been replaced by Globus.
-Server `gridftp1` will be closed on Friday 13th December 2024 at 16:00
-{{</alert>}}
-
-This method for transfers between ARCHER2 and JASMIN uses
-globus-url-copy with the concurrency option, as described below, but using
-certificate-based authentication rather than SSH. This will work for person-
-not-present transfers, so is suitable for long-running processes on ARCHER2
-which need to spawn a transfer to JASMIN at intervals up to a month from
-initiation.
-
-1\. Load your SSH key for ARCHER2 on your local machine, then log in to
-ARCHER2.
-
-This method **does not** require you to use your JASMIN SSH key. It involves:
-
-- obtaining tools to communicate with JASMIN's short-lived credentials service
-- using the service to obtain a credential (it should last for 30 days, but a new one can be obtained at any time)
-- using the credential to initiate a transfer (this what you would need to repeat for each transfer)
-
-A fuller explanation of the process is given in this document:
-
-- [Data Transfer Tools: GridFTP (certificate-based authentication)]({{% ref "gridftp-cert-based-auth" %}})
-
-Once you have done these steps, you should be able to obtain a short-term
-credential as follows (do this command at the ARCHER2 end, after having
-downloaded the onlineca script as described in the document mentioned above):
-
-{{<command user="user" host="login.archer2">}}
-./onlineca-get-cert-wget.sh -U https://slcs.jasmin.ac.uk/certificate/ -l USERNAME -o ./cred.jasmin
-chmod 600 cred.jasmin
-{{</command>}}
-
-Note that the path `./` is used for the script `onlineca-get-cert-wget.sh`,
-but you should use the path to wherever you saved it. Alternatively, if you
-make yourself a `bin` directory and add that to your `PATH`, then you don't
-need to specify the path.
-
-2\. Load the `gct` module (to make the current `globus-url-copy` command
-available in your path on ARCHER2).
-
-Once loaded, check with `which` to see that you have the `globus-url-copy` command available to you.
-
-{{<command user="user" host="login.archer2">}}
-module load gct
-which globus-url-copy
-(out)/work/y07/shared/gct/v6.2.20201212/bin/globus-url-copy
-{{</command>}}
-
-3\. Transfer a single file to your home directory on JASMIN (limited space,
-but to check things work)
-
-{{<command user="user" host="login.archer2">}}
-globus-url-copy -vb -cred cred.jasmin SRC/FILE gsiftp://gridftp1.jasmin.ac.uk/DEST/FILE
-{{</command>}}
-
-Note that we specify the credentials file `cred.jasmin` and use the protocol
-`gsiftp://` with no need to specify the username in the connection string
-(we've used the path `/~/` to signify "my home directory" as the destination
-path). Note also that the hostname in this case, `gridftp1.jasmin.ac.uk` is a
-host that you can ONLY connect to directly using gsiftp: it does not permit
-SSH connections.
-
-In all other aspects, the transfer is the same as for the SSH method (see "2nd
-choice method" below), so the commands below are very similar: we're just
-using the gsiftp method instead of sshftp (both are ways of using the gridftp
-transfer protocol)
 
 4\. Recursively transfer a directory of files, using the concurrency option
 for multiple parallel transfers
 
 {{<command user="user" host="login.archer2">}}
-globus-url-copy -vb -cd -r -cc 4 -cred cred.jasmin SRC/DATA/ gsiftp://gridftp1.jasmin.ac.uk/DEST/DATA/
+globus-url-copy -vb -cd -r -cc 4 SRC/DATA/ sshftp://<jasmin-username>@hpxfer3.jasmin.ac.uk/DEST/DATA/
 {{</command>}}
 
-**NOTE:** The `-cc` option initiates the parallel transfer of several files at
+**NOTE:** - The `-cc` option initiates the parallel transfer of several files at
 a time, which achieves good overall transfer rates for recursive directory
 transfers. This is different from using the `-p N -fast` options which use
 parallel network streams to parallelism the transfer of each file.
-
-The `-p N -fast` options (for parallel-streamed transfers) are not currently
-working to all JASMIN storage locations, so use at your own risk until further
-notice. The transfer should work OK out of ARCHER2 (check by writing a single
-file to `/dev/null` at the JASMIN end) but currently will not work properly
-when writing to the SOF storage (`/gws/nopw/j04` or `/gws/nopw/j07`, or
-`/work/xfc/vol[1-3]`, though other paths should work OK). This is a known
-issue at the JASMIN end, thought to be related to network configuration, which
-is still under investigation. Single-stream transfers (omitting the `-p N
--fast` options) should work fine.
+A sensible value for `-cc` is 2 or 4, whereas a sensible value for `-p` is between
+2 and 16. In both cases, try first and avoid numbers at the higher end, which can
+increase resource usage without further performance gains.
 
 Here, the options used are (see `man globus-url-copy` for full details):
 
@@ -366,14 +254,11 @@ Here, the options used are (see `man globus-url-copy` for full details):
         Copy files in subdirectories
 ```
 
-Experiment with different concurrency options (4 is a good start, more than 16
-would start to "hog" resources so please consider
-
 5\. Use the sync option to synchronise 2 directories between source and target
 file systems:
 
 {{<command user="user" host="login.archer2">}}
-globus-url-copy -vb -cd -r -cc 4 -sync -cred cred.jasmin SRC/DATA/ gsiftp://gridftp1.jasmin.ac.uk/DEST/DATA/
+globus-url-copy -vb -cd -r -cc 4 -sync SRC/DATA/ sshftp://<jasmin-username>@hpxfer3.jasmin.ac.uk/DEST/DATA/
 {{</command>}}
 
 where `SRC/DATA/` and `/DEST/DATA/` are source and destination paths,
@@ -408,5 +293,5 @@ cost.**
 So a full sync including comparison of checksums would be:
 
 {{<command user="user" host="login.archer2">}}
-globus-url-copy -vb -cd -r -cc 4 -sync -sync-level 3 -cred cred.jasmin src/data/ gsiftp://gridftp1.jasmin.ac.uk/path/dest/data/
+globus-url-copy -vb -cd -r -cc 4 -sync -sync-level 3 SRC/DATA/ sshftp://<jasmin-username>@hpxfer3.jasmin.ac.uk/DEST/DATA/
 {{</command>}}

@@ -169,7 +169,6 @@ Push data to JASMIN from a remote server:
 globus-url-copy -vb -p 8 -fast mydir/myfile sshftp://username@hpxfer3.jasmin.ac.uk/group_workspaces/jasmin/myworkspace/mydir/
 {{</command>}}
 
-Note that for this to work, you need to be able to authenticate over SSH to the JASMIN host. This should be possible if you can log in interactively, but will NOT work if you are using the command in a cron job or other situation where your ssh-agent (on the host remote to JASMIN) is not running and/or does not have access to your private key. For those situations, consider using either
+Note that for this to work, you need to be able to authenticate over SSH to the JASMIN host. This should be possible if you can log in interactively, but will NOT work if you are using the command in a cron job or other situation where your ssh-agent (on the host remote to JASMIN) is not running and/or does not have access to your private key. 
 
-- [Globus (recommended)]({{% ref "globus-transfers-with-jasmin" %}}), or
-- [Gridftp using certificate-based authentication]({{% ref "gridftp-cert-based-auth" %}})
+Instead, for those situations, use [Globus]({{% ref "globus-transfers-with-jasmin" %}})

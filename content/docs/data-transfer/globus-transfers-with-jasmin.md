@@ -2,38 +2,37 @@
 aliases: 
 - /article/5106-globus-transfers-with-jasmin
 - /article/5008-data-transfer-tools-using-the-globus-web-interface
+- gridftp-cert-based-auth
 slug: globus-transfers-with-jasmin
 collection: jasmin-documentation
 description: Globus transfers with JASMIN
 title: Globus transfers with JASMIN
 ---
 
-This article describes how to do data transfers using JASMIN's **new** Globus
-endpoint (now called a **collection** ), based on the most recent version of
-[Globus Connect Server](https://www.globus.org/globus-connect-server).
+This article describes how to do data transfers to and from JASMIN using {{<link "https://globus.org">}}Globus{{</link>}},
+an online data transfer service designed specifically for moving large datasets
+between research institutions.
 
-JASMIN's old Globus endpoint, based on
-the previous version of the Globus service, ceased operating on 18
-December 2023 as support was discontinued by Globus. We have implemented a
-new endpoint, based on Globus Connect Server v5.4, with equivalent (but better!)
-functionality.
+{{<alert type="info">}}
+**Globus** now replaces the previous certificate-based **gridftp** service.
 
-The new collection can be used as a drop-in replacement for the previous
-endpoint, aside from a few differences in terminology, and a change to the
-authentication process.
+Although gridftp transfers are currently still possible (using the perhaps confusingly-named `globus-url-copy` client tool
+still available on the
+transfer servers), this now only works with [ssh authentication]({{% ref "gridftp-ssh-auth" %}}).
+{{</alert>}}
 
 ## Main differences
 
-There are some differences to how the new (v5) version of Globus works on JASMIN compared to previously:
+JASMIN moved to a newer version of Globus in 2023, resulting in a few changes:
 
 - Users now interact with a **collection**
   - **Most users**: please use ["JASMIN Default Collection"](https://app.globus.org/file-manager/collections/a2f53b7f-1b4e-4dce-9b7c-349ae760fee0/overview) with ID `a2f53b7f-1b4e-4dce-9b7c-349ae760fee0`
   - For **STFC users only** where the other collection (either {{<link "globus-connect-personal">}}GCP{{</link>}} or {{<link "https://www.globus.org/globus-connect-server">}}GCS{{</link>}}) is within STFC, an additional collection is provided ["JASMIN STFC Internal Collection"](https://app.globus.org/file-manager/collections/9efc947f-5212-4b5f-8c9d-47b93ae676b7/overview) and has ID `9efc947f-5212-4b5f-8c9d-47b93ae676b7`.
-- You now use the JASMIN Accounts Portal to authenticate (using your JASMIN account credentials) via OpenID Connect (OIDC). 
+- You now use the JASMIN Accounts Portal to authenticate (using your JASMIN account credentials) via OpenID Connect (OIDC).
 - During the authentication process, you are redirected to the JASMIN Accounts Portal to link your Globus identity with your JASMIN account.
 - Consent needs to be granted at a number of points in the process to allow the Globus service to carry out actions on your behalf.
 - The default lifetime of the authentication granted to your JASMIN account is now **30 days**. After this, you may need to refresh the consent for your "session".
-- This service is now available to **all** users of JASMIN: you no longer need to hold the `hpxfer` access role.
+- This service is now available to **all** users of JASMIN: you no longer need the `hpxfer` access role (now removed).
 
 The following examples show you how to authenticate with the new JASMIN
 Default Collection and list the contents of your home directory. As before,

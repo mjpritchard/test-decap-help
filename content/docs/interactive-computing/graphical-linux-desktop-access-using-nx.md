@@ -1,5 +1,7 @@
 ---
-aliases: /article/4810-graphical-linux-desktop-access-using-nx
+aliases:
+- /article/4810-graphical-linux-desktop-access-using-nx
+- nx-update-nov24
 description: Graphical linux desktop using NoMachine NX
 tags:
 - nx
@@ -39,7 +41,7 @@ name | notes
 `nx1.jasmin.ac.uk` |
 `nx2.jasmin.ac.uk` |
 `nx3.jasmin.ac.uk` |
-`nx4.jasmin.ac.uk` | (not yet converted to Rocky 9)
+`nx4.jasmin.ac.uk` | (new server now available)
 {.table .table-striped .w-auto}
 
 ### Notes
