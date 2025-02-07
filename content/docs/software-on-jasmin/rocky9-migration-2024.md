@@ -1,6 +1,8 @@
 ---
 aliases:
 - /docs/interactive-computing/centos7-sci-login-xfer-servers
+- /article/4917-software-migration-2020
+- software-migration-2020
 description: Software and operating system changes - migration to Rocky Linux 9 (Summer 2024)
 slug: rocky9-migration-2024
 title: Migration to Rocky Linux 9 2024
@@ -111,16 +113,15 @@ The new list is as follows:
 name | status | specs | slurm cluster
 --- | --- | --- | ---
 Virtual servers | | |
-`sci-vm-01.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 8 CPU / 32 GB RAM / 80 GB (virtual disk) | old
-`sci-vm-02.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 8 CPU / 32 GB RAM / 80 GB (virtual disk) | old
-`sci-vm-03.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 8 CPU / 32 GB RAM / 80 GB (virtual disk) | old
-`sci-vm-04.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 8 CPU / 32 GB RAM / 80 GB (virtual disk) | old
-`sci-vm-05.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 8 CPU / 32 GB RAM / 80 GB (virtual disk) | old
-`sci-vm-06.jasmin.ac.uk` | {{< icon fas triangle-exclamation text-danger >}} Not yet available | 8 CPU / 32 GB RAM / 80 GB (virtual disk) | old
+`sci-vm-01.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 24 CPU / 64 GB RAM / 80 GB (virtual disk) | old
+`sci-vm-02.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 24 CPU / 64 GB RAM / 80 GB (virtual disk) | old
+`sci-vm-03.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 24 CPU / 64 GB RAM / 80 GB (virtual disk) | old
+`sci-vm-04.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 24 CPU / 64 GB RAM / 80 GB (virtual disk) | old
+`sci-vm-05.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 24 CPU / 64 GB RAM / 80 GB (virtual disk) | old
 Physical servers | | |
 `sci-ph-01.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 48 CPU AMD EPYC 74F3 / 2 TB RAM / 2 x 446 GB SATA SSD | new
 `sci-ph-02.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 48 CPU AMD EPYC 74F3 / 2 TB RAM / 2 x 446 GB SATA SSD | new
-`sci-ph-03.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 48 CPU AMD EPYC 74F3 / 2 TB RAM / 2 x 446 GB SATA SSD | new
+`sci-ph-03.jasmin.ac.uk` | {{< icon fas circle-check text-success >}} Ready to use | 192 CPU AMD EPYC 9654 / 1.5 TB RAM / 480 GB SATA SSD + 800 GB NvMe SSD | new
 {.table .table-striped .w-auto}
 
 Notes:
@@ -253,13 +254,14 @@ Preliminary node specification:
 
 type | status | specs
 --- | --- | ---
-standard | {{< icon fas triangle-exclamation text-warning >}} Available for testing | 190 CPU / 1.5 TB RAM / 480 GB SATA SSD + 800 GB NvMe SSD
-high-mem | {{< icon fas triangle-exclamation text-warning >}} Available for testing | 190 CPU / 6 TB RAM / 480 GB SATA SSD + 800 GB NvMe SSD
+standard | {{< icon fas circle-check text-success >}} Ready to use | 190* CPU AMD EPYC 9654 / 1.5 TB RAM / 480 GB SATA SSD + 800 GB NvMe SSD
+high-mem | {{< icon fas circle-check text-success >}} Ready to use | 190* CPU AMD EPYC 9654 / 6 TB RAM / 480 GB SATA SSD + 800 GB NvMe SSD
 {.table .table-striped .w-auto}
 
 Notes:
 
-- Overall ~55,000 cores: ~triples current capacity
+- \*2 CPU reserved for system processes
+- Overall ~55,000 cores: ~triples capacity pf previous cluster
 - New nodes will form a new cluster, managed separately to the "old" LOTUS
 - Submission to the new cluster is now via `sci-ph-0[1,2,3]`
   - and from **one** additional physical node (details TBC) with extended CentOS7 support, with restricted access to enable use of Cylc 7 for limited period.
