@@ -75,12 +75,12 @@ cli.jasmin.ac.uk` to set it up for you.
 The external moose client has improved security settings, so **you
 must use the `moo install` command** to put your moose credentials file in the
 correct place in order to get remote access to work. This can only be done on
-the client machine mass-cli.jasmin.ac.uk. The credentials file is also changed
+the client machine `mass-cli.jasmin.ac.uk`. The credentials file is also changed
 by the running of moo install, so this process can be run only once.
 {{< /alert >}}
 
 {{<command user="user" host="localhost">}}
-scp moose <userid>@xfer1.jasmin.ac.uk:~/moose
+scp moose <userid>@xfer-vm-01.jasmin.ac.uk:~/moose
 ssh -A -X <userid>@login-01.jasmin.ac.uk
 {{</command>}}
 {{<command user="user" host="login-01">}}
