@@ -329,29 +329,38 @@ There are 3 partitions currently available on LOTUS2, with associated allowed qu
 
 #### Job submission
 
-In order to successfully submit a job to LOTUS2, 3 mandatory fields must be specified. These are a partition, an account, and a QoS. The LOTUS2 configuration has been set to use the `standard` partition as the default if none is specified. However, users are discouraged from relying on this.
+In order to successfully submit a job to LOTUS2, 3 mandatory fields must be specified. These are a partition, an account, and a QoS. The LOTUS2 configuration has been set to use the `standard` partition as the default if none is specified. However, users are discouraged from relying on the default.
 
-Example of a batch Script:
+Example of a batch Script: **NB: remove any trailing whitespace**
 
-**NB: remove any trailing whitespace**
+Replace `mygws` with the name of an account that you belong to (check with the `useraccounts` command, as shown above), and other values appropriate to your job.
 
 ```bash
 #!/bin/bash
-#SBATCH --job-name="Job Name"
-#SBATCH --time=<wall time required>
-#SBATCH --mem=<memory required>
-#SBATCH --cpus=<cpus required for multicore jobs e.g. MPI>
-#SBATCH --account=<account_name>
-#SBATCH --partition=<partition_name>
-#SBATCH --qos=<qos_name>
+#SBATCH --job-name="My test job"
+#SBATCH --time=01:00
+#SBATCH --mem=1G
+#SBATCH --account=mygws
+#SBATCH --partition=debug
+#SBATCH --qos=debug
 
 # rest of script here
 ```
 
-For a pseudo-interactive session on a LOTUS2 compute node:
+
+Save this script file as e.g.`test_submit.sh`
+Then submit this with:
 
 {{<command user="user" host="host1000">}}
-srun --account=cedaproc --qos=standard --pty /bin/bash
+sbatch test_submit.sh
+{{</command>}}
+
+For a pseudo-interactive session on a LOTUS2 compute node:
+
+(again, replace `mygws` with an account that you belong to, from the `useraccounts` command)
+
+{{<command user="user" host="host1000">}}
+srun --account=mygws --partition=debug --qos=debug --pty /bin/bash
 (out)srun: job 586 queued and waiting for resources
 (out)srun: job 586 has been allocated resources
 module li
