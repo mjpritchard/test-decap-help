@@ -338,8 +338,8 @@ Replace `mygws` with the name of an account that you belong to (check with the `
 ```bash
 #!/bin/bash
 #SBATCH --job-name="My test job"
-#SBATCH --time=01:00
-#SBATCH --mem=1G
+#SBATCH --time=00:01:00
+#SBATCH --mem=1M
 #SBATCH --account=mygws
 #SBATCH --partition=debug
 #SBATCH --qos=debug
@@ -347,6 +347,7 @@ Replace `mygws` with the name of an account that you belong to (check with the `
 # rest of script here
 ```
 
+where {{<link "https://slurm.schedmd.com/sbatch.html#OPT_time">}}`time`{{</link>}} and {{<link "https://slurm.schedmd.com/sbatch.html#OPT_mem" >}}mem{{</link>}} should be specified as per the `sbatch` documentation, which covers all available directives such as `--cpus-per-task`.
 
 Save this script file as e.g.`test_submit.sh`
 Then submit this with:
