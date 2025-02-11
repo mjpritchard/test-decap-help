@@ -331,6 +331,9 @@ MinIO:
 
     
 ```python
+import json
+import s3fs
+
 with open('jasmin_object_store_credentials.json') as f:
     jasmin_store_credentials = json.load(f)
 
@@ -340,7 +343,14 @@ with open('jasmin_object_store_credentials.json') as f:
         client_kwargs={'endpoint_url': jasmin_store_credentials['endpoint_url']}
     )
 
+    # list the objects in a bucket
+    my_objects = jasmin_s3.ls('my-bucket')
+    print('My objects: {}'.format(my_objects))
+
+    # report the size of an object
     my_object_size = jasmin_s3.du('my-bucket/object-1')
+    print('Size: {}'.format(my_object_size))
+
 ```
 
 Please note in the example above, the `jasmin_object_store_credentials.json`
@@ -394,3 +404,37 @@ dataset.to_zarr(store=s3_store, mode='w')
 # Reopening the dataset from object store using xarray
 xarray.open_zarr(s3_store, consolidated=True)
 ```
+
+## Using `rclone`
+
+Rclone can be configured to perform operations on an S3 object store backend, just as it can for
+a long list of other backend storage types. It is mentioned in our data transfer section here, but
+extensively documented here.
+
+Below is an example of how to copy data to the JASMIN object store using `rclone`, in a very similar manner to how you would use `rsync`. However, first you need to define parameters for accessing the JASMIN object store. 
+
+Do this by using the `rclone config` wizard. This will update the configuration file (~/.config/rclone/rclone.conf) so that it looks like this:
+
+```config
+[cedadev-o]
+type = s3
+provider = Other
+access_key_id = <access key as above>
+secret_access_key = <secret key as above>
+endpoint = cedadev-o.s3-ext.jc.rl.ac.uk
+acl = private
+```
+
+You could then copy the contents of a directory to this remote, using the `rclone copy` command ({{<link "https://rclone.org/commands/rclone_copy/">}}full description here{{</link>}}):
+
+{{<command user="user" host="localhost">}}
+rclone copy source:sourcepath dest:destpath
+{{</command>}}
+
+This will copy the contents of `sourcepath` to `destpath`, but not the directories themselves. By default, it does not transfer files that are identical on source and destination, testing by modification time or md5sum. It will not delete files from the destination (but note that the `rclone sync` command will). For copying single files, use the `rclone copyto` command.
+
+The example above copies from a local `sourcepath`, which could be a directory on your local machine (either your local laptop/desktop, or perhaps a JASMIN `xfer` server). But given that you can set up multiple **remotes**, you could also configure one of the remotes as SFTP using one of the `xfer` servers, useful if you want to coordinate the transfers from elsewhere rather than on JASMIN itself.
+
+{{<alert type="danger">}}
+Please note that you are asked **NOT to use** the `rclone mount`, `rcd` or `serve` commands when working with storage on JASMIN, [see here]({{% ref "rclone#dos-and-donts" %}}).
+{{</alert>}}
