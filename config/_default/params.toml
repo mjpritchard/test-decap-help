@@ -182,19 +182,19 @@
     locale = "en-GB"
     github = "https://github.com/cedadev"
     section = "docs"
-    [author]
+    [schema.author]
         name = "Matt Pritchard"
-    [logo]
-        url = "img/jasmin-logo-light.svg"
+    [schema.logo]
+        url = "img/logos/jasmin-logo-small-green.png?v=1"
         width = 89
         height = 48
     [image]
-        url = "img/jasmin-logo-light.svg"
+        url = "mg/logos/jasmin-logo-small-green.png?v=1"
         width = 89
         height = 48
 
 [opengraph]
-    images = ["/img/logos/jasmin-logo-small-green.png"]
+    images = ["img/logos/jasmin-logo-small-green.png?v=3"]
     locale = "en_GB"
 
 [comments]
