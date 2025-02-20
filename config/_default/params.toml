@@ -185,16 +185,12 @@
     [schema.author]
         name = "Matt Pritchard"
     [schema.logo]
-        url = "img/logos/jasmin-logo-small-green.png?v=1"
-        width = 89
-        height = 48
+        url = "img/logos/jasmin-logo-small-green.png"
     [schema.image]
-        url = "img/logos/jasmin-logo-small-green.png?v=2"
-        width = 89
-        height = 48
+        url = "img/jasmin2023.jpg"
 
 [opengraph]
-    images = ["img/logos/jasmin-logo-small-green.png?v=3"]
+    images = ["img/logos/jasmin-logo-small-green.png"]
     locale = "en_GB"
 
 [comments]
