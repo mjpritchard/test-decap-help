@@ -194,7 +194,7 @@
         height = 48
 
 [opengraph]
-    images = ["img/favicon.png"]
+    images = ["/img/logos/jasmin-logo-small-green.png"]
     locale = "en_GB"
 
 [comments]
