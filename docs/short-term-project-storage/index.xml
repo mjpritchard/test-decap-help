@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Short term project storage on JASMIN Help Site</title><link>/docs/short-term-project-storage/</link><description>Recent content in Short term project storage on JASMIN Help Site</description><generator>Hugo</generator><language>en</language><copyright>Copyright © 2025 Science and Technology Facilities Council.</copyright><atom:link href="/docs/short-term-project-storage/index.xml" rel="self" type="application/rss+xml"/><item><title>GWS Scanner UI</title><link>/docs/short-term-project-storage/gws-scanner-ui/</link><pubDate>Mon, 17 Jul 2023 15:21:46 +0100</pubDate><guid>/docs/short-term-project-storage/gws-scanner-ui/</guid><description>&lt;p>The 
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Short term project storage on JASMIN Help Site</title><link>https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/</link><description>Recent content in Short term project storage on JASMIN Help Site</description><generator>Hugo</generator><language>en</language><copyright>Copyright © 2025 Science and Technology Facilities Council.</copyright><atom:link href="https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/index.xml" rel="self" type="application/rss+xml"/><item><title>GWS Scanner UI</title><link>https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/gws-scanner-ui/</link><pubDate>Mon, 17 Jul 2023 15:21:46 +0100</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/gws-scanner-ui/</guid><description>&lt;p>The 
  
 
 
@@ -12,7 +12,7 @@
 
 &lt;a href="https://gws-scanner.jasmin.ac.uk/" target="_blank" rel="noopener noreferrer nofollow">Group Workspace (GWS) Scanner&amp;nbsp;
 &lt;!-- &lt;i class="fas fa-up-right-from-square fa-2xs">&lt;/i> -->
- &lt;svg class="svg-inline--fa fas fa-up-right-from-square fa-2xs" fill="currentColor" aria-hidden="true" role="img" viewBox="0 0 512 512">&lt;use href="#fas-up-right-from-square">&lt;/use>&lt;/svg>&lt;/a> UI is an interactive web application for JASMIN users to view their GWSs.&lt;/p></description></item><item><title>Joint-storage Data Migration App (JDMA)</title><link>/docs/short-term-project-storage/jdma/</link><pubDate>Thu, 20 Oct 2022 11:32:46 +0000</pubDate><guid>/docs/short-term-project-storage/jdma/</guid><description>&lt;div class="d-flex alert alert-info " role="alert">
+ &lt;svg class="svg-inline--fa fas fa-up-right-from-square fa-2xs" fill="currentColor" aria-hidden="true" role="img" viewBox="0 0 512 512">&lt;use href="#fas-up-right-from-square">&lt;/use>&lt;/svg>&lt;/a> UI is an interactive web application for JASMIN users to view their GWSs.&lt;/p></description></item><item><title>Joint-storage Data Migration App (JDMA)</title><link>https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/jdma/</link><pubDate>Thu, 20 Oct 2022 11:32:46 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/jdma/</guid><description>&lt;div class="d-flex alert alert-info " role="alert">
  &lt;div class="pt-1 pe-2">
 &lt;!-- &lt;i class="fa fa-lightbulb fa-2x fa-fw">&lt;/i> -->
  &lt;svg class="svg-inline--fa fa fa-lightbulb fa-2x fa-fw" fill="currentColor" aria-hidden="true" role="img" viewBox="0 0 384 512">&lt;use href="#fa-lightbulb">&lt;/use>&lt;/svg>&amp;nbsp;&lt;/div>
@@ -50,13 +50,13 @@ at:
 &lt;a href="https://cedadev.github.io/jdma_client/docs/build/html/index.html" target="_blank" rel="noopener noreferrer nofollow">cedadev.github.io/jdma_client&amp;nbsp;
 &lt;!-- &lt;i class="fas fa-up-right-from-square fa-2xs">&lt;/i> -->
  &lt;svg class="svg-inline--fa fas fa-up-right-from-square fa-2xs" fill="currentColor" aria-hidden="true" role="img" viewBox="0 0 512 512">&lt;use href="#fas-up-right-from-square">&lt;/use>&lt;/svg>&lt;/a>
-for more information about using JDMA.&lt;/strong>&lt;/p></description></item><item><title>Sharing GWS data via HTTP</title><link>/docs/short-term-project-storage/share-gws-data-via-http/</link><pubDate>Mon, 07 Dec 2020 14:50:54 +0000</pubDate><guid>/docs/short-term-project-storage/share-gws-data-via-http/</guid><description>&lt;h2 id="what-is-http-data-sharing" class="heading">What is HTTP data sharing?&lt;a href="#what-is-http-data-sharing" aria-labelledby="what-is-http-data-sharing">
+for more information about using JDMA.&lt;/strong>&lt;/p></description></item><item><title>Sharing GWS data via HTTP</title><link>https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/share-gws-data-via-http/</link><pubDate>Mon, 07 Dec 2020 14:50:54 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/share-gws-data-via-http/</guid><description>&lt;h2 id="what-is-http-data-sharing" class="heading">What is HTTP data sharing?&lt;a href="#what-is-http-data-sharing" aria-labelledby="what-is-http-data-sharing">
 &lt;!-- &lt;i class="fas fa-link anchor">&lt;/i> -->
  &lt;svg class="svg-inline--fa fas fa-link anchor" fill="currentColor" aria-hidden="true" role="img" viewBox="0 0 640 512">&lt;use href="#fas-link">&lt;/use>&lt;/svg>&amp;nbsp;
  &lt;/a>
 &lt;/h2>
 &lt;p>Specific parts of JASMIN Group Workspaces (GWSs) can be made available via
-HTTP, so that:&lt;/p></description></item><item><title>Apply for access to a GWS</title><link>/docs/short-term-project-storage/apply-for-access-to-a-gws/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/short-term-project-storage/apply-for-access-to-a-gws/</guid><description>&lt;p>This article explains how to apply for access to a GWS from the JASMIN account
+HTTP, so that:&lt;/p></description></item><item><title>Apply for access to a GWS</title><link>https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/apply-for-access-to-a-gws/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/apply-for-access-to-a-gws/</guid><description>&lt;p>This article explains how to apply for access to a GWS from the JASMIN account
 portal.&lt;/p>
 &lt;p>&lt;strong>Step 1&lt;/strong> : Sign in into your 
  
@@ -76,12 +76,12 @@ portal&amp;nbsp;
  &lt;svg class="svg-inline--fa fas fa-up-right-from-square fa-2xs" fill="currentColor" aria-hidden="true" role="img" viewBox="0 0 512 512">&lt;use href="#fas-up-right-from-square">&lt;/use>&lt;/svg>&lt;/a>. Navigate to the JASMIN services tab
 of the portal then select the group workspaces from &amp;ldquo;Discover services&amp;rdquo; menu.
 You can search or browse a list of available GWSs. For example here the search
-for GWS with name containing CEDA, resulted in two GWSs.&lt;/p></description></item><item><title>Configuring CORS for object storage</title><link>/docs/short-term-project-storage/configuring-cors-for-object-storage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/short-term-project-storage/configuring-cors-for-object-storage/</guid><description>&lt;h2 id="introduction" class="heading">Introduction&lt;a href="#introduction" aria-labelledby="introduction">
+for GWS with name containing CEDA, resulted in two GWSs.&lt;/p></description></item><item><title>Configuring CORS for object storage</title><link>https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/configuring-cors-for-object-storage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/configuring-cors-for-object-storage/</guid><description>&lt;h2 id="introduction" class="heading">Introduction&lt;a href="#introduction" aria-labelledby="introduction">
 &lt;!-- &lt;i class="fas fa-link anchor">&lt;/i> -->
  &lt;svg class="svg-inline--fa fas fa-link anchor" fill="currentColor" aria-hidden="true" role="img" viewBox="0 0 640 512">&lt;use href="#fas-link">&lt;/use>&lt;/svg>&amp;nbsp;
  &lt;/a>
 &lt;/h2>
-&lt;p>This article describes how to configure Cross-Origin Resource Sharing (CORS) on a JASMIN Caringo S3 object store.&lt;/p></description></item><item><title>Elastic Tape command-line interface hints</title><link>/docs/short-term-project-storage/elastic-tape-command-line-interface-hints/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/short-term-project-storage/elastic-tape-command-line-interface-hints/</guid><description>&lt;div class="d-flex alert alert-info " role="alert">
+&lt;p>This article describes how to configure Cross-Origin Resource Sharing (CORS) on a JASMIN Caringo S3 object store.&lt;/p></description></item><item><title>Elastic Tape command-line interface hints</title><link>https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/elastic-tape-command-line-interface-hints/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/elastic-tape-command-line-interface-hints/</guid><description>&lt;div class="d-flex alert alert-info " role="alert">
  &lt;div class="pt-1 pe-2">
 &lt;!-- &lt;i class="fa fa-lightbulb fa-2x fa-fw">&lt;/i> -->
  &lt;svg class="svg-inline--fa fa fa-lightbulb fa-2x fa-fw" fill="currentColor" aria-hidden="true" role="img" viewBox="0 0 384 512">&lt;use href="#fa-lightbulb">&lt;/use>&lt;/svg>&amp;nbsp;&lt;/div>
@@ -98,15 +98,13 @@ for GWS with name containing CEDA, resulted in two GWSs.&lt;/p></description></i
 
 
  
- 
- 
 
 
 
  
  
 
- &lt;a href="/docs/short-term-project-storage/jdma/">JDMA&lt;/a> system provides a better interface for putting/retrieving data into the Elastic Tape System)&lt;/li>
+ &lt;a href="https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/jdma/">JDMA&lt;/a> system provides a better interface for putting/retrieving data into the Elastic Tape System)&lt;/li>
 &lt;li>A new system called 
  
 
@@ -126,7 +124,7 @@ for GWS with name containing CEDA, resulted in two GWSs.&lt;/p></description></i
 
  &lt;/div>
  &lt;/div>
-&lt;p>This article explains the return codes of certain Elastic Tape (ET) commands.&lt;/p></description></item><item><title>GWS Alert System</title><link>/docs/short-term-project-storage/gws-alert-system/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/short-term-project-storage/gws-alert-system/</guid><description>&lt;p>The Group Workspace (GWS) Alert system is a python app which alerts the managers/deputies of a GWS when their GWS is reaching full capacity.&lt;/p></description></item><item><title>GWS etiquette</title><link>/docs/short-term-project-storage/gws-etiquette/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/short-term-project-storage/gws-etiquette/</guid><description>&lt;p>This article highlights the essential principles of working with group
+&lt;p>This article explains the return codes of certain Elastic Tape (ET) commands.&lt;/p></description></item><item><title>GWS Alert System</title><link>https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/gws-alert-system/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/gws-alert-system/</guid><description>&lt;p>The Group Workspace (GWS) Alert system is a python app which alerts the managers/deputies of a GWS when their GWS is reaching full capacity.&lt;/p></description></item><item><title>GWS etiquette</title><link>https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/gws-etiquette/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/gws-etiquette/</guid><description>&lt;p>This article highlights the essential principles of working with group
 workspaces.&lt;/p>
 
 
@@ -138,7 +136,7 @@ workspaces.&lt;/p>
  &lt;/a>
 &lt;/h2>
 &lt;p>Please maintain contact throughout the life of the GWS via the following
-methods:&lt;/p></description></item><item><title>GWS Scanner</title><link>/docs/short-term-project-storage/gws-scanner/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/short-term-project-storage/gws-scanner/</guid><description>&lt;h2 id="introduction" class="heading">Introduction&lt;a href="#introduction" aria-labelledby="introduction">
+methods:&lt;/p></description></item><item><title>GWS Scanner</title><link>https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/gws-scanner/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/gws-scanner/</guid><description>&lt;h2 id="introduction" class="heading">Introduction&lt;a href="#introduction" aria-labelledby="introduction">
 &lt;!-- &lt;i class="fas fa-link anchor">&lt;/i> -->
  &lt;svg class="svg-inline--fa fas fa-link anchor" fill="currentColor" aria-hidden="true" role="img" viewBox="0 0 640 512">&lt;use href="#fas-link">&lt;/use>&lt;/svg>&amp;nbsp;
  &lt;/a>
@@ -185,13 +183,13 @@ methods:&lt;/p></description></item><item><title>GWS Scanner</title><link>/docs/
  
  
 
- &lt;a href="/docs/short-term-project-storage/gws-scanner-ui/">GWS Scanner User Interface&lt;/a>.&lt;/p></description></item><item><title>Install XFC client</title><link>/docs/short-term-project-storage/install-xfc-client/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/short-term-project-storage/install-xfc-client/</guid><description>&lt;h2 id="xfc-client-install" class="heading">XFC client install&lt;a href="#xfc-client-install" aria-labelledby="xfc-client-install">
+ &lt;a href="https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/gws-scanner-ui/">GWS Scanner User Interface&lt;/a>.&lt;/p></description></item><item><title>Install XFC client</title><link>https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/install-xfc-client/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/install-xfc-client/</guid><description>&lt;h2 id="xfc-client-install" class="heading">XFC client install&lt;a href="#xfc-client-install" aria-labelledby="xfc-client-install">
 &lt;!-- &lt;i class="fas fa-link anchor">&lt;/i> -->
  &lt;svg class="svg-inline--fa fas fa-link anchor" fill="currentColor" aria-hidden="true" role="img" viewBox="0 0 640 512">&lt;use href="#fas-link">&lt;/use>&lt;/svg>&amp;nbsp;
  &lt;/a>
 &lt;/h2>
 &lt;p>In order to initiate and manage your usage of the XFC (transfer cache)
-service, you need to use the XFC client.&lt;/p></description></item><item><title>Managing a GWS</title><link>/docs/short-term-project-storage/managing-a-gws/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/short-term-project-storage/managing-a-gws/</guid><description>&lt;p>This article explains the responsibilities of the Group Workspace (GWS)
+service, you need to use the XFC client.&lt;/p></description></item><item><title>Managing a GWS</title><link>https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/managing-a-gws/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/managing-a-gws/</guid><description>&lt;p>This article explains the responsibilities of the Group Workspace (GWS)
 manager.&lt;/p>
 
 
@@ -204,7 +202,7 @@ manager.&lt;/p>
 &lt;/h2>
 &lt;p>When a GWS is created it is important that the designated GWS Manager
 understands the responsibilities associated with the role. The GWS Manager has
-a duty to:&lt;/p></description></item><item><title>New storage FAQs and issues</title><link>/docs/short-term-project-storage/faqs-storage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/short-term-project-storage/faqs-storage/</guid><description>&lt;div class="d-flex alert alert-info " role="alert">
+a duty to:&lt;/p></description></item><item><title>New storage FAQs and issues</title><link>https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/faqs-storage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/faqs-storage/</guid><description>&lt;div class="d-flex alert alert-info " role="alert">
  &lt;div class="pt-1 pe-2">
 &lt;!-- &lt;i class="fa fa-lightbulb fa-2x fa-fw">&lt;/i> -->
  &lt;svg class="svg-inline--fa fa fa-lightbulb fa-2x fa-fw" fill="currentColor" aria-hidden="true" role="img" viewBox="0 0 384 512">&lt;use href="#fa-lightbulb">&lt;/use>&lt;/svg>&amp;nbsp;&lt;/div>
@@ -217,7 +215,7 @@ effect for other users, so please take the time to check and change your code
 to make appropriate use of new storage system. If used correctly, the new
 storage offers us a high performance scalable file system, with the capability
 for object storage as tools and interfaces evolve, and we can continue to
-serve the growing demand for storage in the most cost effective manner.&lt;/p></description></item><item><title>Secondary copy using Elastic Tape</title><link>/docs/short-term-project-storage/secondary-copy-using-elastic-tape/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/short-term-project-storage/secondary-copy-using-elastic-tape/</guid><description>&lt;div class="d-flex alert alert-info " role="alert">
+serve the growing demand for storage in the most cost effective manner.&lt;/p></description></item><item><title>Secondary copy using Elastic Tape</title><link>https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/secondary-copy-using-elastic-tape/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/secondary-copy-using-elastic-tape/</guid><description>&lt;div class="d-flex alert alert-info " role="alert">
  &lt;div class="pt-1 pe-2">
 &lt;!-- &lt;i class="fa fa-lightbulb fa-2x fa-fw">&lt;/i> -->
  &lt;svg class="svg-inline--fa fa fa-lightbulb fa-2x fa-fw" fill="currentColor" aria-hidden="true" role="img" viewBox="0 0 384 512">&lt;use href="#fa-lightbulb">&lt;/use>&lt;/svg>&amp;nbsp;&lt;/div>
@@ -234,15 +232,13 @@ serve the growing demand for storage in the most cost effective manner.&lt;/p></
 
 
  
- 
- 
 
 
 
  
  
 
- &lt;a href="/docs/short-term-project-storage/jdma/">JDMA&lt;/a> system provides a better interface for putting/retrieving data into the Elastic Tape System)&lt;/li>
+ &lt;a href="https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/jdma/">JDMA&lt;/a> system provides a better interface for putting/retrieving data into the Elastic Tape System)&lt;/li>
 &lt;li>A new system called 
  
 
@@ -272,19 +268,19 @@ serve the growing demand for storage in the most cost effective manner.&lt;/p></
  &lt;/a>
 &lt;/h2>
 &lt;p>Elastic Tape is a system developed for use with JASMIN Group Workspaces
-(GWSs), enabling the Group Workspace Manager to:&lt;/p></description></item><item><title>Sharing GWS data on JASMIN</title><link>/docs/short-term-project-storage/share-gws-data-on-jasmin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/short-term-project-storage/share-gws-data-on-jasmin/</guid><description>&lt;h2 id="introduction" class="heading">Introduction&lt;a href="#introduction" aria-labelledby="introduction">
+(GWSs), enabling the Group Workspace Manager to:&lt;/p></description></item><item><title>Sharing GWS data on JASMIN</title><link>https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/share-gws-data-on-jasmin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/share-gws-data-on-jasmin/</guid><description>&lt;h2 id="introduction" class="heading">Introduction&lt;a href="#introduction" aria-labelledby="introduction">
 &lt;!-- &lt;i class="fas fa-link anchor">&lt;/i> -->
  &lt;svg class="svg-inline--fa fas fa-link anchor" fill="currentColor" aria-hidden="true" role="img" viewBox="0 0 640 512">&lt;use href="#fas-link">&lt;/use>&lt;/svg>&amp;nbsp;
  &lt;/a>
 &lt;/h2>
-&lt;p>This article explains how a GWS Manager can organise for some directories within a GWS to be shared with other users on JASMIN.&lt;/p></description></item><item><title>Transfer Cache (XFC)</title><link>/docs/short-term-project-storage/xfc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/short-term-project-storage/xfc/</guid><description>&lt;h2 id="what-is-the-xfc" class="heading">What is the XFC?&lt;a href="#what-is-the-xfc" aria-labelledby="what-is-the-xfc">
+&lt;p>This article explains how a GWS Manager can organise for some directories within a GWS to be shared with other users on JASMIN.&lt;/p></description></item><item><title>Transfer Cache (XFC)</title><link>https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/xfc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/xfc/</guid><description>&lt;h2 id="what-is-the-xfc" class="heading">What is the XFC?&lt;a href="#what-is-the-xfc" aria-labelledby="what-is-the-xfc">
 &lt;!-- &lt;i class="fas fa-link anchor">&lt;/i> -->
  &lt;svg class="svg-inline--fa fas fa-link anchor" fill="currentColor" aria-hidden="true" role="img" viewBox="0 0 640 512">&lt;use href="#fas-link">&lt;/use>&lt;/svg>&amp;nbsp;
  &lt;/a>
 &lt;/h2>
 &lt;p>The Transfer Cache (XFC) provides a large area of temporary storage for
 users of JASMIN to store large files and/or a large volume of files on a
-short-term basis.&lt;/p></description></item><item><title>Using the JASMIN Object Store</title><link>/docs/short-term-project-storage/using-the-jasmin-object-store/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/short-term-project-storage/using-the-jasmin-object-store/</guid><description>&lt;p>This article describes how to use the JASMIN high-performance object storage.&lt;/p>
+short-term basis.&lt;/p></description></item><item><title>Using the JASMIN Object Store</title><link>https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/using-the-jasmin-object-store/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/using-the-jasmin-object-store/</guid><description>&lt;p>This article describes how to use the JASMIN high-performance object storage.&lt;/p>
 
 
 
@@ -336,7 +332,7 @@ identifier, with attached metadata. This is a fundamental change from
 traditional file systems that you may be used to, as there is no directory
 hierarchy - the objects exist in a single flat domain. These semantics allow
 the object store to scale out much more easily than a traditional shared file
-system.&lt;/p></description></item><item><title>What is a Group Workspace?</title><link>/docs/short-term-project-storage/introduction-to-group-workspaces/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/short-term-project-storage/introduction-to-group-workspaces/</guid><description>&lt;h2 id="introduction" class="heading">Introduction&lt;a href="#introduction" aria-labelledby="introduction">
+system.&lt;/p></description></item><item><title>What is a Group Workspace?</title><link>https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/introduction-to-group-workspaces/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/introduction-to-group-workspaces/</guid><description>&lt;h2 id="introduction" class="heading">Introduction&lt;a href="#introduction" aria-labelledby="introduction">
 &lt;!-- &lt;i class="fas fa-link anchor">&lt;/i> -->
  &lt;svg class="svg-inline--fa fas fa-link anchor" fill="currentColor" aria-hidden="true" role="img" viewBox="0 0 640 512">&lt;use href="#fas-link">&lt;/use>&lt;/svg>&amp;nbsp;
  &lt;/a>

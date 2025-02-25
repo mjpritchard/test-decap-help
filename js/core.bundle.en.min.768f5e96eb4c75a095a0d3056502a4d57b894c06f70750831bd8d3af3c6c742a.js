@@ -6493,7 +6493,7 @@ function initIndex() {
       {
         id: 0,
         tag: "en",
-        href: "/docs/about-this-site/",
+        href: "/test-decap-help/docs/about-this-site/",
         title: "About this site",
         description: "Information about this documentation site itself.",
         
@@ -6508,7 +6508,7 @@ function initIndex() {
       {
         id: 1,
         tag: "en",
-        href: "/docs/interactive-computing/access-from-vscode/",
+        href: "/test-decap-help/docs/interactive-computing/access-from-vscode/",
         title: "Access from VSCode",
         description: "How to access JASMIN from VSCode",
         
@@ -6523,7 +6523,7 @@ function initIndex() {
       {
         id: 2,
         tag: "en",
-        href: "/docs/getting-started/storage/",
+        href: "/test-decap-help/docs/getting-started/storage/",
         title: "Access to storage",
         description: "This article provides an overview of JASMIN storage.",
         
@@ -6538,7 +6538,7 @@ function initIndex() {
       {
         id: 3,
         tag: "en",
-        href: "/docs/uncategorized/acknowledging-jasmin/",
+        href: "/test-decap-help/docs/uncategorized/acknowledging-jasmin/",
         title: "Acknowledging  JASMIN",
         description: "Acknowledging  JASMIN",
         
@@ -6553,7 +6553,7 @@ function initIndex() {
       {
         id: 4,
         tag: "en",
-        href: "/docs/for-cloud-tenants/adding-and-removing-ssh-keys-from-an-external-cloud-vm/",
+        href: "/test-decap-help/docs/for-cloud-tenants/adding-and-removing-ssh-keys-from-an-external-cloud-vm/",
         title: "Adding and removing SSH keys from an External Cloud VM",
         description: "Adding and removing SSH keys from an External Cloud VM",
         
@@ -6568,7 +6568,7 @@ function initIndex() {
       {
         id: 5,
         tag: "en",
-        href: "/docs/software-on-jasmin/additional-software/",
+        href: "/test-decap-help/docs/software-on-jasmin/additional-software/",
         title: "Additional software",
         description: "Additional software packages (under: /apps/jasmin/)",
         
@@ -6583,7 +6583,7 @@ function initIndex() {
       {
         id: 6,
         tag: "en",
-        href: "/docs/short-term-project-storage/apply-for-access-to-a-gws/",
+        href: "/test-decap-help/docs/short-term-project-storage/apply-for-access-to-a-gws/",
         title: "Apply for access to a GWS",
         description: "Apply for access to a GWS",
         
@@ -6598,7 +6598,7 @@ function initIndex() {
       {
         id: 7,
         tag: "en",
-        href: "/docs/uncategorized/approving-requests-for-access/",
+        href: "/test-decap-help/docs/uncategorized/approving-requests-for-access/",
         title: "Approving requests for access roles",
         description: "Approving requests for access roles",
         
@@ -6613,7 +6613,7 @@ function initIndex() {
       {
         id: 8,
         tag: "en",
-        href: "/docs/uncategorized/article-under-review/",
+        href: "/test-decap-help/docs/uncategorized/article-under-review/",
         title: "Article under review",
         description: "Article under review",
         
@@ -6628,7 +6628,7 @@ function initIndex() {
       {
         id: 9,
         tag: "en",
-        href: "/docs/data-transfer/bbcp/",
+        href: "/test-decap-help/docs/data-transfer/bbcp/",
         title: "bbcp",
         description: "Data transfer tool bbcp",
         
@@ -6643,7 +6643,7 @@ function initIndex() {
       {
         id: 10,
         tag: "en",
-        href: "/docs/getting-started/beginners-training-workshop/",
+        href: "/test-decap-help/docs/getting-started/beginners-training-workshop/",
         title: "beginners training workshop - materials",
         description: "Beginners training workshop - materials",
         
@@ -6658,7 +6658,7 @@ function initIndex() {
       {
         id: 11,
         tag: "en",
-        href: "/docs/for-cloud-tenants/best-practice/",
+        href: "/test-decap-help/docs/for-cloud-tenants/best-practice/",
         title: "Best practice",
         description: "Best practice",
         
@@ -6673,7 +6673,7 @@ function initIndex() {
       {
         id: 12,
         tag: "en",
-        href: "/docs/long-term-archive-storage/ceda-archive/",
+        href: "/test-decap-help/docs/long-term-archive-storage/ceda-archive/",
         title: "CEDA Archive",
         description: "Accessing the CEDA Archive from JASMIN",
         
@@ -6688,7 +6688,7 @@ function initIndex() {
       {
         id: 13,
         tag: "en",
-        href: "/docs/interactive-computing/check-network-details/",
+        href: "/test-decap-help/docs/interactive-computing/check-network-details/",
         title: "Check network details",
         description: "Check network details",
         
@@ -6703,7 +6703,7 @@ function initIndex() {
       {
         id: 14,
         tag: "en",
-        href: "/docs/for-cloud-tenants/cluster-as-a-service/",
+        href: "/test-decap-help/docs/for-cloud-tenants/cluster-as-a-service/",
         title: "Cluster-as-a-Service",
         description: "Cluster-as-a-Service",
         
@@ -6718,7 +6718,7 @@ function initIndex() {
       {
         id: 15,
         tag: "en",
-        href: "/docs/for-cloud-tenants/cluster-as-a-service-identity-manager/",
+        href: "/test-decap-help/docs/for-cloud-tenants/cluster-as-a-service-identity-manager/",
         title: "Cluster-as-a-Service - Identity Manager",
         description: "Cluster-as-a-Service - Identity Manager",
         
@@ -6733,7 +6733,7 @@ function initIndex() {
       {
         id: 16,
         tag: "en",
-        href: "/docs/for-cloud-tenants/cluster-as-a-service-kubernetes/",
+        href: "/test-decap-help/docs/for-cloud-tenants/cluster-as-a-service-kubernetes/",
         title: "Cluster-as-a-service - Kubernetes",
         description: "Cluster-as-a-service - Kubernetes",
         
@@ -6748,7 +6748,7 @@ function initIndex() {
       {
         id: 17,
         tag: "en",
-        href: "/docs/for-cloud-tenants/cluster-as-a-service-pangeo/",
+        href: "/test-decap-help/docs/for-cloud-tenants/cluster-as-a-service-pangeo/",
         title: "Cluster-as-a-Service - Pangeo",
         description: "Cluster-as-a-Service - Pangeo",
         
@@ -6763,7 +6763,7 @@ function initIndex() {
       {
         id: 18,
         tag: "en",
-        href: "/docs/for-cloud-tenants/cluster-as-a-service-shared-storage/",
+        href: "/test-decap-help/docs/for-cloud-tenants/cluster-as-a-service-shared-storage/",
         title: "Cluster-as-a-Service - Shared storage",
         description: "Cluster-as-a-Service - Shared storage",
         
@@ -6778,7 +6778,7 @@ function initIndex() {
       {
         id: 19,
         tag: "en",
-        href: "/docs/for-cloud-tenants/cluster-as-a-service-slurm/",
+        href: "/test-decap-help/docs/for-cloud-tenants/cluster-as-a-service-slurm/",
         title: "Cluster-as-a-Service - Slurm",
         description: "Cluster-as-a-Service - Slurm",
         
@@ -6793,7 +6793,7 @@ function initIndex() {
       {
         id: 20,
         tag: "en",
-        href: "/docs/software-on-jasmin/community-software-checksit/",
+        href: "/test-decap-help/docs/software-on-jasmin/community-software-checksit/",
         title: "Community Software: checksit",
         description: "Community Software: checksit",
         
@@ -6808,7 +6808,7 @@ function initIndex() {
       {
         id: 21,
         tag: "en",
-        href: "/docs/software-on-jasmin/community-software-esmvaltool/",
+        href: "/test-decap-help/docs/software-on-jasmin/community-software-esmvaltool/",
         title: "Community Software: ESMValTool",
         description: "Community Software: ESMValTool",
         
@@ -6823,7 +6823,7 @@ function initIndex() {
       {
         id: 22,
         tag: "en",
-        href: "/docs/software-on-jasmin/compiling-and-linking/",
+        href: "/test-decap-help/docs/software-on-jasmin/compiling-and-linking/",
         title: "Compiling and linking",
         description: "Compiling and linking code which uses libraries provided on JASMIN",
         
@@ -6838,7 +6838,7 @@ function initIndex() {
       {
         id: 23,
         tag: "en",
-        href: "/docs/software-on-jasmin/conda-environments-and-python-virtual-environments/",
+        href: "/test-decap-help/docs/software-on-jasmin/conda-environments-and-python-virtual-environments/",
         title: "Conda environments and Python virtual environments",
         description: "Conda environments and Python virtual environments",
         
@@ -6853,7 +6853,7 @@ function initIndex() {
       {
         id: 24,
         tag: "en",
-        href: "/docs/software-on-jasmin/conda-removal/",
+        href: "/test-decap-help/docs/software-on-jasmin/conda-removal/",
         title: "Conda removal",
         description: "Removal of packages from anaconda \"defaults\" channel in user environments on JASMIN",
         
@@ -6868,7 +6868,7 @@ function initIndex() {
       {
         id: 25,
         tag: "en",
-        href: "/docs/short-term-project-storage/configuring-cors-for-object-storage/",
+        href: "/test-decap-help/docs/short-term-project-storage/configuring-cors-for-object-storage/",
         title: "Configuring CORS for object storage",
         description: "Confguring cross-origin resource sharing (CORS) for object storage.",
         
@@ -6883,7 +6883,7 @@ function initIndex() {
       {
         id: 26,
         tag: "en",
-        href: "/docs/interactive-computing/creating-a-virtual-environment-in-the-notebooks-service/",
+        href: "/test-decap-help/docs/interactive-computing/creating-a-virtual-environment-in-the-notebooks-service/",
         title: "Creating a virtual environment in the JASMIN Notebooks Service",
         description: "Adding custom Python packages to Jupyter Notebooks",
         
@@ -6898,7 +6898,7 @@ function initIndex() {
       {
         id: 27,
         tag: "en",
-        href: "/docs/software-on-jasmin/creating-and-using-miniforge-environments/",
+        href: "/test-decap-help/docs/software-on-jasmin/creating-and-using-miniforge-environments/",
         title: "Creating and using miniforge environments",
         description: "Creating and using miniforge environments",
         
@@ -6913,7 +6913,7 @@ function initIndex() {
       {
         id: 28,
         tag: "en",
-        href: "/docs/interactive-computing/dask-gateway/",
+        href: "/test-decap-help/docs/interactive-computing/dask-gateway/",
         title: "Dask Gateway",
         description: "Introduction \u0026nbsp; Dask Gateway\u0026nbsp; is a service which manages Dask\u0026nbsp; clusters for users. On JASMIN, it creates a Dask cluster in LOTUS, our batch computing cluster. It automatically creates a Dask for you, scheduling Slurm jobs to create Dask schedulers and workers as appropriate.\n",
         
@@ -6928,7 +6928,7 @@ function initIndex() {
       {
         id: 29,
         tag: "en",
-        href: "/docs/data-transfer/data-transfer-overview/",
+        href: "/test-decap-help/docs/data-transfer/data-transfer-overview/",
         title: "Data transfer overview",
         description: "Overview of data transfer",
         
@@ -6943,7 +6943,7 @@ function initIndex() {
       {
         id: 30,
         tag: "en",
-        href: "/docs/data-transfer/data-transfer-tools/",
+        href: "/test-decap-help/docs/data-transfer/data-transfer-tools/",
         title: "Data Transfer Tools",
         description: "Data Transfer Tools",
         
@@ -6958,7 +6958,7 @@ function initIndex() {
       {
         id: 31,
         tag: "en",
-        href: "/docs/short-term-project-storage/elastic-tape-command-line-interface-hints/",
+        href: "/test-decap-help/docs/short-term-project-storage/elastic-tape-command-line-interface-hints/",
         title: "Elastic Tape command-line interface hints",
         description: "Elastic Tape command-line interface hints",
         
@@ -6973,7 +6973,7 @@ function initIndex() {
       {
         id: 32,
         tag: "en",
-        href: "/docs/batch-computing/example-job-2-calc-md5s/",
+        href: "/test-decap-help/docs/batch-computing/example-job-2-calc-md5s/",
         title: "Example Job 2: Calculating MD5 Checksums on many files",
         description: "Sample workflows for LOTUS",
         
@@ -6988,7 +6988,7 @@ function initIndex() {
       {
         id: 33,
         tag: "en",
-        href: "/training/advanced/training-exercises-coming-soon/",
+        href: "/test-decap-help/training/advanced/training-exercises-coming-soon/",
         title: "Example training exercise",
         description: "Exercises to help you get the most out of JASMIN",
         
@@ -7003,12 +7003,12 @@ function initIndex() {
       {
         id: 34,
         tag: "en",
-        href: "/docs/mass/external-access-to-mass-faq/",
+        href: "/test-decap-help/docs/mass/external-access-to-mass-faq/",
         title: "External Access to MASS FAQ",
         description: "External Access to MASS FAQ",
         
         
-        content: "Introduction \u0026nbsp; The Managed Archive Storage System (MASS) provides storage and restore services for large volumes of Met Office data. It is a service operated by the UK Met Office.\nThis article provides answers to MASS frequently asked questions: Click on the link for each of the FAQs below to expand the answer.\nGeneral \u0026nbsp; Can I use my existing MASS account No. You need a separate MASS account for use on the Met Office internal network (CDN), Monsoon, ECMWF HPCs, and JASMIN. With these different account types, you can have permission to access different datasets specific to these computing environments. How do I use MOOSE? Please see the MOOSE User Guide here Will my account expire? Yes. By default, MASS via JASMIN accounts will expire after 500 days and your account will be automatically disabled.\nShortly before your account is due to expire you will receive an email, and it will contain instructions for you and your sponsor about how to extend your access. If your account has already expired and you are looking to reactive it, please email: Monsoon@metoffice.gov.uk\nWhy am I asked for a password when logging in to mass-cli? There are two reasons that may result in you being prompted for a password when attempting to login to the MASS client machine (mass-cli.jasmin.ac.uk).\nThe first is if you do not have permission to access the machine. A quick method to check is to verify if you are a member of the moose user group. It should be listed when you use the ‘groups’ command:\n[login1]$ groups mooseIf this happens, please contact: Monsoon@metoffice.gov.uk\nThe second is if you forget the -A option for agent forwarind when you ssh to a JASMIN login node. You can test for this condition by listing loaded identities on the login node, and finding you have none:\n[login1]$ ssh-add -l Could not open a connection to your authentication agent.If this happens, please exit back to your local machine and ssh in again using the -A flag or tick the relevant box for \u0026ldquo;agent forwarding\u0026rdquo;.\nHow can I directly login to the MASS client machine? You can\u0026rsquo;t, but you can edit your ssh configuration so that it automatically enables you to jump through the intermediary login servers.\nAdd the following to your home institute ssh config file ($HOME/.ssh/config file):\nHost mass-cli User your_jasmin_userid HostName mass-cli.jasmin.ac.uk ProxyCommand ssh -YA -t your_jasmin_userid@login1.jasmin.ac.uk -W %h:%p 2\u0026gt;/dev/nullYou should then be able to login directly using:\n$ ssh mass-cliPlease note that this only works if you are using OpenSSH version 5.4 or greater as earlier versions do not support the -W flag. You can check your version using: ssh -v\nCan I write to MASS from JASMIN? No, MASS access from JASMIN is strictly read-only. If you need to write to the MASS archive, contact monsoon@metoffice.gov.uk and ask to be put in touch with the relevant team. MOOSE messages and what to do \u0026nbsp; Is this process running in the correct environment? When running \u0026lsquo;moo install\u0026rsquo; you may get an error message similar to:\nCannot read file: /home/user/\u0026lt;userid\u0026gt;/.moosedir/moose - is this process running in the correct environment?This can be the result of the wrong combination of Unix user-id and UID having been used to encrypt the credentials file. If you encounter this error message, please type id on the command line whilst logged into JASMIN, and send the uid= section of the output to: Monsoon@metoffice.gov.uk\nYour credentials file will then be reissued.\nYour password is due to expire in X day(s). Occasionally on running a MOOSE command you will be told that your password is due to expire with a message of the form:\nYour password is due to expire in 6 day(s). A new password can be generated using 'moo passwd -r'. This refers specifically to your MASS via JASMIN, it does not affect any other MOOSE accounts you may have.\nYou need to run the command as advised in order to update your credentials whilst you are logged into mass-cli. You do not actually need to provide a new password, as this is generated and hidden from you by the command.\nIf you have a retrieval in progress, it is safe to run this command as it will not affect processes already running.\nERROR_SINGLE_COPY_UNAVAILABLE MOOSE - Single Copy Unavailable error\nOn occasion, a tape library needs to be taken down for maintenance. If a user is trying to retrieve a single-copy file stored on one of those tapes, the retrieval will temporarily fail with the message ERROR_SINGLE_COPY_UNAVAILABLE. As soon as the maintenance is completed, the file will be available again.\nTapes are taken out of MASS for copying to the new MASS system and become unavailable for roughly 14 days. The process is as follows:\nThursday (week one): Tapes are marked unavailable for indexing by the system. Tuesday (week two): Tapes get taken out for copying to the new MASS system. Following Thursday (week three): Tapes are returned to Met Office library and should be available again. So, if you find that data or files are unavailable due to the ERROR_SINGLE_COPY_UNAVAILABLE error, try reading the data again on Friday, and if still not available, try the following Friday when the migration should have completed.\nMOOSE basics \u0026nbsp; What is MOOSE? The software that allows you to interact with MASS. What is a project? A collection of access rules. What is an access rule? Permission to access an area in MASS. For example, project-random might have an access rule to moose:/crum/random-numbers\nBeing part of project-random would allow you to access the random-numbers set.\nHow do I see what projects I am a member of? You can use: moo prls How do I see what access rules a project has? You can use: moo projinfo -l projectname (Replace projectname with the name of one of your projects) How do I get access to a project, or add an access rule to one of my projects? Please contact your sponsor. They can then complete this form if they also agree you require access:\nhttps://metoffice.service-now.com/sp?id=sc_cat_item\u0026sys_id=5653331e1bbaf0d88ffa422ad34bcba0\u0026referrer=recent_items\u0026nbsp; Please note that the link above is only visible to those in the Met Office.\nWhy can I not access a set that I know is part of a project? If you are given access to a project but do not have access to all the sets associated with it, this can be due to the Access Control Lists (ACLs).\nThe project owner will be able to change the ACLs on sets to make them readable if it is appropriate.\nHow do I retrieve a file from MASS? Use moo get or moo select. More information about both commands is in the MOOSE User Guide. How do I make sure my directory has all the available data retrieved from MASS? The problem: You are running a model over a period of several days or weeks, and you need to analyse the output of the model as it runs. You have a moo get or moo select command that you run to fetch the data that is available. You want to be able to re-run it to fetch the files or fields that have been added to MASS since you last ran the command, but you do not want it to waste time re-fetching things you already have.\nThe solution: Use the -i or \u0026ndash;fill-gaps option when you run moo get or moo select. This option tells MOOSE that you only want to fetch files that don\u0026rsquo;t already exist in the specified local directory. Note that MASS works out where gaps are by doing checks to see if files of the expected name exist in your destination directory, so it won\u0026rsquo;t behave correctly if you rename files after you have retrieved them, or if you use the -C option with moo select which condenses all the matching fields into a single file.\nYou might also find the -g / --get-if-available option to moo get useful. This tells MOOSE to get every file from your moo get list that is available, but ignore ones that are not there rather than exit with an error. This could help if you are expecting files to be archived at some point but are not sure whether they will be there when your job runs. If you use this option MOOSE will get as much as it can from your list without bailing out.\nHow can I script my data retrieval from MASS? There are restrictions on how to login to JASMIN and use of Linux utilities such as ‘cron’ and ‘at’ but it is possible to remotely initiate a retrieval from MASS on to JASMIN, provided you have your ssh agent running on a machine local to you.\neval $(ssh-agent -s) ssh-add ~/.ssh/jasmin_id_rsa ssh -A -X sci1.jasmin.ac.uk \u0026#39;ssh mass-cli my_script.sh\u0026#39;If you have set up your $HOME/.ssh/config to allow more direct access, then the following should work:\nssh mass-cli my_script.shThis will run the script “my_script.sh” on the MASS client VM. You can put the moose retrieval commands into a script and it should work:\n#!/bin/bash SRC_URI=moose:/opfc/atm/global/SOMETHING moo get $SRC_URI jasmin_copy.pp exitIf you have access to an appropriate JASMIN workspace, then you can scp data from the workspace directly through one of the dedicated data transfer VMs. Again, you need the ssh-agent running locally:\neval $(ssh-agent -s) ssh-add ~/.ssh/jasmin_id_rsa scp userid@xfer-vm-01.jasmin.ac.uk:/group_workspaces/cems/\u0026lt;project\u0026gt;/jasmin_file.pp my_local_copy.pp Can I run MASS retrievals on LOTUS or through a workload manager? In addition to the interactive mass-cli server there is also the moose1 server that is only accessible through the\n\u0026lt;a href=\u0026quot;/docs/batch-computing/lotus-overview/\u0026quot;\u0026gt;LOTUS batch processing cluster\u0026lt;/a\u0026gt;. To submit jobs to moose1 you must use the [Slurm scheduler](/docs/batch-computing/slurm-scheduler-overview/). You will need to specify the account mass and partition mass, for example:\nsbatch -A mass -p mass [\u0026lt;options\u0026gt;] \u0026lt;jobscript\u0026gt;where \u0026lt;jobscript\u0026gt; looks something like:\n#!/bin/bash SRC_URI=moose:/opfc/atm/global/SOMETHING moo get $SRC_URI jasmin_copy.pp exitIt is also easy to configure the Rose/Cylc workflow manager to submit jobs to moose1 through the Slurm scheduler by including the following lines in your suite.rc file:\n[[[job submission]]] method = slurm [[[directives]]] --partition=mass --account=mass [\u0026lt;options\u0026gt;]"
+        content: "Introduction \u0026nbsp; The Managed Archive Storage System (MASS) provides storage and restore services for large volumes of Met Office data. It is a service operated by the UK Met Office.\nThis article provides answers to MASS frequently asked questions: Click on the link for each of the FAQs below to expand the answer.\nGeneral \u0026nbsp; Can I use my existing MASS account No. You need a separate MASS account for use on the Met Office internal network (CDN), Monsoon, ECMWF HPCs, and JASMIN. With these different account types, you can have permission to access different datasets specific to these computing environments. How do I use MOOSE? Please see the MOOSE User Guide here Will my account expire? Yes. By default, MASS via JASMIN accounts will expire after 500 days and your account will be automatically disabled.\nShortly before your account is due to expire you will receive an email, and it will contain instructions for you and your sponsor about how to extend your access. If your account has already expired and you are looking to reactive it, please email: Monsoon@metoffice.gov.uk\nWhy am I asked for a password when logging in to mass-cli? There are two reasons that may result in you being prompted for a password when attempting to login to the MASS client machine (mass-cli.jasmin.ac.uk).\nThe first is if you do not have permission to access the machine. A quick method to check is to verify if you are a member of the moose user group. It should be listed when you use the ‘groups’ command:\n[login1]$ groups mooseIf this happens, please contact: Monsoon@metoffice.gov.uk\nThe second is if you forget the -A option for agent forwarind when you ssh to a JASMIN login node. You can test for this condition by listing loaded identities on the login node, and finding you have none:\n[login1]$ ssh-add -l Could not open a connection to your authentication agent.If this happens, please exit back to your local machine and ssh in again using the -A flag or tick the relevant box for \u0026ldquo;agent forwarding\u0026rdquo;.\nHow can I directly login to the MASS client machine? You can\u0026rsquo;t, but you can edit your ssh configuration so that it automatically enables you to jump through the intermediary login servers.\nAdd the following to your home institute ssh config file ($HOME/.ssh/config file):\nHost mass-cli User your_jasmin_userid HostName mass-cli.jasmin.ac.uk ProxyCommand ssh -YA -t your_jasmin_userid@login1.jasmin.ac.uk -W %h:%p 2\u0026gt;/dev/nullYou should then be able to login directly using:\n$ ssh mass-cliPlease note that this only works if you are using OpenSSH version 5.4 or greater as earlier versions do not support the -W flag. You can check your version using: ssh -v\nCan I write to MASS from JASMIN? No, MASS access from JASMIN is strictly read-only. If you need to write to the MASS archive, contact monsoon@metoffice.gov.uk and ask to be put in touch with the relevant team. MOOSE messages and what to do \u0026nbsp; Is this process running in the correct environment? When running \u0026lsquo;moo install\u0026rsquo; you may get an error message similar to:\nCannot read file: /home/user/\u0026lt;userid\u0026gt;/.moosedir/moose - is this process running in the correct environment?This can be the result of the wrong combination of Unix user-id and UID having been used to encrypt the credentials file. If you encounter this error message, please type id on the command line whilst logged into JASMIN, and send the uid= section of the output to: Monsoon@metoffice.gov.uk\nYour credentials file will then be reissued.\nYour password is due to expire in X day(s). Occasionally on running a MOOSE command you will be told that your password is due to expire with a message of the form:\nYour password is due to expire in 6 day(s). A new password can be generated using 'moo passwd -r'. This refers specifically to your MASS via JASMIN, it does not affect any other MOOSE accounts you may have.\nYou need to run the command as advised in order to update your credentials whilst you are logged into mass-cli. You do not actually need to provide a new password, as this is generated and hidden from you by the command.\nIf you have a retrieval in progress, it is safe to run this command as it will not affect processes already running.\nERROR_SINGLE_COPY_UNAVAILABLE MOOSE - Single Copy Unavailable error\nOn occasion, a tape library needs to be taken down for maintenance. If a user is trying to retrieve a single-copy file stored on one of those tapes, the retrieval will temporarily fail with the message ERROR_SINGLE_COPY_UNAVAILABLE. As soon as the maintenance is completed, the file will be available again.\nTapes are taken out of MASS for copying to the new MASS system and become unavailable for roughly 14 days. The process is as follows:\nThursday (week one): Tapes are marked unavailable for indexing by the system. Tuesday (week two): Tapes get taken out for copying to the new MASS system. Following Thursday (week three): Tapes are returned to Met Office library and should be available again. So, if you find that data or files are unavailable due to the ERROR_SINGLE_COPY_UNAVAILABLE error, try reading the data again on Friday, and if still not available, try the following Friday when the migration should have completed.\nMOOSE basics \u0026nbsp; What is MOOSE? The software that allows you to interact with MASS. What is a project? A collection of access rules. What is an access rule? Permission to access an area in MASS. For example, project-random might have an access rule to moose:/crum/random-numbers\nBeing part of project-random would allow you to access the random-numbers set.\nHow do I see what projects I am a member of? You can use: moo prls How do I see what access rules a project has? You can use: moo projinfo -l projectname (Replace projectname with the name of one of your projects) How do I get access to a project, or add an access rule to one of my projects? Please contact your sponsor. They can then complete this form if they also agree you require access:\nhttps://metoffice.service-now.com/sp?id=sc_cat_item\u0026sys_id=5653331e1bbaf0d88ffa422ad34bcba0\u0026referrer=recent_items\u0026nbsp; Please note that the link above is only visible to those in the Met Office.\nWhy can I not access a set that I know is part of a project? If you are given access to a project but do not have access to all the sets associated with it, this can be due to the Access Control Lists (ACLs).\nThe project owner will be able to change the ACLs on sets to make them readable if it is appropriate.\nHow do I retrieve a file from MASS? Use moo get or moo select. More information about both commands is in the MOOSE User Guide. How do I make sure my directory has all the available data retrieved from MASS? The problem: You are running a model over a period of several days or weeks, and you need to analyse the output of the model as it runs. You have a moo get or moo select command that you run to fetch the data that is available. You want to be able to re-run it to fetch the files or fields that have been added to MASS since you last ran the command, but you do not want it to waste time re-fetching things you already have.\nThe solution: Use the -i or \u0026ndash;fill-gaps option when you run moo get or moo select. This option tells MOOSE that you only want to fetch files that don\u0026rsquo;t already exist in the specified local directory. Note that MASS works out where gaps are by doing checks to see if files of the expected name exist in your destination directory, so it won\u0026rsquo;t behave correctly if you rename files after you have retrieved them, or if you use the -C option with moo select which condenses all the matching fields into a single file.\nYou might also find the -g / --get-if-available option to moo get useful. This tells MOOSE to get every file from your moo get list that is available, but ignore ones that are not there rather than exit with an error. This could help if you are expecting files to be archived at some point but are not sure whether they will be there when your job runs. If you use this option MOOSE will get as much as it can from your list without bailing out.\nHow can I script my data retrieval from MASS? There are restrictions on how to login to JASMIN and use of Linux utilities such as ‘cron’ and ‘at’ but it is possible to remotely initiate a retrieval from MASS on to JASMIN, provided you have your ssh agent running on a machine local to you.\neval $(ssh-agent -s) ssh-add ~/.ssh/jasmin_id_rsa ssh -A -X sci1.jasmin.ac.uk \u0026#39;ssh mass-cli my_script.sh\u0026#39;If you have set up your $HOME/.ssh/config to allow more direct access, then the following should work:\nssh mass-cli my_script.shThis will run the script “my_script.sh” on the MASS client VM. You can put the moose retrieval commands into a script and it should work:\n#!/bin/bash SRC_URI=moose:/opfc/atm/global/SOMETHING moo get $SRC_URI jasmin_copy.pp exitIf you have access to an appropriate JASMIN workspace, then you can scp data from the workspace directly through one of the dedicated data transfer VMs. Again, you need the ssh-agent running locally:\neval $(ssh-agent -s) ssh-add ~/.ssh/jasmin_id_rsa scp userid@xfer-vm-01.jasmin.ac.uk:/group_workspaces/cems/\u0026lt;project\u0026gt;/jasmin_file.pp my_local_copy.pp Can I run MASS retrievals on LOTUS or through a workload manager? In addition to the interactive mass-cli server there is also the moose1 server that is only accessible through the\n\u0026lt;a href=\u0026quot;/test-decap-help/docs/batch-computing/lotus-overview/\u0026quot;\u0026gt;LOTUS batch processing cluster\u0026lt;/a\u0026gt;. To submit jobs to moose1 you must use the [Slurm scheduler](https://mjpritchard.github.io/test-decap-help/docs/batch-computing/slurm-scheduler-overview/). You will need to specify the account mass and partition mass, for example:\nsbatch -A mass -p mass [\u0026lt;options\u0026gt;] \u0026lt;jobscript\u0026gt;where \u0026lt;jobscript\u0026gt; looks something like:\n#!/bin/bash SRC_URI=moose:/opfc/atm/global/SOMETHING moo get $SRC_URI jasmin_copy.pp exitIt is also easy to configure the Rose/Cylc workflow manager to submit jobs to moose1 through the Slurm scheduler by including the following lines in your suite.rc file:\n[[[job submission]]] method = slurm [[[directives]]] --partition=mass --account=mass [\u0026lt;options\u0026gt;]"
       })
       .add(
       
@@ -7018,7 +7018,7 @@ function initIndex() {
       {
         id: 35,
         tag: "en",
-        href: "/docs/data-transfer/ftp-and-lftp/",
+        href: "/test-decap-help/docs/data-transfer/ftp-and-lftp/",
         title: "ftp and lftp",
         description: "Data Transfer Tools: ftp and lftp",
         
@@ -7033,7 +7033,7 @@ function initIndex() {
       {
         id: 36,
         tag: "en",
-        href: "/docs/getting-started/generate-ssh-key-pair/",
+        href: "/test-decap-help/docs/getting-started/generate-ssh-key-pair/",
         title: "Generate an SSH key pair",
         description: "Generate an SSH key pair",
         
@@ -7048,7 +7048,7 @@ function initIndex() {
       {
         id: 37,
         tag: "en",
-        href: "/docs/software-on-jasmin/geocat-replaces-ncl/",
+        href: "/test-decap-help/docs/software-on-jasmin/geocat-replaces-ncl/",
         title: "Geocat replaces NCL",
         description: "GeoCat - replaces NCAR Command Language (NCL)",
         
@@ -7063,7 +7063,7 @@ function initIndex() {
       {
         id: 38,
         tag: "en",
-        href: "/docs/getting-started/get-jasmin-portal-account/",
+        href: "/test-decap-help/docs/getting-started/get-jasmin-portal-account/",
         title: "Get a JASMIN portal account",
         description: "Get a JASMIN portal account",
         
@@ -7078,7 +7078,7 @@ function initIndex() {
       {
         id: 39,
         tag: "en",
-        href: "/docs/getting-started/get-login-account/",
+        href: "/test-decap-help/docs/getting-started/get-login-account/",
         title: "Get a login account",
         description: "Applying for access to JASMIN servers",
         
@@ -7093,7 +7093,7 @@ function initIndex() {
       {
         id: 40,
         tag: "en",
-        href: "/docs/getting-started/get-started-with-jasmin/",
+        href: "/test-decap-help/docs/getting-started/get-started-with-jasmin/",
         title: "Get Started with JASMIN",
         description: "Basic steps to gain access",
         
@@ -7108,7 +7108,7 @@ function initIndex() {
       {
         id: 41,
         tag: "en",
-        href: "/docs/data-transfer/globus-command-line-interface/",
+        href: "/test-decap-help/docs/data-transfer/globus-command-line-interface/",
         title: "Globus Command-Line Interface",
         description: "Data Transfer Tools: Using the Globus Command-Line Interface",
         
@@ -7123,7 +7123,7 @@ function initIndex() {
       {
         id: 42,
         tag: "en",
-        href: "/docs/data-transfer/globus-connect-personal/",
+        href: "/test-decap-help/docs/data-transfer/globus-connect-personal/",
         title: "Globus Connect Personal",
         description: "Globus Connect Personal",
         
@@ -7138,7 +7138,7 @@ function initIndex() {
       {
         id: 43,
         tag: "en",
-        href: "/docs/data-transfer/globus-transfers-with-jasmin/",
+        href: "/test-decap-help/docs/data-transfer/globus-transfers-with-jasmin/",
         title: "Globus transfers with JASMIN",
         description: "Globus transfers with JASMIN",
         
@@ -7153,12 +7153,12 @@ function initIndex() {
       {
         id: 44,
         tag: "en",
-        href: "/docs/interactive-computing/graphical-linux-desktop-access-using-nx/",
+        href: "/test-decap-help/docs/interactive-computing/graphical-linux-desktop-access-using-nx/",
         title: "Graphical linux desktop using NoMachine NX",
         description: "Graphical linux desktop using NoMachine NX",
         
         
-        content: "\u0026nbsp; Updated advice Nov 2024, now works for all platforms if you update your SSH key. Introduction \u0026nbsp; This service provides a graphical Linux desktop on JASMIN, ideal for use with graphics-heavy tasks like interactive work with large images. The desktop environment includes a Firefox web browser which can be used to access internal-only web resources. Using graphical applications over a wide-area network can be very slow, and is not recommended or supported on JASMIN. This service provides a better alternative with graphical desktop within the JASMIN environment itself, rather than on the user\u0026rsquo;s local machine.\nA small client application, available for you to install on your local machine, enables you to connect to specific servers within JASMIN. Graphics are then relayed to the client application in a more efficient form, resulting in much better performance particularly if you need to interact with what\u0026rsquo;s being displayed.\nThe service provides an improved user experience and is strongly recommended over standard X11 graphics.\nThe following servers have the NX service available and can be used as described below. These now have identical configuration, so you can use any one of them from any network location.\nname notes nx1.jasmin.ac.uk nx2.jasmin.ac.uk nx3.jasmin.ac.uk nx4.jasmin.ac.uk (new server now available) Notes \u0026nbsp; The nx* servers should only be used with Nomachine Enterprise Client as described below, other than for testing your connection, as this preserves system resources for their intended purpose. Although the graphical desktop session should persist when you close the client (unless you specifically log out), you should not rely on this feature, so please don\u0026rsquo;t report this as a problem: occasionally machines run out of resources and sessions get killed. Keeping sessions open consumes resources on the server even when you\u0026rsquo;re not using the session, which may mean that other users can\u0026rsquo;t use the service. Installing NoMachine Enterprise Client \u0026nbsp; Download the appropriate version of the NoMachine Enterprise Client\u0026nbsp; from NoMachine. That page contains links to several different products: The only one you need to install is NoMachine Enterprise Client.\nVersions are available for Windows, Mac and Linux. You may need privileges on your local machine in order to install the software so you may need to ask for help from your local IT helpdesk.\nNote that Nomachine Enterprise Client is a different application to the \u0026ldquo;Nomachine Enterprise Desktop\u0026rdquo; or \u0026ldquo;Nomachine\u0026rdquo; available from the more publicised download links on the NoMachine website or other applications in the NoMachine suite: the desktop edition contains additional components to enable remote access to your own (local) machine from a remote location: perhaps convenient but not what we are trying to enable for you here.\nThe NoMachine Enterprise Client is a cut-down client to which connects to a remote server: in your case, the server is at the JASMIN end, where the desktop session will exist.\nRemember to check for updates for the enterprise client to ensure you always have the latest stable version. You can configure the application to check for updates (and optionally apply them automatically) by going to Settings / Updates in the menu.\nSetting up your connection \u0026nbsp; There are 2 methods of using your SSH key which should work with JASMIN, these affect how you set up the connection:\nMethod pros/cons 1. Specify the location of your SSH private key \u0026nbsp; simple \u0026nbsp; no admin permissions needed\n\u0026nbsp; works for all platforms if you update your key to ECDSA 2. Use your key stored in a local ssh-agent \u0026nbsp; useful if you use other applications which use SSH (e.g. VSCode)\n\u0026nbsp; may need admin permissions for 1st-time agent setup\n\u0026nbsp; careful editing of config file required in some cases For a simple terminal connection to JASMIN, you would follow the instructions in presenting your ssh key, but the NoMachine client needs you to do it a slightly different way. The same principles apply however.\nMethod 1: specifying key location \u0026nbsp; Videos for each platform (click the tab for your operating system):\nWindows Mac Linux Notes:\nThis method has now been tested with Windows 10 and 11, but requires you to update your SSH key to ECDSA. Step-by-step instructions \u0026nbsp; Step by step instructions (click to expand) Open the NX client On Mac and Windows, click the NoMachine Icon On Linux, the default location for the executable once installed is /usr/NX/bin/nxplayer, so you may want to add this to your $PATH. Your desktop environment may enable you to add an icon to your desktop. In the \u0026ldquo;Machines\u0026rdquo; view, select \u0026ldquo;Add\u0026rdquo; You\u0026rsquo;re now in the \u0026ldquo;Address\u0026rdquo; tab. Type a name for this connection profile, and the full hostname, e.g. nx1.jasmin.ac.uk. Set the Protocol to \u0026ldquo;SSH\u0026rdquo;, which will change the port to 22. Go to the \u0026ldquo;Configuration\u0026rdquo; tab. Choose \u0026ldquo;Use key-based authentication with a key you provide\u0026rdquo; , then click the Modify button to the right. The default is \u0026ldquo;Use password authentication\u0026rdquo;: don\u0026rsquo;t use this. Use the button to the right to navigate to your private key, or type the path in the box. Your private key may be in a hidden directory e.g. ~/.ssh (see \u0026lt;a href=\u0026quot;/docs/interactive-computing/graphical-linux-desktop-access-using-nx#cant-find-your-private-key\u0026quot;\u0026gt;Troubleshooting\u0026lt;/a\u0026gt;) 1. For security, it is recommended NOT to \u0026quot;import the private key to the connection file\u0026quot; (store it in an **encrypted** password manager instead). 1. Make sure you tick the box \u0026quot;Forward Authentication\u0026quot; **IMPORTANT** Go back to the \u0026ldquo;Add connection\u0026rdquo; dialog If all is correct, click \u0026ldquo;Add\u0026rdquo; Once you have created the connection profile, go to Connecting, below, and continue from there.\nMethod 2: using an agent \u0026nbsp; The alternative profile for using an agent instead, is very similar but we need to select option \u0026ldquo;Use key-based authentication with a SSH agent\u0026rdquo;.\nVideos for each platform:\nWindows (OpenSSH) Mac Linux Step-by-step instructions \u0026nbsp; Steps in more detail (click to expand) In the \u0026ldquo;Machines\u0026rdquo; view, select \u0026ldquo;Add\u0026rdquo; You\u0026rsquo;re now in the \u0026ldquo;Address\u0026rdquo; tab. Type a name for this connection profile, and the full hostname, e.g. nx1.jasmin.ac.uk. Set the Protocol to \u0026ldquo;SSH\u0026rdquo;, which will change the port to 22. Go to the \u0026ldquo;Configuration\u0026rdquo; tab. Choose \u0026ldquo;Use key-based authentication with a SSH agent\u0026rdquo; , then click the Modify button to the right. Make sure you tick the box \u0026ldquo;Forward Authentication\u0026rdquo; IMPORTANT Go back to the \u0026ldquo;Add connection\u0026rdquo; dialog If all is correct, click \u0026ldquo;Add\u0026rdquo; Once you have created the connection profile, go to Connecting, below, and continue from there.\nConnecting \u0026nbsp; Connecting with method 1 (key) \u0026nbsp; Follow the steps in the video to show how to connect to the desktop on the nx server, and to make the onward connection to the sci server:\nWindows Mac Linux Notes:\nThis method has now been thoroughly tested with the new ECDSA keys and should work for Windows 10 and 11 users if you have updated your key. Make sure you have returned your ~/.nx/config/player.cfg file to its default state if you edited this previously. The relevant lines should be reset as follows, but remember to edit the file with the NoMachine Enterprise Client application closed: \u0026lt;option key=\u0026#34;SSH client mode\u0026#34; value=\u0026#34;library\u0026#34;\u0026gt; \u0026lt;option key=\u0026#34;SSH Client\u0026#34; value=\u0026#34;nxssh.exe\u0026#34;\u0026gt; If it does not work for you particular setup however, please try one of Methods 2: OpenSSH or 2: Pageant instead. Step-by-step instructions \u0026nbsp; Steps in more detail (click to expand) You\u0026rsquo;ll be asked for your username and the passphrase for your key. It is NOT recommended to save your passphrase in the connection file. Click OK You may see a list of all the other desktop sessions currently in progress from other users. Ignore these and click \u0026ldquo;New desktop\u0026rdquo;. Select \u0026ldquo;Create a new virtual desktop\u0026rdquo;, then click \u0026ldquo;Create\u0026rdquo; Note the instructions for how to reach the NX menu once in the session, and select screen settings from the list of icons: Recommended setting is \u0026ldquo;Fit to window\u0026rdquo; (leftmost icon) Click OK on this and subsequent screens giving information about the NX and desktop environments. You should be presented with a linux deskop on the server to which you connected, e.g. nx1.jasmin.ac.uk You should be presented with a linux deskop on the server to which you connected, e.g. nx1.jasmin.ac.uk Locate the icon to open the \u0026ldquo;Terminal\u0026rdquo; application (bottom of window in Rocky 9 desktop) The video demonstrates making an onward connection to a sci server and testing the graphics functionality by opening the xterm application on that server, before exiting and logging out of the NX desktop. Connecting with method 2 (agent) \u0026nbsp; Overview of this method:\nIn summary, we need to:\nLoad the SSH private key into a local ssh-agent Unless using Pageant as the agent, edit the NX configuration file to use the native ssh client instead of the NoMachine \u0026ldquo;library\u0026rdquo; one. Use the connection profile we created earlier, to connect. 1. Load your SSH private key into your authentication agent\nFollow the instructions for your platform here, then return once you have successfully loaded your key. for Windows, this can be either the Windows \u0026ldquo;OpenSSH Client\u0026rdquo; optional feature, or Pageant, which is part of the PuTTY suite of SSH tools, but not any other ssh-agent. The MobaXterm agent \u0026ldquo;MobAgent\u0026rdquo; will not work for this purpose. for Linux, you may find that a \u0026ldquo;local\u0026rdquo; ssh-agent does not work: for example using Gnome desktop, you may need to use the global one for your desktop environment, e.g. gnome-keyring-daemon --start instead, before doing ssh-add \u0026lt;key\u0026gt; 2. Edit the NX configuration file\nOpen the file .nx/config/player.cfg in a simple text editor (e.g. Windows Notepad). The .nx directory should be in your home directory.\nTowards the end of the file, you should see two lines like this:\n\u0026lt;option key=\u0026#34;SSH client mode\u0026#34; value=\u0026#34;library\u0026#34;\u0026gt; \u0026lt;option key=\u0026#34;SSH Client\u0026#34; value=\u0026#34;nxssh.exe\u0026#34;\u0026gt;Change them as follows:\n(the changes are slightly different for each platform) Windows (OpenSSH) Windows (Pageant) Mac Linux \u0026lt;option key=\u0026#34;SSH client mode\u0026#34; value=\u0026#34;native\u0026#34; /\u0026gt; \u0026lt;option key=\u0026#34;SSH Client\u0026#34; value=\u0026#34;C:\\Windows\\System32\\OpenSSH\\ssh.exe\u0026#34; /\u0026gt; Leave the file unaltered, with the default settings, as above. \u0026lt;option key=\u0026#34;SSH client mode\u0026#34; value=\u0026#34;native\u0026#34; /\u0026gt; \u0026lt;option key=\u0026#34;SSH Client\u0026#34; value=\u0026#34;/usr/bin/ssh\u0026#34; /\u0026gt; \u0026lt;option key=\u0026#34;SSH client mode\u0026#34; value=\u0026#34;native\u0026#34; /\u0026gt; \u0026lt;option key=\u0026#34;SSH Client\u0026#34; value=\u0026#34;/usr/bin/ssh\u0026#34; /\u0026gt; Save and close the file before opening NoMachine Enterprise Client.\nNext, follow the video below for actually connecting, or see the step-by-step instructions below:\nWindows (OpenSSH) Windows (Pageant) Mac Linux This video covers the whole process, incuding how to convert the key using PuTTYgen and load it using Pageant, then set up a connection and use it to connect.\nStep-by-step instructions \u0026nbsp; Steps in more detail (click to expand) Enter your JASMIN username in the box Click OK You may see a list of all the other desktop sessions currently in progress from other users. Ignore these and click \u0026ldquo;New desktop\u0026rdquo;. Select \u0026ldquo;Create a new virtual desktop\u0026rdquo;, then click \u0026ldquo;Create\u0026rdquo; Note the instructions for how to reach the NX menu once in the session, and select screen settings from the list of icons: Recommended setting is \u0026ldquo;Fit to window\u0026rdquo; (leftmost icon) Click OK on this and subsequent screens giving information about the NX and desktop environments. You should be presented with a linux deskop on the server to which you connected, e.g. nx1.jasmin.ac.uk Locate the icon to open the \u0026ldquo;Terminal\u0026rdquo; application (bottom of window in Rocky 9 desktop) The video demonstrates making an onward connection to a sci server and testing the graphics functionality by opening the xterm application on that server, before exiting and logging out of the NX desktop. Using the graphical desktop environment \u0026nbsp; Once you have set up the environment to your liking, you can\nuse the web browser on that system to access web-based resources available only within JASMIN make SSH connections to other systems within JASMIN such as sci-vm-01.jasmin.ac.uk use graphical applications on other systems within JASMIN and send the output bask to this desktop the \u0026ldquo;connecting\u0026rdquo; videos above show the steps involved for this. Notes \u0026nbsp; The number of \u0026ldquo;virtual desktops\u0026rdquo; which can be created per user is limited to 1 in order to preserve system resources. Although in theory sessions and desktop windows should persist when you close down the NoMachine client and when you re-open it to the same connection, you should not rely on this feature. Keeping long-running sessions open reduces resources available to other users. The option to shut down the machine does not work for a \u0026ldquo;regular\u0026rdquo; user (only admins). Please just \u0026ldquo;Log out\u0026rdquo; instead. Troubleshooting \u0026nbsp; Authentication error (Windows users) \u0026nbsp; Update your key to ECDSA (previous recommendation was RSA). This will solve most problems. See updated advice in Generate SSH key pair. Remember to leave 15 minutes after uploading your new public key before trying again, so that the new key can be made available in all the places it needs to be. Transposed symbol keys \u0026nbsp; After the first connection (particularly for Mac users), subsequent connections to the same connection profile sometimes have some symbols keys e.g. @ and \u0026quot; transposed.\nClick the \u0026ldquo;settings\u0026rdquo; option (in the menu, top-right), then go to \u0026ldquo;settings\u0026rdquo; and search for \u0026ldquo;input\u0026rdquo; to look for alternative keyboard layouts.\nConnection timeout \u0026nbsp; Please do not try and connect using the proprietary \u0026ldquo;NX\u0026rdquo; protocol. Select \u0026ldquo;SSH\u0026rdquo; as the protocol. If you mistakenly use \u0026ldquo;NX\u0026rdquo; as the protocol you may see an error similar to the following when you try to connect (The correct port for SSH connections is 22)\nA connection timeout has occurred while trying to connect to \u0026#39;nx1.jasmin.ac.uk\u0026#39; on port \u0026#39;4000\u0026#39;. The issue could either be caused by a networking problem, by a firewall or NAT blocking incoming traffic or by a wrong server address. Please verify your configuration and try again. Client version \u0026nbsp; Make sure you have installed and are using the correct and most recent version of the NoMachine Enterprise Client\u0026nbsp; (not the NoMachine Enterprise Desktop or any other applications from NoMachine).\nKey format \u0026nbsp; If you created your SSH private key using the \u0026ldquo;PuTTYgen\u0026rdquo; application, and are getting \u0026ldquo;Authentication failed\u0026rdquo; for a key pair that you know works OK for simple terminal connections, it could be that you need to convert the private key to \u0026ldquo;OpenSSH format\u0026rdquo; for use here. By doing this you would be creating an alternately-formatted version of the same private key, so the public key stays the same (and you don\u0026rsquo;t need to re-upload that to JASMIN).\nOpen PuTTYgen and \u0026ldquo;Load an existing private key file\u0026rdquo; (click \u0026ldquo;Load\u0026rdquo;) Ignore the notice about saving it in PuTTY\u0026rsquo;s own format (this is not useful here) (click \u0026ldquo;OK\u0026rdquo;) In the PuTTYgen menu, select \u0026ldquo;Conversions\u0026rdquo;, then \u0026ldquo;Export OpenSSH key\u0026rdquo; Save the newly-formatted private key file locally. The passphrase needed to unlock it should not have changed. Use this newly-formatted key file with NoMachine NX. Passphrase vs Password \u0026nbsp; Be sure to use the PASSPHRASE associated with your SSH private key, and not the PASSWORD associated with your JASMIN account, when prompted using the NX client.\nCan\u0026rsquo;t find your private key? \u0026nbsp; The location of your private key on your local machine may be in a hidden directory for example ~/.ssh. In order to navigate to it to provide the location when setting up your connection profile, you may need to enable the display of hidden directories/files in your local desktop environment first. On a Mac you can do this with the shortcut CMD+SHIFT+. . In Windows this is under File Explorer / View / Hidden Items. It\u0026rsquo;s also possible that your home directory itself (normally /Users/\u0026lt;username\u0026gt;) is not configured to be displayed by default in Finder. If this is case, go to Finder / Preferences / Sidebar / Show these items and tick the box next to the item representing your username: this should make it appear, and .ssh should be a subdirectory of this.\nWindows users may need to switch on \u0026ldquo;show hidden files\u0026rdquo; which is normally an option in File Explorer windows, and/or where you\u0026rsquo;re asked to choose from a list of files.\nCan\u0026rsquo;t make an onward connection \u0026nbsp; Does your username have more than 8 characters? Before we realised this was a problem, some users were not prevented from creating accounts with usernames over 8 characters. The names of the servers are now kept as short as possible e.g. nx1, nx2 so this mitigates the problem in most cases. All the new Rocky 9 NX hosts are now the same in this respect. But if your username is very long (\u0026gt;13 characters) you may still run into problems here, in which case please contact the helpdesk. Update your key to ECDSA: this should solve the problem in most cases. If it\u0026rsquo;s still a problem 15 minutes after uploading your new public key, try: uninstalling the NoMachine Enterprise Client deleting the %USERPROFILE%\\.nx (Windows) or ~\\.nx (Mac/Linux) directory on your machine deleting the %USERPROFILE%\\Documents\\NoMachine or ~\\NoMachine directory on your machine (beware this will remove all connection profiles) rebooting, then re-installing and trying again. Can\u0026rsquo;t display graphics from sci machine or other onward connection \u0026nbsp; Did you omit the -X option from the SSH command when you made the onward connection to that machine? Try -Y if -X doesn\u0026rsquo;t work for you.\nDisk space \u0026nbsp; Check your disk usage in your JASMIN home directory: if this is over the 100G limit, you may not be able to write any temporary files and this could prevent NoMachine from being able to start a new session or even reconnect to an existing virtual desktop session. Clear out some space and re-check with pdu -sh $HOME to find out how much space you\u0026rsquo;re using.\nCan\u0026rsquo;t connect or gets stuck connecting to a previous session \u0026nbsp; Sometimes, you can\u0026rsquo;t connect because you have a previous session which did not terminate correectly, or you might have problems reconnecting to a previous desktop session. Sometimes the client will get stuck with a \u0026ldquo;spinning wheel\u0026rdquo; before eventually timing out. You can terminate your own previous session as follows:\nFollow instructions in Connecting until the point where all the other users\u0026rsquo; sessions on the machine are displayed. Find the one corresponding to your username Right-click it and select \u0026ldquo;Terminate session\u0026rdquo; Note that you may lose any unsaved work in the session that you terminate, but it should clear the stuck session and allow you to reconnect. Please try this first before asking the support team, as this is the first thing that they will try in order to clear your session.\n\u0026ldquo;It worked yesterday\u0026rdquo; \u0026nbsp; For occasions where \u0026ldquo;it worked last time I tried to connect, but now doesn\u0026rsquo;t\u0026rdquo;, please first try the above step to clear any previous session which might have got stuck, otherwise the time-honoured IT support advice of \u0026ldquo;turning it off and on again\u0026rdquo; is applicable: try restarting the machine where you are using NoMachine Enterprise Client, as this can sometimes clear issues with the client, your machine or your network connection. Don\u0026rsquo;t forget to re-connect via your VPN if available."
+        content: "\u0026nbsp; Updated advice Nov 2024, now works for all platforms if you update your SSH key. Introduction \u0026nbsp; This service provides a graphical Linux desktop on JASMIN, ideal for use with graphics-heavy tasks like interactive work with large images. The desktop environment includes a Firefox web browser which can be used to access internal-only web resources. Using graphical applications over a wide-area network can be very slow, and is not recommended or supported on JASMIN. This service provides a better alternative with graphical desktop within the JASMIN environment itself, rather than on the user\u0026rsquo;s local machine.\nA small client application, available for you to install on your local machine, enables you to connect to specific servers within JASMIN. Graphics are then relayed to the client application in a more efficient form, resulting in much better performance particularly if you need to interact with what\u0026rsquo;s being displayed.\nThe service provides an improved user experience and is strongly recommended over standard X11 graphics.\nThe following servers have the NX service available and can be used as described below. These now have identical configuration, so you can use any one of them from any network location.\nname notes nx1.jasmin.ac.uk nx2.jasmin.ac.uk nx3.jasmin.ac.uk nx4.jasmin.ac.uk (new server now available) Notes \u0026nbsp; The nx* servers should only be used with Nomachine Enterprise Client as described below, other than for testing your connection, as this preserves system resources for their intended purpose. Although the graphical desktop session should persist when you close the client (unless you specifically log out), you should not rely on this feature, so please don\u0026rsquo;t report this as a problem: occasionally machines run out of resources and sessions get killed. Keeping sessions open consumes resources on the server even when you\u0026rsquo;re not using the session, which may mean that other users can\u0026rsquo;t use the service. Installing NoMachine Enterprise Client \u0026nbsp; Download the appropriate version of the NoMachine Enterprise Client\u0026nbsp; from NoMachine. That page contains links to several different products: The only one you need to install is NoMachine Enterprise Client.\nVersions are available for Windows, Mac and Linux. You may need privileges on your local machine in order to install the software so you may need to ask for help from your local IT helpdesk.\nNote that Nomachine Enterprise Client is a different application to the \u0026ldquo;Nomachine Enterprise Desktop\u0026rdquo; or \u0026ldquo;Nomachine\u0026rdquo; available from the more publicised download links on the NoMachine website or other applications in the NoMachine suite: the desktop edition contains additional components to enable remote access to your own (local) machine from a remote location: perhaps convenient but not what we are trying to enable for you here.\nThe NoMachine Enterprise Client is a cut-down client to which connects to a remote server: in your case, the server is at the JASMIN end, where the desktop session will exist.\nRemember to check for updates for the enterprise client to ensure you always have the latest stable version. You can configure the application to check for updates (and optionally apply them automatically) by going to Settings / Updates in the menu.\nSetting up your connection \u0026nbsp; There are 2 methods of using your SSH key which should work with JASMIN, these affect how you set up the connection:\nMethod pros/cons 1. Specify the location of your SSH private key \u0026nbsp; simple \u0026nbsp; no admin permissions needed\n\u0026nbsp; works for all platforms if you update your key to ECDSA 2. Use your key stored in a local ssh-agent \u0026nbsp; useful if you use other applications which use SSH (e.g. VSCode)\n\u0026nbsp; may need admin permissions for 1st-time agent setup\n\u0026nbsp; careful editing of config file required in some cases For a simple terminal connection to JASMIN, you would follow the instructions in presenting your ssh key, but the NoMachine client needs you to do it a slightly different way. The same principles apply however.\nMethod 1: specifying key location \u0026nbsp; Videos for each platform (click the tab for your operating system):\nWindows Mac Linux Notes:\nThis method has now been tested with Windows 10 and 11, but requires you to update your SSH key to ECDSA. Step-by-step instructions \u0026nbsp; Step by step instructions (click to expand) Open the NX client On Mac and Windows, click the NoMachine Icon On Linux, the default location for the executable once installed is /usr/NX/bin/nxplayer, so you may want to add this to your $PATH. Your desktop environment may enable you to add an icon to your desktop. In the \u0026ldquo;Machines\u0026rdquo; view, select \u0026ldquo;Add\u0026rdquo; You\u0026rsquo;re now in the \u0026ldquo;Address\u0026rdquo; tab. Type a name for this connection profile, and the full hostname, e.g. nx1.jasmin.ac.uk. Set the Protocol to \u0026ldquo;SSH\u0026rdquo;, which will change the port to 22. Go to the \u0026ldquo;Configuration\u0026rdquo; tab. Choose \u0026ldquo;Use key-based authentication with a key you provide\u0026rdquo; , then click the Modify button to the right. The default is \u0026ldquo;Use password authentication\u0026rdquo;: don\u0026rsquo;t use this. Use the button to the right to navigate to your private key, or type the path in the box. Your private key may be in a hidden directory e.g. ~/.ssh (see \u0026lt;a href=\u0026quot;/test-decap-help/docs/interactive-computing/graphical-linux-desktop-access-using-nx#cant-find-your-private-key\u0026quot;\u0026gt;Troubleshooting\u0026lt;/a\u0026gt;) 1. For security, it is recommended NOT to \u0026quot;import the private key to the connection file\u0026quot; (store it in an **encrypted** password manager instead). 1. Make sure you tick the box \u0026quot;Forward Authentication\u0026quot; **IMPORTANT** Go back to the \u0026ldquo;Add connection\u0026rdquo; dialog If all is correct, click \u0026ldquo;Add\u0026rdquo; Once you have created the connection profile, go to Connecting, below, and continue from there.\nMethod 2: using an agent \u0026nbsp; The alternative profile for using an agent instead, is very similar but we need to select option \u0026ldquo;Use key-based authentication with a SSH agent\u0026rdquo;.\nVideos for each platform:\nWindows (OpenSSH) Mac Linux Step-by-step instructions \u0026nbsp; Steps in more detail (click to expand) In the \u0026ldquo;Machines\u0026rdquo; view, select \u0026ldquo;Add\u0026rdquo; You\u0026rsquo;re now in the \u0026ldquo;Address\u0026rdquo; tab. Type a name for this connection profile, and the full hostname, e.g. nx1.jasmin.ac.uk. Set the Protocol to \u0026ldquo;SSH\u0026rdquo;, which will change the port to 22. Go to the \u0026ldquo;Configuration\u0026rdquo; tab. Choose \u0026ldquo;Use key-based authentication with a SSH agent\u0026rdquo; , then click the Modify button to the right. Make sure you tick the box \u0026ldquo;Forward Authentication\u0026rdquo; IMPORTANT Go back to the \u0026ldquo;Add connection\u0026rdquo; dialog If all is correct, click \u0026ldquo;Add\u0026rdquo; Once you have created the connection profile, go to Connecting, below, and continue from there.\nConnecting \u0026nbsp; Connecting with method 1 (key) \u0026nbsp; Follow the steps in the video to show how to connect to the desktop on the nx server, and to make the onward connection to the sci server:\nWindows Mac Linux Notes:\nThis method has now been thoroughly tested with the new ECDSA keys and should work for Windows 10 and 11 users if you have updated your key. Make sure you have returned your ~/.nx/config/player.cfg file to its default state if you edited this previously. The relevant lines should be reset as follows, but remember to edit the file with the NoMachine Enterprise Client application closed: \u0026lt;option key=\u0026#34;SSH client mode\u0026#34; value=\u0026#34;library\u0026#34;\u0026gt; \u0026lt;option key=\u0026#34;SSH Client\u0026#34; value=\u0026#34;nxssh.exe\u0026#34;\u0026gt; If it does not work for you particular setup however, please try one of Methods 2: OpenSSH or 2: Pageant instead. Step-by-step instructions \u0026nbsp; Steps in more detail (click to expand) You\u0026rsquo;ll be asked for your username and the passphrase for your key. It is NOT recommended to save your passphrase in the connection file. Click OK You may see a list of all the other desktop sessions currently in progress from other users. Ignore these and click \u0026ldquo;New desktop\u0026rdquo;. Select \u0026ldquo;Create a new virtual desktop\u0026rdquo;, then click \u0026ldquo;Create\u0026rdquo; Note the instructions for how to reach the NX menu once in the session, and select screen settings from the list of icons: Recommended setting is \u0026ldquo;Fit to window\u0026rdquo; (leftmost icon) Click OK on this and subsequent screens giving information about the NX and desktop environments. You should be presented with a linux deskop on the server to which you connected, e.g. nx1.jasmin.ac.uk You should be presented with a linux deskop on the server to which you connected, e.g. nx1.jasmin.ac.uk Locate the icon to open the \u0026ldquo;Terminal\u0026rdquo; application (bottom of window in Rocky 9 desktop) The video demonstrates making an onward connection to a sci server and testing the graphics functionality by opening the xterm application on that server, before exiting and logging out of the NX desktop. Connecting with method 2 (agent) \u0026nbsp; Overview of this method:\nIn summary, we need to:\nLoad the SSH private key into a local ssh-agent Unless using Pageant as the agent, edit the NX configuration file to use the native ssh client instead of the NoMachine \u0026ldquo;library\u0026rdquo; one. Use the connection profile we created earlier, to connect. 1. Load your SSH private key into your authentication agent\nFollow the instructions for your platform here, then return once you have successfully loaded your key. for Windows, this can be either the Windows \u0026ldquo;OpenSSH Client\u0026rdquo; optional feature, or Pageant, which is part of the PuTTY suite of SSH tools, but not any other ssh-agent. The MobaXterm agent \u0026ldquo;MobAgent\u0026rdquo; will not work for this purpose. for Linux, you may find that a \u0026ldquo;local\u0026rdquo; ssh-agent does not work: for example using Gnome desktop, you may need to use the global one for your desktop environment, e.g. gnome-keyring-daemon --start instead, before doing ssh-add \u0026lt;key\u0026gt; 2. Edit the NX configuration file\nOpen the file .nx/config/player.cfg in a simple text editor (e.g. Windows Notepad). The .nx directory should be in your home directory.\nTowards the end of the file, you should see two lines like this:\n\u0026lt;option key=\u0026#34;SSH client mode\u0026#34; value=\u0026#34;library\u0026#34;\u0026gt; \u0026lt;option key=\u0026#34;SSH Client\u0026#34; value=\u0026#34;nxssh.exe\u0026#34;\u0026gt;Change them as follows:\n(the changes are slightly different for each platform) Windows (OpenSSH) Windows (Pageant) Mac Linux \u0026lt;option key=\u0026#34;SSH client mode\u0026#34; value=\u0026#34;native\u0026#34; /\u0026gt; \u0026lt;option key=\u0026#34;SSH Client\u0026#34; value=\u0026#34;C:\\Windows\\System32\\OpenSSH\\ssh.exe\u0026#34; /\u0026gt; Leave the file unaltered, with the default settings, as above. \u0026lt;option key=\u0026#34;SSH client mode\u0026#34; value=\u0026#34;native\u0026#34; /\u0026gt; \u0026lt;option key=\u0026#34;SSH Client\u0026#34; value=\u0026#34;/usr/bin/ssh\u0026#34; /\u0026gt; \u0026lt;option key=\u0026#34;SSH client mode\u0026#34; value=\u0026#34;native\u0026#34; /\u0026gt; \u0026lt;option key=\u0026#34;SSH Client\u0026#34; value=\u0026#34;/usr/bin/ssh\u0026#34; /\u0026gt; Save and close the file before opening NoMachine Enterprise Client.\nNext, follow the video below for actually connecting, or see the step-by-step instructions below:\nWindows (OpenSSH) Windows (Pageant) Mac Linux This video covers the whole process, incuding how to convert the key using PuTTYgen and load it using Pageant, then set up a connection and use it to connect.\nStep-by-step instructions \u0026nbsp; Steps in more detail (click to expand) Enter your JASMIN username in the box Click OK You may see a list of all the other desktop sessions currently in progress from other users. Ignore these and click \u0026ldquo;New desktop\u0026rdquo;. Select \u0026ldquo;Create a new virtual desktop\u0026rdquo;, then click \u0026ldquo;Create\u0026rdquo; Note the instructions for how to reach the NX menu once in the session, and select screen settings from the list of icons: Recommended setting is \u0026ldquo;Fit to window\u0026rdquo; (leftmost icon) Click OK on this and subsequent screens giving information about the NX and desktop environments. You should be presented with a linux deskop on the server to which you connected, e.g. nx1.jasmin.ac.uk Locate the icon to open the \u0026ldquo;Terminal\u0026rdquo; application (bottom of window in Rocky 9 desktop) The video demonstrates making an onward connection to a sci server and testing the graphics functionality by opening the xterm application on that server, before exiting and logging out of the NX desktop. Using the graphical desktop environment \u0026nbsp; Once you have set up the environment to your liking, you can\nuse the web browser on that system to access web-based resources available only within JASMIN make SSH connections to other systems within JASMIN such as sci-vm-01.jasmin.ac.uk use graphical applications on other systems within JASMIN and send the output bask to this desktop the \u0026ldquo;connecting\u0026rdquo; videos above show the steps involved for this. Notes \u0026nbsp; The number of \u0026ldquo;virtual desktops\u0026rdquo; which can be created per user is limited to 1 in order to preserve system resources. Although in theory sessions and desktop windows should persist when you close down the NoMachine client and when you re-open it to the same connection, you should not rely on this feature. Keeping long-running sessions open reduces resources available to other users. The option to shut down the machine does not work for a \u0026ldquo;regular\u0026rdquo; user (only admins). Please just \u0026ldquo;Log out\u0026rdquo; instead. Troubleshooting \u0026nbsp; Authentication error (Windows users) \u0026nbsp; Update your key to ECDSA (previous recommendation was RSA). This will solve most problems. See updated advice in Generate SSH key pair. Remember to leave 15 minutes after uploading your new public key before trying again, so that the new key can be made available in all the places it needs to be. Transposed symbol keys \u0026nbsp; After the first connection (particularly for Mac users), subsequent connections to the same connection profile sometimes have some symbols keys e.g. @ and \u0026quot; transposed.\nClick the \u0026ldquo;settings\u0026rdquo; option (in the menu, top-right), then go to \u0026ldquo;settings\u0026rdquo; and search for \u0026ldquo;input\u0026rdquo; to look for alternative keyboard layouts.\nConnection timeout \u0026nbsp; Please do not try and connect using the proprietary \u0026ldquo;NX\u0026rdquo; protocol. Select \u0026ldquo;SSH\u0026rdquo; as the protocol. If you mistakenly use \u0026ldquo;NX\u0026rdquo; as the protocol you may see an error similar to the following when you try to connect (The correct port for SSH connections is 22)\nA connection timeout has occurred while trying to connect to \u0026#39;nx1.jasmin.ac.uk\u0026#39; on port \u0026#39;4000\u0026#39;. The issue could either be caused by a networking problem, by a firewall or NAT blocking incoming traffic or by a wrong server address. Please verify your configuration and try again. Client version \u0026nbsp; Make sure you have installed and are using the correct and most recent version of the NoMachine Enterprise Client\u0026nbsp; (not the NoMachine Enterprise Desktop or any other applications from NoMachine).\nKey format \u0026nbsp; If you created your SSH private key using the \u0026ldquo;PuTTYgen\u0026rdquo; application, and are getting \u0026ldquo;Authentication failed\u0026rdquo; for a key pair that you know works OK for simple terminal connections, it could be that you need to convert the private key to \u0026ldquo;OpenSSH format\u0026rdquo; for use here. By doing this you would be creating an alternately-formatted version of the same private key, so the public key stays the same (and you don\u0026rsquo;t need to re-upload that to JASMIN).\nOpen PuTTYgen and \u0026ldquo;Load an existing private key file\u0026rdquo; (click \u0026ldquo;Load\u0026rdquo;) Ignore the notice about saving it in PuTTY\u0026rsquo;s own format (this is not useful here) (click \u0026ldquo;OK\u0026rdquo;) In the PuTTYgen menu, select \u0026ldquo;Conversions\u0026rdquo;, then \u0026ldquo;Export OpenSSH key\u0026rdquo; Save the newly-formatted private key file locally. The passphrase needed to unlock it should not have changed. Use this newly-formatted key file with NoMachine NX. Passphrase vs Password \u0026nbsp; Be sure to use the PASSPHRASE associated with your SSH private key, and not the PASSWORD associated with your JASMIN account, when prompted using the NX client.\nCan\u0026rsquo;t find your private key? \u0026nbsp; The location of your private key on your local machine may be in a hidden directory for example ~/.ssh. In order to navigate to it to provide the location when setting up your connection profile, you may need to enable the display of hidden directories/files in your local desktop environment first. On a Mac you can do this with the shortcut CMD+SHIFT+. . In Windows this is under File Explorer / View / Hidden Items. It\u0026rsquo;s also possible that your home directory itself (normally /Users/\u0026lt;username\u0026gt;) is not configured to be displayed by default in Finder. If this is case, go to Finder / Preferences / Sidebar / Show these items and tick the box next to the item representing your username: this should make it appear, and .ssh should be a subdirectory of this.\nWindows users may need to switch on \u0026ldquo;show hidden files\u0026rdquo; which is normally an option in File Explorer windows, and/or where you\u0026rsquo;re asked to choose from a list of files.\nCan\u0026rsquo;t make an onward connection \u0026nbsp; Does your username have more than 8 characters? Before we realised this was a problem, some users were not prevented from creating accounts with usernames over 8 characters. The names of the servers are now kept as short as possible e.g. nx1, nx2 so this mitigates the problem in most cases. All the new Rocky 9 NX hosts are now the same in this respect. But if your username is very long (\u0026gt;13 characters) you may still run into problems here, in which case please contact the helpdesk. Update your key to ECDSA: this should solve the problem in most cases. If it\u0026rsquo;s still a problem 15 minutes after uploading your new public key, try: uninstalling the NoMachine Enterprise Client deleting the %USERPROFILE%\\.nx (Windows) or ~\\.nx (Mac/Linux) directory on your machine deleting the %USERPROFILE%\\Documents\\NoMachine or ~\\NoMachine directory on your machine (beware this will remove all connection profiles) rebooting, then re-installing and trying again. Can\u0026rsquo;t display graphics from sci machine or other onward connection \u0026nbsp; Did you omit the -X option from the SSH command when you made the onward connection to that machine? Try -Y if -X doesn\u0026rsquo;t work for you.\nDisk space \u0026nbsp; Check your disk usage in your JASMIN home directory: if this is over the 100G limit, you may not be able to write any temporary files and this could prevent NoMachine from being able to start a new session or even reconnect to an existing virtual desktop session. Clear out some space and re-check with pdu -sh $HOME to find out how much space you\u0026rsquo;re using.\nCan\u0026rsquo;t connect or gets stuck connecting to a previous session \u0026nbsp; Sometimes, you can\u0026rsquo;t connect because you have a previous session which did not terminate correectly, or you might have problems reconnecting to a previous desktop session. Sometimes the client will get stuck with a \u0026ldquo;spinning wheel\u0026rdquo; before eventually timing out. You can terminate your own previous session as follows:\nFollow instructions in Connecting until the point where all the other users\u0026rsquo; sessions on the machine are displayed. Find the one corresponding to your username Right-click it and select \u0026ldquo;Terminate session\u0026rdquo; Note that you may lose any unsaved work in the session that you terminate, but it should clear the stuck session and allow you to reconnect. Please try this first before asking the support team, as this is the first thing that they will try in order to clear your session.\n\u0026ldquo;It worked yesterday\u0026rdquo; \u0026nbsp; For occasions where \u0026ldquo;it worked last time I tried to connect, but now doesn\u0026rsquo;t\u0026rdquo;, please first try the above step to clear any previous session which might have got stuck, otherwise the time-honoured IT support advice of \u0026ldquo;turning it off and on again\u0026rdquo; is applicable: try restarting the machine where you are using NoMachine Enterprise Client, as this can sometimes clear issues with the client, your machine or your network connection. Don\u0026rsquo;t forget to re-connect via your VPN if available."
       })
       .add(
       
@@ -7168,7 +7168,7 @@ function initIndex() {
       {
         id: 45,
         tag: "en",
-        href: "/docs/data-transfer/gridftp-ssh-auth/",
+        href: "/test-decap-help/docs/data-transfer/gridftp-ssh-auth/",
         title: "GridFTP (SSH authentication)",
         description: "Data Transfer Tools: GridFTP (SSH authentication)",
         
@@ -7183,7 +7183,7 @@ function initIndex() {
       {
         id: 46,
         tag: "en",
-        href: "/guides/guides-coming-soon/",
+        href: "/test-decap-help/guides/guides-coming-soon/",
         title: "Guides coming soon",
         description: "More content to follow soon",
         
@@ -7198,7 +7198,7 @@ function initIndex() {
       {
         id: 47,
         tag: "en",
-        href: "/docs/short-term-project-storage/gws-alert-system/",
+        href: "/test-decap-help/docs/short-term-project-storage/gws-alert-system/",
         title: "GWS Alert System",
         description: "App to alert GWS managers/deputies when their GWS is reaching capacity",
         
@@ -7213,7 +7213,7 @@ function initIndex() {
       {
         id: 48,
         tag: "en",
-        href: "/docs/short-term-project-storage/gws-etiquette/",
+        href: "/test-decap-help/docs/short-term-project-storage/gws-etiquette/",
         title: "GWS etiquette",
         description: "GWS  etiquette",
         
@@ -7228,12 +7228,12 @@ function initIndex() {
       {
         id: 49,
         tag: "en",
-        href: "/docs/short-term-project-storage/gws-scanner/",
+        href: "/test-decap-help/docs/short-term-project-storage/gws-scanner/",
         title: "GWS Scanner",
         description: "GWS Scanner",
         
         
-        content: "Introduction \u0026nbsp; This article explains about the process that runs in the background scanning all group workspaces to gather basic information about usage, which are fed into a database to be made available to users via the GWS Scanner User Interface.\nIt is intended for GWS Managers and provides details about how to customise the scan that is done on each GWS.\nIt is run centrally, and is a very resource-intensive task, so please don\u0026rsquo;t run similar tasks of your own, as you will be unnecessarily duplicating resource usage.\nThere are two different scans of the Group Workspaces (GWSs).\nA daily scan which checks for how full the GWS is, and will email the GWS manager if it is over the default threshold of 83%, or a defined threshold in the GWS config file (see below). An approximately fortnightly check of the contents of all GWSs. As a GWS Manager you will receive e-mails summarising the usage and contents of the GWS. By default this is a simple volume level summary of the GWS.\nCustomisation \u0026nbsp; If you wish for additional directories to be scanned and summarised please add these to the GWS_PATH/.gws_scan/config.ini, where GWS_PATH is the path to your group workspace (the directory and the file may need to be created). Directories can also be excluded from the scan in the same way. This can be useful for speeding up the run time of a scan. Here is an example of a config.ini file.\n\u0026nbsp; Please note that the required directory for this configuration data is .gws_scan, not .gws_scanner - the latter is from the previous incarnation of the scanner, and will be be removed in due course) [general] # GWS fullness threshold for which the daily scan will send a warning email (default 83) (in %) volume_warning_threshold = 83 # Directories to check for largest sub-dir and filetypes below (comma separated list), these paths must be relative to the group workspace path i.e. path/to/dir, not /group/workspace/path/to/dir # Defaults to all top level directories inside volume dirs = dir1,path/to/dir2 # Directories to exclude from the scan. This can be useful to speed up the scan if there are know directories with a large number of files, for which the scan information is not very useful excl_dirs = path/to/excl, large_dir # Filetype extensions to count inside directories above (comma separated list) # Defaults to none exts = html,py,jsdirs and excl_dirs can have the * wildcard anywhere in the directory path. From the config above for example: path/to/*, and p*h/to/dir2 would pick up the directory /path/to/dir2, and any other directories which matched the pattern.\nPlease don\u0026rsquo;t comment out the arguments. If you don\u0026rsquo;t want to use one just leave it blank, this will then just use the internal defaults. E.g.\n[general] volume_warning_threshold = dirs = excl_dirs = exts = Report \u0026nbsp; When the fortnightly scan runs it sends the output to the GWS manager as an email, which looks like this:\n### Group Workspace Report for: GWS_PATH #### Scan Details Time most recent scan started: 16/04/2019 - 10:15:57 Time most recent scan finished: 16/04/2019 - 12:25:27 Duration of most recent scan (h:m:s): 2:09:29 Scan Complete: True #### Usage Details Filesystem: fuse.quobyte Total Storage: 199.2 TiB Used Storage: 81.8 TiB Free Storage: 117.4 TiB Usage: 42% #### Directory Details To get information about specific directories within this volume, please add the relative paths to the volume config file (.gws_scan/config.ini) - see [https://help.jasmin.ac.uk/article/4499-gws-scanner](/docs/short-term-project-storage/gws-scanner/) **Directory** | **Total Files** | **Total Size** | **Sub-directory with most files** | **Files in this Sub-directory** ---|---|---|---|--- all_dirs | 238336 | 81.8 TiB | GWS_PATH/dir1/example/path | 7929 .gws_scanner | 0 | 0.0 B | None | 0 dir1 | 0 | 0.0 B | GWS_PATH/dir1/example/path | 0 #### Filetype Details To get information on the quantity and size of specific filetypes under the directories above, please add the relevant file extensions to the volume config file (.gws_scan/config.ini) - see [https://help.jasmin.ac.uk/article/4499-gws-scanner](/docs/short-term-project-storage/gws-scanner/) _No filetypes requested_"
+        content: "Introduction \u0026nbsp; This article explains about the process that runs in the background scanning all group workspaces to gather basic information about usage, which are fed into a database to be made available to users via the GWS Scanner User Interface.\nIt is intended for GWS Managers and provides details about how to customise the scan that is done on each GWS.\nIt is run centrally, and is a very resource-intensive task, so please don\u0026rsquo;t run similar tasks of your own, as you will be unnecessarily duplicating resource usage.\nThere are two different scans of the Group Workspaces (GWSs).\nA daily scan which checks for how full the GWS is, and will email the GWS manager if it is over the default threshold of 83%, or a defined threshold in the GWS config file (see below). An approximately fortnightly check of the contents of all GWSs. As a GWS Manager you will receive e-mails summarising the usage and contents of the GWS. By default this is a simple volume level summary of the GWS.\nCustomisation \u0026nbsp; If you wish for additional directories to be scanned and summarised please add these to the GWS_PATH/.gws_scan/config.ini, where GWS_PATH is the path to your group workspace (the directory and the file may need to be created). Directories can also be excluded from the scan in the same way. This can be useful for speeding up the run time of a scan. Here is an example of a config.ini file.\n\u0026nbsp; Please note that the required directory for this configuration data is .gws_scan, not .gws_scanner - the latter is from the previous incarnation of the scanner, and will be be removed in due course) [general] # GWS fullness threshold for which the daily scan will send a warning email (default 83) (in %) volume_warning_threshold = 83 # Directories to check for largest sub-dir and filetypes below (comma separated list), these paths must be relative to the group workspace path i.e. path/to/dir, not /group/workspace/path/to/dir # Defaults to all top level directories inside volume dirs = dir1,path/to/dir2 # Directories to exclude from the scan. This can be useful to speed up the scan if there are know directories with a large number of files, for which the scan information is not very useful excl_dirs = path/to/excl, large_dir # Filetype extensions to count inside directories above (comma separated list) # Defaults to none exts = html,py,jsdirs and excl_dirs can have the * wildcard anywhere in the directory path. From the config above for example: path/to/*, and p*h/to/dir2 would pick up the directory /path/to/dir2, and any other directories which matched the pattern.\nPlease don\u0026rsquo;t comment out the arguments. If you don\u0026rsquo;t want to use one just leave it blank, this will then just use the internal defaults. E.g.\n[general] volume_warning_threshold = dirs = excl_dirs = exts = Report \u0026nbsp; When the fortnightly scan runs it sends the output to the GWS manager as an email, which looks like this:\n### Group Workspace Report for: GWS_PATH #### Scan Details Time most recent scan started: 16/04/2019 - 10:15:57 Time most recent scan finished: 16/04/2019 - 12:25:27 Duration of most recent scan (h:m:s): 2:09:29 Scan Complete: True #### Usage Details Filesystem: fuse.quobyte Total Storage: 199.2 TiB Used Storage: 81.8 TiB Free Storage: 117.4 TiB Usage: 42% #### Directory Details To get information about specific directories within this volume, please add the relative paths to the volume config file (.gws_scan/config.ini) - see [https://help.jasmin.ac.uk/article/4499-gws-scanner](https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/gws-scanner/) **Directory** | **Total Files** | **Total Size** | **Sub-directory with most files** | **Files in this Sub-directory** ---|---|---|---|--- all_dirs | 238336 | 81.8 TiB | GWS_PATH/dir1/example/path | 7929 .gws_scanner | 0 | 0.0 B | None | 0 dir1 | 0 | 0.0 B | GWS_PATH/dir1/example/path | 0 #### Filetype Details To get information on the quantity and size of specific filetypes under the directories above, please add the relevant file extensions to the volume config file (.gws_scan/config.ini) - see [https://help.jasmin.ac.uk/article/4499-gws-scanner](https://mjpritchard.github.io/test-decap-help/docs/short-term-project-storage/gws-scanner/) _No filetypes requested_"
       })
       .add(
       
@@ -7243,7 +7243,7 @@ function initIndex() {
       {
         id: 50,
         tag: "en",
-        href: "/docs/short-term-project-storage/gws-scanner-ui/",
+        href: "/test-decap-help/docs/short-term-project-storage/gws-scanner-ui/",
         title: "GWS Scanner UI",
         description: "User interface to GWS scanner",
         
@@ -7258,7 +7258,7 @@ function initIndex() {
       {
         id: 51,
         tag: "en",
-        href: "/docs/mass/how-to-apply-for-mass-access/",
+        href: "/test-decap-help/docs/mass/how-to-apply-for-mass-access/",
         title: "How to apply for MASS access",
         description: "How to apply for MASS access",
         
@@ -7273,7 +7273,7 @@ function initIndex() {
       {
         id: 52,
         tag: "en",
-        href: "/docs/getting-started/how-to-contact-us-about-jasmin-issues/",
+        href: "/test-decap-help/docs/getting-started/how-to-contact-us-about-jasmin-issues/",
         title: "How to contact us about JASMIN issues",
         description: "How to contact us about JASMIN issues",
         
@@ -7288,7 +7288,7 @@ function initIndex() {
       {
         id: 53,
         tag: "en",
-        href: "/docs/getting-started/how-to-login/",
+        href: "/test-decap-help/docs/getting-started/how-to-login/",
         title: "How to login",
         description: "How to login to JASMIN",
         
@@ -7303,7 +7303,7 @@ function initIndex() {
       {
         id: 54,
         tag: "en",
-        href: "/docs/batch-computing/how-to-monitor-slurm-jobs/",
+        href: "/test-decap-help/docs/batch-computing/how-to-monitor-slurm-jobs/",
         title: "How to monitor Slurm jobs",
         description: "How to monitor Slurm jobs",
         
@@ -7318,7 +7318,7 @@ function initIndex() {
       {
         id: 55,
         tag: "en",
-        href: "/docs/batch-computing/how-to-submit-a-job/",
+        href: "/test-decap-help/docs/batch-computing/how-to-submit-a-job/",
         title: "How to submit a job",
         description: "How to submit a job to Slurm",
         
@@ -7333,7 +7333,7 @@ function initIndex() {
       {
         id: 56,
         tag: "en",
-        href: "/docs/batch-computing/how-to-submit-an-mpi-parallel-job/",
+        href: "/test-decap-help/docs/batch-computing/how-to-submit-an-mpi-parallel-job/",
         title: "How to submit an MPI parallel job",
         description: "How to submit an MPI parallel job",
         
@@ -7348,7 +7348,7 @@ function initIndex() {
       {
         id: 57,
         tag: "en",
-        href: "/docs/software-on-jasmin/idl/",
+        href: "/test-decap-help/docs/software-on-jasmin/idl/",
         title: "IDL",
         description: "IDL",
         
@@ -7363,7 +7363,7 @@ function initIndex() {
       {
         id: 58,
         tag: "en",
-        href: "/docs/short-term-project-storage/install-xfc-client/",
+        href: "/test-decap-help/docs/short-term-project-storage/install-xfc-client/",
         title: "Install XFC client",
         description: "Install XFC client",
         
@@ -7378,7 +7378,7 @@ function initIndex() {
       {
         id: 59,
         tag: "en",
-        href: "/docs/interactive-computing/interactive-computing-overview/",
+        href: "/test-decap-help/docs/interactive-computing/interactive-computing-overview/",
         title: "Interactive computing overview",
         description: "Interactive computing overview",
         
@@ -7393,7 +7393,7 @@ function initIndex() {
       {
         id: 60,
         tag: "en",
-        href: "/docs/for-cloud-tenants/introduction-to-the-jasmin-cloud/",
+        href: "/test-decap-help/docs/for-cloud-tenants/introduction-to-the-jasmin-cloud/",
         title: "Introduction to the JASMIN Cloud",
         description: "Introduction to the JASMIN Cloud",
         
@@ -7408,7 +7408,7 @@ function initIndex() {
       {
         id: 61,
         tag: "en",
-        href: "/docs/for-cloud-tenants/jasmin-cloud-portal/",
+        href: "/test-decap-help/docs/for-cloud-tenants/jasmin-cloud-portal/",
         title: "JASMIN Cloud Portal",
         description: "JASMIN Cloud Portal",
         
@@ -7423,7 +7423,7 @@ function initIndex() {
       {
         id: 62,
         tag: "en",
-        href: "/docs/uncategorized/jasmin-conditions-of-use/",
+        href: "/test-decap-help/docs/uncategorized/jasmin-conditions-of-use/",
         title: "JASMIN Conditions of Use",
         description: "JASMIN Conditions of Use",
         
@@ -7438,7 +7438,7 @@ function initIndex() {
       {
         id: 63,
         tag: "en",
-        href: "/docs/interactive-computing/jasmin-notebooks-service/",
+        href: "/test-decap-help/docs/interactive-computing/jasmin-notebooks-service/",
         title: "JASMIN Notebooks Service",
         description: "Jupyter Notebooks service on JASMIN",
         
@@ -7453,7 +7453,7 @@ function initIndex() {
       {
         id: 64,
         tag: "en",
-        href: "/docs/software-on-jasmin/jasmin-software-faqs/",
+        href: "/test-decap-help/docs/software-on-jasmin/jasmin-software-faqs/",
         title: "JASMIN software FAQs",
         description: "JASMIN software FAQs",
         
@@ -7468,7 +7468,7 @@ function initIndex() {
       {
         id: 65,
         tag: "en",
-        href: "/docs/getting-started/jasmin-status/",
+        href: "/test-decap-help/docs/getting-started/jasmin-status/",
         title: "JASMIN status",
         description: "JASMIN status",
         
@@ -7483,7 +7483,7 @@ function initIndex() {
       {
         id: 66,
         tag: "en",
-        href: "/docs/getting-started/jasmin-training-accounts/",
+        href: "/test-decap-help/docs/getting-started/jasmin-training-accounts/",
         title: "JASMIN training accounts",
         description: "JASMIN training accounts",
         
@@ -7498,7 +7498,7 @@ function initIndex() {
       {
         id: 67,
         tag: "en",
-        href: "/docs/software-on-jasmin/jaspy-envs/",
+        href: "/test-decap-help/docs/software-on-jasmin/jaspy-envs/",
         title: "Jaspy Software Environments (Python 3, R and other tools)",
         description: "Jaspy Software Environments (Python 3, R and other tools)",
         
@@ -7513,7 +7513,7 @@ function initIndex() {
       {
         id: 68,
         tag: "en",
-        href: "/docs/short-term-project-storage/jdma/",
+        href: "/test-decap-help/docs/short-term-project-storage/jdma/",
         title: "Joint-storage Data Migration App (JDMA)",
         description: "Joint-storage Data Migration App (JDMA)",
         
@@ -7528,7 +7528,7 @@ function initIndex() {
       {
         id: 69,
         tag: "en",
-        href: "/docs/interactive-computing/login-problems/",
+        href: "/test-decap-help/docs/interactive-computing/login-problems/",
         title: "Login problems",
         description: "Login problems?",
         
@@ -7543,7 +7543,7 @@ function initIndex() {
       {
         id: 70,
         tag: "en",
-        href: "/docs/interactive-computing/login-servers/",
+        href: "/test-decap-help/docs/interactive-computing/login-servers/",
         title: "Login servers",
         description: "Login servers",
         
@@ -7558,7 +7558,7 @@ function initIndex() {
       {
         id: 71,
         tag: "en",
-        href: "/docs/batch-computing/lotus-cluster-specification/",
+        href: "/test-decap-help/docs/batch-computing/lotus-cluster-specification/",
         title: "LOTUS cluster specification",
         description: "LOTUS cluster specification",
         
@@ -7573,7 +7573,7 @@ function initIndex() {
       {
         id: 72,
         tag: "en",
-        href: "/docs/batch-computing/lotus-overview/",
+        href: "/test-decap-help/docs/batch-computing/lotus-overview/",
         title: "LOTUS overview",
         description: "LOTUS overview",
         
@@ -7588,7 +7588,7 @@ function initIndex() {
       {
         id: 73,
         tag: "en",
-        href: "/docs/short-term-project-storage/managing-a-gws/",
+        href: "/test-decap-help/docs/short-term-project-storage/managing-a-gws/",
         title: "Managing a GWS",
         description: "Managing a GWS",
         
@@ -7603,7 +7603,7 @@ function initIndex() {
       {
         id: 74,
         tag: "en",
-        href: "/docs/software-on-jasmin/name-dispersion-model/",
+        href: "/test-decap-help/docs/software-on-jasmin/name-dispersion-model/",
         title: "Met Office NAME Model",
         description: "Met Office NAME Model",
         
@@ -7618,7 +7618,7 @@ function initIndex() {
       {
         id: 75,
         tag: "en",
-        href: "/docs/getting-started/migrate-jasmin-account-from-ceda/",
+        href: "/test-decap-help/docs/getting-started/migrate-jasmin-account-from-ceda/",
         title: "Migrate a JASMIN account from CEDA",
         description: "Migrate a JASMIN account from CEDA",
         
@@ -7633,7 +7633,7 @@ function initIndex() {
       {
         id: 76,
         tag: "en",
-        href: "/docs/software-on-jasmin/rocky9-migration-2024/",
+        href: "/test-decap-help/docs/software-on-jasmin/rocky9-migration-2024/",
         title: "Migration to Rocky Linux 9 2024",
         description: "Software and operating system changes - migration to Rocky Linux 9 (Summer 2024)",
         
@@ -7648,7 +7648,7 @@ function initIndex() {
       {
         id: 77,
         tag: "en",
-        href: "/docs/uncategorized/mobaxterm/",
+        href: "/test-decap-help/docs/uncategorized/mobaxterm/",
         title: "MobaXterm (Windows terminal client)",
         description: "Using MobaXterm with JASMIN",
         
@@ -7663,7 +7663,7 @@ function initIndex() {
       {
         id: 78,
         tag: "en",
-        href: "/docs/mass/moose-the-mass-client-user-guide/",
+        href: "/test-decap-help/docs/mass/moose-the-mass-client-user-guide/",
         title: "MOOSE (the MASS client) User Guide",
         description: "MOOSE (the MASS client) User Guide",
         
@@ -7678,7 +7678,7 @@ function initIndex() {
       {
         id: 79,
         tag: "en",
-        href: "/docs/getting-started/multiple-account-types/",
+        href: "/test-decap-help/docs/getting-started/multiple-account-types/",
         title: "Multiple account types",
         description: "Multiple account types",
         
@@ -7693,7 +7693,7 @@ function initIndex() {
       {
         id: 80,
         tag: "en",
-        href: "/docs/software-on-jasmin/nag-library/",
+        href: "/test-decap-help/docs/software-on-jasmin/nag-library/",
         title: "NAG Library",
         description: "The Numerical Algorithm Group (NAG) Library",
         
@@ -7708,7 +7708,7 @@ function initIndex() {
       {
         id: 81,
         tag: "en",
-        href: "/docs/short-term-project-storage/faqs-storage/",
+        href: "/test-decap-help/docs/short-term-project-storage/faqs-storage/",
         title: "New storage FAQs and issues",
         description: "New storage FAQs and issues",
         
@@ -7723,7 +7723,7 @@ function initIndex() {
       {
         id: 82,
         tag: "en",
-        href: "/docs/batch-computing/orchid-gpu-cluster/",
+        href: "/test-decap-help/docs/batch-computing/orchid-gpu-cluster/",
         title: "Orchid GPU cluster",
         description: "Orchid GPU cluster",
         
@@ -7738,7 +7738,7 @@ function initIndex() {
       {
         id: 83,
         tag: "en",
-        href: "/docs/software-on-jasmin/postgres-databases-on-request/",
+        href: "/test-decap-help/docs/software-on-jasmin/postgres-databases-on-request/",
         title: "Postgres databases on request",
         description: "Postgres databases on request",
         
@@ -7753,7 +7753,7 @@ function initIndex() {
       {
         id: 84,
         tag: "en",
-        href: "/docs/getting-started/present-ssh-key/",
+        href: "/test-decap-help/docs/getting-started/present-ssh-key/",
         title: "Present your SSH key",
         description: "Present your SSH key for an SSH connection",
         
@@ -7768,7 +7768,7 @@ function initIndex() {
       {
         id: 85,
         tag: "en",
-        href: "/docs/uncategorized/processing-requests-for-resources/",
+        href: "/test-decap-help/docs/uncategorized/processing-requests-for-resources/",
         title: "Processing requests for resources",
         description: "Processing requests for resources",
         
@@ -7783,7 +7783,7 @@ function initIndex() {
       {
         id: 86,
         tag: "en",
-        href: "/docs/interactive-computing/project-specific-servers/",
+        href: "/test-decap-help/docs/interactive-computing/project-specific-servers/",
         title: "Project-specific servers",
         description: "Project-specific servers",
         
@@ -7798,7 +7798,7 @@ function initIndex() {
       {
         id: 87,
         tag: "en",
-        href: "/docs/for-cloud-tenants/provisioning-tenancy-sci-vm-managed-cloud/",
+        href: "/test-decap-help/docs/for-cloud-tenants/provisioning-tenancy-sci-vm-managed-cloud/",
         title: "Provisioning a Sci VM in a Managed Cloud Tenancy",
         description: "Provisioning a Sci VM in a Managed Cloud Tenancy",
         
@@ -7813,7 +7813,7 @@ function initIndex() {
       {
         id: 88,
         tag: "en",
-        href: "/docs/software-on-jasmin/python-virtual-environments/",
+        href: "/test-decap-help/docs/software-on-jasmin/python-virtual-environments/",
         title: "Python Virtual Environments",
         description: "Python Virtual Environments",
         
@@ -7828,7 +7828,7 @@ function initIndex() {
       {
         id: 89,
         tag: "en",
-        href: "/docs/software-on-jasmin/quickstart-software-envs/",
+        href: "/test-decap-help/docs/software-on-jasmin/quickstart-software-envs/",
         title: "Quickstart for activating/deactivating software environments",
         description: "Quickstart for activating/deactivating software environments",
         
@@ -7843,7 +7843,7 @@ function initIndex() {
       {
         id: 90,
         tag: "en",
-        href: "/docs/data-transfer/rclone/",
+        href: "/test-decap-help/docs/data-transfer/rclone/",
         title: "rclone",
         description: "A \"Swiss army knife\" tool for data transfers",
         
@@ -7858,7 +7858,7 @@ function initIndex() {
       {
         id: 91,
         tag: "en",
-        href: "/docs/getting-started/reconfirm-email-address/",
+        href: "/test-decap-help/docs/getting-started/reconfirm-email-address/",
         title: "Reconfirm JASMIN account email address",
         description: "Reconfirm JASMIN account email address",
         
@@ -7873,7 +7873,7 @@ function initIndex() {
       {
         id: 92,
         tag: "en",
-        href: "/docs/uncategorized/requesting-resources/",
+        href: "/test-decap-help/docs/uncategorized/requesting-resources/",
         title: "Requesting resources",
         description: "Requesting resources",
         
@@ -7888,7 +7888,7 @@ function initIndex() {
       {
         id: 93,
         tag: "en",
-        href: "/docs/getting-started/reset-jasmin-account-password/",
+        href: "/test-decap-help/docs/getting-started/reset-jasmin-account-password/",
         title: "Reset JASMIN account password",
         description: "Reset JASMIN account password",
         
@@ -7903,7 +7903,7 @@ function initIndex() {
       {
         id: 94,
         tag: "en",
-        href: "/docs/data-transfer/rsync-scp-sftp/",
+        href: "/test-decap-help/docs/data-transfer/rsync-scp-sftp/",
         title: "rsync, scp, sftp",
         description: "Data Transfer Tools: rsync, scp, sftp",
         
@@ -7918,7 +7918,7 @@ function initIndex() {
       {
         id: 95,
         tag: "en",
-        href: "/docs/software-on-jasmin/running-python-on-jasmin/",
+        href: "/test-decap-help/docs/software-on-jasmin/running-python-on-jasmin/",
         title: "Running python on JASMIN",
         description: "Running python on JASMIN",
         
@@ -7933,7 +7933,7 @@ function initIndex() {
       {
         id: 96,
         tag: "en",
-        href: "/docs/software-on-jasmin/running-r-on-jasmin/",
+        href: "/test-decap-help/docs/software-on-jasmin/running-r-on-jasmin/",
         title: "Running R on JASMIN",
         description: "Running R on JASMIN",
         
@@ -7948,7 +7948,7 @@ function initIndex() {
       {
         id: 97,
         tag: "en",
-        href: "/docs/data-transfer/scheduling-automating-transfers/",
+        href: "/test-decap-help/docs/data-transfer/scheduling-automating-transfers/",
         title: "Scheduling/Automating Transfers",
         description: "Scheduling/Automating Transfers",
         
@@ -7963,7 +7963,7 @@ function initIndex() {
       {
         id: 98,
         tag: "en",
-        href: "/docs/interactive-computing/sci-servers/",
+        href: "/test-decap-help/docs/interactive-computing/sci-servers/",
         title: "Scientific analysis servers",
         description: "Scientific analysis servers",
         
@@ -7978,7 +7978,7 @@ function initIndex() {
       {
         id: 99,
         tag: "en",
-        href: "/docs/short-term-project-storage/secondary-copy-using-elastic-tape/",
+        href: "/test-decap-help/docs/short-term-project-storage/secondary-copy-using-elastic-tape/",
         title: "Secondary copy using Elastic Tape",
         description: "Secondary copy using Elastic Tape",
         
@@ -7993,7 +7993,7 @@ function initIndex() {
       {
         id: 100,
         tag: "en",
-        href: "/docs/mass/setting-up-your-jasmin-account-for-access-to-mass/",
+        href: "/test-decap-help/docs/mass/setting-up-your-jasmin-account-for-access-to-mass/",
         title: "Setting up your JASMIN account for access to MASS",
         description: "Setting up your JASMIN account for access to MASS",
         
@@ -8008,7 +8008,7 @@ function initIndex() {
       {
         id: 101,
         tag: "en",
-        href: "/docs/short-term-project-storage/share-gws-data-on-jasmin/",
+        href: "/test-decap-help/docs/short-term-project-storage/share-gws-data-on-jasmin/",
         title: "Sharing GWS data on JASMIN",
         description: "Sharing GWS data with other users elsewhere on JASMIN",
         
@@ -8023,7 +8023,7 @@ function initIndex() {
       {
         id: 102,
         tag: "en",
-        href: "/docs/short-term-project-storage/share-gws-data-via-http/",
+        href: "/test-decap-help/docs/short-term-project-storage/share-gws-data-via-http/",
         title: "Sharing GWS data via HTTP",
         description: "Sharing GWS data via HTTP",
         
@@ -8038,7 +8038,7 @@ function initIndex() {
       {
         id: 103,
         tag: "en",
-        href: "/docs/software-on-jasmin/share-software-envs/",
+        href: "/test-decap-help/docs/software-on-jasmin/share-software-envs/",
         title: "Sharing software environments",
         description: "Sharing software environments",
         
@@ -8053,7 +8053,7 @@ function initIndex() {
       {
         id: 104,
         tag: "en",
-        href: "/docs/batch-computing/slurm-queues/",
+        href: "/test-decap-help/docs/batch-computing/slurm-queues/",
         title: "Slurm queues",
         description: "Slurm queues",
         
@@ -8068,7 +8068,7 @@ function initIndex() {
       {
         id: 105,
         tag: "en",
-        href: "/docs/batch-computing/slurm-quick-reference/",
+        href: "/test-decap-help/docs/batch-computing/slurm-quick-reference/",
         title: "Slurm quick reference",
         description: "Slurm commands and environment variables",
         
@@ -8083,7 +8083,7 @@ function initIndex() {
       {
         id: 106,
         tag: "en",
-        href: "/docs/batch-computing/slurm-scheduler-overview/",
+        href: "/test-decap-help/docs/batch-computing/slurm-scheduler-overview/",
         title: "Slurm scheduler overview",
         description: "Overview of the LOTUS batch scheduler, Slurm",
         
@@ -8098,7 +8098,7 @@ function initIndex() {
       {
         id: 107,
         tag: "en",
-        href: "/docs/batch-computing/slurm-status/",
+        href: "/test-decap-help/docs/batch-computing/slurm-status/",
         title: "Slurm status",
         description: "LOTUS/ORCHID Slurm scheduler status",
         
@@ -8113,7 +8113,7 @@ function initIndex() {
       {
         id: 108,
         tag: "en",
-        href: "/docs/software-on-jasmin/software-overview/",
+        href: "/test-decap-help/docs/software-on-jasmin/software-overview/",
         title: "Software Overview",
         description: "Overview of software on JASMIN",
         
@@ -8128,7 +8128,7 @@ function initIndex() {
       {
         id: 109,
         tag: "en",
-        href: "/docs/getting-started/ssh-auth/",
+        href: "/test-decap-help/docs/getting-started/ssh-auth/",
         title: "SSH public key authentication",
         description: "SSH public key authentication",
         
@@ -8143,7 +8143,7 @@ function initIndex() {
       {
         id: 110,
         tag: "en",
-        href: "/docs/for-cloud-tenants/sysadmin-guidance-external-cloud/",
+        href: "/test-decap-help/docs/for-cloud-tenants/sysadmin-guidance-external-cloud/",
         title: "System administration guidance (external cloud)",
         description: "System administration guidance (external cloud)",
         
@@ -8158,7 +8158,7 @@ function initIndex() {
       {
         id: 111,
         tag: "en",
-        href: "/docs/interactive-computing/tenancy-sci-analysis-vms/",
+        href: "/test-decap-help/docs/interactive-computing/tenancy-sci-analysis-vms/",
         title: "Tenancy Sci Analysis VMs",
         description: "Tenancy-Sci Analysis VMs",
         
@@ -8173,7 +8173,7 @@ function initIndex() {
       {
         id: 112,
         tag: "en",
-        href: "/docs/software-on-jasmin/jasmin-sci-software-environment/",
+        href: "/test-decap-help/docs/software-on-jasmin/jasmin-sci-software-environment/",
         title: "The \"jasmin-sci\" software environment",
         description: "The \"jasmin-sci\" software environment",
         
@@ -8188,7 +8188,7 @@ function initIndex() {
       {
         id: 113,
         tag: "en",
-        href: "/docs/interactive-computing/jasmin-notebooks-service-with-gpus/",
+        href: "/test-decap-help/docs/interactive-computing/jasmin-notebooks-service-with-gpus/",
         title: "The JASMIN Notebooks Service with GPUs enabled",
         description: "JASMIN Notebooks Service with GPUs enabled",
         
@@ -8203,7 +8203,7 @@ function initIndex() {
       {
         id: 114,
         tag: "en",
-        href: "/docs/getting-started/tips-for-new-users/",
+        href: "/test-decap-help/docs/getting-started/tips-for-new-users/",
         title: "tips-for-new-users",
         description: "Tips for new users",
         
@@ -8218,7 +8218,7 @@ function initIndex() {
       {
         id: 115,
         tag: "en",
-        href: "/training/basic/training-exercises-coming-soon/",
+        href: "/test-decap-help/training/basic/training-exercises-coming-soon/",
         title: "Training exercises coming soon",
         description: "Exercises to help you get the most out of JASMIN",
         
@@ -8233,7 +8233,7 @@ function initIndex() {
       {
         id: 116,
         tag: "en",
-        href: "/training/intermediate/training-exercises-coming-soon/",
+        href: "/test-decap-help/training/intermediate/training-exercises-coming-soon/",
         title: "Training exercises coming soon",
         description: "Exercises to help you get the most out of JASMIN",
         
@@ -8248,7 +8248,7 @@ function initIndex() {
       {
         id: 117,
         tag: "en",
-        href: "/docs/short-term-project-storage/xfc/",
+        href: "/test-decap-help/docs/short-term-project-storage/xfc/",
         title: "Transfer Cache (XFC)",
         description: "Transfer Cache (XFC)",
         
@@ -8263,7 +8263,7 @@ function initIndex() {
       {
         id: 118,
         tag: "en",
-        href: "/docs/interactive-computing/transfer-servers/",
+        href: "/test-decap-help/docs/interactive-computing/transfer-servers/",
         title: "Transfer servers",
         description: "Transfer servers",
         
@@ -8278,7 +8278,7 @@ function initIndex() {
       {
         id: 119,
         tag: "en",
-        href: "/docs/data-transfer/transfers-from-archer2/",
+        href: "/test-decap-help/docs/data-transfer/transfers-from-archer2/",
         title: "Transfers from ARCHER2",
         description: "Transferring data from ARCHER2 to JASMIN, efficiently",
         
@@ -8293,7 +8293,7 @@ function initIndex() {
       {
         id: 120,
         tag: "en",
-        href: "/docs/getting-started/understanding-new-jasmin-storage/",
+        href: "/test-decap-help/docs/getting-started/understanding-new-jasmin-storage/",
         title: "Understanding new JASMIN storage",
         description: "Understanding new JASMIN storage",
         
@@ -8308,7 +8308,7 @@ function initIndex() {
       {
         id: 121,
         tag: "en",
-        href: "/docs/getting-started/update-a-jasmin-account/",
+        href: "/test-decap-help/docs/getting-started/update-a-jasmin-account/",
         title: "Update a JASMIN account",
         description: "Updating your JASMIN account profile",
         
@@ -8323,7 +8323,7 @@ function initIndex() {
       {
         id: 122,
         tag: "en",
-        href: "/docs/workflow-management/using-cron/",
+        href: "/test-decap-help/docs/workflow-management/using-cron/",
         title: "Using Cron",
         description: "Using Cron",
         
@@ -8338,7 +8338,7 @@ function initIndex() {
       {
         id: 123,
         tag: "en",
-        href: "/docs/software-on-jasmin/matplotlib/",
+        href: "/test-decap-help/docs/software-on-jasmin/matplotlib/",
         title: "Using Matplotlib for visualisation on JASMIN",
         description: "Using Matplotlib for visualisation on JASMIN",
         
@@ -8353,7 +8353,7 @@ function initIndex() {
       {
         id: 124,
         tag: "en",
-        href: "/docs/short-term-project-storage/using-the-jasmin-object-store/",
+        href: "/test-decap-help/docs/short-term-project-storage/using-the-jasmin-object-store/",
         title: "Using the JASMIN Object Store",
         description: "Using the JASMIN Object Store",
         
@@ -8368,7 +8368,7 @@ function initIndex() {
       {
         id: 125,
         tag: "en",
-        href: "/docs/short-term-project-storage/introduction-to-group-workspaces/",
+        href: "/test-decap-help/docs/short-term-project-storage/introduction-to-group-workspaces/",
         title: "What is a Group Workspace?",
         description: "What is a Group Workspace?",
         
@@ -8383,7 +8383,7 @@ function initIndex() {
       {
         id: 126,
         tag: "en",
-        href: "/docs/workflow-management/rose-cylc-on-jasmin/",
+        href: "/test-decap-help/docs/workflow-management/rose-cylc-on-jasmin/",
         title: "Workflow Management with rose/cylc",
         description: "Workflow Management with rose/cylc",
         
@@ -8398,7 +8398,7 @@ function initIndex() {
       {
         id: 127,
         tag: "en",
-        href: "/docs/uncategorized/working-with-many-linux-groups/",
+        href: "/test-decap-help/docs/uncategorized/working-with-many-linux-groups/",
         title: "Working with many Linux groups",
         description: "working with many Linux groups",
         

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data transfer on JASMIN Help Site</title><link>/docs/data-transfer/</link><description>Recent content in Data transfer on JASMIN Help Site</description><generator>Hugo</generator><language>en</language><copyright>Copyright © 2025 Science and Technology Facilities Council.</copyright><atom:link href="/docs/data-transfer/index.xml" rel="self" type="application/rss+xml"/><item><title>bbcp</title><link>/docs/data-transfer/bbcp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/data-transfer/bbcp/</guid><description>&lt;p>This article provides information about the bbcp data transfer tool.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data transfer on JASMIN Help Site</title><link>https://mjpritchard.github.io/test-decap-help/docs/data-transfer/</link><description>Recent content in Data transfer on JASMIN Help Site</description><generator>Hugo</generator><language>en</language><copyright>Copyright © 2025 Science and Technology Facilities Council.</copyright><atom:link href="https://mjpritchard.github.io/test-decap-help/docs/data-transfer/index.xml" rel="self" type="application/rss+xml"/><item><title>bbcp</title><link>https://mjpritchard.github.io/test-decap-help/docs/data-transfer/bbcp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/data-transfer/bbcp/</guid><description>&lt;p>This article provides information about the bbcp data transfer tool.&lt;/p>
 
 
 
@@ -57,18 +57,16 @@ efficiently. It works in a similar way to
 
 
  
- 
- 
 
 
 
  
  
 
- &lt;a href="/docs/data-transfer/gridftp-ssh-auth/">GridFTP over SSH&lt;/a> in that it connects to the transfer
+ &lt;a href="https://mjpritchard.github.io/test-decap-help/docs/data-transfer/gridftp-ssh-auth/">GridFTP over SSH&lt;/a> in that it connects to the transfer
 server using your usual SSH credentials but then can set up parallel data
 streams for transferring data. One advantage of &lt;code>bbcp&lt;/code> that it is provided as
-a single binary executable which is easy to download and use.&lt;/p></description></item><item><title>Data transfer overview</title><link>/docs/data-transfer/data-transfer-overview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/data-transfer/data-transfer-overview/</guid><description>&lt;p>This article introduces the topic of data transfer to/from JASMIN.&lt;/p>
+a single binary executable which is easy to download and use.&lt;/p></description></item><item><title>Data transfer overview</title><link>https://mjpritchard.github.io/test-decap-help/docs/data-transfer/data-transfer-overview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/data-transfer/data-transfer-overview/</guid><description>&lt;p>This article introduces the topic of data transfer to/from JASMIN.&lt;/p>
 
 
 
@@ -124,10 +122,10 @@ transfer articles explain how to use the basic
  
  
 
- &lt;a href="/docs/data-transfer/data-transfer-tools/">transfer tools&lt;/a> such as &lt;code>rsync&lt;/code> and &lt;code>scp&lt;/code>
+ &lt;a href="https://mjpritchard.github.io/test-decap-help/docs/data-transfer/data-transfer-tools/">transfer tools&lt;/a> such as &lt;code>rsync&lt;/code> and &lt;code>scp&lt;/code>
 as well as more sophisticated services such as Globus. They also cover which
-transfer services and servers are available to JASMIN users.&lt;/p></description></item><item><title>Data Transfer Tools</title><link>/docs/data-transfer/data-transfer-tools/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/data-transfer/data-transfer-tools/</guid><description>&lt;p>This article lists the data transfer tools available on JASMIN and provides
-links to articles that describe them in more detail.&lt;/p></description></item><item><title>ftp and lftp</title><link>/docs/data-transfer/ftp-and-lftp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/data-transfer/ftp-and-lftp/</guid><description>&lt;p>This article provides information about FTP (File Transfer Protocol) as a data
+transfer services and servers are available to JASMIN users.&lt;/p></description></item><item><title>Data Transfer Tools</title><link>https://mjpritchard.github.io/test-decap-help/docs/data-transfer/data-transfer-tools/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/data-transfer/data-transfer-tools/</guid><description>&lt;p>This article lists the data transfer tools available on JASMIN and provides
+links to articles that describe them in more detail.&lt;/p></description></item><item><title>ftp and lftp</title><link>https://mjpritchard.github.io/test-decap-help/docs/data-transfer/ftp-and-lftp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/data-transfer/ftp-and-lftp/</guid><description>&lt;p>This article provides information about FTP (File Transfer Protocol) as a data
 transfer tool. In particular:&lt;/p>
 &lt;ul>
 &lt;li>what is FTP?&lt;/li>
@@ -184,7 +182,7 @@ transfer protocol enabling connections from a client to download
 files from, or upload files to, a server, although limited in security. A wide variety of client tools are
 available to the user, 2 implementations of which are available on the JASMIN
 transfer servers, although no server is provided. &lt;code>ftp&lt;/code> is also the name of
-the basic FTP client program, see below.&lt;/p></description></item><item><title>Globus Command-Line Interface</title><link>/docs/data-transfer/globus-command-line-interface/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/data-transfer/globus-command-line-interface/</guid><description>&lt;div class="d-flex alert alert-info " role="alert">
+the basic FTP client program, see below.&lt;/p></description></item><item><title>Globus Command-Line Interface</title><link>https://mjpritchard.github.io/test-decap-help/docs/data-transfer/globus-command-line-interface/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/data-transfer/globus-command-line-interface/</guid><description>&lt;div class="d-flex alert alert-info " role="alert">
  &lt;div class="pt-1 pe-2">
 &lt;!-- &lt;i class="fa fa-lightbulb fa-2x fa-fw">&lt;/i> -->
  &lt;svg class="svg-inline--fa fa fa-lightbulb fa-2x fa-fw" fill="currentColor" aria-hidden="true" role="img" viewBox="0 0 384 512">&lt;use href="#fa-lightbulb">&lt;/use>&lt;/svg>&amp;nbsp;&lt;/div>
@@ -235,12 +233,12 @@ the basic FTP client program, see below.&lt;/p></description></item><item><title
  
  
 
- &lt;a href="/docs/data-transfer/globus-transfers-with-jasmin/">Globus transfers with JASMIN&lt;/a> first for a wider introduction to Globus on JASMIN.&lt;/p></description></item><item><title>Globus Connect Personal</title><link>/docs/data-transfer/globus-connect-personal/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/data-transfer/globus-connect-personal/</guid><description>&lt;h2 id="introduction" class="heading">Introduction&lt;a href="#introduction" aria-labelledby="introduction">
+ &lt;a href="https://mjpritchard.github.io/test-decap-help/docs/data-transfer/globus-transfers-with-jasmin/">Globus transfers with JASMIN&lt;/a> first for a wider introduction to Globus on JASMIN.&lt;/p></description></item><item><title>Globus Connect Personal</title><link>https://mjpritchard.github.io/test-decap-help/docs/data-transfer/globus-connect-personal/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/data-transfer/globus-connect-personal/</guid><description>&lt;h2 id="introduction" class="heading">Introduction&lt;a href="#introduction" aria-labelledby="introduction">
 &lt;!-- &lt;i class="fas fa-link anchor">&lt;/i> -->
  &lt;svg class="svg-inline--fa fas fa-link anchor" fill="currentColor" aria-hidden="true" role="img" viewBox="0 0 640 512">&lt;use href="#fas-link">&lt;/use>&lt;/svg>&amp;nbsp;
  &lt;/a>
 &lt;/h2>
-&lt;p>This article describes how to create your own Globus collection using Globus Connect Personal.&lt;/p></description></item><item><title>Globus transfers with JASMIN</title><link>/docs/data-transfer/globus-transfers-with-jasmin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/data-transfer/globus-transfers-with-jasmin/</guid><description>&lt;p>This article describes how to do data transfers to and from JASMIN using 
+&lt;p>This article describes how to create your own Globus collection using Globus Connect Personal.&lt;/p></description></item><item><title>Globus transfers with JASMIN</title><link>https://mjpritchard.github.io/test-decap-help/docs/data-transfer/globus-transfers-with-jasmin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/data-transfer/globus-transfers-with-jasmin/</guid><description>&lt;p>This article describes how to do data transfers to and from JASMIN using 
 
 
 
@@ -278,7 +276,7 @@ the basic FTP client program, see below.&lt;/p></description></item><item><title
 &lt;!-- &lt;i class="fas fa-up-right-from-square fa-2xs">&lt;/i> -->
  &lt;svg class="svg-inline--fa fas fa-up-right-from-square fa-2xs" fill="currentColor" aria-hidden="true" role="img" viewBox="0 0 512 512">&lt;use href="#fas-up-right-from-square">&lt;/use>&lt;/svg>&lt;/a>,
 an online data transfer service designed specifically for moving large datasets
-between research institutions.&lt;/p></description></item><item><title>GridFTP (SSH authentication)</title><link>/docs/data-transfer/gridftp-ssh-auth/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/data-transfer/gridftp-ssh-auth/</guid><description>&lt;p>This article describes how to transfer data using GridFTP with SSH
+between research institutions.&lt;/p></description></item><item><title>GridFTP (SSH authentication)</title><link>https://mjpritchard.github.io/test-decap-help/docs/data-transfer/gridftp-ssh-auth/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/data-transfer/gridftp-ssh-auth/</guid><description>&lt;p>This article describes how to transfer data using GridFTP with SSH
 authentication.&lt;/p>
 
 
@@ -312,15 +310,13 @@ authentication.&lt;/p>
 
 
  
- 
- 
 
 
 
  
  
 
- &lt;a href="/docs/data-transfer/globus-transfers-with-jasmin/">Globus Transfers with JASMIN&lt;/a> (using the Globus online data transfer service) instead of command-line gridftp as described in this document.
+ &lt;a href="https://mjpritchard.github.io/test-decap-help/docs/data-transfer/globus-transfers-with-jasmin/">Globus Transfers with JASMIN&lt;/a> (using the Globus online data transfer service) instead of command-line gridftp as described in this document.
  &lt;/div>
  &lt;/div>
 
@@ -335,7 +331,7 @@ authentication.&lt;/p>
 &lt;p>GridFTP is the recommended tool for transferring large files or groups of
 files across high-speed Wide-Area Networks (WANs). It is commonly used with
 certificate-based authentication, but can also take place between suitably
-configured* server and client using SSH as the authentication mechanism.&lt;/p></description></item><item><title>rclone</title><link>/docs/data-transfer/rclone/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/data-transfer/rclone/</guid><description>&lt;p>This article provides information about the rclone data transfer tool. In
+configured* server and client using SSH as the authentication mechanism.&lt;/p></description></item><item><title>rclone</title><link>https://mjpritchard.github.io/test-decap-help/docs/data-transfer/rclone/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/data-transfer/rclone/</guid><description>&lt;p>This article provides information about the rclone data transfer tool. In
 particular:&lt;/p>
 &lt;ul>
 &lt;li>what is rclone?&lt;/li>
@@ -355,8 +351,8 @@ particular:&lt;/p>
 &lt;p>rclone is a command-line utility which enables access to lots of different
 storage systems including object stores and cloud-based storage. It can also
 move data between directories act as an SFTP client so could be used to access
-files on JASMIN.&lt;/p></description></item><item><title>rsync, scp, sftp</title><link>/docs/data-transfer/rsync-scp-sftp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/data-transfer/rsync-scp-sftp/</guid><description>&lt;p>This article tells you about some of the basic transfer tools available for
-use with JASMIN that work over an SSH connection:&lt;/p></description></item><item><title>Scheduling/Automating Transfers</title><link>/docs/data-transfer/scheduling-automating-transfers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/data-transfer/scheduling-automating-transfers/</guid><description>&lt;p>This article explains how to schedule or automate data transfers. It covers:&lt;/p>
+files on JASMIN.&lt;/p></description></item><item><title>rsync, scp, sftp</title><link>https://mjpritchard.github.io/test-decap-help/docs/data-transfer/rsync-scp-sftp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/data-transfer/rsync-scp-sftp/</guid><description>&lt;p>This article tells you about some of the basic transfer tools available for
+use with JASMIN that work over an SSH connection:&lt;/p></description></item><item><title>Scheduling/Automating Transfers</title><link>https://mjpritchard.github.io/test-decap-help/docs/data-transfer/scheduling-automating-transfers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/data-transfer/scheduling-automating-transfers/</guid><description>&lt;p>This article explains how to schedule or automate data transfers. It covers:&lt;/p>
 &lt;ul>
 &lt;li>Using Globus for transfer automation&lt;/li>
 &lt;li>Scheduling download tasks using cron and LOTUS&lt;/li>
@@ -375,7 +371,7 @@ processing/analysis on JASMIN on a regular basis, for example &amp;ldquo;every M
 11:00 fetch all last week&amp;rsquo;s data&amp;rdquo;. It can also be helpful to distribute the
 task downloading of some large datasets, or simply to be able rely on data
 being pulled in from some external source to an accumulating dataset used for
-periodic analysis.&lt;/p></description></item><item><title>Transfers from ARCHER2</title><link>/docs/data-transfer/transfers-from-archer2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/data-transfer/transfers-from-archer2/</guid><description>&lt;h2 id="choice-of-available-toolsroutes" class="heading">Choice of available Tools/Routes&lt;a href="#choice-of-available-toolsroutes" aria-labelledby="choice-of-available-toolsroutes">
+periodic analysis.&lt;/p></description></item><item><title>Transfers from ARCHER2</title><link>https://mjpritchard.github.io/test-decap-help/docs/data-transfer/transfers-from-archer2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/data-transfer/transfers-from-archer2/</guid><description>&lt;h2 id="choice-of-available-toolsroutes" class="heading">Choice of available Tools/Routes&lt;a href="#choice-of-available-toolsroutes" aria-labelledby="choice-of-available-toolsroutes">
 &lt;!-- &lt;i class="fas fa-link anchor">&lt;/i> -->
  &lt;svg class="svg-inline--fa fas fa-link anchor" fill="currentColor" aria-hidden="true" role="img" viewBox="0 0 640 512">&lt;use href="#fas-link">&lt;/use>&lt;/svg>&amp;nbsp;
  &lt;/a>
@@ -391,13 +387,11 @@ periodic analysis.&lt;/p></description></item><item><title>Transfers from ARCHER
 
 
  
- 
- 
 
 
 
  
  
 
- &lt;a href="/docs/data-transfer/data-transfer-tools/">Data Transfer Tools&lt;/a> for general
+ &lt;a href="https://mjpritchard.github.io/test-decap-help/docs/data-transfer/data-transfer-tools/">Data Transfer Tools&lt;/a> for general
 information.&lt;/p></description></item></channel></rss>

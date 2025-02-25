@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Batch Computing on JASMIN Help Site</title><link>/docs/batch-computing/</link><description>Recent content in Batch Computing on JASMIN Help Site</description><generator>Hugo</generator><language>en</language><copyright>Copyright © 2025 Science and Technology Facilities Council.</copyright><atom:link href="/docs/batch-computing/index.xml" rel="self" type="application/rss+xml"/><item><title>LOTUS overview</title><link>/docs/batch-computing/lotus-overview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/batch-computing/lotus-overview/</guid><description>&lt;p>This article gives an overview of the LOTUS batch computing cluster which is
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Batch Computing on JASMIN Help Site</title><link>https://mjpritchard.github.io/test-decap-help/docs/batch-computing/</link><description>Recent content in Batch Computing on JASMIN Help Site</description><generator>Hugo</generator><language>en</language><copyright>Copyright © 2025 Science and Technology Facilities Council.</copyright><atom:link href="https://mjpritchard.github.io/test-decap-help/docs/batch-computing/index.xml" rel="self" type="application/rss+xml"/><item><title>LOTUS overview</title><link>https://mjpritchard.github.io/test-decap-help/docs/batch-computing/lotus-overview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/batch-computing/lotus-overview/</guid><description>&lt;p>This article gives an overview of the LOTUS batch computing cluster which is
 part of JASMIN. It covers:&lt;/p>
 &lt;ul>
 &lt;li>What LOTUS is and what it can be used for&lt;/li>
@@ -27,16 +27,14 @@ machines, running the
 
 
  
- 
- 
 
 
 
  
  
 
- &lt;a href="/docs/batch-computing/slurm-scheduler-overview/">Slurm workload manager&lt;/a>, enabling efficient scheduling of larger data analysis tasks
-across nodes in the cluster as a single unit -see Figure 1.&lt;/p></description></item><item><title>Slurm scheduler overview</title><link>/docs/batch-computing/slurm-scheduler-overview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/batch-computing/slurm-scheduler-overview/</guid><description>&lt;h2 id="what-is-a-job-scheduler" class="heading">What is a Job Scheduler?&lt;a href="#what-is-a-job-scheduler" aria-labelledby="what-is-a-job-scheduler">
+ &lt;a href="https://mjpritchard.github.io/test-decap-help/docs/batch-computing/slurm-scheduler-overview/">Slurm workload manager&lt;/a>, enabling efficient scheduling of larger data analysis tasks
+across nodes in the cluster as a single unit -see Figure 1.&lt;/p></description></item><item><title>Slurm scheduler overview</title><link>https://mjpritchard.github.io/test-decap-help/docs/batch-computing/slurm-scheduler-overview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/batch-computing/slurm-scheduler-overview/</guid><description>&lt;h2 id="what-is-a-job-scheduler" class="heading">What is a Job Scheduler?&lt;a href="#what-is-a-job-scheduler" aria-labelledby="what-is-a-job-scheduler">
 &lt;!-- &lt;i class="fas fa-link anchor">&lt;/i> -->
  &lt;svg class="svg-inline--fa fas fa-link anchor" fill="currentColor" aria-hidden="true" role="img" viewBox="0 0 640 512">&lt;use href="#fas-link">&lt;/use>&lt;/svg>&amp;nbsp;
  &lt;/a>
@@ -54,19 +52,17 @@ compute resources are the set of compute nodes that make up the
 
 
  
- 
- 
 
 
 
  
  
 
- &lt;a href="/docs/batch-computing/lotus-cluster-specification/">LOTUS hardware&lt;/a>. Each user can submit
+ &lt;a href="https://mjpritchard.github.io/test-decap-help/docs/batch-computing/lotus-cluster-specification/">LOTUS hardware&lt;/a>. Each user can submit
 jobs to the scheduler which then decides which jobs to run and where to
 execute them. The scheduler manages the jobs to ensure that the compute
 resources are being used efficiently and that users get appropriate access to
-those resources.&lt;/p></description></item><item><title>How to monitor Slurm jobs</title><link>/docs/batch-computing/how-to-monitor-slurm-jobs/</link><pubDate>Wed, 20 May 2020 13:13:23 +0000</pubDate><guid>/docs/batch-computing/how-to-monitor-slurm-jobs/</guid><description>&lt;h2 id="job-information" class="heading">Job information&lt;a href="#job-information" aria-labelledby="job-information">
+those resources.&lt;/p></description></item><item><title>How to monitor Slurm jobs</title><link>https://mjpritchard.github.io/test-decap-help/docs/batch-computing/how-to-monitor-slurm-jobs/</link><pubDate>Wed, 20 May 2020 13:13:23 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/batch-computing/how-to-monitor-slurm-jobs/</guid><description>&lt;h2 id="job-information" class="heading">Job information&lt;a href="#job-information" aria-labelledby="job-information">
 &lt;!-- &lt;i class="fas fa-link anchor">&lt;/i> -->
  &lt;svg class="svg-inline--fa fas fa-link anchor" fill="currentColor" aria-hidden="true" role="img" viewBox="0 0 640 512">&lt;use href="#fas-link">&lt;/use>&lt;/svg>&amp;nbsp;
  &lt;/a>
@@ -74,9 +70,9 @@ those resources.&lt;/p></description></item><item><title>How to monitor Slurm jo
 &lt;p>Information on all running and pending batch jobs managed by Slurm can be
 obtained from the Slurm command &lt;code>squeue&lt;/code>. Note that information on completed
 jobs is only retained for a limited period. Information on jobs that ran in
-the past is via &lt;code>sacct&lt;/code>. An example of the output &lt;code>squeue&lt;/code> is shown below.&lt;/p></description></item><item><title>Example Job 2: Calculating MD5 Checksums on many files</title><link>/docs/batch-computing/example-job-2-calc-md5s/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/batch-computing/example-job-2-calc-md5s/</guid><description>&lt;p>This page records some early CEDA usage of the LOTUS cluster for various
+the past is via &lt;code>sacct&lt;/code>. An example of the output &lt;code>squeue&lt;/code> is shown below.&lt;/p></description></item><item><title>Example Job 2: Calculating MD5 Checksums on many files</title><link>https://mjpritchard.github.io/test-decap-help/docs/batch-computing/example-job-2-calc-md5s/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/batch-computing/example-job-2-calc-md5s/</guid><description>&lt;p>This page records some early CEDA usage of the LOTUS cluster for various
 relatively simple tasks. Others may wish to use these examples as a starting
-point for developing their own workflows on LOTUS.&lt;/p></description></item><item><title>How to submit a job</title><link>/docs/batch-computing/how-to-submit-a-job/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/batch-computing/how-to-submit-a-job/</guid><description>&lt;p>This article explains how to submit a batch job to the new scheduler Slurm.&lt;/p>
+point for developing their own workflows on LOTUS.&lt;/p></description></item><item><title>How to submit a job</title><link>https://mjpritchard.github.io/test-decap-help/docs/batch-computing/how-to-submit-a-job/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/batch-computing/how-to-submit-a-job/</guid><description>&lt;p>This article explains how to submit a batch job to the new scheduler Slurm.&lt;/p>
 
 
 
@@ -89,7 +85,7 @@ point for developing their own workflows on LOTUS.&lt;/p></description></item><i
 &lt;p>A batch job is controlled by a script written by the user who submits the job
 to the batch system Slurm. The batch system then selects the resources for the
 job and decides when to run the job. Note: the term &amp;ldquo;job&amp;rdquo; is used throughout
-this documentation to mean a &amp;ldquo;batch job&amp;rdquo;.&lt;/p></description></item><item><title>How to submit an MPI parallel job</title><link>/docs/batch-computing/how-to-submit-an-mpi-parallel-job/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/batch-computing/how-to-submit-an-mpi-parallel-job/</guid><description>&lt;p>This article explains the submission of an MPI parallel job to Slurm/ LOTUS.&lt;/p>
+this documentation to mean a &amp;ldquo;batch job&amp;rdquo;.&lt;/p></description></item><item><title>How to submit an MPI parallel job</title><link>https://mjpritchard.github.io/test-decap-help/docs/batch-computing/how-to-submit-an-mpi-parallel-job/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/batch-computing/how-to-submit-an-mpi-parallel-job/</guid><description>&lt;p>This article explains the submission of an MPI parallel job to Slurm/ LOTUS.&lt;/p>
 
 
 
@@ -101,7 +97,7 @@ this documentation to mean a &amp;ldquo;batch job&amp;rdquo;.&lt;/p></descriptio
 &lt;/h2>
 &lt;p>An MPI parallel job runs on more than one core and more than one host using
 the Message Passing Interface (MPI) library for communication between all
-cores. A simple script, such as the one given below &amp;ldquo;my_script_name.sbatch &amp;quot;&lt;/p></description></item><item><title>LOTUS cluster specification</title><link>/docs/batch-computing/lotus-cluster-specification/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/batch-computing/lotus-cluster-specification/</guid><description>&lt;h2 id="current-cluster-specification" class="heading">Current cluster specification&lt;a href="#current-cluster-specification" aria-labelledby="current-cluster-specification">
+cores. A simple script, such as the one given below &amp;ldquo;my_script_name.sbatch &amp;quot;&lt;/p></description></item><item><title>LOTUS cluster specification</title><link>https://mjpritchard.github.io/test-decap-help/docs/batch-computing/lotus-cluster-specification/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/batch-computing/lotus-cluster-specification/</guid><description>&lt;h2 id="current-cluster-specification" class="heading">Current cluster specification&lt;a href="#current-cluster-specification" aria-labelledby="current-cluster-specification">
 &lt;!-- &lt;i class="fas fa-link anchor">&lt;/i> -->
  &lt;svg class="svg-inline--fa fas fa-link anchor" fill="currentColor" aria-hidden="true" role="img" viewBox="0 0 640 512">&lt;use href="#fas-link">&lt;/use>&lt;/svg>&amp;nbsp;
  &lt;/a>
@@ -110,7 +106,7 @@ cores. A simple script, such as the one given below &amp;ldquo;my_script_name.sb
 an individual computer in the cluster with more than 1 processor. Each
 node/host belongs to a specific host group. The number of processors (CPUs or
 cores) per host is listed in Table 1 with the corresponding processor model
-and the size of the physical memory RAM available per node/host.&lt;/p></description></item><item><title>Orchid GPU cluster</title><link>/docs/batch-computing/orchid-gpu-cluster/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/batch-computing/orchid-gpu-cluster/</guid><description>&lt;p>This article provides details on JASMIN&amp;rsquo;s GPU
+and the size of the physical memory RAM available per node/host.&lt;/p></description></item><item><title>Orchid GPU cluster</title><link>https://mjpritchard.github.io/test-decap-help/docs/batch-computing/orchid-gpu-cluster/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/batch-computing/orchid-gpu-cluster/</guid><description>&lt;p>This article provides details on JASMIN&amp;rsquo;s GPU
 cluster, named &lt;strong>ORCHID&lt;/strong>.&lt;/p>
 
 
@@ -121,7 +117,7 @@ cluster, named &lt;strong>ORCHID&lt;/strong>.&lt;/p>
  &lt;svg class="svg-inline--fa fas fa-link anchor" fill="currentColor" aria-hidden="true" role="img" viewBox="0 0 640 512">&lt;use href="#fas-link">&lt;/use>&lt;/svg>&amp;nbsp;
  &lt;/a>
 &lt;/h2>
-&lt;p>The JASMIN GPU cluster is composed of 16 GPU nodes:&lt;/p></description></item><item><title>Slurm queues</title><link>/docs/batch-computing/slurm-queues/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/batch-computing/slurm-queues/</guid><description>&lt;p>This article introduces the Slurm scheduler queues/partitions for batch job
+&lt;p>The JASMIN GPU cluster is composed of 16 GPU nodes:&lt;/p></description></item><item><title>Slurm queues</title><link>https://mjpritchard.github.io/test-decap-help/docs/batch-computing/slurm-queues/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/batch-computing/slurm-queues/</guid><description>&lt;p>This article introduces the Slurm scheduler queues/partitions for batch job
 submissions to the LOTUS and ORCHID clusters.&lt;/p>
 
 
@@ -132,7 +128,7 @@ submissions to the LOTUS and ORCHID clusters.&lt;/p>
  &lt;svg class="svg-inline--fa fas fa-link anchor" fill="currentColor" aria-hidden="true" role="img" viewBox="0 0 640 512">&lt;use href="#fas-link">&lt;/use>&lt;/svg>&amp;nbsp;
  &lt;/a>
 &lt;/h2>
-&lt;p>The Slurm queues in the LOTUS cluster are:&lt;/p></description></item><item><title>Slurm quick reference</title><link>/docs/batch-computing/slurm-quick-reference/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/batch-computing/slurm-quick-reference/</guid><description>&lt;h2 id="slurm-scheduler" class="heading">Slurm Scheduler&lt;a href="#slurm-scheduler" aria-labelledby="slurm-scheduler">
+&lt;p>The Slurm queues in the LOTUS cluster are:&lt;/p></description></item><item><title>Slurm quick reference</title><link>https://mjpritchard.github.io/test-decap-help/docs/batch-computing/slurm-quick-reference/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/batch-computing/slurm-quick-reference/</guid><description>&lt;h2 id="slurm-scheduler" class="heading">Slurm Scheduler&lt;a href="#slurm-scheduler" aria-labelledby="slurm-scheduler">
 &lt;!-- &lt;i class="fas fa-link anchor">&lt;/i> -->
  &lt;svg class="svg-inline--fa fas fa-link anchor" fill="currentColor" aria-hidden="true" role="img" viewBox="0 0 640 512">&lt;use href="#fas-link">&lt;/use>&lt;/svg>&amp;nbsp;
  &lt;/a>
@@ -185,15 +181,13 @@ allows users to submit, monitor, and control jobs on the
 
 
  
- 
- 
 
 
 
  
  
 
- &lt;a href="/docs/batch-computing/lotus-overview/">LOTUS&lt;/a> (CPU)
+ &lt;a href="https://mjpritchard.github.io/test-decap-help/docs/batch-computing/lotus-overview/">LOTUS&lt;/a> (CPU)
 and 
  
 
@@ -205,15 +199,13 @@ and
 
 
  
- 
- 
 
 
 
  
  
 
- &lt;a href="/docs/batch-computing/orchid-gpu-cluster/">ORCHID&lt;/a> (GPU) clusters.&lt;/p></description></item><item><title>Slurm status</title><link>/docs/batch-computing/slurm-status/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/batch-computing/slurm-status/</guid><description>&lt;p>The 
+ &lt;a href="https://mjpritchard.github.io/test-decap-help/docs/batch-computing/orchid-gpu-cluster/">ORCHID&lt;/a> (GPU) clusters.&lt;/p></description></item><item><title>Slurm status</title><link>https://mjpritchard.github.io/test-decap-help/docs/batch-computing/slurm-status/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mjpritchard.github.io/test-decap-help/docs/batch-computing/slurm-status/</guid><description>&lt;p>The 
  
 
 

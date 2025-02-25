@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: /sitemap.xml
+Sitemap: https://mjpritchard.github.io/test-decap-help/sitemap.xml
