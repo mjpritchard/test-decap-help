@@ -3,7 +3,7 @@ copyright = "Copyright © 2025 Science and Technology Facilities Council."
 enableGitInfo = true
 
 # additional settings
-baseURL = 'https://help.jasmin.ac.uk' # temp value until we have a domain
+baseURL = '/' # temp value until we have a domain
 canonifyURLs = false
 enableEmoji = true
 enableRobotsTXT = true
