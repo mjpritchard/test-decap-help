@@ -3,7 +3,7 @@ copyright = "Copyright © 2025 Science and Technology Facilities Council."
 enableGitInfo = true
 
 # additional settings
-baseURL = '/' # temp value until we have a domain
+baseURL = 'https://mjpritchard.github.io/test-decap-help/' # temp value until we have a domain
 canonifyURLs = false
 enableEmoji = true
 enableRobotsTXT = true
